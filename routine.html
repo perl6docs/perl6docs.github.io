@@ -228,6 +228,7 @@
 </td> </tr> <tr> <td><a href="/routine/Promise">Promise</a></td> <td>method</td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/READ">READ</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/RUN-MAIN">RUN-MAIN</a></td> <td>sub</td> <td><p>(From <a href="/language/create-cli">Command line interface</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/Range">Range</a></td> <td>method</td> <td><p>(From <a href="/type/Int">Int</a>, <a href="/type/Rational">Rational</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Rat">Rat</a></td> <td>method</td> <td><p>(From <a href="/type/Numeric">Numeric</a>, <a href="/type/Real">Real</a>, <a href="/type/Str">Str</a>, <a href="/type/RatStr">RatStr</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Real">Real</a></td> <td>method</td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/RatStr">RatStr</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/SPEC">SPEC</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
@@ -668,7 +669,7 @@
 </td> </tr> <tr> <td><a href="/routine/lt">lt</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/made">made</a></td> <td>method</td> <td><p>(From <a href="/type/Match">Match</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/make">make</a></td> <td>method</td> <td><p>(From <a href="/type/Match">Match</a>, <a href="/type/Match">Match</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/map">map</a></td> <td>method, sub</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/map">map</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/match">match</a></td> <td>method</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/max">max</a></td> <td>infix, method</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/maxpairs">maxpairs</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
@@ -1116,11 +1117,11 @@
 </td> </tr> <tr> <td><a href="/routine/« »">« »</a></td> <td>postcircumfix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/π">π</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/τ">τ</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∅">∅</a></td> <td>term</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∅">∅</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∈">∈</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∉">∉</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∉">∉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∋">∋</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∌">∌</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∌">∌</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∖">∖</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∘">∘</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∩">∩</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
@@ -1130,12 +1131,12 @@
 </td> </tr> <tr> <td><a href="/routine/≥">≥</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊂">⊂</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊃">⊃</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊄">⊄</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊅">⊅</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊄">⊄</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊅">⊅</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊆">⊆</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊇">⊇</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊈">⊈</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊉">⊉</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊈">⊈</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊉">⊉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊍">⊍</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊎">⊎</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⊖">⊖</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
@@ -1155,7 +1156,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/1b4b3e47"><span id="footer-commit">1b4b3e47</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -1163,7 +1164,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-05T08:24:14Z
+      Generated on 2019-05-06T17:47:22Z
   </p>
   <p>
       This documentation is provided under the terms of the

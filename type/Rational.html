@@ -121,7 +121,8 @@
     <tr class="toc-level-2"><td class="toc-number">1.10</td><td class="toc-text"><a href="#method_nude">method nude</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.11</td><td class="toc-text"><a href="#method_norm">method norm</a></td></tr>
                <tr class="toc-level-2"><td class="toc-number">1.12</td><td class="toc-text"><a href="#method_base-repeating">method base-repeating</a></td></tr>
-                <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+                <tr class="toc-level-2"><td class="toc-number">1.13</td><td class="toc-text"><a href="#method_Range">method Range</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
   <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Real">Routines supplied by role Real</a></td></tr>
     <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Real)_method_Bridge">(Real) method Bridge</a></td></tr>
                                              <tr class="toc-level-2"><td class="toc-number">4.2</td><td class="toc-text"><a href="#(Real)_method_Complex">(Real) method Complex</a></td></tr>
@@ -194,6 +195,8 @@
 <p>If no repetition occurs, the second string is empty:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>5</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="constant numeric perl6fe"><span>2</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>base-repeating</span></span><span>(</span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(&quot;2.5&quot;,&nbsp;&quot;&quot;)␤»</span><span>&nbsp;</span></span></span></div></pre><p>The precision for determining the repeating group is limited to 1000 characters, above that, the second string is <code>???</code>.</p>
 <p><code>$base</code> defaults to <code>10</code>.</p>
+<h2 id="method_Range"><a class="u" href="#___top" title="go to top of document">method Range</a></h2>
+<p>Returns a <a href="/type/Range">Range object</a> that represents the range of values they support.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for
@@ -438,7 +441,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Rational.pod6'>Type/Rational.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Rational.pod6'>Type/Rational.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/1b4b3e47"><span id="footer-commit">1b4b3e47</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -446,7 +449,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Rational.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-05T08:19:40Z
+      Generated on 2019-05-06T17:42:46Z
   </p>
   <p>
       This documentation is provided under the terms of the

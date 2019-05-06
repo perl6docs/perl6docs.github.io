@@ -92,8 +92,8 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-                                                                                                      <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Set/Bag_operators">Set/Bag operators</a></td></tr>
-                                     <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Operators_that_return_Bool">Operators that return <code class="pod-code-inline">Bool</code></a></td></tr>
+                                                                                                      <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Set-Like_operators">Set-Like operators</a></td></tr>
+                                             <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#Operators_that_return_Bool">Operators that return <code class="pod-code-inline">Bool</code></a></td></tr>
   <tr class="toc-level-3"><td class="toc-number">1.1.1</td><td class="toc-text"><a href="#infix_(elem)">infix (elem)</a></td></tr>
               <tr class="toc-level-3"><td class="toc-number">1.1.2</td><td class="toc-text"><a href="#infix_∈">infix ∈</a></td></tr>
       <tr class="toc-level-3"><td class="toc-number">1.1.3</td><td class="toc-text"><a href="#infix_∉">infix ∉</a></td></tr>
@@ -147,8 +147,8 @@
 <tbody>
 <tr> <td>Set / SetHash</td> <td>True</td> <td>False</td> </tr> <tr> <td>Bag / BagHash</td> <td>a positive integer</td> <td>0</td> </tr> <tr> <td>Mix / MixHash</td> <td>a non-zero real number</td> <td>0</td> </tr>
 </tbody>
-</table><h1 id="Set/Bag_operators"><a class="u" href="#___top" title="go to top of document">Set/Bag operators</a></h1>
-<p>There are several infix operators devoted to performing common operations on <a href="/type/Set">Set</a>, such as unions and set differences. Other operations include boolean checks, like whether an object is an element of a <code>Set</code>, or whether one <code>Set</code> is a subset of another <code>Set</code>.</p>
+</table><h1 id="Set-Like_operators"><a class="u" href="#___top" title="go to top of document">Set-Like operators</a></h1>
+<p>There are several infix operators devoted to performing common operations on <code>Set-Like</code> types. Set-Like objects are comprised of <a href="/type/Set">Set</a>s, <a href="/type/Bag">Bag</a>s, and <a href="/type/Mix">Mix</a>es. Operations that can be performed on <code>Set-Like</code> types things like unions, set differences and include boolean checks, like whether an object is an element of a <code>Set</code>, or whether one <code>Set</code> is a subset of another <code>Set</code>.</p>
 <p>These infixes can be written using the UTF-8 character that represents the function (like <a href="/routine/∈">∈</a>, or <a href="/routine/∪">∪</a>), or with an equivalent ASCII version like <a href="/routine/(elem)">(elem)</a> or <a href="/routine/⊖">(^)</a>.</p>
 <p>Most of the time, explicitly using <code>Set</code> objects with these infixes is unnecessary. All the infix operators will work on any objects of type <a href="/type/Any">Any</a> for its arguments (e.g., <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Mix">Mix</a>, etc.) and coerce them to <code>Set</code> where needed.</p>
 <p>In some cases, if the type of an argument is a <a href="/type/Bag">Bag</a>, the infix operator will behave in a different but analogous way to the way it would behave with only <code>Set</code> arguments.</p>
@@ -256,7 +256,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/setbagmix.pod6'>Language/setbagmix.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/setbagmix.pod6'>Language/setbagmix.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/1b4b3e47"><span id="footer-commit">1b4b3e47</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -264,7 +264,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/setbagmix.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-05T08:18:56Z
+      Generated on 2019-05-06T17:42:02Z
   </p>
   <p>
       This documentation is provided under the terms of the
