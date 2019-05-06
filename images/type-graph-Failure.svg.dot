@@ -6,10 +6,14 @@ digraph "perl6-type-graph" {
     "Failure" [color="#000000", fontcolor="#000000", href="/type/Failure", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
+    "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
+    "Nil" [color="#000000", fontcolor="#000000", href="/type/Nil", fontname="FreeSans"];
 
     // Superclasses
-    "Failure" -> "Any" [color="#000000"];
+    "Failure" -> "Nil" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
+    "Cool" -> "Any" [color="#000000"];
+    "Nil" -> "Cool" [color="#000000"];
 
     // Roles
 }

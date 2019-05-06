@@ -4,23 +4,23 @@ digraph "perl6-type-graph" {
     overlap=false; 
     // Types
     "Associative" [color="#6666FF", fontcolor="#6666FF", href="/type/Associative", fontname="FreeSans"];
+    "QuantHash" [color="#6666FF", fontcolor="#6666FF", href="/type/QuantHash", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
     "Iterable" [color="#6666FF", fontcolor="#6666FF", href="/type/Iterable", fontname="FreeSans"];
     "Map" [color="#000000", fontcolor="#000000", href="/type/Map", fontname="FreeSans"];
-    "QuantHash" [color="#6666FF", fontcolor="#6666FF", href="/type/QuantHash", fontname="FreeSans"];
     "Pair" [color="#000000", fontcolor="#000000", href="/type/Pair", fontname="FreeSans"];
     "PseudoStash" [color="#000000", fontcolor="#000000", href="/type/PseudoStash", fontname="FreeSans"];
     "Hash" [color="#000000", fontcolor="#000000", href="/type/Hash", fontname="FreeSans"];
     "Setty" [color="#6666FF", fontcolor="#6666FF", href="/type/Setty", fontname="FreeSans"];
     "Baggy" [color="#6666FF", fontcolor="#6666FF", href="/type/Baggy", fontname="FreeSans"];
     "Stash" [color="#000000", fontcolor="#000000", href="/type/Stash", fontname="FreeSans"];
-    "Set" [color="#000000", fontcolor="#000000", href="/type/Set", fontname="FreeSans"];
     "SetHash" [color="#000000", fontcolor="#000000", href="/type/SetHash", fontname="FreeSans"];
-    "Bag" [color="#000000", fontcolor="#000000", href="/type/Bag", fontname="FreeSans"];
+    "Set" [color="#000000", fontcolor="#000000", href="/type/Set", fontname="FreeSans"];
     "Mixy" [color="#6666FF", fontcolor="#6666FF", href="/type/Mixy", fontname="FreeSans"];
     "BagHash" [color="#000000", fontcolor="#000000", href="/type/BagHash", fontname="FreeSans"];
+    "Bag" [color="#000000", fontcolor="#000000", href="/type/Bag", fontname="FreeSans"];
     "Mix" [color="#000000", fontcolor="#000000", href="/type/Mix", fontname="FreeSans"];
     "MixHash" [color="#000000", fontcolor="#000000", href="/type/MixHash", fontname="FreeSans"];
 
@@ -32,25 +32,25 @@ digraph "perl6-type-graph" {
     "PseudoStash" -> "Map" [color="#000000"];
     "Hash" -> "Map" [color="#000000"];
     "Stash" -> "Hash" [color="#000000"];
-    "Set" -> "Any" [color="#000000"];
     "SetHash" -> "Any" [color="#000000"];
-    "Bag" -> "Any" [color="#000000"];
+    "Set" -> "Any" [color="#000000"];
     "BagHash" -> "Any" [color="#000000"];
+    "Bag" -> "Any" [color="#000000"];
     "Mix" -> "Any" [color="#000000"];
     "MixHash" -> "Any" [color="#000000"];
 
     // Roles
+    "QuantHash" -> "Associative" [color="#6666FF"];
     "Map" -> "Iterable" [color="#6666FF"];
     "Map" -> "Associative" [color="#6666FF"];
-    "QuantHash" -> "Associative" [color="#6666FF"];
     "Pair" -> "Associative" [color="#6666FF"];
     "Setty" -> "QuantHash" [color="#6666FF"];
     "Baggy" -> "QuantHash" [color="#6666FF"];
-    "Set" -> "Setty" [color="#6666FF"];
     "SetHash" -> "Setty" [color="#6666FF"];
-    "Bag" -> "Baggy" [color="#6666FF"];
+    "Set" -> "Setty" [color="#6666FF"];
     "Mixy" -> "Baggy" [color="#6666FF"];
     "BagHash" -> "Baggy" [color="#6666FF"];
+    "Bag" -> "Baggy" [color="#6666FF"];
     "Mix" -> "Mixy" [color="#6666FF"];
     "MixHash" -> "Mixy" [color="#6666FF"];
 }
