@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Reading the docs</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item "
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_Programs_02_reading_docs">
+
+      <div align="right">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Programs/02-reading-docs.pod6'">
+        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pencil" fill="#000000">
+            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+
+        </button>
+      </div>
+
+    <h1 class='title'>Reading the docs</h1>
+    <p class='subtitle'>p6doc - the Perl&nbsp;6 pod reader</p>
+    <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+  <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#INTRODUCTION">INTRODUCTION</a></td></tr>
+               <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#SYNOPSIS">SYNOPSIS</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#DESCRIPTION">DESCRIPTION</a></td></tr>
+                                                             <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#LIMITATIONS">LIMITATIONS</a></td></tr>
+           
+</table>
+</nav>
+
+    <div class="pod-body">
+    <h1 id="INTRODUCTION"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-p6doc-INTRODUCTION"><span class="index-entry">INTRODUCTION</span></a></a></h1>
+<p>Program <code>p6doc</code> is a command-line-interface (CLI) program that reads Perl&nbsp;6 pod from <strong>installed</strong> modules&#39; source code, in contrast to running <code>perl6 --doc=MODULE programfile</code> which reads Perl&nbsp;6 pod from the named source file.</p>
+<p>Note that <code>p6doc</code> may not be installed automatically depending upon how you installed Rakudo Perl&nbsp;6. To install it use <code>zef</code>:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>zef</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>install</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span></span></div></pre><h1 id="SYNOPSIS"><a class="u" href="#___top" title="go to top of document">SYNOPSIS</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;[</span><span class="routine name perl6fe"><span>switches</span></span><span>]&nbsp;[</span><span class="routine name perl6fe"><span>arguments</span></span><span>]</span></span></div></pre><h1 id="DESCRIPTION"><a class="u" href="#___top" title="go to top of document">DESCRIPTION</a></h1>
+<p>With no switches or arguments, <code>p6doc</code> lists its help to <code>$*OUT</code> (<code>stdout</code>):</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>You</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>want</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>maintain</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span class="keyword operator generic perl6fe"><span>?</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>To</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>build</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>an</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>p6doc&nbsp;-f</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>build</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>To</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>list</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>keys</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>list</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>To</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>display</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>name</span></span></span><span>(</span><span class="routine name perl6fe"><span>s</span></span><span>)&nbsp;</span><span class="routine name perl6fe"><span>containing</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>key</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>lookup</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>To</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>show</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>index</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>file</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>lives</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>path-to-index</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>What</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>documentation</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>do</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>you</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>want</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>read</span></span><span class="keyword operator generic perl6fe"><span>?</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Examples</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>split</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>faq</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>path</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="support function perl6fe"><span>to</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>file</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>You</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>can</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>list</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>some</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>top</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>level</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>documents</span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>l</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>You</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>can</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>also</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>look</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>up</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>specific</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>method</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="routine name perl6fe"><span>routine</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>definitions</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>f</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>hyper</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>f</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Array</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>push</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>You</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>can</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>bypass</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>pager</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>and</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>print</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>straight</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>stdout</span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>p6doc</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>n</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span></span></div></pre><p>The text output can be captured and converted to other forms if desired.</p>
+<p>If you want to use ANSI escape sequences, which will apply boldface and other enhancements to the output, you will have to set POD_TO_TEXT_ANSI, which is unset by default</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="entity name type trait perl6fe"><span>export</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>POD_TO_TEXT_ANSI</span></span><span class="storage modifier assignment perl6fe"><span>=</span></span><span class="constant numeric perl6fe"><span>1</span></span></span></div></pre><h1 id="LIMITATIONS"><a class="u" href="#___top" title="go to top of document">LIMITATIONS</a></h1>
+<p>Currently <code>p6doc</code> can only extract embedded Perl&nbsp;6 pod from installed module source files (as listed in a distribution&#39;s <code>META6.json</code> file). It is planned to add a feature for <code>p6doc</code> (in conjunction with <code>META6.json</code> changes) to extract <strong>all</strong> Perl&nbsp;6 pod in files included with the installed distribution.</p>
+
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Programs/02-reading-docs.pod6'>Programs/02-reading-docs.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Programs/02-reading-docs.pod6'>edit this page</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:18:26Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>

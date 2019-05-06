@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Perl 6 Composite Types</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
+                <a class="menu-item" href="/type-basic.html">
+                    Basic
+                </a>
+             
+                <a class="menu-item" href="/type-composite.html">
+                    Composite
+                </a>
+             
+                <a class="menu-item" href="/type-domain-specific.html">
+                    Domain-specific
+                </a>
+             
+                <a class="menu-item" href="/type-exceptions.html">
+                    Exceptions
+                </a>
+            </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_fragment">
+
+
+    <h1 class='title'>Perl 6 Composite Types</h1>
+    
+    
+    <div class="pod-body no-toc">
+    <table class="pod-table">
+<tbody>
+<tr> <td>class</td> <td><a href="/type/Array">Array</a></td> <td>Sequence of itemized values</td> </tr> <tr> <td>role</td> <td><a href="/type/Associative">Associative</a></td> <td><em>Object that supports looking up values by key</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Bag">Bag</a></td> <td>Immutable collection of distinct objects with integer weights</td> </tr> <tr> <td>class</td> <td><a href="/type/BagHash">BagHash</a></td> <td>Mutable collection of distinct objects with integer weights</td> </tr> <tr> <td>role</td> <td><a href="/type/Baggy">Baggy</a></td> <td><em>Collection of distinct weighted objects</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Blob">Blob</a></td> <td><em>Immutable buffer for binary data (&#39;Binary Large OBject&#39;)</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Buf">Buf</a></td> <td><em>Mutable buffer for binary data</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Capture">Capture</a></td> <td>Argument list suitable for passing to a Signature</td> </tr> <tr> <td>role</td> <td><a href="/type/Enumeration">Enumeration</a></td> <td><em>Working with the role behind the enum type</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Hash">Hash</a></td> <td>Mapping from strings to itemized values</td> </tr> <tr> <td>role</td> <td><a href="/type/Iterable">Iterable</a></td> <td><em>Interface for container objects that can be iterated over</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Iterator">Iterator</a></td> <td><em>Generic API for producing a sequence of values</em></td> </tr> <tr> <td>class</td> <td><a href="/type/List">List</a></td> <td>Sequence of values</td> </tr> <tr> <td>class</td> <td><a href="/type/Map">Map</a></td> <td>Immutable mapping from strings to values</td> </tr> <tr> <td>class</td> <td><a href="/type/Mix">Mix</a></td> <td>Immutable collection of distinct objects with Real weights</td> </tr> <tr> <td>class</td> <td><a href="/type/MixHash">MixHash</a></td> <td>Mutable collection of distinct objects with Real weights</td> </tr> <tr> <td>role</td> <td><a href="/type/Mixy">Mixy</a></td> <td><em>Collection of distinct objects with Real weights</em></td> </tr> <tr> <td>class</td> <td><a href="/type/NFC">NFC</a></td> <td>Codepoint string in Normal Form C (composed)</td> </tr> <tr> <td>class</td> <td><a href="/type/NFD">NFD</a></td> <td>Codepoint string in Normal Form D (decomposed)</td> </tr> <tr> <td>class</td> <td><a href="/type/NFKC">NFKC</a></td> <td>Codepoint string in Normal Form KC (compatibility composed)</td> </tr> <tr> <td>class</td> <td><a href="/type/NFKD">NFKD</a></td> <td>Codepoint string in Normal Form KD (compatibility decomposed)</td> </tr> <tr> <td>class</td> <td><a href="/type/Pair">Pair</a></td> <td>Key/value pair</td> </tr> <tr> <td>role</td> <td><a href="/type/Positional">Positional</a></td> <td><em>Object that supports looking up values by index</em></td> </tr> <tr> <td>role</td> <td><a href="/type/PositionalBindFailover">PositionalBindFailover</a></td> <td><em>Failover for binding to a Positional</em></td> </tr> <tr> <td>class</td> <td><a href="/type/PseudoStash">PseudoStash</a></td> <td>Stash type for pseudo-packages</td> </tr> <tr> <td>role</td> <td><a href="/type/QuantHash">QuantHash</a></td> <td><em>Object hashes with limitation on type of value</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Range">Range</a></td> <td>Interval of ordered values</td> </tr> <tr> <td>class</td> <td><a href="/type/Seq">Seq</a></td> <td>An iterable, lazy sequence of values</td> </tr> <tr> <td>class</td> <td><a href="/type/Set">Set</a></td> <td>Immutable collection of distinct objects</td> </tr> <tr> <td>class</td> <td><a href="/type/SetHash">SetHash</a></td> <td>Mutable collection of distinct objects</td> </tr> <tr> <td>role</td> <td><a href="/type/Setty">Setty</a></td> <td><em>Collection of distinct objects</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Slip">Slip</a></td> <td>A kind of List that automatically flattens into an outer container</td> </tr> <tr> <td>class</td> <td><a href="/type/Stash">Stash</a></td> <td>Table for &quot;our&quot;-scoped symbols</td> </tr> <tr> <td>class</td> <td><a href="/type/Uni">Uni</a></td> <td>A string of Unicode codepoints</td> </tr> <tr> <td>class</td> <td><a href="/type/utf8">utf8</a></td> <td>Mutable uint8 buffer for utf8 binary data</td> </tr>
+</tbody>
+</table>
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:24:13Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>

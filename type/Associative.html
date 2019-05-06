@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>role Associative</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
+                <a class="menu-item" href="/type-basic.html">
+                    Basic
+                </a>
+             
+                <a class="menu-item" href="/type-composite.html">
+                    Composite
+                </a>
+             
+                <a class="menu-item" href="/type-domain-specific.html">
+                    Domain-specific
+                </a>
+             
+                <a class="menu-item" href="/type-exceptions.html">
+                    Exceptions
+                </a>
+            </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_Type_Associative">
+
+      <div align="right">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Associative.pod6'">
+        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pencil" fill="#000000">
+            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+
+        </button>
+      </div>
+
+    <h1 class='title'>role Associative</h1>
+    <p class='subtitle'>Object that supports looking up values by key</p>
+    <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+                                <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_of">method of</a></td></tr>
+                <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_keyof">method keyof</a></td></tr>
+         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Methods_that_should_be_provided">Methods that should be provided</a></td></tr>
+  <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#method_AT-KEY">method AT-KEY</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#method_EXISTS-KEY">method EXISTS-KEY</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#method_STORE">method STORE</a></td></tr>
+             <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#See_also">See also</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+ 
+</table>
+</nav>
+
+    <div class="pod-body">
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Associative</span></span></span><span>[::</span><span class="routine name perl6fe"><span>TValue</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mu</span></span><span>,&nbsp;::</span><span class="routine name perl6fe"><span>TKey</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Any</span></span><span>)]&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>A common role for types that support name-based lookup through <a href="/language/operators#postcircumfix_%7B_%7D">postcircumfix:&lt;{ }&gt;</a>, for example <a href="/type/Hash">Hash</a> and <a href="/type/Map">Map</a>. It is used for type checks in operators that expect to find specific methods to call. See <a href="/language/subscripts#Methods_to_implement_for_associative_subscripting">Subscripts</a> for details.</p>
+<p>The <code>%</code> sigil restricts variables to objects that do <code>Associative</code>, so you will have to mix in that role if you want to use it for your classes.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Whatever</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>whatever</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Whatever</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Type&nbsp;check&nbsp;failed&nbsp;in&nbsp;binding;&nbsp;expected&nbsp;Associative&nbsp;but&nbsp;got&nbsp;Whatever</span><span>&nbsp;</span></span></span></div></pre><p>Please note that we are using binding <code>:=</code> here, since by default <code>%</code> assignments expect a <code>Hash</code> in the right-hand side. However, with the Associative role:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Whatever</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Associative</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>whatever</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Whatever</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div></pre><p>will be syntactically correct.</p>
+<h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
+<h2 id="method_of"><a class="u" href="#___top" title="go to top of document">method of</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p><code>Associative</code> is actually a <a href="/language/objects#Parameterized_Roles">parameterized role</a> which can use different classes for keys and values. As seen at the top of the document, by default it coerces to <code>Str</code> for the key and uses a very generic <code>Mu</code> for value.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;OUTPUT:&nbsp;«(Mu)␤»</span><span>&nbsp;</span></span></span></div></pre><p>The value is the first parameter you use when instantiating <code>Associative</code> with particular classes:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>DateHash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Hash</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Associative</span></span><span>[</span><span class="support type perl6fe"><span>Cool</span></span><span>,</span><span class="support type perl6fe"><span>DateTime</span></span><span>]&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>date-hash</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DateHash</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>date-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(Cool)␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_keyof"><a class="u" href="#___top" title="go to top of document">method keyof</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the parameterized key used for the Associative role, which is <code>Any</code> coerced to <code>Str</code> by default. This is the class used as second parameter when you use the parameterized version of Associative.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>keyof</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(Str(Any))␤»</span><span>&nbsp;</span></span></span></div></pre><h1 id="Methods_that_should_be_provided"><a class="u" href="#___top" title="go to top of document">Methods that should be provided</a></h1>
+<p>You need to provide these methods if you want your class to implement the Associative role.</p>
+<h2 id="method_AT-KEY"><a class="u" href="#___top" title="go to top of document">method AT-KEY</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-KEY</span></span><span>(\</span><span class="routine name perl6fe"><span>key</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given key.</p>
+<h2 id="method_EXISTS-KEY"><a class="u" href="#___top" title="go to top of document">method EXISTS-KEY</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-KEY</span></span><span>(\</span><span class="routine name perl6fe"><span>key</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given key actually has a value.</p>
+<h2 id="method_STORE"><a class="u" href="#___top" title="go to top of document">method STORE</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>STORE</span></span><span>(\</span><span class="routine name perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>initialize</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>b&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>666</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Associative</code> role.</p>
+<p>Should accept the values to (re-)initialize the object with, which either could consist of <code>Pair</code>s, or separate key/value pairs. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
+<h1 id="See_also"><a class="u" href="#___top" title="go to top of document">See also</a></h1>
+<p>See <a href="/language/subscripts#Methods_to_implement_for_associative_subscripting">Methods to implement for positional subscripting</a> for information about additional methods that can be implemented for the <code>Associative</code> role.</p>
+<h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for
+    <code>Associative</code></figcaption>
+  <svg width="778pt" height="476pt"
+ viewBox="0.00 0.00 778.49 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 472)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-472 774.493,-472 774.493,4 -4,4"/>
+<!-- Associative -->
+<g id="node1" class="node"><title>Associative</title>
+<g id="a_node1"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="715.247" cy="-450" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="715.247" y="-446.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+</a>
+</g>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="336.247" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="336.247" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="336.247" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="336.247" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M336.247,-324.303C336.247,-332.017 336.247,-341.288 336.247,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="332.748,-349.896 336.247,-359.896 339.748,-349.896 332.748,-349.896"/>
+</g>
+<!-- Cool -->
+<g id="node4" class="node"><title>Cool</title>
+<g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="365.247" cy="-234" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="365.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+</a>
+</g>
+</g>
+<!-- Cool&#45;&gt;Any -->
+<g id="edge2" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M358.375,-251.589C354.98,-259.784 350.805,-269.86 347,-279.045"/>
+<polygon fill="#000000" stroke="#000000" points="343.665,-277.952 343.071,-288.53 350.132,-280.631 343.665,-277.952"/>
+</g>
+<!-- Iterable -->
+<g id="node5" class="node"><title>Iterable</title>
+<g id="a_node5"><a xlink:href="/type/Iterable" xlink:title="Iterable">
+<ellipse fill="none" stroke="#6666ff" cx="630.247" cy="-234" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="630.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+</a>
+</g>
+</g>
+<!-- Map -->
+<g id="node6" class="node"><title>Map</title>
+<g id="a_node6"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="630.247" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="630.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
+</a>
+</g>
+</g>
+<!-- Map&#45;&gt;Associative -->
+<g id="edge15" class="edge"><title>Map&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M653.007,-172.969C688.057,-188.322 751.247,-216 751.247,-216 751.247,-216 751.247,-252 751.247,-252 751.247,-252 729.247,-396 729.247,-396 729.247,-396 725.818,-408.983 722.354,-422.097"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="718.924,-421.376 719.754,-431.939 725.692,-423.164 718.924,-421.376"/>
+</g>
+<!-- Map&#45;&gt;Cool -->
+<g id="edge3" class="edge"><title>Map&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M603.763,-169.184C543.883,-183.164 403.247,-216 403.247,-216 403.247,-216 400.816,-217.088 397.184,-218.712"/>
+<polygon fill="#000000" stroke="#000000" points="395.49,-215.636 387.791,-222.915 398.349,-222.026 395.49,-215.636"/>
+</g>
+<!-- Map&#45;&gt;Iterable -->
+<g id="edge14" class="edge"><title>Map&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M630.247,-180.303C630.247,-188.017 630.247,-197.288 630.247,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="626.748,-205.896 630.247,-215.896 633.748,-205.896 626.748,-205.896"/>
+</g>
+<!-- QuantHash -->
+<g id="node7" class="node"><title>QuantHash</title>
+<g id="a_node7"><a xlink:href="/type/QuantHash" xlink:title="QuantHash">
+<ellipse fill="none" stroke="#6666ff" cx="501.247" cy="-378" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="501.247" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">QuantHash</text>
+</a>
+</g>
+</g>
+<!-- QuantHash&#45;&gt;Associative -->
+<g id="edge16" class="edge"><title>QuantHash&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M539.014,-391.353C574.964,-403.113 629.187,-420.85 667.988,-433.541"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="666.907,-436.87 677.499,-436.653 669.083,-430.217 666.907,-436.87"/>
+</g>
+<!-- Pair -->
+<g id="node8" class="node"><title>Pair</title>
+<g id="a_node8"><a xlink:href="/type/Pair" xlink:title="Pair">
+<ellipse fill="none" stroke="#000000" cx="715.247" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="715.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pair</text>
+</a>
+</g>
+</g>
+<!-- Pair&#45;&gt;Associative -->
+<g id="edge17" class="edge"><title>Pair&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M715.247,-252.151C715.247,-289.168 715.247,-376.819 715.247,-421.614"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="711.748,-421.768 715.247,-431.768 718.748,-421.768 711.748,-421.768"/>
+</g>
+<!-- Pair&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>Pair&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M693.89,-245.085C686.138,-248.746 679.247,-252 679.247,-252 679.247,-252 460.5,-285.801 372.384,-299.416"/>
+<polygon fill="#000000" stroke="#000000" points="371.658,-295.987 362.31,-300.973 372.727,-302.905 371.658,-295.987"/>
+</g>
+<!-- PseudoStash -->
+<g id="node9" class="node"><title>PseudoStash</title>
+<g id="a_node9"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
+<ellipse fill="none" stroke="#000000" cx="574.247" cy="-90" rx="63.0888" ry="18"/>
+<text text-anchor="middle" x="574.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+</a>
+</g>
+</g>
+<!-- PseudoStash&#45;&gt;Map -->
+<g id="edge5" class="edge"><title>PseudoStash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M587.803,-107.945C594.914,-116.833 603.735,-127.86 611.491,-137.554"/>
+<polygon fill="#000000" stroke="#000000" points="608.982,-140.021 617.962,-145.644 614.448,-135.648 608.982,-140.021"/>
+</g>
+<!-- Hash -->
+<g id="node10" class="node"><title>Hash</title>
+<g id="a_node10"><a xlink:href="/type/Hash" xlink:title="Hash">
+<ellipse fill="none" stroke="#000000" cx="686.247" cy="-90" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="686.247" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+</a>
+</g>
+</g>
+<!-- Hash&#45;&gt;Map -->
+<g id="edge6" class="edge"><title>Hash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M673.819,-106.535C666.497,-115.689 657.091,-127.446 648.893,-137.693"/>
+<polygon fill="#000000" stroke="#000000" points="646.155,-135.513 642.641,-145.508 651.621,-139.886 646.155,-135.513"/>
+</g>
+<!-- Setty -->
+<g id="node11" class="node"><title>Setty</title>
+<g id="a_node11"><a xlink:href="/type/Setty" xlink:title="Setty">
+<ellipse fill="none" stroke="#6666ff" cx="501.247" cy="-306" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="501.247" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Setty</text>
+</a>
+</g>
+</g>
+<!-- Setty&#45;&gt;QuantHash -->
+<g id="edge18" class="edge"><title>Setty&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M501.247,-324.303C501.247,-332.017 501.247,-341.288 501.247,-349.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="497.748,-349.896 501.247,-359.896 504.748,-349.896 497.748,-349.896"/>
+</g>
+<!-- Baggy -->
+<g id="node12" class="node"><title>Baggy</title>
+<g id="a_node12"><a xlink:href="/type/Baggy" xlink:title="Baggy">
+<ellipse fill="none" stroke="#6666ff" cx="169.247" cy="-306" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="169.247" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Baggy</text>
+</a>
+</g>
+</g>
+<!-- Baggy&#45;&gt;QuantHash -->
+<g id="edge19" class="edge"><title>Baggy&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M201.685,-313.839C258.371,-325.791 376.054,-350.604 445.856,-365.321"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="445.288,-368.778 455.795,-367.417 446.732,-361.929 445.288,-368.778"/>
+</g>
+<!-- Stash -->
+<g id="node13" class="node"><title>Stash</title>
+<g id="a_node13"><a xlink:href="/type/Stash" xlink:title="Stash">
+<ellipse fill="none" stroke="#000000" cx="686.247" cy="-18" rx="33.2948" ry="18"/>
+<text text-anchor="middle" x="686.247" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
+</a>
+</g>
+</g>
+<!-- Stash&#45;&gt;Hash -->
+<g id="edge7" class="edge"><title>Stash&#45;&gt;Hash</title>
+<path fill="none" stroke="#000000" d="M686.247,-36.3034C686.247,-44.0173 686.247,-53.2875 686.247,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="682.748,-61.8956 686.247,-71.8957 689.748,-61.8957 682.748,-61.8956"/>
+</g>
+<!-- Set -->
+<g id="node14" class="node"><title>Set</title>
+<g id="a_node14"><a xlink:href="/type/Set" xlink:title="Set">
+<ellipse fill="none" stroke="#000000" cx="545.247" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="545.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Set</text>
+</a>
+</g>
+</g>
+<!-- Set&#45;&gt;Any -->
+<g id="edge8" class="edge"><title>Set&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M523.89,-245.085C516.138,-248.746 509.247,-252 509.247,-252 509.247,-252 420.489,-279.192 370.124,-294.622"/>
+<polygon fill="#000000" stroke="#000000" points="368.838,-291.355 360.302,-297.631 370.889,-298.048 368.838,-291.355"/>
+</g>
+<!-- Set&#45;&gt;Setty -->
+<g id="edge20" class="edge"><title>Set&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M535.263,-250.884C529.828,-259.531 522.98,-270.425 516.857,-280.167"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="513.856,-278.364 511.498,-288.693 519.783,-282.089 513.856,-278.364"/>
+</g>
+<!-- SetHash -->
+<g id="node15" class="node"><title>SetHash</title>
+<g id="a_node15"><a xlink:href="/type/SetHash" xlink:title="SetHash">
+<ellipse fill="none" stroke="#000000" cx="456.247" cy="-234" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="456.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">SetHash</text>
+</a>
+</g>
+</g>
+<!-- SetHash&#45;&gt;Any -->
+<g id="edge9" class="edge"><title>SetHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M431.964,-249.166C412.603,-260.459 385.441,-276.304 364.995,-288.23"/>
+<polygon fill="#000000" stroke="#000000" points="363,-285.342 356.126,-293.404 366.527,-291.389 363,-285.342"/>
+</g>
+<!-- SetHash&#45;&gt;Setty -->
+<g id="edge21" class="edge"><title>SetHash&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M466.912,-251.589C472.427,-260.168 479.268,-270.809 485.388,-280.33"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="482.618,-282.493 490.969,-289.012 488.506,-278.707 482.618,-282.493"/>
+</g>
+<!-- Bag -->
+<g id="node16" class="node"><title>Bag</title>
+<g id="a_node16"><a xlink:href="/type/Bag" xlink:title="Bag">
+<ellipse fill="none" stroke="#000000" cx="215.247" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="215.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Bag</text>
+</a>
+</g>
+</g>
+<!-- Bag&#45;&gt;Any -->
+<g id="edge10" class="edge"><title>Bag&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M234.957,-246.403C254.733,-257.843 285.393,-275.58 307.803,-288.545"/>
+<polygon fill="#000000" stroke="#000000" points="306.137,-291.624 316.546,-293.602 309.643,-285.565 306.137,-291.624"/>
+</g>
+<!-- Bag&#45;&gt;Baggy -->
+<g id="edge22" class="edge"><title>Bag&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M204.809,-250.884C199.127,-259.531 191.968,-270.425 185.566,-280.167"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="182.53,-278.414 179.963,-288.693 188.38,-282.258 182.53,-278.414"/>
+</g>
+<!-- Mixy -->
+<g id="node17" class="node"><title>Mixy</title>
+<g id="a_node17"><a xlink:href="/type/Mixy" xlink:title="Mixy">
+<ellipse fill="none" stroke="#6666ff" cx="29.2474" cy="-234" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="29.2474" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Mixy</text>
+</a>
+</g>
+</g>
+<!-- Mixy&#45;&gt;Baggy -->
+<g id="edge23" class="edge"><title>Mixy&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M51.4308,-246.092C74.0916,-257.422 109.559,-275.156 135.663,-288.208"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="134.305,-291.442 144.815,-292.784 137.436,-285.181 134.305,-291.442"/>
+</g>
+<!-- BagHash -->
+<g id="node18" class="node"><title>BagHash</title>
+<g id="a_node18"><a xlink:href="/type/BagHash" xlink:title="BagHash">
+<ellipse fill="none" stroke="#000000" cx="123.247" cy="-234" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="123.247" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">BagHash</text>
+</a>
+</g>
+</g>
+<!-- BagHash&#45;&gt;Any -->
+<g id="edge11" class="edge"><title>BagHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M157.944,-246.403C197.959,-259.553 263.289,-281.023 302.778,-294.001"/>
+<polygon fill="#000000" stroke="#000000" points="301.877,-297.389 312.47,-297.186 304.062,-290.739 301.877,-297.389"/>
+</g>
+<!-- BagHash&#45;&gt;Baggy -->
+<g id="edge24" class="edge"><title>BagHash&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M134.149,-251.589C139.706,-260.045 146.58,-270.506 152.767,-279.922"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="150.007,-282.095 158.424,-288.53 155.857,-278.251 150.007,-282.095"/>
+</g>
+<!-- Mix -->
+<g id="node19" class="node"><title>Mix</title>
+<g id="a_node19"><a xlink:href="/type/Mix" xlink:title="Mix">
+<ellipse fill="none" stroke="#000000" cx="260.247" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="260.247" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mix</text>
+</a>
+</g>
+</g>
+<!-- Mix&#45;&gt;Any -->
+<g id="edge12" class="edge"><title>Mix&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M268.966,-179.289C282.137,-203.899 307.217,-250.759 322.757,-279.795"/>
+<polygon fill="#000000" stroke="#000000" points="319.826,-281.736 327.631,-288.901 325.998,-278.433 319.826,-281.736"/>
+</g>
+<!-- Mix&#45;&gt;Mixy -->
+<g id="edge25" class="edge"><title>Mix&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M235.804,-169.712C183.87,-183.974 67.2474,-216 67.2474,-216 67.2474,-216 64.9025,-217.049 61.3776,-218.626"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="59.9277,-215.44 52.2288,-222.719 62.7863,-221.83 59.9277,-215.44"/>
+</g>
+<!-- MixHash -->
+<g id="node20" class="node"><title>MixHash</title>
+<g id="a_node20"><a xlink:href="/type/MixHash" xlink:title="MixHash">
+<ellipse fill="none" stroke="#000000" cx="76.2474" cy="-162" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="76.2474" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
+</a>
+</g>
+</g>
+<!-- MixHash&#45;&gt;Any -->
+<g id="edge13" class="edge"><title>MixHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M111.241,-173.598C162.31,-189.065 251.247,-216 251.247,-216 251.247,-216 285.247,-252 285.247,-252 285.247,-252 301.175,-268.552 315.228,-283.156"/>
+<polygon fill="#000000" stroke="#000000" points="312.856,-285.739 322.311,-290.518 317.9,-280.885 312.856,-285.739"/>
+</g>
+<!-- MixHash&#45;&gt;Mixy -->
+<g id="edge26" class="edge"><title>MixHash&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M65.1091,-179.589C59.2897,-188.256 52.0566,-199.029 45.6138,-208.625"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="42.6509,-206.759 39.9823,-217.012 48.4624,-210.661 42.6509,-206.759"/>
+</g>
+</g>
+</svg>
+
+  <p class="fallback">
+    <a rel="alternate"
+      href="/images/type-graph-Associative.svg"
+      type="image/svg+xml">Expand above chart</a>
+  </p>
+</figure>
+
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Associative.pod6'>Type/Associative.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Associative.pod6'>edit this page</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:19:15Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>

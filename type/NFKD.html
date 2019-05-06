@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>class NFKD</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
+                <a class="menu-item" href="/type-basic.html">
+                    Basic
+                </a>
+             
+                <a class="menu-item" href="/type-composite.html">
+                    Composite
+                </a>
+             
+                <a class="menu-item" href="/type-domain-specific.html">
+                    Domain-specific
+                </a>
+             
+                <a class="menu-item" href="/type-exceptions.html">
+                    Exceptions
+                </a>
+            </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_Type_NFKD">
+
+      <div align="right">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/NFKD.pod6'">
+        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pencil" fill="#000000">
+            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+
+        </button>
+      </div>
+
+    <h1 class='title'>class NFKD</h1>
+    <p class='subtitle'>Codepoint string in Normal Form KD (compatibility decomposed)</p>
+    <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+      <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Routines_supplied_by_class_Uni">Routines supplied by class Uni</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Uni)_method_new">(Uni) method new</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Uni)_method_NFC">(Uni) method NFC</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Uni)_method_NFD">(Uni) method NFD</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Uni)_method_NFKC">(Uni) method NFKC</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Uni)_method_NFKD">(Uni) method NFKD</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Uni)_method_codes">(Uni) method codes</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Uni)_method_elems">(Uni) method elems</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Positional">Routines supplied by role Positional</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Positional)_method_of">(Positional) method of</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Positional)_method_elems">(Positional) method elems</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Positional)_method_AT-POS">(Positional) method AT-POS</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.11</td><td class="toc-text"><a href="#(Positional)_method_EXISTS-POS">(Positional) method EXISTS-POS</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.12</td><td class="toc-text"><a href="#(Positional)_method_STORE">(Positional) method STORE</a></td></tr>
+          
+</table>
+</nav>
+
+    <div class="pod-body">
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>NFKD</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Uni</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>A Codepoint string in Unicode Normalization Form KD. It is created by Compatibility Decomposition. For more information on what this means, see <a href="https://www.unicode.org/reports/tr15/">Unicode TR15</a>.</p>
+<h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for
+    <code>NFKD</code></figcaption>
+  <svg width="272pt" height="260pt"
+ viewBox="0.00 0.00 272.35 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 268.347,-256 268.347,4 -4,4"/>
+<!-- NFKD -->
+<g id="node1" class="node"><title>NFKD</title>
+<g id="a_node1"><a xlink:href="/type/NFKD" xlink:title="NFKD">
+<ellipse fill="none" stroke="#000000" cx="121" cy="-18" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="121" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">NFKD</text>
+</a>
+</g>
+</g>
+<!-- Uni -->
+<g id="node6" class="node"><title>Uni</title>
+<g id="a_node6"><a xlink:href="/type/Uni" xlink:title="Uni">
+<ellipse fill="none" stroke="#000000" cx="121" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="121" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Uni</text>
+</a>
+</g>
+</g>
+<!-- NFKD&#45;&gt;Uni -->
+<g id="edge1" class="edge"><title>NFKD&#45;&gt;Uni</title>
+<path fill="none" stroke="#000000" d="M121,-36.3034C121,-44.0173 121,-53.2875 121,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="117.5,-61.8956 121,-71.8957 124.5,-61.8957 117.5,-61.8956"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M27,-180.303C27,-188.017 27,-197.288 27,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="23.5001,-205.896 27,-215.896 30.5001,-205.896 23.5001,-205.896"/>
+</g>
+<!-- Positional -->
+<g id="node4" class="node"><title>Positional</title>
+<g id="a_node4"><a xlink:href="/type/Positional" xlink:title="Positional">
+<ellipse fill="none" stroke="#6666ff" cx="121" cy="-162" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="121" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+</a>
+</g>
+</g>
+<!-- Stringy -->
+<g id="node5" class="node"><title>Stringy</title>
+<g id="a_node5"><a xlink:href="/type/Stringy" xlink:title="Stringy">
+<ellipse fill="none" stroke="#6666ff" cx="226" cy="-162" rx="38.1938" ry="18"/>
+<text text-anchor="middle" x="226" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Stringy</text>
+</a>
+</g>
+</g>
+<!-- Uni&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Uni&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M103.319,-104.166C89.0498,-114.793 68.7768,-129.89 52.7113,-141.853"/>
+<polygon fill="#000000" stroke="#000000" points="50.2138,-139.349 44.2838,-148.129 54.3947,-144.964 50.2138,-139.349"/>
+</g>
+<!-- Uni&#45;&gt;Positional -->
+<g id="edge4" class="edge"><title>Uni&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M121,-108.303C121,-116.017 121,-125.288 121,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="117.5,-133.896 121,-143.896 124.5,-133.896 117.5,-133.896"/>
+</g>
+<!-- Uni&#45;&gt;Stringy -->
+<g id="edge5" class="edge"><title>Uni&#45;&gt;Stringy</title>
+<path fill="none" stroke="#6666ff" d="M139.772,-103.515C155.487,-113.991 178.193,-129.129 196.361,-141.24"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="194.602,-144.275 204.864,-146.909 198.485,-138.45 194.602,-144.275"/>
+</g>
+</g>
+</svg>
+
+  <p class="fallback">
+    <a rel="alternate"
+      href="/images/type-graph-NFKD.svg"
+      type="image/svg+xml">Expand above chart</a>
+  </p>
+</figure>
+<h1 id="Routines_supplied_by_class_Uni"><a class="u" href="#___top" title="go to top of document">Routines supplied by class Uni</a></h1>
+<p>NFKD inherits from class <a href="/type/Uni">Uni</a>, which provides the following routines:</p>
+<h2 id="(Uni)_method_new"><a href="/routine/new#class_Uni">(Uni) method new</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>codes</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a new <code>Uni</code> instance from the given codepoint numbers.</p>
+<h2 id="(Uni)_method_NFC"><a href="/routine/NFC#class_Uni">(Uni) method NFC</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFC</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFC</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFC (Normal Form Composed)-converted version of the invocant.</p>
+<h2 id="(Uni)_method_NFD"><a href="/routine/NFD#class_Uni">(Uni) method NFD</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFD</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFD</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFD (Normal Form Decomposed)-converted version of the invocant.</p>
+<h2 id="(Uni)_method_NFKC"><a href="/routine/NFKC#class_Uni">(Uni) method NFKC</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFKC</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFKC</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKC (Normal Form Compatibility Composed)-converted version of the invocant.</p>
+<h2 id="(Uni)_method_NFKD"><a href="/routine/NFKD#class_Uni">(Uni) method NFKD</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>NFKD</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NFKD</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a NFKD (Normal Form Compatibility Decomposed)-converted version of the invocant.</p>
+<h2 id="(Uni)_method_codes"><a href="/routine/codes#class_Uni">(Uni) method codes</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>codes</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
+<h2 id="(Uni)_method_elems"><a href="/routine/elems#class_Uni">(Uni) method elems</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>(</span><span class="routine name perl6fe"><span>Uni</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the number of codepoints in the invocant.</p>
+<h1 id="Routines_supplied_by_role_Positional"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Positional</a></h1>
+<p>NFKD inherits from class <a href="/type/Uni">Uni</a>, which does role <a href="/type/Positional">Positional</a>, which provides the following routines:</p>
+<h2 id="(Positional)_method_of"><a href="/routine/of#role_Positional">(Positional) method of</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type constraint for elements of the positional container. Defaults to <a href="/type/Mu">Mu</a>.</p>
+<h2 id="(Positional)_method_elems"><a href="/routine/elems#role_Positional">(Positional) method elems</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>elems</span></span><span>()</span></span></div></pre><p>Should return the number of available elements in the instantiated object.</p>
+<h2 id="(Positional)_method_AT-POS"><a href="/routine/AT-POS#role_Positional">(Positional) method AT-POS</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given position.</p>
+<h2 id="(Positional)_method_EXISTS-POS"><a href="/routine/EXISTS-POS#role_Positional">(Positional) method EXISTS-POS</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
+<h2 id="(Positional)_method_STORE"><a href="/routine/STORE#role_Positional">(Positional) method STORE</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>STORE</span></span><span>(\</span><span class="routine name perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>initialize</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>2</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Positional</code> role.</p>
+<p>Should accept the values to (re-)initialize the object with. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
+
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/NFKD.pod6'>Type/NFKD.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/NFKD.pod6'>edit this page</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:20:29Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>

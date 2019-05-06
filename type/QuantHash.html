@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>role QuantHash</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
+                <a class="menu-item" href="/type-basic.html">
+                    Basic
+                </a>
+             
+                <a class="menu-item" href="/type-composite.html">
+                    Composite
+                </a>
+             
+                <a class="menu-item" href="/type-domain-specific.html">
+                    Domain-specific
+                </a>
+             
+                <a class="menu-item" href="/type-exceptions.html">
+                    Exceptions
+                </a>
+            </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_Type_QuantHash">
+
+      <div align="right">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/QuantHash.pod6'">
+        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pencil" fill="#000000">
+            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+
+        </button>
+      </div>
+
+    <h1 class='title'>role QuantHash</h1>
+    <p class='subtitle'>Object hashes with limitation on type of value</p>
+    <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+                <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_hash">method hash</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_Hash">method Hash</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_of">method of</a></td></tr>
+                 <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_keyof">method keyof</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_Setty">method Setty</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_Baggy">method Baggy</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_Mixy">method Mixy</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Associative">Routines supplied by role Associative</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Associative)_method_of">(Associative) method of</a></td></tr>
+                <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Associative)_method_keyof">(Associative) method keyof</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Associative)_method_AT-KEY">(Associative) method AT-KEY</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Associative)_method_EXISTS-KEY">(Associative) method EXISTS-KEY</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Associative)_method_STORE">(Associative) method STORE</a></td></tr>
+            
+</table>
+</nav>
+
+    <div class="pod-body">
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>QuantHash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Associative</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The <code>QuantHash</code> role provides the basic functionality shared by the <a href="/type/Setty">Setty</a>, <a href="/type/Baggy">Baggy</a> and <a href="/type/Mixy">Mixy</a> roles. These provide object hashes of which the values are limited in some way.</p>
+<p><code>QuantHashes</code> are what <a href="/routine/set operators">/language/setbagmix</a> use internally.</p>
+<h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
+<h2 id="method_hash"><a class="u" href="#___top" title="go to top of document">method hash</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hash</span></span><span>()</span></span></div></pre><p>Coerces the <code>QuantHash</code> object to a <a href="/type/Hash">Hash</a> (by stringifying the objects for the keys) with the values of the hash limited to the same limitation as <code>QuantHash</code>, and returns that.</p>
+<h2 id="method_Hash"><a class="u" href="#___top" title="go to top of document">method Hash</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Hash</span></span><span>()</span></span></div></pre><p>Coerces the <code>QuantHash</code> object to a <a href="/type/Hash">Hash</a> (by stringifying the objects for the keys) without any limitations on the values, and returns that.</p>
+<h2 id="method_of"><a class="u" href="#___top" title="go to top of document">method of</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p>Returns the type of value a value of this <code>QuantHash</code> may have. This is typically <a href="/type/Bool">Bool</a> for <a href="/type/Setty">Setty</a>, <a href="/type/UInt">UInt</a> for <a href="/type/Baggy">Baggy</a> or <a href="/type/Real">Real</a> for <a href="/type/Mixy">Mixy</a> roles.</p>
+<h2 id="method_keyof"><a class="u" href="#___top" title="go to top of document">method keyof</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the type of value a key of this <code>QuantHash</code> may have. This is typically <a href="/type/Mu">Mu</a>.</p>
+<h2 id="method_Setty"><a class="u" href="#___top" title="go to top of document">method Setty</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Setty</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Setty</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerce the <code>QuantHash</code> object to the equivalent object that uses the <a href="/type/Setty">Setty</a> role.</p>
+<h2 id="method_Baggy"><a class="u" href="#___top" title="go to top of document">method Baggy</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Baggy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Baggy</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerce the <code>QuantHash</code> object to the equivalent object that uses the <a href="/type/Baggy">Baggy</a> role.</p>
+<h2 id="method_Mixy"><a class="u" href="#___top" title="go to top of document">method Mixy</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Mixy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mixy</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Coerce the <code>QuantHash</code> object to the equivalent object that uses the <a href="/type/Mixy">Mixy</a> role.</p>
+<h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for
+    <code>QuantHash</code></figcaption>
+  <svg width="504pt" height="332pt"
+ viewBox="0.00 0.00 504.25 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 500.247,-328 500.247,4 -4,4"/>
+<!-- QuantHash -->
+<g id="node1" class="node"><title>QuantHash</title>
+<g id="a_node1"><a xlink:href="/type/QuantHash" xlink:title="QuantHash">
+<ellipse fill="none" stroke="#6666ff" cx="120" cy="-234" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="120" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">QuantHash</text>
+</a>
+</g>
+</g>
+<!-- Associative -->
+<g id="node2" class="node"><title>Associative</title>
+<g id="a_node2"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="120" cy="-306" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="120" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+</a>
+</g>
+</g>
+<!-- QuantHash&#45;&gt;Associative -->
+<g id="edge8" class="edge"><title>QuantHash&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M120,-252.303C120,-260.017 120,-269.288 120,-277.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="116.5,-277.896 120,-287.896 123.5,-277.896 116.5,-277.896"/>
+</g>
+<!-- Setty -->
+<g id="node3" class="node"><title>Setty</title>
+<g id="a_node3"><a xlink:href="/type/Setty" xlink:title="Setty">
+<ellipse fill="none" stroke="#6666ff" cx="116" cy="-162" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="116" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Setty</text>
+</a>
+</g>
+</g>
+<!-- Setty&#45;&gt;QuantHash -->
+<g id="edge9" class="edge"><title>Setty&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M116.989,-180.303C117.43,-188.017 117.959,-197.288 118.451,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="114.958,-206.112 119.023,-215.896 121.946,-205.712 114.958,-206.112"/>
+</g>
+<!-- Baggy -->
+<g id="node4" class="node"><title>Baggy</title>
+<g id="a_node4"><a xlink:href="/type/Baggy" xlink:title="Baggy">
+<ellipse fill="none" stroke="#6666ff" cx="347" cy="-162" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="347" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Baggy</text>
+</a>
+</g>
+</g>
+<!-- Baggy&#45;&gt;QuantHash -->
+<g id="edge10" class="edge"><title>Baggy&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M317.324,-172.151C279.48,-183.821 213.547,-204.153 168.39,-218.078"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="167.33,-214.742 158.805,-221.034 169.392,-221.431 167.33,-214.742"/>
+</g>
+<!-- Mu -->
+<g id="node5" class="node"><title>Mu</title>
+<g id="a_node5"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="223" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="223" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node6" class="node"><title>Any</title>
+<g id="a_node6"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="223" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="223" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M223,-180.303C223,-188.017 223,-197.288 223,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="219.5,-205.896 223,-215.896 226.5,-205.896 219.5,-205.896"/>
+</g>
+<!-- Set -->
+<g id="node7" class="node"><title>Set</title>
+<g id="a_node7"><a xlink:href="/type/Set" xlink:title="Set">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Set</text>
+</a>
+</g>
+</g>
+<!-- Set&#45;&gt;Setty -->
+<g id="edge11" class="edge"><title>Set&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M43.7402,-104.166C56.9109,-114.525 75.4832,-129.133 90.5009,-140.945"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="88.3976,-143.743 98.4214,-147.174 92.7251,-138.241 88.3976,-143.743"/>
+</g>
+<!-- Set&#45;&gt;Any -->
+<g id="edge2" class="edge"><title>Set&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M48.3574,-101.085C56.1094,-104.746 63,-108 63,-108 63,-108 142.752,-134.418 189.644,-149.951"/>
+<polygon fill="#000000" stroke="#000000" points="188.798,-153.358 199.391,-153.18 190.999,-146.713 188.798,-153.358"/>
+</g>
+<!-- SetHash -->
+<g id="node8" class="node"><title>SetHash</title>
+<g id="a_node8"><a xlink:href="/type/SetHash" xlink:title="SetHash">
+<ellipse fill="none" stroke="#000000" cx="116" cy="-90" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="116" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">SetHash</text>
+</a>
+</g>
+</g>
+<!-- SetHash&#45;&gt;Setty -->
+<g id="edge12" class="edge"><title>SetHash&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M116,-108.303C116,-116.017 116,-125.288 116,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="112.5,-133.896 116,-143.896 119.5,-133.896 112.5,-133.896"/>
+</g>
+<!-- SetHash&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>SetHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M138.431,-105.674C155.025,-116.531 177.723,-131.38 195.426,-142.961"/>
+<polygon fill="#000000" stroke="#000000" points="193.885,-146.135 204.17,-148.681 197.717,-140.278 193.885,-146.135"/>
+</g>
+<!-- Bag -->
+<g id="node9" class="node"><title>Bag</title>
+<g id="a_node9"><a xlink:href="/type/Bag" xlink:title="Bag">
+<ellipse fill="none" stroke="#000000" cx="393" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="393" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Bag</text>
+</a>
+</g>
+</g>
+<!-- Bag&#45;&gt;Baggy -->
+<g id="edge13" class="edge"><title>Bag&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M382.562,-106.884C376.879,-115.531 369.721,-126.425 363.319,-136.167"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="360.283,-134.414 357.716,-144.693 366.133,-138.258 360.283,-134.414"/>
+</g>
+<!-- Bag&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>Bag&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M371.643,-101.085C363.891,-104.746 357,-108 357,-108 357,-108 294.928,-132.551 255.278,-148.234"/>
+<polygon fill="#000000" stroke="#000000" points="253.743,-145.077 245.731,-152.009 256.318,-151.586 253.743,-145.077"/>
+</g>
+<!-- Mixy -->
+<g id="node10" class="node"><title>Mixy</title>
+<g id="a_node10"><a xlink:href="/type/Mixy" xlink:title="Mixy">
+<ellipse fill="none" stroke="#6666ff" cx="467" cy="-90" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="467" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Mixy</text>
+</a>
+</g>
+</g>
+<!-- Mixy&#45;&gt;Baggy -->
+<g id="edge14" class="edge"><title>Mixy&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M446.371,-103.033C427.608,-113.979 399.648,-130.289 378.162,-142.822"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="376.269,-139.874 369.395,-147.936 379.797,-145.921 376.269,-139.874"/>
+</g>
+<!-- BagHash -->
+<g id="node11" class="node"><title>BagHash</title>
+<g id="a_node11"><a xlink:href="/type/BagHash" xlink:title="BagHash">
+<ellipse fill="none" stroke="#000000" cx="301" cy="-90" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="301" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">BagHash</text>
+</a>
+</g>
+</g>
+<!-- BagHash&#45;&gt;Baggy -->
+<g id="edge15" class="edge"><title>BagHash&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M311.901,-107.589C317.458,-116.045 324.332,-126.506 330.52,-135.922"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="327.76,-138.095 336.177,-144.53 333.61,-134.251 327.76,-138.095"/>
+</g>
+<!-- BagHash&#45;&gt;Any -->
+<g id="edge5" class="edge"><title>BagHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M283.301,-106.884C272.345,-116.716 258.153,-129.452 246.291,-140.098"/>
+<polygon fill="#000000" stroke="#000000" points="243.623,-137.789 238.518,-147.073 248.298,-142.999 243.623,-137.789"/>
+</g>
+<!-- Mix -->
+<g id="node12" class="node"><title>Mix</title>
+<g id="a_node12"><a xlink:href="/type/Mix" xlink:title="Mix">
+<ellipse fill="none" stroke="#000000" cx="419" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="419" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mix</text>
+</a>
+</g>
+</g>
+<!-- Mix&#45;&gt;Any -->
+<g id="edge6" class="edge"><title>Mix&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M394.806,-26.3694C346.996,-40.9324 245,-72 245,-72 245,-72 236.142,-107.833 229.668,-134.025"/>
+<polygon fill="#000000" stroke="#000000" points="226.244,-133.292 227.242,-143.84 233.039,-134.972 226.244,-133.292"/>
+</g>
+<!-- Mix&#45;&gt;Mixy -->
+<g id="edge16" class="edge"><title>Mix&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M429.892,-34.8841C435.968,-43.7445 443.66,-54.9627 450.464,-64.8848"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="447.609,-66.9108 456.151,-73.1788 453.382,-62.9521 447.609,-66.9108"/>
+</g>
+<!-- MixHash -->
+<g id="node13" class="node"><title>MixHash</title>
+<g id="a_node13"><a xlink:href="/type/MixHash" xlink:title="MixHash">
+<ellipse fill="none" stroke="#000000" cx="235" cy="-18" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="235" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
+</a>
+</g>
+</g>
+<!-- MixHash&#45;&gt;Any -->
+<g id="edge7" class="edge"><title>MixHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M227.723,-35.7695C220.984,-51.2969 212,-72 212,-72 212,-72 212,-108 212,-108 212,-108 214.695,-120.983 217.416,-134.097"/>
+<polygon fill="#000000" stroke="#000000" points="214,-134.859 219.459,-143.939 220.854,-133.436 214,-134.859"/>
+</g>
+<!-- MixHash&#45;&gt;Mixy -->
+<g id="edge17" class="edge"><title>MixHash&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M271.49,-28.9689C327.687,-44.3217 429,-72 429,-72 429,-72 431.345,-73.0491 434.87,-74.626"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="433.461,-77.83 444.019,-78.7189 436.32,-71.4403 433.461,-77.83"/>
+</g>
+</g>
+</svg>
+
+  <p class="fallback">
+    <a rel="alternate"
+      href="/images/type-graph-QuantHash.svg"
+      type="image/svg+xml">Expand above chart</a>
+  </p>
+</figure>
+<h1 id="Routines_supplied_by_role_Associative"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Associative</a></h1>
+<p>QuantHash does role <a href="/type/Associative">Associative</a>, which provides the following routines:</p>
+<h2 id="(Associative)_method_of"><a href="/routine/of#role_Associative">(Associative) method of</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>of</span></span><span>()</span></span></div></pre><p><code>Associative</code> is actually a <a href="/language/objects#Parameterized_Roles">parameterized role</a> which can use different classes for keys and values. As seen at the top of the document, by default it coerces to <code>Str</code> for the key and uses a very generic <code>Mu</code> for value.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;OUTPUT:&nbsp;«(Mu)␤»</span><span>&nbsp;</span></span></span></div></pre><p>The value is the first parameter you use when instantiating <code>Associative</code> with particular classes:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>DateHash</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Hash</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Associative</span></span><span>[</span><span class="support type perl6fe"><span>Cool</span></span><span>,</span><span class="support type perl6fe"><span>DateTime</span></span><span>]&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>date-hash</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DateHash</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>date-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(Cool)␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Associative)_method_keyof"><a href="/routine/keyof#role_Associative">(Associative) method keyof</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the parameterized key used for the Associative role, which is <code>Any</code> coerced to <code>Str</code> by default. This is the class used as second parameter when you use the parameterized version of Associative.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>keyof</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(Str(Any))␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Associative)_method_AT-KEY"><a href="/routine/AT-KEY#role_Associative">(Associative) method AT-KEY</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>AT-KEY</span></span><span>(\</span><span class="routine name perl6fe"><span>key</span></span><span>)</span></span></div></pre><p>Should return the value / container at the given key.</p>
+<h2 id="(Associative)_method_EXISTS-KEY"><a href="/routine/EXISTS-KEY#role_Associative">(Associative) method EXISTS-KEY</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-KEY</span></span><span>(\</span><span class="routine name perl6fe"><span>key</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given key actually has a value.</p>
+<h2 id="(Associative)_method_STORE"><a href="/routine/STORE#role_Associative">(Associative) method STORE</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>STORE</span></span><span>(\</span><span class="routine name perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>initialize</span></span></span><span>)</span></span></div></pre><p>This method should only be supplied if you want to support the:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Foo</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>b&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>666</span></span><span>;</span></span></div></pre><p>syntax for binding your implementation of the <code>Associative</code> role.</p>
+<p>Should accept the values to (re-)initialize the object with, which either could consist of <code>Pair</code>s, or separate key/value pairs. The optional named parameter will contain a <code>True</code> value when the method is called on the object for the first time. Should return the invocant.</p>
+
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/QuantHash.pod6'>Type/QuantHash.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/QuantHash.pod6'>edit this page</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:19:16Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>

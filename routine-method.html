@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Perl 6 Method Routines</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item "
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="/examples.html">
+                Examples
+            </a>
+         
+            <a class="menu-item "
+                href="/webchat.html">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
+                <a class="menu-item" href="/routine-sub.html">
+                    Sub
+                </a>
+             
+                <a class="menu-item" href="/routine-method.html">
+                    Method
+                </a>
+             
+                <a class="menu-item" href="/routine-term.html">
+                    Term
+                </a>
+             
+                <a class="menu-item" href="/routine-operator.html">
+                    Operator
+                </a>
+             
+                <a class="menu-item" href="/routine-trait.html">
+                    Trait
+                </a>
+             
+                <a class="menu-item" href="/routine-submethod.html">
+                    Submethod
+                </a>
+            </div>
+    </div>
+</div>
+<div id="content" class="pretty-box yellow content_fragment">
+
+
+    <h1 class='title'>Perl 6 Method Routines</h1>
+    
+    
+    <div class="pod-body no-toc">
+    <table class="pod-table">
+<tbody>
+<tr> <td>method</td> <td><a href="/routine/===">===</a></td> <td><p>(From <a href="/type/Enumeration">Enumeration</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ACCEPTS">ACCEPTS</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Code">Code</a>, <a href="/type/Numeric">Numeric</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Str">Str</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Range">Range</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Regex">Regex</a>, <a href="/type/Setty">Setty</a>, <a href="/type/Signature">Signature</a>, <a href="/type/Whatever">Whatever</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ASSIGN-KEY">ASSIGN-KEY</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ASSIGN-POS">ASSIGN-POS</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/AT-KEY">AT-KEY</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Associative">Associative</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/AT-POS">AT-POS</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Positional">Positional</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Array">Array</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/BIND-KEY">BIND-KEY</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/BIND-POS">BIND-POS</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Bag">Bag</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Mix">Mix</a>, <a href="/type/MixHash">MixHash</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/BagHash">BagHash</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Mix">Mix</a>, <a href="/type/MixHash">MixHash</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Baggy">Baggy</a></td> <td><p>(From <a href="/type/QuantHash">QuantHash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Bool">Bool</a></td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Numeric">Numeric</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Str">Str</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Failure">Failure</a>, <a href="/type/Rational">Rational</a>, <a href="/type/Match">Match</a>, <a href="/type/Map">Map</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Junction">Junction</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Promise">Promise</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Regex">Regex</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Bridge">Bridge</a></td> <td><p>(From <a href="/type/Real">Real</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/CALL-ME">CALL-ME</a></td> <td><p>(From <a href="/type/Callable">Callable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/CREATE">CREATE</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Capture">Capture</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Callable">Callable</a>, <a href="/type/Int">Int</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Channel">Channel</a>, <a href="/type/Str">Str</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Failure">Failure</a>, <a href="/type/Map">Map</a>, <a href="/type/Num">Num</a>, <a href="/type/Range">Range</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Signature">Signature</a>, <a href="/type/Supply">Supply</a>, <a href="/type/Version">Version</a>, <a href="/type/Whatever">Whatever</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Channel">Channel</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Complex">Complex</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/ComplexStr">ComplexStr</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/DELETE-KEY">DELETE-KEY</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/DELETE-POS">DELETE-POS</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/DESTROY">DESTROY</a></td> <td><p>(From <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/DISTROnames">DISTROnames</a></td> <td><p>(From <a href="/type/Perl">Perl</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Date">Date</a></td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Instant">Instant</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/DateTime">DateTime</a></td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Instant">Instant</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/EOF">EOF</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/EVAL">EVAL</a></td> <td><p>(From <a href="/type/Cool">Cool</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/EXISTS-KEY">EXISTS-KEY</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Associative">Associative</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/EXISTS-POS">EXISTS-POS</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Positional">Positional</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/FALLBACK">FALLBACK</a></td> <td><p>(From <a href="/type/Nil">Nil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Hash">Hash</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/QuantHash">QuantHash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/IO">IO</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Dateish">Dateish</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Pipe">IO::Pipe</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/IO::Notification.watch-path">IO::Notification.watch-path</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Instant">Instant</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Int">Int</a></td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>, <a href="/type/List">List</a>, <a href="/type/Numeric">Numeric</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Str">Str</a>, <a href="/type/Rational">Rational</a>, <a href="/type/Match">Match</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IntStr">IntStr</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/KERNELnames">KERNELnames</a></td> <td><p>(From <a href="/type/Perl">Perl</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/List">List</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Slip">Slip</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Map">Map</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Mix">Mix</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/MixHash">MixHash</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Mixy">Mixy</a></td> <td><p>(From <a href="/type/QuantHash">QuantHash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/NFC">NFC</a></td> <td><p>(From <a href="/type/Str">Str</a>, <a href="/type/Uni">Uni</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/NFD">NFD</a></td> <td><p>(From <a href="/type/Str">Str</a>, <a href="/type/Uni">Uni</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/NFKC">NFKC</a></td> <td><p>(From <a href="/type/Str">Str</a>, <a href="/type/Uni">Uni</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/NFKD">NFKD</a></td> <td><p>(From <a href="/type/Str">Str</a>, <a href="/type/Uni">Uni</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Num">Num</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>, <a href="/type/Rational">Rational</a>, <a href="/type/NumStr">NumStr</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Numeric">Numeric</a></td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>, <a href="/type/Endian">Endian</a>, <a href="/type/List">List</a>, <a href="/type/Numeric">Numeric</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Str">Str</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Nil">Nil</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Promise">Promise</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/READ">READ</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Rat">Rat</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>, <a href="/type/Real">Real</a>, <a href="/type/Str">Str</a>, <a href="/type/RatStr">RatStr</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Real">Real</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/RatStr">RatStr</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/SPEC">SPEC</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/STORE">STORE</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/language/subscripts">Subscripts</a>, <a href="/type/Positional">Positional</a>, <a href="/type/Associative">Associative</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Set">Set</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/SetHash">SetHash</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Setty">Setty</a></td> <td><p>(From <a href="/type/QuantHash">QuantHash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Slip">Slip</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Str">Str</a></td> <td><p>(From <a href="/type/Systemic">Systemic</a>, <a href="/type/StrDistance">StrDistance</a>, <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Code">Code</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Match">Match</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Nil">Nil</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Thread">Thread</a>, <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Stringy">Stringy</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/Supply">Supply</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Channel">Channel</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>, <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/Promise">Promise</a>, <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/VMnames">VMnames</a></td> <td><p>(From <a href="/type/Perl">Perl</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/WHERE">WHERE</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/WHEREFORE">WHEREFORE</a></td> <td><p>(From <a href="/type/Pod::Block::Declarator">Pod::Block::Declarator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/WHICH">WHICH</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/WHY">WHY</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/WRITE">WRITE</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/abs">abs</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/abs2rel">abs2rel</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/absolute">absolute</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/accept">accept</a></td> <td><p>(From <a href="/type/IO::Socket::INET">IO::Socket::INET</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/accessed">accessed</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/acquire">acquire</a></td> <td><p>(From <a href="/type/Semaphore">Semaphore</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/act">act</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/action">action</a></td> <td><p>(From <a href="/type/X::TypeCheck::Splice">X::TypeCheck::Splice</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/actions">actions</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add">add</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_attribute">add_attribute</a></td> <td><p>(From <a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_enum_value">add_enum_value</a></td> <td><p>(From <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_fallback">add_fallback</a></td> <td><p>(From <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_method">add_method</a></td> <td><p>(From <a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_parent">add_parent</a></td> <td><p>(From <a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_private_method">add_private_method</a></td> <td><p>(From <a href="/type/Metamodel::PrivateMethodContainer">Metamodel::PrivateMethodContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_role">add_role</a></td> <td><p>(From <a href="/type/Metamodel::RoleContainer">Metamodel::RoleContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/add_trustee">add_trustee</a></td> <td><p>(From <a href="/type/Metamodel::Trusting">Metamodel::Trusting</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/adverb">adverb</a></td> <td><p>(From <a href="/type/X::Syntax::Regex::Adverb">X::Syntax::Regex::Adverb</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/after">after</a></td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>, <a href="/type/X::Parameter::WrongOrder">X::Parameter::WrongOrder</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/all">all</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/allocate">allocate</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/allof">allof</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/allowed">allowed</a></td> <td><p>(From <a href="/type/Pod::Block::Code">Pod::Block::Code</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/alternative-names">alternative-names</a></td> <td><p>(From <a href="/type/Encoding">Encoding</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/annotations">annotations</a></td> <td><p>(From <a href="/type/CallFrame">CallFrame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/antipair">antipair</a></td> <td><p>(From <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/antipairs">antipairs</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/any">any</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/anyof">anyof</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/app_lifetime">app_lifetime</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/append">append</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Array">Array</a>, <a href="/type/Buf">Buf</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Nil">Nil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/arch">arch</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/archetypes">archetypes</a></td> <td><p>(From <a href="/type/Metamodel::PackageHOW">Metamodel::PackageHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/archname">archname</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/args">args</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/arity">arity</a></td> <td><p>(From <a href="/type/Code">Code</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Signature">Signature</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/assuming">assuming</a></td> <td><p>(From <a href="/type/Code">Code</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ast">ast</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/at">at</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/atan2">atan2</a></td> <td><p>(From <a href="/type/Cool">Cool</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/attributes">attributes</a></td> <td><p>(From <a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/auth">auth</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>, <a href="/type/Perl">Perl</a>, <a href="/type/Distro">Distro</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/backtrace">backtrace</a></td> <td><p>(From <a href="/type/Exception">Exception</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/base">base</a></td> <td><p>(From <a href="/type/Real">Real</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/base-repeating">base-repeating</a></td> <td><p>(From <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/basename">basename</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/batch">batch</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/before">before</a></td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bind-stderr">bind-stderr</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bind-stdin">bind-stdin</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bind-stdout">bind-stdout</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bind-udp">bind-udp</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bits">bits</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bless">bless</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/block">block</a></td> <td><p>(From <a href="/type/X::Phaser::Multiple">X::Phaser::Multiple</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bool-only">bool-only</a></td> <td><p>(From <a href="/type/PredictiveIterator">PredictiveIterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bounds">bounds</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/break">break</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/broken">broken</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/build-date">build-date</a></td> <td><p>(From <a href="/type/Compiler">compiler</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/bytes">bytes</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cache">cache</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/PositionalBindFailover">PositionalBindFailover</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/calling-package">calling-package</a></td> <td><p>(From <a href="/type/X::Method::Private::Permission">X::Method::Private::Permission</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/can">can</a></td> <td><p>(From <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cancel">cancel</a></td> <td><p>(From <a href="/type/Cancellation">Cancellation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/candidates">candidates</a></td> <td><p>(From <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>, <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cando">cando</a></td> <td><p>(From <a href="/type/Code">Code</a>, <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/canonpath">canonpath</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::QNX">IO::Spec::QNX</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/caps">caps</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/caption">caption</a></td> <td><p>(From <a href="/type/Pod::Block::Table">Pod::Block::Table</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/capture">capture</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/catdir">catdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/categorize">categorize</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/categorize-list">categorize-list</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Hash">Hash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/catfile">catfile</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/catpath">catpath</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cause">cause</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ceiling">ceiling</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/changed">changed</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/channel">channel</a></td> <td><p>(From <a href="/type/X::Channel::ReceiveOnClosed">X::Channel::ReceiveOnClosed</a>, <a href="/type/X::Channel::SendOnClosed">X::Channel::SendOnClosed</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chars">chars</a></td> <td><p>(From <a href="/type/Blob">Blob</a>, <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chdir">chdir</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/child">child</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/child-name">child-name</a></td> <td><p>(From <a href="/type/X::Inheritance::NotComposed">X::Inheritance::NotComposed</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/child-typename">child-typename</a></td> <td><p>(From <a href="/type/X::Inheritance::Unsupported">X::Inheritance::Unsupported</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chmod">chmod</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chomp">chomp</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chop">chop</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/chunks">chunks</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/classify">classify</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/classify-list">classify-list</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Hash">Hash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cleanup">cleanup</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/clone">clone</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Array">Array</a>, <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/close">close</a></td> <td><p>(From <a href="/type/Channel">Channel</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Pipe">IO::Pipe</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>, <a href="/type/Tap">Tap</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/close-stdin">close-stdin</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/closed">closed</a></td> <td><p>(From <a href="/type/Channel">Channel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/code">code</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>, <a href="/type/CallFrame">CallFrame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/codes">codes</a></td> <td><p>(From <a href="/type/Uni">Uni</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/coerce_type">coerce_type</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/collate">collate</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/column">column</a></td> <td><p>(From <a href="/type/X::Comp">X::Comp</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/comb">comb</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/combinations">combinations</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/command">command</a></td> <td><p>(From <a href="/type/Proc">Proc</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/comment">comment</a></td> <td><p>(From <a href="/type/X::OutOfRange">X::OutOfRange</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/compiler">compiler</a></td> <td><p>(From <a href="/type/Perl">Perl</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/compose">compose</a></td> <td><p>(From <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/compose_type">compose_type</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/composer">composer</a></td> <td><p>(From <a href="/type/X::Composition::NotComposable">X::Composition::NotComposable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/compute_mro">compute_mro</a></td> <td><p>(From <a href="/type/Metamodel::C3MRO">Metamodel::C3MRO</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/condition">condition</a></td> <td><p>(From <a href="/type/Lock">Lock</a>, <a href="/type/X::Phaser::PrePost">X::Phaser::PrePost</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/config">config</a></td> <td><p>(From <a href="/type/Pod::Block">Pod::Block</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/configure_destroy">configure_destroy</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/configure_type_checking">configure_type_checking</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/conj">conj</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Numeric">Numeric</a>, <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/connect">connect</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/constraints">constraints</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/construct">construct</a></td> <td><p>(From <a href="/type/X::Syntax::Regex::Adverb">X::Syntax::Regex::Adverb</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/contains">contains</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/content">content</a></td> <td><p>(From <a href="/type/Distribution">Distribution</a>, <a href="/type/Distribution::Locally">Distribution::Locally</a>, <a href="/type/Distribution::Hash">Distribution::Hash</a>, <a href="/type/Distribution::Path">Distribution::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/contents">contents</a></td> <td><p>(From <a href="/type/Pod::Block">Pod::Block</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/copy">copy</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/count">count</a></td> <td><p>(From <a href="/type/Code">Code</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Signature">Signature</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/count-only">count-only</a></td> <td><p>(From <a href="/type/PredictiveIterator">PredictiveIterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cpu-cores">cpu-cores</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cpu-usage">cpu-usage</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/create_type">create_type</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/cue">cue</a></td> <td><p>(From <a href="/type/Scheduler">Scheduler</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/curdir">curdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/curupdir">curupdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/d">d</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/day">day</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/day-of-month">day-of-month</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/day-of-week">day-of-week</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/day-of-year">day-of-year</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/daycount">daycount</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/days-in-month">days-in-month</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/declaration">declaration</a></td> <td><p>(From <a href="/type/X::Declaration::Scope">X::Declaration::Scope</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/decode">decode</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/decoder">decoder</a></td> <td><p>(From <a href="/type/Encoding">Encoding</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/deepmap">deepmap</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/default">default</a></td> <td><p>(From <a href="/type/Array">Array</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Parameter">Parameter</a>, <a href="/type/Scalar">Scalar</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/defined">defined</a></td> <td><p>(From <a href="/type/Failure">Failure</a>, <a href="/type/Junction">Junction</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/delayed">delayed</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/denominator">denominator</a></td> <td><p>(From <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/desc">desc</a></td> <td><p>(From <a href="/type/Perl">Perl</a>, <a href="/type/Distro">Distro</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/destroyers">destroyers</a></td> <td><p>(From <a href="/type/Metamodel::Finalization">Metamodel::Finalization</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/devnull">devnull</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/did-you-mean">did-you-mean</a></td> <td><p>(From <a href="/type/X::NYI">X::NYI</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/dir-sep">dir-sep</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/dirname">dirname</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/distribution">distribution</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/do">do</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/does">does</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/done">done</a></td> <td><p>(From <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/duckmap">duckmap</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/dynamic">dynamic</a></td> <td><p>(From <a href="/type/Array">Array</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Scalar">Scalar</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/e">e</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/eager">eager</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Seq">Seq</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/earlier">earlier</a></td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/elems">elems</a></td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Any">Any</a>, <a href="/type/Positional">Positional</a>, <a href="/type/Array">Array</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>, <a href="/type/Uni">Uni</a>, <a href="/type/Range">Range</a>, <a href="/type/Setty">Setty</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/emit">emit</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/enclosing">enclosing</a></td> <td><p>(From <a href="/type/X::ControlFlow">X::ControlFlow</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/encode">encode</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/encoder">encoder</a></td> <td><p>(From <a href="/type/Encoding">Encoding</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/encoding">encoding</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/end">end</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/endian">endian</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ends-with">ends-with</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/enum_from_value">enum_from_value</a></td> <td><p>(From <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/enum_value_list">enum_value_list</a></td> <td><p>(From <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/enum_values">enum_values</a></td> <td><p>(From <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/enums">enums</a></td> <td><p>(From <a href="/language/typesystem">Type system</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Enumeration">Enumeration</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/eof">eof</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/exception">exception</a></td> <td><p>(From <a href="/type/Failure">Failure</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/excludes-max">excludes-max</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/excludes-min">excludes-min</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/exitcode">exitcode</a></td> <td><p>(From <a href="/type/Proc">Proc</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/expected">expected</a></td> <td><p>(From <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/extension">extension</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/f">f</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/fail">fail</a></td> <td><p>(From <a href="/type/Exception">Exception</a>, <a href="/type/Channel">Channel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/feature">feature</a></td> <td><p>(From <a href="/type/X::NYI">X::NYI</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/file">file</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>, <a href="/type/Code">Code</a>, <a href="/type/CallFrame">CallFrame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/filename">filename</a></td> <td><p>(From <a href="/type/X::Comp">X::Comp</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/files">files</a></td> <td><p>(From <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/find">find</a></td> <td><p>(From <a href="/type/Encoding::Registry">Encoding::Registry</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/find_method">find_method</a></td> <td><p>(From <a href="/type/Metamodel::MROBasedMethodDispatch">Metamodel::MROBasedMethodDispatch</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/find_method_qualified">find_method_qualified</a></td> <td><p>(From <a href="/type/Metamodel::MROBasedMethodDispatch">Metamodel::MROBasedMethodDispatch</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/finish">finish</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/first">first</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/flat">flat</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Iterable">Iterable</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/flatmap">flatmap</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/floor">floor</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/flush">flush</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/fmt">fmt</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/List">List</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/format">format</a></td> <td><p>(From <a href="/type/X::Temporal::InvalidFormat">X::Temporal::InvalidFormat</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/formatter">formatter</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/freeze">freeze</a></td> <td><p>(From <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/from">from</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>, <a href="/type/List">List</a>, <a href="/type/Match">Match</a>, <a href="/type/X::IO::Copy">X::IO::Copy</a>, <a href="/type/X::IO::Move">X::IO::Move</a>, <a href="/type/X::IO::Rename">X::IO::Rename</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/from-list">from-list</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/from-loop">from-loop</a></td> <td><p>(From <a href="/type/Seq">Seq</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/from-posix">from-posix</a></td> <td><p>(From <a href="/type/Instant">Instant</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/full">full</a></td> <td><p>(From <a href="/type/Backtrace">Backtrace</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/get">get</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::INET">IO::Socket::INET</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/get_value">get_value</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/getc">getc</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/gist">gist</a></td> <td><p>(From <a href="/type/Systemic">Systemic</a>, <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Attribute">Attribute</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Exception">Exception</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Date">Date</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Nil">Nil</a>, <a href="/type/Submethod">Submethod</a>, <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/got">got</a></td> <td><p>(From <a href="/type/X::OutOfRange">X::OutOfRange</a>, <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/grab">grab</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/grabpairs">grabpairs</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/grep">grep</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/handle">handle</a></td> <td><p>(From <a href="/type/X::Proc::Async::CharsOrBytes">X::Proc::Async::CharsOrBytes</a>, <a href="/type/X::Proc::Async::TapBeforeSpawn">X::Proc::Async::TapBeforeSpawn</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/handled">handled</a></td> <td><p>(From <a href="/type/Failure">Failure</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/handles">handles</a></td> <td><p>(From <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hardware">hardware</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/has_accessor">has_accessor</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hash">hash</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/QuantHash">QuantHash</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/head">head</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/headers">headers</a></td> <td><p>(From <a href="/type/Pod::Block::Table">Pod::Block::Table</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hh-mm-ss">hh-mm-ss</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hidden">hidden</a></td> <td><p>(From <a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hides">hides</a></td> <td><p>(From <a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hostname">hostname</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hour">hour</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/how">how</a></td> <td><p>(From <a href="/type/X::Parameter::Default">X::Parameter::Default</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/hyper">hyper</a></td> <td><p>(From <a href="/type/Iterable">Iterable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/id">id</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/illegal">illegal</a></td> <td><p>(From <a href="/type/X::ControlFlow">X::ControlFlow</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/im">im</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/in">in</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/in-timezone">in-timezone</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/indent">indent</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/index">index</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/indices">indices</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/infinite">infinite</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/infix">infix</a></td> <td><p>(From <a href="/type/X::Syntax::InfixInTermPosition">X::Syntax::InfixInTermPosition</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/infix:<eqv>">infix:&lt;eqv&gt;</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/install">install</a></td> <td><p>(From <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/install_method_cache">install_method_cache</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/instead">instead</a></td> <td><p>(From <a href="/type/X::Syntax::Reserved">X::Syntax::Reserved</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/int-bounds">int-bounds</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/interval">interval</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/invalid-str">invalid-str</a></td> <td><p>(From <a href="/type/X::Temporal::InvalidFormat">X::Temporal::InvalidFormat</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/invert">invert</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/invocant">invocant</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>, <a href="/type/X::Method::InvalidQualifier">X::Method::InvalidQualifier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-absolute">is-absolute</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-hidden">is-hidden</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-initial-thread">is-initial-thread</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-int">is-int</a></td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-lazy">is-lazy</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>, <a href="/type/Seq">Seq</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-leap-year">is-leap-year</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-relative">is-relative</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-routine">is-routine</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-setting">is-setting</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is-win">is-win</a></td> <td><p>(From <a href="/type/Distro">Distro</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/isNaN">isNaN</a></td> <td><p>(From <a href="/type/Complex">Complex</a>, <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is_trusted">is_trusted</a></td> <td><p>(From <a href="/type/Metamodel::Trusting">Metamodel::Trusting</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/is_type">is_type</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/isa">isa</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/item">item</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/iterator">iterator</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Any">Any</a>, <a href="/type/Iterable">Iterable</a>, <a href="/type/PositionalBindFailover">PositionalBindFailover</a>, <a href="/type/Seq">Seq</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/join">join</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>, <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/keep">keep</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/kept">kept</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/key">key</a></td> <td><p>(From <a href="/type/Enumeration">Enumeration</a>, <a href="/type/Pair">Pair</a>, <a href="/type/X::Syntax::NegatedPair">X::Syntax::NegatedPair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/keyof">keyof</a></td> <td><p>(From <a href="/type/Associative">Associative</a>, <a href="/type/QuantHash">QuantHash</a>, <a href="/type/Hash">Hash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/keys">keys</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/kill">kill</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/kv">kv</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Enumeration">Enumeration</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/kxxv">kxxv</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/l">l</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lang">lang</a></td> <td><p>(From <a href="/type/X::Eval::NoSuchLang">X::Eval::NoSuchLang</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/last">last</a></td> <td><p>(From <a href="/type/Label">Label</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/later">later</a></td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lazy">lazy</a></td> <td><p>(From <a href="/type/Iterable">Iterable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/leading">leading</a></td> <td><p>(From <a href="/type/Pod::Block::Declarator">Pod::Block::Declarator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/level">level</a></td> <td><p>(From <a href="/type/Pod::Heading">Pod::Heading</a>, <a href="/type/Pod::Item">Pod::Item</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/line">line</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>, <a href="/type/Code">Code</a>, <a href="/type/CallFrame">CallFrame</a>, <a href="/type/X::Comp">X::Comp</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lines">lines</a></td> <td><p>(From <a href="/type/Str">Str</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Socket::INET">IO::Socket::INET</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/link">link</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/list">list</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Buf">Buf</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Channel">Channel</a>, <a href="/type/Match">Match</a>, <a href="/type/PositionalBindFailover">PositionalBindFailover</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/listen">listen</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/live">live</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/load">load</a></td> <td><p>(From <a href="/type/CompUnit::Repository">CompUnit::Repository</a>, <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/loaded">loaded</a></td> <td><p>(From <a href="/type/CompUnit::Repository">CompUnit::Repository</a>, <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/local">local</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lock">lock</a></td> <td><p>(From <a href="/type/Lock::Async">Lock::Async</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/Lock">Lock</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lookup">lookup</a></td> <td><p>(From <a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a>, <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/lsb">lsb</a></td> <td><p>(From <a href="/type/Int">Int</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/made">made</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/make">make</a></td> <td><p>(From <a href="/type/Match">Match</a>, <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/map">map</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/match">match</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/max">max</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/maxpairs">maxpairs</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/merge">merge</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/message">message</a></td> <td><p>(From <a href="/type/Exception">Exception</a>, <a href="/type/X::NYI">X::NYI</a>, <a href="/type/X::StubCode">X::StubCode</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/meta">meta</a></td> <td><p>(From <a href="/type/Distribution">Distribution</a>, <a href="/type/Distribution::Hash">Distribution::Hash</a>, <a href="/type/Distribution::Path">Distribution::Path</a>, <a href="/type/Pod::FormattingCode">Pod::FormattingCode</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/method">method</a></td> <td><p>(From <a href="/type/X::Method::InvalidQualifier">X::Method::InvalidQualifier</a>, <a href="/type/X::Method::NotFound">X::Method::NotFound</a>, <a href="/type/X::Method::Private::Permission">X::Method::Private::Permission</a>, <a href="/type/X::Method::Private::Unqualified">X::Method::Private::Unqualified</a>, <a href="/type/X::Proc::Async::MustBeStarted">X::Proc::Async::MustBeStarted</a>, <a href="/type/X::Proc::Async::OpenForWriting">X::Proc::Async::OpenForWriting</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/method_table">method_table</a></td> <td><p>(From <a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/methods">methods</a></td> <td><p>(From <a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/migrate">migrate</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/min">min</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/minmax">minmax</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/minpairs">minpairs</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/minute">minute</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/misplaced">misplaced</a></td> <td><p>(From <a href="/type/X::Parameter::WrongOrder">X::Parameter::WrongOrder</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/mode">mode</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/X::IO::Mkdir">X::IO::Mkdir</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/modified">modified</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/month">month</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/move">move</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/mro">mro</a></td> <td><p>(From <a href="/type/Metamodel::C3MRO">Metamodel::C3MRO</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/mro_unhidden">mro_unhidden</a></td> <td><p>(From <a href="/type/Metamodel::C3MRO">Metamodel::C3MRO</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/msb">msb</a></td> <td><p>(From <a href="/type/Int">Int</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/multi">multi</a></td> <td><p>(From <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/multiness">multiness</a></td> <td><p>(From <a href="/type/X::Anon::Multi">X::Anon::Multi</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/my">my</a></td> <td><p>(From <a href="/type/CallFrame">CallFrame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/name">name</a></td> <td><p>(From <a href="/type/Encoding">Encoding</a>, <a href="/type/Perl">Perl</a>, <a href="/type/Encoding::Registry">Encoding::Registry</a>, <a href="/type/X::Attribute::Required">X::Attribute::Required</a>, <a href="/type/Attribute">Attribute</a>, <a href="/type/Distro">Distro</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/Label">Label</a>, <a href="/type/Routine">Routine</a>, <a href="/type/Metamodel::Naming">Metamodel::Naming</a>, <a href="/type/Parameter">Parameter</a>, <a href="/type/Pod::Block::Named">Pod::Block::Named</a>, <a href="/type/Scalar">Scalar</a>, <a href="/type/Thread">Thread</a>, <a href="/type/VM">VM</a>, <a href="/type/Variable">Variable</a>, <a href="/type/X::Attribute::NoPackage">X::Attribute::NoPackage</a>, <a href="/type/X::Attribute::Package">X::Attribute::Package</a>, <a href="/type/X::Bind::NativeType">X::Bind::NativeType</a>, <a href="/type/X::IO::Link">X::IO::Link</a>, <a href="/type/X::IO::Symlink">X::IO::Symlink</a>, <a href="/type/X::Signature::NameClash">X::Signature::NameClash</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/named">named</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/named_names">named_names</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/narrow">narrow</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/native-descriptor">native-descriptor</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/need">need</a></td> <td><p>(From <a href="/type/CompUnit::Repository">CompUnit::Repository</a>, <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/new">new</a></td> <td><p>(From <a href="/type/Telemetry::Sampler">Telemetry::Sampler</a>, <a href="/type/Distribution::Hash">Distribution::Hash</a>, <a href="/type/Distribution::Path">Distribution::Path</a>, <a href="/type/Mu">Mu</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Complex">Complex</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Failure">Failure</a>, <a href="/type/Rational">Rational</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Path::Cygwin">IO::Path::Cygwin</a>, <a href="/type/IO::Path::QNX">IO::Path::QNX</a>, <a href="/type/IO::Path::Unix">IO::Path::Unix</a>, <a href="/type/IO::Path::Win32">IO::Path::Win32</a>, <a href="/type/IO::Socket::INET">IO::Socket::INET</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Metamodel::PackageHOW">Metamodel::PackageHOW</a>, <a href="/type/Uni">Uni</a>, <a href="/type/Nil">Nil</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Proc">Proc</a>, <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/Proxy">Proxy</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Semaphore">Semaphore</a>, <a href="/type/Seq">Seq</a>, <a href="/type/Supplier">Supplier</a>, <a href="/type/Supplier::Preserving">Supplier::Preserving</a>, <a href="/type/Thread">Thread</a>, <a href="/type/Version">Version</a>, <a href="/type/X::NYI">X::NYI</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/new-from-daycount">new-from-daycount</a></td> <td><p>(From <a href="/type/Date">Date</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/new-from-pairs">new-from-pairs</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/new_type">new_type</a></td> <td><p>(From <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a>, <a href="/type/Metamodel::PackageHOW">Metamodel::PackageHOW</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/next">next</a></td> <td><p>(From <a href="/type/Label">Label</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/next-handle">next-handle</a></td> <td><p>(From <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/nl-in">nl-in</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/nl-out">nl-out</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/nodemap">nodemap</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/none">none</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/norm">norm</a></td> <td><p>(From <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/not">not</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/note">note</a></td> <td><p>(From <a href="/type/IO">IO</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/now">now</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/nude">nude</a></td> <td><p>(From <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/numerator">numerator</a></td> <td><p>(From <a href="/type/Rational">Rational</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/of">of</a></td> <td><p>(From <a href="/type/Positional">Positional</a>, <a href="/type/Array">Array</a>, <a href="/type/Associative">Associative</a>, <a href="/type/QuantHash">QuantHash</a>, <a href="/type/Code">Code</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Scalar">Scalar</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/offset">offset</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/offset-in-hours">offset-in-hours</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/offset-in-minutes">offset-in-minutes</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/old">old</a></td> <td><p>(From <a href="/type/X::Obsolete">X::Obsolete</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/on-close">on-close</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/on-switch">on-switch</a></td> <td><p>(From <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/one">one</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/open">open</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/opened">opened</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/operation">operation</a></td> <td><p>(From <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/optional">optional</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ords">ords</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/orig">orig</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/os-error">os-error</a></td> <td><p>(From <a href="/type/X::OS">X::OS</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/osname">osname</a></td> <td><p>(From <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/out-buffer">out-buffer</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/package">package</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>, <a href="/type/Routine">Routine</a>, <a href="/type/X::Augment::NoSuchType">X::Augment::NoSuchType</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/package-kind">package-kind</a></td> <td><p>(From <a href="/type/X::Anon::Augment">X::Anon::Augment</a>, <a href="/type/X::Attribute::Package">X::Attribute::Package</a>, <a href="/type/X::Attribute::Undeclared">X::Attribute::Undeclared</a>, <a href="/type/X::Augment::NoSuchType">X::Augment::NoSuchType</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/package-name">package-name</a></td> <td><p>(From <a href="/type/X::Attribute::Undeclared">X::Attribute::Undeclared</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/packages">packages</a></td> <td><p>(From <a href="/type/X::Package::Stubbed">X::Package::Stubbed</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pair">pair</a></td> <td><p>(From <a href="/type/Enumeration">Enumeration</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pairs">pairs</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pairup">pairup</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parameter">parameter</a></td> <td><p>(From <a href="/type/X::Parameter::Default">X::Parameter::Default</a>, <a href="/type/X::Parameter::MultipleTypeConstraints">X::Parameter::MultipleTypeConstraints</a>, <a href="/type/X::Parameter::Placeholder">X::Parameter::Placeholder</a>, <a href="/type/X::Parameter::Twigil">X::Parameter::Twigil</a>, <a href="/type/X::Parameter::WrongOrder">X::Parameter::WrongOrder</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/params">params</a></td> <td><p>(From <a href="/type/Signature">Signature</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parent">parent</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/X::Inheritance::Unsupported">X::Inheritance::Unsupported</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parent-name">parent-name</a></td> <td><p>(From <a href="/type/X::Inheritance::NotComposed">X::Inheritance::NotComposed</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parents">parents</a></td> <td><p>(From <a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parse">parse</a></td> <td><p>(From <a href="/type/Grammar">Grammar</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parsefile">parsefile</a></td> <td><p>(From <a href="/type/Grammar">Grammar</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/parts">parts</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/path">path</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Pipe">IO::Pipe</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>, <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/X::IO::Chdir">X::IO::Chdir</a>, <a href="/type/X::IO::Dir">X::IO::Dir</a>, <a href="/type/X::IO::DoesNotExist">X::IO::DoesNotExist</a>, <a href="/type/X::IO::Mkdir">X::IO::Mkdir</a>, <a href="/type/X::IO::Rmdir">X::IO::Rmdir</a>, <a href="/type/X::IO::Unlink">X::IO::Unlink</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/path-sep">path-sep</a></td> <td><p>(From <a href="/type/Distro">Distro</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/payload">payload</a></td> <td><p>(From <a href="/type/X::AdHoc">X::AdHoc</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/peer-host">peer-host</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/peer-port">peer-port</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/perl">perl</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Complex">Complex</a>, <a href="/type/FatRat">FatRat</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Path::Cygwin">IO::Path::Cygwin</a>, <a href="/type/IO::Path::QNX">IO::Path::QNX</a>, <a href="/type/IO::Path::Unix">IO::Path::Unix</a>, <a href="/type/IO::Path::Win32">IO::Path::Win32</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Rat">Rat</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/permutations">permutations</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/phaser">phaser</a></td> <td><p>(From <a href="/type/X::Phaser::PrePost">X::Phaser::PrePost</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pick">pick</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Enumeration">Enumeration</a>, <a href="/type/Range">Range</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pickpairs">pickpairs</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pid">pid</a></td> <td><p>(From <a href="/type/Proc">Proc</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/placeholder">placeholder</a></td> <td><p>(From <a href="/type/X::Placeholder::Block">X::Placeholder::Block</a>, <a href="/type/X::Signature::Placeholder">X::Signature::Placeholder</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/plus">plus</a></td> <td><p>(From <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/polar">polar</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/poll">poll</a></td> <td><p>(From <a href="/type/Channel">Channel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/polymod">polymod</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Int">Int</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pop">pop</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pos">pos</a></td> <td><p>(From <a href="/type/Match">Match</a>, <a href="/type/X::Str::Numeric">X::Str::Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/positional">positional</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/posix">posix</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/postfix">postfix</a></td> <td><p>(From <a href="/type/X::Redeclaration">X::Redeclaration</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/postmatch">postmatch</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/precomp-ext">precomp-ext</a></td> <td><p>(From <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/precomp-target">precomp-target</a></td> <td><p>(From <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/precompiled">precompiled</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pred">pred</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Str">Str</a>, <a href="/type/Date">Date</a>, <a href="/type/Enumeration">Enumeration</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/prefix">prefix</a></td> <td><p>(From <a href="/type/Distribution::Locally">Distribution::Locally</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/prematch">prematch</a></td> <td><p>(From <a href="/type/Match">Match</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/prepend">prepend</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Array">Array</a>, <a href="/type/Buf">Buf</a>, <a href="/type/Nil">Nil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/primary">primary</a></td> <td><p>(From <a href="/type/Collation">Collation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/print">print</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/print-nl">print-nl</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/print-to">print-to</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/printf">printf</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/private">private</a></td> <td><p>(From <a href="/type/X::Method::NotFound">X::Method::NotFound</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/private_method_table">private_method_table</a></td> <td><p>(From <a href="/type/Metamodel::PrivateMethodContainer">Metamodel::PrivateMethodContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/proc">proc</a></td> <td><p>(From <a href="/type/IO::Pipe">IO::Pipe</a>, <a href="/type/X::Proc::Async">X::Proc::Async</a>, <a href="/type/X::Proc::Unsuccessful">X::Proc::Unsuccessful</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/produce">produce</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/promise">promise</a></td> <td><p>(From <a href="/type/X::Promise::CauseOnlyValidOnBroken">X::Promise::CauseOnlyValidOnBroken</a>, <a href="/type/X::Promise::Vowed">X::Promise::Vowed</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/protect">protect</a></td> <td><p>(From <a href="/type/Lock::Async">Lock::Async</a>, <a href="/type/Lock">Lock</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/pull-one">pull-one</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/push">push</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Buf">Buf</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Nil">Nil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/push-all">push-all</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/push-at-least">push-at-least</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/push-exactly">push-exactly</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/push-until-lazy">push-until-lazy</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/put">put</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/qualifier-type">qualifier-type</a></td> <td><p>(From <a href="/type/X::Method::InvalidQualifier">X::Method::InvalidQualifier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/quaternary">quaternary</a></td> <td><p>(From <a href="/type/Collation">Collation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/quit">quit</a></td> <td><p>(From <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/r">r</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/race">race</a></td> <td><p>(From <a href="/type/Iterable">Iterable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/radix">radix</a></td> <td><p>(From <a href="/type/X::Syntax::Number::RadixOutOfRange">X::Syntax::Number::RadixOutOfRange</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rand">rand</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Num">Num</a>, <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/range">range</a></td> <td><p>(From <a href="/type/X::OutOfRange">X::OutOfRange</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/raw">raw</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/re">re</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read">read</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-bits">read-bits</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-int128">read-int128</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-int16">read-int16</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-int32">read-int32</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-int64">read-int64</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-int8">read-int8</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-num32">read-num32</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-num64">read-num64</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-ubits">read-ubits</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-uint128">read-uint128</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-uint16">read-uint16</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-uint32">read-uint32</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-uint64">read-uint64</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/read-uint8">read-uint8</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/readchars">readchars</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/readonly">readonly</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>, <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/ready">ready</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reallocate">reallocate</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reals">reals</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reason">reason</a></td> <td><p>(From <a href="/type/X::Numeric::Real">X::Numeric::Real</a>, <a href="/type/X::Str::Numeric">X::Str::Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rebless">rebless</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/receive">receive</a></td> <td><p>(From <a href="/type/Channel">Channel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/recv">recv</a></td> <td><p>(From <a href="/type/IO::Socket">IO::Socket</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/redispatcher">redispatcher</a></td> <td><p>(From <a href="/type/X::NoDispatcher">X::NoDispatcher</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/redo">redo</a></td> <td><p>(From <a href="/type/Label">Label</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reduce">reduce</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rel2abs">rel2abs</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/relative">relative</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/release">release</a></td> <td><p>(From <a href="/type/Distro">Distro</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/Semaphore">Semaphore</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rename">rename</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/repeated">repeated</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/replacement">replacement</a></td> <td><p>(From <a href="/type/X::Obsolete">X::Obsolete</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/repo">repo</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/repo-id">repo-id</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reserved">reserved</a></td> <td><p>(From <a href="/type/X::Syntax::Reserved">X::Syntax::Reserved</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/resolve">resolve</a></td> <td><p>(From <a href="/type/CompUnit::Repository">CompUnit::Repository</a>, <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/restore">restore</a></td> <td><p>(From <a href="/type/Routine::WrapHandle">Routine::WrapHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/result">result</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/resume">resume</a></td> <td><p>(From <a href="/type/Exception">Exception</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rethrow">rethrow</a></td> <td><p>(From <a href="/type/Exception">Exception</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/return">return</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/return-rw">return-rw</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/returns">returns</a></td> <td><p>(From <a href="/type/Signature">Signature</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/reverse">reverse</a></td> <td><p>(From <a href="/type/Blob">Blob</a>, <a href="/type/Mix">Mix</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/right">right</a></td> <td><p>(From <a href="/type/X::Parameter::Placeholder">X::Parameter::Placeholder</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/role">role</a></td> <td><p>(From <a href="/type/X::Role::Initialization">X::Role::Initialization</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/roles_to_compose">roles_to_compose</a></td> <td><p>(From <a href="/type/Metamodel::RoleContainer">Metamodel::RoleContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rolish">rolish</a></td> <td><p>(From <a href="/type/X::Mixin::NotComposable">X::Mixin::NotComposable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/roll">roll</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Enumeration">Enumeration</a>, <a href="/type/Mixy">Mixy</a>, <a href="/type/Range">Range</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rootdir">rootdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/roots">roots</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rotor">rotor</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/round">round</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/routine-type">routine-type</a></td> <td><p>(From <a href="/type/X::Anon::Multi">X::Anon::Multi</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/run">run</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rw">rw</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a>, <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/rwx">rwx</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/s">s</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/say">say</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/schedule-on">schedule-on</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/scheduler">scheduler</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/scope">scope</a></td> <td><p>(From <a href="/type/X::Declaration::Scope">X::Declaration::Scope</a>, <a href="/type/X::Syntax::Variable::Twigil">X::Syntax::Variable::Twigil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/second">second</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/secondary">secondary</a></td> <td><p>(From <a href="/type/Collation">Collation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/seek">seek</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/self">self</a></td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Failure">Failure</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/send">send</a></td> <td><p>(From <a href="/type/Channel">Channel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/serial">serial</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set">set</a></td> <td><p>(From <a href="/type/Collation">Collation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set-instruments">set-instruments</a></td> <td><p>(From <a href="/type/Telemetry::Sampler">Telemetry::Sampler</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set_hidden">set_hidden</a></td> <td><p>(From <a href="/type/Metamodel::MultipleInheritance">Metamodel::MultipleInheritance</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set_name">set_name</a></td> <td><p>(From <a href="/type/Metamodel::Naming">Metamodel::Naming</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set_package">set_package</a></td> <td><p>(From <a href="/type/Metamodel::Primitives">Metamodel::Primitives</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set_rw">set_rw</a></td> <td><p>(From <a href="/type/Metamodel::AttributeContainer">Metamodel::AttributeContainer</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/set_value">set_value</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/setup_finalization">setup_finalization</a></td> <td><p>(From <a href="/type/Metamodel::Finalization">Metamodel::Finalization</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/shape">shape</a></td> <td><p>(From <a href="/type/Array">Array</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/share">share</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/shell">shell</a></td> <td><p>(From <a href="/type/Proc">Proc</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/shift">shift</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/short-id">short-id</a></td> <td><p>(From <a href="/type/CompUnit::Repository::FileSystem">CompUnit::Repository::FileSystem</a>, <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/short-name">short-name</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sibling">sibling</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sigil">sigil</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sign">sign</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Real">Real</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/signal">signal</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>, <a href="/type/Proc">Proc</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/signals">signals</a></td> <td><p>(From <a href="/type/Kernel">Kernel</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/signature">signature</a></td> <td><p>(From <a href="/type/Perl">Perl</a>, <a href="/type/Code">Code</a>, <a href="/type/Distro">Distro</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sink">sink</a></td> <td><p>(From <a href="/type/List">List</a>, <a href="/type/Proc">Proc</a>, <a href="/type/Seq">Seq</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sink-all">sink-all</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/skip">skip</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Seq">Seq</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/skip-at-least">skip-at-least</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/skip-at-least-pull-one">skip-at-least-pull-one</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/skip-one">skip-one</a></td> <td><p>(From <a href="/type/Iterator">Iterator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/slurp">slurp</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/slurp-rest">slurp-rest</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/slurpy">slurpy</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/so">so</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/socket-host">socket-host</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/socket-port">socket-port</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sort">sort</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Map">Map</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/source">source</a></td> <td><p>(From <a href="/type/X::Numeric::Real">X::Numeric::Real</a>, <a href="/type/X::Str::Numeric">X::Str::Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/source-package">source-package</a></td> <td><p>(From <a href="/type/X::Method::Private::Permission">X::Method::Private::Permission</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/spawn">spawn</a></td> <td><p>(From <a href="/type/Proc">Proc</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/splice">splice</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/split">split</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/splitdir">splitdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/splitpath">splitpath</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sprintf">sprintf</a></td> <td><p>(From <a href="/type/Cool">Cool</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/spurt">spurt</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sqrt">sqrt</a></td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/squish">squish</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/stable">stable</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/start">start</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/Promise">Promise</a>, <a href="/type/Supply">Supply</a>, <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/started">started</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/starts-with">starts-with</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/status">status</a></td> <td><p>(From <a href="/type/Promise">Promise</a>, <a href="/type/X::Promise::CauseOnlyValidOnBroken">X::Promise::CauseOnlyValidOnBroken</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/stderr">stderr</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/stdout">stdout</a></td> <td><p>(From <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sub_signature">sub_signature</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subbuf">subbuf</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subbuf-rw">subbuf-rw</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subname">subname</a></td> <td><p>(From <a href="/type/Backtrace::Frame">Backtrace::Frame</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subparse">subparse</a></td> <td><p>(From <a href="/type/Grammar">Grammar</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subst">subst</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/subst-mutate">subst-mutate</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/substr-eq">substr-eq</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/substr-rw">substr-rw</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/succ">succ</a></td> <td><p>(From <a href="/type/Numeric">Numeric</a>, <a href="/type/Bool">Bool</a>, <a href="/type/Str">Str</a>, <a href="/type/Date">Date</a>, <a href="/type/Enumeration">Enumeration</a>, <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/sum">sum</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/symbol">symbol</a></td> <td><p>(From <a href="/type/X::Undeclared">X::Undeclared</a>, <a href="/type/X::Caller::NotDynamic">X::Caller::NotDynamic</a>, <a href="/type/X::Export::NameClash">X::Export::NameClash</a>, <a href="/type/X::Redeclaration">X::Redeclaration</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/symlink">symlink</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/t">t</a></td> <td><p>(From <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tail">tail</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/take">take</a></td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tap">tap</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/target">target</a></td> <td><p>(From <a href="/type/Match">Match</a>, <a href="/type/X::IO::Link">X::IO::Link</a>, <a href="/type/X::IO::Symlink">X::IO::Symlink</a>, <a href="/type/X::Mixin::NotComposable">X::Mixin::NotComposable</a>, <a href="/type/X::Numeric::Real">X::Numeric::Real</a>, <a href="/type/X::Temporal::InvalidFormat">X::Temporal::InvalidFormat</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/target-name">target-name</a></td> <td><p>(From <a href="/type/X::Composition::NotComposable">X::Composition::NotComposable</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tell">tell</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/term">term</a></td> <td><p>(From <a href="/type/Pod::Defn">Pod::Defn</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tertiary">tertiary</a></td> <td><p>(From <a href="/type/Collation">Collation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/then">then</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/throttle">throttle</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/throw">throw</a></td> <td><p>(From <a href="/type/Exception">Exception</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/timezone">timezone</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tmpdir">tmpdir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>, <a href="/type/IO::Spec::Cygwin">IO::Spec::Cygwin</a>, <a href="/type/IO::Spec::Win32">IO::Spec::Win32</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/to">to</a></td> <td><p>(From <a href="/type/List">List</a>, <a href="/type/Match">Match</a>, <a href="/type/X::IO::Copy">X::IO::Copy</a>, <a href="/type/X::IO::Move">X::IO::Move</a>, <a href="/type/X::IO::Rename">X::IO::Rename</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/to-posix">to-posix</a></td> <td><p>(From <a href="/type/Instant">Instant</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/today">today</a></td> <td><p>(From <a href="/type/Date">Date</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/toggle">toggle</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/total">total</a></td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Mixy">Mixy</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trailing">trailing</a></td> <td><p>(From <a href="/type/Pod::Block::Declarator">Pod::Block::Declarator</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trans">trans</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/tree">tree</a></td> <td><p>(From <a href="/type/Any">Any</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trim">trim</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trim-leading">trim-leading</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trim-trailing">trim-trailing</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/truncate">truncate</a></td> <td><p>(From <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/truncated-to">truncated-to</a></td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trusts">trusts</a></td> <td><p>(From <a href="/type/Metamodel::Trusting">Metamodel::Trusting</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/try_acquire">try_acquire</a></td> <td><p>(From <a href="/type/Semaphore">Semaphore</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/trying">trying</a></td> <td><p>(From <a href="/type/X::IO::DoesNotExist">X::IO::DoesNotExist</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/twigil">twigil</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>, <a href="/type/X::Parameter::Twigil">X::Parameter::Twigil</a>, <a href="/type/X::Syntax::Variable::Twigil">X::Syntax::Variable::Twigil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/type">type</a></td> <td><p>(From <a href="/type/Attribute">Attribute</a>, <a href="/type/Parameter">Parameter</a>, <a href="/type/Pod::FormattingCode">Pod::FormattingCode</a>, <a href="/type/X::Bind::Slice">X::Bind::Slice</a>, <a href="/type/X::Does::TypeObject">X::Does::TypeObject</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/type_captures">type_captures</a></td> <td><p>(From <a href="/type/Parameter">Parameter</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/typename">typename</a></td> <td><p>(From <a href="/type/X::Assignment::RO">X::Assignment::RO</a>, <a href="/type/X::Method::NotFound">X::Method::NotFound</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/udp">udp</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/uncaught_handler">uncaught_handler</a></td> <td><p>(From <a href="/type/Scheduler">Scheduler</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/uninstall">uninstall</a></td> <td><p>(From <a href="/type/CompUnit::Repository::Installation">CompUnit::Repository::Installation</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unique">unique</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unival">unival</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/univals">univals</a></td> <td><p>(From <a href="/type/Str">Str</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unlink">unlink</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unlock">unlock</a></td> <td><p>(From <a href="/type/Lock::Async">Lock::Async</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/Lock">Lock</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unpack">unpack</a></td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unpolar">unpolar</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Cool">Cool</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unshift">unshift</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Buf">Buf</a>, <a href="/type/Nil">Nil</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/unwrap">unwrap</a></td> <td><p>(From <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/updir">updir</a></td> <td><p>(From <a href="/type/IO::Spec::Unix">IO::Spec::Unix</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/utc">utc</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/value">value</a></td> <td><p>(From <a href="/type/Enumeration">Enumeration</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/values">values</a></td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Setty">Setty</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/variable">variable</a></td> <td><p>(From <a href="/type/X::Syntax::NoSelf">X::Syntax::NoSelf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/verbose-config">verbose-config</a></td> <td><p>(From <a href="/type/Compiler">compiler</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/version">version</a></td> <td><p>(From <a href="/type/CompUnit">CompUnit</a>, <a href="/type/Perl">Perl</a>, <a href="/type/Distro">Distro</a>, <a href="/type/Kernel">Kernel</a>, <a href="/type/VM">VM</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/volume">volume</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/vow">vow</a></td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/w">w</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/wait">wait</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/watch">watch</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/watch-path">watch-path</a></td> <td><p>(From <a href="/type/IO::Notification">IO::Notification</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/week">week</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/week-number">week-number</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/week-year">week-year</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/weekday-of-month">weekday-of-month</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/what">what</a></td> <td><p>(From <a href="/type/IO::Special">IO::Special</a>, <a href="/type/X::Undeclared">X::Undeclared</a>, <a href="/type/X::OutOfRange">X::OutOfRange</a>, <a href="/type/X::Redeclaration">X::Redeclaration</a>, <a href="/type/X::Syntax::Malformed">X::Syntax::Malformed</a>, <a href="/type/X::Syntax::Missing">X::Syntax::Missing</a>, <a href="/type/X::Syntax::Variable::Numeric">X::Syntax::Variable::Numeric</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/when">when</a></td> <td><p>(From <a href="/type/X::Obsolete">X::Obsolete</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/whole-second">whole-second</a></td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/why">why</a></td> <td><p>(From <a href="/type/X::Attribute::Required">X::Attribute::Required</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/words">words</a></td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/workaround">workaround</a></td> <td><p>(From <a href="/type/X::NYI">X::NYI</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/wrap">wrap</a></td> <td><p>(From <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write">write</a></td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>, <a href="/type/Proc::Async">Proc::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-bits">write-bits</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-int128">write-int128</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-int16">write-int16</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-int32">write-int32</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-int64">write-int64</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-int8">write-int8</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-num32">write-num32</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-num64">write-num64</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-to">write-to</a></td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-ubits">write-ubits</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-uint128">write-uint128</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-uint16">write-uint16</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-uint32">write-uint32</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-uint64">write-uint64</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/write-uint8">write-uint8</a></td> <td><p>(From <a href="/type/Buf">Buf</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/x">x</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/yada">yada</a></td> <td><p>(From <a href="/type/Routine">Routine</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/year">year</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/yield">yield</a></td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/yyyy-mm-dd">yyyy-mm-dd</a></td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/z">z</a></td> <td><p>(From <a href="/type/IO::Path">IO::Path</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/zip">zip</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr> <tr> <td>method</td> <td><a href="/routine/zip-latest">zip-latest</a></td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
+</td> </tr>
+</tbody>
+</table>
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/9cc1e2e3"><span id="footer-commit">9cc1e2e3</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-05-05T08:24:17Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+
+    </body>
+</html>
