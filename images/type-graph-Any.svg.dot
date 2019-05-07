@@ -80,7 +80,6 @@ digraph "perl6-type-graph" {
     "ComplexStr" [color="#000000", fontcolor="#000000", href="/type/ComplexStr", fontname="FreeSans"];
     "Scheduler" [color="#6666FF", fontcolor="#6666FF", href="/type/Scheduler", fontname="FreeSans"];
     "CurrentThreadScheduler" [color="#000000", fontcolor="#000000", href="/type/CurrentThreadScheduler", fontname="FreeSans"];
-    "Cursor" [color="#000000", fontcolor="#000000", href="/type/Cursor", fontname="FreeSans"];
     "Dateish" [color="#6666FF", fontcolor="#6666FF", href="/type/Dateish", fontname="FreeSans"];
     "Date" [color="#000000", fontcolor="#000000", href="/type/Date", fontname="FreeSans"];
     "DateTime" [color="#000000", fontcolor="#000000", href="/type/DateTime", fontname="FreeSans"];
@@ -271,8 +270,6 @@ digraph "perl6-type-graph" {
     "ComplexStr" -> "Complex" [color="#000000"];
     "ComplexStr" -> "Str" [color="#000000"];
     "CurrentThreadScheduler" -> "Any" [color="#000000"];
-    "Cursor" -> "Capture" [color="#000000"];
-    "Cursor" -> "Cool" [color="#000000"];
     "Date" -> "Any" [color="#000000"];
     "DateTime" -> "Any" [color="#000000"];
     "Deprecation" -> "Any" [color="#000000"];

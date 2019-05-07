@@ -5,108 +5,108 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="886pt" height="332pt"
- viewBox="0.00 0.00 886.38 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 886.28 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 882.381,-328 882.381,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 882.283,-328 882.283,4 -4,4"/>
 <!-- X::TypeCheck -->
 <g id="node1" class="node"><title>X::TypeCheck</title>
 <g id="a_node1"><a xlink:href="/type/X::TypeCheck" xlink:title="X::TypeCheck">
-<ellipse fill="none" stroke="#000000" cx="457.64" cy="-90" rx="66.8882" ry="18"/>
-<text text-anchor="middle" x="457.64" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck</text>
+<ellipse fill="none" stroke="#000000" cx="453.741" cy="-90" rx="66.8882" ry="18"/>
+<text text-anchor="middle" x="453.741" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="457.64" cy="-162" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="457.64" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="453.741" cy="-162" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="453.741" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::TypeCheck&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::TypeCheck&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M457.64,-108.303C457.64,-116.017 457.64,-125.288 457.64,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="454.14,-133.896 457.64,-143.896 461.14,-133.896 454.14,-133.896"/>
+<path fill="none" stroke="#000000" d="M453.741,-108.303C453.741,-116.017 453.741,-125.288 453.741,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="450.241,-133.896 453.741,-143.896 457.241,-133.896 450.241,-133.896"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="457.64" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="457.64" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="453.741" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="453.741" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="457.64" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="457.64" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="453.741" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="453.741" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M457.64,-252.303C457.64,-260.017 457.64,-269.288 457.64,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="454.14,-277.896 457.64,-287.896 461.14,-277.896 454.14,-277.896"/>
+<path fill="none" stroke="#000000" d="M453.741,-252.303C453.741,-260.017 453.741,-269.288 453.741,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="450.241,-277.896 453.741,-287.896 457.241,-277.896 450.241,-277.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M457.64,-180.303C457.64,-188.017 457.64,-197.288 457.64,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="454.14,-205.896 457.64,-215.896 461.14,-205.896 454.14,-205.896"/>
-</g>
-<!-- X::TypeCheck::Assignment -->
-<g id="node5" class="node"><title>X::TypeCheck::Assignment</title>
-<g id="a_node5"><a xlink:href="/type/X::TypeCheck::Assignment" xlink:title="X::TypeCheck::Assignment">
-<ellipse fill="none" stroke="#000000" cx="117.64" cy="-18" rx="117.779" ry="18"/>
-<text text-anchor="middle" x="117.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Assignment</text>
-</a>
-</g>
-</g>
-<!-- X::TypeCheck::Assignment&#45;&gt;X::TypeCheck -->
-<g id="edge4" class="edge"><title>X::TypeCheck::Assignment&#45;&gt;X::TypeCheck</title>
-<path fill="none" stroke="#000000" d="M184.813,-32.8297C246.282,-45.4852 336.482,-64.0558 396.109,-76.332"/>
-<polygon fill="#000000" stroke="#000000" points="395.639,-79.8085 406.139,-78.397 397.051,-72.9523 395.639,-79.8085"/>
-</g>
-<!-- X::TypeCheck::Return -->
-<g id="node6" class="node"><title>X::TypeCheck::Return</title>
-<g id="a_node6"><a xlink:href="/type/X::TypeCheck::Return" xlink:title="X::TypeCheck::Return">
-<ellipse fill="none" stroke="#000000" cx="351.64" cy="-18" rx="98.2828" ry="18"/>
-<text text-anchor="middle" x="351.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Return</text>
-</a>
-</g>
-</g>
-<!-- X::TypeCheck::Return&#45;&gt;X::TypeCheck -->
-<g id="edge5" class="edge"><title>X::TypeCheck::Return&#45;&gt;X::TypeCheck</title>
-<path fill="none" stroke="#000000" d="M376.76,-35.589C391.09,-45.0521 409.221,-57.0253 424.683,-67.236"/>
-<polygon fill="#000000" stroke="#000000" points="423.156,-70.4219 433.429,-73.0119 427.013,-64.5806 423.156,-70.4219"/>
-</g>
-<!-- X::TypeCheck::Splice -->
-<g id="node7" class="node"><title>X::TypeCheck::Splice</title>
-<g id="a_node7"><a xlink:href="/type/X::TypeCheck::Splice" xlink:title="X::TypeCheck::Splice">
-<ellipse fill="none" stroke="#000000" cx="563.64" cy="-18" rx="95.5831" ry="18"/>
-<text text-anchor="middle" x="563.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Splice</text>
-</a>
-</g>
-</g>
-<!-- X::TypeCheck::Splice&#45;&gt;X::TypeCheck -->
-<g id="edge6" class="edge"><title>X::TypeCheck::Splice&#45;&gt;X::TypeCheck</title>
-<path fill="none" stroke="#000000" d="M538.787,-35.4119C524.227,-45.0269 505.675,-57.2786 489.985,-67.6397"/>
-<polygon fill="#000000" stroke="#000000" points="488.023,-64.7413 481.607,-73.1726 491.88,-70.5826 488.023,-64.7413"/>
+<path fill="none" stroke="#000000" d="M453.741,-180.303C453.741,-188.017 453.741,-197.288 453.741,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="450.241,-205.896 453.741,-215.896 457.241,-205.896 450.241,-205.896"/>
 </g>
 <!-- X::TypeCheck::Binding -->
-<g id="node8" class="node"><title>X::TypeCheck::Binding</title>
-<g id="a_node8"><a xlink:href="/type/X::TypeCheck::Binding" xlink:title="X::TypeCheck::Binding">
-<ellipse fill="none" stroke="#000000" cx="777.64" cy="-18" rx="100.983" ry="18"/>
-<text text-anchor="middle" x="777.64" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Binding</text>
+<g id="node5" class="node"><title>X::TypeCheck::Binding</title>
+<g id="a_node5"><a xlink:href="/type/X::TypeCheck::Binding" xlink:title="X::TypeCheck::Binding">
+<ellipse fill="none" stroke="#000000" cx="100.741" cy="-18" rx="100.983" ry="18"/>
+<text text-anchor="middle" x="100.741" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Binding</text>
 </a>
 </g>
 </g>
 <!-- X::TypeCheck::Binding&#45;&gt;X::TypeCheck -->
-<g id="edge7" class="edge"><title>X::TypeCheck::Binding&#45;&gt;X::TypeCheck</title>
-<path fill="none" stroke="#000000" d="M716.319,-32.4139C659.138,-44.9222 574.37,-63.4652 517.624,-75.8784"/>
-<polygon fill="#000000" stroke="#000000" points="516.739,-72.4892 507.718,-78.0454 518.235,-79.3275 516.739,-72.4892"/>
+<g id="edge4" class="edge"><title>X::TypeCheck::Binding&#45;&gt;X::TypeCheck</title>
+<path fill="none" stroke="#000000" d="M165.487,-31.8391C229.912,-44.6147 328.086,-64.0825 391.587,-76.6749"/>
+<polygon fill="#000000" stroke="#000000" points="390.981,-80.1227 401.471,-78.6348 392.343,-73.2564 390.981,-80.1227"/>
+</g>
+<!-- X::TypeCheck::Assignment -->
+<g id="node6" class="node"><title>X::TypeCheck::Assignment</title>
+<g id="a_node6"><a xlink:href="/type/X::TypeCheck::Assignment" xlink:title="X::TypeCheck::Assignment">
+<ellipse fill="none" stroke="#000000" cx="336.741" cy="-18" rx="117.779" ry="18"/>
+<text text-anchor="middle" x="336.741" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Assignment</text>
+</a>
+</g>
+</g>
+<!-- X::TypeCheck::Assignment&#45;&gt;X::TypeCheck -->
+<g id="edge5" class="edge"><title>X::TypeCheck::Assignment&#45;&gt;X::TypeCheck</title>
+<path fill="none" stroke="#000000" d="M364.468,-35.589C380.696,-45.2978 401.34,-57.6488 418.688,-68.0278"/>
+<polygon fill="#000000" stroke="#000000" points="417.04,-71.1204 427.418,-73.2511 420.633,-65.1134 417.04,-71.1204"/>
+</g>
+<!-- X::TypeCheck::Return -->
+<g id="node7" class="node"><title>X::TypeCheck::Return</title>
+<g id="a_node7"><a xlink:href="/type/X::TypeCheck::Return" xlink:title="X::TypeCheck::Return">
+<ellipse fill="none" stroke="#000000" cx="570.741" cy="-18" rx="98.2828" ry="18"/>
+<text text-anchor="middle" x="570.741" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Return</text>
+</a>
+</g>
+</g>
+<!-- X::TypeCheck::Return&#45;&gt;X::TypeCheck -->
+<g id="edge6" class="edge"><title>X::TypeCheck::Return&#45;&gt;X::TypeCheck</title>
+<path fill="none" stroke="#000000" d="M543.31,-35.4119C526.975,-45.1848 506.088,-57.6815 488.593,-68.1484"/>
+<polygon fill="#000000" stroke="#000000" points="486.58,-65.274 479.796,-73.4118 490.174,-71.281 486.58,-65.274"/>
+</g>
+<!-- X::TypeCheck::Splice -->
+<g id="node8" class="node"><title>X::TypeCheck::Splice</title>
+<g id="a_node8"><a xlink:href="/type/X::TypeCheck::Splice" xlink:title="X::TypeCheck::Splice">
+<ellipse fill="none" stroke="#000000" cx="782.741" cy="-18" rx="95.5831" ry="18"/>
+<text text-anchor="middle" x="782.741" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::TypeCheck::Splice</text>
+</a>
+</g>
+</g>
+<!-- X::TypeCheck::Splice&#45;&gt;X::TypeCheck -->
+<g id="edge7" class="edge"><title>X::TypeCheck::Splice&#45;&gt;X::TypeCheck</title>
+<path fill="none" stroke="#000000" d="M722.014,-31.9207C662.865,-44.5055 573.462,-63.5274 514.353,-76.1039"/>
+<polygon fill="#000000" stroke="#000000" points="513.463,-72.7148 504.41,-78.2193 514.92,-79.5616 513.463,-72.7148"/>
 </g>
 </g>
 </svg>

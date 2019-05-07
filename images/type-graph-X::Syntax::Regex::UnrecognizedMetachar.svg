@@ -20,82 +20,77 @@
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="197.834" cy="-234" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="197.834" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="174.834" cy="-234" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="174.834" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M172.8,-36.1508C173.245,-73.3384 182.476,-161.626 190.306,-206.228"/>
-<polygon fill="#000000" stroke="#000000" points="186.868,-206.884 192.157,-216.065 193.748,-205.59 186.868,-206.884"/>
-</g>
-<!-- X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;Exception -->
-<g id="edge2" class="edge"><title>X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M180.555,-36.1508C188.07,-73.1683 197.762,-160.819 199.583,-205.614"/>
-<polygon fill="#000000" stroke="#000000" points="196.089,-205.87 199.868,-215.768 203.086,-205.673 196.089,-205.87"/>
+<path fill="none" stroke="#000000" d="M168.718,-36.0613C163.164,-51.5549 155.834,-72 155.834,-72 155.834,-72 155.834,-108 155.834,-108 155.834,-108 165.108,-169.008 170.697,-205.782"/>
+<polygon fill="#000000" stroke="#000000" points="167.269,-206.521 172.232,-215.881 174.19,-205.469 167.269,-206.521"/>
 </g>
 <!-- X::Syntax -->
 <g id="node6" class="node"><title>X::Syntax</title>
 <g id="a_node6"><a xlink:href="/type/X::Syntax" xlink:title="X::Syntax">
-<ellipse fill="none" stroke="#6666ff" cx="259.834" cy="-90" rx="48.1917" ry="18"/>
-<text text-anchor="middle" x="259.834" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Syntax</text>
+<ellipse fill="none" stroke="#6666ff" cx="212.834" cy="-90" rx="48.1917" ry="18"/>
+<text text-anchor="middle" x="212.834" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Syntax</text>
 </a>
 </g>
 </g>
 <!-- X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;X::Syntax -->
-<g id="edge7" class="edge"><title>X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;X::Syntax</title>
-<path fill="none" stroke="#6666ff" d="M195.411,-35.945C206.668,-45.216 220.752,-56.8143 232.878,-66.8003"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="230.957,-69.7523 240.901,-73.4077 235.407,-64.3488 230.957,-69.7523"/>
+<g id="edge6" class="edge"><title>X::Syntax::Regex::UnrecognizedMetachar&#45;&gt;X::Syntax</title>
+<path fill="none" stroke="#6666ff" d="M184.228,-36.3034C188.599,-44.3564 193.892,-54.1055 198.73,-63.0176"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="195.702,-64.777 203.549,-71.8957 201.854,-61.4373 195.702,-64.777"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="197.834" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="197.834" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="174.834" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="174.834" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="197.834" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="197.834" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="174.834" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="174.834" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
-<g id="edge3" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M197.834,-324.303C197.834,-332.017 197.834,-341.288 197.834,-349.888"/>
-<polygon fill="#000000" stroke="#000000" points="194.335,-349.896 197.834,-359.896 201.335,-349.896 194.335,-349.896"/>
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M174.834,-324.303C174.834,-332.017 174.834,-341.288 174.834,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="171.335,-349.896 174.834,-359.896 178.335,-349.896 171.335,-349.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
-<g id="edge4" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M197.834,-252.303C197.834,-260.017 197.834,-269.288 197.834,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="194.335,-277.896 197.834,-287.896 201.335,-277.896 194.335,-277.896"/>
+<g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M174.834,-252.303C174.834,-260.017 174.834,-269.288 174.834,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="171.335,-277.896 174.834,-287.896 178.335,-277.896 171.335,-277.896"/>
 </g>
 <!-- X::Comp -->
 <g id="node5" class="node"><title>X::Comp</title>
 <g id="a_node5"><a xlink:href="/type/X::Comp" xlink:title="X::Comp">
-<ellipse fill="none" stroke="#6666ff" cx="294.834" cy="-162" rx="44.6926" ry="18"/>
-<text text-anchor="middle" x="294.834" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Comp</text>
+<ellipse fill="none" stroke="#6666ff" cx="247.834" cy="-162" rx="44.6926" ry="18"/>
+<text text-anchor="middle" x="247.834" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Comp</text>
 </a>
 </g>
 </g>
 <!-- X::Comp&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>X::Comp&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M273.787,-178.189C260.279,-187.937 242.536,-200.742 227.595,-211.523"/>
-<polygon fill="#000000" stroke="#000000" points="225.237,-208.909 219.176,-217.599 229.333,-214.585 225.237,-208.909"/>
+<g id="edge4" class="edge"><title>X::Comp&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M231.27,-178.884C221.724,-188.038 209.554,-199.707 198.961,-209.865"/>
+<polygon fill="#000000" stroke="#000000" points="196.382,-207.489 191.586,-216.936 201.227,-212.541 196.382,-207.489"/>
 </g>
 <!-- X::Syntax&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>X::Syntax&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M252.479,-107.847C241.805,-132.294 221.923,-177.829 209.311,-206.714"/>
-<polygon fill="#000000" stroke="#000000" points="205.974,-205.61 205.181,-216.175 212.39,-208.411 205.974,-205.61"/>
+<g id="edge5" class="edge"><title>X::Syntax&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M206.718,-108.061C201.164,-123.555 193.834,-144 193.834,-144 193.834,-144 186.185,-179.833 180.593,-206.025"/>
+<polygon fill="#000000" stroke="#000000" points="177.163,-205.33 178.498,-215.84 184.009,-206.791 177.163,-205.33"/>
 </g>
 <!-- X::Syntax&#45;&gt;X::Comp -->
-<g id="edge8" class="edge"><title>X::Syntax&#45;&gt;X::Comp</title>
-<path fill="none" stroke="#6666ff" d="M268.307,-107.945C272.391,-116.113 277.379,-126.088 281.922,-135.176"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="278.837,-136.832 286.44,-144.211 285.098,-133.701 278.837,-136.832"/>
+<g id="edge7" class="edge"><title>X::Syntax&#45;&gt;X::Comp</title>
+<path fill="none" stroke="#6666ff" d="M221.307,-107.945C225.391,-116.113 230.379,-126.088 234.922,-135.176"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="231.837,-136.832 239.44,-144.211 238.098,-133.701 231.837,-136.832"/>
 </g>
 </g>
 </svg>
