@@ -162,7 +162,7 @@
 </td> </tr> <tr> <td><a href="/routine/ASSIGN-KEY">ASSIGN-KEY</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/ASSIGN-POS">ASSIGN-POS</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/AT-KEY">AT-KEY</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Associative">Associative</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/AT-POS">AT-POS</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Positional">Positional</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/AT-POS">AT-POS</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Positional">Positional</a>, <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Array">Array</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/BIND-KEY">BIND-KEY</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/BIND-POS">BIND-POS</a></td> <td>method</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>)</p>
@@ -220,7 +220,7 @@
 </td> </tr> <tr> <td><a href="/routine/SetHash">SetHash</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Baggy">Baggy</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Setty">Setty</a></td> <td>method</td> <td><p>(From <a href="/type/QuantHash">QuantHash</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Slip">Slip</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/Str">Str</a></td> <td>method</td> <td><p>(From <a href="/type/Systemic">Systemic</a>, <a href="/type/StrDistance">StrDistance</a>, <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Code">Code</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Nil">Nil</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Match">Match</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Junction">Junction</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Thread">Thread</a>, <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/Str">Str</a></td> <td>method</td> <td><p>(From <a href="/type/StrDistance">StrDistance</a>, <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Code">Code</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Nil">Nil</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Match">Match</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Junction">Junction</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Systemic">Systemic</a>, <a href="/type/Thread">Thread</a>, <a href="/type/Version">Version</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Stringy">Stringy</a></td> <td>method</td> <td><p>(From <a href="/type/Blob">Blob</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/Supply">Supply</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Channel">Channel</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket::Async">IO::Socket::Async</a>, <a href="/type/Proc::Async">Proc::Async</a>, <a href="/type/Promise">Promise</a>, <a href="/type/Supplier">Supplier</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/T">T</a></td> <td>sub</td> <td><p>(From <a href="/type/Telemetry">Telemetry</a>)</p>
@@ -228,7 +228,7 @@
 </td> </tr> <tr> <td><a href="/routine/VMnames">VMnames</a></td> <td>method</td> <td><p>(From <a href="/type/Perl">Perl</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/WHERE">WHERE</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/WHEREFORE">WHEREFORE</a></td> <td>method</td> <td><p>(From <a href="/type/Pod::Block::Declarator">Pod::Block::Declarator</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/WHICH">WHICH</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Special">IO::Special</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/WHICH">WHICH</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/IO::Special">IO::Special</a>, <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/WHY">WHY</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/WRITE">WRITE</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/X">X</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
@@ -277,7 +277,7 @@
 </td> </tr> <tr> <td><a href="/routine/andthen">andthen</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/annotations">annotations</a></td> <td>method</td> <td><p>(From <a href="/type/CallFrame">CallFrame</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/antipair">antipair</a></td> <td>method</td> <td><p>(From <a href="/type/Pair">Pair</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/antipairs">antipairs</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/antipairs">antipairs</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Setty">Setty</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/any">any</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/anyof">anyof</a></td> <td>method</td> <td><p>(From <a href="/type/Promise">Promise</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/app_lifetime">app_lifetime</a></td> <td>method</td> <td><p>(From <a href="/type/Thread">Thread</a>)</p>
@@ -507,7 +507,7 @@
 </td> </tr> <tr> <td><a href="/routine/floor">floor</a></td> <td>sub, method</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Real">Real</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Rational">Rational</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/flunk">flunk</a></td> <td>sub</td> <td><p>(From <a href="/type/Test">Test</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/flush">flush</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/fmt">fmt</a></td> <td>method</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/List">List</a>, <a href="/type/Pair">Pair</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/fmt">fmt</a></td> <td>method</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/List">List</a>, <a href="/type/Pair">Pair</a>, <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/format">format</a></td> <td>method</td> <td><p>(From <a href="/type/X::Temporal::InvalidFormat">X::Temporal::InvalidFormat</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/formatter">formatter</a></td> <td>method</td> <td><p>(From <a href="/type/Dateish">Dateish</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/freeze">freeze</a></td> <td>method</td> <td><p>(From <a href="/type/Pair">Pair</a>)</p>
@@ -522,7 +522,7 @@
 </td> </tr> <tr> <td><a href="/routine/get">get</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>, <a href="/type/IO::Socket">IO::Socket</a>, <a href="/type/IO::Socket::INET">IO::Socket::INET</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/get_value">get_value</a></td> <td>method</td> <td><p>(From <a href="/type/Attribute">Attribute</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/getc">getc</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::CatHandle">IO::CatHandle</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/gist">gist</a></td> <td>method, sub</td> <td><p>(From <a href="/type/Systemic">Systemic</a>, <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Attribute">Attribute</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Exception">Exception</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Date">Date</a>, <a href="/type/Nil">Nil</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Submethod">Submethod</a>, <a href="/type/Version">Version</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/gist">gist</a></td> <td>sub, method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Attribute">Attribute</a>, <a href="/type/Backtrace">Backtrace</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Exception">Exception</a>, <a href="/type/Complex">Complex</a>, <a href="/type/Date">Date</a>, <a href="/type/Nil">Nil</a>, <a href="/type/ForeignCode">ForeignCode</a>, <a href="/type/Map">Map</a>, <a href="/type/IO::Handle">IO::Handle</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Submethod">Submethod</a>, <a href="/type/Systemic">Systemic</a>, <a href="/type/Version">Version</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/got">got</a></td> <td>method</td> <td><p>(From <a href="/type/X::OutOfRange">X::OutOfRange</a>, <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/grab">grab</a></td> <td>method</td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>, <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/grabpairs">grabpairs</a></td> <td>method</td> <td><p>(From <a href="/type/Baggy">Baggy</a>, <a href="/type/Setty">Setty</a>)</p>
@@ -556,8 +556,11 @@
 </td> </tr> <tr> <td><a href="/routine/infinite">infinite</a></td> <td>method</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/infix">infix</a></td> <td>method</td> <td><p>(From <a href="/type/X::Syntax::InfixInTermPosition">X::Syntax::InfixInTermPosition</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/infix:<**>">infix:&lt;**&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Complex">Complex</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/infix:<+>">infix:&lt;+&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/infix:<->">infix:&lt;-&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/infix:<*>">infix:&lt;*&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/infix:<+>">infix:&lt;+&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/infix:<->">infix:&lt;-&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>, <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/infix:<$SOLIDUS>">infix:&lt;/&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/infix:<cmp>">infix:&lt;cmp&gt;</a></td> <td>sub</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/infix:<eqv>">infix:&lt;eqv&gt;</a></td> <td>method</td> <td><p>(From <a href="/type/Match">Match</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/infix:«!=»">infix:«!=»</a></td> <td>sub</td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/infix:«<=>»">infix:«&lt;=&gt;»</a></td> <td>sub</td> <td><p>(From <a href="/type/DateTime">DateTime</a>)</p>
@@ -757,7 +760,7 @@
 </td> </tr> <tr> <td><a href="/routine/peer-host">peer-host</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/peer-port">peer-port</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/periods">periods</a></td> <td>sub</td> <td><p>(From <a href="/type/Telemetry">Telemetry</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/perl">perl</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Complex">Complex</a>, <a href="/type/FatRat">FatRat</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Path::Cygwin">IO::Path::Cygwin</a>, <a href="/type/IO::Path::QNX">IO::Path::QNX</a>, <a href="/type/IO::Path::Unix">IO::Path::Unix</a>, <a href="/type/IO::Path::Win32">IO::Path::Win32</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Rat">Rat</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/perl">perl</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Complex">Complex</a>, <a href="/type/FatRat">FatRat</a>, <a href="/type/IO::Path">IO::Path</a>, <a href="/type/IO::Path::Cygwin">IO::Path::Cygwin</a>, <a href="/type/IO::Path::QNX">IO::Path::QNX</a>, <a href="/type/IO::Path::Unix">IO::Path::Unix</a>, <a href="/type/IO::Path::Win32">IO::Path::Win32</a>, <a href="/type/Junction">Junction</a>, <a href="/type/Range">Range</a>, <a href="/type/Rat">Rat</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/permutations">permutations</a></td> <td>method, sub</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/phaser">phaser</a></td> <td>method</td> <td><p>(From <a href="/type/X::Phaser::PrePost">X::Phaser::PrePost</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/pi">pi</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>)</p>
@@ -1128,7 +1131,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/29952fcf"><span id="footer-commit">29952fcf</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/7b9506cc"><span id="footer-commit">7b9506cc</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -1136,7 +1139,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-11T17:12:55Z
+      Generated on 2019-05-17T16:32:30Z
   </p>
   <p>
       This documentation is provided under the terms of the

@@ -223,6 +223,7 @@ digraph "perl6-type-graph" {
     "Supplier" [color="#000000", fontcolor="#000000", href="/type/Supplier", fontname="FreeSans"];
     "Supplier::Preserving" [color="#000000", fontcolor="#000000", href="/type/Supplier::Preserving", fontname="FreeSans"];
     "Supply" [color="#000000", fontcolor="#000000", href="/type/Supply", fontname="FreeSans"];
+    "Systemic" [color="#000000", fontcolor="#000000", href="/type/Systemic", fontname="FreeSans"];
     "Tap" [color="#000000", fontcolor="#000000", href="/type/Tap", fontname="FreeSans"];
     "Thread" [color="#000000", fontcolor="#000000", href="/type/Thread", fontname="FreeSans"];
     "ThreadPoolScheduler" [color="#000000", fontcolor="#000000", href="/type/ThreadPoolScheduler", fontname="FreeSans"];
@@ -383,6 +384,7 @@ digraph "perl6-type-graph" {
     "Supplier" -> "Any" [color="#000000"];
     "Supplier::Preserving" -> "Supplier" [color="#000000"];
     "Supply" -> "Any" [color="#000000"];
+    "Systemic" -> "Any" [color="#000000"];
     "Tap" -> "Any" [color="#000000"];
     "Thread" -> "Any" [color="#000000"];
     "ThreadPoolScheduler" -> "Any" [color="#000000"];
@@ -531,5 +533,6 @@ digraph "perl6-type-graph" {
     "Set" -> "Setty" [color="#6666FF"];
     "SetHash" -> "Setty" [color="#6666FF"];
     "ThreadPoolScheduler" -> "Scheduler" [color="#6666FF"];
+    "VM" -> "Systemic" [color="#6666FF"];
     "utf8" -> "Blob" [color="#6666FF"];
 }

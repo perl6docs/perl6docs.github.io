@@ -109,7 +109,7 @@
                        <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_lazy">method lazy</a></td></tr>
      <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_hyper">method hyper</a></td></tr>
            <tr class="toc-level-3"><td class="toc-number">1.4.1</td><td class="toc-text"><a href="#Options_degree_and_batch">Options degree and batch</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_race">method race</a></td></tr>
+                 <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_race">method race</a></td></tr>
                      <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
  
 </table>
@@ -136,13 +136,13 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lazy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns a lazy iterable wrapping the invocant.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lazy</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_hyper"><a class="u" href="#___top" title="go to top of document">method hyper</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism.</p>
 <p>The order of elements is preserved.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>hyper</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use <code>hyper</code> in situations where it is OK to do the processing of items in parallel, and the output order should be kept relative to the input order. See <a href="/routine/race"><code>race</code></a> for situations where items are processed in parallel and the output order does not matter.</p>
 <h3 id="Options_degree_and_batch"><a class="u" href="#___top" title="go to top of document">Options degree and batch</a></h3>
 <p>The <code>degree</code> option (short for &quot;degree of parallelism&quot;) configures how many parallel workers should be started. To start 4 workers (e.g. to use at most 4 cores), pass <code>:4degree</code> to the <code>hyper</code> or <code>race</code> method. Note that in some cases, choosing a degree higher than the available CPU cores can make sense, for example I/O bound work or latency-heavy tasks like web crawling. For CPU-bound work, however, it makes no sense to pick a number higher than the CPU core count.</p>
 <p>The <code>batch</code> size option configures the number of items sent to a given parallel worker at once. It allows for making a throughput/latency trade-off. If, for example, an operation is long-running per item, and you need the first results as soon as possible, set it to 1. That means every parallel worker gets 1 item to process at a time, and reports the result as soon as possible. In consequence, the overhead for inter-thread communication is maximized. In the other extreme, if you have 1000 items to process and 10 workers, and you give every worker a batch of 100 items, you will incur minimal overhead for dispatching the items, but you will only get the first results when 100 items are processed by the fastest worker (or, for <code>hyper</code>, when the worker getting the first batch returns.) Also, if not all items take the same amount of time to process, you might run into the situation where some workers are already done and sit around without being able to help with the remaining work. In situations where not all items take the same time to process, and you don&#39;t want too much inter-thread communication overhead, picking a number somewhere in the middle makes sense. Your aim might be to keep all workers about evenly busy to make best use of the resources available.</p>
-<p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
+<p>You can also check out this <strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">blog post on the semantics of hyper and race</a></strong></p>
 <h2 id="method_race"><a class="u" href="#___top" title="go to top of document">method race</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
@@ -155,51 +155,51 @@
   <figcaption>Type relations for
     <code>Iterable</code></figcaption>
   <svg width="621pt" height="404pt"
- viewBox="0.00 0.00 621.24 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 620.99 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-400 617.237,-400 617.237,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 616.991,-400 616.991,4 -4,4"/>
 <!-- Iterable -->
 <g id="node1" class="node"><title>Iterable</title>
 <g id="a_node1"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="155.746" cy="-234" rx="40.0939" ry="18"/>
-<text text-anchor="middle" x="155.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+<ellipse fill="none" stroke="#6666ff" cx="230.746" cy="-234" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="230.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="242.746" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="242.746" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="143.746" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="143.746" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="242.746" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="242.746" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="143.746" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="143.746" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M242.746,-324.303C242.746,-332.017 242.746,-341.288 242.746,-349.888"/>
-<polygon fill="#000000" stroke="#000000" points="239.246,-349.896 242.746,-359.896 246.246,-349.896 239.246,-349.896"/>
+<path fill="none" stroke="#000000" d="M143.746,-324.303C143.746,-332.017 143.746,-341.288 143.746,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="140.246,-349.896 143.746,-359.896 147.246,-349.896 140.246,-349.896"/>
 </g>
 <!-- Cool -->
 <g id="node4" class="node"><title>Cool</title>
 <g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="242.746" cy="-234" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="242.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<ellipse fill="none" stroke="#000000" cx="143.746" cy="-234" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="143.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
 <g id="edge2" class="edge"><title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M242.746,-252.303C242.746,-260.017 242.746,-269.288 242.746,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="239.246,-277.896 242.746,-287.896 246.246,-277.896 239.246,-277.896"/>
+<path fill="none" stroke="#000000" d="M143.746,-252.303C143.746,-260.017 143.746,-269.288 143.746,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="140.246,-277.896 143.746,-287.896 147.246,-277.896 140.246,-277.896"/>
 </g>
 <!-- Positional -->
 <g id="node5" class="node"><title>Positional</title>
@@ -209,178 +209,178 @@
 </a>
 </g>
 </g>
-<!-- Range -->
-<g id="node6" class="node"><title>Range</title>
-<g id="a_node6"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="71.7457" cy="-162" rx="36.2938" ry="18"/>
-<text text-anchor="middle" x="71.7457" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
-</a>
-</g>
-</g>
-<!-- Range&#45;&gt;Iterable -->
-<g id="edge13" class="edge"><title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M89.5599,-177.845C101.205,-187.55 116.614,-200.39 129.634,-211.24"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="127.454,-213.979 137.376,-217.692 131.935,-208.602 127.454,-213.979"/>
-</g>
-<!-- Range&#45;&gt;Cool -->
-<g id="edge3" class="edge"><title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M99.3034,-173.982C138.26,-189.506 204.746,-216 204.746,-216 204.746,-216 207.177,-217.088 210.809,-218.712"/>
-<polygon fill="#000000" stroke="#000000" points="209.644,-222.026 220.202,-222.915 212.503,-215.636 209.644,-222.026"/>
-</g>
-<!-- Range&#45;&gt;Positional -->
-<g id="edge12" class="edge"><title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M66.178,-179.945C63.5893,-187.824 60.4482,-197.383 57.5494,-206.206"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="54.2183,-205.132 54.4218,-215.725 60.8686,-207.317 54.2183,-205.132"/>
-</g>
-<!-- Associative -->
-<g id="node7" class="node"><title>Associative</title>
-<g id="a_node7"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="344.746" cy="-234" rx="55.4913" ry="18"/>
-<text text-anchor="middle" x="344.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
-</a>
-</g>
-</g>
-<!-- Map -->
-<g id="node8" class="node"><title>Map</title>
-<g id="a_node8"><a xlink:href="/type/Map" xlink:title="Map">
-<ellipse fill="none" stroke="#000000" cx="245.746" cy="-162" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="245.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
-</a>
-</g>
-</g>
-<!-- Map&#45;&gt;Iterable -->
-<g id="edge14" class="edge"><title>Map&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M228.393,-176.497C215.583,-186.46 197.893,-200.219 183.177,-211.665"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="180.66,-209.188 174.915,-218.091 184.957,-214.714 180.66,-209.188"/>
-</g>
-<!-- Map&#45;&gt;Cool -->
-<g id="edge4" class="edge"><title>Map&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M245.004,-180.303C244.674,-188.017 244.276,-197.288 243.908,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="240.41,-205.755 243.479,-215.896 247.404,-206.055 240.41,-205.755"/>
-</g>
-<!-- Map&#45;&gt;Associative -->
-<g id="edge15" class="edge"><title>Map&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M264.367,-176.166C278.485,-186.149 298.184,-200.077 314.546,-211.647"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="312.566,-214.533 322.751,-217.448 316.607,-208.817 312.566,-214.533"/>
-</g>
 <!-- List -->
-<g id="node9" class="node"><title>List</title>
-<g id="a_node9"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="152.746" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="152.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
+<g id="node6" class="node"><title>List</title>
+<g id="a_node6"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="63.7457" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="63.7457" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
 </a>
 </g>
 </g>
 <!-- List&#45;&gt;Iterable -->
-<g id="edge17" class="edge"><title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M153.487,-180.303C153.818,-188.017 154.215,-197.288 154.584,-205.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="151.088,-206.055 155.013,-215.896 158.081,-205.755 151.088,-206.055"/>
+<g id="edge13" class="edge"><title>List&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M85.1031,-173.085C92.855,-176.746 99.7457,-180 99.7457,-180 99.7457,-180 153.872,-201.899 192.541,-217.543"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="191.414,-220.863 201.997,-221.369 194.04,-214.374 191.414,-220.863"/>
 </g>
 <!-- List&#45;&gt;Cool -->
-<g id="edge5" class="edge"><title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M169.674,-176.166C183.079,-186.592 202.016,-201.322 217.254,-213.173"/>
-<polygon fill="#000000" stroke="#000000" points="215.237,-216.038 225.279,-219.415 219.535,-210.513 215.237,-216.038"/>
+<g id="edge3" class="edge"><title>List&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M79.5511,-176.83C91.0902,-186.926 106.932,-200.788 119.991,-212.215"/>
+<polygon fill="#000000" stroke="#000000" points="117.869,-215.008 127.699,-218.959 122.478,-209.74 117.869,-215.008"/>
 </g>
 <!-- List&#45;&gt;Positional -->
-<g id="edge16" class="edge"><title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M134.153,-175.515C118.989,-185.721 97.2535,-200.35 79.5047,-212.297"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="77.4997,-209.427 71.1581,-217.915 81.4083,-215.234 77.4997,-209.427"/>
+<g id="edge12" class="edge"><title>List&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M60.1146,-179.945C58.4444,-187.739 56.4218,-197.178 54.5483,-205.921"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="51.1206,-205.213 52.4475,-215.725 57.9652,-206.68 51.1206,-205.213"/>
+</g>
+<!-- Range -->
+<g id="node7" class="node"><title>Range</title>
+<g id="a_node7"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="144.746" cy="-162" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="144.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
+</a>
+</g>
+</g>
+<!-- Range&#45;&gt;Iterable -->
+<g id="edge15" class="edge"><title>Range&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M162.984,-177.845C174.988,-187.616 190.899,-200.566 204.285,-211.463"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="202.272,-214.337 212.237,-217.935 206.691,-208.908 202.272,-214.337"/>
+</g>
+<!-- Range&#45;&gt;Cool -->
+<g id="edge4" class="edge"><title>Range&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M144.498,-180.303C144.388,-188.017 144.256,-197.288 144.133,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="140.633,-205.847 143.99,-215.896 147.633,-205.947 140.633,-205.847"/>
+</g>
+<!-- Range&#45;&gt;Positional -->
+<g id="edge14" class="edge"><title>Range&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M124.854,-177.504C111.449,-187.279 93.5268,-200.347 78.4418,-211.347"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="75.9613,-208.824 69.9433,-217.543 80.0855,-214.48 75.9613,-208.824"/>
 </g>
 <!-- PositionalBindFailover -->
-<g id="node10" class="node"><title>PositionalBindFailover</title>
-<g id="a_node10"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="515.746" cy="-234" rx="97.4827" ry="18"/>
-<text text-anchor="middle" x="515.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
+<g id="node8" class="node"><title>PositionalBindFailover</title>
+<g id="a_node8"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
+<ellipse fill="none" stroke="#6666ff" cx="386.746" cy="-234" rx="97.4827" ry="18"/>
+<text text-anchor="middle" x="386.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
 </a>
 </g>
 </g>
 <!-- Seq -->
-<g id="node11" class="node"><title>Seq</title>
-<g id="a_node11"><a xlink:href="/type/Seq" xlink:title="Seq">
-<ellipse fill="none" stroke="#000000" cx="319.746" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="319.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
+<g id="node9" class="node"><title>Seq</title>
+<g id="a_node9"><a xlink:href="/type/Seq" xlink:title="Seq">
+<ellipse fill="none" stroke="#000000" cx="228.746" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="228.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
 </a>
 </g>
 </g>
 <!-- Seq&#45;&gt;Iterable -->
-<g id="edge18" class="edge"><title>Seq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M298.388,-173.085C290.636,-176.746 283.746,-180 283.746,-180 283.746,-180 231.449,-201.654 193.711,-217.28"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="192.372,-214.046 184.471,-221.106 195.05,-220.514 192.372,-214.046"/>
+<g id="edge16" class="edge"><title>Seq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M229.24,-180.303C229.46,-188.017 229.725,-197.288 229.971,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="226.473,-206 230.257,-215.896 233.47,-205.8 226.473,-206"/>
 </g>
 <!-- Seq&#45;&gt;Cool -->
-<g id="edge6" class="edge"><title>Seq&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M304.164,-177.166C293.205,-187.128 278.351,-200.631 265.997,-211.863"/>
-<polygon fill="#000000" stroke="#000000" points="263.35,-209.539 258.305,-218.856 268.058,-214.719 263.35,-209.539"/>
+<g id="edge5" class="edge"><title>Seq&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M212.357,-176.497C199.855,-186.792 182.432,-201.14 168.272,-212.801"/>
+<polygon fill="#000000" stroke="#000000" points="165.869,-210.247 160.374,-219.306 170.319,-215.651 165.869,-210.247"/>
 </g>
 <!-- Seq&#45;&gt;PositionalBindFailover -->
-<g id="edge19" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M342.999,-171.305C372.446,-181.821 424.059,-200.255 463.222,-214.242"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="462.295,-217.627 472.89,-217.694 464.65,-211.035 462.295,-217.627"/>
+<g id="edge17" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
+<path fill="none" stroke="#6666ff" d="M250.103,-173.085C257.855,-176.746 264.746,-180 264.746,-180 264.746,-180 306.324,-198.063 340.935,-213.099"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="339.905,-216.467 350.472,-217.242 342.695,-210.047 339.905,-216.467"/>
 </g>
-<!-- PseudoStash -->
-<g id="node12" class="node"><title>PseudoStash</title>
-<g id="a_node12"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
-<ellipse fill="none" stroke="#000000" cx="255.746" cy="-90" rx="63.0888" ry="18"/>
-<text text-anchor="middle" x="255.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+<!-- Associative -->
+<g id="node10" class="node"><title>Associative</title>
+<g id="a_node10"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="557.746" cy="-234" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="557.746" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
 </a>
 </g>
 </g>
-<!-- PseudoStash&#45;&gt;Map -->
-<g id="edge7" class="edge"><title>PseudoStash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M253.274,-108.303C252.172,-116.017 250.847,-125.288 249.619,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="246.139,-133.501 248.189,-143.896 253.068,-134.491 246.139,-133.501"/>
-</g>
-<!-- Hash -->
-<g id="node13" class="node"><title>Hash</title>
-<g id="a_node13"><a xlink:href="/type/Hash" xlink:title="Hash">
-<ellipse fill="none" stroke="#000000" cx="367.746" cy="-90" rx="31.3957" ry="18"/>
-<text text-anchor="middle" x="367.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+<!-- Map -->
+<g id="node11" class="node"><title>Map</title>
+<g id="a_node11"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="302.746" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="302.746" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
 </a>
 </g>
 </g>
-<!-- Hash&#45;&gt;Map -->
-<g id="edge8" class="edge"><title>Hash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M346.495,-103.193C326.782,-114.504 297.26,-131.443 275.263,-144.064"/>
-<polygon fill="#000000" stroke="#000000" points="273.278,-141.167 266.346,-149.18 276.762,-147.239 273.278,-141.167"/>
+<!-- Map&#45;&gt;Iterable -->
+<g id="edge18" class="edge"><title>Map&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M287.827,-177.504C278.122,-186.94 265.26,-199.444 254.203,-210.194"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="251.627,-207.817 246.897,-217.297 256.507,-212.836 251.627,-207.817"/>
 </g>
-<!-- Array -->
-<g id="node14" class="node"><title>Array</title>
-<g id="a_node14"><a xlink:href="/type/Array" xlink:title="Array">
-<ellipse fill="none" stroke="#000000" cx="70.7457" cy="-90" rx="31.6951" ry="18"/>
-<text text-anchor="middle" x="70.7457" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
-</a>
+<!-- Map&#45;&gt;Cool -->
+<g id="edge6" class="edge"><title>Map&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M280.202,-173.085C272.019,-176.746 264.746,-180 264.746,-180 264.746,-180 181.746,-216 181.746,-216 181.746,-216 179.315,-217.088 175.682,-218.712"/>
+<polygon fill="#000000" stroke="#000000" points="173.989,-215.636 166.29,-222.915 176.847,-222.026 173.989,-215.636"/>
 </g>
-</g>
-<!-- Array&#45;&gt;List -->
-<g id="edge9" class="edge"><title>Array&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M87.7361,-105.504C99.6236,-115.652 115.669,-129.349 128.844,-140.596"/>
-<polygon fill="#000000" stroke="#000000" points="126.736,-143.398 136.614,-147.229 131.281,-138.074 126.736,-143.398"/>
+<!-- Map&#45;&gt;Associative -->
+<g id="edge19" class="edge"><title>Map&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M328.6,-170.097C370.319,-181.55 453.242,-204.313 507.058,-219.086"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="506.181,-222.475 516.751,-221.747 508.034,-215.724 506.181,-222.475"/>
 </g>
 <!-- Slip -->
-<g id="node15" class="node"><title>Slip</title>
-<g id="a_node15"><a xlink:href="/type/Slip" xlink:title="Slip">
-<ellipse fill="none" stroke="#000000" cx="147.746" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="147.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+<g id="node12" class="node"><title>Slip</title>
+<g id="a_node12"><a xlink:href="/type/Slip" xlink:title="Slip">
+<ellipse fill="none" stroke="#000000" cx="48.7457" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="48.7457" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
 </a>
 </g>
 </g>
 <!-- Slip&#45;&gt;List -->
-<g id="edge10" class="edge"><title>Slip&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M148.982,-108.303C149.533,-116.017 150.195,-125.288 150.809,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="147.32,-134.17 151.524,-143.896 154.302,-133.672 147.32,-134.17"/>
+<g id="edge7" class="edge"><title>Slip&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M52.3768,-107.945C54.0469,-115.739 56.0696,-125.178 57.9431,-133.921"/>
+<polygon fill="#000000" stroke="#000000" points="54.5261,-134.68 60.0438,-143.725 61.3708,-133.213 54.5261,-134.68"/>
+</g>
+<!-- Array -->
+<g id="node13" class="node"><title>Array</title>
+<g id="a_node13"><a xlink:href="/type/Array" xlink:title="Array">
+<ellipse fill="none" stroke="#000000" cx="125.746" cy="-90" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="125.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+</a>
+</g>
+</g>
+<!-- Array&#45;&gt;List -->
+<g id="edge8" class="edge"><title>Array&#45;&gt;List</title>
+<path fill="none" stroke="#000000" d="M111.986,-106.535C103.685,-115.908 92.9652,-128.01 83.74,-138.426"/>
+<polygon fill="#000000" stroke="#000000" points="81.0518,-136.182 77.0415,-145.989 86.2919,-140.823 81.0518,-136.182"/>
+</g>
+<!-- Hash -->
+<g id="node14" class="node"><title>Hash</title>
+<g id="a_node14"><a xlink:href="/type/Hash" xlink:title="Hash">
+<ellipse fill="none" stroke="#000000" cx="254.746" cy="-90" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="254.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+</a>
+</g>
+</g>
+<!-- Hash&#45;&gt;Map -->
+<g id="edge9" class="edge"><title>Hash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M265.638,-106.884C271.713,-115.745 279.406,-126.963 286.21,-136.885"/>
+<polygon fill="#000000" stroke="#000000" points="283.355,-138.911 291.897,-145.179 289.128,-134.952 283.355,-138.911"/>
+</g>
+<!-- PseudoStash -->
+<g id="node15" class="node"><title>PseudoStash</title>
+<g id="a_node15"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
+<ellipse fill="none" stroke="#000000" cx="366.746" cy="-90" rx="63.0888" ry="18"/>
+<text text-anchor="middle" x="366.746" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+</a>
+</g>
+</g>
+<!-- PseudoStash&#45;&gt;Map -->
+<g id="edge10" class="edge"><title>PseudoStash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M351.579,-107.589C343.178,-116.777 332.615,-128.33 323.463,-138.34"/>
+<polygon fill="#000000" stroke="#000000" points="320.66,-136.22 316.495,-145.962 325.826,-140.943 320.66,-136.22"/>
 </g>
 <!-- Stash -->
 <g id="node16" class="node"><title>Stash</title>
 <g id="a_node16"><a xlink:href="/type/Stash" xlink:title="Stash">
-<ellipse fill="none" stroke="#000000" cx="367.746" cy="-18" rx="33.2948" ry="18"/>
-<text text-anchor="middle" x="367.746" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
+<ellipse fill="none" stroke="#000000" cx="254.746" cy="-18" rx="33.2948" ry="18"/>
+<text text-anchor="middle" x="254.746" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
 </a>
 </g>
 </g>
 <!-- Stash&#45;&gt;Hash -->
 <g id="edge11" class="edge"><title>Stash&#45;&gt;Hash</title>
-<path fill="none" stroke="#000000" d="M367.746,-36.3034C367.746,-44.0173 367.746,-53.2875 367.746,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="364.246,-61.8956 367.746,-71.8957 371.246,-61.8957 364.246,-61.8956"/>
+<path fill="none" stroke="#000000" d="M254.746,-36.3034C254.746,-44.0173 254.746,-53.2875 254.746,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="251.246,-61.8956 254.746,-71.8957 258.246,-61.8957 251.246,-61.8956"/>
 </g>
 </g>
 </svg>
@@ -397,7 +397,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Iterable.pod6'>Type/Iterable.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/29952fcf"><span id="footer-commit">29952fcf</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Iterable.pod6'>Type/Iterable.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/7b9506cc"><span id="footer-commit">7b9506cc</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -405,7 +405,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Iterable.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-11T17:07:45Z
+      Generated on 2019-05-17T16:27:21Z
   </p>
   <p>
       This documentation is provided under the terms of the

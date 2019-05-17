@@ -25,17 +25,17 @@ digraph "perl6-type-graph" {
     "Metamodel::BUILDPLAN" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BUILDPLAN", fontname="FreeSans"];
     "Metamodel::Mixins" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Mixins", fontname="FreeSans"];
     "Metamodel::ClassHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ClassHOW", fontname="FreeSans"];
-    "Metamodel::BaseType" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BaseType", fontname="FreeSans"];
-    "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
     "Metamodel::TypePretense" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::TypePretense", fontname="FreeSans"];
     "Metamodel::RolePunning" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::RolePunning", fontname="FreeSans"];
     "Metamodel::ParametricRoleGroupHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ParametricRoleGroupHOW", fontname="FreeSans"];
+    "Metamodel::BaseType" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BaseType", fontname="FreeSans"];
+    "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "Metamodel::ClassHOW" -> "Any" [color="#000000"];
-    "Metamodel::EnumHOW" -> "Any" [color="#000000"];
     "Metamodel::ParametricRoleGroupHOW" -> "Any" [color="#000000"];
+    "Metamodel::EnumHOW" -> "Any" [color="#000000"];
 
     // Roles
     "Metamodel::ClassHOW" -> "Metamodel::Naming" [color="#6666FF"];
@@ -57,6 +57,11 @@ digraph "perl6-type-graph" {
     "Metamodel::ClassHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
+    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Naming" [color="#6666FF"];
+    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Stashing" [color="#6666FF"];
+    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
+    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::RolePunning" [color="#6666FF"];
+    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::Stashing" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
@@ -68,9 +73,4 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Naming" [color="#6666FF"];
-    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::Stashing" [color="#6666FF"];
-    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
-    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::RolePunning" [color="#6666FF"];
-    "Metamodel::ParametricRoleGroupHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
 }
