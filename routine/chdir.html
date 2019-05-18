@@ -98,8 +98,8 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_IO">role IO</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO)_sub_chdir">(IO) sub chdir</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_sub_chdir">(routines) sub chdir</a></td></tr>
                                                                 <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_IO::Path">class IO::Path</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(IO::Path)_method_chdir">(IO::Path) method chdir</a></td></tr>
                                              
@@ -108,9 +108,9 @@
 
     <div class="pod-body">
     <p>Documentation for routine <code>chdir</code> assembled from the following types:</p>
-<h1 id="role_IO"><a class="u" href="#___top" title="go to top of document">role IO</a></h1>
-<p>From <a href="/type/IO#sub_chdir">IO</a></p>
-<h2 id="(IO)_sub_chdir"><a href="/routine/chdir#role_IO">(IO) sub chdir</a></h2>
+<h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
+<p>From <a href="/type/independent-routines#sub_chdir">routines</a></p>
+<h2 id="(routines)_sub_chdir"><a href="/routine/chdir#class_routines">(routines) sub chdir</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>chdir</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>path</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>d</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>r</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>w</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Path</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Changes value of <code>$*CWD</code> variable to the provided <code>$path</code>, optionally ensuring the new path passes several file tests. <strong>NOTE:</strong> that this routine does <em>NOT</em> alter the process&#39;s current directory (see <a href="/routine/&*chdir"><code>&amp;*chdir</code></a>).</p>
 <p>Returns <a href="/type/IO::Path"><code>IO::Path</code></a> representing new <code>$*CWD</code> on success. On failure, returns <a href="/type/Failure"><code>Failure</code></a> and leaves <code>$*CWD</code> untouched. The <code>$path</code> can be any object with an IO method that returns an <a href="/type/IO::Path"><code>IO::Path</code></a> object. The available file tests are:</p>
@@ -138,7 +138,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/7b9506cc"><span id="footer-commit">7b9506cc</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -146,7 +146,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-17T16:33:10Z
+      Generated on 2019-05-18T16:21:45Z
   </p>
   <p>
       This documentation is provided under the terms of the

@@ -5,198 +5,198 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="504pt" height="332pt"
- viewBox="0.00 0.00 504.44 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 504.25 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 500.443,-328 500.443,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 500.247,-328 500.247,4 -4,4"/>
 <!-- QuantHash -->
 <g id="node1" class="node"><title>QuantHash</title>
 <g id="a_node1"><a xlink:href="/type/QuantHash" xlink:title="QuantHash">
-<ellipse fill="none" stroke="#6666ff" cx="332.196" cy="-234" rx="55.7903" ry="18"/>
-<text text-anchor="middle" x="332.196" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">QuantHash</text>
+<ellipse fill="none" stroke="#6666ff" cx="120" cy="-234" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="120" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">QuantHash</text>
 </a>
 </g>
 </g>
 <!-- Associative -->
 <g id="node2" class="node"><title>Associative</title>
 <g id="a_node2"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="332.196" cy="-306" rx="55.4913" ry="18"/>
-<text text-anchor="middle" x="332.196" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+<ellipse fill="none" stroke="#6666ff" cx="120" cy="-306" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="120" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
 </a>
 </g>
 </g>
 <!-- QuantHash&#45;&gt;Associative -->
 <g id="edge8" class="edge"><title>QuantHash&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M332.196,-252.303C332.196,-260.017 332.196,-269.288 332.196,-277.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="328.696,-277.896 332.196,-287.896 335.696,-277.896 328.696,-277.896"/>
-</g>
-<!-- Baggy -->
-<g id="node3" class="node"><title>Baggy</title>
-<g id="a_node3"><a xlink:href="/type/Baggy" xlink:title="Baggy">
-<ellipse fill="none" stroke="#6666ff" cx="359.196" cy="-162" rx="35.9954" ry="18"/>
-<text text-anchor="middle" x="359.196" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Baggy</text>
-</a>
-</g>
-</g>
-<!-- Baggy&#45;&gt;QuantHash -->
-<g id="edge9" class="edge"><title>Baggy&#45;&gt;QuantHash</title>
-<path fill="none" stroke="#6666ff" d="M352.66,-179.945C349.621,-187.824 345.934,-197.383 342.531,-206.206"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="339.193,-205.135 338.859,-215.725 345.724,-207.654 339.193,-205.135"/>
+<path fill="none" stroke="#6666ff" d="M120,-252.303C120,-260.017 120,-269.288 120,-277.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="116.5,-277.896 120,-287.896 123.5,-277.896 116.5,-277.896"/>
 </g>
 <!-- Setty -->
-<g id="node4" class="node"><title>Setty</title>
-<g id="a_node4"><a xlink:href="/type/Setty" xlink:title="Setty">
-<ellipse fill="none" stroke="#6666ff" cx="133.196" cy="-162" rx="30.5947" ry="18"/>
-<text text-anchor="middle" x="133.196" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Setty</text>
+<g id="node3" class="node"><title>Setty</title>
+<g id="a_node3"><a xlink:href="/type/Setty" xlink:title="Setty">
+<ellipse fill="none" stroke="#6666ff" cx="116" cy="-162" rx="30.5947" ry="18"/>
+<text text-anchor="middle" x="116" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Setty</text>
 </a>
 </g>
 </g>
 <!-- Setty&#45;&gt;QuantHash -->
-<g id="edge10" class="edge"><title>Setty&#45;&gt;QuantHash</title>
-<path fill="none" stroke="#6666ff" d="M158.602,-171.998C170.115,-176.076 181.196,-180 181.196,-180 181.196,-180 241.743,-201.252 286.157,-216.841"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="285.048,-220.161 295.643,-220.17 287.367,-213.556 285.048,-220.161"/>
+<g id="edge9" class="edge"><title>Setty&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M116.989,-180.303C117.43,-188.017 117.959,-197.288 118.451,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="114.958,-206.112 119.023,-215.896 121.946,-205.712 114.958,-206.112"/>
 </g>
-<!-- Mixy -->
-<g id="node5" class="node"><title>Mixy</title>
-<g id="a_node5"><a xlink:href="/type/Mixy" xlink:title="Mixy">
-<ellipse fill="none" stroke="#6666ff" cx="467.196" cy="-90" rx="29.4969" ry="18"/>
-<text text-anchor="middle" x="467.196" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Mixy</text>
+<!-- Baggy -->
+<g id="node4" class="node"><title>Baggy</title>
+<g id="a_node4"><a xlink:href="/type/Baggy" xlink:title="Baggy">
+<ellipse fill="none" stroke="#6666ff" cx="341" cy="-162" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="341" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Baggy</text>
 </a>
 </g>
 </g>
-<!-- Mixy&#45;&gt;Baggy -->
-<g id="edge11" class="edge"><title>Mixy&#45;&gt;Baggy</title>
-<path fill="none" stroke="#6666ff" d="M447.638,-103.676C431.266,-114.288 407.644,-129.599 388.93,-141.728"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="386.945,-138.844 380.457,-147.22 390.752,-144.718 386.945,-138.844"/>
+<!-- Baggy&#45;&gt;QuantHash -->
+<g id="edge10" class="edge"><title>Baggy&#45;&gt;QuantHash</title>
+<path fill="none" stroke="#6666ff" d="M311.653,-172.295C274.975,-183.913 211.713,-203.951 167.958,-217.81"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="166.861,-214.486 158.385,-220.842 168.975,-221.159 166.861,-214.486"/>
 </g>
 <!-- Mu -->
-<g id="node6" class="node"><title>Mu</title>
-<g id="a_node6"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="217.196" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="217.196" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<g id="node5" class="node"><title>Mu</title>
+<g id="a_node5"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="223" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="223" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
-<g id="node7" class="node"><title>Any</title>
-<g id="a_node7"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="217.196" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="217.196" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<g id="node6" class="node"><title>Any</title>
+<g id="a_node6"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="223" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="223" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M217.196,-180.303C217.196,-188.017 217.196,-197.288 217.196,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="213.696,-205.896 217.196,-215.896 220.696,-205.896 213.696,-205.896"/>
-</g>
-<!-- BagHash -->
-<g id="node8" class="node"><title>BagHash</title>
-<g id="a_node8"><a xlink:href="/type/BagHash" xlink:title="BagHash">
-<ellipse fill="none" stroke="#000000" cx="373.196" cy="-90" rx="46.5926" ry="18"/>
-<text text-anchor="middle" x="373.196" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">BagHash</text>
-</a>
-</g>
-</g>
-<!-- BagHash&#45;&gt;Baggy -->
-<g id="edge12" class="edge"><title>BagHash&#45;&gt;Baggy</title>
-<path fill="none" stroke="#6666ff" d="M369.735,-108.303C368.193,-116.017 366.339,-125.288 364.619,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="361.146,-133.403 362.617,-143.896 368.01,-134.776 361.146,-133.403"/>
-</g>
-<!-- BagHash&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>BagHash&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M343.854,-104.166C316.694,-116.353 276.43,-134.421 248.624,-146.898"/>
-<polygon fill="#000000" stroke="#000000" points="247.041,-143.772 239.35,-151.059 249.907,-150.158 247.041,-143.772"/>
-</g>
-<!-- Bag -->
-<g id="node9" class="node"><title>Bag</title>
-<g id="a_node9"><a xlink:href="/type/Bag" xlink:title="Bag">
-<ellipse fill="none" stroke="#000000" cx="281.196" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="281.196" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Bag</text>
-</a>
-</g>
-</g>
-<!-- Bag&#45;&gt;Baggy -->
-<g id="edge13" class="edge"><title>Bag&#45;&gt;Baggy</title>
-<path fill="none" stroke="#6666ff" d="M296.606,-104.83C307.46,-114.57 322.217,-127.813 334.676,-138.995"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="332.687,-141.913 342.468,-145.987 337.363,-136.703 332.687,-141.913"/>
-</g>
-<!-- Bag&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Bag&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M267.623,-105.845C258.884,-115.404 247.362,-128.006 237.538,-138.751"/>
-<polygon fill="#000000" stroke="#000000" points="234.914,-136.434 230.749,-146.176 240.08,-141.158 234.914,-136.434"/>
-</g>
-<!-- SetHash -->
-<g id="node10" class="node"><title>SetHash</title>
-<g id="a_node10"><a xlink:href="/type/SetHash" xlink:title="SetHash">
-<ellipse fill="none" stroke="#000000" cx="44.1961" cy="-90" rx="44.393" ry="18"/>
-<text text-anchor="middle" x="44.1961" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">SetHash</text>
-</a>
-</g>
-</g>
-<!-- SetHash&#45;&gt;Setty -->
-<g id="edge14" class="edge"><title>SetHash&#45;&gt;Setty</title>
-<path fill="none" stroke="#6666ff" d="M63.9481,-106.535C76.7557,-116.609 93.5735,-129.836 107.428,-140.733"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="105.585,-143.737 115.609,-147.168 109.913,-138.234 105.585,-143.737"/>
-</g>
-<!-- SetHash&#45;&gt;Any -->
-<g id="edge4" class="edge"><title>SetHash&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M74.3304,-103.193C105.254,-115.705 153.2,-135.106 184.892,-147.929"/>
-<polygon fill="#000000" stroke="#000000" points="183.986,-151.338 194.568,-151.844 186.611,-144.849 183.986,-151.338"/>
+<path fill="none" stroke="#000000" d="M223,-180.303C223,-188.017 223,-197.288 223,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="219.5,-205.896 223,-215.896 226.5,-205.896 219.5,-205.896"/>
 </g>
 <!-- Set -->
-<g id="node11" class="node"><title>Set</title>
-<g id="a_node11"><a xlink:href="/type/Set" xlink:title="Set">
-<ellipse fill="none" stroke="#000000" cx="133.196" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="133.196" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Set</text>
+<g id="node7" class="node"><title>Set</title>
+<g id="a_node7"><a xlink:href="/type/Set" xlink:title="Set">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Set</text>
 </a>
 </g>
 </g>
 <!-- Set&#45;&gt;Setty -->
-<g id="edge15" class="edge"><title>Set&#45;&gt;Setty</title>
-<path fill="none" stroke="#6666ff" d="M133.196,-108.303C133.196,-116.017 133.196,-125.288 133.196,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="129.696,-133.896 133.196,-143.896 136.696,-133.896 129.696,-133.896"/>
+<g id="edge11" class="edge"><title>Set&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M43.7402,-104.166C56.9109,-114.525 75.4832,-129.133 90.5009,-140.945"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="88.3976,-143.743 98.4214,-147.174 92.7251,-138.241 88.3976,-143.743"/>
 </g>
 <!-- Set&#45;&gt;Any -->
-<g id="edge5" class="edge"><title>Set&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M149.392,-104.497C161.826,-114.858 179.187,-129.326 193.228,-141.027"/>
-<polygon fill="#000000" stroke="#000000" points="191.127,-143.832 201.05,-147.545 195.608,-138.454 191.127,-143.832"/>
+<g id="edge2" class="edge"><title>Set&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M48.3574,-101.085C56.1094,-104.746 63,-108 63,-108 63,-108 142.752,-134.418 189.644,-149.951"/>
+<polygon fill="#000000" stroke="#000000" points="188.798,-153.358 199.391,-153.18 190.999,-146.713 188.798,-153.358"/>
 </g>
-<!-- MixHash -->
-<g id="node12" class="node"><title>MixHash</title>
-<g id="a_node12"><a xlink:href="/type/MixHash" xlink:title="MixHash">
-<ellipse fill="none" stroke="#000000" cx="419.196" cy="-18" rx="45.4919" ry="18"/>
-<text text-anchor="middle" x="419.196" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
+<!-- SetHash -->
+<g id="node8" class="node"><title>SetHash</title>
+<g id="a_node8"><a xlink:href="/type/SetHash" xlink:title="SetHash">
+<ellipse fill="none" stroke="#000000" cx="116" cy="-90" rx="44.393" ry="18"/>
+<text text-anchor="middle" x="116" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">SetHash</text>
 </a>
 </g>
 </g>
-<!-- MixHash&#45;&gt;Mixy -->
-<g id="edge16" class="edge"><title>MixHash&#45;&gt;Mixy</title>
-<path fill="none" stroke="#6666ff" d="M430.571,-35.589C436.515,-44.2561 443.902,-55.0289 450.482,-64.6246"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="447.691,-66.7439 456.233,-73.0119 453.464,-62.7852 447.691,-66.7439"/>
+<!-- SetHash&#45;&gt;Setty -->
+<g id="edge12" class="edge"><title>SetHash&#45;&gt;Setty</title>
+<path fill="none" stroke="#6666ff" d="M116,-108.303C116,-116.017 116,-125.288 116,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="112.5,-133.896 116,-143.896 119.5,-133.896 112.5,-133.896"/>
 </g>
-<!-- MixHash&#45;&gt;Any -->
-<g id="edge6" class="edge"><title>MixHash&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M384.403,-29.598C333.625,-45.0647 245.196,-72 245.196,-72 245.196,-72 233.8,-108.224 225.548,-134.451"/>
-<polygon fill="#000000" stroke="#000000" points="222.125,-133.67 222.463,-144.26 228.802,-135.771 222.125,-133.67"/>
+<!-- SetHash&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>SetHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M138.431,-105.674C155.025,-116.531 177.723,-131.38 195.426,-142.961"/>
+<polygon fill="#000000" stroke="#000000" points="193.885,-146.135 204.17,-148.681 197.717,-140.278 193.885,-146.135"/>
+</g>
+<!-- BagHash -->
+<g id="node9" class="node"><title>BagHash</title>
+<g id="a_node9"><a xlink:href="/type/BagHash" xlink:title="BagHash">
+<ellipse fill="none" stroke="#000000" cx="373" cy="-90" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="373" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">BagHash</text>
+</a>
+</g>
+</g>
+<!-- BagHash&#45;&gt;Baggy -->
+<g id="edge13" class="edge"><title>BagHash&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M365.254,-107.945C361.559,-116.027 357.055,-125.879 352.937,-134.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="349.649,-133.661 348.675,-144.211 356.016,-136.571 349.649,-133.661"/>
+</g>
+<!-- BagHash&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>BagHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M344.433,-104.331C318.542,-116.414 280.479,-134.176 253.89,-146.585"/>
+<polygon fill="#000000" stroke="#000000" points="252.239,-143.493 244.657,-150.893 255.199,-149.836 252.239,-143.493"/>
+</g>
+<!-- Mixy -->
+<g id="node10" class="node"><title>Mixy</title>
+<g id="a_node10"><a xlink:href="/type/Mixy" xlink:title="Mixy">
+<ellipse fill="none" stroke="#6666ff" cx="467" cy="-90" rx="29.4969" ry="18"/>
+<text text-anchor="middle" x="467" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Mixy</text>
+</a>
+</g>
+</g>
+<!-- Mixy&#45;&gt;Baggy -->
+<g id="edge14" class="edge"><title>Mixy&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M445.91,-102.716C426.084,-113.731 396.122,-130.377 373.287,-143.063"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="371.342,-140.14 364.3,-148.056 374.741,-146.259 371.342,-140.14"/>
+</g>
+<!-- Bag -->
+<g id="node11" class="node"><title>Bag</title>
+<g id="a_node11"><a xlink:href="/type/Bag" xlink:title="Bag">
+<ellipse fill="none" stroke="#000000" cx="281" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="281" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Bag</text>
+</a>
+</g>
+</g>
+<!-- Bag&#45;&gt;Baggy -->
+<g id="edge15" class="edge"><title>Bag&#45;&gt;Baggy</title>
+<path fill="none" stroke="#6666ff" d="M294.019,-106.189C301.743,-115.2 311.705,-126.823 320.467,-137.045"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="318.006,-139.552 327.171,-144.866 323.321,-134.996 318.006,-139.552"/>
+</g>
+<!-- Bag&#45;&gt;Any -->
+<g id="edge5" class="edge"><title>Bag&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M268.415,-106.189C260.738,-115.454 250.774,-127.48 242.135,-137.906"/>
+<polygon fill="#000000" stroke="#000000" points="239.246,-135.907 235.561,-145.841 244.636,-140.374 239.246,-135.907"/>
 </g>
 <!-- Mix -->
-<g id="node13" class="node"><title>Mix</title>
-<g id="a_node13"><a xlink:href="/type/Mix" xlink:title="Mix">
-<ellipse fill="none" stroke="#000000" cx="282.196" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="282.196" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mix</text>
+<g id="node12" class="node"><title>Mix</title>
+<g id="a_node12"><a xlink:href="/type/Mix" xlink:title="Mix">
+<ellipse fill="none" stroke="#000000" cx="419" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="419" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mix</text>
 </a>
 </g>
 </g>
-<!-- Mix&#45;&gt;Mixy -->
-<g id="edge17" class="edge"><title>Mix&#45;&gt;Mixy</title>
-<path fill="none" stroke="#6666ff" d="M305.489,-27.398C346.939,-42.3426 429.196,-72 429.196,-72 429.196,-72 431.541,-73.0491 435.066,-74.626"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="433.657,-77.83 444.215,-78.7189 436.516,-71.4403 433.657,-77.83"/>
-</g>
 <!-- Mix&#45;&gt;Any -->
-<g id="edge7" class="edge"><title>Mix&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M264.893,-32.1011C244.164,-47.7959 212.196,-72 212.196,-72 212.196,-72 212.196,-108 212.196,-108 212.196,-108 213.397,-120.73 214.622,-133.712"/>
-<polygon fill="#000000" stroke="#000000" points="211.163,-134.312 215.587,-143.939 218.132,-133.654 211.163,-134.312"/>
+<g id="edge6" class="edge"><title>Mix&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M394.806,-26.3694C346.996,-40.9324 245,-72 245,-72 245,-72 236.142,-107.833 229.668,-134.025"/>
+<polygon fill="#000000" stroke="#000000" points="226.244,-133.292 227.242,-143.84 233.039,-134.972 226.244,-133.292"/>
+</g>
+<!-- Mix&#45;&gt;Mixy -->
+<g id="edge16" class="edge"><title>Mix&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M429.892,-34.8841C435.968,-43.7445 443.66,-54.9627 450.464,-64.8848"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="447.609,-66.9108 456.151,-73.1788 453.382,-62.9521 447.609,-66.9108"/>
+</g>
+<!-- MixHash -->
+<g id="node13" class="node"><title>MixHash</title>
+<g id="a_node13"><a xlink:href="/type/MixHash" xlink:title="MixHash">
+<ellipse fill="none" stroke="#000000" cx="235" cy="-18" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="235" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">MixHash</text>
+</a>
+</g>
+</g>
+<!-- MixHash&#45;&gt;Any -->
+<g id="edge7" class="edge"><title>MixHash&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M227.723,-35.7695C220.984,-51.2969 212,-72 212,-72 212,-72 212,-108 212,-108 212,-108 214.695,-120.983 217.416,-134.097"/>
+<polygon fill="#000000" stroke="#000000" points="214,-134.859 219.459,-143.939 220.854,-133.436 214,-134.859"/>
+</g>
+<!-- MixHash&#45;&gt;Mixy -->
+<g id="edge17" class="edge"><title>MixHash&#45;&gt;Mixy</title>
+<path fill="none" stroke="#6666ff" d="M271.49,-28.9689C327.687,-44.3217 429,-72 429,-72 429,-72 431.345,-73.0491 434.87,-74.626"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="433.461,-77.83 444.019,-78.7189 436.32,-71.4403 433.461,-77.83"/>
 </g>
 </g>
 </svg>

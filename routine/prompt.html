@@ -98,17 +98,17 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_IO">role IO</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO)_sub_prompt">(IO) sub prompt</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_sub_prompt">(routines) sub prompt</a></td></tr>
                                         
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for sub <code>prompt</code> assembled from the following types:</p>
-<h1 id="role_IO"><a class="u" href="#___top" title="go to top of document">role IO</a></h1>
-<p>From <a href="/type/IO#sub_prompt">IO</a></p>
-<h2 id="(IO)_sub_prompt"><a href="/routine/prompt#role_IO">(IO) sub prompt</a></h2>
+<h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
+<p>From <a href="/type/independent-routines#sub_prompt">routines</a></p>
+<h2 id="(routines)_sub_prompt"><a href="/routine/prompt#class_routines">(routines) sub prompt</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>prompt</span></span><span>()</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>prompt</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>msg</span></span></span><span>)</span></span></div></pre><p><a href="/routine/print">Prints</a> <code>$msg</code> to <code>$*OUT</code> handle if <code>$msg</code> was provided, then <a href="/routine/get">gets</a> a line of input from <code>$*IN</code> handle. By default, this is equivalent to printing <code>$msg</code> to <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29">STDOUT</a>, reading a line from <a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_input_.28stdin.29">STDIN</a>, removing the trailing new line, and returning the resultant string. As of Rakudo 2018.08, <code>prompt</code> will create <a href="/language/numerics#Allomorphs">allomorphs</a> for numeric values, equivalent to calling <code>val prompt</code>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>name</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>prompt</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>What&#39;s&nbsp;your&nbsp;name?&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Hi,&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>name</span></span><span>!&nbsp;Nice&nbsp;to&nbsp;meet&nbsp;you!</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>age</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>prompt</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Say&nbsp;your&nbsp;age&nbsp;(number)</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>years</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>age</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>age-badge</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>age</span></span></span><span>;</span></span></div></pre><p>In the code above, <code>$age</code> will be duck-typed to the allomorph <a href="/type/IntStr">IntStr</a> if it&#39;s entered correctly as a number.</p>
 
@@ -117,7 +117,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/7b9506cc"><span id="footer-commit">7b9506cc</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -125,7 +125,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-17T16:34:29Z
+      Generated on 2019-05-18T16:21:09Z
   </p>
   <p>
       This documentation is provided under the terms of the

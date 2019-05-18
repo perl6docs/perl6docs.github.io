@@ -25,17 +25,17 @@ digraph "perl6-type-graph" {
     "Metamodel::Mixins" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Mixins", fontname="FreeSans"];
     "Metamodel::BoolificationProtocol" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::BoolificationProtocol", fontname="FreeSans"];
     "Metamodel::ClassHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ClassHOW", fontname="FreeSans"];
-    "Metamodel::ConcreteRoleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ConcreteRoleHOW", fontname="FreeSans"];
     "Metamodel::TypePretense" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::TypePretense", fontname="FreeSans"];
     "Metamodel::RolePunning" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::RolePunning", fontname="FreeSans"];
     "Metamodel::ParametricRoleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ParametricRoleHOW", fontname="FreeSans"];
+    "Metamodel::ConcreteRoleHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ConcreteRoleHOW", fontname="FreeSans"];
     "Metamodel::NativeHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::NativeHOW", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "Metamodel::ClassHOW" -> "Any" [color="#000000"];
-    "Metamodel::ConcreteRoleHOW" -> "Any" [color="#000000"];
     "Metamodel::ParametricRoleHOW" -> "Any" [color="#000000"];
+    "Metamodel::ConcreteRoleHOW" -> "Any" [color="#000000"];
     "Metamodel::NativeHOW" -> "Any" [color="#000000"];
 
     // Roles
@@ -58,14 +58,6 @@ digraph "perl6-type-graph" {
     "Metamodel::ClassHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::Naming" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::Versioning" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::PrivateMethodContainer" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MethodContainer" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MultiMethodContainer" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::RoleContainer" [color="#6666FF"];
-    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MultipleInheritance" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Versioning" [color="#6666FF"];
@@ -78,6 +70,14 @@ digraph "perl6-type-graph" {
     "Metamodel::ParametricRoleHOW" -> "Metamodel::Stashing" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::TypePretense" [color="#6666FF"];
     "Metamodel::ParametricRoleHOW" -> "Metamodel::RolePunning" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::Naming" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::Versioning" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::PrivateMethodContainer" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MethodContainer" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MultiMethodContainer" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::AttributeContainer" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::RoleContainer" [color="#6666FF"];
+    "Metamodel::ConcreteRoleHOW" -> "Metamodel::MultipleInheritance" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::NativeHOW" -> "Metamodel::Versioning" [color="#6666FF"];

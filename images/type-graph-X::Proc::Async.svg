@@ -5,56 +5,56 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="1419pt" height="332pt"
- viewBox="0.00 0.00 1418.78 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 1418.53 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 1414.78,-328 1414.78,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 1414.53,-328 1414.53,4 -4,4"/>
 <!-- X::Proc::Async -->
 <g id="node1" class="node"><title>X::Proc::Async</title>
 <g id="a_node1"><a xlink:href="/type/X::Proc::Async" xlink:title="X::Proc::Async">
-<ellipse fill="none" stroke="#6666ff" cx="663.838" cy="-90" rx="68.4888" ry="18"/>
-<text text-anchor="middle" x="663.838" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Proc::Async</text>
+<ellipse fill="none" stroke="#6666ff" cx="653.838" cy="-90" rx="68.4888" ry="18"/>
+<text text-anchor="middle" x="653.838" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Proc::Async</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="711.838" cy="-162" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="711.838" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="701.838" cy="-162" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="701.838" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::Proc::Async&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M675.457,-107.945C681.176,-116.285 688.187,-126.509 694.522,-135.748"/>
-<polygon fill="#000000" stroke="#000000" points="691.784,-137.943 700.325,-144.211 697.557,-133.984 691.784,-137.943"/>
+<path fill="none" stroke="#000000" d="M665.457,-107.945C671.176,-116.285 678.187,-126.509 684.522,-135.748"/>
+<polygon fill="#000000" stroke="#000000" points="681.784,-137.943 690.325,-144.211 687.557,-133.984 681.784,-137.943"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="711.838" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="711.838" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="701.838" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="701.838" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="711.838" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="711.838" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="701.838" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="701.838" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M711.838,-252.303C711.838,-260.017 711.838,-269.288 711.838,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="708.338,-277.896 711.838,-287.896 715.338,-277.896 708.338,-277.896"/>
+<path fill="none" stroke="#000000" d="M701.838,-252.303C701.838,-260.017 701.838,-269.288 701.838,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="698.338,-277.896 701.838,-287.896 705.338,-277.896 698.338,-277.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M711.838,-180.303C711.838,-188.017 711.838,-197.288 711.838,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="708.338,-205.896 711.838,-215.896 715.338,-205.896 708.338,-205.896"/>
+<path fill="none" stroke="#000000" d="M701.838,-180.303C701.838,-188.017 701.838,-197.288 701.838,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="698.338,-205.896 701.838,-215.896 705.338,-205.896 698.338,-205.896"/>
 </g>
 <!-- X::Proc::Async::OpenForWriting -->
 <g id="node5" class="node"><title>X::Proc::Async::OpenForWriting</title>
@@ -66,13 +66,13 @@
 </g>
 <!-- X::Proc::Async::OpenForWriting&#45;&gt;X::Proc::Async -->
 <g id="edge9" class="edge"><title>X::Proc::Async::OpenForWriting&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M228.11,-31.2331C332.5,-45.0726 500.169,-67.3015 594.17,-79.7637"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="593.772,-83.2415 604.145,-81.0862 594.692,-76.3022 593.772,-83.2415"/>
+<path fill="none" stroke="#6666ff" d="M227.254,-31.3535C329.295,-45.1429 492.157,-67.1513 584.324,-79.6062"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="584.006,-83.0949 594.384,-80.9657 584.943,-76.158 584.006,-83.0949"/>
 </g>
 <!-- X::Proc::Async::OpenForWriting&#45;&gt;Exception -->
 <g id="edge4" class="edge"><title>X::Proc::Async::OpenForWriting&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M197.207,-34.1292C312.062,-62.444 557.348,-122.914 662.41,-148.815"/>
-<polygon fill="#000000" stroke="#000000" points="661.583,-152.216 672.13,-151.211 663.259,-145.419 661.583,-152.216"/>
+<path fill="none" stroke="#000000" d="M196.142,-34.1292C308.751,-62.3809 548.956,-122.644 652.576,-148.641"/>
+<polygon fill="#000000" stroke="#000000" points="651.912,-152.083 662.463,-151.121 653.615,-145.293 651.912,-152.083"/>
 </g>
 <!-- X::Proc::Async::AlreadyStarted -->
 <g id="node6" class="node"><title>X::Proc::Async::AlreadyStarted</title>
@@ -84,67 +84,67 @@
 </g>
 <!-- X::Proc::Async::AlreadyStarted&#45;&gt;X::Proc::Async -->
 <g id="edge10" class="edge"><title>X::Proc::Async::AlreadyStarted&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M474.466,-34.4485C514.623,-46.0162 569.343,-61.7793 609.637,-73.3867"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="608.716,-76.7635 619.294,-76.1684 610.654,-70.037 608.716,-76.7635"/>
+<path fill="none" stroke="#6666ff" d="M472.838,-34.6222C510.882,-46.0518 562.326,-61.5071 600.646,-73.0196"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="600.001,-76.4804 610.586,-76.0057 602.016,-69.7764 600.001,-76.4804"/>
 </g>
 <!-- X::Proc::Async::AlreadyStarted&#45;&gt;Exception -->
 <g id="edge5" class="edge"><title>X::Proc::Async::AlreadyStarted&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M451.672,-35.5316C499.678,-61.2698 586.838,-108 586.838,-108 586.838,-108 634.942,-128.396 671.467,-143.883"/>
-<polygon fill="#000000" stroke="#000000" points="670.366,-147.218 680.939,-147.899 673.099,-140.773 670.366,-147.218"/>
+<path fill="none" stroke="#000000" d="M450.18,-35.7402C495.37,-61.5213 576.838,-108 576.838,-108 576.838,-108 624.942,-128.396 661.467,-143.883"/>
+<polygon fill="#000000" stroke="#000000" points="660.366,-147.218 670.939,-147.899 663.099,-140.773 660.366,-147.218"/>
 </g>
-<!-- X::Proc::Async::TapBeforeSpawn -->
-<g id="node7" class="node"><title>X::Proc::Async::TapBeforeSpawn</title>
-<g id="a_node7"><a xlink:href="/type/X::Proc::Async::TapBeforeSpawn" xlink:title="X::Proc::Async::TapBeforeSpawn">
-<ellipse fill="none" stroke="#000000" cx="711.838" cy="-18" rx="141.875" ry="18"/>
-<text text-anchor="middle" x="711.838" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::TapBeforeSpawn</text>
+<!-- X::Proc::Async::MustBeStarted -->
+<g id="node7" class="node"><title>X::Proc::Async::MustBeStarted</title>
+<g id="a_node7"><a xlink:href="/type/X::Proc::Async::MustBeStarted" xlink:title="X::Proc::Async::MustBeStarted">
+<ellipse fill="none" stroke="#000000" cx="701.838" cy="-18" rx="131.877" ry="18"/>
+<text text-anchor="middle" x="701.838" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::MustBeStarted</text>
 </a>
 </g>
 </g>
-<!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async -->
-<g id="edge11" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M700.218,-35.945C694.499,-44.2853 687.489,-54.5092 681.153,-63.7483"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="678.119,-61.9843 675.35,-72.211 683.892,-65.9431 678.119,-61.9843"/>
+<!-- X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async -->
+<g id="edge11" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M690.218,-35.945C684.499,-44.2853 677.489,-54.5092 671.153,-63.7483"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="668.119,-61.9843 665.35,-72.211 673.892,-65.9431 668.119,-61.9843"/>
 </g>
-<!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M721.173,-36.0613C729.651,-51.5549 740.838,-72 740.838,-72 740.838,-72 740.838,-108 740.838,-108 740.838,-108 733.36,-121.667 725.998,-135.121"/>
-<polygon fill="#000000" stroke="#000000" points="722.743,-133.778 721.014,-144.23 728.884,-137.138 722.743,-133.778"/>
+<!-- X::Proc::Async::MustBeStarted&#45;&gt;Exception -->
+<g id="edge6" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M711.173,-36.0613C719.651,-51.5549 730.838,-72 730.838,-72 730.838,-72 730.838,-108 730.838,-108 730.838,-108 723.36,-121.667 715.998,-135.121"/>
+<polygon fill="#000000" stroke="#000000" points="712.743,-133.778 711.014,-144.23 718.884,-137.138 712.743,-133.778"/>
 </g>
 <!-- X::Proc::Async::CharsOrBytes -->
 <g id="node8" class="node"><title>X::Proc::Async::CharsOrBytes</title>
 <g id="a_node8"><a xlink:href="/type/X::Proc::Async::CharsOrBytes" xlink:title="X::Proc::Async::CharsOrBytes">
-<ellipse fill="none" stroke="#000000" cx="999.838" cy="-18" rx="128.877" ry="18"/>
-<text text-anchor="middle" x="999.838" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::CharsOrBytes</text>
+<ellipse fill="none" stroke="#000000" cx="980.838" cy="-18" rx="128.877" ry="18"/>
+<text text-anchor="middle" x="980.838" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::CharsOrBytes</text>
 </a>
 </g>
 </g>
 <!-- X::Proc::Async::CharsOrBytes&#45;&gt;X::Proc::Async -->
 <g id="edge12" class="edge"><title>X::Proc::Async::CharsOrBytes&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M931.438,-33.2499C871.037,-45.8335 783.753,-64.0176 725.475,-76.159"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="724.739,-72.7371 715.663,-78.2032 726.166,-79.59 724.739,-72.7371"/>
+<path fill="none" stroke="#6666ff" d="M913.48,-33.4192C855.1,-45.9163 771.358,-63.8429 714.902,-75.9283"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="714.085,-72.5237 705.039,-78.0395 715.55,-79.3686 714.085,-72.5237"/>
 </g>
 <!-- X::Proc::Async::CharsOrBytes&#45;&gt;Exception -->
 <g id="edge7" class="edge"><title>X::Proc::Async::CharsOrBytes&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M966.519,-35.4279C912.491,-62.0669 806.117,-114.515 749.45,-142.455"/>
-<polygon fill="#000000" stroke="#000000" points="747.556,-139.487 740.134,-147.048 750.651,-145.765 747.556,-139.487"/>
+<path fill="none" stroke="#000000" d="M948.561,-35.4279C896.356,-61.9979 793.705,-114.243 738.703,-142.237"/>
+<polygon fill="#000000" stroke="#000000" points="736.979,-139.187 729.654,-146.843 740.154,-145.426 736.979,-139.187"/>
 </g>
-<!-- X::Proc::Async::MustBeStarted -->
-<g id="node9" class="node"><title>X::Proc::Async::MustBeStarted</title>
-<g id="a_node9"><a xlink:href="/type/X::Proc::Async::MustBeStarted" xlink:title="X::Proc::Async::MustBeStarted">
-<ellipse fill="none" stroke="#000000" cx="1278.84" cy="-18" rx="131.877" ry="18"/>
-<text text-anchor="middle" x="1278.84" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::MustBeStarted</text>
+<!-- X::Proc::Async::TapBeforeSpawn -->
+<g id="node9" class="node"><title>X::Proc::Async::TapBeforeSpawn</title>
+<g id="a_node9"><a xlink:href="/type/X::Proc::Async::TapBeforeSpawn" xlink:title="X::Proc::Async::TapBeforeSpawn">
+<ellipse fill="none" stroke="#000000" cx="1268.84" cy="-18" rx="141.875" ry="18"/>
+<text text-anchor="middle" x="1268.84" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::TapBeforeSpawn</text>
 </a>
 </g>
 </g>
-<!-- X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async -->
-<g id="edge13" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;X::Proc::Async</title>
-<path fill="none" stroke="#6666ff" d="M1183.62,-30.4806C1158.29,-33.5341 1137.84,-36 1137.84,-36 1137.84,-36 867.824,-66.1914 735.383,-81.0002"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="734.868,-77.5359 725.319,-82.1255 735.646,-84.4925 734.868,-77.5359"/>
+<!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async -->
+<g id="edge13" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M1167.28,-30.5591C1042.68,-44.7412 834.589,-68.4267 725.516,-80.8415"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="724.816,-77.3985 715.276,-82.007 725.608,-84.3536 724.816,-77.3985"/>
 </g>
-<!-- X::Proc::Async::MustBeStarted&#45;&gt;Exception -->
-<g id="edge8" class="edge"><title>X::Proc::Async::MustBeStarted&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1218.7,-34.0621C1106.02,-62.2802 865.16,-122.602 761.244,-148.627"/>
-<polygon fill="#000000" stroke="#000000" points="760.178,-145.286 751.328,-151.11 761.879,-152.076 760.178,-145.286"/>
+<!-- X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception -->
+<g id="edge8" class="edge"><title>X::Proc::Async::TapBeforeSpawn&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1207.89,-34.2639C1094.95,-62.5476 855.24,-122.582 751.456,-148.574"/>
+<polygon fill="#000000" stroke="#000000" points="750.4,-145.23 741.55,-151.055 752.101,-152.02 750.4,-145.23"/>
 </g>
 </g>
 </svg>

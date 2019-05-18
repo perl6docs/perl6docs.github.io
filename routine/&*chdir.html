@@ -98,17 +98,17 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_IO">role IO</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(IO)_sub_&amp;*chdir">(IO) sub &amp;*chdir</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_sub_&amp;*chdir">(routines) sub &amp;*chdir</a></td></tr>
                                               
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for sub <code>&amp;*chdir</code> assembled from the following types:</p>
-<h1 id="role_IO"><a class="u" href="#___top" title="go to top of document">role IO</a></h1>
-<p>From <a href="/type/IO#sub_%26%2Achdir">IO</a></p>
-<h2 id="(IO)_sub_&*chdir"><a href="/routine/&*chdir#role_IO">(IO) sub &amp;*chdir</a></h2>
+<h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
+<p>From <a href="/type/independent-routines#sub_%26%2Achdir">routines</a></p>
+<h2 id="(routines)_sub_&*chdir"><a href="/routine/&*chdir#class_routines">(routines) sub &amp;*chdir</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>PROCESS</span></span><span>::</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>&amp;chdir</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>sub</span></span><span>&nbsp;(</span><span class="support type perl6fe"><span>IO</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>path</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Path</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Changes value of <code>$*CWD</code> variable to the provided <code>$path</code> and sets the process&#39;s current directory to the value of <a href="/routine/absolute"><code>$path.absolute</code></a>. <strong>NOTE:</strong> that in most cases, you want to use <a href="/routine/chdir"><code>chdir</code></a> routine instead.</p>
 <p>Returns <a href="/type/IO::Path"><code>IO::Path</code></a> representing new <code>$*CWD</code> on success. On failure, returns <a href="/type/Failure"><code>Failure</code></a> and leaves <code>$*CWD</code> untouched. The <code>$path</code> can be any object with an IO method that returns an <a href="/type/IO::Path"><code>IO::Path</code></a> object.</p>
@@ -121,7 +121,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/7b9506cc"><span id="footer-commit">7b9506cc</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -129,7 +129,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-17T16:33:33Z
+      Generated on 2019-05-18T16:22:08Z
   </p>
   <p>
       This documentation is provided under the terms of the
