@@ -121,7 +121,7 @@
 <p>It&#39;s important to understand that there is no direct connection between a <code>Lock</code> and any particular piece of data; it is up to the programmer to ensure that the <code>Lock</code> is held during all operations that involve the data in question. The <code>OO::Monitors</code> module, while not a complete solution to this problem, does provide a way to avoid dealing with the lock explicitly and encourage a more structured approach.</p>
 <p>The <code>Lock</code> class is backed by operating-system provided constructs, and so a thread that is waiting to acquire a lock is, from the point of view of the operating system, blocked.</p>
 <p>Code using high-level Perl&nbsp;6 concurrency constructs should avoid using <code>Lock</code>. Waiting to acquire a <code>Lock</code> blocks a real <code>Thread</code>, meaning that the thread pool (used by numerous higher-level Perl&nbsp;6 concurrency mechanisms) cannot use that thread in the meantime for anything else.</p>
-<p>Any <code>await</code> performed while a <code>Lock</code> is held will behave in a blocking manner; the standard non-blocking behavior of <code>await</code> relies on the code following the `await` resuming on a different <code>Thread</code> from the pool, which is incompatible with the requirement that a <code>Lock</code> be unlocked by the same thread that locked it. See <a href="$SOLIDUStype$SOLIDUSLock$SOLIDUSAsync">Lock::Async</a> for an alternative mechanism that does not have this shortcoming.</p>
+<p>Any <code>await</code> performed while a <code>Lock</code> is held will behave in a blocking manner; the standard non-blocking behavior of <code>await</code> relies on the code following the `await` resuming on a different <code>Thread</code> from the pool, which is incompatible with the requirement that a <code>Lock</code> be unlocked by the same thread that locked it. See <a href="/type/Lock::Async">Lock::Async</a> for an alternative mechanism that does not have this shortcoming.</p>
 <p>By their nature, <code>Lock</code>s are not composable, and it is possible to end up with hangs should circular dependencies on locks occur. Prefer to structure concurrent programs such that they communicate results rather than modify shared data structures, using mechanisms like <a href="/type/Promise">Promise</a>, <a href="/type/Channel">Channel</a> and <a href="/type/Supply">Supply</a>.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_protect"><a class="u" href="#___top" title="go to top of document">method protect</a></h2>
@@ -198,7 +198,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Lock.pod6'>Type/Lock.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Lock.pod6'>Type/Lock.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/649b9e9c"><span id="footer-commit">649b9e9c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -206,7 +206,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Lock.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-18T16:16:52Z
+      Generated on 2019-05-22T07:34:44Z
   </p>
   <p>
       This documentation is provided under the terms of the

@@ -92,22 +92,23 @@
      <tr class="toc-level-2"><td class="toc-number">0.3</td><td class="toc-text"><a href="#MONKEY-SEE-NO-EVAL">MONKEY-SEE-NO-EVAL</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">0.4</td><td class="toc-text"><a href="#MONKEY-TYPING">MONKEY-TYPING</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">0.5</td><td class="toc-text"><a href="#MONKEY">MONKEY</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">0.6</td><td class="toc-text"><a href="#experimental">experimental</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">0.7</td><td class="toc-text"><a href="#fatal">fatal</a></td></tr>
-                                                <tr class="toc-level-2"><td class="toc-number">0.8</td><td class="toc-text"><a href="#internals">internals</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">0.9</td><td class="toc-text"><a href="#invocant">invocant</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">0.10</td><td class="toc-text"><a href="#isms">isms</a></td></tr>
-                         <tr class="toc-level-2"><td class="toc-number">0.11</td><td class="toc-text"><a href="#lib">lib</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">0.12</td><td class="toc-text"><a href="#newline">newline</a></td></tr>
-           <tr class="toc-level-2"><td class="toc-number">0.13</td><td class="toc-text"><a href="#nqp">nqp</a></td></tr>
-          <tr class="toc-level-2"><td class="toc-number">0.14</td><td class="toc-text"><a href="#parameters">parameters</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">0.15</td><td class="toc-text"><a href="#precompilation">precompilation</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">0.16</td><td class="toc-text"><a href="#soft">soft</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">0.17</td><td class="toc-text"><a href="#strict">strict</a></td></tr>
-        <tr class="toc-level-2"><td class="toc-number">0.18</td><td class="toc-text"><a href="#trace">trace</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">0.19</td><td class="toc-text"><a href="#v6">v6</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">0.20</td><td class="toc-text"><a href="#variables">variables</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">0.21</td><td class="toc-text"><a href="#worries">worries</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">0.6</td><td class="toc-text"><a href="#dynamic-scope">dynamic-scope</a></td></tr>
+                                     <tr class="toc-level-2"><td class="toc-number">0.7</td><td class="toc-text"><a href="#experimental">experimental</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">0.8</td><td class="toc-text"><a href="#fatal">fatal</a></td></tr>
+                                                <tr class="toc-level-2"><td class="toc-number">0.9</td><td class="toc-text"><a href="#internals">internals</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">0.10</td><td class="toc-text"><a href="#invocant">invocant</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">0.11</td><td class="toc-text"><a href="#isms">isms</a></td></tr>
+                         <tr class="toc-level-2"><td class="toc-number">0.12</td><td class="toc-text"><a href="#lib">lib</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">0.13</td><td class="toc-text"><a href="#newline">newline</a></td></tr>
+           <tr class="toc-level-2"><td class="toc-number">0.14</td><td class="toc-text"><a href="#nqp">nqp</a></td></tr>
+          <tr class="toc-level-2"><td class="toc-number">0.15</td><td class="toc-text"><a href="#parameters">parameters</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">0.16</td><td class="toc-text"><a href="#precompilation">precompilation</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">0.17</td><td class="toc-text"><a href="#soft">soft</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">0.18</td><td class="toc-text"><a href="#strict">strict</a></td></tr>
+        <tr class="toc-level-2"><td class="toc-number">0.19</td><td class="toc-text"><a href="#trace">trace</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">0.20</td><td class="toc-text"><a href="#v6">v6</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">0.21</td><td class="toc-text"><a href="#variables">variables</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">0.22</td><td class="toc-text"><a href="#worries">worries</a></td></tr>
                     
 </table>
 </nav>
@@ -133,7 +134,27 @@
 <h2 id="MONKEY"><a class="u" href="#___top" title="go to top of document">MONKEY</a></h2>
 <p><code>use MONKEY;</code></p>
 <p>Turns on all available <code>MONKEY</code> pragmas, currently the three above; thus, it would be equivalent to</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-TYPING</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-SEE-NO-EVAL</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-GUTS</span></span><span>;</span></span></div></pre><p><a name="index-entry-experimental__pragma"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-TYPING</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-SEE-NO-EVAL</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="constant language pragma perl6fe"><span>MONKEY-GUTS</span></span><span>;</span></span></div></pre><p><a name="index-entry-dynamic-scope,_pragma"><span class="index-entry">dynamic-scope, pragma</span></a></p>
+<h2 id="dynamic-scope"><a class="u" href="#___top" title="go to top of document">dynamic-scope</a></h2>
+<p>Applies the <a href="/type/Variable#trait_is_dynamic">is dynamic</a> trait to variables in the pragma&#39;s lexical scope. The effect can be restricted to a subset of variables by listing their names as arguments. By default applies to <em>all</em> variables.</p>
+<pre class="pod-block-code"># Apply <code>is dynamic</code> only to $x, but not to $y
+use dynamic-scope &lt;$x&gt;;
+
+sub poke {
+    say $CALLER::x;
+    say $CALLER::y;
+}
+
+my $x = 23;
+my $y = 34;
+poke;
+
+# OUTPUT:
+# 23
+# Cannot access &#39;$y&#39; through CALLER, because it is not declared as dynamic
+</pre>
+<p>This pragma is not currently part of any Perl 6 specification and was added in Rakudo 2019.03.</p>
+<p><a name="index-entry-experimental__pragma"></a></p>
 <h2 id="experimental"><a class="u" href="#___top" title="go to top of document">experimental</a></h2>
 <p>Allows use of <a href="/language/experimental">experimental features</a></p>
 <p><a name="index-entry-fatal__pragma"></a></p>
@@ -196,7 +217,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/pragmas.pod6'>Language/pragmas.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/pragmas.pod6'>Language/pragmas.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/649b9e9c"><span id="footer-commit">649b9e9c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -204,7 +225,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/pragmas.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-18T16:15:21Z
+      Generated on 2019-05-22T07:33:21Z
   </p>
   <p>
       This documentation is provided under the terms of the

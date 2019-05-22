@@ -133,7 +133,7 @@
       <tr class="toc-level-2"><td class="toc-number">2.10</td><td class="toc-text"><a href="#method_read-int128">method read-int128</a></td></tr>
       <tr class="toc-level-2"><td class="toc-number">2.11</td><td class="toc-text"><a href="#method_read-num32">method read-num32</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">2.12</td><td class="toc-text"><a href="#method_read-num64">method read-num64</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Methods_on_blob8_only_(6.d,_2019.01_and_later)">Methods on blob8 only (6.d, 2019.01 and later)</a></td></tr>
+        <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Methods_on_blob8_only_(6.d,_2019.03_and_later)">Methods on blob8 only (6.d, 2019.03 and later)</a></td></tr>
  <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#method_read-ubits">method read-ubits</a></td></tr>
           <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#method_read-bits">method read-bits</a></td></tr>
           <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
@@ -255,7 +255,7 @@
 <h2 id="method_read-num64"><a class="u" href="#___top" title="go to top of document">method read-num64</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>read-num64</span></span><span>(</span><span class="routine name perl6fe"><span>blob8</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>uint</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pos</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>endian</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>NativeEndian</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>)</span></span></div></pre><p>Returns a native <code>num</code> value for the <strong>eight</strong> bytes starting at the given position.</p>
-<h1 id="Methods_on_blob8_only_(6.d,_2019.01_and_later)"><a class="u" href="#___top" title="go to top of document">Methods on blob8 only (6.d, 2019.01 and later)</a></h1>
+<h1 id="Methods_on_blob8_only_(6.d,_2019.03_and_later)"><a class="u" href="#___top" title="go to top of document">Methods on blob8 only (6.d, 2019.03 and later)</a></h1>
 <h2 id="method_read-ubits"><a class="u" href="#___top" title="go to top of document">method read-ubits</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>read-ubits</span></span><span>(</span><span class="routine name perl6fe"><span>blob8</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>uint</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pos</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>uint</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bits</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>UInt</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns an unsigned integer value for the <strong>bits</strong> from the given <strong>bit</strong> offset and given number of bits. The endianness of the bits is assumed to be <code>BigEndian</code>.</p>
@@ -386,7 +386,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Blob.pod6'>Type/Blob.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Blob.pod6'>Type/Blob.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/649b9e9c"><span id="footer-commit">649b9e9c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -394,7 +394,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Blob.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-18T16:15:46Z
+      Generated on 2019-05-22T07:33:45Z
   </p>
   <p>
       This documentation is provided under the terms of the

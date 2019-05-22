@@ -139,7 +139,7 @@
        <tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#method_returns">method returns</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#method_ACCEPTS">method ACCEPTS</a></td></tr>
                                                    <tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#method_Capture">method Capture</a></td></tr>
-      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Runtime_creation_of_Signature_objects_(6.d,_2019.01_and_later)">Runtime creation of Signature objects (6.d, 2019.01 and later)</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Runtime_creation_of_Signature_objects_(6.d,_2019.03_and_later)">Runtime creation of Signature objects (6.d, 2019.03 and later)</a></td></tr>
                                 <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
  
 </table>
@@ -323,7 +323,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span>(</span><span class="constant numeric perl6fe"><span>42</span></span><span>)&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span>(</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>)&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="method_Capture"><a class="u" href="#___top" title="go to top of document">method Capture</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>()</span></span></div></pre><p>Throws <code>X::Cannot::Capture</code>.</p>
-<h1 id="Runtime_creation_of_Signature_objects_(6.d,_2019.01_and_later)"><a class="u" href="#___top" title="go to top of document">Runtime creation of Signature objects (6.d, 2019.01 and later)</a></h1>
+<h1 id="Runtime_creation_of_Signature_objects_(6.d,_2019.03_and_later)"><a class="u" href="#___top" title="go to top of document">Runtime creation of Signature objects (6.d, 2019.03 and later)</a></h1>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support type perl6fe"><span>Signature</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string pair key perl6fe"><span>params&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;(</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>),&nbsp;</span><span class="string pair key perl6fe"><span>returns&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Type</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>arity&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>count&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>)</span></span></div></pre><p>In some situations, specifically when working with the MetaObject Protocol, it makes sense to create <code>Signature</code> objects programmatically. For this purpose, you can call the <code>new</code> method with the following named parameters:</p>
 <ul><li><p>params</p>
 </li>
@@ -399,7 +399,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Signature.pod6'>Type/Signature.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/f668fa0c"><span id="footer-commit">f668fa0c</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Signature.pod6'>Type/Signature.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/649b9e9c"><span id="footer-commit">649b9e9c</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -407,7 +407,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Signature.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-18T16:17:26Z
+      Generated on 2019-05-22T07:35:14Z
   </p>
   <p>
       This documentation is provided under the terms of the
