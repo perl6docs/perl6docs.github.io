@@ -3,13 +3,12 @@ digraph "perl6-type-graph" {
     splines=polyline;
     overlap=false; 
     // Types
-    "Systemic" [color="#000000", fontcolor="#000000", href="/type/Systemic", fontname="FreeSans"];
+    "Systemic" [color="#6666FF", fontcolor="#6666FF", href="/type/Systemic", fontname="FreeSans"];
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "VM" [color="#000000", fontcolor="#000000", href="/type/VM", fontname="FreeSans"];
 
     // Superclasses
-    "Systemic" -> "Any" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "VM" -> "Any" [color="#000000"];
 
