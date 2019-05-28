@@ -452,7 +452,7 @@
 </td> </tr> <tr> <td><a href="/routine/do">do</a></td> <td>method</td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/does">does</a></td> <td>infix, trait, method</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/typesystem">Type system</a>, <a href="/type/Mu">Mu</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/does-ok">does-ok</a></td> <td>sub</td> <td><p>(From <a href="/type/Test">Test</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/done">done</a></td> <td>method</td> <td><p>(From <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/done">done</a></td> <td>sub, method</td> <td><p>(From <a href="/type/independent-routines">routines</a>, <a href="/type/Supplier">Supplier</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/done-testing">done-testing</a></td> <td>sub</td> <td><p>(From <a href="/type/Test">Test</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/duckmap">duckmap</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/dynamic">dynamic</a></td> <td>method</td> <td><p>(From <a href="/type/Array">Array</a>, <a href="/type/Hash">Hash</a>, <a href="/type/Scalar">Scalar</a>)</p>
@@ -460,7 +460,7 @@
 </td> </tr> <tr> <td><a href="/routine/eager">eager</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/List">List</a>, <a href="/type/Seq">Seq</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/earlier">earlier</a></td> <td>method</td> <td><p>(From <a href="/type/Date">Date</a>, <a href="/type/DateTime">DateTime</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/elems">elems</a></td> <td>method, sub</td> <td><p>(From <a href="/language/subscripts">Subscripts</a>, <a href="/type/Any">Any</a>, <a href="/type/Positional">Positional</a>, <a href="/type/List">List</a>, <a href="/type/Array">Array</a>, <a href="/type/Baggy">Baggy</a>, <a href="/type/Blob">Blob</a>, <a href="/type/Capture">Capture</a>, <a href="/type/Map">Map</a>, <a href="/type/Metamodel::EnumHOW">Metamodel::EnumHOW</a>, <a href="/type/Uni">Uni</a>, <a href="/type/Range">Range</a>, <a href="/type/Setty">Setty</a>, <a href="/type/Supply">Supply</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/emit">emit</a></td> <td>method</td> <td><p>(From <a href="/type/Mu">Mu</a>, <a href="/type/Supplier">Supplier</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/emit">emit</a></td> <td>sub, method</td> <td><p>(From <a href="/type/independent-routines">routines</a>, <a href="/type/Mu">Mu</a>, <a href="/type/Supplier">Supplier</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/enclosing">enclosing</a></td> <td>method</td> <td><p>(From <a href="/type/X::ControlFlow">X::ControlFlow</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/encode">encode</a></td> <td>method</td> <td><p>(From <a href="/type/Str">Str</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/encoder">encoder</a></td> <td>method</td> <td><p>(From <a href="/type/Encoding">Encoding</a>)</p>
@@ -480,7 +480,7 @@
 </td> </tr> <tr> <td><a href="/routine/exception">exception</a></td> <td>method</td> <td><p>(From <a href="/type/Failure">Failure</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/excludes-max">excludes-max</a></td> <td>method</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/excludes-min">excludes-min</a></td> <td>method</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/exit">exit</a></td> <td>sub</td> <td><p>(From <a href="/language/routines">Routines</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/exit">exit</a></td> <td>sub</td> <td><p>(From <a href="/type/independent-routines">routines</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/exitcode">exitcode</a></td> <td>method</td> <td><p>(From <a href="/type/Proc">Proc</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/exp">exp</a></td> <td>sub</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Numeric">Numeric</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/expected">expected</a></td> <td>method</td> <td><p>(From <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
@@ -1026,6 +1026,7 @@
 </td> </tr> <tr> <td><a href="/routine/uc">uc</a></td> <td>sub</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Str">Str</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/udp">udp</a></td> <td>method</td> <td><p>(From <a href="/type/IO::Socket::Async">IO::Socket::Async</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/uncaught_handler">uncaught_handler</a></td> <td>method</td> <td><p>(From <a href="/type/Scheduler">Scheduler</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/undefine">undefine</a></td> <td>sub</td> <td><p>(From <a href="/type/independent-routines">routines</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/unicmp">unicmp</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/unimatch">unimatch</a></td> <td>sub</td> <td><p>(From <a href="/type/Cool">Cool</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/uniname">uniname</a></td> <td>sub</td> <td><p>(From <a href="/type/Cool">Cool</a>)</p>
@@ -1138,7 +1139,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/b8b8af22"><span id="footer-commit">b8b8af22</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/1a117976"><span id="footer-commit">1a117976</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -1146,7 +1147,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-27T17:24:22Z
+      Generated on 2019-05-28T17:48:24Z
   </p>
   <p>
       This documentation is provided under the terms of the

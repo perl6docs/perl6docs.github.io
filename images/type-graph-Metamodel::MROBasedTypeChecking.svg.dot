@@ -19,21 +19,21 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::EnumHOW", fontname="FreeSans"];
     "Metamodel::Documenting" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Documenting", fontname="FreeSans"];
     "Metamodel::Versioning" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Versioning", fontname="FreeSans"];
-    "Metamodel::MultipleInheritance" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::MultipleInheritance", fontname="FreeSans"];
-    "Metamodel::C3MRO" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::C3MRO", fontname="FreeSans"];
-    "Metamodel::NativeHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::NativeHOW", fontname="FreeSans"];
     "Metamodel::Finalization" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Finalization", fontname="FreeSans"];
     "Metamodel::PrivateMethodContainer" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::PrivateMethodContainer", fontname="FreeSans"];
+    "Metamodel::MultipleInheritance" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::MultipleInheritance", fontname="FreeSans"];
     "Metamodel::DefaultParent" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::DefaultParent", fontname="FreeSans"];
+    "Metamodel::C3MRO" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::C3MRO", fontname="FreeSans"];
     "Metamodel::Trusting" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Trusting", fontname="FreeSans"];
     "Metamodel::Mixins" [color="#6666FF", fontcolor="#6666FF", href="/type/Metamodel::Mixins", fontname="FreeSans"];
     "Metamodel::ClassHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::ClassHOW", fontname="FreeSans"];
+    "Metamodel::NativeHOW" [color="#000000", fontcolor="#000000", href="/type/Metamodel::NativeHOW", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "Metamodel::EnumHOW" -> "Any" [color="#000000"];
-    "Metamodel::NativeHOW" -> "Any" [color="#000000"];
     "Metamodel::ClassHOW" -> "Any" [color="#000000"];
+    "Metamodel::NativeHOW" -> "Any" [color="#000000"];
 
     // Roles
     "Metamodel::EnumHOW" -> "Metamodel::Naming" [color="#6666FF"];
@@ -47,14 +47,6 @@ digraph "perl6-type-graph" {
     "Metamodel::EnumHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::EnumHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::Naming" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::Documenting" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::Versioning" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::Stashing" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::MultipleInheritance" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::C3MRO" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::MROBasedMethodDispatch" [color="#6666FF"];
-    "Metamodel::NativeHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Naming" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Documenting" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Versioning" [color="#6666FF"];
@@ -74,4 +66,12 @@ digraph "perl6-type-graph" {
     "Metamodel::ClassHOW" -> "Metamodel::BUILDPLAN" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::Mixins" [color="#6666FF"];
     "Metamodel::ClassHOW" -> "Metamodel::BoolificationProtocol" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::Naming" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::Documenting" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::Versioning" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::Stashing" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::MultipleInheritance" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::C3MRO" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::MROBasedMethodDispatch" [color="#6666FF"];
+    "Metamodel::NativeHOW" -> "Metamodel::MROBasedTypeChecking" [color="#6666FF"];
 }

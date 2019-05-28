@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>method emit</title>
+        <title>routine emit</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -93,21 +93,29 @@
 <div id="content" class="pretty-box yellow content_fragment">
 
 
-    <h1 class='title'>method emit</h1>
+    <h1 class='title'>routine emit</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Mu">class Mu</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Mu)_method_emit">(Mu) method emit</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Supplier">class Supplier</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Supplier)_method_emit">(Supplier) method emit</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_sub_emit">(routines) sub emit</a></td></tr>
+                         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Mu">class Mu</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Mu)_method_emit">(Mu) method emit</a></td></tr>
+        <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Supplier">class Supplier</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Supplier)_method_emit">(Supplier) method emit</a></td></tr>
       
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for method <code>emit</code> assembled from the following types:</p>
+    <p>Documentation for routine <code>emit</code> assembled from the following types:</p>
+<h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
+<p>From <a href="/type/independent-routines#sub_emit">routines</a></p>
+<h2 id="(routines)_sub_emit"><a href="/routine/emit#class_routines">(routines) sub emit</a></h2>
+<p>Defined as</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>emit</span></span><span>(\</span><span class="routine name perl6fe"><span>value</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>If used outside any supply or react block, throws an exception <code>emit without supply or react</code>. Within a <a href="/type/Supply">Supply</a> block, it will add a message to the stream.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supply</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>supply</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>10</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>emit</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>);</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supply</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>tap</span></span><span>(&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>First&nbsp;:&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>v</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></div></pre><p>See also <a href="/routine/emit">the page for <code>emit</code> methods</a>.</p>
 <h1 id="class_Mu"><a class="u" href="#___top" title="go to top of document">class Mu</a></h1>
 <p>From <a href="/type/Mu#method_emit">Mu</a></p>
 <h2 id="(Mu)_method_emit"><a href="/routine/emit#class_Mu">(Mu) method emit</a></h2>
@@ -122,7 +130,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/b8b8af22"><span id="footer-commit">b8b8af22</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/1a117976"><span id="footer-commit">1a117976</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -130,7 +138,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-05-27T17:25:01Z
+      Generated on 2019-05-28T17:49:58Z
   </p>
   <p>
       This documentation is provided under the terms of the
