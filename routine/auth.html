@@ -100,14 +100,12 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_CompUnit">class CompUnit</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(CompUnit)_method_auth">(CompUnit) method auth</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Perl">class Perl</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Perl)_method_auth">(Perl) method auth</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Distro">class Distro</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Distro)_method_auth">(Distro) method auth</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#class_Kernel">class Kernel</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Kernel)_method_auth">(Kernel) method auth</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#class_VM">class VM</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(VM)_method_auth">(VM) method auth</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Distro">class Distro</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Distro)_method_auth">(Distro) method auth</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Kernel">class Kernel</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Kernel)_method_auth">(Kernel) method auth</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#role_Systemic">role Systemic</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(Systemic)_method_auth">(Systemic) method auth</a></td></tr>
  
 </table>
 </nav>
@@ -118,10 +116,6 @@
 <p>From <a href="/type/CompUnit#method_auth">CompUnit</a></p>
 <h2 id="(CompUnit)_method_auth"><a href="/routine/auth#class_CompUnit">(CompUnit) method auth</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>auth</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the authority information with which the <code>CompUnit</code> object was created (if any).</p>
-<h1 id="class_Perl"><a class="u" href="#___top" title="go to top of document">class Perl</a></h1>
-<p>From <a href="/type/Perl#method_auth">Perl</a></p>
-<h2 id="(Perl)_method_auth"><a href="/routine/auth#class_Perl">(Perl) method auth</a></h2>
-<p>Instance method returning the &quot;auth&quot; (as in &quot;author&quot; or &quot;authority&quot;) of the Perl object.</p>
 <h1 id="class_Distro"><a class="u" href="#___top" title="go to top of document">class Distro</a></h1>
 <p>From <a href="/type/Distro#method_auth">Distro</a></p>
 <h2 id="(Distro)_method_auth"><a href="/routine/auth#class_Distro">(Distro) method auth</a></h2>
@@ -130,17 +124,17 @@
 <p>From <a href="/type/Kernel#method_auth">Kernel</a></p>
 <h2 id="(Kernel)_method_auth"><a href="/routine/auth#class_Kernel">(Kernel) method auth</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>auth</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>)</span></span></div></pre><p>Instance method returning the &quot;auth&quot; (as in &quot;author&quot; or &quot;authority&quot;) of the Kernel object. Returns &quot;unknown&quot; if the &quot;auth&quot; could not be established.</p>
-<h1 id="class_VM"><a class="u" href="#___top" title="go to top of document">class VM</a></h1>
-<p>From <a href="/type/VM#method_auth">VM</a></p>
-<h2 id="(VM)_method_auth"><a href="/routine/auth#class_VM">(VM) method auth</a></h2>
-<p>Instance method returning the &quot;auth&quot; (as in &quot;author&quot; or &quot;authority&quot;) of the VM object. Returns &quot;unknown&quot; if the &quot;auth&quot; could not be established.</p>
+<h1 id="role_Systemic"><a class="u" href="#___top" title="go to top of document">role Systemic</a></h1>
+<p>From <a href="/type/Systemic#method_auth">Systemic</a></p>
+<h2 id="(Systemic)_method_auth"><a href="/routine/auth#role_Systemic">(Systemic) method auth</a></h2>
+<p>Instance method returning the &quot;auth&quot; (as in &quot;author&quot; or &quot;authority&quot;) of the object. Returns &quot;unknown&quot; if the &quot;auth&quot; could not be established.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/61af23c7"><span id="footer-commit">61af23c7</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/94f44173"><span id="footer-commit">94f44173</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -148,7 +142,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-06-09T17:47:29Z
+      Generated on 2019-06-15T10:20:05Z
   </p>
   <p>
       This documentation is provided under the terms of the
