@@ -12,6 +12,7 @@ digraph "perl6-type-graph" {
 
     // Superclasses
     "X::Syntax::Argument::MOPMacro" -> "Exception" [color="#000000"];
+    "X::Syntax::Argument::MOPMacro" -> "Exception" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Exception" -> "Any" [color="#000000"];
     "X::Comp" -> "Exception" [color="#000000"];
