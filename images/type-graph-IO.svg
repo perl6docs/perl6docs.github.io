@@ -5,139 +5,139 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="632pt" height="332pt"
- viewBox="0.00 0.00 631.59 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 632.09 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 627.587,-328 627.587,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 628.088,-328 628.088,4 -4,4"/>
 <!-- IO -->
 <g id="node1" class="node"><title>IO</title>
 <g id="a_node1"><a xlink:href="/type/IO" xlink:title="IO">
-<ellipse fill="none" stroke="#6666ff" cx="228.244" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="228.244" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">IO</text>
+<ellipse fill="none" stroke="#6666ff" cx="245.443" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="245.443" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">IO</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="237.244" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="237.244" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="254.443" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="254.443" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="237.244" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="237.244" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="254.443" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="254.443" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M237.244,-252.303C237.244,-260.017 237.244,-269.288 237.244,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="233.744,-277.896 237.244,-287.896 240.744,-277.896 233.744,-277.896"/>
-</g>
-<!-- IO::Special -->
-<g id="node4" class="node"><title>IO::Special</title>
-<g id="a_node4"><a xlink:href="/type/IO::Special" xlink:title="IO::Special">
-<ellipse fill="none" stroke="#000000" cx="176.244" cy="-90" rx="53.8905" ry="18"/>
-<text text-anchor="middle" x="176.244" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Special</text>
-</a>
-</g>
-</g>
-<!-- IO::Special&#45;&gt;IO -->
-<g id="edge9" class="edge"><title>IO::Special&#45;&gt;IO</title>
-<path fill="none" stroke="#6666ff" d="M188.567,-107.589C195.164,-116.47 203.404,-127.561 210.662,-137.332"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="207.949,-139.549 216.722,-145.489 213.568,-135.375 207.949,-139.549"/>
-</g>
-<!-- IO::Special&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>IO::Special&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M179.329,-108.16C183.978,-134.022 192.244,-180 192.244,-180 192.244,-180 205.714,-195.865 217.915,-210.235"/>
-<polygon fill="#000000" stroke="#000000" points="215.329,-212.596 224.469,-217.954 220.665,-208.066 215.329,-212.596"/>
+<path fill="none" stroke="#000000" d="M254.443,-252.303C254.443,-260.017 254.443,-269.288 254.443,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="250.944,-277.896 254.443,-287.896 257.944,-277.896 250.944,-277.896"/>
 </g>
 <!-- Cool -->
-<g id="node5" class="node"><title>Cool</title>
-<g id="a_node5"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="302.244" cy="-162" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="302.244" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<g id="node4" class="node"><title>Cool</title>
+<g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="319.443" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="319.443" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M288.459,-177.845C279.583,-187.404 267.881,-200.006 257.904,-210.751"/>
-<polygon fill="#000000" stroke="#000000" points="255.249,-208.467 251.009,-218.176 260.378,-213.23 255.249,-208.467"/>
+<g id="edge2" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M305.659,-177.845C296.782,-187.404 285.081,-200.006 275.104,-210.751"/>
+<polygon fill="#000000" stroke="#000000" points="272.448,-208.467 268.208,-218.176 277.578,-213.23 272.448,-208.467"/>
 </g>
 <!-- IO::Path -->
-<g id="node6" class="node"><title>IO::Path</title>
-<g id="a_node6"><a xlink:href="/type/IO::Path" xlink:title="IO::Path">
-<ellipse fill="none" stroke="#000000" cx="298.244" cy="-90" rx="43.5923" ry="18"/>
-<text text-anchor="middle" x="298.244" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path</text>
+<g id="node5" class="node"><title>IO::Path</title>
+<g id="a_node5"><a xlink:href="/type/IO::Path" xlink:title="IO::Path">
+<ellipse fill="none" stroke="#000000" cx="315.443" cy="-90" rx="43.5923" ry="18"/>
+<text text-anchor="middle" x="315.443" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path</text>
 </a>
 </g>
 </g>
 <!-- IO::Path&#45;&gt;IO -->
-<g id="edge10" class="edge"><title>IO::Path&#45;&gt;IO</title>
-<path fill="none" stroke="#6666ff" d="M282.36,-106.884C272.752,-116.492 260.372,-128.872 249.878,-139.366"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="247.233,-137.061 242.637,-146.607 252.183,-142.011 247.233,-137.061"/>
+<g id="edge9" class="edge"><title>IO::Path&#45;&gt;IO</title>
+<path fill="none" stroke="#6666ff" d="M299.559,-106.884C289.951,-116.492 277.571,-128.872 267.077,-139.366"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="264.432,-137.061 259.836,-146.607 269.382,-142.011 264.432,-137.061"/>
 </g>
 <!-- IO::Path&#45;&gt;Cool -->
-<g id="edge4" class="edge"><title>IO::Path&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M299.233,-108.303C299.674,-116.017 300.203,-125.288 300.695,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="297.202,-134.112 301.267,-143.896 304.19,-133.712 297.202,-134.112"/>
+<g id="edge3" class="edge"><title>IO::Path&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M316.432,-108.303C316.873,-116.017 317.403,-125.288 317.894,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="314.401,-134.112 318.466,-143.896 321.39,-133.712 314.401,-134.112"/>
 </g>
-<!-- IO::Path::QNX -->
-<g id="node7" class="node"><title>IO::Path::QNX</title>
-<g id="a_node7"><a xlink:href="/type/IO::Path::QNX" xlink:title="IO::Path::QNX">
-<ellipse fill="none" stroke="#000000" cx="68.2439" cy="-18" rx="68.4888" ry="18"/>
-<text text-anchor="middle" x="68.2439" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::QNX</text>
+<!-- IO::Special -->
+<g id="node6" class="node"><title>IO::Special</title>
+<g id="a_node6"><a xlink:href="/type/IO::Special" xlink:title="IO::Special">
+<ellipse fill="none" stroke="#000000" cx="193.443" cy="-90" rx="53.8905" ry="18"/>
+<text text-anchor="middle" x="193.443" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Special</text>
 </a>
 </g>
 </g>
-<!-- IO::Path::QNX&#45;&gt;IO::Path -->
-<g id="edge5" class="edge"><title>IO::Path::QNX&#45;&gt;IO::Path</title>
-<path fill="none" stroke="#000000" d="M111.235,-32.0843C152.075,-44.5138 213.188,-63.1134 254.33,-75.6348"/>
-<polygon fill="#000000" stroke="#000000" points="253.491,-79.0379 264.076,-78.6012 255.529,-72.3411 253.491,-79.0379"/>
+<!-- IO::Special&#45;&gt;IO -->
+<g id="edge10" class="edge"><title>IO::Special&#45;&gt;IO</title>
+<path fill="none" stroke="#6666ff" d="M205.767,-107.589C212.364,-116.47 220.603,-127.561 227.861,-137.332"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="225.148,-139.549 233.921,-145.489 230.767,-135.375 225.148,-139.549"/>
 </g>
-<!-- IO::Path::Unix -->
-<g id="node8" class="node"><title>IO::Path::Unix</title>
-<g id="a_node8"><a xlink:href="/type/IO::Path::Unix" xlink:title="IO::Path::Unix">
-<ellipse fill="none" stroke="#000000" cx="220.244" cy="-18" rx="65.7887" ry="18"/>
-<text text-anchor="middle" x="220.244" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Unix</text>
-</a>
-</g>
-</g>
-<!-- IO::Path::Unix&#45;&gt;IO::Path -->
-<g id="edge6" class="edge"><title>IO::Path::Unix&#45;&gt;IO::Path</title>
-<path fill="none" stroke="#000000" d="M238.729,-35.589C248.952,-44.7634 261.804,-56.2971 272.946,-66.2967"/>
-<polygon fill="#000000" stroke="#000000" points="270.915,-69.1768 280.695,-73.2511 275.59,-63.9671 270.915,-69.1768"/>
+<!-- IO::Special&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>IO::Special&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M196.528,-108.16C201.178,-134.022 209.443,-180 209.443,-180 209.443,-180 222.914,-195.865 235.115,-210.235"/>
+<polygon fill="#000000" stroke="#000000" points="232.528,-212.596 241.669,-217.954 237.864,-208.066 232.528,-212.596"/>
 </g>
 <!-- IO::Path::Win32 -->
-<g id="node9" class="node"><title>IO::Path::Win32</title>
-<g id="a_node9"><a xlink:href="/type/IO::Path::Win32" xlink:title="IO::Path::Win32">
-<ellipse fill="none" stroke="#000000" cx="377.244" cy="-18" rx="73.387" ry="18"/>
-<text text-anchor="middle" x="377.244" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Win32</text>
+<g id="node7" class="node"><title>IO::Path::Win32</title>
+<g id="a_node7"><a xlink:href="/type/IO::Path::Win32" xlink:title="IO::Path::Win32">
+<ellipse fill="none" stroke="#000000" cx="73.4435" cy="-18" rx="73.387" ry="18"/>
+<text text-anchor="middle" x="73.4435" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Win32</text>
 </a>
 </g>
 </g>
 <!-- IO::Path::Win32&#45;&gt;IO::Path -->
-<g id="edge7" class="edge"><title>IO::Path::Win32&#45;&gt;IO::Path</title>
-<path fill="none" stroke="#000000" d="M358.522,-35.589C347.993,-44.9181 334.712,-56.6869 323.297,-66.8014"/>
-<polygon fill="#000000" stroke="#000000" points="320.912,-64.2377 315.749,-73.4892 325.555,-69.4769 320.912,-64.2377"/>
+<g id="edge5" class="edge"><title>IO::Path::Win32&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M118.962,-32.1665C162.531,-44.769 227.838,-63.6597 271.034,-76.1542"/>
+<polygon fill="#000000" stroke="#000000" points="270.126,-79.535 280.704,-78.9515 272.071,-72.8106 270.126,-79.535"/>
+</g>
+<!-- IO::Path::QNX -->
+<g id="node8" class="node"><title>IO::Path::QNX</title>
+<g id="a_node8"><a xlink:href="/type/IO::Path::QNX" xlink:title="IO::Path::QNX">
+<ellipse fill="none" stroke="#000000" cx="233.443" cy="-18" rx="68.4888" ry="18"/>
+<text text-anchor="middle" x="233.443" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::QNX</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::QNX&#45;&gt;IO::Path -->
+<g id="edge6" class="edge"><title>IO::Path::QNX&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M252.876,-35.589C263.805,-44.9181 277.591,-56.6869 289.439,-66.8014"/>
+<polygon fill="#000000" stroke="#000000" points="287.396,-69.6585 297.274,-73.4892 291.94,-64.3345 287.396,-69.6585"/>
 </g>
 <!-- IO::Path::Cygwin -->
-<g id="node10" class="node"><title>IO::Path::Cygwin</title>
-<g id="a_node10"><a xlink:href="/type/IO::Path::Cygwin" xlink:title="IO::Path::Cygwin">
-<ellipse fill="none" stroke="#000000" cx="546.244" cy="-18" rx="77.1866" ry="18"/>
-<text text-anchor="middle" x="546.244" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Cygwin</text>
+<g id="node9" class="node"><title>IO::Path::Cygwin</title>
+<g id="a_node9"><a xlink:href="/type/IO::Path::Cygwin" xlink:title="IO::Path::Cygwin">
+<ellipse fill="none" stroke="#000000" cx="397.443" cy="-18" rx="77.1866" ry="18"/>
+<text text-anchor="middle" x="397.443" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Cygwin</text>
 </a>
 </g>
 </g>
 <!-- IO::Path::Cygwin&#45;&gt;IO::Path -->
-<g id="edge8" class="edge"><title>IO::Path::Cygwin&#45;&gt;IO::Path</title>
-<path fill="none" stroke="#000000" d="M499.013,-32.3312C454.162,-44.9908 387.22,-63.8859 343.152,-76.3244"/>
-<polygon fill="#000000" stroke="#000000" points="341.964,-73.0227 333.291,-79.1076 343.866,-79.7595 341.964,-73.0227"/>
+<g id="edge7" class="edge"><title>IO::Path::Cygwin&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M378.011,-35.589C367.082,-44.9181 353.296,-56.6869 341.448,-66.8014"/>
+<polygon fill="#000000" stroke="#000000" points="338.947,-64.3345 333.613,-73.4892 343.491,-69.6585 338.947,-64.3345"/>
+</g>
+<!-- IO::Path::Unix -->
+<g id="node10" class="node"><title>IO::Path::Unix</title>
+<g id="a_node10"><a xlink:href="/type/IO::Path::Unix" xlink:title="IO::Path::Unix">
+<ellipse fill="none" stroke="#000000" cx="558.443" cy="-18" rx="65.7887" ry="18"/>
+<text text-anchor="middle" x="558.443" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Path::Unix</text>
+</a>
+</g>
+</g>
+<!-- IO::Path::Unix&#45;&gt;IO::Path -->
+<g id="edge8" class="edge"><title>IO::Path::Unix&#45;&gt;IO::Path</title>
+<path fill="none" stroke="#000000" d="M515,-31.5146C471.306,-44.1013 404.256,-63.4161 360.127,-76.1283"/>
+<polygon fill="#000000" stroke="#000000" points="358.894,-72.841 350.253,-78.9725 360.832,-79.5675 358.894,-72.841"/>
 </g>
 </g>
 </svg>

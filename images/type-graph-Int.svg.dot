@@ -9,29 +9,29 @@ digraph "perl6-type-graph" {
     "Cool" [color="#000000", fontcolor="#000000", href="/type/Cool", fontname="FreeSans"];
     "Numeric" [color="#6666FF", fontcolor="#6666FF", href="/type/Numeric", fontname="FreeSans"];
     "Real" [color="#6666FF", fontcolor="#6666FF", href="/type/Real", fontname="FreeSans"];
-    "Signal" [color="#33BB33", fontcolor="#33BB33", href="/type/Signal", fontname="FreeSans"];
-    "Order" [color="#33BB33", fontcolor="#33BB33", href="/type/Order", fontname="FreeSans"];
     "atomicint" [color="#000000", fontcolor="#000000", href="/type/atomicint", fontname="FreeSans"];
+    "Order" [color="#33BB33", fontcolor="#33BB33", href="/type/Order", fontname="FreeSans"];
     "PromiseStatus" [color="#33BB33", fontcolor="#33BB33", href="/type/PromiseStatus", fontname="FreeSans"];
+    "Bool" [color="#33BB33", fontcolor="#33BB33", href="/type/Bool", fontname="FreeSans"];
     "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "Str" [color="#000000", fontcolor="#000000", href="/type/Str", fontname="FreeSans"];
     "IntStr" [color="#000000", fontcolor="#000000", href="/type/IntStr", fontname="FreeSans"];
-    "Bool" [color="#33BB33", fontcolor="#33BB33", href="/type/Bool", fontname="FreeSans"];
     "int" [color="#000000", fontcolor="#000000", href="/type/int", fontname="FreeSans"];
+    "Signal" [color="#33BB33", fontcolor="#33BB33", href="/type/Signal", fontname="FreeSans"];
 
     // Superclasses
     "Int" -> "Cool" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Cool" -> "Any" [color="#000000"];
-    "Signal" -> "Int" [color="#000000"];
-    "Order" -> "Int" [color="#000000"];
     "atomicint" -> "Int" [color="#000000"];
+    "Order" -> "Int" [color="#000000"];
     "PromiseStatus" -> "Int" [color="#000000"];
+    "Bool" -> "Int" [color="#000000"];
     "Str" -> "Cool" [color="#000000"];
     "IntStr" -> "Int" [color="#000000"];
     "IntStr" -> "Str" [color="#000000"];
-    "Bool" -> "Int" [color="#000000"];
     "int" -> "Int" [color="#000000"];
+    "Signal" -> "Int" [color="#000000"];
 
     // Roles
     "Int" -> "Real" [color="#6666FF"];

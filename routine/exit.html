@@ -101,21 +101,29 @@
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
   
-</div>
 
     <h1 class='title'>sub exit</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_sub_exit">(routines) sub exit</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Routines">language documentation Routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Routines)_sub_exit">(Routines) sub exit</a></td></tr>
+                    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(routines)_sub_exit">(routines) sub exit</a></td></tr>
                    
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for sub <code>exit</code> assembled from the following types:</p>
+<h1 id="language_documentation_Routines"><a class="u" href="#___top" title="go to top of document">language documentation Routines</a></h1>
+<p>From <a href="/language/routines#sub_exit">Routines</a></p>
+<h2 id="(Routines)_sub_exit"><a href="/routine/exit#language_documentation_Routines">(Routines) sub exit</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>exit</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>status</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>)</span></span></div></pre><p>Exits the current process with return code <code>$status</code> or zero if no value has been specified. The exit value (<code>$status</code>), when different from zero, has to be opportunely evaluated from the process that catches it (e.g., a shell); it is the only way to return an exit code different from zero from a <a href="/routine/MAIN">Main</a>.</p>
+<p><code>exit</code> prevents the <a href="/language/phasers#LEAVE">LEAVE</a> phaser to be executed, but it will run the code in the <a href="/language/variables#index-entry-%2524%2AEXIT"><code>&amp;*EXIT</code></a> variable.</p>
+<p><code>exit</code> should be used as last resort only to signal the parent process about an exit code different from zero, and not to terminate exceptionally a method or a sub: use <a href="/language/exceptions">exceptions</a> instead.</p>
 <h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
 <p>From <a href="/type/independent-routines#sub_exit">routines</a></p>
 <h2 id="(routines)_sub_exit"><a href="/routine/exit#class_routines">(routines) sub exit</a></h2>
@@ -129,7 +137,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/02267c21"><span id="footer-commit">02267c21</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/e93988a"><span id="footer-commit">e93988a</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -137,7 +145,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-19T16:32:13Z
+      Generated on 2019-07-19T21:41:59Z
   </p>
   <p>
       This documentation is provided under the terms of the

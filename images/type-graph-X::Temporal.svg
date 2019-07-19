@@ -5,110 +5,110 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="782pt" height="332pt"
- viewBox="0.00 0.00 782.18 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 782.08 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 778.178,-328 778.178,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 778.078,-328 778.078,4 -4,4"/>
 <!-- X::Temporal -->
 <g id="node1" class="node"><title>X::Temporal</title>
 <g id="a_node1"><a xlink:href="/type/X::Temporal" xlink:title="X::Temporal">
-<ellipse fill="none" stroke="#6666ff" cx="343.089" cy="-90" rx="59.2899" ry="18"/>
-<text text-anchor="middle" x="343.089" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Temporal</text>
+<ellipse fill="none" stroke="#6666ff" cx="333.99" cy="-90" rx="59.2899" ry="18"/>
+<text text-anchor="middle" x="333.99" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Temporal</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="386.089" cy="-162" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="386.089" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="376.99" cy="-162" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="376.99" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::Temporal&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::Temporal&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M353.498,-107.945C358.568,-116.199 364.772,-126.299 370.401,-135.462"/>
-<polygon fill="#000000" stroke="#000000" points="367.559,-137.522 375.776,-144.211 373.524,-133.858 367.559,-137.522"/>
+<path fill="none" stroke="#000000" d="M344.399,-107.945C349.469,-116.199 355.673,-126.299 361.302,-135.462"/>
+<polygon fill="#000000" stroke="#000000" points="358.46,-137.522 366.676,-144.211 364.424,-133.858 358.46,-137.522"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="386.089" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="386.089" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="376.99" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="376.99" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="386.089" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="386.089" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="376.99" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="376.99" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M386.089,-252.303C386.089,-260.017 386.089,-269.288 386.089,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="382.589,-277.896 386.089,-287.896 389.589,-277.896 382.589,-277.896"/>
+<path fill="none" stroke="#000000" d="M376.99,-252.303C376.99,-260.017 376.99,-269.288 376.99,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="373.49,-277.896 376.99,-287.896 380.49,-277.896 373.49,-277.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M386.089,-180.303C386.089,-188.017 386.089,-197.288 386.089,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="382.589,-205.896 386.089,-215.896 389.589,-205.896 382.589,-205.896"/>
-</g>
-<!-- X::DateTime::TimezoneClash -->
-<g id="node5" class="node"><title>X::DateTime::TimezoneClash</title>
-<g id="a_node5"><a xlink:href="/type/X::DateTime::TimezoneClash" xlink:title="X::DateTime::TimezoneClash">
-<ellipse fill="none" stroke="#000000" cx="126.089" cy="-18" rx="126.178" ry="18"/>
-<text text-anchor="middle" x="126.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::TimezoneClash</text>
-</a>
-</g>
-</g>
-<!-- X::DateTime::TimezoneClash&#45;&gt;X::Temporal -->
-<g id="edge7" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;X::Temporal</title>
-<path fill="none" stroke="#6666ff" d="M174.518,-34.6222C210.141,-46.1136 258.38,-61.6745 294.128,-73.2061"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="293.267,-76.606 303.859,-76.3451 295.416,-69.944 293.267,-76.606"/>
-</g>
-<!-- X::DateTime::TimezoneClash&#45;&gt;Exception -->
-<g id="edge4" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M154.115,-35.7402C197.276,-61.5213 275.089,-108 275.089,-108 275.089,-108 315.876,-127.475 348.002,-142.814"/>
-<polygon fill="#000000" stroke="#000000" points="346.682,-146.063 357.215,-147.213 349.699,-139.746 346.682,-146.063"/>
+<path fill="none" stroke="#000000" d="M376.99,-180.303C376.99,-188.017 376.99,-197.288 376.99,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="373.49,-205.896 376.99,-215.896 380.49,-205.896 373.49,-205.896"/>
 </g>
 <!-- X::Temporal::InvalidFormat -->
-<g id="node6" class="node"><title>X::Temporal::InvalidFormat</title>
-<g id="a_node6"><a xlink:href="/type/X::Temporal::InvalidFormat" xlink:title="X::Temporal::InvalidFormat">
-<ellipse fill="none" stroke="#000000" cx="387.089" cy="-18" rx="116.979" ry="18"/>
-<text text-anchor="middle" x="387.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Temporal::InvalidFormat</text>
+<g id="node5" class="node"><title>X::Temporal::InvalidFormat</title>
+<g id="a_node5"><a xlink:href="/type/X::Temporal::InvalidFormat" xlink:title="X::Temporal::InvalidFormat">
+<ellipse fill="none" stroke="#000000" cx="116.99" cy="-18" rx="116.979" ry="18"/>
+<text text-anchor="middle" x="116.99" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Temporal::InvalidFormat</text>
 </a>
 </g>
 </g>
 <!-- X::Temporal::InvalidFormat&#45;&gt;X::Temporal -->
-<g id="edge8" class="edge"><title>X::Temporal::InvalidFormat&#45;&gt;X::Temporal</title>
-<path fill="none" stroke="#6666ff" d="M376.438,-35.945C371.249,-44.1994 364.901,-54.2986 359.141,-63.4622"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="356,-61.882 353.642,-72.211 361.927,-65.6072 356,-61.882"/>
+<g id="edge7" class="edge"><title>X::Temporal::InvalidFormat&#45;&gt;X::Temporal</title>
+<path fill="none" stroke="#6666ff" d="M164.88,-34.4485C200.589,-45.9675 249.194,-61.6467 285.133,-73.2399"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="284.321,-76.6555 294.913,-76.3946 286.47,-69.9935 284.321,-76.6555"/>
 </g>
 <!-- X::Temporal::InvalidFormat&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>X::Temporal::InvalidFormat&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M394.815,-36.0613C401.831,-51.5549 411.089,-72 411.089,-72 411.089,-72 411.089,-108 411.089,-108 411.089,-108 404.642,-121.667 398.296,-135.121"/>
-<polygon fill="#000000" stroke="#000000" points="395.1,-133.693 393.999,-144.23 401.431,-136.679 395.1,-133.693"/>
+<g id="edge4" class="edge"><title>X::Temporal::InvalidFormat&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M144.666,-35.5316C187.756,-61.2698 265.99,-108 265.99,-108 265.99,-108 306.777,-127.475 338.903,-142.814"/>
+<polygon fill="#000000" stroke="#000000" points="337.583,-146.063 348.115,-147.213 340.599,-139.746 337.583,-146.063"/>
 </g>
 <!-- X::DateTime::InvalidDeltaUnit -->
-<g id="node7" class="node"><title>X::DateTime::InvalidDeltaUnit</title>
-<g id="a_node7"><a xlink:href="/type/X::DateTime::InvalidDeltaUnit" xlink:title="X::DateTime::InvalidDeltaUnit">
-<ellipse fill="none" stroke="#000000" cx="648.089" cy="-18" rx="126.178" ry="18"/>
-<text text-anchor="middle" x="648.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::InvalidDeltaUnit</text>
+<g id="node6" class="node"><title>X::DateTime::InvalidDeltaUnit</title>
+<g id="a_node6"><a xlink:href="/type/X::DateTime::InvalidDeltaUnit" xlink:title="X::DateTime::InvalidDeltaUnit">
+<ellipse fill="none" stroke="#000000" cx="377.99" cy="-18" rx="126.178" ry="18"/>
+<text text-anchor="middle" x="377.99" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::InvalidDeltaUnit</text>
 </a>
 </g>
 </g>
 <!-- X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal -->
-<g id="edge9" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal</title>
-<path fill="none" stroke="#6666ff" d="M584.522,-33.5891C529.578,-46.1993 450.958,-64.243 398.529,-76.276"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="397.695,-72.8763 388.732,-78.5246 399.261,-79.6989 397.695,-72.8763"/>
+<g id="edge8" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal</title>
+<path fill="none" stroke="#6666ff" d="M367.338,-35.945C362.15,-44.1994 355.802,-54.2986 350.042,-63.4622"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="346.901,-61.882 344.543,-72.211 352.828,-65.6072 346.901,-61.882"/>
 </g>
 <!-- X::DateTime::InvalidDeltaUnit&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M617.521,-35.5671C568.623,-62.0694 473.066,-113.86 421.352,-141.888"/>
-<polygon fill="#000000" stroke="#000000" points="419.655,-138.826 412.531,-146.669 422.991,-144.981 419.655,-138.826"/>
+<g id="edge5" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M385.715,-36.0613C392.731,-51.5549 401.99,-72 401.99,-72 401.99,-72 401.99,-108 401.99,-108 401.99,-108 395.543,-121.667 389.197,-135.121"/>
+<polygon fill="#000000" stroke="#000000" points="386.001,-133.693 384.9,-144.23 392.332,-136.679 386.001,-133.693"/>
+</g>
+<!-- X::DateTime::TimezoneClash -->
+<g id="node7" class="node"><title>X::DateTime::TimezoneClash</title>
+<g id="a_node7"><a xlink:href="/type/X::DateTime::TimezoneClash" xlink:title="X::DateTime::TimezoneClash">
+<ellipse fill="none" stroke="#000000" cx="647.99" cy="-18" rx="126.178" ry="18"/>
+<text text-anchor="middle" x="647.99" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::TimezoneClash</text>
+</a>
+</g>
+</g>
+<!-- X::DateTime::TimezoneClash&#45;&gt;X::Temporal -->
+<g id="edge9" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;X::Temporal</title>
+<path fill="none" stroke="#6666ff" d="M582.929,-33.504C525.939,-46.2087 443.995,-64.4765 389.903,-76.5352"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="389.138,-73.1197 380.14,-78.7118 390.662,-79.952 389.138,-73.1197"/>
+</g>
+<!-- X::DateTime::TimezoneClash&#45;&gt;Exception -->
+<g id="edge6" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M616.372,-35.5671C565.662,-62.1384 466.44,-114.13 413.048,-142.106"/>
+<polygon fill="#000000" stroke="#000000" points="411.18,-139.134 403.946,-146.875 414.429,-145.334 411.18,-139.134"/>
 </g>
 </g>
 </svg>

@@ -101,7 +101,6 @@
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
   
-</div>
 
     <h1 class='title'>Perl 6 Routines</h1>
     
@@ -122,6 +121,18 @@
 </td> </tr> <tr> <td><a href="/routine/&&">&amp;&amp;</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/&*chdir">&amp;*chdir</a></td> <td>sub</td> <td><p>(From <a href="/type/independent-routines">routines</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/( )">( )</a></td> <td>term, postcircumfix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/operators">Operators</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(&)">(&amp;)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(+)">(+)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(-)">(-)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(.)">(.)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(<)">(&lt;)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(<=)">(&lt;=)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(>)">(&gt;)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(>=)">(&gt;=)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/($CIRCUMFLEX_ACCENT)">(^)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(cont)">(cont)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(elem)">(elem)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/(|)">(|)</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/*">*</a></td> <td>term, infix</td> <td><p>(From <a href="/language/terms">Terms</a>, <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/**">**</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/+">+</a></td> <td>prefix, infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/operators">Operators</a>)</p>
@@ -491,7 +502,7 @@
 </td> </tr> <tr> <td><a href="/routine/exception">exception</a></td> <td>method</td> <td><p>(From <a href="/type/Failure">Failure</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/excludes-max">excludes-max</a></td> <td>method</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/excludes-min">excludes-min</a></td> <td>method</td> <td><p>(From <a href="/type/Range">Range</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/exit">exit</a></td> <td>sub</td> <td><p>(From <a href="/type/independent-routines">routines</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/exit">exit</a></td> <td>sub</td> <td><p>(From <a href="/language/routines">Routines</a>, <a href="/type/independent-routines">routines</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/exitcode">exitcode</a></td> <td>method</td> <td><p>(From <a href="/type/Proc">Proc</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/exp">exp</a></td> <td>sub</td> <td><p>(From <a href="/type/Cool">Cool</a>, <a href="/type/Numeric">Numeric</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/expected">expected</a></td> <td>method</td> <td><p>(From <a href="/type/X::TypeCheck">X::TypeCheck</a>)</p>
@@ -678,7 +689,7 @@
 </td> </tr> <tr> <td><a href="/routine/max">max</a></td> <td>infix, method</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/type/Any">Any</a>, <a href="/type/Range">Range</a>, <a href="/type/Supply">Supply</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/maxpairs">maxpairs</a></td> <td>method</td> <td><p>(From <a href="/type/Any">Any</a>, <a href="/type/Setty">Setty</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/merge">merge</a></td> <td>method</td> <td><p>(From <a href="/type/Supply">Supply</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/message">message</a></td> <td>method</td> <td><p>(From <a href="/type/CX::Return">CX::Return</a>, <a href="/type/CX::Emit">CX::Emit</a>, <a href="/type/CX::Done">CX::Done</a>, <a href="/type/Exception">Exception</a>, <a href="/type/CX::Last">CX::Last</a>, <a href="/type/CX::Next">CX::Next</a>, <a href="/type/CX::Proceed">CX::Proceed</a>, <a href="/type/CX::Redo">CX::Redo</a>, <a href="/type/CX::Succeed">CX::Succeed</a>, <a href="/type/CX::Take">CX::Take</a>, <a href="/type/X::NYI">X::NYI</a>, <a href="/type/X::StubCode">X::StubCode</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/message">message</a></td> <td>method</td> <td><p>(From <a href="/type/CX::Done">CX::Done</a>, <a href="/type/CX::Emit">CX::Emit</a>, <a href="/type/CX::Return">CX::Return</a>, <a href="/type/Exception">Exception</a>, <a href="/type/CX::Last">CX::Last</a>, <a href="/type/CX::Next">CX::Next</a>, <a href="/type/CX::Proceed">CX::Proceed</a>, <a href="/type/CX::Redo">CX::Redo</a>, <a href="/type/CX::Succeed">CX::Succeed</a>, <a href="/type/CX::Take">CX::Take</a>, <a href="/type/X::NYI">X::NYI</a>, <a href="/type/X::StubCode">X::StubCode</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/meta">meta</a></td> <td>method</td> <td><p>(From <a href="/type/Distribution">Distribution</a>, <a href="/type/Distribution::Hash">Distribution::Hash</a>, <a href="/type/Distribution::Path">Distribution::Path</a>, <a href="/type/Pod::FormattingCode">Pod::FormattingCode</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/method">method</a></td> <td>method</td> <td><p>(From <a href="/type/X::Method::InvalidQualifier">X::Method::InvalidQualifier</a>, <a href="/type/X::Method::NotFound">X::Method::NotFound</a>, <a href="/type/X::Method::Private::Permission">X::Method::Private::Permission</a>, <a href="/type/X::Method::Private::Unqualified">X::Method::Private::Unqualified</a>, <a href="/type/X::Proc::Async::MustBeStarted">X::Proc::Async::MustBeStarted</a>, <a href="/type/X::Proc::Async::OpenForWriting">X::Proc::Async::OpenForWriting</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/method_table">method_table</a></td> <td>method</td> <td><p>(From <a href="/type/Metamodel::MethodContainer">Metamodel::MethodContainer</a>)</p>
@@ -1131,17 +1142,29 @@
 </td> </tr> <tr> <td><a href="/routine/« »">« »</a></td> <td>postcircumfix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/π">π</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/τ">τ</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∅">∅</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∉">∉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/∌">∌</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∅">∅</a></td> <td>term</td> <td><p>(From <a href="/language/terms">Terms</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∈">∈</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∉">∉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∋">∋</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∌">∌</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∖">∖</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/∘">∘</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∩">∩</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/∪">∪</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/≠">≠</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/≤">≤</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/≥">≥</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊄">⊄</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊅">⊅</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊈">⊈</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
-</td> </tr> <tr> <td><a href="/routine/⊉">⊉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊂">⊂</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊃">⊃</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊄">⊄</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊅">⊅</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊆">⊆</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊇">⊇</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊈">⊈</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊉">⊉</a></td> <td>infix</td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊍">⊍</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊎">⊎</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td><a href="/routine/⊖">⊖</a></td> <td>infix</td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⚛">⚛</a></td> <td>prefix</td> <td><p>(From <a href="/type/Scalar">Scalar</a>, <a href="/type/atomicint">atomicint</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⚛++">⚛++</a></td> <td>postfix</td> <td><p>(From <a href="/type/atomicint">atomicint</a>)</p>
 </td> </tr> <tr> <td><a href="/routine/⚛+=">⚛+=</a></td> <td>infix</td> <td><p>(From <a href="/type/atomicint">atomicint</a>)</p>
@@ -1158,7 +1181,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/02267c21"><span id="footer-commit">02267c21</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/e93988a"><span id="footer-commit">e93988a</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -1166,7 +1189,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-19T16:31:31Z
+      Generated on 2019-07-19T21:40:06Z
   </p>
   <p>
       This documentation is provided under the terms of the
