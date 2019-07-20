@@ -5,147 +5,147 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="380pt" height="476pt"
- viewBox="0.00 0.00 380.30 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 379.75 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 472)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-472 376.296,-472 376.296,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-472 375.747,-472 375.747,4 -4,4"/>
 <!-- Routine -->
 <g id="node1" class="node"><title>Routine</title>
 <g id="a_node1"><a xlink:href="/type/Routine" xlink:title="Routine">
-<ellipse fill="none" stroke="#000000" cx="163" cy="-162" rx="40.8928" ry="18"/>
-<text text-anchor="middle" x="163" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Routine</text>
+<ellipse fill="none" stroke="#000000" cx="186.747" cy="-162" rx="40.8928" ry="18"/>
+<text text-anchor="middle" x="186.747" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Routine</text>
 </a>
 </g>
 </g>
 <!-- Block -->
 <g id="node6" class="node"><title>Block</title>
 <g id="a_node6"><a xlink:href="/type/Block" xlink:title="Block">
-<ellipse fill="none" stroke="#000000" cx="163" cy="-234" rx="32.4942" ry="18"/>
-<text text-anchor="middle" x="163" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Block</text>
+<ellipse fill="none" stroke="#000000" cx="186.747" cy="-234" rx="32.4942" ry="18"/>
+<text text-anchor="middle" x="186.747" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Block</text>
 </a>
 </g>
 </g>
 <!-- Routine&#45;&gt;Block -->
 <g id="edge1" class="edge"><title>Routine&#45;&gt;Block</title>
-<path fill="none" stroke="#000000" d="M163,-180.303C163,-188.017 163,-197.288 163,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="159.5,-205.896 163,-215.896 166.5,-205.896 159.5,-205.896"/>
+<path fill="none" stroke="#000000" d="M186.747,-180.303C186.747,-188.017 186.747,-197.288 186.747,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="183.247,-205.896 186.747,-215.896 190.247,-205.896 183.247,-205.896"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="120" cy="-450" rx="27" ry="18"/>
-<text text-anchor="middle" x="120" y="-446.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="143.747" cy="-450" rx="27" ry="18"/>
+<text text-anchor="middle" x="143.747" y="-446.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="120" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="120" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="143.747" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="143.747" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M120,-396.303C120,-404.017 120,-413.288 120,-421.888"/>
-<polygon fill="#000000" stroke="#000000" points="116.5,-421.896 120,-431.896 123.5,-421.896 116.5,-421.896"/>
+<path fill="none" stroke="#000000" d="M143.747,-396.303C143.747,-404.017 143.747,-413.288 143.747,-421.888"/>
+<polygon fill="#000000" stroke="#000000" points="140.247,-421.896 143.747,-431.896 147.247,-421.896 140.247,-421.896"/>
 </g>
 <!-- Callable -->
 <g id="node4" class="node"><title>Callable</title>
 <g id="a_node4"><a xlink:href="/type/Callable" xlink:title="Callable">
-<ellipse fill="none" stroke="#6666ff" cx="207" cy="-378" rx="42.4939" ry="18"/>
-<text text-anchor="middle" x="207" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Callable</text>
+<ellipse fill="none" stroke="#6666ff" cx="230.747" cy="-378" rx="42.4939" ry="18"/>
+<text text-anchor="middle" x="230.747" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Callable</text>
 </a>
 </g>
 </g>
 <!-- Code -->
 <g id="node5" class="node"><title>Code</title>
 <g id="a_node5"><a xlink:href="/type/Code" xlink:title="Code">
-<ellipse fill="none" stroke="#000000" cx="163" cy="-306" rx="31.6951" ry="18"/>
-<text text-anchor="middle" x="163" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Code</text>
+<ellipse fill="none" stroke="#000000" cx="186.747" cy="-306" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="186.747" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Code</text>
 </a>
 </g>
 </g>
 <!-- Code&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Code&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M153.027,-323.235C147.763,-331.805 141.189,-342.506 135.296,-352.1"/>
-<polygon fill="#000000" stroke="#000000" points="132.171,-350.5 129.919,-360.853 138.136,-354.164 132.171,-350.5"/>
+<path fill="none" stroke="#000000" d="M176.774,-323.235C171.509,-331.805 164.936,-342.506 159.043,-352.1"/>
+<polygon fill="#000000" stroke="#000000" points="155.918,-350.5 153.666,-360.853 161.882,-354.164 155.918,-350.5"/>
 </g>
 <!-- Code&#45;&gt;Callable -->
 <g id="edge10" class="edge"><title>Code&#45;&gt;Callable</title>
-<path fill="none" stroke="#6666ff" d="M173.205,-323.235C178.515,-331.683 185.126,-342.201 191.089,-351.688"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="188.26,-353.763 196.545,-360.367 194.186,-350.038 188.26,-353.763"/>
+<path fill="none" stroke="#6666ff" d="M196.952,-323.235C202.262,-331.683 208.873,-342.201 214.836,-351.688"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="212.007,-353.763 220.292,-360.367 217.933,-350.038 212.007,-353.763"/>
 </g>
 <!-- Block&#45;&gt;Code -->
 <g id="edge4" class="edge"><title>Block&#45;&gt;Code</title>
-<path fill="none" stroke="#000000" d="M163,-252.303C163,-260.017 163,-269.288 163,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="159.5,-277.896 163,-287.896 166.5,-277.896 159.5,-277.896"/>
-</g>
-<!-- Sub -->
-<g id="node7" class="node"><title>Sub</title>
-<g id="a_node7"><a xlink:href="/type/Sub" xlink:title="Sub">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Sub</text>
-</a>
-</g>
-</g>
-<!-- Sub&#45;&gt;Routine -->
-<g id="edge5" class="edge"><title>Sub&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M47.6555,-101.631C69.0979,-112.668 103.009,-130.122 128.523,-143.254"/>
-<polygon fill="#000000" stroke="#000000" points="127.011,-146.413 137.504,-147.877 130.215,-140.189 127.011,-146.413"/>
+<path fill="none" stroke="#000000" d="M186.747,-252.303C186.747,-260.017 186.747,-269.288 186.747,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="183.247,-277.896 186.747,-287.896 190.247,-277.896 183.247,-277.896"/>
 </g>
 <!-- Macro -->
-<g id="node8" class="node"><title>Macro</title>
-<g id="a_node8"><a xlink:href="/type/Macro" xlink:title="Macro">
-<ellipse fill="none" stroke="#000000" cx="108" cy="-90" rx="35.9954" ry="18"/>
-<text text-anchor="middle" x="108" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Macro</text>
+<g id="node7" class="node"><title>Macro</title>
+<g id="a_node7"><a xlink:href="/type/Macro" xlink:title="Macro">
+<ellipse fill="none" stroke="#000000" cx="35.7468" cy="-90" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="35.7468" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Macro</text>
 </a>
 </g>
 </g>
 <!-- Macro&#45;&gt;Routine -->
-<g id="edge6" class="edge"><title>Macro&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M120.48,-106.884C127.413,-115.708 136.184,-126.87 143.956,-136.762"/>
-<polygon fill="#000000" stroke="#000000" points="141.257,-138.992 150.187,-144.693 146.761,-134.667 141.257,-138.992"/>
+<g id="edge5" class="edge"><title>Macro&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M61.3619,-102.875C85.7488,-114.18 122.704,-131.311 150.184,-144.05"/>
+<polygon fill="#000000" stroke="#000000" points="148.928,-147.326 159.473,-148.356 151.872,-140.975 148.928,-147.326"/>
+</g>
+<!-- Method -->
+<g id="node8" class="node"><title>Method</title>
+<g id="a_node8"><a xlink:href="/type/Method" xlink:title="Method">
+<ellipse fill="none" stroke="#000000" cx="129.747" cy="-90" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="129.747" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Method</text>
+</a>
+</g>
+</g>
+<!-- Method&#45;&gt;Routine -->
+<g id="edge6" class="edge"><title>Method&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M142.967,-107.235C150.161,-116.07 159.2,-127.17 167.193,-136.986"/>
+<polygon fill="#000000" stroke="#000000" points="164.57,-139.308 173.598,-144.853 169.998,-134.888 164.57,-139.308"/>
 </g>
 <!-- Submethod -->
 <g id="node9" class="node"><title>Submethod</title>
 <g id="a_node9"><a xlink:href="/type/Submethod" xlink:title="Submethod">
-<ellipse fill="none" stroke="#000000" cx="218" cy="-90" rx="55.7903" ry="18"/>
-<text text-anchor="middle" x="218" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Submethod</text>
+<ellipse fill="none" stroke="#000000" cx="243.747" cy="-90" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="243.747" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Submethod</text>
 </a>
 </g>
 </g>
 <!-- Submethod&#45;&gt;Routine -->
 <g id="edge7" class="edge"><title>Submethod&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M204.966,-107.589C198.185,-116.219 189.763,-126.938 182.248,-136.503"/>
-<polygon fill="#000000" stroke="#000000" points="179.367,-134.504 175.941,-144.53 184.871,-138.829 179.367,-134.504"/>
+<path fill="none" stroke="#000000" d="M230.239,-107.589C223.211,-116.219 214.483,-126.938 206.695,-136.503"/>
+<polygon fill="#000000" stroke="#000000" points="203.758,-134.566 200.158,-144.53 209.186,-138.986 203.758,-134.566"/>
 </g>
-<!-- Method -->
-<g id="node10" class="node"><title>Method</title>
-<g id="a_node10"><a xlink:href="/type/Method" xlink:title="Method">
-<ellipse fill="none" stroke="#000000" cx="332" cy="-90" rx="40.0939" ry="18"/>
-<text text-anchor="middle" x="332" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Method</text>
+<!-- Sub -->
+<g id="node10" class="node"><title>Sub</title>
+<g id="a_node10"><a xlink:href="/type/Sub" xlink:title="Sub">
+<ellipse fill="none" stroke="#000000" cx="344.747" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="344.747" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Sub</text>
 </a>
 </g>
 </g>
-<!-- Method&#45;&gt;Routine -->
-<g id="edge8" class="edge"><title>Method&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M303.331,-102.875C275.289,-114.49 232.399,-132.255 201.416,-145.088"/>
-<polygon fill="#000000" stroke="#000000" points="199.709,-142.007 191.809,-149.067 202.387,-148.474 199.709,-142.007"/>
+<!-- Sub&#45;&gt;Routine -->
+<g id="edge8" class="edge"><title>Sub&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M323.389,-101.085C315.637,-104.746 308.747,-108 308.747,-108 308.747,-108 259.879,-129.23 223.999,-144.816"/>
+<polygon fill="#000000" stroke="#000000" points="222.513,-141.646 214.736,-148.841 225.303,-148.066 222.513,-141.646"/>
 </g>
 <!-- Regex -->
 <g id="node11" class="node"><title>Regex</title>
 <g id="a_node11"><a xlink:href="/type/Regex" xlink:title="Regex">
-<ellipse fill="none" stroke="#000000" cx="332" cy="-18" rx="36.2938" ry="18"/>
-<text text-anchor="middle" x="332" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Regex</text>
+<ellipse fill="none" stroke="#000000" cx="129.747" cy="-18" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="129.747" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Regex</text>
 </a>
 </g>
 </g>
 <!-- Regex&#45;&gt;Method -->
 <g id="edge9" class="edge"><title>Regex&#45;&gt;Method</title>
-<path fill="none" stroke="#000000" d="M332,-36.3034C332,-44.0173 332,-53.2875 332,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="328.5,-61.8956 332,-71.8957 335.5,-61.8957 328.5,-61.8956"/>
+<path fill="none" stroke="#000000" d="M129.747,-36.3034C129.747,-44.0173 129.747,-53.2875 129.747,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="126.247,-61.8956 129.747,-71.8957 133.247,-61.8957 126.247,-61.8956"/>
 </g>
 </g>
 </svg>
