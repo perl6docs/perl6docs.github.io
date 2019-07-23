@@ -9,10 +9,10 @@ digraph "perl6-type-graph" {
     "Callable" [color="#6666FF", fontcolor="#6666FF", href="/type/Callable", fontname="FreeSans"];
     "Code" [color="#000000", fontcolor="#000000", href="/type/Code", fontname="FreeSans"];
     "Routine" [color="#000000", fontcolor="#000000", href="/type/Routine", fontname="FreeSans"];
-    "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
-    "Method" [color="#000000", fontcolor="#000000", href="/type/Method", fontname="FreeSans"];
     "Submethod" [color="#000000", fontcolor="#000000", href="/type/Submethod", fontname="FreeSans"];
     "Sub" [color="#000000", fontcolor="#000000", href="/type/Sub", fontname="FreeSans"];
+    "Method" [color="#000000", fontcolor="#000000", href="/type/Method", fontname="FreeSans"];
+    "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
     "Regex" [color="#000000", fontcolor="#000000", href="/type/Regex", fontname="FreeSans"];
 
     // Superclasses
@@ -20,10 +20,10 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Code" -> "Any" [color="#000000"];
     "Routine" -> "Block" [color="#000000"];
-    "Macro" -> "Routine" [color="#000000"];
-    "Method" -> "Routine" [color="#000000"];
     "Submethod" -> "Routine" [color="#000000"];
     "Sub" -> "Routine" [color="#000000"];
+    "Method" -> "Routine" [color="#000000"];
+    "Macro" -> "Routine" [color="#000000"];
     "Regex" -> "Method" [color="#000000"];
 
     // Roles
