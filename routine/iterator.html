@@ -113,10 +113,14 @@
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Any)_method_iterator">(Any) method iterator</a></td></tr>
         <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Iterable)_method_iterator">(Iterable) method iterator</a></td></tr>
-            <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#role_PositionalBindFailover">role PositionalBindFailover</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(PositionalBindFailover)_method_iterator">(PositionalBindFailover) method iterator</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#class_Seq">class Seq</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(Seq)_method_iterator">(Seq) method iterator</a></td></tr>
+            <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(HyperSeq)_method_iterator">(HyperSeq) method iterator</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#role_PositionalBindFailover">role PositionalBindFailover</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(PositionalBindFailover)_method_iterator">(PositionalBindFailover) method iterator</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#(RaceSeq)_method_iterator">(RaceSeq) method iterator</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">7</td><td class="toc-text"><a href="#class_Seq">class Seq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">7.1</td><td class="toc-text"><a href="#(Seq)_method_iterator">(Seq) method iterator</a></td></tr>
     
 </table>
 </nav>
@@ -140,10 +144,18 @@
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Method stub that ensures all classes doing the <code>Iterable</code> role have a method <code>iterator</code>.</p>
 <p>It is supposed to return an <a href="/type/Iterator">Iterator</a>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h1 id="role_PositionalBindFailover"><a class="u" href="#___top" title="go to top of document">role PositionalBindFailover</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h1 id="class_HyperSeq"><a class="u" href="#___top" title="go to top of document">class HyperSeq</a></h1>
+<p>From <a href="/type/HyperSeq#method_iterator">HyperSeq</a></p>
+<h2 id="(HyperSeq)_method_iterator"><a href="/routine/iterator#class_HyperSeq">(HyperSeq) method iterator</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the underlying iterator.</p>
+<h1 id="role_PositionalBindFailover"><a class="u" href="#___top" title="go to top of document">role PositionalBindFailover</a></h1>
 <p>From <a href="/type/PositionalBindFailover#method_iterator">PositionalBindFailover</a></p>
 <h2 id="(PositionalBindFailover)_method_iterator"><a href="/routine/iterator#role_PositionalBindFailover">(PositionalBindFailover) method iterator</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="support type perl6fe"><span>PositionalBindFailover</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>This method stub ensure that a class implementing role <code>PositionalBindFailover</code> provides an <code>iterator</code> method.</p>
+<h1 id="class_RaceSeq"><a class="u" href="#___top" title="go to top of document">class RaceSeq</a></h1>
+<p>From <a href="/type/RaceSeq#method_iterator">RaceSeq</a></p>
+<h2 id="(RaceSeq)_method_iterator"><a href="/routine/iterator#class_RaceSeq">(RaceSeq) method iterator</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the underlying iterator.</p>
 <h1 id="class_Seq"><a class="u" href="#___top" title="go to top of document">class Seq</a></h1>
 <p>From <a href="/type/Seq#method_iterator">Seq</a></p>
 <h2 id="(Seq)_method_iterator"><a href="/routine/iterator#class_Seq">(Seq) method iterator</a></h2>
@@ -154,7 +166,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6ae84678"><span id="footer-commit">6ae84678</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -162,7 +174,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-23T08:54:25Z
+      Generated on 2019-07-31T06:42:05Z
   </p>
   <p>
       This documentation is provided under the terms of the

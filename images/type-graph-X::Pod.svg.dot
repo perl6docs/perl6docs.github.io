@@ -18,6 +18,7 @@ digraph "perl6-type-graph" {
     "X::Comp" -> "Exception" [color="#000000"];
     "X::Syntax" -> "Exception" [color="#000000"];
     "X::Syntax::Pod::BeginWithoutIdentifier" -> "Exception" [color="#000000"];
+    "X::Syntax::Pod::BeginWithoutIdentifier" -> "Exception" [color="#000000"];
     "X::Syntax::Pod::BeginWithoutEnd" -> "Exception" [color="#000000"];
     "X::Syntax::Pod::BeginWithoutEnd" -> "Exception" [color="#000000"];
 

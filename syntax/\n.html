@@ -85,7 +85,7 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_\n">(Regexes) regex \n</a></td></tr>
-                 
+                      
 </table>
 </nav>
 
@@ -94,15 +94,16 @@
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
 <p>From <a href="/language/regexes#regex_%5Cn">Regexes</a></p>
 <h2 id="(Regexes)_regex_\n"><a href="/syntax/\n#language_documentation_Regexes">(Regexes) regex \n</a></h2>
-<p><code>\n</code> matches a single, logical newline character. <code>\N</code> matches a single character that&#39;s not a logical newline.</p>
-<p>What is considered as a single newline character is defined via the compile time variable <a href="/language/variables#index-entry-%24%3FNL"><code>$?NL</code></a>, and the <a href="/language/pragmas">newline pragma</a>; therefore, <code>\n</code> is supposed to be able to match either a Unix-like newline <code>&quot;\n&quot;</code>, a Microsoft Windows style one <code>&quot;\r\n&quot;</code>, or one in the Mac style <code>&quot;\r&quot;</code>.</p>
+<p><code>\n</code> matches a logical newline. <code>\N</code> matches a single character that&#39;s not a logical newline.</p>
+<p>The definition of what constitutes a logical newline follows the <a href="https://unicode.org/reports/tr18/#Line_Boundaries">Unicode definition of a line boundary</a> and includes in particular all of: a line feed (LF) <code>\U+000A</code>, a vertical tab (VT) <code>\U+000B</code>, a form feed (FF) <code>\U+000C</code>, a carriage return (CR) <code>\U+000D</code>, and the Microsoft Windows style newline sequence CRLF.</p>
+<p>The interpretation of <code>\n</code> in regexes is independent of the value of the variable <code>$?NL</code> controlled by the <a href="/language/pragmas#newline">newline pragma</a>.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6ae84678"><span id="footer-commit">6ae84678</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -110,7 +111,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-23T08:54:55Z
+      Generated on 2019-07-31T06:41:38Z
   </p>
   <p>
       This documentation is provided under the terms of the

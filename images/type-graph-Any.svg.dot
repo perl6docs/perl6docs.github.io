@@ -96,6 +96,8 @@ digraph "perl6-type-graph" {
     "Grammar" [color="#000000", fontcolor="#000000", href="/type/Grammar", fontname="FreeSans"];
     "Map" [color="#000000", fontcolor="#000000", href="/type/Map", fontname="FreeSans"];
     "Hash" [color="#000000", fontcolor="#000000", href="/type/Hash", fontname="FreeSans"];
+    "Sequence" [color="#6666FF", fontcolor="#6666FF", href="/type/Sequence", fontname="FreeSans"];
+    "HyperSeq" [color="#000000", fontcolor="#000000", href="/type/HyperSeq", fontname="FreeSans"];
     "HyperWhatever" [color="#000000", fontcolor="#000000", href="/type/HyperWhatever", fontname="FreeSans"];
     "IO" [color="#6666FF", fontcolor="#6666FF", href="/type/IO", fontname="FreeSans"];
     "IO::Handle" [color="#000000", fontcolor="#000000", href="/type/IO::Handle", fontname="FreeSans"];
@@ -203,6 +205,7 @@ digraph "perl6-type-graph" {
     "PromiseStatus" [color="#33BB33", fontcolor="#33BB33", href="/type/PromiseStatus", fontname="FreeSans"];
     "Proxy" [color="#000000", fontcolor="#000000", href="/type/Proxy", fontname="FreeSans"];
     "PseudoStash" [color="#000000", fontcolor="#000000", href="/type/PseudoStash", fontname="FreeSans"];
+    "RaceSeq" [color="#000000", fontcolor="#000000", href="/type/RaceSeq", fontname="FreeSans"];
     "Range" [color="#000000", fontcolor="#000000", href="/type/Range", fontname="FreeSans"];
     "Rat" [color="#000000", fontcolor="#000000", href="/type/Rat", fontname="FreeSans"];
     "RatStr" [color="#000000", fontcolor="#000000", href="/type/RatStr", fontname="FreeSans"];
@@ -286,6 +289,7 @@ digraph "perl6-type-graph" {
     "Grammar" -> "Match" [color="#000000"];
     "Map" -> "Cool" [color="#000000"];
     "Hash" -> "Map" [color="#000000"];
+    "HyperSeq" -> "Any" [color="#000000"];
     "HyperWhatever" -> "Any" [color="#000000"];
     "IO::Handle" -> "Any" [color="#000000"];
     "IO::CatHandle" -> "IO::Handle" [color="#000000"];
@@ -366,6 +370,7 @@ digraph "perl6-type-graph" {
     "PromiseStatus" -> "Int" [color="#000000"];
     "Proxy" -> "Any" [color="#000000"];
     "PseudoStash" -> "Map" [color="#000000"];
+    "RaceSeq" -> "Any" [color="#000000"];
     "Range" -> "Cool" [color="#000000"];
     "Rat" -> "Cool" [color="#000000"];
     "RatStr" -> "Rat" [color="#000000"];
@@ -434,6 +439,8 @@ digraph "perl6-type-graph" {
     "ForeignCode" -> "Callable" [color="#6666FF"];
     "Map" -> "Iterable" [color="#6666FF"];
     "Map" -> "Associative" [color="#6666FF"];
+    "HyperSeq" -> "Iterable" [color="#6666FF"];
+    "HyperSeq" -> "Sequence" [color="#6666FF"];
     "IO::Path" -> "IO" [color="#6666FF"];
     "IO::Socket::INET" -> "IO::Socket" [color="#6666FF"];
     "IO::Special" -> "IO" [color="#6666FF"];
@@ -525,6 +532,8 @@ digraph "perl6-type-graph" {
     "Uni" -> "Stringy" [color="#6666FF"];
     "Num" -> "Real" [color="#6666FF"];
     "Pair" -> "Associative" [color="#6666FF"];
+    "RaceSeq" -> "Iterable" [color="#6666FF"];
+    "RaceSeq" -> "Sequence" [color="#6666FF"];
     "Range" -> "Positional" [color="#6666FF"];
     "Range" -> "Iterable" [color="#6666FF"];
     "Rat" -> "Rational" [color="#6666FF"];

@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>class HyperSeq</title>
+        <meta charset="UTF-8" />
+        <style>
+        kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
+        samp { font-family: "Terminus", "Courier", "Lucida Console", monospace }
+        u { text-decoration: none }
+        .nested {
+            margin-left: 3em;
+        }
+        aside, u { opacity: 0.7 }
+        a[id^="fn-"]:target { background: #ff0 }
+        </style>
+        
+        
+        <meta name=viewport content="width=device-width, initial-scale=1">
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="/css/app.css?v=7" media="screen" title="default" />
+<noscript> <style> #search { visibility: hidden; } </style> </noscript>
+
+    </head>
+    <body class="pod">
+    <div id="___top"></div>
+    <div id="header" class="pretty-box green">
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
+    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
+            <a class="menu-item "
+                href="/language.html">
+                Language
+            </a>
+         
+            <a class="menu-item selected darker-green"
+                href="/type.html">
+                Types
+            </a>
+         
+            <a class="menu-item "
+                href="/routine.html">
+                Routines
+            </a>
+         
+            <a class="menu-item "
+                href="/programs.html">
+                Programs
+            </a>
+         
+            <a class="menu-item "
+                href="https://webchat.freenode.net/?channels=#perl6">
+                Chat with us
+            </a>
+        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
+                <a class="menu-item" href="/type-basic.html">
+                    Basic
+                </a>
+             
+                <a class="menu-item" href="/type-composite.html">
+                    Composite
+                </a>
+             
+                <a class="menu-item" href="/type-domain-specific.html">
+                    Domain-specific
+                </a>
+             
+                <a class="menu-item" href="/type-exceptions.html">
+                    Exceptions
+                </a>
+            </div>
+  </div>
+</div>
+<div id="content" class="pretty-box yellow content_Type_HyperSeq">
+  
+      <div align="right">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/HyperSeq.pod6'">
+        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs></defs>
+    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pencil" fill="#000000">
+            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
+
+        </button>
+      </div>
+
+    <h1 class='title'>class HyperSeq</h1>
+    <p class='subtitle'>An object for performing batches of work in parallel with ordered output</p>
+    <nav class="indexgroup">
+<table id="TOC">
+<caption><h2 id="TOC_Title">Table of Contents</h2></caption>
+        <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Methods">Methods</a></td></tr>
+ <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#method_iterator">method iterator</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#method_grep">method grep</a></td></tr>
+                  <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#method_map">method map</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#method_invert">method invert</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#method_hyper">method hyper</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#method_race">method race</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#method_serial">method serial</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.8</td><td class="toc-text"><a href="#method_is-lazy">method is-lazy</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">1.9</td><td class="toc-text"><a href="#method_sink">method sink</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_role_Iterable">Routines supplied by role Iterable</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Iterable)_method_iterator">(Iterable) method iterator</a></td></tr>
+            <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Iterable)_method_flat">(Iterable) method flat</a></td></tr>
+                       <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Iterable)_method_lazy">(Iterable) method lazy</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Iterable)_method_hyper">(Iterable) method hyper</a></td></tr>
+           <tr class="toc-level-3"><td class="toc-number">3.4.1</td><td class="toc-text"><a href="#Options_degree_and_batch">Options degree and batch</a></td></tr>
+                 <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Iterable)_method_race">(Iterable) method race</a></td></tr>
+                    
+</table>
+</nav>
+
+    <div class="pod-body">
+    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>HyperSeq</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Sequence</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>An HyperSeq is the intermediate object used when the operator <a href="/routine/hyper"><code>hyper</code></a> is invoked on a <a href="/type/Seq"><code>Seq</code></a>. In general, it&#39;s not intended for direct consumption by the developer.</p>
+<h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
+<h2 id="method_iterator"><a class="u" href="#___top" title="go to top of document">method iterator</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the underlying iterator.</p>
+<h2 id="method_grep"><a class="u" href="#___top" title="go to top of document">method grep</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>grep</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>matcher</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>)</span></span></div></pre><p>Applies <code>grep</code> to the <code>HyperSeq</code> similarly to how it would do it on a Seq.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>hyped</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;(</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>10000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>²)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>hyper</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>hyped</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>%%</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(0&nbsp;9&nbsp;36&nbsp;81&nbsp;144…»</span><span>&nbsp;</span></span></span></div></pre><p>When you use <code>hyper</code> on a <code>Seq</code>, this is the method that is actually called.</p>
+<h2 id="method_map"><a class="u" href="#___top" title="go to top of document">method map</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>map</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>matcher</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>)</span></span></div></pre><p>Uses maps on the <code>HyperSeq</code>, generally created by application of <code>hyper</code> to a preexisting <code>Seq</code>.</p>
+<h2 id="method_invert"><a class="u" href="#___top" title="go to top of document">method invert</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>invert</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Inverts the <code>HyperSeq</code> created from a <code>Seq</code> by <code>.hyper</code>.</p>
+<h2 id="method_hyper"><a class="u" href="#___top" title="go to top of document">method hyper</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the object.</p>
+<h2 id="method_race"><a class="u" href="#___top" title="go to top of document">method race</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Creates a <code>RaceSeq</code> object out of the current one.</p>
+<h2 id="method_serial"><a class="u" href="#___top" title="go to top of document">method serial</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>serial</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Converts the object to a <code>Seq</code> and returns it.</p>
+<h2 id="method_is-lazy"><a class="u" href="#___top" title="go to top of document">method is-lazy</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>is-lazy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>False</span></span><span>&nbsp;)</span></span></div></pre><p>Returns <code>False</code>.</p>
+<h2 id="method_sink"><a class="u" href="#___top" title="go to top of document">method sink</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>sink</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Nil</span></span><span>)</span></span></div></pre><p>Sinks the underlying data structure, producing any side effects.</p>
+<h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for
+    <code>HyperSeq</code></figcaption>
+  <svg width="278pt" height="188pt"
+ viewBox="0.00 0.00 278.05 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 274.046,-184 274.046,4 -4,4"/>
+<!-- HyperSeq -->
+<g id="node1" class="node"><title>HyperSeq</title>
+<g id="a_node1"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
+<ellipse fill="none" stroke="#000000" cx="112" cy="-18" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="112" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- HyperSeq&#45;&gt;Any -->
+<g id="edge1" class="edge"><title>HyperSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M92.7122,-34.8841C80.3811,-45.0391 64.2892,-58.2912 51.1163,-69.1396"/>
+<polygon fill="#000000" stroke="#000000" points="48.8455,-66.4755 43.3511,-75.5344 53.2954,-71.879 48.8455,-66.4755"/>
+</g>
+<!-- Iterable -->
+<g id="node4" class="node"><title>Iterable</title>
+<g id="a_node4"><a xlink:href="/type/Iterable" xlink:title="Iterable">
+<ellipse fill="none" stroke="#6666ff" cx="112" cy="-90" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="112" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+</a>
+</g>
+</g>
+<!-- HyperSeq&#45;&gt;Iterable -->
+<g id="edge3" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M112,-36.3034C112,-44.0173 112,-53.2875 112,-61.8876"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="108.5,-61.8956 112,-71.8957 115.5,-61.8957 108.5,-61.8956"/>
+</g>
+<!-- Sequence -->
+<g id="node5" class="node"><title>Sequence</title>
+<g id="a_node5"><a xlink:href="/type/Sequence" xlink:title="Sequence">
+<ellipse fill="none" stroke="#6666ff" cx="220" cy="-90" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="220" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
+</a>
+</g>
+</g>
+<!-- HyperSeq&#45;&gt;Sequence -->
+<g id="edge4" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M135.169,-34.0168C150.686,-44.0743 171.312,-57.4427 188.339,-68.4791"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="186.574,-71.5061 196.87,-74.0081 190.382,-65.632 186.574,-71.5061"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M27,-108.303C27,-116.017 27,-125.288 27,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="23.5001,-133.896 27,-143.896 30.5001,-133.896 23.5001,-133.896"/>
+</g>
+</g>
+</svg>
+
+  <p class="fallback">
+    <a rel="alternate"
+      href="/images/type-graph-HyperSeq.svg"
+      type="image/svg+xml">Expand above chart</a>
+  </p>
+</figure>
+<h1 id="Routines_supplied_by_role_Iterable"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Iterable</a></h1>
+<p>HyperSeq does role <a href="/type/Iterable">Iterable</a>, which provides the following routines:</p>
+<h2 id="(Iterable)_method_iterator"><a href="/routine/iterator#role_Iterable">(Iterable) method iterator</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterator</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Method stub that ensures all classes doing the <code>Iterable</code> role have a method <code>iterator</code>.</p>
+<p>It is supposed to return an <a href="/type/Iterator">Iterator</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></div></pre><h2 id="(Iterable)_method_flat"><a href="/routine/flat#role_Iterable">(Iterable) method flat</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>flat</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another <a href="/type/Iterable">Iterable</a> that flattens out all iterables that the first one returns.</p>
+<p>For example</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;b</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>flat</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span><span>&nbsp;</span></span></span></div></pre><p>because <code>&lt;a b&gt; </code> is a <a href="/type/List">List</a> and thus iterable, so <code> (&lt;a b&gt;, &#39;c&#39;).flat </code> returns <code>(&#39;a&#39;, &#39;b&#39;, &#39;c&#39;)</code>, which has three elems.</p>
+<p>Note that the flattening is recursive, so <code>(((&quot;a&quot;, &quot;b&quot;), &quot;c&quot;), &quot;d&quot;).flat</code> returns <code>(&quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;d&quot;)</code>, but it does not flatten itemized sublists:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>b</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>),&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>c</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«($(&quot;a&quot;,&nbsp;&quot;b&quot;),&nbsp;&quot;c&quot;)␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Iterable)_method_lazy"><a href="/routine/lazy#role_Iterable">(Iterable) method lazy</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>lazy</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns a lazy iterable wrapping the invocant.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1000</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lazy</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>is-lazy</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div></pre><h2 id="(Iterable)_method_hyper"><a href="/routine/hyper#role_Iterable">(Iterable) method hyper</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism.</p>
+<p>The order of elements is preserved.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>hyper</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use <code>hyper</code> in situations where it is OK to do the processing of items in parallel, and the output order should be kept relative to the input order. See <a href="/routine/race"><code>race</code></a> for situations where items are processed in parallel and the output order does not matter.</p>
+<h3 id="Options_degree_and_batch"><a class="u" href="#___top" title="go to top of document">Options degree and batch</a></h3>
+<p>The <code>degree</code> option (short for &quot;degree of parallelism&quot;) configures how many parallel workers should be started. To start 4 workers (e.g. to use at most 4 cores), pass <code>:4degree</code> to the <code>hyper</code> or <code>race</code> method. Note that in some cases, choosing a degree higher than the available CPU cores can make sense, for example I/O bound work or latency-heavy tasks like web crawling. For CPU-bound work, however, it makes no sense to pick a number higher than the CPU core count.</p>
+<p>The <code>batch</code> size option configures the number of items sent to a given parallel worker at once. It allows for making a throughput/latency trade-off. If, for example, an operation is long-running per item, and you need the first results as soon as possible, set it to 1. That means every parallel worker gets 1 item to process at a time, and reports the result as soon as possible. In consequence, the overhead for inter-thread communication is maximized. In the other extreme, if you have 1000 items to process and 10 workers, and you give every worker a batch of 100 items, you will incur minimal overhead for dispatching the items, but you will only get the first results when 100 items are processed by the fastest worker (or, for <code>hyper</code>, when the worker getting the first batch returns.) Also, if not all items take the same amount of time to process, you might run into the situation where some workers are already done and sit around without being able to help with the remaining work. In situations where not all items take the same time to process, and you don&#39;t want too much inter-thread communication overhead, picking a number somewhere in the middle makes sense. Your aim might be to keep all workers about evenly busy to make best use of the resources available.</p>
+<p>You can also check out this <strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">blog post on the semantics of hyper and race</a></strong></p>
+<h2 id="(Iterable)_method_race"><a href="/routine/race#role_Iterable">(Iterable) method race</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
+<p>Unlike <a href="/routine/hyper"><code>hyper</code></a>, <code>race</code> does not preserve the order of elements.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>race</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use race in situations where it is OK to do the processing of items in parallel, and the output order does not matter. See <a href="/routine/hyper"><code>hyper</code></a> for situations where you want items processed in parallel and the output order should be kept relative to the input order.</p>
+<p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
+<p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>
+
+    </div>
+    
+    </div>
+<footer class="pretty-box yellow">
+  <p>
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/HyperSeq.pod6'>Type/HyperSeq.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
+      <br/>
+      This is a work in progress to document Perl 6, and known to be
+      incomplete.
+      <br/>
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/HyperSeq.pod6'>edit this page</a>.
+      Your contribution is appreciated.
+      <br/>
+      Generated on 2019-07-31T06:37:14Z
+  </p>
+  <p>
+      This documentation is provided under the terms of the
+      <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
+      The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
+        >copyright © 2009 by Larry Wall.</a>
+      <!-- CREDITS -->
+      <!--External Link Image by Zapyon, CCA-SA 4.0. Derived from Wikimedia Foundation https://commons.wikimedia.org/wiki/File:External-link-04-bold-12x12.svg -->
+
+  </p>
+</footer>
+
+<script type="text/javascript" src="/js/app.js?v=1"></script>
+<script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
+
+    </body>
+</html>

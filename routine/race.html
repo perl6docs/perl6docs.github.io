@@ -109,7 +109,11 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Iterable)_method_race">(Iterable) method race</a></td></tr>
-                    
+                     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(HyperSeq)_method_race">(HyperSeq) method race</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(RaceSeq)_method_race">(RaceSeq) method race</a></td></tr>
+  
 </table>
 </nav>
 
@@ -124,13 +128,21 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;([</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>100</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>race</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>map</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>+1</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span>);</span></span></div></pre><p>Use race in situations where it is OK to do the processing of items in parallel, and the output order does not matter. See <a href="/routine/hyper"><code>hyper</code></a> for situations where you want items processed in parallel and the output order should be kept relative to the input order.</p>
 <p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
 <p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>
+<h1 id="class_HyperSeq"><a class="u" href="#___top" title="go to top of document">class HyperSeq</a></h1>
+<p>From <a href="/type/HyperSeq#method_race">HyperSeq</a></p>
+<h2 id="(HyperSeq)_method_race"><a href="/routine/race#class_HyperSeq">(HyperSeq) method race</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Creates a <code>RaceSeq</code> object out of the current one.</p>
+<h1 id="class_RaceSeq"><a class="u" href="#___top" title="go to top of document">class RaceSeq</a></h1>
+<p>From <a href="/type/RaceSeq#method_race">RaceSeq</a></p>
+<h2 id="(RaceSeq)_method_race"><a href="/routine/race#class_RaceSeq">(RaceSeq) method race</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the object.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6ae84678"><span id="footer-commit">6ae84678</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -138,7 +150,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-23T08:54:29Z
+      Generated on 2019-07-31T06:43:12Z
   </p>
   <p>
       This documentation is provided under the terms of the
