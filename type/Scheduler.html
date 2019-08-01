@@ -132,7 +132,7 @@
 <p>If <code>$every</code> is specified, it is interpreted as the number of seconds (possibly fractional) to wait before re-executing the code. Implementations may treat too-small values as lowest resolution they support, possibly warning in such situations; e.g. treating <code>0.0001</code> as <code>0.001</code>.</p>
 <p><code>$times</code> tells the scheduler how many times to run the code.</p>
 <p><code>&amp;catch</code> is called with the <a href="/type/Exception">Exception</a> as its sole argument if <code>&amp;code</code> dies.</p>
-<p>If <code>$at</code> or <code>$in</code> are <code>Inf</code>, <code>&amp;code</code> will never be run; if <code>$every</code> is <code>Inf</code>, <code>&amp;code</code> will only be run once. If any of the three are <code>-Inf</code>, <code>&amp;code</code> will be run immediately. If any of the three are <code>NaN</code>, an <a href="$SOLIDUStype$SOLIDUSX$SOLIDUSScheduler$SOLIDUSCueInNanSeconds">X::Scheduler::CueInNaNSeconds</a> exception will be thrown. This only applies to releases 2019.05 and later.</p>
+<p>If <code>$at</code> or <code>$in</code> are <code>Inf</code>, <code>&amp;code</code> will never be run; if <code>$every</code> is <code>Inf</code>, <code>&amp;code</code> will only be run once. If any of the three are <code>-Inf</code>, <code>&amp;code</code> will be run immediately. If any of the three are <code>NaN</code>, an <a href="/type/X::Scheduler::CueInNaNSeconds">X::Scheduler::CueInNaNSeconds</a> exception will be thrown. This only applies to releases 2019.05 and later.</p>
 <p>One should call the <code>cancel</code> method on the returned <code>Cancellation</code> object to cancel the (possibly repeated) cueing of the code.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
@@ -146,67 +146,67 @@
 <!-- Scheduler -->
 <g id="node1" class="node"><title>Scheduler</title>
 <g id="a_node1"><a xlink:href="/type/Scheduler" xlink:title="Scheduler">
-<ellipse fill="none" stroke="#6666ff" cx="128.191" cy="-90" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="128.191" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Scheduler</text>
+<ellipse fill="none" stroke="#6666ff" cx="139.89" cy="-90" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="139.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Scheduler</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="286.191" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="286.191" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="297.89" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="297.89" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="286.191" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="286.191" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="297.89" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="297.89" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M286.191,-108.303C286.191,-116.017 286.191,-125.288 286.191,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="282.692,-133.896 286.191,-143.896 289.692,-133.896 282.692,-133.896"/>
-</g>
-<!-- ThreadPoolScheduler -->
-<g id="node4" class="node"><title>ThreadPoolScheduler</title>
-<g id="a_node4"><a xlink:href="/type/ThreadPoolScheduler" xlink:title="ThreadPoolScheduler">
-<ellipse fill="none" stroke="#000000" cx="96.1915" cy="-18" rx="96.3833" ry="18"/>
-<text text-anchor="middle" x="96.1915" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ThreadPoolScheduler</text>
-</a>
-</g>
-</g>
-<!-- ThreadPoolScheduler&#45;&gt;Scheduler -->
-<g id="edge4" class="edge"><title>ThreadPoolScheduler&#45;&gt;Scheduler</title>
-<path fill="none" stroke="#6666ff" d="M103.938,-35.945C107.633,-44.0274 112.136,-53.8786 116.255,-62.8883"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="113.176,-64.5714 120.516,-72.211 119.542,-61.6611 113.176,-64.5714"/>
-</g>
-<!-- ThreadPoolScheduler&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>ThreadPoolScheduler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M137.888,-34.3618C172.584,-47.1447 221.306,-65.095 253.299,-76.8819"/>
-<polygon fill="#000000" stroke="#000000" points="252.467,-80.305 263.06,-80.4779 254.887,-73.7366 252.467,-80.305"/>
+<path fill="none" stroke="#000000" d="M297.89,-108.303C297.89,-116.017 297.89,-125.288 297.89,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="294.391,-133.896 297.89,-143.896 301.391,-133.896 294.391,-133.896"/>
 </g>
 <!-- CurrentThreadScheduler -->
-<g id="node5" class="node"><title>CurrentThreadScheduler</title>
-<g id="a_node5"><a xlink:href="/type/CurrentThreadScheduler" xlink:title="CurrentThreadScheduler">
-<ellipse fill="none" stroke="#000000" cx="318.191" cy="-18" rx="107.781" ry="18"/>
-<text text-anchor="middle" x="318.191" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CurrentThreadScheduler</text>
+<g id="node4" class="node"><title>CurrentThreadScheduler</title>
+<g id="a_node4"><a xlink:href="/type/CurrentThreadScheduler" xlink:title="CurrentThreadScheduler">
+<ellipse fill="none" stroke="#000000" cx="107.89" cy="-18" rx="107.781" ry="18"/>
+<text text-anchor="middle" x="107.89" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CurrentThreadScheduler</text>
 </a>
 </g>
 </g>
 <!-- CurrentThreadScheduler&#45;&gt;Scheduler -->
-<g id="edge5" class="edge"><title>CurrentThreadScheduler&#45;&gt;Scheduler</title>
-<path fill="none" stroke="#6666ff" d="M275.552,-34.7094C244.552,-46.1304 202.734,-61.5369 171.565,-73.0202"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="170.02,-69.8593 161.847,-76.6007 172.44,-76.4278 170.02,-69.8593"/>
+<g id="edge4" class="edge"><title>CurrentThreadScheduler&#45;&gt;Scheduler</title>
+<path fill="none" stroke="#6666ff" d="M115.801,-36.3034C119.443,-44.2716 123.845,-53.9005 127.884,-62.7359"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="124.73,-64.2561 132.071,-71.8957 131.097,-61.3457 124.73,-64.2561"/>
 </g>
 <!-- CurrentThreadScheduler&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>CurrentThreadScheduler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M310.281,-36.3034C306.584,-44.3905 302.105,-54.1883 298.017,-63.1309"/>
-<polygon fill="#000000" stroke="#000000" points="294.765,-61.8278 293.79,-72.3777 301.131,-64.7381 294.765,-61.8278"/>
+<g id="edge2" class="edge"><title>CurrentThreadScheduler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M150.53,-34.7094C185.183,-47.4762 233.353,-65.2231 265.056,-76.9032"/>
+<polygon fill="#000000" stroke="#000000" points="264.14,-80.2954 274.733,-80.4683 266.56,-73.727 264.14,-80.2954"/>
+</g>
+<!-- ThreadPoolScheduler -->
+<g id="node5" class="node"><title>ThreadPoolScheduler</title>
+<g id="a_node5"><a xlink:href="/type/ThreadPoolScheduler" xlink:title="ThreadPoolScheduler">
+<ellipse fill="none" stroke="#000000" cx="329.89" cy="-18" rx="96.3833" ry="18"/>
+<text text-anchor="middle" x="329.89" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">ThreadPoolScheduler</text>
+</a>
+</g>
+</g>
+<!-- ThreadPoolScheduler&#45;&gt;Scheduler -->
+<g id="edge5" class="edge"><title>ThreadPoolScheduler&#45;&gt;Scheduler</title>
+<path fill="none" stroke="#6666ff" d="M288.194,-34.3618C257.01,-45.8506 214.497,-61.5134 182.982,-73.1242"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="181.752,-69.8471 173.579,-76.5884 184.172,-76.4155 181.752,-69.8471"/>
+</g>
+<!-- ThreadPoolScheduler&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>ThreadPoolScheduler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M322.144,-35.945C318.355,-44.2335 313.716,-54.3822 309.513,-63.5759"/>
+<polygon fill="#000000" stroke="#000000" points="306.32,-62.1431 305.345,-72.693 312.686,-65.0534 306.32,-62.1431"/>
 </g>
 </g>
 </svg>
@@ -223,7 +223,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Scheduler.pod6'>Type/Scheduler.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Scheduler.pod6'>Type/Scheduler.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/8d9a5cb"><span id="footer-commit">8d9a5cb</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -231,7 +231,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Scheduler.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-31T06:36:57Z
+      Generated on 2019-08-01T15:29:46Z
   </p>
   <p>
       This documentation is provided under the terms of the

@@ -125,7 +125,7 @@
     <div class="pod-body">
     <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Telemetry</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><strong>Note: </strong> This class is a Rakudo-specific feature and not standard Perl&nbsp;6.</p>
 <p>On creation, a <code>Telemetry</code> object contains a snapshot of various aspects of the current state of the virtual machine. This is in itself useful, but generally one needs two snapshots for the difference (which is a <a href="/type/Telemetry::Period">Telemetry::Period</a> object).</p>
-<p>The Telemetry object is really a collection of snapshots taken by different &quot;instruments&quot;. By default, the <a href="/type/Telemetry::Instrument::Usage">Telemetry::Instrument::Usage</a> and <a href="/type/Telemetry::Instrument::ThreadPool">Telemetry::Instrument::ThreadPool</a> instruments are activated.</p>
+<p>The Telemetry object is really a collection of snapshots taken by different &quot;instruments&quot;. By default, the <a href="/type/Telemetry::Instrument::Usage">Telemetry::Instrument::Usage</a> and <a href="/type/ThreadPoolScheduler">Telemetry::Instrument::ThreadPool</a> instruments are activated.</p>
 <p>The Telemetry (and Telemetry::Period) object also <code>Associative</code>. This means that you can treat a Telemetry object as a read-only <code>Hash</code>, with all of the data values of the instruments as keys.</p>
 <p>You can determine which instruments <code>Telemetry</code> should use by setting the <code>$*SAMPLER</code> dynamic variable, which is a <a href="/type/Telemetry::Sampler">Telemetry::Sampler</a> object.</p>
 <p>Currently, the following instruments are supported by the Rakudo core:</p>
@@ -140,7 +140,7 @@
 <ul><li><p>Telemetry::Instrument::ThreadPool</p>
 </li>
 </ul>
-<p>Provides (in alphabetical order): <code>atc</code>, <code>atq</code>, <code>aw</code>, <code>gtc</code>, <code>gtq</code>, <code>gw</code>, <code>s</code>, <code>ttc</code>, <code>ttq</code> and <code>tw</code>. For complete documentation of the meaning of these data values, see <a href="/type/Telemetry::Instrument::ThreadPool">Telemetry::Instrument::ThreadPool</a>.</p>
+<p>Provides (in alphabetical order): <code>atc</code>, <code>atq</code>, <code>aw</code>, <code>gtc</code>, <code>gtq</code>, <code>gw</code>, <code>s</code>, <code>ttc</code>, <code>ttq</code> and <code>tw</code>. For complete documentation of the meaning of these data values, see <a href="/type/ThreadPoolScheduler">Telemetry::Instrument::ThreadPool</a>.</p>
 <ul><li><p>Telemetry::Instrument::AdHoc</p>
 </li>
 </ul>
@@ -184,7 +184,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Telemetry.pod6'>Type/Telemetry.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/722b41de"><span id="footer-commit">722b41de</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/Telemetry.pod6'>Type/Telemetry.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/8d9a5cb"><span id="footer-commit">8d9a5cb</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -192,7 +192,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Telemetry.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-07-31T06:36:24Z
+      Generated on 2019-08-01T15:29:14Z
   </p>
   <p>
       This documentation is provided under the terms of the
