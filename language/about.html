@@ -98,14 +98,14 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
             <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Structure">Structure</a></td></tr>
         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Generating_HTML_from_Pod">Generating HTML from Pod</a></td></tr>
-                        <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Contributing">Contributing</a></td></tr>
+                          <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Contributing">Contributing</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#Adding_definitions">Adding definitions</a></td></tr>
-                                                                                               
+                                                                                                   
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>This document collection represents the on-going effort to document the Perl&nbsp;6 programming language with the goals of being: comprehensive; easy to use; easy to navigate; and useful to both newcomers and experienced Perl&nbsp;6 programmers.</p>
+    <p>This document collection represents the on-going effort to document the Perl&nbsp;6 programming language with the goals of being: comprehensive, easy to use, easy to navigate, and useful to both newcomers and experienced Perl&nbsp;6 programmers.</p>
 <p>An HTML version of the documentation is located online at <a href="https://docs.perl6.org">https://docs.perl6.org</a>.</p>
 <p>The official source for this documentation is located at <a href="https://github.com/perl6/doc">perl6/doc on GitHub</a>.</p>
 <p>This particular document is a quick overview of the process described in more detail in <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md">CONTRIBUTING on GitHub</a>. This document also provides a short introduction to writing Perl&nbsp;6 Pod files, which can be rendered into HTML and other formats.</p>
@@ -115,11 +115,11 @@
 <p>To generate HTML from the Pod files, you&#39;ll need:</p>
 <ul><li><p>A recent version of the Rakudo Perl&nbsp;6 compiler</p>
 </li>
-<li><p>The Perl&nbsp;6 modules Pod::To::HTML, Pod::To::BigPage, and URI::Escape (can be installed via <a href="https://github.com/ugexe/zef">zef</a>).</p>
+<li><p>The Perl&nbsp;6 modules Pod::To::HTML, Pod::To::BigPage, and URI::Escape which all can be installed via <a href="https://github.com/ugexe/zef">zef</a>. For instance, <code>zef install Pod::To::HTML</code> to install Pod::To::HTML.</p>
 </li>
-<li><p><strong>Optional</strong>: <a href="https://www.graphviz.org">GraphViz</a>, for creating graphs of the relationships between Perl&nbsp;6 types</p>
+<li><p><strong>Optional</strong>: <a href="https://www.graphviz.org">GraphViz</a>, for creating graphs of the relationships between Perl&nbsp;6 types.</p>
 </li>
-<li><p><strong>Optional</strong>: <a href="https://github.com/atom/highlights">Atom Highlights</a> and <a href="https://atom.io/packages/language-perl6">language-perl6</a>, for syntax highlighting</p>
+<li><p><strong>Optional</strong>: <a href="https://github.com/atom/highlights">Atom Highlights</a> and <a href="https://atom.io/packages/language-perl6">language-perl6</a>, for syntax highlighting.</p>
 </li>
 </ul>
 <p>To generate the documentation into the <code>html/</code> folder, run:</p>
@@ -131,21 +131,23 @@
 <h2 id="Adding_definitions"><a class="u" href="#___top" title="go to top of document">Adding definitions</a></h2>
 <p>Documentables can be defined using an <code>=headN</code> Pod directive, where <code>N</code> is greater than zero (e.g., <code>=head1</code>, <code>=head2</code>, …).</p>
 <p>All of the paragraphs and blocks following that directive, up until the next directive of the same level, will be considered part of the documentable. So, in:</p>
-<pre class="pod-block-code">=head2 <var>My Definition</var>
+<pre class="pod-block-code">    =head2 <var>My Definition</var>
 
-Some paragraphs, followed by some code:
+    Some paragraphs, followed by some code:
 
+    =begin code
     my Code $examples = &quot;amazing&quot;;
+    =end code
 
-Mind === blown.
+    Mind === blown.
 
-=head3 Minor details about <var>My Definition</var>
+    =head3 Minor details about <var>My Definition</var>
 
-It&#39;s fantastic.
+    It&#39;s fantastic.
 
-=head2 And now, for something completely different
+    =head2 And now, for something completely different
 
-…
+    …
 
 </pre>
 <p>The documentable <var>My Definition</var> extends down to the <code>=head2 And now…</code>.</p>
@@ -178,7 +180,7 @@ It&#39;s fantastic.
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/about.pod6'>Language/about.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/8d9a5cb"><span id="footer-commit">8d9a5cb</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/about.pod6'>Language/about.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -186,7 +188,7 @@ It&#39;s fantastic.
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/about.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-01T15:28:52Z
+      Generated on 2019-08-04T05:48:00Z
   </p>
   <p>
       This documentation is provided under the terms of the
