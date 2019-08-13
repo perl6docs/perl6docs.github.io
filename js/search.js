@@ -2221,6 +2221,24 @@ $(function(){
 { category: "Reference", value: "^methods",
                     url: " /language/classtut#index-entry-%5Emethods" }
                   ,
+{ category: "Reference", value: "__FILE__ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-____FILE_____-_perlfunc" }
+                  ,
+{ category: "Reference", value: "__LINE__ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-____LINE_____-_perlfunc" }
+                  ,
+{ category: "Reference", value: "__PACKAGE__ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-____PACKAGE_____-_perlfunc" }
+                  ,
+{ category: "Reference", value: "__SUB__ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-____SUB_____-_perlfunc" }
+                  ,
+{ category: "Reference", value: "abs - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-abs_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "accept - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-accept_-_perlfunc" }
+                  ,
 { category: "Reference", value: "accessor methods",
                     url: " /language/classtut#index-entry-accessor_methods" }
                   ,
@@ -2232,6 +2250,9 @@ $(function(){
                   ,
 { category: "Reference", value: "after (regex)",
                     url: " /language/regexes#index-entry-regex_after-Lookbehind_assertions" }
+                  ,
+{ category: "Reference", value: "alarm - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-alarm_-_perlfunc" }
                   ,
 { category: "Reference", value: "also declarator",
                     url: " /language/classtut#index-entry-also_declarator-also" }
@@ -2266,6 +2287,9 @@ $(function(){
 { category: "Reference", value: "assignment",
                     url: " /language/101-basics#index-entry-assignment" }
                   ,
+{ category: "Reference", value: "atan2 - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-atan2_-_perlfunc" }
+                  ,
 { category: "Reference", value: "attributes",
                     url: " /language/classtut#index-entry-attributes" }
                   ,
@@ -2290,11 +2314,20 @@ $(function(){
 { category: "Reference", value: "behavior (classes)",
                     url: " /language/classtut#index-entry-classes_behavior" }
                   ,
+{ category: "Reference", value: "bind - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-bind_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "binmode - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-binmode_-_perlfunc" }
+                  ,
 { category: "Reference", value: "bless",
                     url: " /language/classtut#index-entry-bless" }
                   ,
 { category: "Reference", value: "bless (objects)",
                     url: " /language/classtut#index-entry-objects_bless" }
+                  ,
+{ category: "Reference", value: "bless - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-bless_-_perlfunc" }
                   ,
 { category: "Reference", value: "block",
                     url: " /language/101-basics#index-entry-block" }
@@ -2304,6 +2337,9 @@ $(function(){
                   ,
 { category: "Reference", value: "block constructor",
                     url: " /language/operators#index-entry-block_constructor-hash_constructor" }
+                  ,
+{ category: "Reference", value: "break - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-break_-_perlfunc" }
                   ,
 { category: "Reference", value: "buf16",
                     url: " /type/Buf#index-entry-buf16" }
@@ -2329,6 +2365,9 @@ $(function(){
 { category: "Reference", value: "call operator",
                     url: " /language/operators#index-entry-call_operator" }
                   ,
+{ category: "Reference", value: "caller - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-caller_-_perlfunc" }
+                  ,
 { category: "Reference", value: "callsame (dispatch)",
                     url: " /language/functions#index-entry-dispatch_callsame" }
                   ,
@@ -2337,6 +2376,24 @@ $(function(){
                   ,
 { category: "Reference", value: "capture literal (Capture)",
                     url: " /type/Capture#index-entry-capture_literal_%28Capture%29" }
+                  ,
+{ category: "Reference", value: "chdir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chdir_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "chmod - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chmod_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "chomp - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chomp_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "chop - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chop_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "chr - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chr_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "chroot - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-chroot_-_perlfunc" }
                   ,
 { category: "Reference", value: "circumfix operator",
                     url: " /language/operators#index-entry-circumfix_operator" }
@@ -2355,6 +2412,12 @@ $(function(){
                   ,
 { category: "Reference", value: "classes",
                     url: " /language/classtut#index-entry-classes" }
+                  ,
+{ category: "Reference", value: "close - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-close_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "closedir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-closedir_-_perlfunc" }
                   ,
 { category: "Reference", value: "closures",
                     url: " /language/functions#index-entry-closures" }
@@ -2383,6 +2446,9 @@ $(function(){
 { category: "Reference", value: "conditional (operator)",
                     url: " /language/operators#index-entry-operator_conditional" }
                   ,
+{ category: "Reference", value: "connect - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-connect_-_perlfunc" }
+                  ,
 { category: "Reference", value: "constant (Prefix)",
                     url: " /language/variables#index-entry-constant_%28Prefix%29" }
                   ,
@@ -2392,8 +2458,20 @@ $(function(){
 { category: "Reference", value: "constructors",
                     url: " /language/classtut#index-entry-constructors" }
                   ,
+{ category: "Reference", value: "continue - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-continue_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "cos - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-cos_-_perlfunc" }
+                  ,
 { category: "Reference", value: "cross product operator",
                     url: " /language/operators#index-entry-cross_product_operator" }
+                  ,
+{ category: "Reference", value: "crypt - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-crypt_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "dbm - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-dbm_-_perlfunc" }
                   ,
 { category: "Reference", value: "dd",
                     url: " /programs/01-debugging#index-entry-dd" }
@@ -2413,8 +2491,14 @@ $(function(){
 { category: "Reference", value: "defined (method)",
                     url: " /type/Mu#index-entry-method_defined" }
                   ,
+{ category: "Reference", value: "defined - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-defined_-_perlfunc" }
+                  ,
 { category: "Reference", value: "defined-or operator",
                     url: " /language/operators#index-entry-defined-or_operator-defined-or_operator" }
+                  ,
+{ category: "Reference", value: "delete - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-delete_-_perlfunc" }
                   ,
 { category: "Reference", value: "deref",
                     url: " /language/nativecall#index-entry-deref-.deref" }
@@ -2425,6 +2509,9 @@ $(function(){
 { category: "Reference", value: "destructuring assignment",
                     url: " /language/variables#index-entry-destructuring_assignment" }
                   ,
+{ category: "Reference", value: "die - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-die_-_perlfunc" }
+                  ,
 { category: "Reference", value: "diffy",
                     url: " /language/glossary#index-entry-diffy" }
                   ,
@@ -2433,6 +2520,9 @@ $(function(){
                   ,
 { category: "Reference", value: "do (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-do_%28statement_prefix%29-do" }
+                  ,
+{ category: "Reference", value: "do - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-do_-_perlfunc" }
                   ,
 { category: "Reference", value: "does",
                     url: " /language/objects#index-entry-does" }
@@ -2443,6 +2533,9 @@ $(function(){
 { category: "Reference", value: "double-quoted strings",
                     url: " /language/101-basics#index-entry-double-quoted_strings" }
                   ,
+{ category: "Reference", value: "dump - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-dump_-_perlfunc" }
+                  ,
 { category: "Reference", value: "dumper",
                     url: " /programs/01-debugging#index-entry-dumper" }
                   ,
@@ -2451,6 +2544,9 @@ $(function(){
                   ,
 { category: "Reference", value: "dynamic-scope, pragma",
                     url: " /language/pragmas#index-entry-dynamic-scope%2C_pragma" }
+                  ,
+{ category: "Reference", value: "each - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-each_-_perlfunc" }
                   ,
 { category: "Reference", value: "eager (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-eager_%28statement_prefix%29-eager" }
@@ -2473,6 +2569,9 @@ $(function(){
 { category: "Reference", value: "encapsulation (classes)",
                     url: " /language/classtut#index-entry-classes_encapsulation" }
                   ,
+{ category: "Reference", value: "eof - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-eof_-_perlfunc" }
+                  ,
 { category: "Reference", value: "error variable",
                     url: " /language/variables#index-entry-error_variable" }
                   ,
@@ -2481,6 +2580,24 @@ $(function(){
                   ,
 { category: "Reference", value: "escaping quote",
                     url: " /language/quoting#index-entry-escaping_quote" }
+                  ,
+{ category: "Reference", value: "eval - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-eval_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "evalbytes - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-evalbytes_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "exec - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-exec_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "exists - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-exists_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "exit - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-exit_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "exp - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-exp_-_perlfunc" }
                   ,
 { category: "Reference", value: "exponentiation operator",
                     url: " /language/operators#index-entry-exponentiation_operator" }
@@ -2491,6 +2608,12 @@ $(function(){
 { category: "Reference", value: "fat arrow",
                     url: " /language/101-basics#index-entry-fat_arrow" }
                   ,
+{ category: "Reference", value: "fc - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-fc_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "fcntl - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-fcntl_-_perlfunc" }
+                  ,
 { category: "Reference", value: "feed",
                     url: " /language/operators#index-entry-feed" }
                   ,
@@ -2499,6 +2622,12 @@ $(function(){
                   ,
 { category: "Reference", value: "filehandle",
                     url: " /language/101-basics#index-entry-filehandle" }
+                  ,
+{ category: "Reference", value: "fileno - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-fileno_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "filetests - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-filetests_-_perlfunc" }
                   ,
 { category: "Reference", value: "flap",
                     url: " /language/glossary#index-entry-flap" }
@@ -2509,11 +2638,20 @@ $(function(){
 { category: "Reference", value: "flipflop (operator)",
                     url: " /language/operators#index-entry-operator_flipflop" }
                   ,
+{ category: "Reference", value: "flock - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-flock_-_perlfunc" }
+                  ,
 { category: "Reference", value: "foo",
                     url: " /language/about#index-entry-foo-foo" }
                   ,
 { category: "Reference", value: "for (Basics)",
                     url: " /language/101-basics#index-entry-for_%28Basics%29-for" }
+                  ,
+{ category: "Reference", value: "fork - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-fork_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "formats - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-formats_-_perlfunc" }
                   ,
 { category: "Reference", value: "fossil",
                     url: " /language/glossary#index-entry-fossil" }
@@ -2530,8 +2668,38 @@ $(function(){
 { category: "Reference", value: "gather take (control flow)",
                     url: " /language/control#index-entry-control_flow_gather_take-gather%2Ftake" }
                   ,
+{ category: "Reference", value: "get and set - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-get_and_set_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getc - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getc_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getpeernmae - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getpeernmae_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getpgrp - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getpgrp_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getppid - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getppid_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getpriority - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getpriority_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "getshock - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-getshock_-_perlfunc" }
+                  ,
 { category: "Reference", value: "given statement (control flow)",
                     url: " /language/control#index-entry-control_flow_given_statement-given_as_a_statement" }
+                  ,
+{ category: "Reference", value: "glob - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-glob_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "gmtime - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-gmtime_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "goto - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-goto_-_perlfunc" }
                   ,
 { category: "Reference", value: "gradual typing",
                     url: " /language/glossary#index-entry-gradual_typing" }
@@ -2541,6 +2709,9 @@ $(function(){
                   ,
 { category: "Reference", value: "greatest common divisor operator",
                     url: " /language/operators#index-entry-greatest_common_divisor_operator" }
+                  ,
+{ category: "Reference", value: "grep - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-grep_-_perlfunc" }
                   ,
 { category: "Reference", value: "grouping operator",
                     url: " /language/operators#index-entry-grouping_operator" }
@@ -2569,6 +2740,9 @@ $(function(){
 { category: "Reference", value: "heredocs :to (quote)",
                     url: " /language/quoting#index-entry-quote_heredocs_%3Ato-Heredocs%3A_%3Ato" }
                   ,
+{ category: "Reference", value: "hex - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-hex_-_perlfunc" }
+                  ,
 { category: "Reference", value: "hidden-from-USAGE",
                     url: " /language/create-cli#index-entry-hidden-from-USAGE" }
                   ,
@@ -2596,8 +2770,14 @@ $(function(){
 { category: "Reference", value: "import",
                     url: " /language/module-packages#index-entry-import" }
                   ,
+{ category: "Reference", value: "import - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-import_-_perlfunc" }
+                  ,
 { category: "Reference", value: "in-range",
                     url: " /type/Range#index-entry-in-range" }
+                  ,
+{ category: "Reference", value: "index - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-index_-_perlfunc" }
                   ,
 { category: "Reference", value: "indirect invocant syntax",
                     url: " /language/objects#index-entry-indirect_invocant_syntax" }
@@ -2610,6 +2790,9 @@ $(function(){
                   ,
 { category: "Reference", value: "int",
                     url: " /language/nativetypes#index-entry-int" }
+                  ,
+{ category: "Reference", value: "int - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-int_-_perlfunc" }
                   ,
 { category: "Reference", value: "int @",
                     url: " /language/nativetypes#index-entry-int_%40" }
@@ -2637,6 +2820,9 @@ $(function(){
                   ,
 { category: "Reference", value: "invocant (Basics)",
                     url: " /language/101-basics#index-entry-invocant_%28Basics%29-invocant" }
+                  ,
+{ category: "Reference", value: "ioctl - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-ioctl_-_perlfunc" }
                   ,
 { category: "Reference", value: "is (classes)",
                     url: " /language/typesystem#index-entry-classes_is-trait_is" }
@@ -2707,11 +2893,29 @@ $(function(){
 { category: "Reference", value: "item =",
                     url: " /language/operators#index-entry-item_%3D" }
                   ,
+{ category: "Reference", value: "join - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-join_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "keys - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-keys_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "kill - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-kill_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "last - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-last_-_perlfunc" }
+                  ,
 { category: "Reference", value: "laziness in Iterable objects",
                     url: " /language/list#index-entry-laziness_in_Iterable_objects" }
                   ,
 { category: "Reference", value: "lazy (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-lazy_%28statement_prefix%29-lazy" }
+                  ,
+{ category: "Reference", value: "lc - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-lc_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "lcfirst - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-lcfirst_-_perlfunc" }
                   ,
 { category: "Reference", value: "least common multiple operator",
                     url: " /language/operators#index-entry-least_common_multiple_operator" }
@@ -2722,6 +2926,9 @@ $(function(){
 { category: "Reference", value: "leftward feed",
                     url: " /language/operators#index-entry-leftward_feed" }
                   ,
+{ category: "Reference", value: "length - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-length_-_perlfunc" }
+                  ,
 { category: "Reference", value: "lexical",
                     url: " /language/101-basics#index-entry-lexical" }
                   ,
@@ -2731,20 +2938,47 @@ $(function(){
 { category: "Reference", value: "link (sub)",
                     url: " /type/IO::Path#index-entry-link_%28sub%29" }
                   ,
+{ category: "Reference", value: "link - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-link_-_perlfunc" }
+                  ,
 { category: "Reference", value: "list =",
                     url: " /language/operators#index-entry-list_%3D" }
                   ,
 { category: "Reference", value: "list context",
                     url: " /language/contexts#index-entry-list_context" }
                   ,
+{ category: "Reference", value: "listen - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-listen_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "local - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-local_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "localtime - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-localtime_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "lock - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-lock_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "log - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-log_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "lstat - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-lstat_-_perlfunc" }
+                  ,
 { category: "Reference", value: "m (quote)",
                     url: " /language/regexes#index-entry-quote_%2F_%2F-quote_rx-quote_m-Lexical_conventions" }
+                  ,
+{ category: "Reference", value: "m\/\/ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-m%2F%2F_-_perlfunc" }
                   ,
 { category: "Reference", value: "macros",
                     url: " /language/experimental#index-entry-macros-macros" }
                   ,
 { category: "Reference", value: "mandatory named argument",
                     url: " /type/Signature#index-entry-mandatory_named_argument" }
+                  ,
+{ category: "Reference", value: "map - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-map_-_perlfunc" }
                   ,
 { category: "Reference", value: "match variable",
                     url: " /language/variables#index-entry-match_variable" }
@@ -2791,8 +3025,14 @@ $(function(){
 { category: "Reference", value: "methods (classes)",
                     url: " /language/classtut#index-entry-classes_methods" }
                   ,
+{ category: "Reference", value: "mkdir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-mkdir_-_perlfunc" }
+                  ,
 { category: "Reference", value: "module (declarator)",
                     url: " /language/syntax#index-entry-declarator_unit-declarator_module-declarator_package-Package%2C_Module%2C_Class%2C_Role%2C_and_Grammar_declaration" }
+                  ,
+{ category: "Reference", value: "msg* - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-msg%2A_-_perlfunc" }
                   ,
 { category: "Reference", value: "multi (declarator)",
                     url: " /language/functions#index-entry-declarator_multi-Multi-dispatch" }
@@ -2805,6 +3045,9 @@ $(function(){
                   ,
 { category: "Reference", value: "my (Sub)",
                     url: " /type/Sub#index-entry-my_%28Sub%29" }
+                  ,
+{ category: "Reference", value: "my - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-my_-_perlfunc" }
                   ,
 { category: "Reference", value: "named argument",
                     url: " /type/Signature#index-entry-named_argument" }
@@ -2833,6 +3076,9 @@ $(function(){
 { category: "Reference", value: "new (method)",
                     url: " /language/objects#index-entry-new_%28method%29" }
                   ,
+{ category: "Reference", value: "next - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-next_-_perlfunc" }
+                  ,
 { category: "Reference", value: "nextcallee (dispatch)",
                     url: " /language/functions#index-entry-dispatch_nextcallee" }
                   ,
@@ -2841,6 +3087,9 @@ $(function(){
                   ,
 { category: "Reference", value: "nextwith (dispatch)",
                     url: " /language/functions#index-entry-dispatch_nextwith" }
+                  ,
+{ category: "Reference", value: "no - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-no_-_perlfunc" }
                   ,
 { category: "Reference", value: "non-string keys",
                     url: " /language/hashmap#index-entry-non-string_keys" }
@@ -2866,6 +3115,9 @@ $(function(){
 { category: "Reference", value: "object hash",
                     url: " /language/hashmap#index-entry-object_hash" }
                   ,
+{ category: "Reference", value: "oct - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-oct_-_perlfunc" }
+                  ,
 { category: "Reference", value: "once (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-once_%28statement_prefix%29-once" }
                   ,
@@ -2874,6 +3126,12 @@ $(function(){
                   ,
 { category: "Reference", value: "opcode",
                     url: " /language/glossary#index-entry-opcode" }
+                  ,
+{ category: "Reference", value: "open - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-open_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "opendir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-opendir_-_perlfunc" }
                   ,
 { category: "Reference", value: "operators (...)",
                     url: " /language/operators#index-entry-..._operators" }
@@ -2893,6 +3151,9 @@ $(function(){
 { category: "Reference", value: "optional argument",
                     url: " /type/Signature#index-entry-optional_argument" }
                   ,
+{ category: "Reference", value: "ord - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-ord_-_perlfunc" }
+                  ,
 { category: "Reference", value: "orelse",
                     url: " /language/operators#index-entry-orelse" }
                   ,
@@ -2901,6 +3162,9 @@ $(function(){
                   ,
 { category: "Reference", value: "our (Sub)",
                     url: " /type/Sub#index-entry-our_%28Sub%29" }
+                  ,
+{ category: "Reference", value: "our - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-our_-_perlfunc" }
                   ,
 { category: "Reference", value: "p6doc",
                     url: " /programs/02-reading-docs#index-entry-p6doc-INTRODUCTION" }
@@ -2914,11 +3178,17 @@ $(function(){
 { category: "Reference", value: "pack",
                     url: " /language/experimental#index-entry-pack-pack" }
                   ,
+{ category: "Reference", value: "pack - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-pack_-_perlfunc" }
+                  ,
 { category: "Reference", value: "package (::)",
                     url: " /language/packages#index-entry-%3A%3A_package" }
                   ,
 { category: "Reference", value: "package (declarator)",
                     url: " /language/syntax#index-entry-declarator_unit-declarator_module-declarator_package-Package%2C_Module%2C_Class%2C_Role%2C_and_Grammar_declaration" }
+                  ,
+{ category: "Reference", value: "package - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-package_-_perlfunc" }
                   ,
 { category: "Reference", value: "pair",
                     url: " /language/101-basics#index-entry-pair" }
@@ -2929,8 +3199,17 @@ $(function(){
 { category: "Reference", value: "perldoc (FAQ)",
                     url: " /language/faq#index-entry-perldoc_%28FAQ%29" }
                   ,
+{ category: "Reference", value: "pipe - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-pipe_-_perlfunc" }
+                  ,
 { category: "Reference", value: "pointy blocks",
                     url: " /language/functions#index-entry-pointy_blocks" }
+                  ,
+{ category: "Reference", value: "pop - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-pop_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "pos - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-pos_-_perlfunc" }
                   ,
 { category: "Reference", value: "positional argument",
                     url: " /type/Signature#index-entry-positional_argument" }
@@ -2977,8 +3256,20 @@ $(function(){
 { category: "Reference", value: "preincrement",
                     url: " /language/101-basics#index-entry-preincrement" }
                   ,
+{ category: "Reference", value: "print - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-print_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "printf - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-printf_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "prototype - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-prototype_-_perlfunc" }
+                  ,
 { category: "Reference", value: "pugs",
                     url: " /language/glossary#index-entry-pugs" }
+                  ,
+{ category: "Reference", value: "push - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-push_-_perlfunc" }
                   ,
 { category: "Reference", value: "put (Basics)",
                     url: " /language/101-basics#index-entry-put_%28Basics%29-put" }
@@ -3010,6 +3301,9 @@ $(function(){
 { category: "Reference", value: "quote-words",
                     url: " /language/operators#index-entry-qw-quote-words-quote-words" }
                   ,
+{ category: "Reference", value: "quoting - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-quoting_-_perlfunc" }
+                  ,
 { category: "Reference", value: "qw",
                     url: " /language/operators#index-entry-qw-quote-words-quote-words" }
                   ,
@@ -3028,14 +3322,44 @@ $(function(){
 { category: "Reference", value: "rakudobrew (FAQ)",
                     url: " /language/faq#index-entry-rakudobrew_%28FAQ%29" }
                   ,
+{ category: "Reference", value: "rand - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-rand_-_perlfunc" }
+                  ,
 { category: "Reference", value: "react",
                     url: " /language/concurrency#index-entry-react" }
                   ,
 { category: "Reference", value: "react (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-react_%28statement_prefix%29-react" }
                   ,
+{ category: "Reference", value: "read - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-read_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "readdir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-readdir_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "readline - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-readline_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "readlink - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-readlink_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "readpipe - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-readpipe_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "recv - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-recv_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "redo - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-redo_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "ref - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-ref_-_perlfunc" }
+                  ,
 { category: "Reference", value: "regex (declarator)",
                     url: " /language/regexes#index-entry-declarator_regex-Subrules" }
+                  ,
+{ category: "Reference", value: "rename - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-rename_-_perlfunc" }
                   ,
 { category: "Reference", value: "repeat (control flow)",
                     url: " /language/control#index-entry-control_flow_repeat-repeat%2Fwhile%2C_repeat%2Funtil" }
@@ -3046,20 +3370,41 @@ $(function(){
 { category: "Reference", value: "require",
                     url: " /language/modules#index-entry-require" }
                   ,
+{ category: "Reference", value: "requires - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-requires_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "reset - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-reset_-_perlfunc" }
+                  ,
 { category: "Reference", value: "resume (Exceptions)",
                     url: " /language/exceptions#index-entry-resume_%28Exceptions%29" }
                   ,
 { category: "Reference", value: "return (control flow)",
                     url: " /language/control#index-entry-control_flow_return-return" }
                   ,
+{ category: "Reference", value: "return - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-return_-_perlfunc" }
+                  ,
 { category: "Reference", value: "return-rw",
                     url: " /type/Routine#index-entry-return-rw-return-rw" }
+                  ,
+{ category: "Reference", value: "reverse - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-reverse_-_perlfunc" }
                   ,
 { category: "Reference", value: "reverse metaoperator (R)",
                     url: " /language/operators#index-entry-R_reverse_metaoperator" }
                   ,
+{ category: "Reference", value: "rewinddir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-rewinddir_-_perlfunc" }
+                  ,
 { category: "Reference", value: "right (integer bit shift operator)",
                     url: " /language/operators#index-entry-integer_bit_shift_operator_right" }
+                  ,
+{ category: "Reference", value: "rindex - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-rindex_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "rmdir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-rmdir_-_perlfunc" }
                   ,
 { category: "Reference", value: "roast",
                     url: " /language/glossary#index-entry-roast" }
@@ -3091,17 +3436,44 @@ $(function(){
 { category: "Reference", value: "s\/\/\/",
                     url: " /language/operators#index-entry-s%2F%2F%2F_in-place_substitution" }
                   ,
+{ category: "Reference", value: "s\/\/\/ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-s%2F%2F%2F_-_perlfunc" }
+                  ,
 { category: "Reference", value: "samewith (dispatch)",
                     url: " /language/functions#index-entry-dispatch_samewith" }
                   ,
 { category: "Reference", value: "say (Basics)",
                     url: " /language/101-basics#index-entry-say_%28Basics%29-say" }
                   ,
+{ category: "Reference", value: "say - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-say_-_perlfunc" }
+                  ,
 { category: "Reference", value: "scalar",
                     url: " /language/101-basics#index-entry-scalar" }
                   ,
+{ category: "Reference", value: "scalar - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-scalar_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "seek - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-seek_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "seekdir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-seekdir_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "select - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-select_-_perlfunc" }
+                  ,
 { category: "Reference", value: "self",
                     url: " /language/objects#index-entry-self" }
+                  ,
+{ category: "Reference", value: "semget - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-semget_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "semop - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-semop_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "send - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-send_-_perlfunc" }
                   ,
 { category: "Reference", value: "sequence operator",
                     url: " /language/operators#index-entry-sequence_operator" }
@@ -3109,11 +3481,32 @@ $(function(){
 { category: "Reference", value: "sequential metaoperator (S)",
                     url: " /language/operators#index-entry-S_sequential_metaoperator" }
                   ,
+{ category: "Reference", value: "setpgrp - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-setpgrp_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "setpriority - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-setpriority_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "setsockopt - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-setsockopt_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "shift - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-shift_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "shm* - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-shm%2A_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "shutdown - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-shutdown_-_perlfunc" }
+                  ,
 { category: "Reference", value: "sigil",
                     url: " /language/101-basics#index-entry-sigil" }
                   ,
 { category: "Reference", value: "signature literal",
                     url: " /type/Signature#index-entry-signature_literal" }
+                  ,
+{ category: "Reference", value: "sin - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sin_-_perlfunc" }
                   ,
 { category: "Reference", value: "single-quoted strings",
                     url: " /language/101-basics#index-entry-single-quoted_strings" }
@@ -3127,14 +3520,38 @@ $(function(){
 { category: "Reference", value: "sinking",
                     url: " /language/contexts#index-entry-sinking" }
                   ,
+{ category: "Reference", value: "sleep - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sleep_-_perlfunc" }
+                  ,
 { category: "Reference", value: "slurpy argument",
                     url: " /type/Signature#index-entry-slurpy_argument" }
                   ,
 { category: "Reference", value: "smartmatch operator",
                     url: " /language/operators#index-entry-smartmatch_operator" }
                   ,
+{ category: "Reference", value: "sockets - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sockets_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "sort - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sort_-_perlfunc" }
+                  ,
 { category: "Reference", value: "spaceship operator",
                     url: " /language/operators#index-entry-spaceship_operator" }
+                  ,
+{ category: "Reference", value: "splice - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-splice_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "split - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-split_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "sprintf - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sprintf_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "sqrt - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sqrt_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "srand - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-srand_-_perlfunc" }
                   ,
 { category: "Reference", value: "stable sort",
                     url: " /language/101-basics#index-entry-stable_sort" }
@@ -3147,6 +3564,9 @@ $(function(){
                   ,
 { category: "Reference", value: "state",
                     url: " /language/classtut#index-entry-state" }
+                  ,
+{ category: "Reference", value: "state - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-state_-_perlfunc" }
                   ,
 { category: "Reference", value: "statement (Basics)",
                     url: " /language/101-basics#index-entry-statement_%28Basics%29-statement" }
@@ -3169,8 +3589,14 @@ $(function(){
 { category: "Reference", value: "stub operator",
                     url: " /language/operators#index-entry-stub_operator" }
                   ,
+{ category: "Reference", value: "study - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-study_-_perlfunc" }
+                  ,
 { category: "Reference", value: "sub (declarator)",
                     url: " /language/functions#index-entry-declarator_sub-Subroutines" }
+                  ,
+{ category: "Reference", value: "sub - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sub_-_perlfunc" }
                   ,
 { category: "Reference", value: "sub EXPORT",
                     url: " /language/modules#index-entry-sub_EXPORT" }
@@ -3183,6 +3609,9 @@ $(function(){
                   ,
 { category: "Reference", value: "subset",
                     url: " /language/typesystem#index-entry-subset-subset" }
+                  ,
+{ category: "Reference", value: "substr - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-substr_-_perlfunc" }
                   ,
 { category: "Reference", value: "supersede",
                     url: " /language/variables#index-entry-supersede" }
@@ -3205,14 +3634,44 @@ $(function(){
 { category: "Reference", value: "symlink (sub)",
                     url: " /type/IO::Path#index-entry-symlink_%28sub%29" }
                   ,
+{ category: "Reference", value: "symlink - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-symlink_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "sys* - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-sys%2A_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "syscall - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-syscall_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "system - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-system_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "syswrite - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-syswrite_-_perlfunc" }
+                  ,
 { category: "Reference", value: "take (lazy list)",
                     url: " /language/control#index-entry-lazy_list_take" }
+                  ,
+{ category: "Reference", value: "tell - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-tell_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "telldir - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-telldir_-_perlfunc" }
                   ,
 { category: "Reference", value: "ternary (operator)",
                     url: " /language/operators#index-entry-operator_ternary" }
                   ,
 { category: "Reference", value: "test suite",
                     url: " /language/glossary#index-entry-test_suite" }
+                  ,
+{ category: "Reference", value: "tie - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-tie_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "time - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-time_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "times - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-times_-_perlfunc" }
                   ,
 { category: "Reference", value: "token (declarator)",
                     url: " /language/grammars#index-entry-declarator_token-Named_Regexes" }
@@ -3223,8 +3682,14 @@ $(function(){
 { category: "Reference", value: "tr\/\/\/",
                     url: " /language/operators#index-entry-tr%2F%2F%2F_in-place_transliteration" }
                   ,
+{ category: "Reference", value: "tr\/\/\/ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-tr%2F%2F%2F_-_perlfunc" }
+                  ,
 { category: "Reference", value: "trait_mod (declarator)",
                     url: " /type/Sub#index-entry-trait__mod_%28declarator%29" }
+                  ,
+{ category: "Reference", value: "truncate - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-truncate_-_perlfunc" }
                   ,
 { category: "Reference", value: "try (statement prefix)",
                     url: " /language/statement-prefixes#index-entry-try_%28statement_prefix%29-try" }
@@ -3250,6 +3715,12 @@ $(function(){
 { category: "Reference", value: "typed array",
                     url: " /language/list#index-entry-typed_array" }
                   ,
+{ category: "Reference", value: "uc - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-uc_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "ucfirst - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-ucfirst_-_perlfunc" }
+                  ,
 { category: "Reference", value: "uint",
                     url: " /language/nativetypes#index-entry-uint" }
                   ,
@@ -3265,20 +3736,38 @@ $(function(){
 { category: "Reference", value: "uint8",
                     url: " /language/nativetypes#index-entry-uint8" }
                   ,
+{ category: "Reference", value: "undef - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-undef_-_perlfunc" }
+                  ,
 { category: "Reference", value: "unit (MAIN) (declarator)",
                     url: " /language/create-cli#index-entry-declarator_unit_%28MAIN%29" }
                   ,
 { category: "Reference", value: "unit (declarator)",
                     url: " /language/syntax#index-entry-declarator_unit-declarator_module-declarator_package-Package%2C_Module%2C_Class%2C_Role%2C_and_Grammar_declaration" }
                   ,
+{ category: "Reference", value: "unlink - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-unlink_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "unpack - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-unpack_-_perlfunc" }
+                  ,
 { category: "Reference", value: "unquoting (macros)",
                     url: " /language/experimental#index-entry-unquoting_%28macros%29" }
+                  ,
+{ category: "Reference", value: "unshift - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-unshift_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "untie - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-untie_-_perlfunc" }
                   ,
 { category: "Reference", value: "upto operator",
                     url: " /language/operators#index-entry-upto_operator" }
                   ,
 { category: "Reference", value: "use",
                     url: " /language/modules#index-entry-use" }
+                  ,
+{ category: "Reference", value: "use - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-use_-_perlfunc" }
                   ,
 { category: "Reference", value: "use lib",
                     url: " /language/modules#index-entry-use_lib" }
@@ -3304,6 +3793,9 @@ $(function(){
 { category: "Reference", value: "utf16le",
                     url: " /type/IO::Handle#index-entry-utf16le" }
                   ,
+{ category: "Reference", value: "utime - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-utime_-_perlfunc" }
+                  ,
 { category: "Reference", value: "v (version)",
                     url: " /type/Version#index-entry-v_%28version%29" }
                   ,
@@ -3316,14 +3808,32 @@ $(function(){
 { category: "Reference", value: "value",
                     url: " /language/glossary#index-entry-value" }
                   ,
+{ category: "Reference", value: "values - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-values_-_perlfunc" }
+                  ,
 { category: "Reference", value: "variables, $_",
                     url: " /language/101-basics#index-entry-variables%2C_%24__" }
                   ,
 { category: "Reference", value: "variadic",
                     url: " /type/Signature#index-entry-variadic" }
                   ,
+{ category: "Reference", value: "vec - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-vec_-_perlfunc" }
+                  ,
 { category: "Reference", value: "void type (NativeCall)",
                     url: " /language/nativetypes#index-entry-void_type_%28NativeCall%29" }
+                  ,
+{ category: "Reference", value: "wait - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-wait_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "waitpid - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-waitpid_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "wantarray - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-wantarray_-_perlfunc" }
+                  ,
+{ category: "Reference", value: "warn - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-warn_-_perlfunc" }
                   ,
 { category: "Reference", value: "whenever",
                     url: " /language/concurrency#index-entry-whenever" }
@@ -3358,8 +3868,14 @@ $(function(){
 { category: "Reference", value: "wrapped routines (dispatch)",
                     url: " /language/functions#index-entry-dispatch_wrapped_routines" }
                   ,
+{ category: "Reference", value: "write - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-write_-_perlfunc" }
+                  ,
 { category: "Reference", value: "ws",
                     url: " /language/grammars#index-entry-ws" }
+                  ,
+{ category: "Reference", value: "y\/\/\/ - perlfunc",
+                    url: " /language/5to6-perlfunc#index-entry-y%2F%2F%2F_-_perlfunc" }
                   ,
 { category: "Reference", value: "zef",
                     url: " /language/modules#index-entry-zef" }
@@ -4201,9 +4717,6 @@ $(function(){
 { category: "Regex", value: "||",
                     url: " /syntax/||" }
                   ,
-{ category: "Language", value: "036-community",
-                    url: " /language/community" }
-                  ,
 { category: "Language", value: "About the docs",
                     url: " /language/about" }
                   ,
@@ -4221,6 +4734,9 @@ $(function(){
                   ,
 { category: "Language", value: "Command line interface",
                     url: " /language/create-cli" }
+                  ,
+{ category: "Language", value: "Community",
+                    url: " /language/community" }
                   ,
 { category: "Language", value: "Concurrency",
                     url: " /language/concurrency" }
@@ -4636,7 +5152,7 @@ $(function(){
 { category: "Method", value: "Bridge",
                     url: " /routine/Bridge" }
                   ,
-{ category: "Method", value: "CALL-ME",
+{ category: "Routine", value: "CALL-ME",
                     url: " /routine/CALL-ME" }
                   ,
 { category: "Method", value: "CREATE",
@@ -4915,7 +5431,7 @@ $(function(){
 { category: "Method", value: "add_method",
                     url: " /routine/add_method" }
                   ,
-{ category: "Method", value: "add_parent",
+{ category: "Routine", value: "add_parent",
                     url: " /routine/add_parent" }
                   ,
 { category: "Method", value: "add_private_method",
@@ -5296,11 +5812,17 @@ $(function(){
 { category: "Method", value: "compiler",
                     url: " /routine/compiler" }
                   ,
-{ category: "Method", value: "compose",
+{ category: "Method", value: "composalizer",
+                    url: " /routine/composalizer" }
+                  ,
+{ category: "Routine", value: "compose",
                     url: " /routine/compose" }
                   ,
 { category: "Method", value: "compose_type",
                     url: " /routine/compose_type" }
+                  ,
+{ category: "Method", value: "compose_values",
+                    url: " /routine/compose_values" }
                   ,
 { category: "Method", value: "composer",
                     url: " /routine/composer" }
@@ -5586,6 +6108,9 @@ $(function(){
                   ,
 { category: "Sub", value: "expmod",
                     url: " /routine/expmod" }
+                  ,
+{ category: "Method", value: "export_callback",
+                    url: " /routine/export_callback" }
                   ,
 { category: "Routine", value: "extension",
                     url: " /routine/extension" }
@@ -5970,6 +6495,9 @@ $(function(){
                   ,
 { category: "Sub", value: "is_approx",
                     url: " /routine/is_approx" }
+                  ,
+{ category: "Method", value: "is_composed",
+                    url: " /routine/is_composed" }
                   ,
 { category: "Method", value: "is_trusted",
                     url: " /routine/is_trusted" }
@@ -6855,6 +7383,12 @@ $(function(){
                   ,
 { category: "Method", value: "set-instruments",
                     url: " /routine/set-instruments" }
+                  ,
+{ category: "Method", value: "set_composalizer",
+                    url: " /routine/set_composalizer" }
+                  ,
+{ category: "Method", value: "set_export_callback",
+                    url: " /routine/set_export_callback" }
                   ,
 { category: "Method", value: "set_hidden",
                     url: " /routine/set_hidden" }
@@ -8098,6 +8632,9 @@ $(function(){
 { category: "Class", value: "Telemetry::Instrument::Thread",
                     url: " /type/Telemetry::Instrument::Thread" }
                   ,
+{ category: "Class", value: "Telemetry::Instrument::ThreadPool",
+                    url: " /type/Telemetry::Instrument::ThreadPool" }
+                  ,
 { category: "Class", value: "Telemetry::Instrument::Usage",
                     url: " /type/Telemetry::Instrument::Usage" }
                   ,
@@ -8491,180 +9028,180 @@ $(function(){
 { category: "Class", value: "utf8",
                     url: " /type/utf8" }
                   ,
-{ category: "5to6-perlfunc", value: "unpack", url: "/language/5to6-perlfunc#unpack" },
-{ category: "5to6-perlfunc", value: "utime", url: "/language/5to6-perlfunc#utime" },
-{ category: "5to6-perlfunc", value: "eof", url: "/language/5to6-perlfunc#eof" },
-{ category: "5to6-perlfunc", value: "rename", url: "/language/5to6-perlfunc#rename" },
-{ category: "5to6-perlfunc", value: "ref", url: "/language/5to6-perlfunc#ref" },
-{ category: "5to6-perlfunc", value: "do", url: "/language/5to6-perlfunc#do" },
-{ category: "5to6-perlfunc", value: "glob", url: "/language/5to6-perlfunc#glob" },
-{ category: "5to6-perlfunc", value: "shm*", url: "/language/5to6-perlfunc#shm*" },
-{ category: "5to6-perlfunc", value: "seekdir", url: "/language/5to6-perlfunc#seekdir" },
-{ category: "5to6-perlfunc", value: "dump", url: "/language/5to6-perlfunc#dump" },
-{ category: "5to6-perlfunc", value: "keys", url: "/language/5to6-perlfunc#keys" },
-{ category: "5to6-perlfunc", value: "untie", url: "/language/5to6-perlfunc#untie" },
-{ category: "5to6-perlfunc", value: "exp", url: "/language/5to6-perlfunc#exp" },
-{ category: "5to6-perlfunc", value: "flock", url: "/language/5to6-perlfunc#flock" },
-{ category: "5to6-perlfunc", value: "ord", url: "/language/5to6-perlfunc#ord" },
-{ category: "5to6-perlfunc", value: "die", url: "/language/5to6-perlfunc#die" },
-{ category: "5to6-perlfunc", value: "sockets", url: "/language/5to6-perlfunc#sockets" },
-{ category: "5to6-perlfunc", value: "wait", url: "/language/5to6-perlfunc#wait" },
-{ category: "5to6-perlfunc", value: "rindex", url: "/language/5to6-perlfunc#rindex" },
-{ category: "5to6-perlfunc", value: "listen", url: "/language/5to6-perlfunc#listen" },
-{ category: "5to6-perlfunc", value: "log", url: "/language/5to6-perlfunc#log" },
-{ category: "5to6-perlfunc", value: "my", url: "/language/5to6-perlfunc#my" },
-{ category: "5to6-perlfunc", value: "pack", url: "/language/5to6-perlfunc#pack" },
-{ category: "5to6-perlfunc", value: "m//", url: "/language/5to6-perlfunc#m//" },
-{ category: "5to6-perlfunc", value: "print", url: "/language/5to6-perlfunc#print" },
-{ category: "5to6-perlfunc", value: "wantarray", url: "/language/5to6-perlfunc#wantarray" },
-{ category: "5to6-perlfunc", value: "undef", url: "/language/5to6-perlfunc#undef" },
-{ category: "5to6-perlfunc", value: "chdir", url: "/language/5to6-perlfunc#chdir" },
-{ category: "5to6-perlfunc", value: "grep", url: "/language/5to6-perlfunc#grep" },
-{ category: "5to6-perlfunc", value: "get and set functions", url: "/language/5to6-perlfunc#get_and_set_functions" },
-{ category: "5to6-perlfunc", value: "__PACKAGE__", url: "/language/5to6-perlfunc#__PACKAGE__" },
-{ category: "5to6-perlfunc", value: "scalar", url: "/language/5to6-perlfunc#scalar" },
-{ category: "5to6-perlfunc", value: "int", url: "/language/5to6-perlfunc#int" },
-{ category: "5to6-perlfunc", value: "opendir", url: "/language/5to6-perlfunc#opendir" },
-{ category: "5to6-perlfunc", value: "readlink", url: "/language/5to6-perlfunc#readlink" },
-{ category: "5to6-perlfunc", value: "setpriority", url: "/language/5to6-perlfunc#setpriority" },
-{ category: "5to6-perlfunc", value: "alarm", url: "/language/5to6-perlfunc#alarm" },
-{ category: "5to6-perlfunc", value: "quoting", url: "/language/5to6-perlfunc#quoting" },
-{ category: "5to6-perlfunc", value: "mkdir", url: "/language/5to6-perlfunc#mkdir" },
-{ category: "5to6-perlfunc", value: "getpriority", url: "/language/5to6-perlfunc#getpriority" },
-{ category: "5to6-perlfunc", value: "pipe", url: "/language/5to6-perlfunc#pipe" },
-{ category: "5to6-perlfunc", value: "requires", url: "/language/5to6-perlfunc#requires" },
-{ category: "5to6-perlfunc", value: "system", url: "/language/5to6-perlfunc#system" },
-{ category: "5to6-perlfunc", value: "split", url: "/language/5to6-perlfunc#split" },
-{ category: "5to6-perlfunc", value: "chop", url: "/language/5to6-perlfunc#chop" },
-{ category: "5to6-perlfunc", value: "bless", url: "/language/5to6-perlfunc#bless" },
-{ category: "5to6-perlfunc", value: "bind", url: "/language/5to6-perlfunc#bind" },
-{ category: "5to6-perlfunc", value: "open", url: "/language/5to6-perlfunc#open" },
-{ category: "5to6-perlfunc", value: "accept", url: "/language/5to6-perlfunc#accept" },
-{ category: "5to6-perlfunc", value: "s///", url: "/language/5to6-perlfunc#s///" },
-{ category: "5to6-perlfunc", value: "fcntl", url: "/language/5to6-perlfunc#fcntl" },
-{ category: "5to6-perlfunc", value: "no", url: "/language/5to6-perlfunc#no" },
-{ category: "5to6-perlfunc", value: "sleep", url: "/language/5to6-perlfunc#sleep" },
-{ category: "5to6-perlfunc", value: "truncate", url: "/language/5to6-perlfunc#truncate" },
-{ category: "5to6-perlfunc", value: "unshift", url: "/language/5to6-perlfunc#unshift" },
-{ category: "5to6-perlfunc", value: "getsock*", url: "/language/5to6-perlfunc#getsock*" },
-{ category: "5to6-perlfunc", value: "time", url: "/language/5to6-perlfunc#time" },
-{ category: "5to6-perlfunc", value: "defined", url: "/language/5to6-perlfunc#defined" },
-{ category: "5to6-perlfunc", value: "closedir", url: "/language/5to6-perlfunc#closedir" },
-{ category: "5to6-perlfunc", value: "study", url: "/language/5to6-perlfunc#study" },
-{ category: "5to6-perlfunc", value: "getpgrp", url: "/language/5to6-perlfunc#getpgrp" },
-{ category: "5to6-perlfunc", value: "pos", url: "/language/5to6-perlfunc#pos" },
-{ category: "5to6-perlfunc", value: "__FILE__", url: "/language/5to6-perlfunc#__FILE__" },
-{ category: "5to6-perlfunc", value: "each", url: "/language/5to6-perlfunc#each" },
-{ category: "5to6-perlfunc", value: "crypt", url: "/language/5to6-perlfunc#crypt" },
-{ category: "5to6-perlfunc", value: "abs", url: "/language/5to6-perlfunc#abs" },
-{ category: "5to6-perlfunc", value: "getc", url: "/language/5to6-perlfunc#getc" },
-{ category: "5to6-perlfunc", value: "tr///", url: "/language/5to6-perlfunc#tr///" },
-{ category: "5to6-perlfunc", value: "send", url: "/language/5to6-perlfunc#send" },
-{ category: "5to6-perlfunc", value: "binmode", url: "/language/5to6-perlfunc#binmode" },
-{ category: "5to6-perlfunc", value: "vec", url: "/language/5to6-perlfunc#vec" },
-{ category: "5to6-perlfunc", value: "sqrt", url: "/language/5to6-perlfunc#sqrt" },
-{ category: "5to6-perlfunc", value: "__SUB__", url: "/language/5to6-perlfunc#__SUB__" },
-{ category: "5to6-perlfunc", value: "shutdown", url: "/language/5to6-perlfunc#shutdown" },
-{ category: "5to6-perlfunc", value: "kill", url: "/language/5to6-perlfunc#kill" },
-{ category: "5to6-perlfunc", value: "local", url: "/language/5to6-perlfunc#local" },
-{ category: "5to6-perlfunc", value: "stat", url: "/language/5to6-perlfunc#stat" },
-{ category: "5to6-perlfunc", value: "splice", url: "/language/5to6-perlfunc#splice" },
-{ category: "5to6-perlfunc", value: "close", url: "/language/5to6-perlfunc#close" },
-{ category: "5to6-perlfunc", value: "say", url: "/language/5to6-perlfunc#say" },
-{ category: "5to6-perlfunc", value: "gmtime", url: "/language/5to6-perlfunc#gmtime" },
-{ category: "5to6-perlfunc", value: "ioctl", url: "/language/5to6-perlfunc#ioctl" },
-{ category: "5to6-perlfunc", value: "last", url: "/language/5to6-perlfunc#last" },
-{ category: "5to6-perlfunc", value: "index", url: "/language/5to6-perlfunc#index" },
-{ category: "5to6-perlfunc", value: "semop", url: "/language/5to6-perlfunc#semop" },
-{ category: "5to6-perlfunc", value: "tell", url: "/language/5to6-perlfunc#tell" },
-{ category: "5to6-perlfunc", value: "push", url: "/language/5to6-perlfunc#push" },
-{ category: "5to6-perlfunc", value: "select", url: "/language/5to6-perlfunc#select" },
-{ category: "5to6-perlfunc", value: "seek", url: "/language/5to6-perlfunc#seek" },
-{ category: "5to6-perlfunc", value: "break", url: "/language/5to6-perlfunc#break" },
-{ category: "5to6-perlfunc", value: "exists", url: "/language/5to6-perlfunc#exists" },
-{ category: "5to6-perlfunc", value: "delete", url: "/language/5to6-perlfunc#delete" },
-{ category: "5to6-perlfunc", value: "cos", url: "/language/5to6-perlfunc#cos" },
-{ category: "5to6-perlfunc", value: "formats", url: "/language/5to6-perlfunc#formats" },
-{ category: "5to6-perlfunc", value: "package", url: "/language/5to6-perlfunc#package" },
-{ category: "5to6-perlfunc", value: "chroot", url: "/language/5to6-perlfunc#chroot" },
-{ category: "5to6-perlfunc", value: "semget", url: "/language/5to6-perlfunc#semget" },
-{ category: "5to6-perlfunc", value: "lcfirst", url: "/language/5to6-perlfunc#lcfirst" },
-{ category: "5to6-perlfunc", value: "uc", url: "/language/5to6-perlfunc#uc" },
-{ category: "5to6-perlfunc", value: "fork", url: "/language/5to6-perlfunc#fork" },
-{ category: "5to6-perlfunc", value: "times", url: "/language/5to6-perlfunc#times" },
-{ category: "5to6-perlfunc", value: "exec", url: "/language/5to6-perlfunc#exec" },
-{ category: "5to6-perlfunc", value: "continue", url: "/language/5to6-perlfunc#continue" },
-{ category: "5to6-perlfunc", value: "caller", url: "/language/5to6-perlfunc#caller" },
-{ category: "5to6-perlfunc", value: "hex", url: "/language/5to6-perlfunc#hex" },
-{ category: "5to6-perlfunc", value: "syscall", url: "/language/5to6-perlfunc#syscall" },
-{ category: "5to6-perlfunc", value: "telldir", url: "/language/5to6-perlfunc#telldir" },
-{ category: "5to6-perlfunc", value: "lc", url: "/language/5to6-perlfunc#lc" },
-{ category: "5to6-perlfunc", value: "read", url: "/language/5to6-perlfunc#read" },
-{ category: "5to6-perlfunc", value: "printf", url: "/language/5to6-perlfunc#printf" },
-{ category: "5to6-perlfunc", value: "state", url: "/language/5to6-perlfunc#state" },
-{ category: "5to6-perlfunc", value: "warn", url: "/language/5to6-perlfunc#warn" },
-{ category: "5to6-perlfunc", value: "readline", url: "/language/5to6-perlfunc#readline" },
-{ category: "5to6-perlfunc", value: "getpeername", url: "/language/5to6-perlfunc#getpeername" },
-{ category: "5to6-perlfunc", value: "lock", url: "/language/5to6-perlfunc#lock" },
-{ category: "5to6-perlfunc", value: "lstat", url: "/language/5to6-perlfunc#lstat" },
-{ category: "5to6-perlfunc", value: "import", url: "/language/5to6-perlfunc#import" },
-{ category: "5to6-perlfunc", value: "y///", url: "/language/5to6-perlfunc#y///" },
-{ category: "5to6-perlfunc", value: "write", url: "/language/5to6-perlfunc#write" },
-{ category: "5to6-perlfunc", value: "shift", url: "/language/5to6-perlfunc#shift" },
-{ category: "5to6-perlfunc", value: "readpipe", url: "/language/5to6-perlfunc#readpipe" },
-{ category: "5to6-perlfunc", value: "chmod", url: "/language/5to6-perlfunc#chmod" },
-{ category: "5to6-perlfunc", value: "oct", url: "/language/5to6-perlfunc#oct" },
-{ category: "5to6-perlfunc", value: "ucfirst", url: "/language/5to6-perlfunc#ucfirst" },
 { category: "5to6-perlfunc", value: "unlink", url: "/language/5to6-perlfunc#unlink" },
-{ category: "5to6-perlfunc", value: "rewinddir", url: "/language/5to6-perlfunc#rewinddir" },
-{ category: "5to6-perlfunc", value: "syswrite", url: "/language/5to6-perlfunc#syswrite" },
-{ category: "5to6-perlfunc", value: "sys*", url: "/language/5to6-perlfunc#sys*" },
-{ category: "5to6-perlfunc", value: "sprintf", url: "/language/5to6-perlfunc#sprintf" },
-{ category: "5to6-perlfunc", value: "setsockopt", url: "/language/5to6-perlfunc#setsockopt" },
+{ category: "5to6-perlfunc", value: "sleep", url: "/language/5to6-perlfunc#sleep" },
+{ category: "5to6-perlfunc", value: "stat", url: "/language/5to6-perlfunc#stat" },
+{ category: "5to6-perlfunc", value: "flock", url: "/language/5to6-perlfunc#flock" },
+{ category: "5to6-perlfunc", value: "delete", url: "/language/5to6-perlfunc#delete" },
 { category: "5to6-perlfunc", value: "dbm functions", url: "/language/5to6-perlfunc#dbm_functions" },
-{ category: "5to6-perlfunc", value: "readdir", url: "/language/5to6-perlfunc#readdir" },
-{ category: "5to6-perlfunc", value: "atan2", url: "/language/5to6-perlfunc#atan2" },
-{ category: "5to6-perlfunc", value: "length", url: "/language/5to6-perlfunc#length" },
-{ category: "5to6-perlfunc", value: "localtime", url: "/language/5to6-perlfunc#localtime" },
-{ category: "5to6-perlfunc", value: "__LINE__", url: "/language/5to6-perlfunc#__LINE__" },
-{ category: "5to6-perlfunc", value: "next", url: "/language/5to6-perlfunc#next" },
-{ category: "5to6-perlfunc", value: "join", url: "/language/5to6-perlfunc#join" },
-{ category: "5to6-perlfunc", value: "link", url: "/language/5to6-perlfunc#link" },
-{ category: "5to6-perlfunc", value: "rmdir", url: "/language/5to6-perlfunc#rmdir" },
-{ category: "5to6-perlfunc", value: "recv", url: "/language/5to6-perlfunc#recv" },
-{ category: "5to6-perlfunc", value: "fileno", url: "/language/5to6-perlfunc#fileno" },
-{ category: "5to6-perlfunc", value: "fc", url: "/language/5to6-perlfunc#fc" },
-{ category: "5to6-perlfunc", value: "evalbytes", url: "/language/5to6-perlfunc#evalbytes" },
-{ category: "5to6-perlfunc", value: "msg*", url: "/language/5to6-perlfunc#msg*" },
-{ category: "5to6-perlfunc", value: "redo", url: "/language/5to6-perlfunc#redo" },
-{ category: "5to6-perlfunc", value: "use", url: "/language/5to6-perlfunc#use" },
-{ category: "5to6-perlfunc", value: "tie", url: "/language/5to6-perlfunc#tie" },
-{ category: "5to6-perlfunc", value: "symlink", url: "/language/5to6-perlfunc#symlink" },
-{ category: "5to6-perlfunc", value: "reset", url: "/language/5to6-perlfunc#reset" },
-{ category: "5to6-perlfunc", value: "Filetests", url: "/language/5to6-perlfunc#Filetests" },
-{ category: "5to6-perlfunc", value: "pop", url: "/language/5to6-perlfunc#pop" },
-{ category: "5to6-perlfunc", value: "values", url: "/language/5to6-perlfunc#values" },
+{ category: "5to6-perlfunc", value: "chdir", url: "/language/5to6-perlfunc#chdir" },
+{ category: "5to6-perlfunc", value: "hex", url: "/language/5to6-perlfunc#hex" },
+{ category: "5to6-perlfunc", value: "getpeername", url: "/language/5to6-perlfunc#getpeername" },
+{ category: "5to6-perlfunc", value: "log", url: "/language/5to6-perlfunc#log" },
+{ category: "5to6-perlfunc", value: "keys", url: "/language/5to6-perlfunc#keys" },
 { category: "5to6-perlfunc", value: "semctl", url: "/language/5to6-perlfunc#semctl" },
-{ category: "5to6-perlfunc", value: "reverse", url: "/language/5to6-perlfunc#reverse" },
-{ category: "5to6-perlfunc", value: "exit", url: "/language/5to6-perlfunc#exit" },
-{ category: "5to6-perlfunc", value: "chomp", url: "/language/5to6-perlfunc#chomp" },
-{ category: "5to6-perlfunc", value: "goto", url: "/language/5to6-perlfunc#goto" },
-{ category: "5to6-perlfunc", value: "map", url: "/language/5to6-perlfunc#map" },
-{ category: "5to6-perlfunc", value: "waitpid", url: "/language/5to6-perlfunc#waitpid" },
-{ category: "5to6-perlfunc", value: "srand", url: "/language/5to6-perlfunc#srand" },
-{ category: "5to6-perlfunc", value: "sub", url: "/language/5to6-perlfunc#sub" },
-{ category: "5to6-perlfunc", value: "return", url: "/language/5to6-perlfunc#return" },
-{ category: "5to6-perlfunc", value: "setpgrp", url: "/language/5to6-perlfunc#setpgrp" },
-{ category: "5to6-perlfunc", value: "sort", url: "/language/5to6-perlfunc#sort" },
-{ category: "5to6-perlfunc", value: "prototype", url: "/language/5to6-perlfunc#prototype" },
-{ category: "5to6-perlfunc", value: "sin", url: "/language/5to6-perlfunc#sin" },
-{ category: "5to6-perlfunc", value: "eval", url: "/language/5to6-perlfunc#eval" },
+{ category: "5to6-perlfunc", value: "crypt", url: "/language/5to6-perlfunc#crypt" },
+{ category: "5to6-perlfunc", value: "listen", url: "/language/5to6-perlfunc#listen" },
+{ category: "5to6-perlfunc", value: "local", url: "/language/5to6-perlfunc#local" },
+{ category: "5to6-perlfunc", value: "reset", url: "/language/5to6-perlfunc#reset" },
+{ category: "5to6-perlfunc", value: "print", url: "/language/5to6-perlfunc#print" },
 { category: "5to6-perlfunc", value: "chr", url: "/language/5to6-perlfunc#chr" },
-{ category: "5to6-perlfunc", value: "connect", url: "/language/5to6-perlfunc#connect" },
-{ category: "5to6-perlfunc", value: "our", url: "/language/5to6-perlfunc#our" },
-{ category: "5to6-perlfunc", value: "getppid", url: "/language/5to6-perlfunc#getppid" },
+{ category: "5to6-perlfunc", value: "values", url: "/language/5to6-perlfunc#values" },
+{ category: "5to6-perlfunc", value: "time", url: "/language/5to6-perlfunc#time" },
+{ category: "5to6-perlfunc", value: "setsockopt", url: "/language/5to6-perlfunc#setsockopt" },
+{ category: "5to6-perlfunc", value: "semget", url: "/language/5to6-perlfunc#semget" },
+{ category: "5to6-perlfunc", value: "symlink", url: "/language/5to6-perlfunc#symlink" },
 { category: "5to6-perlfunc", value: "substr", url: "/language/5to6-perlfunc#substr" },
-{ category: "5to6-perlfunc", value: "rand", url: "/language/5to6-perlfunc#rand" } ];
+{ category: "5to6-perlfunc", value: "evalbytes", url: "/language/5to6-perlfunc#evalbytes" },
+{ category: "5to6-perlfunc", value: "closedir", url: "/language/5to6-perlfunc#closedir" },
+{ category: "5to6-perlfunc", value: "continue", url: "/language/5to6-perlfunc#continue" },
+{ category: "5to6-perlfunc", value: "formats", url: "/language/5to6-perlfunc#formats" },
+{ category: "5to6-perlfunc", value: "pack", url: "/language/5to6-perlfunc#pack" },
+{ category: "5to6-perlfunc", value: "printf", url: "/language/5to6-perlfunc#printf" },
+{ category: "5to6-perlfunc", value: "close", url: "/language/5to6-perlfunc#close" },
+{ category: "5to6-perlfunc", value: "open", url: "/language/5to6-perlfunc#open" },
+{ category: "5to6-perlfunc", value: "truncate", url: "/language/5to6-perlfunc#truncate" },
+{ category: "5to6-perlfunc", value: "fileno", url: "/language/5to6-perlfunc#fileno" },
+{ category: "5to6-perlfunc", value: "bless", url: "/language/5to6-perlfunc#bless" },
+{ category: "5to6-perlfunc", value: "each", url: "/language/5to6-perlfunc#each" },
+{ category: "5to6-perlfunc", value: "glob", url: "/language/5to6-perlfunc#glob" },
+{ category: "5to6-perlfunc", value: "scalar", url: "/language/5to6-perlfunc#scalar" },
+{ category: "5to6-perlfunc", value: "setpgrp", url: "/language/5to6-perlfunc#setpgrp" },
+{ category: "5to6-perlfunc", value: "reverse", url: "/language/5to6-perlfunc#reverse" },
+{ category: "5to6-perlfunc", value: "semop", url: "/language/5to6-perlfunc#semop" },
+{ category: "5to6-perlfunc", value: "import", url: "/language/5to6-perlfunc#import" },
+{ category: "5to6-perlfunc", value: "do", url: "/language/5to6-perlfunc#do" },
+{ category: "5to6-perlfunc", value: "mkdir", url: "/language/5to6-perlfunc#mkdir" },
+{ category: "5to6-perlfunc", value: "m//", url: "/language/5to6-perlfunc#m//" },
+{ category: "5to6-perlfunc", value: "ord", url: "/language/5to6-perlfunc#ord" },
+{ category: "5to6-perlfunc", value: "caller", url: "/language/5to6-perlfunc#caller" },
+{ category: "5to6-perlfunc", value: "wait", url: "/language/5to6-perlfunc#wait" },
+{ category: "5to6-perlfunc", value: "break", url: "/language/5to6-perlfunc#break" },
+{ category: "5to6-perlfunc", value: "readlink", url: "/language/5to6-perlfunc#readlink" },
+{ category: "5to6-perlfunc", value: "redo", url: "/language/5to6-perlfunc#redo" },
+{ category: "5to6-perlfunc", value: "exit", url: "/language/5to6-perlfunc#exit" },
+{ category: "5to6-perlfunc", value: "use", url: "/language/5to6-perlfunc#use" },
+{ category: "5to6-perlfunc", value: "uc", url: "/language/5to6-perlfunc#uc" },
+{ category: "5to6-perlfunc", value: "eval", url: "/language/5to6-perlfunc#eval" },
+{ category: "5to6-perlfunc", value: "chomp", url: "/language/5to6-perlfunc#chomp" },
+{ category: "5to6-perlfunc", value: "my", url: "/language/5to6-perlfunc#my" },
+{ category: "5to6-perlfunc", value: "recv", url: "/language/5to6-perlfunc#recv" },
+{ category: "5to6-perlfunc", value: "syswrite", url: "/language/5to6-perlfunc#syswrite" },
+{ category: "5to6-perlfunc", value: "undef", url: "/language/5to6-perlfunc#undef" },
+{ category: "5to6-perlfunc", value: "exists", url: "/language/5to6-perlfunc#exists" },
+{ category: "5to6-perlfunc", value: "syscall", url: "/language/5to6-perlfunc#syscall" },
+{ category: "5to6-perlfunc", value: "atan2", url: "/language/5to6-perlfunc#atan2" },
+{ category: "5to6-perlfunc", value: "defined", url: "/language/5to6-perlfunc#defined" },
+{ category: "5to6-perlfunc", value: "getc", url: "/language/5to6-perlfunc#getc" },
+{ category: "5to6-perlfunc", value: "msg*", url: "/language/5to6-perlfunc#msg*" },
+{ category: "5to6-perlfunc", value: "warn", url: "/language/5to6-perlfunc#warn" },
+{ category: "5to6-perlfunc", value: "split", url: "/language/5to6-perlfunc#split" },
+{ category: "5to6-perlfunc", value: "waitpid", url: "/language/5to6-perlfunc#waitpid" },
+{ category: "5to6-perlfunc", value: "chmod", url: "/language/5to6-perlfunc#chmod" },
+{ category: "5to6-perlfunc", value: "Filetests", url: "/language/5to6-perlfunc#Filetests" },
+{ category: "5to6-perlfunc", value: "ioctl", url: "/language/5to6-perlfunc#ioctl" },
+{ category: "5to6-perlfunc", value: "readline", url: "/language/5to6-perlfunc#readline" },
+{ category: "5to6-perlfunc", value: "pop", url: "/language/5to6-perlfunc#pop" },
+{ category: "5to6-perlfunc", value: "splice", url: "/language/5to6-perlfunc#splice" },
+{ category: "5to6-perlfunc", value: "die", url: "/language/5to6-perlfunc#die" },
+{ category: "5to6-perlfunc", value: "fcntl", url: "/language/5to6-perlfunc#fcntl" },
+{ category: "5to6-perlfunc", value: "kill", url: "/language/5to6-perlfunc#kill" },
+{ category: "5to6-perlfunc", value: "next", url: "/language/5to6-perlfunc#next" },
+{ category: "5to6-perlfunc", value: "push", url: "/language/5to6-perlfunc#push" },
+{ category: "5to6-perlfunc", value: "rand", url: "/language/5to6-perlfunc#rand" },
+{ category: "5to6-perlfunc", value: "bind", url: "/language/5to6-perlfunc#bind" },
+{ category: "5to6-perlfunc", value: "ucfirst", url: "/language/5to6-perlfunc#ucfirst" },
+{ category: "5to6-perlfunc", value: "lcfirst", url: "/language/5to6-perlfunc#lcfirst" },
+{ category: "5to6-perlfunc", value: "length", url: "/language/5to6-perlfunc#length" },
+{ category: "5to6-perlfunc", value: "goto", url: "/language/5to6-perlfunc#goto" },
+{ category: "5to6-perlfunc", value: "__PACKAGE__", url: "/language/5to6-perlfunc#__PACKAGE__" },
+{ category: "5to6-perlfunc", value: "exec", url: "/language/5to6-perlfunc#exec" },
+{ category: "5to6-perlfunc", value: "untie", url: "/language/5to6-perlfunc#untie" },
+{ category: "5to6-perlfunc", value: "cos", url: "/language/5to6-perlfunc#cos" },
+{ category: "5to6-perlfunc", value: "fork", url: "/language/5to6-perlfunc#fork" },
+{ category: "5to6-perlfunc", value: "rename", url: "/language/5to6-perlfunc#rename" },
+{ category: "5to6-perlfunc", value: "getpgrp", url: "/language/5to6-perlfunc#getpgrp" },
+{ category: "5to6-perlfunc", value: "setpriority", url: "/language/5to6-perlfunc#setpriority" },
+{ category: "5to6-perlfunc", value: "grep", url: "/language/5to6-perlfunc#grep" },
+{ category: "5to6-perlfunc", value: "gmtime", url: "/language/5to6-perlfunc#gmtime" },
+{ category: "5to6-perlfunc", value: "opendir", url: "/language/5to6-perlfunc#opendir" },
+{ category: "5to6-perlfunc", value: "utime", url: "/language/5to6-perlfunc#utime" },
+{ category: "5to6-perlfunc", value: "y///", url: "/language/5to6-perlfunc#y///" },
+{ category: "5to6-perlfunc", value: "send", url: "/language/5to6-perlfunc#send" },
+{ category: "5to6-perlfunc", value: "tell", url: "/language/5to6-perlfunc#tell" },
+{ category: "5to6-perlfunc", value: "__SUB__", url: "/language/5to6-perlfunc#__SUB__" },
+{ category: "5to6-perlfunc", value: "sqrt", url: "/language/5to6-perlfunc#sqrt" },
+{ category: "5to6-perlfunc", value: "sockets", url: "/language/5to6-perlfunc#sockets" },
+{ category: "5to6-perlfunc", value: "link", url: "/language/5to6-perlfunc#link" },
+{ category: "5to6-perlfunc", value: "oct", url: "/language/5to6-perlfunc#oct" },
+{ category: "5to6-perlfunc", value: "study", url: "/language/5to6-perlfunc#study" },
+{ category: "5to6-perlfunc", value: "sys*", url: "/language/5to6-perlfunc#sys*" },
+{ category: "5to6-perlfunc", value: "lstat", url: "/language/5to6-perlfunc#lstat" },
+{ category: "5to6-perlfunc", value: "package", url: "/language/5to6-perlfunc#package" },
+{ category: "5to6-perlfunc", value: "seekdir", url: "/language/5to6-perlfunc#seekdir" },
+{ category: "5to6-perlfunc", value: "abs", url: "/language/5to6-perlfunc#abs" },
+{ category: "5to6-perlfunc", value: "sort", url: "/language/5to6-perlfunc#sort" },
+{ category: "5to6-perlfunc", value: "shift", url: "/language/5to6-perlfunc#shift" },
+{ category: "5to6-perlfunc", value: "binmode", url: "/language/5to6-perlfunc#binmode" },
+{ category: "5to6-perlfunc", value: "__LINE__", url: "/language/5to6-perlfunc#__LINE__" },
+{ category: "5to6-perlfunc", value: "join", url: "/language/5to6-perlfunc#join" },
+{ category: "5to6-perlfunc", value: "seek", url: "/language/5to6-perlfunc#seek" },
+{ category: "5to6-perlfunc", value: "return", url: "/language/5to6-perlfunc#return" },
+{ category: "5to6-perlfunc", value: "getppid", url: "/language/5to6-perlfunc#getppid" },
+{ category: "5to6-perlfunc", value: "readdir", url: "/language/5to6-perlfunc#readdir" },
+{ category: "5to6-perlfunc", value: "ref", url: "/language/5to6-perlfunc#ref" },
+{ category: "5to6-perlfunc", value: "quoting", url: "/language/5to6-perlfunc#quoting" },
+{ category: "5to6-perlfunc", value: "say", url: "/language/5to6-perlfunc#say" },
+{ category: "5to6-perlfunc", value: "prototype", url: "/language/5to6-perlfunc#prototype" },
+{ category: "5to6-perlfunc", value: "chroot", url: "/language/5to6-perlfunc#chroot" },
+{ category: "5to6-perlfunc", value: "rindex", url: "/language/5to6-perlfunc#rindex" },
+{ category: "5to6-perlfunc", value: "getpriority", url: "/language/5to6-perlfunc#getpriority" },
+{ category: "5to6-perlfunc", value: "telldir", url: "/language/5to6-perlfunc#telldir" },
+{ category: "5to6-perlfunc", value: "sprintf", url: "/language/5to6-perlfunc#sprintf" },
+{ category: "5to6-perlfunc", value: "s///", url: "/language/5to6-perlfunc#s///" },
+{ category: "5to6-perlfunc", value: "vec", url: "/language/5to6-perlfunc#vec" },
+{ category: "5to6-perlfunc", value: "pipe", url: "/language/5to6-perlfunc#pipe" },
+{ category: "5to6-perlfunc", value: "system", url: "/language/5to6-perlfunc#system" },
+{ category: "5to6-perlfunc", value: "tr///", url: "/language/5to6-perlfunc#tr///" },
+{ category: "5to6-perlfunc", value: "pos", url: "/language/5to6-perlfunc#pos" },
+{ category: "5to6-perlfunc", value: "readpipe", url: "/language/5to6-perlfunc#readpipe" },
+{ category: "5to6-perlfunc", value: "index", url: "/language/5to6-perlfunc#index" },
+{ category: "5to6-perlfunc", value: "write", url: "/language/5to6-perlfunc#write" },
+{ category: "5to6-perlfunc", value: "fc", url: "/language/5to6-perlfunc#fc" },
+{ category: "5to6-perlfunc", value: "state", url: "/language/5to6-perlfunc#state" },
+{ category: "5to6-perlfunc", value: "alarm", url: "/language/5to6-perlfunc#alarm" },
+{ category: "5to6-perlfunc", value: "lc", url: "/language/5to6-perlfunc#lc" },
+{ category: "5to6-perlfunc", value: "getsock*", url: "/language/5to6-perlfunc#getsock*" },
+{ category: "5to6-perlfunc", value: "lock", url: "/language/5to6-perlfunc#lock" },
+{ category: "5to6-perlfunc", value: "requires", url: "/language/5to6-perlfunc#requires" },
+{ category: "5to6-perlfunc", value: "rewinddir", url: "/language/5to6-perlfunc#rewinddir" },
+{ category: "5to6-perlfunc", value: "select", url: "/language/5to6-perlfunc#select" },
+{ category: "5to6-perlfunc", value: "wantarray", url: "/language/5to6-perlfunc#wantarray" },
+{ category: "5to6-perlfunc", value: "tie", url: "/language/5to6-perlfunc#tie" },
+{ category: "5to6-perlfunc", value: "unshift", url: "/language/5to6-perlfunc#unshift" },
+{ category: "5to6-perlfunc", value: "exp", url: "/language/5to6-perlfunc#exp" },
+{ category: "5to6-perlfunc", value: "int", url: "/language/5to6-perlfunc#int" },
+{ category: "5to6-perlfunc", value: "sub", url: "/language/5to6-perlfunc#sub" },
+{ category: "5to6-perlfunc", value: "unpack", url: "/language/5to6-perlfunc#unpack" },
+{ category: "5to6-perlfunc", value: "__FILE__", url: "/language/5to6-perlfunc#__FILE__" },
+{ category: "5to6-perlfunc", value: "dump", url: "/language/5to6-perlfunc#dump" },
+{ category: "5to6-perlfunc", value: "get and set functions", url: "/language/5to6-perlfunc#get_and_set_functions" },
+{ category: "5to6-perlfunc", value: "read", url: "/language/5to6-perlfunc#read" },
+{ category: "5to6-perlfunc", value: "times", url: "/language/5to6-perlfunc#times" },
+{ category: "5to6-perlfunc", value: "srand", url: "/language/5to6-perlfunc#srand" },
+{ category: "5to6-perlfunc", value: "connect", url: "/language/5to6-perlfunc#connect" },
+{ category: "5to6-perlfunc", value: "sin", url: "/language/5to6-perlfunc#sin" },
+{ category: "5to6-perlfunc", value: "last", url: "/language/5to6-perlfunc#last" },
+{ category: "5to6-perlfunc", value: "rmdir", url: "/language/5to6-perlfunc#rmdir" },
+{ category: "5to6-perlfunc", value: "chop", url: "/language/5to6-perlfunc#chop" },
+{ category: "5to6-perlfunc", value: "eof", url: "/language/5to6-perlfunc#eof" },
+{ category: "5to6-perlfunc", value: "no", url: "/language/5to6-perlfunc#no" },
+{ category: "5to6-perlfunc", value: "accept", url: "/language/5to6-perlfunc#accept" },
+{ category: "5to6-perlfunc", value: "shutdown", url: "/language/5to6-perlfunc#shutdown" },
+{ category: "5to6-perlfunc", value: "shm*", url: "/language/5to6-perlfunc#shm*" },
+{ category: "5to6-perlfunc", value: "map", url: "/language/5to6-perlfunc#map" },
+{ category: "5to6-perlfunc", value: "localtime", url: "/language/5to6-perlfunc#localtime" },
+{ category: "5to6-perlfunc", value: "our", url: "/language/5to6-perlfunc#our" } ];
           var results = $.ui.autocomplete.filter(items, request.term);
           function trim_results(results, term) {
               var cutoff = 50;

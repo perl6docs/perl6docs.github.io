@@ -120,7 +120,7 @@
 <h2 id="(Date)_sub_sleep-timer"><a href="/routine/sleep-timer#class_Date">(Date) sub sleep-timer</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>sleep-timer</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>seconds</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>Inf</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Duration</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>This function is implemented like <code>sleep</code>, but unlike the former it does return a <a href="/type/Duration">Duration</a> instance with the number of seconds the system did not sleep.</p>
 <p>In particular, the returned <code>Duration</code> will handle the number of seconds remaining when the process has been awakened by some external event (e.g., Virtual Machine or Operating System events). Under normal condition, when sleep is not interrupted, the returned <code>Duration</code> has a value of <code>0</code>, meaning no extra seconds remained to sleep. Therefore, in normal situations:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>sleep-timer</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3.14</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0␤»</span><span>&nbsp;</span></span></span></div></pre><p>The same result applies to edge cases, when a negative or zero time to sleep is passed as argument:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>sleep-timer</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3.14</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0␤»</span></span></span></div></pre><p>The same result applies to edge cases, when a negative or zero time to sleep is passed as argument:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>sleep-timer</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>-2</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;0</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>sleep-timer</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;0</span><span>&nbsp;</span></span></span></div></pre><p>See also <a href="/routine/sleep-until">sleep-until</a>.</p>
 
     </div>
@@ -128,7 +128,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/fbff02f"><span id="footer-commit">fbff02f</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -136,7 +136,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-04T05:54:57Z
+      Generated on 2019-08-13T06:51:30Z
   </p>
   <p>
       This documentation is provided under the terms of the

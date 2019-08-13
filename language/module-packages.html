@@ -113,7 +113,7 @@
 <h1 id="What_are_modules?"><a class="u" href="#___top" title="go to top of document">What are modules?</a></h1>
 <p>Modules, like classes and grammars, are a kind of <a href="/language/packages">package</a>. Module objects are instances of the <code>ModuleHOW</code> metaclass; this provides certain capabilities useful for creating namespaces, versioning, delegation and data encapsulation (see also <a href="/syntax/class">class</a> and <a href="/syntax/role">role</a>).</p>
 <p>To create a module, use the <code>module</code> declarator:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>M</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>M</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ModuleHOW.new␤»</span><span>&nbsp;</span></span></span></div></pre><p>Here we define a new module named <code>M</code>; introspection with <code>HOW</code> confirms that the metaclass underlying <code>M</code> is <code>Perl6::Metamodel::ModuleHOW</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>M</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>M</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ModuleHOW.new␤»</span></span></span></div></pre><p>Here we define a new module named <code>M</code>; introspection with <code>HOW</code> confirms that the metaclass underlying <code>M</code> is <code>Perl6::Metamodel::ModuleHOW</code>.</p>
 <h2 id="When_to_use_modules"><a class="u" href="#___top" title="go to top of document">When to use modules</a></h2>
 <p>Modules are primarily useful for encapsulating code and data that do not belong inside a class or role definition. Module contents (classes, subroutines, variables, etc.) can be exported from a module with the <code>is export</code> trait; these are available in the caller&#39;s namespace once the module has been imported with <code>import</code> or <code>use</code>. A module can also selectively expose symbols within its namespace for qualified reference via <code>our</code>.</p>
 <p><a name="index-entry-import"></a></p>
@@ -146,7 +146,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/module-packages.pod6'>Language/module-packages.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/module-packages.pod6'>Language/module-packages.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/fbff02f"><span id="footer-commit">fbff02f</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -154,7 +154,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/module-packages.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-04T05:47:59Z
+      Generated on 2019-08-13T06:44:27Z
   </p>
   <p>
       This documentation is provided under the terms of the

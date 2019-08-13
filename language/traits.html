@@ -128,7 +128,7 @@
 </li>
 </ul>
 <p>On the other hand, <a name="index-entry-P6opaque"><span class="index-entry">P6opaque</span></a> is the default representation used for all objects in Perl&nbsp;6.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Thar</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Thar</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>REPR</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«P6opaque␤»</span><span>&nbsp;</span></span></span></div></pre><p>The <a href="/language/mop">meta object protocol</a> uses it by default for every object and class unless specified otherwise; for that reason, it is in general not necessary unless you are effectively working with that interface.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Thar</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Thar</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>REPR</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«P6opaque␤»</span></span></span></div></pre><p>The <a href="/language/mop">meta object protocol</a> uses it by default for every object and class unless specified otherwise; for that reason, it is in general not necessary unless you are effectively working with that interface.</p>
 <h2 id="is_on_routines"><a class="u" href="#___top" title="go to top of document"><code>is</code> on routines</a></h2>
 <p>The <code>is</code> trait can be used on the definition of methods and routines to establish <a href="/language/functions#Precedence">precedence</a> and <a href="/language/functions#Associativity">associativity</a>. They act as a <a href="/type/Sub#Traits">sub defined using <code>trait_mod</code></a> which take as argument the types and names of the traits that are going to be added. In the case of subroutines, traits would be a way of adding functionality which cuts across class and role hierarchies, or can even be used to add behaviors to independently defined routines.</p>
 
@@ -137,7 +137,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/traits.pod6'>Language/traits.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/traits.pod6'>Language/traits.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/fbff02f"><span id="footer-commit">fbff02f</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -145,7 +145,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/traits.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-04T05:48:20Z
+      Generated on 2019-08-13T06:44:45Z
   </p>
   <p>
       This documentation is provided under the terms of the

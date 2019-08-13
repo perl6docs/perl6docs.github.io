@@ -94,8 +94,8 @@
 <h1 id="Creating_grammars"><a class="u" href="#___top" title="go to top of document"> Creating grammars</a></h1>
 <p>From <a href="/syntax/Creating grammars#grammars%29_TOP">Creating grammars</a></p>
 <h2 id="(Creating_grammars)_top_TOP"><a href="/syntax/TOP#_Creating_grammars">(Creating grammars) top TOP</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>grammar</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Foo</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named TOP perl6fe"><span>TOP</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\d</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The <code>TOP</code> token is the default first token attempted to match when parsing with a grammar. Note that if you&#39;re parsing with <a href="/type/Grammar#method_parse"><code>.parse</code></a> method, <code>token TOP</code> is automatically anchored to the start and end of the string. If you don&#39;t want to parse the whole string, look up <a href="/type/Grammar#method_subparse"><code>.subparse</code></a>.</p>
-<p>Using <code>rule TOP</code> or <code>regex TOP</code> are also acceptable.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>grammar</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Foo</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named TOP perl6fe"><span>TOP</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="constant character escape class regexp perl6fe"><span>\d</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The <code>TOP</code> token is the default first token attempted to match when parsing with a grammar. Note that if you&#39;re parsing with the <a href="/type/Grammar#method_parse"><code>.parse</code></a> method, <code>token TOP</code> is automatically anchored to the start and end of the string. If you don&#39;t want to parse the whole string, look up <a href="/type/Grammar#method_subparse"><code>.subparse</code></a>.</p>
+<p>Using <code>rule TOP</code> or <code>regex TOP</code> is also acceptable.</p>
 <p>A different token can be chosen to be matched first using the <code>:rule</code> named argument to <code>.parse</code>, <code>.subparse</code>, or <code>.parsefile</code>. These are all <code>Grammar</code> methods.</p>
 <p><a name="index-entry-ws"></a></p>
 
@@ -104,7 +104,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
+      From the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/fbff02f"><span id="footer-commit">fbff02f</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -112,7 +112,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-04T05:55:40Z
+      Generated on 2019-08-13T06:50:45Z
   </p>
   <p>
       This documentation is provided under the terms of the

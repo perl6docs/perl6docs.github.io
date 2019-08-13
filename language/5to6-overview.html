@@ -101,7 +101,7 @@
       <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Operators_in_Perl_6">Operators in Perl&nbsp;6</a></td></tr>
       <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#Functions_in_Perl_6">Functions in Perl&nbsp;6</a></td></tr>
         <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#Special_variables_in_Perl_6">Special variables in Perl&nbsp;6</a></td></tr>
-   
+             
 </table>
 </nav>
 
@@ -117,13 +117,21 @@
 <p>The <a href="/language/5to6-perlfunc">Functions section</a> describes all of the Perl&nbsp;5 functions and their Perl&nbsp;6 equivalent and any differences in behavior. It also provides references to ecosystem modules that provide the Perl&nbsp;5 behavior of functions, either existing in Perl&nbsp;6 with slightly different semantics (such as <code>shift</code>), or non-existing in Perl&nbsp;6 (such as <code>tie</code>).</p>
 <h1 id="Special_variables_in_Perl_6"><a class="u" href="#___top" title="go to top of document">Special variables in Perl&nbsp;6</a></h1>
 <p>The <a href="/language/5to6-perlvar">Special Variables section</a> describes if and how a lot of Perl&nbsp;5&#39;s special (punctuation) variables are supported in Perl&nbsp;6.</p>
+<section><h1>comments</h1>
+<p>### Guidelines for contributions:</p>
+<p>Headers should contain the text that a Perl&nbsp;5 user might search for, since those headings will be in the Table of Contents generated for the top of the document.</p>
+<p>We use POD =item instead of =head3 or =head4 for unchanged bits that need not appear in the table of contents.</p>
+<p>This article does not describe the additions to syntax, nor details of possible improvements. For example, <code>0 + $string</code> still works, even though we would write it as <code>+$string</code> now. (Blue Tiger will offer a Perl Modernization guide, with step-by-step procedures for translation, along with details of new idioms and &quot;better ways to do it&quot;)</p>
+<p>Example code and links to other documents should be favored over long explanations of details better found elsewhere.</p>
+<p>Finally, if a real user asks a P5-&gt;P6 question not answered here, please add it to the document, even if we don&#39;t have a good answer yet. That will be better than losing the information about a real need.</p>
+</section>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/5to6-overview.pod6'>Language/5to6-overview.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/6b7a514"><span id="footer-commit">6b7a514</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/5to6-overview.pod6'>Language/5to6-overview.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/fbff02f"><span id="footer-commit">fbff02f</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -131,7 +139,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/5to6-overview.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-04T05:47:51Z
+      Generated on 2019-08-13T06:44:20Z
   </p>
   <p>
       This documentation is provided under the terms of the
