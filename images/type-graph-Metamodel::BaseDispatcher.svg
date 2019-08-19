@@ -5,82 +5,82 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="632pt" height="279pt"
- viewBox="0.00 0.00 631.92 278.96" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(333.171 135.379)">
+ viewBox="0.00 0.00 632.29 278.71" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(328.322 135.338)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-333.171,143.58 -333.171,-135.379 298.752,-135.379 298.752,143.58 -333.171,143.58"/>
+<polygon fill="white" stroke="none" points="-328.322,143.374 -328.322,-135.338 303.968,-135.338 303.968,143.374 -328.322,143.374"/>
 <!-- Metamodel::BaseDispatcher -->
 <g id="node1" class="node"><title>Metamodel::BaseDispatcher</title>
 <g id="a_node1"><a xlink:href="/type/Metamodel::BaseDispatcher" xlink:title="Metamodel::BaseDispatcher">
-<ellipse fill="none" stroke="#000000" cx="18.1401" cy="-26.5525" rx="121.578" ry="18"/>
-<text text-anchor="middle" x="18.1401" y="-22.8525" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::BaseDispatcher</text>
+<ellipse fill="none" stroke="#000000" cx="20.3973" cy="-27.9508" rx="121.578" ry="18"/>
+<text text-anchor="middle" x="20.3973" y="-24.2508" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::BaseDispatcher</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="-52.2865" cy="121.58" rx="27" ry="18"/>
-<text text-anchor="middle" x="-52.2865" y="125.28" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="-50.9073" cy="121.374" rx="27" ry="18"/>
+<text text-anchor="middle" x="-50.9073" y="125.074" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Metamodel::BaseDispatcher&#45;&gt;Any -->
 <g id="edge1" class="edge"><title>Metamodel::BaseDispatcher&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M9.50445,-8.38846C-2.77152,17.4324 -25.3504,64.9241 -39.5504,94.7919"/>
-<polygon fill="#000000" stroke="#000000" points="-36.5632,96.6602 -44.0179,104.189 -42.8851,93.6545 -36.5632,96.6602"/>
+<path fill="none" stroke="#000000" d="M11.7963,-9.93873C-0.704104,16.2394 -23.9677,64.9578 -38.3748,95.129"/>
+<polygon fill="#000000" stroke="#000000" points="-35.2489,96.7052 -42.7164,104.221 -41.5657,93.6889 -35.2489,96.7052"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="151.727" cy="120.676" rx="27" ry="18"/>
-<text text-anchor="middle" x="151.727" y="124.376" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="153.295" cy="121.017" rx="27" ry="18"/>
+<text text-anchor="middle" x="153.295" y="124.717" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M-25.1951,121.46C10.6244,121.302 73.9108,121.021 114.285,120.842"/>
-<polygon fill="#000000" stroke="#000000" points="114.508,117.341 124.524,120.797 114.539,124.341 114.508,117.341"/>
-</g>
-<!-- Metamodel::WrapDispatcher -->
-<g id="node4" class="node"><title>Metamodel::WrapDispatcher</title>
-<g id="a_node4"><a xlink:href="/type/Metamodel::WrapDispatcher" xlink:title="Metamodel::WrapDispatcher">
-<ellipse fill="none" stroke="#000000" cx="-206.332" cy="34.9528" rx="122.678" ry="18"/>
-<text text-anchor="middle" x="-206.332" y="38.6528" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::WrapDispatcher</text>
-</a>
-</g>
-</g>
-<!-- Metamodel::WrapDispatcher&#45;&gt;Metamodel::BaseDispatcher -->
-<g id="edge3" class="edge"><title>Metamodel::WrapDispatcher&#45;&gt;Metamodel::BaseDispatcher</title>
-<path fill="none" stroke="#000000" d="M-148.233,19.0337C-118.108,10.7795 -81.1409,0.650569 -49.71,-7.96152"/>
-<polygon fill="#000000" stroke="#000000" points="-50.2848,-11.433 -39.7153,-10.7001 -48.4349,-4.6818 -50.2848,-11.433"/>
+<path fill="none" stroke="#000000" d="M-23.7909,121.327C12.0617,121.264 75.4066,121.154 115.818,121.083"/>
+<polygon fill="#000000" stroke="#000000" points="116.06,117.583 126.066,121.065 116.072,124.583 116.06,117.583"/>
 </g>
 <!-- Metamodel::MultiDispatcher -->
-<g id="node5" class="node"><title>Metamodel::MultiDispatcher</title>
-<g id="a_node5"><a xlink:href="/type/Metamodel::MultiDispatcher" xlink:title="Metamodel::MultiDispatcher">
-<ellipse fill="none" stroke="#000000" cx="174.513" cy="-63.6799" rx="120.479" ry="18"/>
-<text text-anchor="middle" x="174.513" y="-59.9799" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::MultiDispatcher</text>
+<g id="node4" class="node"><title>Metamodel::MultiDispatcher</title>
+<g id="a_node4"><a xlink:href="/type/Metamodel::MultiDispatcher" xlink:title="Metamodel::MultiDispatcher">
+<ellipse fill="none" stroke="#000000" cx="-204.083" cy="35.8413" rx="120.479" ry="18"/>
+<text text-anchor="middle" x="-204.083" y="39.5413" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::MultiDispatcher</text>
 </a>
 </g>
 </g>
 <!-- Metamodel::MultiDispatcher&#45;&gt;Metamodel::BaseDispatcher -->
-<g id="edge4" class="edge"><title>Metamodel::MultiDispatcher&#45;&gt;Metamodel::BaseDispatcher</title>
-<path fill="none" stroke="#000000" d="M110.007,-48.3644C104.187,-46.9824 98.2615,-45.5756 92.3664,-44.1759"/>
-<polygon fill="#000000" stroke="#000000" points="93.0357,-40.7376 82.4976,-41.8328 91.4186,-47.5483 93.0357,-40.7376"/>
+<g id="edge3" class="edge"><title>Metamodel::MultiDispatcher&#45;&gt;Metamodel::BaseDispatcher</title>
+<path fill="none" stroke="#000000" d="M-148.016,19.9084C-117.064,11.1126 -78.4335,0.134647 -45.9807,-9.08772"/>
+<polygon fill="#000000" stroke="#000000" points="-46.6987,-12.5222 -36.1228,-11.8891 -44.7852,-5.7888 -46.6987,-12.5222"/>
+</g>
+<!-- Metamodel::WrapDispatcher -->
+<g id="node5" class="node"><title>Metamodel::WrapDispatcher</title>
+<g id="a_node5"><a xlink:href="/type/Metamodel::WrapDispatcher" xlink:title="Metamodel::WrapDispatcher">
+<ellipse fill="none" stroke="#000000" cx="177.129" cy="-63.0886" rx="122.678" ry="18"/>
+<text text-anchor="middle" x="177.129" y="-59.3886" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::WrapDispatcher</text>
+</a>
+</g>
+</g>
+<!-- Metamodel::WrapDispatcher&#45;&gt;Metamodel::BaseDispatcher -->
+<g id="edge4" class="edge"><title>Metamodel::WrapDispatcher&#45;&gt;Metamodel::BaseDispatcher</title>
+<path fill="none" stroke="#000000" d="M109.751,-47.9831C105.758,-47.088 101.727,-46.1841 97.6987,-45.2811"/>
+<polygon fill="#000000" stroke="#000000" points="98.2419,-41.816 87.7184,-43.0436 96.7105,-48.6465 98.2419,-41.816"/>
 </g>
 <!-- Metamodel::MethodDispatcher -->
 <g id="node6" class="node"><title>Metamodel::MethodDispatcher</title>
 <g id="a_node6"><a xlink:href="/type/Metamodel::MethodDispatcher" xlink:title="Metamodel::MethodDispatcher">
-<ellipse fill="none" stroke="#000000" cx="-95.4782" cy="-113.379" rx="131.077" ry="18"/>
-<text text-anchor="middle" x="-95.4782" y="-109.679" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::MethodDispatcher</text>
+<ellipse fill="none" stroke="#000000" cx="-95.607" cy="-113.338" rx="131.077" ry="18"/>
+<text text-anchor="middle" x="-95.607" y="-109.638" font-family="FreeSans" font-size="14.00" fill="#000000">Metamodel::MethodDispatcher</text>
 </a>
 </g>
 </g>
 <!-- Metamodel::MethodDispatcher&#45;&gt;Metamodel::BaseDispatcher -->
 <g id="edge5" class="edge"><title>Metamodel::MethodDispatcher&#45;&gt;Metamodel::BaseDispatcher</title>
-<path fill="none" stroke="#000000" d="M-72.2117,-95.5984C-55.1324,-82.5466 -31.7512,-64.6789 -13.053,-50.39"/>
-<polygon fill="#000000" stroke="#000000" points="-10.9157,-53.1617 -5.09529,-44.3088 -15.1661,-47.5998 -10.9157,-53.1617"/>
+<path fill="none" stroke="#000000" d="M-71.2887,-95.4378C-54.1197,-82.8003 -30.9249,-65.7274 -12.1609,-51.9159"/>
+<polygon fill="#000000" stroke="#000000" points="-9.86778,-54.5739 -3.88901,-45.8272 -14.0174,-48.9364 -9.86778,-54.5739"/>
 </g>
 </g>
 </svg>
