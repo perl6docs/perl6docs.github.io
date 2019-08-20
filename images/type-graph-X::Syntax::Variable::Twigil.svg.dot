@@ -12,7 +12,6 @@ digraph "perl6-type-graph" {
 
     // Superclasses
     "X::Syntax::Variable::Twigil" -> "Exception" [color="#000000"];
-    "X::Syntax::Variable::Twigil" -> "Exception" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Exception" -> "Any" [color="#000000"];
     "X::Comp" -> "Exception" [color="#000000"];
