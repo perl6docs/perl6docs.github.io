@@ -204,7 +204,7 @@ exclaim &quot;Howdy, World&quot;;
 <p>While the dispatch system described above provides a lot of flexibility, there are some conventions that most internal functions, and those in many modules, will follow.</p>
 <h2 id="Slurpy_conventions"><a class="u" href="#___top" title="go to top of document">Slurpy conventions</a></h2>
 <p>Perhaps the most important one of these conventions is the way slurpy list arguments are handled. Most of the time, functions will not automatically flatten slurpy lists. The rare exceptions are those functions that don&#39;t have a reasonable behavior on lists of lists (e.g., <a href="/routine/chrs">chrs</a>) or where there is a conflict with an established idiom (e.g., <a href="/routine/pop">pop</a> being the inverse of <a href="/routine/push">push</a>).</p>
-<p>If you wish to match this look and feel, any <a href="/type/Iterable">Iterable</a> a rgument must be broken out element-by-element using a <code>**@</code> slurpy, with two nuances:</p>
+<p>If you wish to match this look and feel, any <a href="/type/Iterable">Iterable</a> argument must be broken out element-by-element using a <code>**@</code> slurpy, with two nuances:</p>
 <ul><li><p>An <a href="/type/Iterable">Iterable</a> inside a <a href="/language/containers#Scalar_containers">Scalar container</a> doesn&#39;t count.</p>
 </li>
 <li><p><a href="/type/List">List</a>s created with a <a href="/routine/,"><code>,</code></a> at the top level only count as one <a href="/type/Iterable">Iterable</a>.</p>
@@ -318,7 +318,7 @@ exclaim &quot;Howdy, World&quot;;
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/functions.pod6'>Language/functions.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/ec374a6"><span id="footer-commit">ec374a6</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Language/functions.pod6'>Language/functions.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/d6f7e8e"><span id="footer-commit">d6f7e8e</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -326,7 +326,7 @@ exclaim &quot;Howdy, World&quot;;
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/functions.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-20T08:29:55Z
+      Generated on 2019-08-24T08:40:23Z
   </p>
   <p>
       This documentation is provided under the terms of the
