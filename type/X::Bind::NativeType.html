@@ -135,7 +135,7 @@
 
     <div class="pod-body">
     <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>X::Bind::NativeType</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>X::Comp</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Compile-time error thrown when trying to bind to a natively typed variable.</p>
-<p>Since native variables explicitly don&#39;t have the concept of a container at runtime. Thus it does not make sense to support both binding and assignment, and Perl&nbsp;6 supports only assignment (which makes more sense, because native types are value types). So use assignment for natively typed variables.</p>
+<p>Since native variables explicitly don&#39;t have the concept of a container at runtime, it does not make sense to support both binding and assignment; Perl&nbsp;6 supports only assignment (which makes more sense, because native types are value types).</p>
 <p>For example the code</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div></pre><p>dies with</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Cannot</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>bind</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>natively</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>typed</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>variable</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>$x</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;&nbsp;</span><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>assignment</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>instead</span></span></span></div></pre><p>and can be fixed by writing it as</p>
@@ -273,7 +273,7 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/X/Bind/NativeType.pod6'>Type/X/Bind/NativeType.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/d6f7e8e"><span id="footer-commit">d6f7e8e</span></a>.
+      From <a href='https://github.com/perl6/doc/blob/master/doc/Type/X/Bind/NativeType.pod6'>Type/X/Bind/NativeType.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a>, commit <a href="https://github.com/perl6/doc/commit/0230dda1"><span id="footer-commit">0230dda1</span></a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
@@ -281,7 +281,7 @@
       <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/X/Bind/NativeType.pod6'>edit this page</a>.
       Your contribution is appreciated.
       <br/>
-      Generated on 2019-08-24T08:42:20Z
+      Generated on 2019-08-25T09:40:14Z
   </p>
   <p>
       This documentation is provided under the terms of the
