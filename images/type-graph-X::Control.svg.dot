@@ -7,32 +7,32 @@ digraph "perl6-type-graph" {
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "Exception" [color="#000000", fontcolor="#000000", href="/type/Exception", fontname="FreeSans"];
-    "CX::Next" [color="#000000", fontcolor="#000000", href="/type/CX::Next", fontname="FreeSans"];
-    "CX::Warn" [color="#000000", fontcolor="#000000", href="/type/CX::Warn", fontname="FreeSans"];
     "CX::Succeed" [color="#000000", fontcolor="#000000", href="/type/CX::Succeed", fontname="FreeSans"];
-    "CX::Proceed" [color="#000000", fontcolor="#000000", href="/type/CX::Proceed", fontname="FreeSans"];
-    "CX::Last" [color="#000000", fontcolor="#000000", href="/type/CX::Last", fontname="FreeSans"];
+    "CX::Next" [color="#000000", fontcolor="#000000", href="/type/CX::Next", fontname="FreeSans"];
     "CX::Redo" [color="#000000", fontcolor="#000000", href="/type/CX::Redo", fontname="FreeSans"];
+    "CX::Proceed" [color="#000000", fontcolor="#000000", href="/type/CX::Proceed", fontname="FreeSans"];
+    "CX::Warn" [color="#000000", fontcolor="#000000", href="/type/CX::Warn", fontname="FreeSans"];
     "CX::Take" [color="#000000", fontcolor="#000000", href="/type/CX::Take", fontname="FreeSans"];
+    "CX::Last" [color="#000000", fontcolor="#000000", href="/type/CX::Last", fontname="FreeSans"];
 
     // Superclasses
     "X::Control" -> "Exception" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Exception" -> "Any" [color="#000000"];
-    "CX::Next" -> "Exception" [color="#000000"];
-    "CX::Warn" -> "Exception" [color="#000000"];
     "CX::Succeed" -> "Exception" [color="#000000"];
-    "CX::Proceed" -> "Exception" [color="#000000"];
-    "CX::Last" -> "Exception" [color="#000000"];
+    "CX::Next" -> "Exception" [color="#000000"];
     "CX::Redo" -> "Exception" [color="#000000"];
+    "CX::Proceed" -> "Exception" [color="#000000"];
+    "CX::Warn" -> "Exception" [color="#000000"];
     "CX::Take" -> "Exception" [color="#000000"];
+    "CX::Last" -> "Exception" [color="#000000"];
 
     // Roles
-    "CX::Next" -> "X::Control" [color="#6666FF"];
-    "CX::Warn" -> "X::Control" [color="#6666FF"];
     "CX::Succeed" -> "X::Control" [color="#6666FF"];
-    "CX::Proceed" -> "X::Control" [color="#6666FF"];
-    "CX::Last" -> "X::Control" [color="#6666FF"];
+    "CX::Next" -> "X::Control" [color="#6666FF"];
     "CX::Redo" -> "X::Control" [color="#6666FF"];
+    "CX::Proceed" -> "X::Control" [color="#6666FF"];
+    "CX::Warn" -> "X::Control" [color="#6666FF"];
     "CX::Take" -> "X::Control" [color="#6666FF"];
+    "CX::Last" -> "X::Control" [color="#6666FF"];
 }

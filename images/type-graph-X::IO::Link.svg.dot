@@ -13,7 +13,6 @@ digraph "perl6-type-graph" {
     // Superclasses
     "X::IO::Link" -> "Exception" [color="#000000"];
     "X::IO::Link" -> "Exception" [color="#000000"];
-    "X::IO::Link" -> "Exception" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Exception" -> "Any" [color="#000000"];
     "X::OS" -> "Exception" [color="#000000"];
