@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>syntax %</h1>
     
@@ -84,9 +50,9 @@
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_%">(Regexes) regex %</a></td></tr>
-                             <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#declarator_state">declarator state</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(state)_variable_%">(state) variable %</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_%_%">(Regexes) regex % %</a></td></tr>
+                             <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Variables)_variable_%">(Variables) variable %</a></td></tr>
            
 </table>
 </nav>
@@ -94,13 +60,13 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>%</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#regex_%25">Regexes</a></p>
-<h2 id="(Regexes)_regex_%"><a href="/syntax/$PERCENT_SIGN#language_documentation_Regexes">(Regexes) regex %</a></h2>
+<p>From <a href="/language/regexes#Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN">Regexes</a></p>
+<h2 id="(Regexes)_regex_%_%"><a href="/language/regexes#Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN">(Regexes) regex % %</a></h2>
 <p>To more easily match things like comma separated values, you can tack on a <code>%</code> modifier to any of the above quantifiers to specify a separator that must occur between each of the matches. For example, <code>a+ % &#39;,&#39;</code> will match <code>a</code> or <code>a,a</code> or <code>a,a,a</code>, etc. To also match trailing delimiters ( <code>a,</code> or <code>a,a,</code> ), you can use <code>%%</code> instead of <code>%</code>.</p>
 <p>The quantifier interacts with <code>%</code> and controls the number of overall repetitions that can match successfully, so <code>a* % &#39;,&#39;</code> also matches the empty string. If you want match words delimited by commas, you might need to nest an ordinary and a modified quantifier:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc,def</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>^</span></span><span>&nbsp;[</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>]&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>**</span></span><span>&nbsp;1&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>%</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>,</span><span>&#39;</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Output:&nbsp;«False»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc,def</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>^</span></span><span>&nbsp;[</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>]&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>**</span></span><span>&nbsp;2&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>%</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>,</span><span>&#39;</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Output:&nbsp;«True»</span><span>&nbsp;</span></span></span></div></pre><h1 id="declarator_state"><a class="u" href="#___top" title="go to top of document">declarator state</a></h1>
-<p>From <a href="/syntax/state#variable_%25">state</a></p>
-<h2 id="(state)_variable_%"><a href="/syntax/$PERCENT_SIGN#declarator_state">(state) variable %</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc,def</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>^</span></span><span>&nbsp;[</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>]&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>**</span></span><span>&nbsp;1&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>%</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>,</span><span>&#39;</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Output:&nbsp;«False»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>so</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abc,def</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>^</span></span><span>&nbsp;[</span><span class="constant character escape class regexp perl6fe"><span>\w</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>]&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>**</span></span><span>&nbsp;2&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>%</span></span><span>&nbsp;</span><span class="string literal perl6fe"><span>&#39;</span><span>,</span><span>&#39;</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Output:&nbsp;«True»</span><span>&nbsp;</span></span></span></div></pre><h1 id="language_documentation_Variables"><a class="u" href="#___top" title="go to top of document">language documentation Variables</a></h1>
+<p>From <a href="/language/variables#The_$PERCENT_SIGN_variable">Variables</a></p>
+<h2 id="(Variables)_variable_%"><a href="/language/variables#The_$PERCENT_SIGN_variable">(Variables) variable %</a></h2>
 <p>In addition, there&#39;s an <a href="/type/Associative">Associative</a> anonymous state variable <code>%</code>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>foo</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>%</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>push</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>foo</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>)&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«{0&nbsp;=&gt;&nbsp;0}</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{0&nbsp;=&gt;&nbsp;0,&nbsp;1&nbsp;=&gt;&nbsp;1}</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{0&nbsp;=&gt;&nbsp;0,&nbsp;1&nbsp;=&gt;&nbsp;1,&nbsp;2&nbsp;=&gt;&nbsp;2}␤»</span></span></span></div></pre><p>The same caveat about disambiguation applies. As you may expect, indexed access is also possible (with copying to make it useful).</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>foo</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>%</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>foo</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>)&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«{0&nbsp;=&gt;&nbsp;0}</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{0&nbsp;=&gt;&nbsp;0,&nbsp;1&nbsp;=&gt;&nbsp;1}</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{0&nbsp;=&gt;&nbsp;0,&nbsp;1&nbsp;=&gt;&nbsp;1,&nbsp;2&nbsp;=&gt;&nbsp;2}␤»</span></span></span></div></pre><p>As with the other anonymous state variables, each mention of <code>%</code> within a given scope will effectively introduce a separate variable.</p>
@@ -110,12 +76,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_glossary">
-  
+<div id="content" class="pretty-box yellow content__language_glossary">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/glossary.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -537,7 +503,7 @@
 <h1 id="Sigil"><a class="u" href="#___top" title="go to top of document">Sigil <a name="index-entry-Sigil"></a></a></h1>
 <p>In Perl, the sigil is the first character of a variable name. It must be either $, @, %, or &amp; respectively for a <a href="/type/Scalar">scalar</a>, <a href="/type/Array">array</a>, <a href="/type/Hash">hash</a>, or <a href="/type/Code">code</a> variable. See also Twigil and role. Also sigiled variables allow short conventions for <a href="#Variable_interpolation">variable interpolation</a> in a double quoted string, or even postcircumfix expressions starting with such a variable.</p>
 <h1 id="Sigilless_variable"><a class="u" href="#___top" title="go to top of document">Sigilless variable <a name="index-entry-Sigilless_Variable"></a></a></h1>
-<p><a href="/language/variables#index-entry-%5C_%28sigilless_variables%29">Sigilless variables</a> are actually aliases to the value it is assigned to them, since they are not containers. Once you assign a sigilless variable (using the escape <code>\</code>), its value cannot be changed.</p>
+<p><a href="/language/variables#index-entry-\_(sigilless_variables)">Sigilless variables</a> are actually aliases to the value it is assigned to them, since they are not containers. Once you assign a sigilless variable (using the escape <code>\</code>), its value cannot be changed.</p>
 <h1 id="Spesh"><a class="u" href="#___top" title="go to top of document">Spesh <a name="index-entry-Spesh"></a></a></h1>
 <p>A functionality of the <a href="#MoarVM">MoarVM</a> platform that uses runtime gathered data to improve commonly used pieces of <a href="#bytecode">bytecode</a>. It is much like a JIT compiler, except that those usually output machine code rather than bytecode.</p>
 <h1 id="STD"><a class="u" href="#___top" title="go to top of document">STD <a name="index-entry-STD"></a></a></h1>
@@ -586,7 +552,7 @@
 <h1 id="Variable_interpolation"><a class="u" href="#___top" title="go to top of document">Variable interpolation <a name="index-entry-Variable_Interpolation"></a></a></h1>
 <p>The value of variables is interpolated into strings by simply inserting that variable into the string:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>polation</span></span></span><span class="storage modifier assignment perl6fe"><span>=</span></span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>polation</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>inter</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>polation</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«interpolation␤»</span></span></span></div></pre><p>This might need curly braces in case it precedes some alphanumeric characters</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>inter</span></span></span><span class="storage modifier assignment perl6fe"><span>=</span></span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>inter</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>inter</span></span></span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span>polation</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«interpolation␤»</span></span></span></div></pre><p>Interpolation occurs in <a href="/language/contexts#String">string context</a>, so a valid stringification method must exist for the class. More general interpolation can be achieved using the <a href="/language/quoting#Interpolation%3A_qq">double q</a> quoting constructs.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>inter</span></span></span><span class="storage modifier assignment perl6fe"><span>=</span></span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>inter</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>inter</span></span></span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span>polation</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«interpolation␤»</span></span></span></div></pre><p>Interpolation occurs in <a href="/language/contexts#String">string context</a>, so a valid stringification method must exist for the class. More general interpolation can be achieved using the <a href="/language/quoting#Interpolation:_qq">double q</a> quoting constructs.</p>
 <h1 id="Virtual_machine"><a class="u" href="#___top" title="go to top of document">Virtual machine <a name="index-entry-Virtual_Machine"></a></a></h1>
 <p>A virtual machine is the Perl compiler entity that executes the <a href="#bytecode">bytecode</a>. It can optimize the bytecode or generate machine code Just in Time. Examples are <a href="#MoarVM">MoarVM</a>, <a href="#Parrot">Parrot</a> (who are intended to run Perl&nbsp;6) and more generic virtual machines such as JVM and Javascript.</p>
 <h2 id="WAT"><a class="u" href="#___top" title="go to top of document">WAT <a name="index-entry-WAT"></a></a></h2>
@@ -604,12 +570,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/glossary.pod6'>Language/glossary.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/glossary.pod6">/language/glossary</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/glossary.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

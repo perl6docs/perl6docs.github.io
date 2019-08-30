@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>regex &lt;:property&gt;</title>
+        <title>syntax &lt;:property&gt;</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'>regex &lt;:property&gt;</h1>
+
+    <h1 class='title'>syntax &lt;:property&gt;</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_&lt;:property&gt;">(Regexes) regex &lt;:property&gt;</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_&lt;:property&gt;_&lt;:property&gt;">(Regexes) regex &lt;:property&gt; &lt;:property&gt;</a></td></tr>
                                                                                                             
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for regex <code>&lt;:property&gt;</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>&lt;:property&gt;</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#regex_%3C%3Aproperty%3E">Regexes</a></p>
-<h2 id="(Regexes)_regex_<:property>"><a href="/syntax/<:property>#language_documentation_Regexes">(Regexes) regex &lt;:property&gt;</a></h2>
+<p>From <a href="/language/regexes#Unicode_properties">Regexes</a></p>
+<h2 id="(Regexes)_regex_<:property>_<:property>"><a href="/language/regexes#Unicode_properties">(Regexes) regex &lt;:property&gt; &lt;:property&gt;</a></h2>
 <p>The character classes mentioned so far are mostly for convenience; another approach is to use Unicode character properties. These come in the form <code>&lt;:property&gt;</code>, where <code>property</code> can be a short or long Unicode General Category name. These use pair syntax.</p>
 <p>To match against a Unicode property you can use either smartmatch or <a href="/routine/uniprop"><code>uniprop</code></a>:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>uniprop</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Script</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Latin␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="meta property name regexp perl6fe"><span class="punctuation definition property regexp perl6fe"><span>:</span></span><span class="variable other identifier property regexp perl6fe"><span>Script</span></span></span><span>&lt;</span><span class="variable other identifier regexname perl6fe"><span>Latin</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&gt;&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢a｣␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>uniprop</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Block</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Basic&nbsp;Latin␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="meta property name regexp perl6fe"><span class="punctuation definition property regexp perl6fe"><span>:</span></span><span class="variable other identifier property regexp perl6fe"><span>Block</span></span></span><span class="meta rule signature perl6fe"><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Basic&nbsp;Latin</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>)</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢a｣␤»</span></span></span></div></pre><p>These are the Unicode general categories used for matching:</p>
@@ -122,12 +88,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

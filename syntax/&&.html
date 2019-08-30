@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>regex &amp;&amp;</title>
+        <title>syntax &amp;&amp;</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'>regex &amp;&amp;</h1>
+
+    <h1 class='title'>syntax &amp;&amp;</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#(Regexes)_regex_&amp;&amp;">(Regexes) regex &amp;&amp;</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_&amp;&amp;_&amp;&amp;">(Regexes) regex &amp;&amp; &amp;&amp;</a></td></tr>
                       
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for regex <code>&amp;&amp;</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>&amp;&amp;</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#regex_%26%26">Regexes</a></p>
-<h1 id="(Regexes)_regex_&&"><a href="/syntax/&&#language_documentation_Regexes">(Regexes) regex &amp;&amp;</a></h1>
+<p>From <a href="/language/regexes#Conjunction:_&&">Regexes</a></p>
+<h2 id="(Regexes)_regex_&&_&&"><a href="/language/regexes#Conjunction:_&&">(Regexes) regex &amp;&amp; &amp;&amp;</a></h2>
 <p>Matches successfully if all <code>&amp;&amp;</code>-delimited segments match the same substring of the target string. The segments are evaluated left to right.</p>
 <p>This can be useful for augmenting an existing regex. For example if you have a regex <code>quoted</code> that matches a quoted string, then <code>/ &lt;quoted&gt; &amp;&amp; &lt;-[x]&gt;* /</code> matches a quoted string that does not contain the character <code>x</code>.</p>
 <p>Note that you cannot easily obtain the same behavior with a lookahead, that is, a regex doesn&#39;t consume characters, because a lookahead doesn&#39;t stop looking when the quoted string stops matching.</p>
@@ -104,12 +70,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

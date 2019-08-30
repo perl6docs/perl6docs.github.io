@@ -24,75 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Parameter">
-  
+<div id="content" class="pretty-box yellow content__type_Parameter">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Parameter.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -162,7 +112,7 @@
 <h2 id="method_type"><a class="u" href="#___top" title="go to top of document">method type</a></h2>
 <p>Returns the <a href="/type/Signature#Type_constraints">nominal type constraint</a> of the parameter.</p>
 <h2 id="method_coerce_type"><a class="u" href="#___top" title="go to top of document">method coerce_type</a></h2>
-<p>Returns the <a href="/syntax/Coercion type">coercion type</a> of the parameter.</p>
+<p>Returns the <a href="/syntax/Coercion%20type">coercion type</a> of the parameter.</p>
 <h2 id="method_constraints"><a class="u" href="#___top" title="go to top of document">method constraints</a></h2>
 <p>Returns <a href="/type/Signature#Type_constraints">additional constraints</a> on the parameter (usually as an <code>all</code>-Junction).</p>
 <h2 id="method_named"><a class="u" href="#___top" title="go to top of document">method named</a></h2>
@@ -176,7 +126,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>positional</span></span><span>(</span><span class="support type perl6fe"><span>Parameter</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if the parameter is <a href="/type/Signature#Positional_vs._named_arguments">positional</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Signature</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sig</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span>(</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>is-named</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sig</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>params</span></span><span>[</span><span class="constant numeric perl6fe"><span>0</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>positional</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sig</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>params</span></span><span>[</span><span class="constant numeric perl6fe"><span>1</span></span><span>]</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>positional</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre><h2 id="method_slurpy"><a class="u" href="#___top" title="go to top of document">method slurpy</a></h2>
 <p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>slurpy</span></span><span>(</span><span class="support type perl6fe"><span>Parameter</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> for <a href="/type/Signature#Slurpy_%28A.K.A._variadic%29_parameters">slurpy parameters</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>slurpy</span></span><span>(</span><span class="support type perl6fe"><span>Parameter</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Bool</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns <code>True</code> for <a href="/type/Signature#Slurpy_(A.K.A._variadic)_parameters">slurpy parameters</a>.</p>
 <h2 id="method_twigil"><a class="u" href="#___top" title="go to top of document">method twigil</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>twigil</span></span><span>(</span><span class="support type perl6fe"><span>Parameter</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a string containing the twigil part of the parameter&#39;s name.</p>
@@ -266,8 +216,7 @@
 <p>Optional. Specifies any <code>Signature</code> that should be applied to the parameter to deconstruct it. By default, no signature is to be applied.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Parameter</code></figcaption>
+  <figcaption>Type relations for <code>Parameter</code></figcaption>
   <svg width="112pt" height="188pt"
  viewBox="0.00 0.00 111.99 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
@@ -311,9 +260,12 @@
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Parameter.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 
@@ -322,12 +274,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Parameter.pod6'>Type/Parameter.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Parameter.pod6">/type/Parameter</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Parameter.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

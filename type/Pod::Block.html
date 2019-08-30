@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Pod_Block">
-  
+<div id="content" class="pretty-box yellow content__type_Pod__Block">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Pod/Block.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Pod::Block.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -138,171 +88,173 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>config</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Map</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns a hash of configs.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Pod::Block</code></figcaption>
-  <svg width="1601pt" height="260pt"
- viewBox="0.00 0.00 1601.34 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <figcaption>Type relations for <code>Pod::Block</code></figcaption>
+  <svg width="1599pt" height="260pt"
+ viewBox="0.00 0.00 1598.94 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-256 1597.34,-256 1597.34,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 1594.94,-256 1594.94,4 -4,4"/>
 <!-- Pod::Block -->
 <g id="node1" class="node"><title>Pod::Block</title>
 <g id="a_node1"><a xlink:href="/type/Pod::Block" xlink:title="Pod::Block">
-<ellipse fill="none" stroke="#000000" cx="853.242" cy="-90" rx="53.0913" ry="18"/>
-<text text-anchor="middle" x="853.242" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block</text>
+<ellipse fill="none" stroke="#000000" cx="806.694" cy="-90" rx="53.0913" ry="18"/>
+<text text-anchor="middle" x="806.694" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="853.242" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="853.242" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="806.694" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="806.694" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Pod::Block&#45;&gt;Any -->
 <g id="edge1" class="edge"><title>Pod::Block&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M853.242,-108.303C853.242,-116.017 853.242,-125.288 853.242,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="849.742,-133.896 853.242,-143.896 856.742,-133.896 849.742,-133.896"/>
+<path fill="none" stroke="#000000" d="M806.694,-108.303C806.694,-116.017 806.694,-125.288 806.694,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="803.194,-133.896 806.694,-143.896 810.194,-133.896 803.194,-133.896"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="853.242" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="853.242" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="806.694" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="806.694" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M853.242,-180.303C853.242,-188.017 853.242,-197.288 853.242,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="849.742,-205.896 853.242,-215.896 856.742,-205.896 849.742,-205.896"/>
-</g>
-<!-- Pod::FormattingCode -->
-<g id="node4" class="node"><title>Pod::FormattingCode</title>
-<g id="a_node4"><a xlink:href="/type/Pod::FormattingCode" xlink:title="Pod::FormattingCode">
-<ellipse fill="none" stroke="#000000" cx="94.2416" cy="-18" rx="94.4839" ry="18"/>
-<text text-anchor="middle" x="94.2416" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::FormattingCode</text>
-</a>
-</g>
-</g>
-<!-- Pod::FormattingCode&#45;&gt;Pod::Block -->
-<g id="edge3" class="edge"><title>Pod::FormattingCode&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M162.944,-30.3392C181.838,-33.4576 197.242,-36 197.242,-36 197.242,-36 628.506,-70.843 791.686,-84.0268"/>
-<polygon fill="#000000" stroke="#000000" points="791.79,-87.5465 802.04,-84.8633 792.354,-80.5692 791.79,-87.5465"/>
+<path fill="none" stroke="#000000" d="M806.694,-180.303C806.694,-188.017 806.694,-197.288 806.694,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="803.194,-205.896 806.694,-215.896 810.194,-205.896 803.194,-205.896"/>
 </g>
 <!-- Pod::Heading -->
-<g id="node5" class="node"><title>Pod::Heading</title>
-<g id="a_node5"><a xlink:href="/type/Pod::Heading" xlink:title="Pod::Heading">
-<ellipse fill="none" stroke="#000000" cx="270.242" cy="-18" rx="63.8893" ry="18"/>
-<text text-anchor="middle" x="270.242" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Heading</text>
+<g id="node4" class="node"><title>Pod::Heading</title>
+<g id="a_node4"><a xlink:href="/type/Pod::Heading" xlink:title="Pod::Heading">
+<ellipse fill="none" stroke="#000000" cx="63.6943" cy="-18" rx="63.8893" ry="18"/>
+<text text-anchor="middle" x="63.6943" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Heading</text>
 </a>
 </g>
 </g>
 <!-- Pod::Heading&#45;&gt;Pod::Block -->
-<g id="edge4" class="edge"><title>Pod::Heading&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M317.71,-30.0542C331.653,-33.3012 343.242,-36 343.242,-36 343.242,-36 657.683,-68.6772 792.762,-82.7148"/>
-<polygon fill="#000000" stroke="#000000" points="792.637,-86.2206 802.945,-83.7731 793.36,-79.2581 792.637,-86.2206"/>
-</g>
-<!-- Pod::Block::Named -->
-<g id="node6" class="node"><title>Pod::Block::Named</title>
-<g id="a_node6"><a xlink:href="/type/Pod::Block::Named" xlink:title="Pod::Block::Named">
-<ellipse fill="none" stroke="#000000" cx="439.242" cy="-18" rx="87.1846" ry="18"/>
-<text text-anchor="middle" x="439.242" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Named</text>
-</a>
-</g>
-</g>
-<!-- Pod::Block::Named&#45;&gt;Pod::Block -->
-<g id="edge5" class="edge"><title>Pod::Block::Named&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M503.008,-30.292C520.739,-33.4319 535.242,-36 535.242,-36 535.242,-36 705.341,-64.35 796.729,-79.5811"/>
-<polygon fill="#000000" stroke="#000000" points="796.222,-83.0449 806.661,-81.2366 797.373,-76.1401 796.222,-83.0449"/>
-</g>
-<!-- Pod::Block::Comment -->
-<g id="node7" class="node"><title>Pod::Block::Comment</title>
-<g id="a_node7"><a xlink:href="/type/Pod::Block::Comment" xlink:title="Pod::Block::Comment">
-<ellipse fill="none" stroke="#000000" cx="640.242" cy="-18" rx="96.3833" ry="18"/>
-<text text-anchor="middle" x="640.242" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Comment</text>
-</a>
-</g>
-</g>
-<!-- Pod::Block::Comment&#45;&gt;Pod::Block -->
-<g id="edge6" class="edge"><title>Pod::Block::Comment&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M685.674,-33.9309C721.3,-45.6389 770.696,-61.8722 806.622,-73.6792"/>
-<polygon fill="#000000" stroke="#000000" points="805.783,-77.0874 816.376,-76.8845 807.969,-70.4373 805.783,-77.0874"/>
-</g>
-<!-- Pod::Block::Declarator -->
-<g id="node8" class="node"><title>Pod::Block::Declarator</title>
-<g id="a_node8"><a xlink:href="/type/Pod::Block::Declarator" xlink:title="Pod::Block::Declarator">
-<ellipse fill="none" stroke="#000000" cx="853.242" cy="-18" rx="98.5829" ry="18"/>
-<text text-anchor="middle" x="853.242" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Declarator</text>
-</a>
-</g>
-</g>
-<!-- Pod::Block::Declarator&#45;&gt;Pod::Block -->
-<g id="edge7" class="edge"><title>Pod::Block::Declarator&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M853.242,-36.3034C853.242,-44.0173 853.242,-53.2875 853.242,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="849.742,-61.8956 853.242,-71.8957 856.742,-61.8957 849.742,-61.8956"/>
+<g id="edge3" class="edge"><title>Pod::Heading&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M110.916,-30.1496C124.487,-33.3539 135.694,-36 135.694,-36 135.694,-36 579.787,-71.0773 745.403,-84.1588"/>
+<polygon fill="#000000" stroke="#000000" points="745.189,-87.6527 755.433,-84.9511 745.74,-80.6744 745.189,-87.6527"/>
 </g>
 <!-- Pod::Block::Table -->
-<g id="node9" class="node"><title>Pod::Block::Table</title>
-<g id="a_node9"><a xlink:href="/type/Pod::Block::Table" xlink:title="Pod::Block::Table">
-<ellipse fill="none" stroke="#000000" cx="1050.24" cy="-18" rx="80.6858" ry="18"/>
-<text text-anchor="middle" x="1050.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Table</text>
+<g id="node5" class="node"><title>Pod::Block::Table</title>
+<g id="a_node5"><a xlink:href="/type/Pod::Block::Table" xlink:title="Pod::Block::Table">
+<ellipse fill="none" stroke="#000000" cx="225.694" cy="-18" rx="80.6858" ry="18"/>
+<text text-anchor="middle" x="225.694" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Table</text>
 </a>
 </g>
 </g>
 <!-- Pod::Block::Table&#45;&gt;Pod::Block -->
-<g id="edge8" class="edge"><title>Pod::Block::Table&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M1008.94,-33.6743C976.494,-45.2046 931.369,-61.2389 898.049,-73.0786"/>
-<polygon fill="#000000" stroke="#000000" points="896.801,-69.8076 888.55,-76.4538 899.145,-76.4036 896.801,-69.8076"/>
+<g id="edge4" class="edge"><title>Pod::Block::Table&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M285.059,-30.3392C301.384,-33.4576 314.694,-36 314.694,-36 314.694,-36 615.232,-68.375 746.526,-82.5185"/>
+<polygon fill="#000000" stroke="#000000" points="746.494,-86.0352 756.811,-83.6264 747.244,-79.0754 746.494,-86.0352"/>
 </g>
-<!-- Pod::Block::Code -->
-<g id="node10" class="node"><title>Pod::Block::Code</title>
-<g id="a_node10"><a xlink:href="/type/Pod::Block::Code" xlink:title="Pod::Block::Code">
-<ellipse fill="none" stroke="#000000" cx="1228.24" cy="-18" rx="79.0865" ry="18"/>
-<text text-anchor="middle" x="1228.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Code</text>
+<!-- Pod::Block::Declarator -->
+<g id="node6" class="node"><title>Pod::Block::Declarator</title>
+<g id="a_node6"><a xlink:href="/type/Pod::Block::Declarator" xlink:title="Pod::Block::Declarator">
+<ellipse fill="none" stroke="#000000" cx="422.694" cy="-18" rx="98.5829" ry="18"/>
+<text text-anchor="middle" x="422.694" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Declarator</text>
 </a>
 </g>
 </g>
-<!-- Pod::Block::Code&#45;&gt;Pod::Block -->
-<g id="edge9" class="edge"><title>Pod::Block::Code&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M1170.03,-30.2446C1153.67,-33.406 1140.24,-36 1140.24,-36 1140.24,-36 991.946,-63.3857 908.552,-78.786"/>
-<polygon fill="#000000" stroke="#000000" points="907.916,-75.3441 898.718,-80.602 909.187,-82.2277 907.916,-75.3441"/>
+<!-- Pod::Block::Declarator&#45;&gt;Pod::Block -->
+<g id="edge5" class="edge"><title>Pod::Block::Declarator&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M490.021,-31.2732C563.982,-44.7556 681.427,-66.1649 750.593,-78.7732"/>
+<polygon fill="#000000" stroke="#000000" points="750.385,-82.2929 760.85,-80.643 751.64,-75.4063 750.385,-82.2929"/>
 </g>
 <!-- Pod::Block::Para -->
-<g id="node11" class="node"><title>Pod::Block::Para</title>
-<g id="a_node11"><a xlink:href="/type/Pod::Block::Para" xlink:title="Pod::Block::Para">
-<ellipse fill="none" stroke="#000000" cx="1402.24" cy="-18" rx="76.8869" ry="18"/>
-<text text-anchor="middle" x="1402.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Para</text>
+<g id="node7" class="node"><title>Pod::Block::Para</title>
+<g id="a_node7"><a xlink:href="/type/Pod::Block::Para" xlink:title="Pod::Block::Para">
+<ellipse fill="none" stroke="#000000" cx="615.694" cy="-18" rx="76.8869" ry="18"/>
+<text text-anchor="middle" x="615.694" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Para</text>
 </a>
 </g>
 </g>
 <!-- Pod::Block::Para&#45;&gt;Pod::Block -->
-<g id="edge10" class="edge"><title>Pod::Block::Para&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M1345.36,-30.2446C1329.36,-33.406 1316.24,-36 1316.24,-36 1316.24,-36 1038.09,-67.8401 912.971,-82.1628"/>
-<polygon fill="#000000" stroke="#000000" points="912.328,-78.7134 902.791,-83.3281 913.124,-85.668 912.328,-78.7134"/>
+<g id="edge6" class="edge"><title>Pod::Block::Para&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M655.27,-33.504C686.462,-44.9359 729.945,-60.8719 762.316,-72.7356"/>
+<polygon fill="#000000" stroke="#000000" points="761.386,-76.1223 771.979,-76.2772 763.794,-69.5498 761.386,-76.1223"/>
+</g>
+<!-- Pod::Block::Comment -->
+<g id="node8" class="node"><title>Pod::Block::Comment</title>
+<g id="a_node8"><a xlink:href="/type/Pod::Block::Comment" xlink:title="Pod::Block::Comment">
+<ellipse fill="none" stroke="#000000" cx="806.694" cy="-18" rx="96.3833" ry="18"/>
+<text text-anchor="middle" x="806.694" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Comment</text>
+</a>
+</g>
+</g>
+<!-- Pod::Block::Comment&#45;&gt;Pod::Block -->
+<g id="edge7" class="edge"><title>Pod::Block::Comment&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M806.694,-36.3034C806.694,-44.0173 806.694,-53.2875 806.694,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="803.194,-61.8956 806.694,-71.8957 810.194,-61.8957 803.194,-61.8956"/>
+</g>
+<!-- Pod::Block::Code -->
+<g id="node9" class="node"><title>Pod::Block::Code</title>
+<g id="a_node9"><a xlink:href="/type/Pod::Block::Code" xlink:title="Pod::Block::Code">
+<ellipse fill="none" stroke="#000000" cx="999.694" cy="-18" rx="79.0865" ry="18"/>
+<text text-anchor="middle" x="999.694" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Code</text>
+</a>
+</g>
+</g>
+<!-- Pod::Block::Code&#45;&gt;Pod::Block -->
+<g id="edge8" class="edge"><title>Pod::Block::Code&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M959.235,-33.6743C927.681,-45.1188 883.893,-61.0005 851.323,-72.8136"/>
+<polygon fill="#000000" stroke="#000000" points="849.808,-69.6397 841.601,-76.3397 852.195,-76.2203 849.808,-69.6397"/>
 </g>
 <!-- Pod::Item -->
-<g id="node12" class="node"><title>Pod::Item</title>
-<g id="a_node12"><a xlink:href="/type/Pod::Item" xlink:title="Pod::Item">
-<ellipse fill="none" stroke="#000000" cx="1545.24" cy="-18" rx="48.1917" ry="18"/>
-<text text-anchor="middle" x="1545.24" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Item</text>
+<g id="node10" class="node"><title>Pod::Item</title>
+<g id="a_node10"><a xlink:href="/type/Pod::Item" xlink:title="Pod::Item">
+<ellipse fill="none" stroke="#000000" cx="1144.69" cy="-18" rx="48.1917" ry="18"/>
+<text text-anchor="middle" x="1144.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Item</text>
 </a>
 </g>
 </g>
 <!-- Pod::Item&#45;&gt;Pod::Block -->
-<g id="edge11" class="edge"><title>Pod::Item&#45;&gt;Pod::Block</title>
-<path fill="none" stroke="#000000" d="M1508.82,-29.8626C1497.65,-33.1943 1488.24,-36 1488.24,-36 1488.24,-36 1073.73,-70.597 914.512,-83.8861"/>
-<polygon fill="#000000" stroke="#000000" points="914.075,-80.4103 904.4,-84.7301 914.657,-87.3861 914.075,-80.4103"/>
+<g id="edge9" class="edge"><title>Pod::Item&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M1108.27,-29.8626C1097.1,-33.1943 1087.69,-36 1087.69,-36 1087.69,-36 943.926,-63.1164 862.06,-78.5574"/>
+<polygon fill="#000000" stroke="#000000" points="861.332,-75.1328 852.154,-80.4257 862.63,-82.0116 861.332,-75.1328"/>
+</g>
+<!-- Pod::Block::Named -->
+<g id="node11" class="node"><title>Pod::Block::Named</title>
+<g id="a_node11"><a xlink:href="/type/Pod::Block::Named" xlink:title="Pod::Block::Named">
+<ellipse fill="none" stroke="#000000" cx="1297.69" cy="-18" rx="87.1846" ry="18"/>
+<text text-anchor="middle" x="1297.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::Block::Named</text>
+</a>
+</g>
+</g>
+<!-- Pod::Block::Named&#45;&gt;Pod::Block -->
+<g id="edge10" class="edge"><title>Pod::Block::Named&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M1233.93,-30.292C1216.2,-33.4319 1201.69,-36 1201.69,-36 1201.69,-36 975.548,-66.3437 865.484,-81.1118"/>
+<polygon fill="#000000" stroke="#000000" points="864.971,-77.6491 855.525,-82.448 865.902,-84.587 864.971,-77.6491"/>
+</g>
+<!-- Pod::FormattingCode -->
+<g id="node12" class="node"><title>Pod::FormattingCode</title>
+<g id="a_node12"><a xlink:href="/type/Pod::FormattingCode" xlink:title="Pod::FormattingCode">
+<ellipse fill="none" stroke="#000000" cx="1496.69" cy="-18" rx="94.4839" ry="18"/>
+<text text-anchor="middle" x="1496.69" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Pod::FormattingCode</text>
+</a>
+</g>
+</g>
+<!-- Pod::FormattingCode&#45;&gt;Pod::Block -->
+<g id="edge11" class="edge"><title>Pod::FormattingCode&#45;&gt;Pod::Block</title>
+<path fill="none" stroke="#000000" d="M1427.99,-30.3392C1409.1,-33.4576 1393.69,-36 1393.69,-36 1393.69,-36 1017.59,-69.9586 867.486,-83.5112"/>
+<polygon fill="#000000" stroke="#000000" points="867.149,-80.0272 857.505,-84.4124 867.779,-86.9989 867.149,-80.0272"/>
 </g>
 </g>
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Pod%3A%3ABlock.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 
@@ -311,12 +263,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Pod/Block.pod6'>Type/Pod/Block.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Pod::Block.pod6">/type/Pod::Block</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Pod/Block.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

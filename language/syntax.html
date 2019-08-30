@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_syntax">
-  
+<div id="content" class="pretty-box yellow content__language_syntax">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/syntax.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -230,7 +196,7 @@
 <p><a name="index-entry-String_(literals)"></a></p>
 <h3 id="String_literals"><a class="u" href="#___top" title="go to top of document">String literals</a></h3>
 <p>String literals are surrounded by quotes:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a&nbsp;string&nbsp;literal</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a&nbsp;string&nbsp;literal</span><span class="constant character escape perl6fe"><span>\n</span></span><span>that&nbsp;interprets&nbsp;escape&nbsp;sequences</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div></pre><p>See <a href="/language/quoting">quoting</a> for many more options, including <a href="/language/quoting#Escaping%3A_q">the escaping quoting <code>q</code></a>. Perl&nbsp;6 uses the standard escape characters in literals: <code>\a \b \t \n \f \r \e</code>, with the same meaning as the ASCII escape codes, specified in <a href="https://design.perl6.org/S02.html#Backslash_sequences">the design document</a>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>a&nbsp;string&nbsp;literal</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>a&nbsp;string&nbsp;literal</span><span class="constant character escape perl6fe"><span>\n</span></span><span>that&nbsp;interprets&nbsp;escape&nbsp;sequences</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div></pre><p>See <a href="/language/quoting">quoting</a> for many more options, including <a href="/language/quoting#Escaping:_q">the escaping quoting <code>q</code></a>. Perl&nbsp;6 uses the standard escape characters in literals: <code>\a \b \t \n \f \r \e</code>, with the same meaning as the ASCII escape codes, specified in <a href="https://design.perl6.org/S02.html#Backslash_sequences">the design document</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>🔔</span><span class="constant character escape perl6fe"><span>\a</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«🔔␇␤»</span></span></span></div></pre><p><a name="index-entry-0b_(radix_form)"></a> <a name="index-entry-0d_(radix_form)"></a> <a name="index-entry-0o_(radix_form)"></a> <a name="index-entry-0x_(radix_form)"></a> <a name="index-entry-Number_(literals)"></a></p>
 <h3 id="Number_literals"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-Number_literals"><span class="index-entry">Number literals</span></a></a></h3>
 <p>Number literals are generally specified in base ten (which can be specified literally, if needed, via the prefix <code>0d</code>), unless a prefix like <code>0x</code> (he<strong>x</strong>adecimal, base 16), <code>0o</code> (<strong>o</strong>ctal, base 8) or <code>0b</code> (<strong>b</strong>inary, base 2) or an explicit base in adverbial notation like <code>:16&lt;A0&gt; </code> specifies it otherwise. Unlike other programming languages, leading zeros do <em>not</em> indicate base 8; instead a compile-time warning is issued.</p>
@@ -312,12 +278,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/syntax.pod6'>Language/syntax.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/syntax.pod6">/language/syntax</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/syntax.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

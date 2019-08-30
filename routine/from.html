@@ -24,83 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
-                <a class="menu-item" href="/routine-sub.html">
-                    Sub
-                </a>
-             
-                <a class="menu-item" href="/routine-method.html">
-                    Method
-                </a>
-             
-                <a class="menu-item" href="/routine-term.html">
-                    Term
-                </a>
-             
-                <a class="menu-item" href="/routine-operator.html">
-                    Operator
-                </a>
-             
-                <a class="menu-item" href="/routine-trait.html">
-                    Trait
-                </a>
-             
-                <a class="menu-item" href="/routine-submethod.html">
-                    Submethod
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>method from</h1>
     
@@ -109,17 +51,17 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_CompUnit">class CompUnit</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(CompUnit)_method_from">(CompUnit) method from</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_List">class List</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(List)_method_from">(List) method from</a></td></tr>
-        <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Match">class Match</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Match)_method_from">(Match) method from</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#class_X::IO::Copy">class X::IO::Copy</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Match">class Match</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Match)_method_from">(Match) method from</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_List">class List</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(List)_method_from">(List) method from</a></td></tr>
+        <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#class_X::IO::Copy">class X::IO::Copy</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(X::IO::Copy)_method_from">(X::IO::Copy) method from</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#class_X::IO::Move">class X::IO::Move</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(X::IO::Move)_method_from">(X::IO::Move) method from</a></td></tr>
-    <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#class_X::IO::Rename">class X::IO::Rename</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#(X::IO::Rename)_method_from">(X::IO::Rename) method from</a></td></tr>
- 
+  <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#class_X::IO::Rename">class X::IO::Rename</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(X::IO::Rename)_method_from">(X::IO::Rename) method from</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">6</td><td class="toc-text"><a href="#class_X::IO::Move">class X::IO::Move</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">6.1</td><td class="toc-text"><a href="#(X::IO::Move)_method_from">(X::IO::Move) method from</a></td></tr>
+   
 </table>
 </nav>
 
@@ -127,40 +69,40 @@
     <p>Documentation for method <code>from</code> assembled from the following types:</p>
 <h1 id="class_CompUnit"><a class="u" href="#___top" title="go to top of document">class CompUnit</a></h1>
 <p>From <a href="/type/CompUnit#method_from">CompUnit</a></p>
-<h2 id="(CompUnit)_method_from"><a href="/routine/from#class_CompUnit">(CompUnit) method from</a></h2>
+<h2 id="(CompUnit)_method_from"><a href="/type/CompUnit#method_from">(CompUnit) method from</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>from</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the name of the language with which the <code>CompUnit</code> object was created (if any). It will be <code>Perl6</code> by default.</p>
+<h1 id="class_Match"><a class="u" href="#___top" title="go to top of document">class Match</a></h1>
+<p>From <a href="/type/Match#method_from">Match</a></p>
+<h2 id="(Match)_method_from"><a href="/type/Match#method_from">(Match) method from</a></h2>
+<p>Returns the index of the starting position of the match.</p>
 <h1 id="class_List"><a class="u" href="#___top" title="go to top of document">class List</a></h1>
 <p>From <a href="/type/List#method_from">List</a></p>
-<h2 id="(List)_method_from"><a href="/routine/from#class_List">(List) method from</a></h2>
+<h2 id="(List)_method_from"><a href="/type/List#method_from">(List) method from</a></h2>
 <p>Assumes the list contains <a href="/type/Match"><code>Match</code> objects</a> and returns the value of <code>.from</code> called on the first element of the list.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abcdefg</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>(c)(d)</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>from</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>abc123def</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="string regexp construct perl6fe"><span>m</span></span><span class="entity name section adverb regexp perl6fe"><span>:g</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="constant character escape class regexp perl6fe"><span>\d</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>from</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><h1 id="class_Match"><a class="u" href="#___top" title="go to top of document">class Match</a></h1>
-<p>From <a href="/type/Match#method_from">Match</a></p>
-<h2 id="(Match)_method_from"><a href="/routine/from#class_Match">(Match) method from</a></h2>
-<p>Returns the index of the starting position of the match.</p>
-<h1 id="class_X::IO::Copy"><a class="u" href="#___top" title="go to top of document">class X::IO::Copy</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>abcdefg</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>(c)(d)</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>from</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>abc123def</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="string regexp construct perl6fe"><span>m</span></span><span class="entity name section adverb regexp perl6fe"><span>:g</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="constant character escape class regexp perl6fe"><span>\d</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>list</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>from</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«3␤»</span></span></span></div></pre><h1 id="class_X::IO::Copy"><a class="u" href="#___top" title="go to top of document">class X::IO::Copy</a></h1>
 <p>From <a href="/type/X::IO::Copy#method_from">X::IO::Copy</a></p>
-<h2 id="(X::IO::Copy)_method_from"><a href="/routine/from#class_X%3A%3AIO%3A%3ACopy">(X::IO::Copy) method from</a></h2>
+<h2 id="(X::IO::Copy)_method_from"><a href="/type/X::IO::Copy#method_from">(X::IO::Copy) method from</a></h2>
 <p>Returns the source of the failed copy operation</p>
-<h1 id="class_X::IO::Move"><a class="u" href="#___top" title="go to top of document">class X::IO::Move</a></h1>
-<p>From <a href="/type/X::IO::Move#method_from">X::IO::Move</a></p>
-<h2 id="(X::IO::Move)_method_from"><a href="/routine/from#class_X%3A%3AIO%3A%3AMove">(X::IO::Move) method from</a></h2>
-<p>Returns the source of the failed <a href="/routine/move">move</a> operation</p>
 <h1 id="class_X::IO::Rename"><a class="u" href="#___top" title="go to top of document">class X::IO::Rename</a></h1>
 <p>From <a href="/type/X::IO::Rename#method_from">X::IO::Rename</a></p>
-<h2 id="(X::IO::Rename)_method_from"><a href="/routine/from#class_X%3A%3AIO%3A%3ARename">(X::IO::Rename) method from</a></h2>
+<h2 id="(X::IO::Rename)_method_from"><a href="/type/X::IO::Rename#method_from">(X::IO::Rename) method from</a></h2>
 <p>Returns the source of the failed rename operation</p>
+<h1 id="class_X::IO::Move"><a class="u" href="#___top" title="go to top of document">class X::IO::Move</a></h1>
+<p>From <a href="/type/X::IO::Move#method_from">X::IO::Move</a></p>
+<h2 id="(X::IO::Move)_method_from"><a href="/type/X::IO::Move#method_from">(X::IO::Move) method from</a></h2>
+<p>Returns the source of the failed <a href="/routine/move">move</a> operation</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

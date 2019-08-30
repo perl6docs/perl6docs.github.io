@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>syntax |</h1>
     
@@ -84,10 +50,10 @@
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#(Regexes)_regex_|">(Regexes) regex |</a></td></tr>
-                                           <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Quoted_lists_are_LTM_matches">Quoted lists are LTM matches</a></td></tr>
-                         <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Signature">class Signature</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Signature)_parameter_|">(Signature) parameter |</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_|_|">(Regexes) regex | |</a></td></tr>
+                                           <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Quoted_lists_are_LTM_matches">Quoted lists are LTM matches</a></td></tr>
+                         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Signature">class Signature</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Signature)_parameter_|_|">(Signature) parameter | |</a></td></tr>
                      
 </table>
 </nav>
@@ -95,8 +61,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>|</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#regex_%7C">Regexes</a></p>
-<h1 id="(Regexes)_regex_|"><a href="/syntax/|#language_documentation_Regexes">(Regexes) regex |</a></h1>
+<p>From <a href="/language/regexes#Longest_alternation:_|">Regexes</a></p>
+<h2 id="(Regexes)_regex_|_|"><a href="/language/regexes#Longest_alternation:_|">(Regexes) regex | |</a></h2>
 <p>In short, in regex branches separated by <code>|</code>, the longest token match wins, independent of the textual ordering in the regex. However, what <code>|</code> really does is more than that. It does not decide which branch wins after finishing the whole match, but follows the <a href="https://design.perl6.org/S05.html#Longest-token_matching">longest-token matching (LTM) strategy</a>.</p>
 <p>Briefly, what <code>|</code> does is this:</p>
 <ul><li><p>First, select the branch which has the longest declarative prefix.</p>
@@ -120,8 +86,8 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>/</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>f</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>fo</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>foo</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>food</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>/</span></span></span></div></pre><p>Arrays can also be interpolated into a regex to achieve the same effect:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>increasingly-edible</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>f&nbsp;fo&nbsp;foo&nbsp;food</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>food</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span>increasingly-edible</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«｢food｣␤»</span></span></span></div></pre><p>This is documented further under <a href="#Regex_interpolation">Regex Interpolation</a>, below.</p>
 <h1 id="class_Signature"><a class="u" href="#___top" title="go to top of document">class Signature</a></h1>
-<p>From <a href="/type/Signature#parameter_%7C">Signature</a></p>
-<h2 id="(Signature)_parameter_|"><a href="/syntax/|#class_Signature">(Signature) parameter |</a></h2>
+<p>From <a href="/type/Signature#Capture_parameters">Signature</a></p>
+<h2 id="(Signature)_parameter_|_|"><a href="/type/Signature#Capture_parameters">(Signature) parameter | |</a></h2>
 <p>Prefixing a parameter with a vertical bar <code>|</code> makes the parameter a <a href="/type/Capture"><code>Capture</code></a>, using up all the remaining positional and named arguments.</p>
 <p>This is often used in <code>proto</code> definitions (like <code>proto foo (|) {*}</code>) to indicate that the routine&#39;s <a href="/syntax/multi"><code>multi</code> definitions</a> can have any <a href="#Type_constraints">type constraints</a>. See <a href="/language/functions#proto">proto</a> for an example.</p>
 <p>If bound to a variable arguments can be forwarded as a whole using the slip operator <code>|</code>.</p>
@@ -131,12 +97,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

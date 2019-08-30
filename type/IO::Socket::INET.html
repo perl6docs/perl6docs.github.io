@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_IO_Socket_INET">
-  
+<div id="content" class="pretty-box yellow content__type_IO__Socket__INET">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/IO/Socket/INET.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/IO::Socket::INET.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -153,8 +103,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>accept</span></span><span>()</span></span></div></pre><p>In listen/server mode, waits for a new incoming connection. Once a new connection is established, an <code>IO::Socket::INET</code> instance (or a subclass instance) for consuming the connection is returned.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>IO::Socket::INET</code></figcaption>
+  <figcaption>Type relations for <code>IO::Socket::INET</code></figcaption>
   <svg width="188pt" height="188pt"
  viewBox="0.00 0.00 188.29 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
@@ -211,36 +160,39 @@
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-IO%3A%3ASocket%3A%3AINET.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 <h1 id="Routines_supplied_by_role_IO::Socket"><a class="u" href="#___top" title="go to top of document">Routines supplied by role IO::Socket</a></h1>
 <p>IO::Socket::INET does role <a href="/type/IO::Socket">IO::Socket</a>, which provides the following routines:</p>
-<h2 id="(IO::Socket)_method_recv"><a href="/routine/recv#role_IO%3A%3ASocket">(IO::Socket) method recv</a></h2>
+<h2 id="(IO::Socket)_method_recv"><a href="/type/IO::Socket#method_recv">(IO::Socket) method recv</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>recv</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Cool</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>elems</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>Inf</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bin</span></span></span><span>)</span></span></div></pre><p>Receive a packet and return it, either as a <a href="/type/Blob">Blob</a> if <code>:bin</code> was passed, or a <a href="/type/Str">Str</a> if not. Receives up to <code>$elems</code> or <code>65535</code> (whichever is smaller) bytes or characters.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_read"><a href="/routine/read#role_IO%3A%3ASocket">(IO::Socket) method read</a></h2>
+<h2 id="(IO::Socket)_method_read"><a href="/type/IO::Socket#method_read">(IO::Socket) method read</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>read</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>bytes</span></span></span><span>)</span></span></div></pre><p>Reads <code>$bytes</code> bytes from the socket and returns them in a <a href="/type/Blob">Blob</a>.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_routine_get"><a href="/routine/get#role_IO%3A%3ASocket">(IO::Socket) routine get</a></h2>
+<h2 id="(IO::Socket)_routine_get"><a href="/type/IO::Socket#routine_get">(IO::Socket) routine get</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>get</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Reads a single line of input from the socket, removing the trailing newline characters (as set by <a href="/routine/nl-in"><code>.nl-in</code></a>). Returns <code>Nil</code>, if no more input is available.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_print"><a href="/routine/print#role_IO%3A%3ASocket">(IO::Socket) method print</a></h2>
+<h2 id="(IO::Socket)_method_print"><a href="/type/IO::Socket#method_print">(IO::Socket) method print</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>print</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>string</span></span></span><span>)</span></span></div></pre><p>Writes the supplied string to the socket, thus sending it to other end of the connection. The binary version is <a href="#method_write">method write</a>.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_write"><a href="/routine/write#role_IO%3A%3ASocket">(IO::Socket) method write</a></h2>
+<h2 id="(IO::Socket)_method_write"><a href="/type/IO::Socket#method_write">(IO::Socket) method write</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>write</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Blob</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>buf</span></span></span><span>)</span></span></div></pre><p>Writes the supplied buffer to the socket, thus sending it to other end of the connection. The string version is <a href="#method_print">method print</a>.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_put"><a href="/routine/put#role_IO%3A%3ASocket">(IO::Socket) method put</a></h2>
+<h2 id="(IO::Socket)_method_put"><a href="/type/IO::Socket#method_put">(IO::Socket) method put</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>string</span></span></span><span>)</span></span></div></pre><p>Writes the supplied string, with a <code>\n</code> appended to it, to the socket, thus sending it to other end of the connection.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_close"><a href="/routine/close#role_IO%3A%3ASocket">(IO::Socket) method close</a></h2>
+<h2 id="(IO::Socket)_method_close"><a href="/type/IO::Socket#method_close">(IO::Socket) method close</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>close</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Closes the socket.</p>
 <p>Fails if the socket is not connected.</p>
-<h2 id="(IO::Socket)_method_native-descriptor"><a href="/routine/native-descriptor#role_IO%3A%3ASocket">(IO::Socket) method native-descriptor</a></h2>
+<h2 id="(IO::Socket)_method_native-descriptor"><a href="/type/IO::Socket#method_native-descriptor">(IO::Socket) method native-descriptor</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>native-descriptor</span></span><span>()</span></span></div></pre><p>This returns a value that the operating system would understand as a &quot;socket descriptor&quot; and is suitable for passing to a native function that requires a socket descriptor as an argument such as <code>setsockopt</code>.</p>
 
     </div>
@@ -248,12 +200,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/IO/Socket/INET.pod6'>Type/IO/Socket/INET.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/IO::Socket::INET.pod6">/type/IO::Socket::INET</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/IO/Socket/INET.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

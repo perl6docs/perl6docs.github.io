@@ -24,105 +24,51 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
-                <a class="menu-item" href="/routine-sub.html">
-                    Sub
-                </a>
-             
-                <a class="menu-item" href="/routine-method.html">
-                    Method
-                </a>
-             
-                <a class="menu-item" href="/routine-term.html">
-                    Term
-                </a>
-             
-                <a class="menu-item" href="/routine-operator.html">
-                    Operator
-                </a>
-             
-                <a class="menu-item" href="/routine-trait.html">
-                    Trait
-                </a>
-             
-                <a class="menu-item" href="/routine-submethod.html">
-                    Submethod
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>sub MAIN</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Command_line_interface">language documentation Command line interface</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#(Command_line_interface)_sub_MAIN">(Command line interface) sub MAIN</a></td></tr>
-                                                                                                                                                                                                    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#%*SUB-MAIN-OPTS">%*SUB-MAIN-OPTS</a></td></tr>
-           <tr class="toc-level-3"><td class="toc-number">2.1.1</td><td class="toc-text"><a href="#named-anywhere">named-anywhere</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#is_hidden-from-USAGE">is hidden-from-USAGE</a></td></tr>
-                             <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#language_documentation_Functions">language documentation Functions</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#(Functions)_sub_MAIN">(Functions) sub MAIN</a></td></tr>
-     
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Functions">language documentation Functions</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Functions)_sub_MAIN">(Functions) sub MAIN</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Command_line_interface">language documentation Command line interface</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Command_line_interface)_sub_MAIN">(Command line interface) sub MAIN</a></td></tr>
+                                                                                                                                                                                                    <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#%*SUB-MAIN-OPTS">%*SUB-MAIN-OPTS</a></td></tr>
+           <tr class="toc-level-3"><td class="toc-number">2.2.1</td><td class="toc-text"><a href="#named-anywhere">named-anywhere</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#is_hidden-from-USAGE">is hidden-from-USAGE</a></td></tr>
+                            
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for sub <code>MAIN</code> assembled from the following types:</p>
+<h1 id="language_documentation_Functions"><a class="u" href="#___top" title="go to top of document">language documentation Functions</a></h1>
+<p>From <a href="/language/functions#sub_MAIN">Functions</a></p>
+<h2 id="(Functions)_sub_MAIN"><a href="/language/functions#sub_MAIN">(Functions) sub MAIN</a></h2>
+<p>Declaring a <code>sub MAIN</code> is not compulsory in Perl&nbsp;6 scripts, but you can provide one to create a <a href="/language/create-cli">command line interface</a> for your script.</p>
 <h1 id="language_documentation_Command_line_interface"><a class="u" href="#___top" title="go to top of document">language documentation Command line interface</a></h1>
-<p>From <a href="/language/create-cli#line_MAIN">Command line interface</a></p>
-<h1 id="(Command_line_interface)_sub_MAIN"><a href="/routine/MAIN#language_documentation_Command_line_interface">(Command line interface) sub MAIN</a></h1>
+<p>From <a href="/language/create-cli#sub_MAIN">Command line interface</a></p>
+<h2 id="(Command_line_interface)_sub_MAIN"><a href="/language/create-cli#sub_MAIN">(Command line interface) sub MAIN</a></h2>
 <p>The sub with the special name <code>MAIN</code> will be executed after all relevant entry phasers (<code>BEGIN</code>, <code>CHECK</code>, <code>INIT</code>, <code>PRE</code>, <code>ENTER</code>) have been run and the <a href="/language/glossary#index-entry-Mainline">mainline</a> of the script has been executed. No error will occur if there is no <code>MAIN</code> sub: your script will then just have to do the work, such as argument parsing, in the mainline of the script.</p>
 <p>Any normal exit from the <code>MAIN</code> sub will result in an exit code of <code>0</code>, indicating success. Any return value of the <code>MAIN</code> sub will be ignored. If an exception is thrown that is not handled inside the <code>MAIN</code> sub, then the exit code will be <code>1</code>. If the dispatch to <code>MAIN</code> failed, a usage message will be displayed on STDERR and the exit code will be <code>2</code>.</p>
 <p>The command line parameters are present in the <code>@*ARGS</code> dynamic variable and may be altered in the mainline of the script before the <code>MAIN</code> unit is called.</p>
@@ -154,22 +100,18 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>perl6</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>verbose</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Usage</span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>name</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>by</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>which</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>you</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>would</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>like</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>be</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>called</span></span></span></div></pre><p>Without the <code>hidden-from-USAGE</code> trait on the first candidate, it would have looked like this:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>perl6</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>verbose</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>Usage</span></span><span class="keyword operator generic perl6fe"><span>:</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>hello</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>name</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>the</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>by</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>which</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>you</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>would</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>like</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>to</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>be</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>called</span></span></span></div></pre><p>Which, although technically correct, doesn&#39;t read as well.</p>
 <p><a name="index-entry-declarator_unit_(MAIN)"></a></p>
-<h1 id="language_documentation_Functions"><a class="u" href="#___top" title="go to top of document">language documentation Functions</a></h1>
-<p>From <a href="/language/functions#sub_MAIN">Functions</a></p>
-<h1 id="(Functions)_sub_MAIN"><a href="/routine/MAIN#language_documentation_Functions">(Functions) sub MAIN</a></h1>
-<p>Declaring a <code>sub MAIN</code> is not compulsory in Perl&nbsp;6 scripts, but you can provide one to create a <a href="/language/create-cli">command line interface</a> for your script.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

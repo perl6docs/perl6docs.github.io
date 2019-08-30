@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title> hash</title>
+        <title>syntax hash</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,61 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'> hash</h1>
+
+    <h1 class='title'>syntax hash</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
@@ -90,10 +56,10 @@
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for  <code>hash</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>hash</code> assembled from the following types:</p>
 <h1 id="language_documentation_Perl_6_by_example_P6-101"><a class="u" href="#___top" title="go to top of document">language documentation Perl&nbsp;6 by example P6-101</a></h1>
-<p>From <a href="/language/101-basics#by_hash">Perl&nbsp;6 by example P6-101</a></p>
-<h2 id="(Perl_6_by_example_P6-101)_hash"><a href="/syntax/hash#language_documentation_Perl_6_by_example_P6-101">(Perl&nbsp;6 by example P6-101)  hash</a></h2>
+<p>From <a href="/language/101-basics#hash">Perl&nbsp;6 by example P6-101</a></p>
+<h2 id="(Perl_6_by_example_P6-101)_hash"><a href="/language/101-basics#hash">(Perl&nbsp;6 by example P6-101)  hash</a></h2>
 <p>These two lines of code declare two hashes. The <code>%</code> sigil marks each variable as a <code>Hash</code>. A <code>Hash</code> is an unordered collection of key-value pairs. Other programming languages call that a <em>hash table</em>, <em>dictionary</em>, or <em>map</em>. You can query a hash table for the value that corresponds to a certain <code>$key</code> with <code>%hash{$key}</code>.</p>
 <p>In the score counting program, <code>%matches</code> stores the number of matches each player has won. <code>%sets</code> stores the number of sets each player has won. Both of these hashes are indexed by the player&#39;s name.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>file</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>lines</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>line</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>...</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre>
@@ -102,12 +68,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

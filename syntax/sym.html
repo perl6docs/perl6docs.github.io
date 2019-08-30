@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>&lt;sym&gt; sym</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Creating_grammars">Creating grammars</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Creating_grammars)_&lt;sym&gt;_sym">(Creating grammars) &lt;sym&gt; sym</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Grammars">language documentation Grammars</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Grammars)_&lt;sym&gt;_sym">(Grammars) &lt;sym&gt; sym</a></td></tr>
           
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for &lt;sym&gt; <code>sym</code> assembled from the following types:</p>
-<h1 id="Creating_grammars"><a class="u" href="#___top" title="go to top of document"> Creating grammars</a></h1>
-<p>From <a href="/syntax/Creating grammars#grammars%29_sym">Creating grammars</a></p>
-<h2 id="(Creating_grammars)_<sym>_sym"><a href="/syntax/sym#_Creating_grammars">(Creating grammars) &lt;sym&gt; sym</a></h2>
+<h1 id="language_documentation_Grammars"><a class="u" href="#___top" title="go to top of document">language documentation Grammars</a></h1>
+<p>From <a href="/language/grammars#sym">Grammars</a></p>
+<h2 id="(Grammars)_<sym>_sym"><a href="/language/grammars#sym">(Grammars) &lt;sym&gt; sym</a></h2>
 <p>The <code>&lt;sym&gt;</code> token can be used inside proto regexes to match the string value of the <code>:sym</code> adverb for that particular regex:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>grammar</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Foo</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named TOP perl6fe"><span>TOP</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexname perl6fe"><span>letter</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>proto</span></span><span>&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span class="keyword operator quantifiers regexp perl6fe"><span>*</span></span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>sym</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>P</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexname perl6fe"><span>sym</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>sym</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>e</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexname perl6fe"><span>sym</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>sym</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>r</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexname perl6fe"><span>sym</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>sym</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>l</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexname perl6fe"><span>sym</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta regexp named perl6fe"><span class="storage type declare regexp named perl6fe"><span>token</span></span><span>&nbsp;</span><span class="entity name function regexp named perl6fe"><span>letter</span></span><span class="meta regexp named adverb perl6fe"><span class="punctuation definition regexp adverb perl6fe"><span>:</span></span><span class="support type class adverb perl6fe"><span>sym</span></span></span><span>&lt;</span><span class="string array words perl6fe"><span>*</span></span><span>&gt;</span><span>&nbsp;</span><span class="meta regexp named block perl6fe"><span class="punctuation definition regex named perl6fe"><span>{</span></span><span>&nbsp;&nbsp;&nbsp;</span><span class="keyword operator quantifiers regexp perl6fe"><span>.</span></span><span>&nbsp;&nbsp;&nbsp;</span></span><span class="punctuation definition regexp named perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>parse</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>I&nbsp;♥&nbsp;Perl</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>actions&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>class</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>TOP</span></span><span>(</span><span class="keyword other special-method perl6fe"><span>$/</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control flowcontrol regex perl6fe"><span>make</span></span><span>&nbsp;</span><span class="meta match variable perl6fe"><span class="variable other identifier sigil regexp perl6"><span>$</span></span><span class="support class match name delimiter regexp perl6fe"><span>&lt;</span></span><span class="variable other identifier regexp perl6"><span>letter</span></span><span class="support class match name delimiter regexp perl6fe"><span>&gt;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>grep</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span><span>.</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>sym</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>join</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="keyword control flowcontrol regex perl6fe"><span>made</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl␤»</span></span></span></div></pre><p>This comes in handy when you&#39;re already differentiating the proto regexes with the strings you&#39;re going to match, as using <code>&lt;sym&gt;</code> token prevents repetition of those strings.</p>
 <p><a name="index-entry-<?>"></a></p>
@@ -103,12 +69,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

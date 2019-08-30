@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_pod">
-  
+<div id="content" class="pretty-box yellow content__language_pod">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/pod.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -390,7 +356,7 @@ because you &quot;OR&quot; the &quot;cache&quot;.
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>perl6</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>doc</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>input</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>pod6</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>output</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>txt</span></span></span></div></pre><p>You can even embed Pod6 directly in your program and add the traditional Unix command line &quot;--man&quot; option to your program with a multi MAIN subroutine like this:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>MAIN</span></span><span>(</span><span class="support type perl6fe"><span>Bool</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>man</span></span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>run</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>EXECUTABLE</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>--doc</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>PROGRAM</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>Now <code>myprogram --man</code> will output your Pod6 rendered as a man page.</p>
 <h1 id="Accessing_Pod"><a class="u" href="#___top" title="go to top of document">Accessing Pod</a></h1>
-<p>In order to access Pod6 documentation from within a Perl&nbsp;6 program the special <code>=</code> twigil, as documented in the <a href="/language/variables#The_%3D_twigil">variables section</a>, must be used.</p>
+<p>In order to access Pod6 documentation from within a Perl&nbsp;6 program the special <code>=</code> twigil, as documented in the <a href="/language/variables#The_=_twigil">variables section</a>, must be used.</p>
 <p>The <code>=</code> twigil provides the introspection over the Pod6 structure, providing a <a href="/type/Pod::Block">Pod::Block</a> tree root from which it is possible to access the whole structure of the Pod6 document.</p>
 <p>As an example, the following piece of code introspects its own Pod6 documentation:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>pod</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>head1</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span>This&nbsp;is&nbsp;a&nbsp;head1&nbsp;title</span></span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>This&nbsp;is&nbsp;a&nbsp;paragraph.</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>head2</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span>Subsection</span></span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>Here&nbsp;some&nbsp;text&nbsp;for&nbsp;the&nbsp;subsection.</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>pod</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>=</span></span><span class="variable other identifier perl6fe"><span>pod</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pod-item</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pod-item</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>contents</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pod-block</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>pod-block</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>producing the following output:</p>
@@ -403,12 +369,12 @@ because you &quot;OR&quot; the &quot;cache&quot;.
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/pod.pod6'>Language/pod.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/pod.pod6">/language/pod</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/pod.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

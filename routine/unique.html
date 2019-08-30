@@ -24,104 +24,57 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
-                <a class="menu-item" href="/routine-sub.html">
-                    Sub
-                </a>
-             
-                <a class="menu-item" href="/routine-method.html">
-                    Method
-                </a>
-             
-                <a class="menu-item" href="/routine-term.html">
-                    Term
-                </a>
-             
-                <a class="menu-item" href="/routine-operator.html">
-                    Operator
-                </a>
-             
-                <a class="menu-item" href="/routine-trait.html">
-                    Trait
-                </a>
-             
-                <a class="menu-item" href="/routine-submethod.html">
-                    Submethod
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>routine unique</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_routines">class routines</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(routines)_routine_unique">(routines) routine unique</a></td></tr>
-                                       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Any">class Any</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Supply">class Supply</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Supply)_method_unique">(Supply) method unique</a></td></tr>
+           <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Any">class Any</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Any)_method_unique">(Any) method unique</a></td></tr>
-                    <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Supply">class Supply</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Supply)_method_unique">(Supply) method unique</a></td></tr>
-          
+                    <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Independent_routines)_routine_unique">(Independent routines) routine unique</a></td></tr>
+                                      
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for routine <code>unique</code> assembled from the following types:</p>
-<h1 id="class_routines"><a class="u" href="#___top" title="go to top of document">class routines</a></h1>
-<p>From <a href="/type/independent-routines#routine_unique">routines</a></p>
-<h2 id="(routines)_routine_unique"><a href="/routine/unique#class_routines">(routines) routine unique</a></h2>
+<h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
+<p>From <a href="/type/Supply#method_unique">Supply</a></p>
+<h2 id="(Supply)_method_unique"><a href="/type/Supply#method_unique">(Supply) method unique</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>expires</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a supply that only provides unique values, as defined by the optional <code>:as</code> and <code>:with</code> parameters (same as with <a href="/type/List#routine_unique">List.unique</a>). The optional <code>:expires</code> parameter how long to wait (in seconds) before &quot;resetting&quot; and not considering a value to have been seen, even if it&#39;s the same as an old value.</p>
+<h1 id="class_Any"><a class="u" href="#___top" title="go to top of document">class Any</a></h1>
+<p>From <a href="/type/Any#method_unique">Any</a></p>
+<h2 id="(Any)_method_unique"><a href="/type/Any#method_unique">(Any) method unique</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>()</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div></pre><p>Creates a sequence of unique elements either of the object or of <code>values</code> in the case it&#39;s called as a <code>sub</code>.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;2&nbsp;3&nbsp;3&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;2&nbsp;3)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>unique</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;2&nbsp;3&nbsp;3&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;2&nbsp;3)␤»</span></span></span></div></pre><p>The <code>:as</code> and <code>:with</code> parameters receive functions that are used for transforming the item before checking equality, and for checking equality, since by default the <a href="/routine/==="><code>===</code></a> operator is used:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>1</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>1&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="string pair key perl6fe"><span>as&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>,&nbsp;</span><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;&amp;[</span><span class="keyword operator multi-symbol perl6fe"><span>==</span></span><span>]&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(1&nbsp;2)␤»</span></span></span></div></pre><p>Please see <a href="/type/independent-routines#routine_unique"><code>unique</code></a> for additional examples that use its sub form.</p>
+<h1 id="language_documentation_Independent_routines"><a class="u" href="#___top" title="go to top of document">language documentation Independent routines</a></h1>
+<p>From <a href="/language/independent-routines#routine_unique">Independent routines</a></p>
+<h2 id="(Independent_routines)_routine_unique"><a href="/language/independent-routines#routine_unique">(Independent routines) routine unique</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>+</span></span><span class="support function perl6fe"><span>values</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>c</span></span><span>)</span></span></div></pre><p>Returns a sequence of <strong>unique</strong> values from the invocant/argument list, such that only the first occurrence of each duplicated value remains in the result list. <code>unique</code> uses the semantics of the <a href="/routine/===">===</a> operator to decide whether two objects are the same, unless the optional <code>:with</code> parameter is specified with another comparator. The order of the original list is preserved even as duplicates are removed.</p>
 <p>Examples:</p>
@@ -131,29 +84,18 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>a&nbsp;A&nbsp;B&nbsp;b&nbsp;c&nbsp;b&nbsp;C</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>as</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>lc</span></span></span><span>))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(a&nbsp;B&nbsp;c)␤»</span></span></span></div></pre><p>One can also specify the comparator with the optional <code>:with</code> parameter. For instance if one wants a list of unique hashes, one could use the <code>eqv</code> comparator.</p>
 <p>Example:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>list</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>%</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>),</span><span class="keyword other special-method perl6fe"><span>&nbsp;%</span></span><span>(</span><span class="string pair key perl6fe"><span>b&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>13</span></span><span>),</span><span class="keyword other special-method perl6fe"><span>&nbsp;%</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>list</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>with</span></span><span>(&amp;[</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>]))&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«({a&nbsp;=&gt;&nbsp;42}&nbsp;{b&nbsp;=&gt;&nbsp;13})␤»</span></span></span></div></pre><p><strong>Note:</strong> since <code>:with</code> <a href="/type/Callable">Callable</a> has to be tried with all the items in the list, this makes <code>unique</code> follow a path with much higher algorithmic complexity. You should try to use the <code>:as</code> argument instead, whenever possible.</p>
-<h1 id="class_Any"><a class="u" href="#___top" title="go to top of document">class Any</a></h1>
-<p>From <a href="/type/Any#method_unique">Any</a></p>
-<h2 id="(Any)_method_unique"><a href="/routine/unique#class_Any">(Any) method unique</a></h2>
-<p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>()</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span class="keyword operator generic perl6fe"><span>!</span></span><span>&nbsp;)</span></span></div></pre><p>Creates a sequence of unique elements either of the object or of <code>values</code> in the case it&#39;s called as a <code>sub</code>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;2&nbsp;3&nbsp;3&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;2&nbsp;3)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>unique</span></span><span>&nbsp;</span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1&nbsp;2&nbsp;2&nbsp;3&nbsp;3&nbsp;3</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;2&nbsp;3)␤»</span></span></span></div></pre><p>The <code>:as</code> and <code>:with</code> parameters receive functions that are used for transforming the item before checking equality, and for checking equality, since by default the <a href="/routine/==="><code>===</code></a> operator is used:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>1</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>1&nbsp;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unique</span></span><span>(&nbsp;</span><span class="string pair key perl6fe"><span>as&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>,&nbsp;</span><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;&amp;[</span><span class="keyword operator multi-symbol perl6fe"><span>==</span></span><span>]&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(1&nbsp;2)␤»</span></span></span></div></pre><p>Please see <a href="/type/independent-routines#routine_unique"><code>unique</code></a> for additional examples that use its sub form.</p>
-<h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
-<p>From <a href="/type/Supply#method_unique">Supply</a></p>
-<h2 id="(Supply)_method_unique"><a href="/routine/unique#class_Supply">(Supply) method unique</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unique</span></span><span>(</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>as</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>with</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>expires</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Supply</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Creates a supply that only provides unique values, as defined by the optional <code>:as</code> and <code>:with</code> parameters (same as with <a href="/type/List#routine_unique">List.unique</a>). The optional <code>:expires</code> parameter how long to wait (in seconds) before &quot;resetting&quot; and not considering a value to have been seen, even if it&#39;s the same as an old value.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

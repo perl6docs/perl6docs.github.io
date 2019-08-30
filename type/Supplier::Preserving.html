@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Supplier_Preserving">
-  
+<div id="content" class="pretty-box yellow content__type_Supplier__Preserving">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Supplier/Preserving.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Supplier::Preserving.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -126,16 +76,37 @@
 </nav>
 
     <div class="pod-body">
-    <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Supplier::Preserving</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Supplier</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>This is a factory for live <a href="/type/Supply">Supply</a> objects, which provides the mechanism for emitting new values onto the supplies, whereby values are kept when no consumer has tapped into the <code>Supply</code>. Any tapping will consume the already stored and future values.</p>
+    <pre class="pod-block-code">class Supplier::Preserving is Supplier { }</pre>
+<p>This is a factory for live <a href="/type/Supply">Supply</a>-type objects, and it provides the mechanism for emitting new values onto the supplies, whereby values are kept when no consumer has tapped into the <code>Supply</code>. Any tapping will consume the already stored and future values.</p>
 <p>Starting a preserving <code>Supply</code> and consuming its values after it is <code>done</code>:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Supplier</span></span><span>::</span><span class="routine name perl6fe"><span>Preserving</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>start</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>^</span></span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>emit</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>LAST</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted left_double-low-q_right_double perl6fe"><span class="punctuation definition string begin perl6fe"><span>„</span></span><span>done&nbsp;after&nbsp;</span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>now</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="keyword control closure trait perl6fe"><span>BEGIN</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>now</span></span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span>s</span><span class="punctuation definition string end perl6fe"><span>“</span></span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>done</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>sleep</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>react</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>whenever</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Supply</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>whenever</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Promise</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>in</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>done</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted left_double-low-q_right_double perl6fe"><span class="punctuation definition string begin perl6fe"><span>„</span></span><span>also&nbsp;done&nbsp;after&nbsp;</span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>now</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>-</span></span><span>&nbsp;</span><span class="keyword control closure trait perl6fe"><span>BEGIN</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>now</span></span><span>&nbsp;</span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span>s</span><span class="punctuation definition string end perl6fe"><span>“</span></span></span></span></div></pre><p>Will output:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>done</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>after</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0.0638467</span></span><span>s</span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>0</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>2</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>also</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>done</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>after</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4.0534119</span></span><span>s</span></span></div></pre><h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
+<pre class="pod-block-code">my $p = Supplier::Preserving.new;
+start for ^3 {
+    $p.emit($_);
+    LAST {
+        say „done after { now - BEGIN now}s“;
+        $p.done;
+    }
+}
+sleep 2;
+react {
+    whenever $p.Supply { $_.say; }
+    whenever Promise.in(2) { done }
+}
+say „also done after { now - BEGIN now }s“</pre>
+<p>Will output:</p>
+<pre class="pod-block-code">done after 0.0638467s
+0
+1
+2
+also done after 4.0534119s
+</pre>
+<h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_new"><a class="u" href="#___top" title="go to top of document">method new</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>()</span></span></div></pre><p>The <code>Supplier</code> constructor.</p>
+<pre class="pod-block-code">method new()</pre>
+<p>The <code>Supplier</code> constructor.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Supplier::Preserving</code></figcaption>
+  <figcaption>Type relations for <code>Supplier::Preserving</code></figcaption>
   <svg width="187pt" height="260pt"
  viewBox="0.00 0.00 187.38 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
@@ -192,24 +163,41 @@
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Supplier%3A%3APreserving.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 <h1 id="Routines_supplied_by_class_Supplier"><a class="u" href="#___top" title="go to top of document">Routines supplied by class Supplier</a></h1>
 <p>Supplier::Preserving inherits from class <a href="/type/Supplier">Supplier</a>, which provides the following routines:</p>
-<h2 id="(Supplier)_method_new"><a href="/routine/new#class_Supplier">(Supplier) method new</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>()</span></span></div></pre><p>The <code>Supplier</code> constructor.</p>
-<h2 id="(Supplier)_method_Supply"><a href="/routine/Supply#class_Supplier">(Supplier) method Supply</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Supply</span></span><span>(</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Supply</span></span><span>)</span></span></div></pre><p>This creates a new <code>Supply</code> object to which any values which are emitted on this supplier are passed. This is the factory for all <code>live</code> supplies.</p>
-<h2 id="(Supplier)_method_emit"><a href="/routine/emit#class_Supplier">(Supplier) method emit</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>emit</span></span><span>(</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Mu</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>value</span></span><span>)</span></span></div></pre><p>Sends the given value to all of the taps on all of the supplies created by <code>Supply</code> on this <code>Supplier</code>.</p>
-<h2 id="(Supplier)_method_done"><a href="/routine/done#class_Supplier">(Supplier) method done</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>done</span></span><span>(</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Calls the <code>done</code> callback on all the taps that have one.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supplier</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supply</span></span></span><span>&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supplier</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>Supply</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supply</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>tap</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>v</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>done&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>no&nbsp;more&nbsp;answers</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supplier</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>emit</span></span><span>(</span><span class="constant numeric perl6fe"><span>42</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>supplier</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>done</span></span><span>;</span></span></div></pre><p>Will output:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>42</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>no</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>more</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>answers</span></span></span></div></pre><h2 id="(Supplier)_method_quit"><a href="/routine/quit#class_Supplier">(Supplier) method quit</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>quit</span></span><span>(</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>Exception</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>ex</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>quit</span></span><span>(</span><span class="routine name perl6fe"><span>Supplier</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>message</span></span></span><span>)</span></span></div></pre><p>Calls the <code>quit</code> callback on all the taps that have one, passing the exception to them. If called with a <a href="/type/Str">Str</a> the exception will be an <a href="/type/X::AdHoc">X::AdHoc</a> with the supplied message.</p>
+<h2 id="(Supplier)_method_new"><a href="/type/Supplier#method_new">(Supplier) method new</a></h2>
+<pre class="pod-block-code">method new()</pre>
+<p>The <code>Supplier</code> constructor.</p>
+<h2 id="(Supplier)_method_Supply"><a href="/type/Supplier#method_Supply">(Supplier) method Supply</a></h2>
+<pre class="pod-block-code">method Supply(Supplier:D: --&gt; Supply)</pre>
+<p>This creates a new <code>Supply</code> object to which any values which are emitted on this supplier are passed. This is the factory for all <code>live</code> supplies.</p>
+<h2 id="(Supplier)_method_emit"><a href="/type/Supplier#method_emit">(Supplier) method emit</a></h2>
+<pre class="pod-block-code">method emit(Supplier:D: Mu \value)</pre>
+<p>Sends the given value to all of the taps on all of the supplies created by <code>Supply</code> on this <code>Supplier</code>.</p>
+<h2 id="(Supplier)_method_done"><a href="/type/Supplier#method_done">(Supplier) method done</a></h2>
+<pre class="pod-block-code">method done(Supplier:D:)</pre>
+<p>Calls the <code>done</code> callback on all the taps that have one.</p>
+<pre class="pod-block-code">my $supplier = Supplier.new;
+my $supply   = $supplier.Supply;
+$supply.tap(-&gt; $v { say $v }, done =&gt; { say &quot;no more answers&quot; });
+$supplier.emit(42);
+$supplier.done;</pre>
+<p>Will output:</p>
+<pre class="pod-block-code">42
+no more answers
+</pre>
+<h2 id="(Supplier)_method_quit"><a href="/type/Supplier#method_quit">(Supplier) method quit</a></h2>
+<pre class="pod-block-code">multi method quit(Supplier:D: Exception $ex)
+multi method quit(Supplier:D: Str() $message)</pre>
+<p>Calls the <code>quit</code> callback on all the taps that have one, passing the exception to them. If called with a <a href="/type/Str">Str</a> the exception will be an <a href="/type/X::AdHoc">X::AdHoc</a> with the supplied message.</p>
 <p>This is meant for shutting down a supply with an error.</p>
 
     </div>
@@ -217,12 +205,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Supplier/Preserving.pod6'>Type/Supplier/Preserving.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Supplier::Preserving.pod6">/type/Supplier::Preserving</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Supplier/Preserving.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

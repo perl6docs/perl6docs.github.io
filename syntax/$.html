@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>variable $</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#declarator_state">declarator state</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(state)_variable_$">(state) variable $</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Variables">language documentation Variables</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Variables)_variable_$">(Variables) variable $</a></td></tr>
                                                 
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for variable <code>$</code> assembled from the following types:</p>
-<h1 id="declarator_state"><a class="u" href="#___top" title="go to top of document">declarator state</a></h1>
-<p>From <a href="/syntax/state#variable_%24">state</a></p>
-<h2 id="(state)_variable_$"><a href="/syntax/$#declarator_state">(state) variable $</a></h2>
+<h1 id="language_documentation_Variables"><a class="u" href="#___top" title="go to top of document">language documentation Variables</a></h1>
+<p>From <a href="/language/variables#The_$_variable">Variables</a></p>
+<h2 id="(Variables)_variable_$"><a href="/language/variables#The_$_variable">(Variables) variable $</a></h2>
 <p>In addition to explicitly declared named state variables, <code>$</code> can be used as an anonymous state variable without an explicit <code>state</code> declaration.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>1-a&nbsp;2-b&nbsp;3-c</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>subst</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>g</span></span><span>,</span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="constant character escape class regexp perl6fe"><span>\d</span></span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>,&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>one&nbsp;two&nbsp;three</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>[$</span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>]</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«one-a&nbsp;two-b&nbsp;three-c␤»</span></span></span></div></pre><p>Furthermore, state variables can be used outside of subroutines. You could, for example, use <code>$</code> in a one-liner to number the lines in a file.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>perl6</span></span><span>&nbsp;-</span><span class="keyword operator word perl6fe"><span>ne</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>say&nbsp;++$&nbsp;~&nbsp;&quot;&nbsp;$_&quot;</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>example</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>txt</span></span></span></div></pre><p>Each reference to <code>$</code> within a lexical scope is in effect a separate variable.</p>
@@ -106,12 +72,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Metamodel_ParametricRoleGroupHOW">
-  
+<div id="content" class="pretty-box yellow content__type_Metamodel__ParametricRoleGroupHOW">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Metamodel/ParametricRoleGroupHOW.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Metamodel::ParametricRoleGroupHOW.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -126,8 +76,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>zape</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Metamodel</span></span><span>::</span><span class="routine name perl6fe"><span>ParametricRoleGroupHOW</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>new_type</span></span><span>(&nbsp;</span><span class="string pair key perl6fe"><span>name&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>zape</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>zipi</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Metamodel</span></span><span>::</span><span class="routine name perl6fe"><span>ParametricRoleHOW</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>new_type</span></span><span>(&nbsp;</span><span class="string pair key perl6fe"><span>name&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>zipi</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="string pair key perl6fe"><span>group&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>zape</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>zipi</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ParametricRoleHOW.new␤»</span><span>&nbsp;</span></span></span></div></pre><p><em>Note</em>: As most of the <code>Metamodel</code> classes, this class is here mainly for illustration purposes and it&#39;s not intended for the final user to instantiate.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Metamodel::ParametricRoleGroupHOW</code></figcaption>
+  <figcaption>Type relations for <code>Metamodel::ParametricRoleGroupHOW</code></figcaption>
   <svg width="811pt" height="389pt"
  viewBox="0.00 0.00 810.56 388.77" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(356.627 176.015)">
@@ -236,16 +185,19 @@
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Metamodel%3A%3AParametricRoleGroupHOW.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 <h1 id="Routines_supplied_by_role_Metamodel::Naming"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Metamodel::Naming</a></h1>
 <p>Metamodel::ParametricRoleGroupHOW does role <a href="/type/Metamodel::Naming">Metamodel::Naming</a>, which provides the following routines:</p>
-<h2 id="(Metamodel::Naming)_method_name"><a href="/routine/name#role_Metamodel%3A%3ANaming">(Metamodel::Naming) method name</a></h2>
+<h2 id="(Metamodel::Naming)_method_name"><a href="/type/Metamodel::Naming#method_name">(Metamodel::Naming) method name</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>name</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>type</span></span></span><span>)</span></span></div></pre><p>Returns the name of the meta object, if any.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Int␤»</span></span></span></div></pre><h2 id="(Metamodel::Naming)_method_set_name"><a href="/routine/set_name#role_Metamodel%3A%3ANaming">(Metamodel::Naming) method set_name</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Int␤»</span></span></span></div></pre><h2 id="(Metamodel::Naming)_method_set_name"><a href="/type/Metamodel::Naming#method_set_name">(Metamodel::Naming) method set_name</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>set_name</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>type</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>new_name</span></span></span><span>)</span></span></div></pre><p>Sets the new name of the meta object.</p>
 
     </div>
@@ -253,12 +205,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Metamodel/ParametricRoleGroupHOW.pod6'>Type/Metamodel/ParametricRoleGroupHOW.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Metamodel::ParametricRoleGroupHOW.pod6">/type/Metamodel::ParametricRoleGroupHOW</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Metamodel/ParametricRoleGroupHOW.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

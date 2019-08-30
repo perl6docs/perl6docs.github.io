@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>syntax -&gt;</h1>
     
@@ -84,7 +50,7 @@
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Functions">language documentation Functions</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Functions)_syntax_-&gt;">(Functions) syntax -&gt;</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Functions)_syntax_-&gt;_-&gt;">(Functions) syntax -&gt; -&gt;</a></td></tr>
                                   
 </table>
 </nav>
@@ -92,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>-&gt;</code> assembled from the following types:</p>
 <h1 id="language_documentation_Functions"><a class="u" href="#___top" title="go to top of document">language documentation Functions</a></h1>
-<p>From <a href="/language/functions#syntax_-%3E">Functions</a></p>
-<h2 id="(Functions)_syntax_->"><a href="/syntax/->#language_documentation_Functions">(Functions) syntax -&gt;</a></h2>
+<p>From <a href="/language/functions#Blocks_and_lambdas">Functions</a></p>
+<h2 id="(Functions)_syntax_->_->"><a href="/language/functions#Blocks_and_lambdas">(Functions) syntax -&gt; -&gt;</a></h2>
 <p>Whenever you see something like <code>{ $_ + 42 }</code>, <code>-&gt; $a, $b { $a ** $b }</code>, or <code>{ $^text.indent($:spaces) }</code>, that&#39;s <a href="/type/Block">Block</a> syntax; the <code>-&gt;</code> is considered also part of the block. Statements such as <code>if</code>, <code>for</code>, <code>while</code> are followed by these kind of blocks.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>,&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«12␤34␤»</span></span></span></div></pre><p>They can also be used on their own as anonymous blocks of code.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>^</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>^</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>)&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«25␤»</span></span></span></div></pre><p>Please note that this implies that, despite the fact that statements such as <code>if</code> do not define a topic variable, they actually can:</p>
@@ -104,12 +70,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

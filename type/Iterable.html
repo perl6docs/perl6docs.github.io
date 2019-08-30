@@ -24,75 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Iterable">
-  
+<div id="content" class="pretty-box yellow content__type_Iterable">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Iterable.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -128,7 +78,7 @@
     <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>role</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Iterable</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p><code>Iterable</code> serves as an API for objects that can be iterated with <code>for</code> and related iteration constructs, like assignment to a <code>Positional</code> variable.</p>
 <p><code>Iterable</code> objects nested in other <code>Iterable</code> objects (but not within scalar containers) flatten in certain contexts, for example when passed to a slurpy parameter (<code>*@a</code>), or on explicit calls to <code>flat</code>.</p>
 <p>Its most important aspect is a method stub for <code>iterator</code>.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>DNA</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="entity name section boundary regexp perl6fe"><span>^^</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="keyword operator charclass open regexp perl6fe"><span>[</span></span><span class="constant character custom property regexp perl6fe"><span>ACGT</span></span><span class="keyword operator charclass close regexp perl6fe"><span>]</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language perl6fe"><span>self</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>bless</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;);</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>DNA</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>!</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>comb</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>rotor</span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DNA</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>GAATCC</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(G&nbsp;A&nbsp;A)␤(T&nbsp;C&nbsp;C)␤»</span><span>&nbsp;</span></span></span></div></pre><p>This example mixes in the Iterable role to offer a new way of iterating over what is essentially a string (constrained by <a href="/type/Signature#index-entry-where_clause_%28Signature%29"><code>where</code></a> to just the four DNA letters). In the last statement, <code>for</code> actually hooks to the <code>iterator</code> role printing the letters in groups of 3.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>DNA</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>new</span></span><span>&nbsp;(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>~~</span></span><span>&nbsp;</span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span class="entity name section boundary regexp perl6fe"><span>^^</span></span><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="keyword operator charclass open regexp perl6fe"><span>[</span></span><span class="constant character custom property regexp perl6fe"><span>ACGT</span></span><span class="keyword operator charclass close regexp perl6fe"><span>]</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span class="keyword operator quantifiers regexp perl6fe"><span>+</span></span><span>&nbsp;</span><span class="entity name section boundary regexp perl6fe"><span>$$</span></span><span>&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="variable language perl6fe"><span>self</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>bless</span></span><span>(&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span>&nbsp;);</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>iterator</span></span><span>(</span><span class="routine name perl6fe"><span>DNA</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>!</span></span><span class="variable other identifier perl6fe"><span>chain</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>comb</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>rotor</span></span><span>(</span><span class="constant numeric perl6fe"><span>3</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>iterator</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>DNA</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>GAATCC</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword control repeat perl6fe"><span>for</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(G&nbsp;A&nbsp;A)␤(T&nbsp;C&nbsp;C)␤»</span><span>&nbsp;</span></span></span></div></pre><p>This example mixes in the Iterable role to offer a new way of iterating over what is essentially a string (constrained by <a href="/type/Signature#index-entry-where_clause_(Signature)"><code>where</code></a> to just the four DNA letters). In the last statement, <code>for</code> actually hooks to the <code>iterator</code> role printing the letters in groups of 3.</p>
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h2 id="method_iterator"><a class="u" href="#___top" title="go to top of document">method iterator</a></h2>
 <p>Defined as:</p>
@@ -161,297 +111,299 @@
 <p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Iterable</code></figcaption>
-  <svg width="808pt" height="404pt"
- viewBox="0.00 0.00 808.04 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <figcaption>Type relations for <code>Iterable</code></figcaption>
+  <svg width="796pt" height="404pt"
+ viewBox="0.00 0.00 795.79 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-400 804.041,-400 804.041,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 791.791,-400 791.791,4 -4,4"/>
 <!-- Iterable -->
 <g id="node1" class="node"><title>Iterable</title>
 <g id="a_node1"><a xlink:href="/type/Iterable" xlink:title="Iterable">
-<ellipse fill="none" stroke="#6666ff" cx="572.245" cy="-234" rx="40.0939" ry="18"/>
-<text text-anchor="middle" x="572.245" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
+<ellipse fill="none" stroke="#6666ff" cx="344.046" cy="-234" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="344.046" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Iterable</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="640.245" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="640.245" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="147.046" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="147.046" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="640.245" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="640.245" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="147.046" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="147.046" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M640.245,-324.303C640.245,-332.017 640.245,-341.288 640.245,-349.888"/>
-<polygon fill="#000000" stroke="#000000" points="636.745,-349.896 640.245,-359.896 643.745,-349.896 636.745,-349.896"/>
-</g>
-<!-- Sequence -->
-<g id="node4" class="node"><title>Sequence</title>
-<g id="a_node4"><a xlink:href="/type/Sequence" xlink:title="Sequence">
-<ellipse fill="none" stroke="#6666ff" cx="718.245" cy="-234" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="718.245" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
-</a>
-</g>
-</g>
-<!-- HyperSeq -->
-<g id="node5" class="node"><title>HyperSeq</title>
-<g id="a_node5"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
-<ellipse fill="none" stroke="#000000" cx="638.245" cy="-162" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="638.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
-</a>
-</g>
-</g>
-<!-- HyperSeq&#45;&gt;Iterable -->
-<g id="edge14" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M622.937,-179.235C614.441,-188.247 603.723,-199.615 594.333,-209.574"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="591.783,-207.176 587.47,-216.853 596.876,-211.978 591.783,-207.176"/>
-</g>
-<!-- HyperSeq&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>HyperSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M638.486,-180.129C638.827,-204.33 639.453,-248.789 639.859,-277.607"/>
-<polygon fill="#000000" stroke="#000000" points="636.362,-277.861 640.003,-287.811 643.362,-277.762 636.362,-277.861"/>
-</g>
-<!-- HyperSeq&#45;&gt;Sequence -->
-<g id="edge15" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M656.398,-178.884C667.036,-188.192 680.647,-200.102 692.391,-210.378"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="690.333,-213.228 700.164,-217.179 694.943,-207.96 690.333,-213.228"/>
+<path fill="none" stroke="#000000" d="M147.046,-324.303C147.046,-332.017 147.046,-341.288 147.046,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="143.546,-349.896 147.046,-359.896 150.546,-349.896 143.546,-349.896"/>
 </g>
 <!-- Cool -->
-<g id="node6" class="node"><title>Cool</title>
-<g id="a_node6"><a xlink:href="/type/Cool" xlink:title="Cool">
-<ellipse fill="none" stroke="#000000" cx="370.245" cy="-234" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="370.245" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
+<g id="node4" class="node"><title>Cool</title>
+<g id="a_node4"><a xlink:href="/type/Cool" xlink:title="Cool">
+<ellipse fill="none" stroke="#000000" cx="644.046" cy="-234" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="644.046" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Cool</text>
 </a>
 </g>
 </g>
 <!-- Cool&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Cool&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M392.622,-245.281C400.414,-248.861 407.245,-252 407.245,-252 407.245,-252 539.904,-282.176 605.025,-296.989"/>
-<polygon fill="#000000" stroke="#000000" points="604.339,-300.422 614.866,-299.227 605.892,-293.596 604.339,-300.422"/>
-</g>
-<!-- PositionalBindFailover -->
-<g id="node7" class="node"><title>PositionalBindFailover</title>
-<g id="a_node7"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
-<ellipse fill="none" stroke="#6666ff" cx="226.245" cy="-234" rx="97.4827" ry="18"/>
-<text text-anchor="middle" x="226.245" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
-</a>
-</g>
-</g>
-<!-- Seq -->
-<g id="node8" class="node"><title>Seq</title>
-<g id="a_node8"><a xlink:href="/type/Seq" xlink:title="Seq">
-<ellipse fill="none" stroke="#000000" cx="372.245" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="372.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
-</a>
-</g>
-</g>
-<!-- Seq&#45;&gt;Iterable -->
-<g id="edge16" class="edge"><title>Seq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M394.479,-172.692C403.238,-176.51 411.245,-180 411.245,-180 411.245,-180 523.245,-216 523.245,-216 523.245,-216 526.693,-217.196 531.759,-218.954"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="530.896,-222.359 541.491,-222.33 533.191,-215.746 530.896,-222.359"/>
-</g>
-<!-- Seq&#45;&gt;Cool -->
-<g id="edge4" class="edge"><title>Seq&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M371.751,-180.303C371.53,-188.017 371.265,-197.288 371.02,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="367.521,-205.8 370.734,-215.896 374.518,-206 367.521,-205.8"/>
-</g>
-<!-- Seq&#45;&gt;PositionalBindFailover -->
-<g id="edge17" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
-<path fill="none" stroke="#6666ff" d="M351.015,-173.179C329.579,-183.456 295.873,-199.617 268.895,-212.552"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="267.168,-209.498 259.664,-216.977 270.194,-215.81 267.168,-209.498"/>
+<g id="edge2" class="edge"><title>Cool&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M621.502,-245.085C613.319,-248.746 606.046,-252 606.046,-252 606.046,-252 292.156,-288.244 183.522,-300.788"/>
+<polygon fill="#000000" stroke="#000000" points="182.904,-297.336 173.372,-301.96 183.707,-304.29 182.904,-297.336"/>
 </g>
 <!-- Positional -->
-<g id="node9" class="node"><title>Positional</title>
-<g id="a_node9"><a xlink:href="/type/Positional" xlink:title="Positional">
-<ellipse fill="none" stroke="#6666ff" cx="465.245" cy="-234" rx="48.9926" ry="18"/>
-<text text-anchor="middle" x="465.245" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
+<g id="node5" class="node"><title>Positional</title>
+<g id="a_node5"><a xlink:href="/type/Positional" xlink:title="Positional">
+<ellipse fill="none" stroke="#6666ff" cx="739.046" cy="-234" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="739.046" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Positional</text>
 </a>
 </g>
 </g>
 <!-- List -->
-<g id="node10" class="node"><title>List</title>
-<g id="a_node10"><a xlink:href="/type/List" xlink:title="List">
-<ellipse fill="none" stroke="#000000" cx="537.245" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="537.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
+<g id="node6" class="node"><title>List</title>
+<g id="a_node6"><a xlink:href="/type/List" xlink:title="List">
+<ellipse fill="none" stroke="#000000" cx="693.046" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="693.046" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">List</text>
 </a>
 </g>
 </g>
 <!-- List&#45;&gt;Iterable -->
-<g id="edge19" class="edge"><title>List&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M545.363,-179.235C549.543,-187.596 554.737,-197.984 559.442,-207.394"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="556.326,-208.988 563.928,-216.367 562.587,-205.857 556.326,-208.988"/>
+<g id="edge15" class="edge"><title>List&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M671.688,-173.085C663.936,-176.746 657.046,-180 657.046,-180 657.046,-180 394.046,-216 394.046,-216 394.046,-216 390.284,-217.279 384.824,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="383.484,-215.894 375.143,-222.427 385.737,-222.522 383.484,-215.894"/>
 </g>
 <!-- List&#45;&gt;Cool -->
-<g id="edge5" class="edge"><title>List&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M515.888,-173.085C508.136,-176.746 501.245,-180 501.245,-180 501.245,-180 407.245,-216 407.245,-216 407.245,-216 405.084,-216.993 401.806,-218.499"/>
-<polygon fill="#000000" stroke="#000000" points="400.247,-215.363 392.622,-222.719 403.17,-221.724 400.247,-215.363"/>
+<g id="edge3" class="edge"><title>List&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M682.171,-178.535C675.978,-187.383 668.081,-198.663 661.083,-208.661"/>
+<polygon fill="#000000" stroke="#000000" points="658.097,-206.823 655.23,-217.023 663.832,-210.838 658.097,-206.823"/>
 </g>
 <!-- List&#45;&gt;Positional -->
-<g id="edge18" class="edge"><title>List&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M522.675,-177.166C513.06,-186.514 500.237,-198.98 489.148,-209.761"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="486.539,-207.416 481.809,-216.897 491.418,-212.435 486.539,-207.416"/>
+<g id="edge14" class="edge"><title>List&#45;&gt;Positional</title>
+<path fill="none" stroke="#6666ff" d="M703.484,-178.884C709.085,-187.408 716.12,-198.114 722.452,-207.749"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="719.591,-209.768 728.007,-216.203 725.44,-205.923 719.591,-209.768"/>
 </g>
-<!-- RaceSeq -->
-<g id="node11" class="node"><title>RaceSeq</title>
-<g id="a_node11"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
-<ellipse fill="none" stroke="#000000" cx="753.245" cy="-162" rx="46.5926" ry="18"/>
-<text text-anchor="middle" x="753.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
+<!-- Sequence -->
+<g id="node7" class="node"><title>Sequence</title>
+<g id="a_node7"><a xlink:href="/type/Sequence" xlink:title="Sequence">
+<ellipse fill="none" stroke="#6666ff" cx="69.0456" cy="-234" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="69.0456" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Sequence</text>
 </a>
 </g>
 </g>
-<!-- RaceSeq&#45;&gt;Iterable -->
-<g id="edge20" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M721.303,-175.353C690.676,-187.198 644.368,-205.107 611.505,-217.816"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="609.835,-214.71 601.771,-221.581 612.36,-221.239 609.835,-214.71"/>
+<!-- HyperSeq -->
+<g id="node8" class="node"><title>HyperSeq</title>
+<g id="a_node8"><a xlink:href="/type/HyperSeq" xlink:title="HyperSeq">
+<ellipse fill="none" stroke="#000000" cx="50.0456" cy="-162" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="50.0456" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">HyperSeq</text>
+</a>
 </g>
-<!-- RaceSeq&#45;&gt;Any -->
-<g id="edge6" class="edge"><title>RaceSeq&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M760.839,-179.77C767.87,-195.297 777.245,-216 777.245,-216 777.245,-216 777.245,-252 777.245,-252 777.245,-252 713.177,-276.785 672.667,-292.457"/>
-<polygon fill="#000000" stroke="#000000" points="671.239,-289.257 663.176,-296.129 673.765,-295.785 671.239,-289.257"/>
 </g>
-<!-- RaceSeq&#45;&gt;Sequence -->
-<g id="edge21" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
-<path fill="none" stroke="#6666ff" d="M744.773,-179.945C740.688,-188.113 735.701,-198.088 731.157,-207.176"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="727.981,-205.701 726.64,-216.211 734.242,-208.832 727.981,-205.701"/>
+<!-- HyperSeq&#45;&gt;Iterable -->
+<g id="edge16" class="edge"><title>HyperSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M87.7452,-173.863C99.3083,-177.194 109.046,-180 109.046,-180 109.046,-180 294.046,-216 294.046,-216 294.046,-216 297.807,-217.279 303.267,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="302.354,-222.522 312.948,-222.427 304.607,-215.894 302.354,-222.522"/>
+</g>
+<!-- HyperSeq&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>HyperSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M37.6086,-179.479C25.8665,-195.037 10.0456,-216 10.0456,-216 10.0456,-216 10.0456,-252 10.0456,-252 10.0456,-252 74.1136,-276.785 114.624,-292.457"/>
+<polygon fill="#000000" stroke="#000000" points="113.526,-295.785 124.115,-296.129 116.051,-289.257 113.526,-295.785"/>
+</g>
+<!-- HyperSeq&#45;&gt;Sequence -->
+<g id="edge17" class="edge"><title>HyperSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M54.6449,-179.945C56.7605,-187.739 59.3225,-197.178 61.6956,-205.921"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="58.3592,-206.991 64.3565,-215.725 65.1148,-205.157 58.3592,-206.991"/>
+</g>
+<!-- Associative -->
+<g id="node9" class="node"><title>Associative</title>
+<g id="a_node9"><a xlink:href="/type/Associative" xlink:title="Associative">
+<ellipse fill="none" stroke="#6666ff" cx="230.046" cy="-234" rx="55.4913" ry="18"/>
+<text text-anchor="middle" x="230.046" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+</a>
+</g>
+</g>
+<!-- Map -->
+<g id="node10" class="node"><title>Map</title>
+<g id="a_node10"><a xlink:href="/type/Map" xlink:title="Map">
+<ellipse fill="none" stroke="#000000" cx="344.046" cy="-162" rx="28.6953" ry="18"/>
+<text text-anchor="middle" x="344.046" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
+</a>
+</g>
+</g>
+<!-- Map&#45;&gt;Iterable -->
+<g id="edge18" class="edge"><title>Map&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M344.046,-180.303C344.046,-188.017 344.046,-197.288 344.046,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="340.546,-205.896 344.046,-215.896 347.546,-205.896 340.546,-205.896"/>
+</g>
+<!-- Map&#45;&gt;Cool -->
+<g id="edge5" class="edge"><title>Map&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M371.097,-168.472C438.038,-182.014 606.046,-216 606.046,-216 606.046,-216 608.477,-217.088 612.109,-218.712"/>
+<polygon fill="#000000" stroke="#000000" points="610.944,-222.026 621.502,-222.915 613.803,-215.636 610.944,-222.026"/>
+</g>
+<!-- Map&#45;&gt;Associative -->
+<g id="edge19" class="edge"><title>Map&#45;&gt;Associative</title>
+<path fill="none" stroke="#6666ff" d="M324.188,-175.193C307.482,-185.452 283.235,-200.34 263.533,-212.438"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="261.534,-209.558 254.843,-217.773 265.197,-215.523 261.534,-209.558"/>
+</g>
+<!-- PositionalBindFailover -->
+<g id="node11" class="node"><title>PositionalBindFailover</title>
+<g id="a_node11"><a xlink:href="/type/PositionalBindFailover" xlink:title="PositionalBindFailover">
+<ellipse fill="none" stroke="#6666ff" cx="500.046" cy="-234" rx="97.4827" ry="18"/>
+<text text-anchor="middle" x="500.046" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">PositionalBindFailover</text>
+</a>
+</g>
+</g>
+<!-- Seq -->
+<g id="node12" class="node"><title>Seq</title>
+<g id="a_node12"><a xlink:href="/type/Seq" xlink:title="Seq">
+<ellipse fill="none" stroke="#000000" cx="500.046" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="500.046" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Seq</text>
+</a>
+</g>
+</g>
+<!-- Seq&#45;&gt;Iterable -->
+<g id="edge20" class="edge"><title>Seq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M478.354,-172.733C453.198,-184.021 411.31,-202.817 380.993,-216.421"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="379.284,-213.352 371.593,-220.639 382.149,-219.738 379.284,-213.352"/>
+</g>
+<!-- Seq&#45;&gt;Cool -->
+<g id="edge6" class="edge"><title>Seq&#45;&gt;Cool</title>
+<path fill="none" stroke="#000000" d="M521.293,-173.329C545.367,-185.031 584.844,-204.221 612.513,-217.672"/>
+<polygon fill="#000000" stroke="#000000" points="611.239,-220.944 621.763,-222.168 614.299,-214.648 611.239,-220.944"/>
+</g>
+<!-- Seq&#45;&gt;PositionalBindFailover -->
+<g id="edge21" class="edge"><title>Seq&#45;&gt;PositionalBindFailover</title>
+<path fill="none" stroke="#6666ff" d="M500.046,-180.303C500.046,-188.017 500.046,-197.288 500.046,-205.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="496.546,-205.896 500.046,-215.896 503.546,-205.896 496.546,-205.896"/>
 </g>
 <!-- Range -->
-<g id="node12" class="node"><title>Range</title>
-<g id="a_node12"><a xlink:href="/type/Range" xlink:title="Range">
-<ellipse fill="none" stroke="#000000" cx="456.245" cy="-162" rx="36.2938" ry="18"/>
-<text text-anchor="middle" x="456.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
+<g id="node13" class="node"><title>Range</title>
+<g id="a_node13"><a xlink:href="/type/Range" xlink:title="Range">
+<ellipse fill="none" stroke="#000000" cx="612.046" cy="-162" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="612.046" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Range</text>
 </a>
 </g>
 </g>
 <!-- Range&#45;&gt;Iterable -->
 <g id="edge23" class="edge"><title>Range&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M478.337,-176.331C495.894,-186.926 520.689,-201.889 540.393,-213.779"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="538.673,-216.829 549.043,-218.999 542.289,-210.835 538.673,-216.829"/>
+<path fill="none" stroke="#6666ff" d="M579.879,-170.82C519.239,-185.563 394.046,-216 394.046,-216 394.046,-216 390.284,-217.279 384.824,-219.135"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="383.484,-215.894 375.143,-222.427 385.737,-222.522 383.484,-215.894"/>
 </g>
 <!-- Range&#45;&gt;Cool -->
 <g id="edge7" class="edge"><title>Range&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M438.007,-177.845C425.512,-188.015 408.787,-201.629 395.079,-212.786"/>
-<polygon fill="#000000" stroke="#000000" points="392.545,-210.336 386.999,-219.363 396.964,-215.765 392.545,-210.336"/>
+<path fill="none" stroke="#000000" d="M619.792,-179.945C623.487,-188.027 627.99,-197.879 632.109,-206.888"/>
+<polygon fill="#000000" stroke="#000000" points="629.03,-208.571 636.371,-216.211 635.396,-205.661 629.03,-208.571"/>
 </g>
 <!-- Range&#45;&gt;Positional -->
 <g id="edge22" class="edge"><title>Range&#45;&gt;Positional</title>
-<path fill="none" stroke="#6666ff" d="M458.47,-180.303C459.462,-188.017 460.653,-197.288 461.759,-205.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="458.299,-206.424 463.046,-215.896 465.242,-205.531 458.299,-206.424"/>
+<path fill="none" stroke="#6666ff" d="M635.339,-175.839C654.513,-186.407 681.994,-201.554 703.85,-213.601"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="702.385,-216.79 712.832,-218.552 705.764,-210.659 702.385,-216.79"/>
 </g>
-<!-- Associative -->
-<g id="node13" class="node"><title>Associative</title>
-<g id="a_node13"><a xlink:href="/type/Associative" xlink:title="Associative">
-<ellipse fill="none" stroke="#6666ff" cx="55.2451" cy="-234" rx="55.4913" ry="18"/>
-<text text-anchor="middle" x="55.2451" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Associative</text>
+<!-- RaceSeq -->
+<g id="node14" class="node"><title>RaceSeq</title>
+<g id="a_node14"><a xlink:href="/type/RaceSeq" xlink:title="RaceSeq">
+<ellipse fill="none" stroke="#000000" cx="165.046" cy="-162" rx="46.5926" ry="18"/>
+<text text-anchor="middle" x="165.046" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">RaceSeq</text>
 </a>
 </g>
 </g>
-<!-- Map -->
-<g id="node14" class="node"><title>Map</title>
-<g id="a_node14"><a xlink:href="/type/Map" xlink:title="Map">
-<ellipse fill="none" stroke="#000000" cx="298.245" cy="-162" rx="28.6953" ry="18"/>
-<text text-anchor="middle" x="298.245" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Map</text>
-</a>
+<!-- RaceSeq&#45;&gt;Iterable -->
+<g id="edge24" class="edge"><title>RaceSeq&#45;&gt;Iterable</title>
+<path fill="none" stroke="#6666ff" d="M196.635,-175.353C226.924,-187.198 272.719,-205.107 305.219,-217.816"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="304.258,-221.199 314.846,-221.581 306.808,-214.68 304.258,-221.199"/>
 </g>
+<!-- RaceSeq&#45;&gt;Any -->
+<g id="edge8" class="edge"><title>RaceSeq&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M162.874,-180.129C159.807,-204.33 154.171,-248.789 150.518,-277.607"/>
+<polygon fill="#000000" stroke="#000000" points="147.01,-277.45 149.224,-287.811 153.954,-278.33 147.01,-277.45"/>
 </g>
-<!-- Map&#45;&gt;Iterable -->
-<g id="edge24" class="edge"><title>Map&#45;&gt;Iterable</title>
-<path fill="none" stroke="#6666ff" d="M320.789,-173.085C328.972,-176.746 336.245,-180 336.245,-180 336.245,-180 523.245,-216 523.245,-216 523.245,-216 526.693,-217.196 531.759,-218.954"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="530.896,-222.359 541.491,-222.33 533.191,-215.746 530.896,-222.359"/>
-</g>
-<!-- Map&#45;&gt;Cool -->
-<g id="edge8" class="edge"><title>Map&#45;&gt;Cool</title>
-<path fill="none" stroke="#000000" d="M313.164,-177.504C323.204,-187.265 336.621,-200.31 347.925,-211.3"/>
-<polygon fill="#000000" stroke="#000000" points="345.736,-214.053 355.346,-218.515 350.616,-209.034 345.736,-214.053"/>
-</g>
-<!-- Map&#45;&gt;Associative -->
-<g id="edge25" class="edge"><title>Map&#45;&gt;Associative</title>
-<path fill="none" stroke="#6666ff" d="M272.699,-170.359C233.058,-181.778 156.004,-203.975 105.083,-218.643"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="103.907,-215.34 95.2663,-221.471 105.844,-222.066 103.907,-215.34"/>
+<!-- RaceSeq&#45;&gt;Sequence -->
+<g id="edge25" class="edge"><title>RaceSeq&#45;&gt;Sequence</title>
+<path fill="none" stroke="#6666ff" d="M144.215,-178.189C130.847,-187.937 113.286,-200.742 98.4996,-211.523"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="96.185,-208.879 90.167,-217.599 100.309,-214.535 96.185,-208.879"/>
 </g>
 <!-- Slip -->
 <g id="node15" class="node"><title>Slip</title>
 <g id="a_node15"><a xlink:href="/type/Slip" xlink:title="Slip">
-<ellipse fill="none" stroke="#000000" cx="513.245" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="513.245" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
+<ellipse fill="none" stroke="#000000" cx="654.046" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="654.046" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Slip</text>
 </a>
 </g>
 </g>
 <!-- Slip&#45;&gt;List -->
 <g id="edge9" class="edge"><title>Slip&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M519.055,-107.945C521.796,-115.941 525.132,-125.669 528.194,-134.6"/>
-<polygon fill="#000000" stroke="#000000" points="524.935,-135.887 531.489,-144.211 531.556,-133.616 524.935,-135.887"/>
+<path fill="none" stroke="#000000" d="M663.091,-107.235C667.866,-115.805 673.827,-126.506 679.172,-136.1"/>
+<polygon fill="#000000" stroke="#000000" points="676.125,-137.82 684.049,-144.853 682.24,-134.414 676.125,-137.82"/>
 </g>
 <!-- Array -->
 <g id="node16" class="node"><title>Array</title>
 <g id="a_node16"><a xlink:href="/type/Array" xlink:title="Array">
-<ellipse fill="none" stroke="#000000" cx="590.245" cy="-90" rx="31.6951" ry="18"/>
-<text text-anchor="middle" x="590.245" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
+<ellipse fill="none" stroke="#000000" cx="731.046" cy="-90" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="731.046" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Array</text>
 </a>
 </g>
 </g>
 <!-- Array&#45;&gt;List -->
 <g id="edge10" class="edge"><title>Array&#45;&gt;List</title>
-<path fill="none" stroke="#000000" d="M578.219,-106.884C571.347,-115.96 562.602,-127.51 554.957,-137.607"/>
-<polygon fill="#000000" stroke="#000000" points="552.106,-135.574 548.86,-145.66 557.687,-139.8 552.106,-135.574"/>
-</g>
-<!-- Hash -->
-<g id="node17" class="node"><title>Hash</title>
-<g id="a_node17"><a xlink:href="/type/Hash" xlink:title="Hash">
-<ellipse fill="none" stroke="#000000" cx="269.245" cy="-90" rx="31.3957" ry="18"/>
-<text text-anchor="middle" x="269.245" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
-</a>
-</g>
-</g>
-<!-- Hash&#45;&gt;Map -->
-<g id="edge11" class="edge"><title>Hash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M276.118,-107.589C279.463,-115.665 283.566,-125.569 287.327,-134.645"/>
-<polygon fill="#000000" stroke="#000000" points="284.159,-136.145 291.22,-144.044 290.626,-133.466 284.159,-136.145"/>
+<path fill="none" stroke="#000000" d="M722.04,-107.589C717.497,-115.958 711.888,-126.29 706.818,-135.63"/>
+<polygon fill="#000000" stroke="#000000" points="703.681,-134.072 701.986,-144.53 709.833,-137.411 703.681,-134.072"/>
 </g>
 <!-- PseudoStash -->
-<g id="node18" class="node"><title>PseudoStash</title>
-<g id="a_node18"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
-<ellipse fill="none" stroke="#000000" cx="381.245" cy="-90" rx="63.0888" ry="18"/>
-<text text-anchor="middle" x="381.245" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
+<g id="node17" class="node"><title>PseudoStash</title>
+<g id="a_node17"><a xlink:href="/type/PseudoStash" xlink:title="PseudoStash">
+<ellipse fill="none" stroke="#000000" cx="288.046" cy="-90" rx="63.0888" ry="18"/>
+<text text-anchor="middle" x="288.046" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">PseudoStash</text>
 </a>
 </g>
 </g>
 <!-- PseudoStash&#45;&gt;Map -->
-<g id="edge12" class="edge"><title>PseudoStash&#45;&gt;Map</title>
-<path fill="none" stroke="#000000" d="M361.995,-107.235C350.209,-117.175 335.026,-129.98 322.433,-140.601"/>
-<polygon fill="#000000" stroke="#000000" points="319.982,-138.089 314.594,-147.212 324.495,-143.44 319.982,-138.089"/>
+<g id="edge11" class="edge"><title>PseudoStash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M301.602,-107.945C308.712,-116.833 317.533,-127.86 325.289,-137.554"/>
+<polygon fill="#000000" stroke="#000000" points="322.78,-140.021 331.76,-145.644 328.247,-135.648 322.78,-140.021"/>
+</g>
+<!-- Hash -->
+<g id="node18" class="node"><title>Hash</title>
+<g id="a_node18"><a xlink:href="/type/Hash" xlink:title="Hash">
+<ellipse fill="none" stroke="#000000" cx="400.046" cy="-90" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="400.046" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Hash</text>
+</a>
+</g>
+</g>
+<!-- Hash&#45;&gt;Map -->
+<g id="edge12" class="edge"><title>Hash&#45;&gt;Map</title>
+<path fill="none" stroke="#000000" d="M387.617,-106.535C380.295,-115.689 370.889,-127.446 362.691,-137.693"/>
+<polygon fill="#000000" stroke="#000000" points="359.953,-135.513 356.439,-145.508 365.419,-139.886 359.953,-135.513"/>
 </g>
 <!-- Stash -->
 <g id="node19" class="node"><title>Stash</title>
 <g id="a_node19"><a xlink:href="/type/Stash" xlink:title="Stash">
-<ellipse fill="none" stroke="#000000" cx="269.245" cy="-18" rx="33.2948" ry="18"/>
-<text text-anchor="middle" x="269.245" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
+<ellipse fill="none" stroke="#000000" cx="400.046" cy="-18" rx="33.2948" ry="18"/>
+<text text-anchor="middle" x="400.046" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Stash</text>
 </a>
 </g>
 </g>
 <!-- Stash&#45;&gt;Hash -->
 <g id="edge13" class="edge"><title>Stash&#45;&gt;Hash</title>
-<path fill="none" stroke="#000000" d="M269.245,-36.3034C269.245,-44.0173 269.245,-53.2875 269.245,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="265.745,-61.8956 269.245,-71.8957 272.745,-61.8957 265.745,-61.8956"/>
+<path fill="none" stroke="#000000" d="M400.046,-36.3034C400.046,-44.0173 400.046,-53.2875 400.046,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="396.546,-61.8956 400.046,-71.8957 403.546,-61.8957 396.546,-61.8956"/>
 </g>
 </g>
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Iterable.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 
@@ -460,12 +412,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Iterable.pod6'>Type/Iterable.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Iterable.pod6">/type/Iterable</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Iterable.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

@@ -24,83 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
-                <a class="menu-item" href="/routine-sub.html">
-                    Sub
-                </a>
-             
-                <a class="menu-item" href="/routine-method.html">
-                    Method
-                </a>
-             
-                <a class="menu-item" href="/routine-term.html">
-                    Term
-                </a>
-             
-                <a class="menu-item" href="/routine-operator.html">
-                    Operator
-                </a>
-             
-                <a class="menu-item" href="/routine-trait.html">
-                    Trait
-                </a>
-             
-                <a class="menu-item" href="/routine-submethod.html">
-                    Submethod
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>infix eqv</h1>
     
@@ -119,7 +61,7 @@
     <p>Documentation for infix <code>eqv</code> assembled from the following types:</p>
 <h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
 <p>From <a href="/language/operators#infix_eqv">Operators</a></p>
-<h2 id="(Operators)_infix_eqv"><a href="/routine/eqv#language_documentation_Operators">(Operators) infix eqv</a></h2>
+<h2 id="(Operators)_infix_eqv"><a href="/language/operators#infix_eqv">(Operators) infix eqv</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>eqv</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="support type perl6fe"><span>Any</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>)</span></span></div></pre><p><a name="index-entry-Equivalence_operator"><span class="index-entry">Equivalence operator</span></a>. Returns <code>True</code> if the two arguments are structurally the same, i.e. from the same type and (recursively) contain equivalent values.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;[</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>]&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;[</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>,&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>];&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Any</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>2</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1.0</span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre><p>Lazy <a href="/type/Iterable"><code>Iterables</code></a> cannot be compared, as they&#39;re assumed to be infinite. However, the operator will do its best and return <code>False</code> if the two lazy <code>Iterables</code> are of different types or if only one <code>Iterable</code> is lazy.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…∞)&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…∞)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>List</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Both&nbsp;lazy,&nbsp;but&nbsp;different&nbsp;types;&nbsp;&nbsp;&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…∞)&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…</span><span class="constant numeric perl6fe"><span>3</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Same&nbsp;types,&nbsp;but&nbsp;only&nbsp;one&nbsp;is&nbsp;lazy;&nbsp;OUTPUT:&nbsp;«False␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>(</span><span class="keyword control control-handlers perl6fe"><span>try</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…∞)&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>1</span></span><span>…∞))&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Both&nbsp;lazy&nbsp;and&nbsp;of&nbsp;the&nbsp;same&nbsp;type.&nbsp;Cannot&nbsp;compare;&nbsp;throws.</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator word perl6fe"><span>orelse</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$!</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«X::Cannot::Lazy␤»</span></span></span></div></pre><p>The default <code>eqv</code> operator even works with arbitrary objects. E.g., <code>eqv</code> will consider two instances of the same object as being structurally equivalent:</p>
@@ -128,7 +70,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Set</span></span><span>(</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>))&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Set</span></span><span>(</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>));&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre><p>Even though the contents of the two sets are <code>eqv</code>, the sets are not. The reason is that <code>eqv</code> delegates the equality check to the <code>Set</code> object which relies on element-wise <code>===</code> comparison. Turning the class <code>A</code> into a <a href="/type/ValueObjAt">value type</a> by giving it a <code>WHICH</code> method produces the expected behavior:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>WHICH</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ValueObjAt</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>A|</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil interpolated perl6fe"><span>!</span></span><span>a</span><span class="keyword operator dot perl6fe"><span>.</span></span><span class="support function perl6fe"><span>WHICH</span></span><span>()</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Set</span></span><span>(</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>))&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Set</span></span><span>(</span><span class="routine name perl6fe"><span>A</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string pair key perl6fe"><span>a&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>5</span></span><span>));&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span></span></span></div></pre><h1 id="class_ObjAt"><a class="u" href="#___top" title="go to top of document">class ObjAt</a></h1>
 <p>From <a href="/type/ObjAt#infix_eqv">ObjAt</a></p>
-<h2 id="(ObjAt)_infix_eqv"><a href="/routine/eqv#class_ObjAt">(ObjAt) infix eqv</a></h2>
+<h2 id="(ObjAt)_infix_eqv"><a href="/type/ObjAt#infix_eqv">(ObjAt) infix eqv</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>eqv</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="support type perl6fe"><span>ObjAt</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>ObjAt</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span>)</span></span></div></pre><p>Returns True if the two ObjAt are the same, that is, if the object they identify is the same.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>foo</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;[</span><span class="constant numeric perl6fe"><span>2</span></span><span>,</span><span class="constant numeric perl6fe"><span>3</span></span><span>,</span><span class="constant numeric perl6fe"><span>1</span></span><span>];</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>bar</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>foo</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>foo</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>WHICH</span></span><span>&nbsp;</span><span class="keyword operator word perl6fe"><span>eqv</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>bar</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>WHICH</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span></span></span></div></pre>
@@ -137,12 +79,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

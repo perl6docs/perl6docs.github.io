@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_js_nutshell">
-  
+<div id="content" class="pretty-box yellow content__language_js_nutshell">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/js-nutshell.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -209,7 +175,7 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>type</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>ID</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>string</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>number</span></span><span>;</span></span></div></pre><p>In Perl&nbsp;6, classes, roles, subsets, and enums are considered types. Creating classes and roles will be discussed in <a href="#Object-oriented_programming">the OOP section of this article</a>. Creating an ID subset can be done like so:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>subset</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>ID</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>|</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>;</span></span></div></pre><p>See the documentation on <a href="/language/typesystem#subset">subset</a> and <a href="/type/Junction">Junction</a> for more information.</p>
 <p>TypeScript enums may have numbers or strings as their values. Defining the values is optional; by default, the value of the first key is 0, the next key, 1, the next, 2, etc. For example, here is an enum that defines directions for extended ASCII arrow symbols (perhaps for a TUI game):</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>enum</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Direction</span></span></span><span>&nbsp;(</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>UP</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↑</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>DOWN</span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↓</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>LEFT</span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>←</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>RIGHT</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>→</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>);</span></span></div></pre><p>Enums in Perl&nbsp;6 may have any type as their keys&#39; values. Enum keys (and optionally, values) can be defined by writing <code>enum</code>, followed by the name of the enum, then the list of keys (and optionally, values), which can be done using <a href="/language/quoting#Word_quoting%3A_%3C_%3E">&lt; &gt;</a>, <a href="/language/quoting#Word_quoting_with_interpolation_and_quote_protection%3A_%C2%AB_%C2%BB">« »</a>, or <a href="/language/operators#term_%28_%29">( )</a>. <code>( )</code> must be used if you want to define values for the enum&#39;s keys. Here is the Direction enum as written in Perl&nbsp;6:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>enum</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Direction</span></span></span><span>&nbsp;(</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>UP</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↑</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>DOWN</span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↓</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>LEFT</span></span><span>&nbsp;&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>←</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>RIGHT</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>→</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>);</span></span></div></pre><p>Enums in Perl&nbsp;6 may have any type as their keys&#39; values. Enum keys (and optionally, values) can be defined by writing <code>enum</code>, followed by the name of the enum, then the list of keys (and optionally, values), which can be done using <a href="/language/quoting#Word_quoting:_<_>">&lt; &gt;</a>, <a href="/language/quoting#Word_quoting_with_interpolation_and_quote_protection:_«_»">« »</a>, or <a href="/language/operators#term_(_)">( )</a>. <code>( )</code> must be used if you want to define values for the enum&#39;s keys. Here is the Direction enum as written in Perl&nbsp;6:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>enum</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Direction</span></span></span><span>&nbsp;(</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>UP&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↑</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>DOWN&nbsp;&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>↓</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>LEFT&nbsp;&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>←</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="string pair key perl6fe"><span>RIGHT&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>→</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>);</span></span></div></pre><p>See the documentation on <a href="/language/typesystem#enum">enum</a> for more information.</p>
 <h3 id="Using_types"><a class="u" href="#___top" title="go to top of document">Using types</a></h3>
 <p>In TypeScript, you can define the type of variables. Attempting to assign a value that doesn&#39;t match the type of the variable will make the transpiler error out. This is done like so:</p>
@@ -259,12 +225,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/js-nutshell.pod6'>Language/js-nutshell.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/js-nutshell.pod6">/language/js-nutshell</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/js-nutshell.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

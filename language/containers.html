@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_containers">
-  
+<div id="content" class="pretty-box yellow content__language_containers">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/containers.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -177,7 +143,7 @@
 <h1 id="Type_constraints"><a class="u" href="#___top" title="go to top of document">Type constraints</a></h1>
 <p>Any container can have a type constraint in the form of a <a href="/language/typesystem#Type_objects">type object</a> or a <a href="/language/typesystem#subset">subset</a>. Both can be placed between a declarator and the variable name or after the trait <a href="/type/Variable#trait_is_dynamic">of</a>. The constraint is a property of the variable, not the container.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>subset</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Three-letter</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>where</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>chars</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>==</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>3</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Three-letter</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>acronym</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>ÞFL</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div></pre><p>In this case, the type constraint is the (compile-type defined) subset <code>Three-letter</code>.</p>
-<p>Variables may have no container in them, yet still offer the ability to re-bind and typecheck that rebind. The reason for that is in such cases the binding operator <a href="/language/operators#infix_%3A%3D">:=</a> performs the typecheck:</p>
+<p>Variables may have no container in them, yet still offer the ability to re-bind and typecheck that rebind. The reason for that is in such cases the binding operator <a href="/language/operators#infix_:=">:=</a> performs the typecheck:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>z</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>42</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>z</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>100</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OK</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>z</span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>:=</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>x</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Typecheck&nbsp;failure</span></span></span></div></pre><p>The same isn&#39;t the case when, say, binding to a <a href="/type/Hash">Hash</a> key, as the binding is then handled by a method call (even though the syntax remains the same, using <code>:=</code> operator).</p>
 <p>The default type constraint of a <code>Scalar</code> container is <a href="/type/Mu">Mu</a>. Introspection of type constraints on containers is provided by <code>.VAR.of</code> method, which for <code>@</code> and <code>%</code> sigiled variables gives the constraint for values:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>x</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>VAR</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(Str)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Num</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>VAR</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(Num)␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>VAR</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="storage modifier type constraints perl6fe"><span>of</span></span><span>;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(Int)␤»</span></span></span></div></pre><h2 id="Definedness_constraints"><a class="u" href="#___top" title="go to top of document">Definedness constraints</a></h2>
@@ -192,12 +158,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/containers.pod6'>Language/containers.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/containers.pod6">/language/containers</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/containers.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

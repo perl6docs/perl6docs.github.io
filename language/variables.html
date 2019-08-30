@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_variables">
-  
+<div id="content" class="pretty-box yellow content__language_variables">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/variables.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -184,7 +150,7 @@
     <p>Variables are symbolic names for values or <a href="/language/containers">containers</a>. Variable declarations or assignment of values may create a container on the fly. Variable names can start with or without a special character called a <em>sigil</em>, followed optionally by a second special character named <em>twigil</em> and then an <a href="/language/syntax#Identifiers">identifier</a>.</p>
 <h1 id="Sigils"><a class="u" href="#___top" title="go to top of document">Sigils <a name="index-entry-sigil_$"></a><a name="index-entry-sigil_@"></a><a name="index-entry-sigil_%25"></a><a name="index-entry-sigil_&"></a></a></h1>
 <p>There are four sigils. The scalar-sigil <code>$</code>, the positional-sigil <code>@</code>, the associative-sigil <code>%</code> and the callable-sigil <code>&amp;</code>.</p>
-<p>Sigils provide a link between syntax, the type system and <a href="/language/containers">containers</a>. They provide a shortcut for the most common type constraints when declaring variables and serve as markers for <a href="/language/quoting#Interpolation%3A_qq">string interpolation</a>. The <a href="/language/containers#Flattening%2C_items_and_containers">positional-sigil</a> and the <a href="/language/containers#Flattening%2C_items_and_containers">associative-sigil</a> provide type constraint that enforce a base type <a href="/language/subscripts#Custom_types">subscripts</a> require to know what methods to dispatch to. The <a href="/language/containers#Callable_containers">callable-sigil</a> does the same for function calls. The latter also tells the compiler where parentheses for calls can be omitted. The positional and associative-sigil also simplify assignment by flattening by default.</p>
+<p>Sigils provide a link between syntax, the type system and <a href="/language/containers">containers</a>. They provide a shortcut for the most common type constraints when declaring variables and serve as markers for <a href="/language/quoting#Interpolation:_qq">string interpolation</a>. The <a href="/language/containers#Flattening,_items_and_containers">positional-sigil</a> and the <a href="/language/containers#Flattening,_items_and_containers">associative-sigil</a> provide type constraint that enforce a base type <a href="/language/subscripts#Custom_types">subscripts</a> require to know what methods to dispatch to. The <a href="/language/containers#Callable_containers">callable-sigil</a> does the same for function calls. The latter also tells the compiler where parentheses for calls can be omitted. The positional and associative-sigil also simplify assignment by flattening by default.</p>
 <table class="pod-table">
 <thead><tr>
 <th>Sigil</th> <th>Type constraint</th> <th>Default type</th> <th>Assignment</th> <th>Examples</th>
@@ -430,7 +396,7 @@
 <p>These variables are related to the arguments passed to a script.</p>
 <h4 id="$*ARGFILES"><a class="u" href="#___top" title="go to top of document"><code>$*ARGFILES</code></a></h4>
 <p>An <a href="/type/IO::ArgFiles">IO::ArgFiles</a> (an empty subclass of <a href="/type/IO::CatHandle">IO::CatHandle</a>) that uses <code>@*ARGS</code> as source files, if it contains any files, or <code>$*IN</code> otherwise. When <code>$*IN</code> is used, its <code>:nl-in</code>, <code>:chomp</code>, <code>:encoding</code>, and <code>:bin</code> will be set on the <a href="/type/IO::ArgFiles">IO::ArgFiles</a> object.</p>
-<p>As of the 6.d version, <code>$*ARGFILES</code> <em>inside</em> <a href="/language/functions#sub_MAIN"><code>sub MAIN</code></a> is always set to <code>$*IN</code>, even when <code>@*ARGS</code> is not empty. See <a href="/type/IO::ArgFiles#%24%2AARGFILES">the class documentation</a> for examples and more context.</p>
+<p>As of the 6.d version, <code>$*ARGFILES</code> <em>inside</em> <a href="/language/functions#sub_MAIN"><code>sub MAIN</code></a> is always set to <code>$*IN</code>, even when <code>@*ARGS</code> is not empty. See <a href="/type/IO::ArgFiles#$*ARGFILES">the class documentation</a> for examples and more context.</p>
 <h4 id="@*ARGS"><a class="u" href="#___top" title="go to top of document"><code>@*ARGS</code></a></h4>
 <p><code>@*ARGS</code> is an array of <code>Str</code> containing the arguments from the command line.</p>
 <p><a name="index-entry-&*ARGS-TO-CAPTURE"></a></p>
@@ -575,12 +541,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/variables.pod6'>Language/variables.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/variables.pod6">/language/variables</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/variables.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

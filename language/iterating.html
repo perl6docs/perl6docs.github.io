@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_iterating">
-  
+<div id="content" class="pretty-box yellow content__language_iterating">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/iterating.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -113,12 +79,12 @@
 <p>Let us look at the <code>pull-one</code> method. This one is going to be called every time a new iteration occurs, so it must keep the state of the last one. An <code>$.index</code> attribute will hold that state across invocations; <code>pull-one</code> will check if the end of the chain has been reached and will return the <code>IterationEnd</code> constant provided by the role. Implementing this low-level interface, in fact, simplifies the implementation of the <code>Iterable</code> interface. Now the iterator will be the object itself, since we can call <code>pull-one</code> on it to access every member in turn; <code>.iterator</code> will thus return just <code>self</code>; this is possible since the object will be, at the same time, <code>Iterable</code> and <code>Iterator</code>.</p>
 <p>This need not always be the case, and in most cases <code>.iterator</code> will have to build an iterator type to be returned (that will, for instance, keep track of the iteration state, which we are doing now in the main class), such as we did in the previous example; however, this example shows the minimal code needed to build a class that fulfills the iterator and iterable roles.</p>
 <h1 id="How_to_iterate:_contextualizing_and_topic_variables"><a class="u" href="#___top" title="go to top of document">How to iterate: contextualizing and topic variables</a></h1>
-<p><code>for</code> and other loops place the item produced in every iteration into the <a href="/language/variables#index-entry-topic_variable">topic variable <code>$_</code></a>, or capture them into the variables that are declared along with the block. These variables can be directly used inside the loop, without needing to declare them, by using the <a href="/syntax/$CIRCUMFLEX_ACCENT#%28Traps_to_avoid%29_twigil_%5E"><code>^</code> twigil</a>.</p>
+<p><code>for</code> and other loops place the item produced in every iteration into the <a href="/language/variables#index-entry-topic_variable">topic variable <code>$_</code></a>, or capture them into the variables that are declared along with the block. These variables can be directly used inside the loop, without needing to declare them, by using the <a href="/syntax/$CIRCUMFLEX_ACCENT#(Traps_to_avoid)_twigil_$CIRCUMFLEX_ACCENT"><code>^</code> twigil</a>.</p>
 <p>Implicit iteration occurs when using the <a href="/language/operators#index-entry-..._operators">sequence operator</a>.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>1</span></span><span>,</span><span class="constant numeric perl6fe"><span>1</span></span><span>,&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>^</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>²</span><span class="keyword operator generic perl6fe"><span>+</span></span><span>2</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>^</span></span><span class="variable other identifier perl6fe"><span>b</span></span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>^</span></span><span class="variable other identifier perl6fe"><span>c</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;…&nbsp;</span><span class="keyword operator generic perl6fe"><span>*</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>300</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«(1&nbsp;1&nbsp;1&nbsp;4&nbsp;7&nbsp;16&nbsp;46&nbsp;127&nbsp;475)</span></span></span></div></pre><p>The generating block is being run once while the condition to finish the sequence, in this case the term being bigger than 300, is not met. This has the side effect of running a loop, but also creating a list that is output.</p>
 <p>This can be done more systematically through the use of the <a href="/syntax/gather take"><code>gather/take</code> blocks</a>, which are a different kind of iterating construct that instead of running in sink context, returns an item every iteration. This <a href="https://perl6advent.wordpress.com/2009/12/23/day-23-lazy-fruits-from-the-gather-of-eden/">Advent Calendar tutorial</a> explains use cases for this kind of loops; in fact, gather is not so much a looping construct, but a statement prefix that collects the items produced by <code>take</code> and creates a list out of them.</p>
 <h1 id="Classic_loops_and_why_we_do_not_like_them"><a class="u" href="#___top" title="go to top of document"><code>Classic</code> loops and why we do not like them</a></h1>
-<p>Classic <code>for</code> loops, with a loop variable being incremented, can be done in Perl&nbsp;6 through the <a href="/language/control#loop"><code>loop</code> keyword</a>. Other <a href="/language/control#repeat%2Fwhile%2C_repeat%2Funtil">repeat</a> and <a href="/language/control#while%2C_until">while</a> loops are also possible.</p>
+<p>Classic <code>for</code> loops, with a loop variable being incremented, can be done in Perl&nbsp;6 through the <a href="/language/control#loop"><code>loop</code> keyword</a>. Other <a href="/language/control#repeat/while,_repeat/until">repeat</a> and <a href="/language/control#while,_until">while</a> loops are also possible.</p>
 <p>However, in general, they are discouraged. Perl&nbsp;6 is a functional and concurrent language; when coding in Perl&nbsp;6, you should look at loops in a functional way: processing, one by one, the items produced by an iterator, that is, feeding an item to a block without any kind of secondary effects. This functional view allows also easy parallelization of the operation via the <a href="/routine/hyper"><code>hyper</code></a> or <a href="/routine/race"><code>race</code></a> auto-threading methods.</p>
 <p>If you feel more comfortable with your good old loops, the language allows you to use them. However, it is considered more <em>p6y</em> to try and use, whenever possible, functional and concurrent iterating constructs.</p>
 <p>*Note: Since version 6.d loops can produce a list of values from the values of last statements.*</p>
@@ -128,12 +94,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/iterating.pod6'>Language/iterating.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/iterating.pod6">/language/iterating</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/iterating.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

@@ -24,83 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a>
-                <a class="menu-item" href="/routine-sub.html">
-                    Sub
-                </a>
-             
-                <a class="menu-item" href="/routine-method.html">
-                    Method
-                </a>
-             
-                <a class="menu-item" href="/routine-term.html">
-                    Term
-                </a>
-             
-                <a class="menu-item" href="/routine-operator.html">
-                    Operator
-                </a>
-             
-                <a class="menu-item" href="/routine-trait.html">
-                    Trait
-                </a>
-             
-                <a class="menu-item" href="/routine-submethod.html">
-                    Submethod
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>infix ⚛-=</h1>
     
@@ -116,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for infix <code>⚛-=</code> assembled from the following types:</p>
 <h1 id="class_atomicint"><a class="u" href="#___top" title="go to top of document">class atomicint</a></h1>
-<p>From <a href="/type/atomicint#infix_%E2%9A%9B-%3D">atomicint</a></p>
-<h2 id="(atomicint)_infix_⚛-="><a href="/routine/⚛-=#class_atomicint">(atomicint) infix ⚛-=</a></h2>
+<p>From <a href="/type/atomicint#infix_⚛-=">atomicint</a></p>
+<h2 id="(atomicint)_infix_⚛-="><a href="/type/atomicint#infix_⚛-=">(atomicint) infix ⚛-=</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>⚛-=</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="routine name perl6fe"><span>atomicint</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>value</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>⚛-=</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="routine name perl6fe"><span>atomicint</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>()&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>value</span></span></span><span>)</span></span></div></pre><p>Performs an atomic subtraction on a native integer. This will be performed using hardware-provided atomic operations. Since the operation is atomic, it is safe to use without acquiring a lock. Evaluates to the result of the subtraction. Underflow will wrap around silently. If <code>$value</code> is too big to unbox to a 64-bit integer, an exception will be thrown. If <code>$value</code> otherwise overflows <code>atomicint</code> then it will be silently truncated before the subtraction is performed.</p>
 
@@ -126,12 +68,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>control flow return</title>
+        <title>syntax return</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'>control flow return</h1>
+
+    <h1 class='title'>syntax return</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Control_flow">language documentation Control flow</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#(Control_flow)_control_flow_return">(Control flow) control flow return</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Control_flow)_control_flow_return_return">(Control flow) control flow return return</a></td></tr>
                               
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for control flow <code>return</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>return</code> assembled from the following types:</p>
 <h1 id="language_documentation_Control_flow"><a class="u" href="#___top" title="go to top of document">language documentation Control flow</a></h1>
-<p>From <a href="/language/control#flow%29_return">Control flow</a></p>
-<h1 id="(Control_flow)_control_flow_return"><a href="/syntax/return#language_documentation_Control_flow">(Control flow) control flow return</a></h1>
+<p>From <a href="/language/control#return">Control flow</a></p>
+<h2 id="(Control_flow)_control_flow_return_return"><a href="/language/control#return">(Control flow) control flow return return</a></h2>
 <p>The sub <code>return</code> will stop execution of a subroutine or method, run all relevant <a href="/language/phasers#Block_phasers">phasers</a> and provide the given return value to the caller. The default return value is <code>Nil</code>. If a return <a href="/type/Signature#Constraining_return_types">type constraint</a> is provided it will be checked unless the return value is <code>Nil</code>. If the type check fails the exception <a href="/type/X::TypeCheck::Return">X::TypeCheck::Return</a> is thrown. If it passes a control exception is raised and can be caught with <a href="/language/phasers#CONTROL">CONTROL</a>.</p>
 <p>Any <code>return</code> in a block is tied to the first <code>Routine</code> in the outer lexical scope of that block, no matter how deeply nested. Please note that a <code>return</code> in the root of a package will fail at runtime. A <code>return</code> in a block that is evaluated lazily (e.g. inside <code>map</code>) may find the outer lexical routine gone by the time the block is executed. In almost any case <code>last</code> is the better alternative. Please check <a href="/language/functions#Return_values">the functions documentation</a> for more information on how return values are handled and produced.</p>
 
@@ -102,12 +68,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

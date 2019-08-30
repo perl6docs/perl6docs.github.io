@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_faq">
-  
+<div id="content" class="pretty-box yellow content__language_faq">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/faq.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -186,7 +152,7 @@
 <p>Some users choose to use <a href="https://github.com/tadzik/rakudobrew">rakudobrew</a>, which allows installation of multiple versions of rakudo. Be sure to <a href="https://github.com/tadzik/rakudobrew#making-new-scripts-available">read its documentation</a>.</p>
 <p>In either case you will probably need to also install <a href="https://modules.perl6.org/dist/zef:github"><code>zef</code></a> and <a href="https://modules.perl6.org/dist/p6doc:github"><code>p6doc</code></a> from the <a href="https://modules.perl6.org/">ecosystem</a>.</p>
 <h2 id="Where_can_I_find_good_documentation_on_Perl_6?"><a class="u" href="#___top" title="go to top of document">Where can I find good documentation on Perl&nbsp;6?</a></h2>
-<p>See <a href="/routine/$SOLIDUS">the official documentation website</a> (especially its <a href="$SOLIDUSlanguage">&quot;Language&quot; section</a>) as well as the <a href="https://perl6.org/resources/">Resources page</a>. You can also consult this <a href="https://htmlpreview.github.io/?https://github.com/perl6/mu/blob/master/docs/Perl6/Cheatsheet/cheatsheet.html">great cheatsheet</a>.</p>
+<p>See <a href="/">the official documentation website</a> (especially its <a href="/language">&quot;Language&quot; section</a>) as well as the <a href="https://perl6.org/resources/">Resources page</a>. You can also consult this <a href="https://htmlpreview.github.io/?https://github.com/perl6/mu/blob/master/docs/Perl6/Cheatsheet/cheatsheet.html">great cheatsheet</a>.</p>
 <p><a href="https://perl6book.com/">perl6book.com</a> contains a list of dead tree and electronic books.</p>
 <p>Be mindful of publication dates when reading third-party articles. Anything published before December, 2015 likely describes a pre-release version of Perl&nbsp;6.</p>
 <p>You can always <a href="https://webchat.freenode.net/?channels=#perl6">get help from a live human in our help chat</a> or <a href="https://colabti.org/irclogger/irclogger_log_search/perl6">search the chat logs</a> to find previous conversations and discussions.</p>
@@ -219,7 +185,7 @@
 <h2 id="Is_there_a_glossary_of_Perl_6_related_terms?"><a class="u" href="#___top" title="go to top of document">Is there a glossary of Perl&nbsp;6 related terms?</a></h2>
 <p>Yes, see <a href="/language/glossary">glossary</a>.</p>
 <h2 id="I'm_a_Perl_5_programmer._Where_is_a_list_of_differences_between_Perl_5_and_Perl_6?"><a class="u" href="#___top" title="go to top of document">I&#39;m a Perl&nbsp;5 programmer. Where is a list of differences between Perl&nbsp;5 and Perl&nbsp;6?</a></h2>
-<p>There are several <em>Perl&nbsp;5 to Perl&nbsp;6</em> guides in the <a href="$SOLIDUSlanguage">Language section of the documentation</a>, most notable of which is the <a href="/language/5to6-nutshell">Overview</a>.</p>
+<p>There are several <em>Perl&nbsp;5 to Perl&nbsp;6</em> guides in the <a href="/language">Language section of the documentation</a>, most notable of which is the <a href="/language/5to6-nutshell">Overview</a>.</p>
 <p><a name="index-entry-Ruby_Quickstart_(FAQ)"></a></p>
 <h2 id="I'm_a_Ruby_programmer_looking_for_quickstart_type_docs?"><a class="u" href="#___top" title="go to top of document">I&#39;m a Ruby programmer looking for quickstart type docs?</a></h2>
 <p>See the <a href="/language/rb-nutshell">rb-nutshell</a> guide.</p>
@@ -489,12 +455,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/faq.pod6'>Language/faq.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/faq.pod6">/language/faq</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/faq.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

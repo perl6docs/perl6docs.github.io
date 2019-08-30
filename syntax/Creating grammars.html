@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title> Creating grammars</title>
+        <title>syntax Creating grammars</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,86 +24,52 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'> Creating grammars</h1>
+
+    <h1 class='title'>syntax Creating grammars</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Grammars">language documentation Grammars</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#(Grammars)_Creating_grammars">(Grammars)  Creating grammars</a></td></tr>
-                <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#Proto_regexes">Proto regexes</a></td></tr>
-                                                            <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#Special_tokens">Special tokens</a></td></tr>
- <tr class="toc-level-3"><td class="toc-number">2.2.1</td><td class="toc-text"><a href="#TOP"><code class="pod-code-inline">TOP</code></a></td></tr>
-                            <tr class="toc-level-3"><td class="toc-number">2.2.2</td><td class="toc-text"><a href="#ws"><code class="pod-code-inline">ws</code></a></td></tr>
-                                     <tr class="toc-level-3"><td class="toc-number">2.2.3</td><td class="toc-text"><a href="#sym"><code class="pod-code-inline">sym</code></a></td></tr>
-           <tr class="toc-level-3"><td class="toc-number">2.2.4</td><td class="toc-text"><a href="#&quot;Always_succeed&quot;_assertion">&quot;Always succeed&quot; assertion</a></td></tr>
-                      <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#Methods_in_grammars">Methods in grammars</a></td></tr>
-               <tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#Dynamic_variables_in_grammars">Dynamic variables in grammars</a></td></tr>
-                                    <tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#Attributes_in_grammars">Attributes in grammars</a></td></tr>
-                                                                                <tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#Passing_arguments_into_grammars">Passing arguments into grammars</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Grammars)_Creating_grammars">(Grammars)  Creating grammars</a></td></tr>
+                <tr class="toc-level-2"><td class="toc-number">1.2</td><td class="toc-text"><a href="#Proto_regexes">Proto regexes</a></td></tr>
+                                                            <tr class="toc-level-2"><td class="toc-number">1.3</td><td class="toc-text"><a href="#Special_tokens">Special tokens</a></td></tr>
+ <tr class="toc-level-3"><td class="toc-number">1.3.1</td><td class="toc-text"><a href="#TOP"><code class="pod-code-inline">TOP</code></a></td></tr>
+                            <tr class="toc-level-3"><td class="toc-number">1.3.2</td><td class="toc-text"><a href="#ws"><code class="pod-code-inline">ws</code></a></td></tr>
+                                     <tr class="toc-level-3"><td class="toc-number">1.3.3</td><td class="toc-text"><a href="#sym"><code class="pod-code-inline">sym</code></a></td></tr>
+           <tr class="toc-level-3"><td class="toc-number">1.3.4</td><td class="toc-text"><a href="#&quot;Always_succeed&quot;_assertion">&quot;Always succeed&quot; assertion</a></td></tr>
+                      <tr class="toc-level-2"><td class="toc-number">1.4</td><td class="toc-text"><a href="#Methods_in_grammars">Methods in grammars</a></td></tr>
+               <tr class="toc-level-2"><td class="toc-number">1.5</td><td class="toc-text"><a href="#Dynamic_variables_in_grammars">Dynamic variables in grammars</a></td></tr>
+                                    <tr class="toc-level-2"><td class="toc-number">1.6</td><td class="toc-text"><a href="#Attributes_in_grammars">Attributes in grammars</a></td></tr>
+                                                                                <tr class="toc-level-2"><td class="toc-number">1.7</td><td class="toc-text"><a href="#Passing_arguments_into_grammars">Passing arguments into grammars</a></td></tr>
                                                                                            
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for  <code>Creating grammars</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>Creating grammars</code> assembled from the following types:</p>
 <h1 id="language_documentation_Grammars"><a class="u" href="#___top" title="go to top of document">language documentation Grammars</a></h1>
-<p>From <a href="/language/grammars#_Creating_grammars">Grammars</a></p>
-<h1 id="(Grammars)_Creating_grammars"><a href="/syntax/Creating grammars#language_documentation_Grammars">(Grammars)  Creating grammars</a></h1>
+<p>From <a href="/language/grammars#Creating_grammars">Grammars</a></p>
+<h2 id="(Grammars)_Creating_grammars"><a href="/language/grammars#Creating_grammars">(Grammars)  Creating grammars</a></h2>
 <p><a href="/type/Grammar">Grammar</a> is the superclass that classes automatically get when they are declared with the <code>grammar</code> keyword instead of <code>class</code>. Grammars should only be used to parse text; if you wish to extract complex data, you can add actions within the grammar, or an <a href="/language/grammars#Action_objects">action object</a> is recommended to be used in conjunction with the grammar. If action objects are not used, <code>.parse</code> returns a <a href="/type/Match">Match</a> object and sets, by default, the <a href="/syntax/$$SOLIDUS">default match object <code>$/</code></a>, to the same value.</p>
 <h2 id="Proto_regexes"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-:sym<>-_proto_regex-_declarator_grammar-Proto_regexes"><span class="index-entry">Proto regexes</span></a></a></h2>
 <p><a href="/type/Grammar">Grammar</a>s are composed of rules, tokens and regexes; these are actually methods, since grammars are classes.</p>
@@ -158,12 +124,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

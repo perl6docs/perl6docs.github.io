@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_IO_Spec">
-  
+<div id="content" class="pretty-box yellow content__type_IO__Spec">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/IO/Spec.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/IO::Spec.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -126,106 +76,108 @@
 <h1 id="Methods"><a class="u" href="#___top" title="go to top of document">Methods</a></h1>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>IO::Spec</code></figcaption>
+  <figcaption>Type relations for <code>IO::Spec</code></figcaption>
   <svg width="494pt" height="332pt"
- viewBox="0.00 0.00 493.69 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 494.49 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 489.686,-328 489.686,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 490.487,-328 490.487,4 -4,4"/>
 <!-- IO::Spec -->
 <g id="node1" class="node"><title>IO::Spec</title>
 <g id="a_node1"><a xlink:href="/type/IO::Spec" xlink:title="IO::Spec">
-<ellipse fill="none" stroke="#000000" cx="239.393" cy="-162" rx="45.4919" ry="18"/>
-<text text-anchor="middle" x="239.393" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec</text>
+<ellipse fill="none" stroke="#000000" cx="252.293" cy="-162" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="252.293" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="239.393" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="239.393" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="252.293" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="252.293" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- IO::Spec&#45;&gt;Any -->
 <g id="edge1" class="edge"><title>IO::Spec&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M239.393,-180.303C239.393,-188.017 239.393,-197.288 239.393,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="235.893,-205.896 239.393,-215.896 242.893,-205.896 235.893,-205.896"/>
+<path fill="none" stroke="#000000" d="M252.293,-180.303C252.293,-188.017 252.293,-197.288 252.293,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="248.793,-205.896 252.293,-215.896 255.793,-205.896 248.793,-205.896"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="239.393" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="239.393" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="252.293" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="252.293" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M239.393,-252.303C239.393,-260.017 239.393,-269.288 239.393,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="235.893,-277.896 239.393,-287.896 242.893,-277.896 235.893,-277.896"/>
+<path fill="none" stroke="#000000" d="M252.293,-252.303C252.293,-260.017 252.293,-269.288 252.293,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="248.793,-277.896 252.293,-287.896 255.793,-277.896 248.793,-277.896"/>
 </g>
 <!-- IO::Spec::Unix -->
 <g id="node4" class="node"><title>IO::Spec::Unix</title>
 <g id="a_node4"><a xlink:href="/type/IO::Spec::Unix" xlink:title="IO::Spec::Unix">
-<ellipse fill="none" stroke="#000000" cx="239.393" cy="-90" rx="67.6881" ry="18"/>
-<text text-anchor="middle" x="239.393" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Unix</text>
+<ellipse fill="none" stroke="#000000" cx="252.293" cy="-90" rx="67.6881" ry="18"/>
+<text text-anchor="middle" x="252.293" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Unix</text>
 </a>
 </g>
 </g>
 <!-- IO::Spec::Unix&#45;&gt;IO::Spec -->
 <g id="edge3" class="edge"><title>IO::Spec::Unix&#45;&gt;IO::Spec</title>
-<path fill="none" stroke="#000000" d="M239.393,-108.303C239.393,-116.017 239.393,-125.288 239.393,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="235.893,-133.896 239.393,-143.896 242.893,-133.896 235.893,-133.896"/>
-</g>
-<!-- IO::Spec::Win32 -->
-<g id="node5" class="node"><title>IO::Spec::Win32</title>
-<g id="a_node5"><a xlink:href="/type/IO::Spec::Win32" xlink:title="IO::Spec::Win32">
-<ellipse fill="none" stroke="#000000" cx="75.3933" cy="-18" rx="75.2868" ry="18"/>
-<text text-anchor="middle" x="75.3933" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Win32</text>
-</a>
-</g>
-</g>
-<!-- IO::Spec::Win32&#45;&gt;IO::Spec::Unix -->
-<g id="edge4" class="edge"><title>IO::Spec::Win32&#45;&gt;IO::Spec::Unix</title>
-<path fill="none" stroke="#000000" d="M110.575,-34.0168C135.471,-44.643 169.026,-58.965 195.647,-70.3279"/>
-<polygon fill="#000000" stroke="#000000" points="194.541,-73.6613 205.113,-74.368 197.289,-67.2232 194.541,-73.6613"/>
-</g>
-<!-- IO::Spec::QNX -->
-<g id="node6" class="node"><title>IO::Spec::QNX</title>
-<g id="a_node6"><a xlink:href="/type/IO::Spec::QNX" xlink:title="IO::Spec::QNX">
-<ellipse fill="none" stroke="#000000" cx="239.393" cy="-18" rx="70.3881" ry="18"/>
-<text text-anchor="middle" x="239.393" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::QNX</text>
-</a>
-</g>
-</g>
-<!-- IO::Spec::QNX&#45;&gt;IO::Spec::Unix -->
-<g id="edge5" class="edge"><title>IO::Spec::QNX&#45;&gt;IO::Spec::Unix</title>
-<path fill="none" stroke="#000000" d="M239.393,-36.3034C239.393,-44.0173 239.393,-53.2875 239.393,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="235.893,-61.8956 239.393,-71.8957 242.893,-61.8957 235.893,-61.8956"/>
+<path fill="none" stroke="#000000" d="M252.293,-108.303C252.293,-116.017 252.293,-125.288 252.293,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="248.793,-133.896 252.293,-143.896 255.793,-133.896 248.793,-133.896"/>
 </g>
 <!-- IO::Spec::Cygwin -->
-<g id="node7" class="node"><title>IO::Spec::Cygwin</title>
-<g id="a_node7"><a xlink:href="/type/IO::Spec::Cygwin" xlink:title="IO::Spec::Cygwin">
-<ellipse fill="none" stroke="#000000" cx="406.393" cy="-18" rx="79.0865" ry="18"/>
-<text text-anchor="middle" x="406.393" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Cygwin</text>
+<g id="node5" class="node"><title>IO::Spec::Cygwin</title>
+<g id="a_node5"><a xlink:href="/type/IO::Spec::Cygwin" xlink:title="IO::Spec::Cygwin">
+<ellipse fill="none" stroke="#000000" cx="79.293" cy="-18" rx="79.0865" ry="18"/>
+<text text-anchor="middle" x="79.293" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Cygwin</text>
 </a>
 </g>
 </g>
 <!-- IO::Spec::Cygwin&#45;&gt;IO::Spec::Unix -->
-<g id="edge6" class="edge"><title>IO::Spec::Cygwin&#45;&gt;IO::Spec::Unix</title>
-<path fill="none" stroke="#000000" d="M370.157,-34.189C344.671,-44.8718 310.425,-59.2262 283.373,-70.5654"/>
-<polygon fill="#000000" stroke="#000000" points="282,-67.3458 274.131,-74.4395 284.706,-73.8016 282,-67.3458"/>
+<g id="edge4" class="edge"><title>IO::Spec::Cygwin&#45;&gt;IO::Spec::Unix</title>
+<path fill="none" stroke="#000000" d="M116.406,-34.0168C142.961,-44.7615 178.854,-59.2849 207.083,-70.7069"/>
+<polygon fill="#000000" stroke="#000000" points="206.137,-74.0999 216.72,-74.6063 208.763,-67.611 206.137,-74.0999"/>
+</g>
+<!-- IO::Spec::Win32 -->
+<g id="node6" class="node"><title>IO::Spec::Win32</title>
+<g id="a_node6"><a xlink:href="/type/IO::Spec::Win32" xlink:title="IO::Spec::Win32">
+<ellipse fill="none" stroke="#000000" cx="252.293" cy="-18" rx="75.2868" ry="18"/>
+<text text-anchor="middle" x="252.293" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::Win32</text>
+</a>
+</g>
+</g>
+<!-- IO::Spec::Win32&#45;&gt;IO::Spec::Unix -->
+<g id="edge5" class="edge"><title>IO::Spec::Win32&#45;&gt;IO::Spec::Unix</title>
+<path fill="none" stroke="#000000" d="M252.293,-36.3034C252.293,-44.0173 252.293,-53.2875 252.293,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="248.793,-61.8956 252.293,-71.8957 255.793,-61.8957 248.793,-61.8956"/>
+</g>
+<!-- IO::Spec::QNX -->
+<g id="node7" class="node"><title>IO::Spec::QNX</title>
+<g id="a_node7"><a xlink:href="/type/IO::Spec::QNX" xlink:title="IO::Spec::QNX">
+<ellipse fill="none" stroke="#000000" cx="416.293" cy="-18" rx="70.3881" ry="18"/>
+<text text-anchor="middle" x="416.293" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">IO::Spec::QNX</text>
+</a>
+</g>
+</g>
+<!-- IO::Spec::QNX&#45;&gt;IO::Spec::Unix -->
+<g id="edge6" class="edge"><title>IO::Spec::QNX&#45;&gt;IO::Spec::Unix</title>
+<path fill="none" stroke="#000000" d="M381.513,-33.8452C356.558,-44.4966 322.752,-58.9259 295.978,-70.3541"/>
+<polygon fill="#000000" stroke="#000000" points="294.284,-67.2715 286.461,-74.4162 297.032,-73.7096 294.284,-67.2715"/>
 </g>
 </g>
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-IO%3A%3ASpec.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 
@@ -234,12 +186,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/IO/Spec.pod6'>Type/IO/Spec.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/IO::Spec.pod6">/type/IO::Spec</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/IO/Spec.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

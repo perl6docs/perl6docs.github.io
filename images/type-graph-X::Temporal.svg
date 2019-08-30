@@ -56,39 +56,39 @@
 <path fill="none" stroke="#000000" d="M395.089,-180.303C395.089,-188.017 395.089,-197.288 395.089,-205.888"/>
 <polygon fill="#000000" stroke="#000000" points="391.589,-205.896 395.089,-215.896 398.589,-205.896 391.589,-205.896"/>
 </g>
-<!-- X::DateTime::InvalidDeltaUnit -->
-<g id="node5" class="node"><title>X::DateTime::InvalidDeltaUnit</title>
-<g id="a_node5"><a xlink:href="/type/X::DateTime::InvalidDeltaUnit" xlink:title="X::DateTime::InvalidDeltaUnit">
-<ellipse fill="none" stroke="#000000" cx="126.089" cy="-18" rx="126.178" ry="18"/>
-<text text-anchor="middle" x="126.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::InvalidDeltaUnit</text>
-</a>
-</g>
-</g>
-<!-- X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal -->
-<g id="edge7" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal</title>
-<path fill="none" stroke="#6666ff" d="M176.246,-34.5353C213.848,-46.1822 265.065,-62.0456 302.524,-73.648"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="301.629,-77.0349 312.217,-76.6503 303.7,-70.3483 301.629,-77.0349"/>
-</g>
-<!-- X::DateTime::InvalidDeltaUnit&#45;&gt;Exception -->
-<g id="edge4" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M155.437,-35.5316C201.13,-61.2698 284.089,-108 284.089,-108 284.089,-108 324.876,-127.475 357.002,-142.814"/>
-<polygon fill="#000000" stroke="#000000" points="355.682,-146.063 366.215,-147.213 358.699,-139.746 355.682,-146.063"/>
-</g>
 <!-- X::DateTime::TimezoneClash -->
-<g id="node6" class="node"><title>X::DateTime::TimezoneClash</title>
-<g id="a_node6"><a xlink:href="/type/X::DateTime::TimezoneClash" xlink:title="X::DateTime::TimezoneClash">
-<ellipse fill="none" stroke="#000000" cx="396.089" cy="-18" rx="126.178" ry="18"/>
-<text text-anchor="middle" x="396.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::TimezoneClash</text>
+<g id="node5" class="node"><title>X::DateTime::TimezoneClash</title>
+<g id="a_node5"><a xlink:href="/type/X::DateTime::TimezoneClash" xlink:title="X::DateTime::TimezoneClash">
+<ellipse fill="none" stroke="#000000" cx="126.089" cy="-18" rx="126.178" ry="18"/>
+<text text-anchor="middle" x="126.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::TimezoneClash</text>
 </a>
 </g>
 </g>
 <!-- X::DateTime::TimezoneClash&#45;&gt;X::Temporal -->
-<g id="edge8" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;X::Temporal</title>
+<g id="edge7" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;X::Temporal</title>
+<path fill="none" stroke="#6666ff" d="M176.246,-34.5353C213.848,-46.1822 265.065,-62.0456 302.524,-73.648"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="301.629,-77.0349 312.217,-76.6503 303.7,-70.3483 301.629,-77.0349"/>
+</g>
+<!-- X::DateTime::TimezoneClash&#45;&gt;Exception -->
+<g id="edge4" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M155.437,-35.5316C201.13,-61.2698 284.089,-108 284.089,-108 284.089,-108 324.876,-127.475 357.002,-142.814"/>
+<polygon fill="#000000" stroke="#000000" points="355.682,-146.063 366.215,-147.213 358.699,-139.746 355.682,-146.063"/>
+</g>
+<!-- X::DateTime::InvalidDeltaUnit -->
+<g id="node6" class="node"><title>X::DateTime::InvalidDeltaUnit</title>
+<g id="a_node6"><a xlink:href="/type/X::DateTime::InvalidDeltaUnit" xlink:title="X::DateTime::InvalidDeltaUnit">
+<ellipse fill="none" stroke="#000000" cx="396.089" cy="-18" rx="126.178" ry="18"/>
+<text text-anchor="middle" x="396.089" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::DateTime::InvalidDeltaUnit</text>
+</a>
+</g>
+</g>
+<!-- X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal -->
+<g id="edge8" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;X::Temporal</title>
 <path fill="none" stroke="#6666ff" d="M385.438,-35.945C380.249,-44.1994 373.901,-54.2986 368.141,-63.4622"/>
 <polygon fill="#6666ff" stroke="#6666ff" points="365,-61.882 362.642,-72.211 370.927,-65.6072 365,-61.882"/>
 </g>
-<!-- X::DateTime::TimezoneClash&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>X::DateTime::TimezoneClash&#45;&gt;Exception</title>
+<!-- X::DateTime::InvalidDeltaUnit&#45;&gt;Exception -->
+<g id="edge5" class="edge"><title>X::DateTime::InvalidDeltaUnit&#45;&gt;Exception</title>
 <path fill="none" stroke="#000000" d="M403.815,-36.0613C410.831,-51.5549 420.089,-72 420.089,-72 420.089,-72 420.089,-108 420.089,-108 420.089,-108 413.642,-121.667 407.296,-135.121"/>
 <polygon fill="#000000" stroke="#000000" points="404.1,-133.693 402.999,-144.23 410.431,-136.679 404.1,-133.693"/>
 </g>

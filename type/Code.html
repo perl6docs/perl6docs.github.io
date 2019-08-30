@@ -24,75 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Code">
-  
+<div id="content" class="pretty-box yellow content__type_Code">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Code.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -167,178 +117,180 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>line</span></span><span>(</span><span class="support type perl6fe"><span>Code</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the line number in which the code object was declared.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>infix</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>+</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>line</span></span><span>;</span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for
-    <code>Code</code></figcaption>
-  <svg width="381pt" height="476pt"
- viewBox="0.00 0.00 380.54 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <figcaption>Type relations for <code>Code</code></figcaption>
+  <svg width="380pt" height="476pt"
+ viewBox="0.00 0.00 380.19 476.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 472)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-472 376.544,-472 376.544,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-472 376.191,-472 376.191,4 -4,4"/>
 <!-- Code -->
 <g id="node1" class="node"><title>Code</title>
 <g id="a_node1"><a xlink:href="/type/Code" xlink:title="Code">
-<ellipse fill="none" stroke="#000000" cx="243" cy="-306" rx="31.6951" ry="18"/>
-<text text-anchor="middle" x="243" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Code</text>
+<ellipse fill="none" stroke="#000000" cx="225.296" cy="-306" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="225.296" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Code</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="200" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="200" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="182.296" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="182.296" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Code&#45;&gt;Any -->
 <g id="edge1" class="edge"><title>Code&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M233.027,-323.235C227.763,-331.805 221.189,-342.506 215.296,-352.1"/>
-<polygon fill="#000000" stroke="#000000" points="212.171,-350.5 209.919,-360.853 218.136,-354.164 212.171,-350.5"/>
+<path fill="none" stroke="#000000" d="M215.323,-323.235C210.059,-331.805 203.486,-342.506 197.592,-352.1"/>
+<polygon fill="#000000" stroke="#000000" points="194.467,-350.5 192.215,-360.853 200.432,-354.164 194.467,-350.5"/>
 </g>
 <!-- Callable -->
 <g id="node4" class="node"><title>Callable</title>
 <g id="a_node4"><a xlink:href="/type/Callable" xlink:title="Callable">
-<ellipse fill="none" stroke="#6666ff" cx="287" cy="-378" rx="42.4939" ry="18"/>
-<text text-anchor="middle" x="287" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Callable</text>
+<ellipse fill="none" stroke="#6666ff" cx="269.296" cy="-378" rx="42.4939" ry="18"/>
+<text text-anchor="middle" x="269.296" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Callable</text>
 </a>
 </g>
 </g>
 <!-- Code&#45;&gt;Callable -->
 <g id="edge11" class="edge"><title>Code&#45;&gt;Callable</title>
-<path fill="none" stroke="#6666ff" d="M253.205,-323.235C258.515,-331.683 265.126,-342.201 271.089,-351.688"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="268.26,-353.763 276.545,-360.367 274.186,-350.038 268.26,-353.763"/>
+<path fill="none" stroke="#6666ff" d="M235.502,-323.235C240.811,-331.683 247.423,-342.201 253.386,-351.688"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="250.556,-353.763 258.841,-360.367 256.483,-350.038 250.556,-353.763"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="200" cy="-450" rx="27" ry="18"/>
-<text text-anchor="middle" x="200" y="-446.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="182.296" cy="-450" rx="27" ry="18"/>
+<text text-anchor="middle" x="182.296" y="-446.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M200,-396.303C200,-404.017 200,-413.288 200,-421.888"/>
-<polygon fill="#000000" stroke="#000000" points="196.5,-421.896 200,-431.896 203.5,-421.896 196.5,-421.896"/>
+<path fill="none" stroke="#000000" d="M182.296,-396.303C182.296,-404.017 182.296,-413.288 182.296,-421.888"/>
+<polygon fill="#000000" stroke="#000000" points="178.797,-421.896 182.296,-431.896 185.797,-421.896 178.797,-421.896"/>
 </g>
 <!-- Block -->
 <g id="node5" class="node"><title>Block</title>
 <g id="a_node5"><a xlink:href="/type/Block" xlink:title="Block">
-<ellipse fill="none" stroke="#000000" cx="183" cy="-234" rx="32.4942" ry="18"/>
-<text text-anchor="middle" x="183" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Block</text>
+<ellipse fill="none" stroke="#000000" cx="165.296" cy="-234" rx="32.4942" ry="18"/>
+<text text-anchor="middle" x="165.296" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Block</text>
 </a>
 </g>
 </g>
 <!-- Block&#45;&gt;Code -->
 <g id="edge3" class="edge"><title>Block&#45;&gt;Code</title>
-<path fill="none" stroke="#000000" d="M196.316,-250.535C204.162,-259.689 214.24,-271.446 223.022,-281.693"/>
-<polygon fill="#000000" stroke="#000000" points="220.556,-284.193 229.721,-289.508 225.871,-279.638 220.556,-284.193"/>
+<path fill="none" stroke="#000000" d="M178.612,-250.535C186.458,-259.689 196.536,-271.446 205.319,-281.693"/>
+<polygon fill="#000000" stroke="#000000" points="202.852,-284.193 212.018,-289.508 208.167,-279.638 202.852,-284.193"/>
 </g>
 <!-- WhateverCode -->
 <g id="node6" class="node"><title>WhateverCode</title>
 <g id="a_node6"><a xlink:href="/type/WhateverCode" xlink:title="WhateverCode">
-<ellipse fill="none" stroke="#000000" cx="303" cy="-234" rx="69.5877" ry="18"/>
-<text text-anchor="middle" x="303" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">WhateverCode</text>
+<ellipse fill="none" stroke="#000000" cx="285.296" cy="-234" rx="69.5877" ry="18"/>
+<text text-anchor="middle" x="285.296" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">WhateverCode</text>
 </a>
 </g>
 </g>
 <!-- WhateverCode&#45;&gt;Code -->
 <g id="edge4" class="edge"><title>WhateverCode&#45;&gt;Code</title>
-<path fill="none" stroke="#000000" d="M288.476,-251.945C280.889,-260.796 271.484,-271.769 263.199,-281.434"/>
-<polygon fill="#000000" stroke="#000000" points="260.419,-279.3 256.568,-289.171 265.733,-283.856 260.419,-279.3"/>
+<path fill="none" stroke="#000000" d="M270.772,-251.945C263.185,-260.796 253.78,-271.769 245.496,-281.434"/>
+<polygon fill="#000000" stroke="#000000" points="242.715,-279.3 238.864,-289.171 248.03,-283.856 242.715,-279.3"/>
 </g>
 <!-- Routine -->
 <g id="node7" class="node"><title>Routine</title>
 <g id="a_node7"><a xlink:href="/type/Routine" xlink:title="Routine">
-<ellipse fill="none" stroke="#000000" cx="183" cy="-162" rx="40.8928" ry="18"/>
-<text text-anchor="middle" x="183" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Routine</text>
+<ellipse fill="none" stroke="#000000" cx="165.296" cy="-162" rx="40.8928" ry="18"/>
+<text text-anchor="middle" x="165.296" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Routine</text>
 </a>
 </g>
 </g>
 <!-- Routine&#45;&gt;Block -->
 <g id="edge5" class="edge"><title>Routine&#45;&gt;Block</title>
-<path fill="none" stroke="#000000" d="M183,-180.303C183,-188.017 183,-197.288 183,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="179.5,-205.896 183,-215.896 186.5,-205.896 179.5,-205.896"/>
+<path fill="none" stroke="#000000" d="M165.296,-180.303C165.296,-188.017 165.296,-197.288 165.296,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="161.797,-205.896 165.296,-215.896 168.797,-205.896 161.797,-205.896"/>
+</g>
+<!-- Method -->
+<g id="node8" class="node"><title>Method</title>
+<g id="a_node8"><a xlink:href="/type/Method" xlink:title="Method">
+<ellipse fill="none" stroke="#000000" cx="40.2964" cy="-90" rx="40.0939" ry="18"/>
+<text text-anchor="middle" x="40.2964" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Method</text>
+</a>
+</g>
+</g>
+<!-- Method&#45;&gt;Routine -->
+<g id="edge6" class="edge"><title>Method&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M64.3977,-104.497C83.6414,-115.273 110.814,-130.49 132.114,-142.418"/>
+<polygon fill="#000000" stroke="#000000" points="130.407,-145.474 140.843,-147.306 133.828,-139.366 130.407,-145.474"/>
 </g>
 <!-- Sub -->
-<g id="node8" class="node"><title>Sub</title>
-<g id="a_node8"><a xlink:href="/type/Sub" xlink:title="Sub">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Sub</text>
+<g id="node9" class="node"><title>Sub</title>
+<g id="a_node9"><a xlink:href="/type/Sub" xlink:title="Sub">
+<ellipse fill="none" stroke="#000000" cx="125.296" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="125.296" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Sub</text>
 </a>
 </g>
 </g>
 <!-- Sub&#45;&gt;Routine -->
-<g id="edge6" class="edge"><title>Sub&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M48.3574,-101.085C56.1094,-104.746 63,-108 63,-108 63,-108 110.389,-128.93 145.607,-144.485"/>
-<polygon fill="#000000" stroke="#000000" points="144.606,-147.869 155.168,-148.708 147.435,-141.466 144.606,-147.869"/>
-</g>
-<!-- Submethod -->
-<g id="node9" class="node"><title>Submethod</title>
-<g id="a_node9"><a xlink:href="/type/Submethod" xlink:title="Submethod">
-<ellipse fill="none" stroke="#000000" cx="128" cy="-90" rx="55.7903" ry="18"/>
-<text text-anchor="middle" x="128" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Submethod</text>
-</a>
-</g>
-</g>
-<!-- Submethod&#45;&gt;Routine -->
-<g id="edge7" class="edge"><title>Submethod&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M141.034,-107.589C147.815,-116.219 156.237,-126.938 163.752,-136.503"/>
-<polygon fill="#000000" stroke="#000000" points="161.129,-138.829 170.059,-144.53 166.633,-134.504 161.129,-138.829"/>
+<g id="edge7" class="edge"><title>Sub&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M134.574,-107.235C139.351,-115.596 145.287,-125.984 150.664,-135.394"/>
+<polygon fill="#000000" stroke="#000000" points="147.791,-137.421 155.792,-144.367 153.869,-133.948 147.791,-137.421"/>
 </g>
 <!-- Macro -->
 <g id="node10" class="node"><title>Macro</title>
 <g id="a_node10"><a xlink:href="/type/Macro" xlink:title="Macro">
-<ellipse fill="none" stroke="#000000" cx="238" cy="-90" rx="35.9954" ry="18"/>
-<text text-anchor="middle" x="238" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Macro</text>
+<ellipse fill="none" stroke="#000000" cx="206.296" cy="-90" rx="35.9954" ry="18"/>
+<text text-anchor="middle" x="206.296" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Macro</text>
 </a>
 </g>
 </g>
 <!-- Macro&#45;&gt;Routine -->
 <g id="edge8" class="edge"><title>Macro&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M225.52,-106.884C218.587,-115.708 209.816,-126.87 202.044,-136.762"/>
-<polygon fill="#000000" stroke="#000000" points="199.239,-134.667 195.813,-144.693 204.743,-138.992 199.239,-134.667"/>
+<path fill="none" stroke="#000000" d="M196.58,-107.589C191.749,-115.837 185.802,-125.991 180.394,-135.223"/>
+<polygon fill="#000000" stroke="#000000" points="177.262,-133.646 175.228,-144.044 183.302,-137.184 177.262,-133.646"/>
 </g>
-<!-- Method -->
-<g id="node11" class="node"><title>Method</title>
-<g id="a_node11"><a xlink:href="/type/Method" xlink:title="Method">
-<ellipse fill="none" stroke="#000000" cx="332" cy="-90" rx="40.0939" ry="18"/>
-<text text-anchor="middle" x="332" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Method</text>
+<!-- Submethod -->
+<g id="node11" class="node"><title>Submethod</title>
+<g id="a_node11"><a xlink:href="/type/Submethod" xlink:title="Submethod">
+<ellipse fill="none" stroke="#000000" cx="316.296" cy="-90" rx="55.7903" ry="18"/>
+<text text-anchor="middle" x="316.296" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Submethod</text>
 </a>
 </g>
 </g>
-<!-- Method&#45;&gt;Routine -->
-<g id="edge9" class="edge"><title>Method&#45;&gt;Routine</title>
-<path fill="none" stroke="#000000" d="M305.362,-103.515C281.356,-114.792 245.854,-131.471 219.265,-143.963"/>
-<polygon fill="#000000" stroke="#000000" points="217.473,-140.938 209.91,-148.358 220.449,-147.273 217.473,-140.938"/>
+<!-- Submethod&#45;&gt;Routine -->
+<g id="edge9" class="edge"><title>Submethod&#45;&gt;Routine</title>
+<path fill="none" stroke="#000000" d="M285.739,-105.166C261.592,-116.36 227.802,-132.024 202.155,-143.913"/>
+<polygon fill="#000000" stroke="#000000" points="200.362,-140.886 192.762,-148.268 203.306,-147.237 200.362,-140.886"/>
 </g>
 <!-- Regex -->
 <g id="node12" class="node"><title>Regex</title>
 <g id="a_node12"><a xlink:href="/type/Regex" xlink:title="Regex">
-<ellipse fill="none" stroke="#000000" cx="332" cy="-18" rx="36.2938" ry="18"/>
-<text text-anchor="middle" x="332" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Regex</text>
+<ellipse fill="none" stroke="#000000" cx="40.2964" cy="-18" rx="36.2938" ry="18"/>
+<text text-anchor="middle" x="40.2964" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Regex</text>
 </a>
 </g>
 </g>
 <!-- Regex&#45;&gt;Method -->
 <g id="edge10" class="edge"><title>Regex&#45;&gt;Method</title>
-<path fill="none" stroke="#000000" d="M332,-36.3034C332,-44.0173 332,-53.2875 332,-61.8876"/>
-<polygon fill="#000000" stroke="#000000" points="328.5,-61.8956 332,-71.8957 335.5,-61.8957 328.5,-61.8956"/>
+<path fill="none" stroke="#000000" d="M40.2964,-36.3034C40.2964,-44.0173 40.2964,-53.2875 40.2964,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="36.7965,-61.8956 40.2964,-71.8957 43.7965,-61.8957 36.7965,-61.8956"/>
 </g>
 </g>
 </svg>
 
   <p class="fallback">
-    <a rel="alternate"
+    <a
+      rel="alternate"
       href="/images/type-graph-Code.svg"
-      type="image/svg+xml">Expand above chart</a>
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
   </p>
 </figure>
 <h1 id="Routines_supplied_by_role_Callable"><a class="u" href="#___top" title="go to top of document">Routines supplied by role Callable</a></h1>
 <p>Code does role <a href="/type/Callable">Callable</a>, which provides the following routines:</p>
-<h2 id="(Callable)_method_CALL-ME"><a href="/routine/CALL-ME#role_Callable">(Callable) method CALL-ME</a></h2>
+<h2 id="(Callable)_method_CALL-ME"><a href="/type/Callable#method_CALL-ME">(Callable) method CALL-ME</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>CALL-ME</span></span><span>(</span><span class="support type perl6fe"><span>Callable</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>self</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>arguments</span></span><span>)</span></span></div></pre><p>This method is required for postfix:«( )» and postfix:«.( )». It&#39;s what makes an object actually call-able and needs to be overloaded to let a given object act like a routine. If the object needs to be stored in a <code>&amp;</code>-sigiled container, is has to implement Callable.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Callable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>submethod</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>CALL-ME</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>c</span></span><span>)</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>called</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>A</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>a</span></span><span>();&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«called␤»</span></span></span></div></pre><h2 id="(Callable)_method_Capture"><a href="/routine/Capture#role_Callable">(Callable) method Capture</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>A</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Callable</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage type declarator type perl6fe"><span>submethod</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>CALL-ME</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>|</span></span><span class="routine name perl6fe"><span>c</span></span><span>)</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>called</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>A</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>a</span></span><span>();&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«called␤»</span></span></span></div></pre><h2 id="(Callable)_method_Capture"><a href="/type/Callable#method_Capture">(Callable) method Capture</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>Capture</span></span><span>()</span></span></div></pre><p>Throws <code>X::Cannot::Capture</code>.</p>
 
@@ -347,12 +299,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Code.pod6'>Type/Code.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Code.pod6">/type/Code</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Code.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

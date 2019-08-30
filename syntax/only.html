@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
+
 
     <h1 class='title'>declarator only</h1>
     
@@ -92,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for declarator <code>only</code> assembled from the following types:</p>
 <h1 id="language_documentation_Functions"><a class="u" href="#___top" title="go to top of document">language documentation Functions</a></h1>
-<p>From <a href="/language/functions#declarator_only">Functions</a></p>
-<h2 id="(Functions)_declarator_only"><a href="/syntax/only#language_documentation_Functions">(Functions) declarator only</a></h2>
+<p>From <a href="/language/functions#only">Functions</a></p>
+<h2 id="(Functions)_declarator_only"><a href="/language/functions#only">(Functions) declarator only</a></h2>
 <p>The <code>only</code> keyword preceding <code>sub</code> or <code>method</code> indicates that it will be the only function with that name that inhabits a given namespace.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>only</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>you</span></span><span>&nbsp;()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Can&nbsp;make&nbsp;all&nbsp;the&nbsp;world&nbsp;seem&nbsp;right</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div></pre><p>This will make other declarations in the same namespace, such as</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>you</span></span><span>&nbsp;(&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>can</span></span></span><span>&nbsp;)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Make&nbsp;the&nbsp;darkness&nbsp;bright</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>fail with an exception of type <code>X::Redeclaration</code>. <code>only</code> is the default value for all subs; in the case above, not declaring the first subroutine as <code>only</code> will yield exactly the same error; however, nothing prevents future developers from declaring a proto and preceding the names with <code>multi</code>. Using <code>only</code> before a routine is a <a href="https://en.wikipedia.org/wiki/Defensive_programming">defensive programming</a> feature that declares the intention of not having routines with the same name declared in the same namespace in the future.</p>
@@ -104,12 +70,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

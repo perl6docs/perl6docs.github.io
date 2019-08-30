@@ -24,77 +24,27 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Type_Telemetry_Instrument_Usage">
-  
+<div id="content" class="pretty-box yellow content__type_Telemetry__Instrument__Usage">
+
       <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Telemetry/Instrument/Usage.pod6'">
+        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Telemetry::Instrument::Usage.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs></defs>
     <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
@@ -113,7 +63,8 @@
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
         <tr class="toc-level-2"><td class="toc-number">0.1</td><td class="toc-text"><a href="#Useful_readings">Useful readings</a></td></tr>
-                                                             
+                                                              <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
+ 
 </table>
 </nav>
 
@@ -154,18 +105,31 @@
 <p>Less useful readings</p>
 </section>
 <p>The following readings may or may not contain sensible information, mostly depending on hardware and OS being used. Please check your local <code>getrusage</code> documentation for their exact meaning:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>name</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>getrusage</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>struct</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>===</span></span><span>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>max-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_maxrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>ix-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_ixress</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>id-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_idrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>is-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_isrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>minf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_minflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>majf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_majflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nswp</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nswap</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>inb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_inblock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>outb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_oublock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>msnd</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgsnd</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>mrcv</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgrcv</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nsig</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nsignals</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>volcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nvcsw</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>invcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nivcsw</span></span></span></div></pre>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>name</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>getrusage</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>struct</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>name</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator multi-symbol perl6fe"><span>===</span></span><span>=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span><span>===</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>max-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_maxrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>ix-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_ixress</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>id-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_idrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>is-rss</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_isrss</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>minf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_minflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>majf</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_majflt</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nswp</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nswap</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>inb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_inblock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>outb</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_oublock</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>msnd</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgsnd</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>mrcv</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_msgrcv</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>nsig</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nsignals</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>volcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nvcsw</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>invcsw</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>ru_nivcsw</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
+<figure>
+  <figcaption>Type relations for <code>404</code></figcaption>
+  <svg></svg>
+  <p class="fallback">
+    <a
+      rel="alternate"
+      href="/images/type-graph-404.svg"
+      type="image/svg+xml"
+      >Expand above chart</a
+    >
+  </p>
+</figure>
+
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Type/Telemetry/Instrument/Usage.pod6'>Type/Telemetry/Instrument/Usage.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Type/Telemetry::Instrument::Usage.pod6">/type/Telemetry::Instrument::Usage</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Type/Telemetry/Instrument/Usage.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

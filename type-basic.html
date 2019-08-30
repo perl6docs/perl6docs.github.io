@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Perl 6 Basic Types</title>
+        <title>Perl 6 basic Types</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,83 +24,33 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
+        </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
     </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item selected darker-green"
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
-        </div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a>
-                <a class="menu-item" href="/type-basic.html">
-                    Basic
-                </a>
-             
-                <a class="menu-item" href="/type-composite.html">
-                    Composite
-                </a>
-             
-                <a class="menu-item" href="/type-domain-specific.html">
-                    Domain-specific
-                </a>
-             
-                <a class="menu-item" href="/type-exceptions.html">
-                    Exceptions
-                </a>
-            </div>
-  </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'>Perl 6 Basic Types</h1>
+
+    <h1 class='title'>Perl 6 basic Types</h1>
     
     
     <div class="pod-body no-toc">
     <table class="pod-table">
 <tbody>
-<tr> <td>class</td> <td><a href="/type/AST">AST</a></td> <td>Abstract representation of a piece of source code</td> </tr> <tr> <td>class</td> <td><a href="/type/Any">Any</a></td> <td>Thing/object</td> </tr> <tr> <td>class</td> <td><a href="/type/Block">Block</a></td> <td>Code object with its own lexical scope</td> </tr> <tr> <td>enum</td> <td><a href="/type/Bool">Bool</a></td> <td>Logical boolean</td> </tr> <tr> <td>class</td> <td><a href="/type/CallFrame">CallFrame</a></td> <td>Captures the current frame state</td> </tr> <tr> <td>role</td> <td><a href="/type/Callable">Callable</a></td> <td><em>Invocable code object</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Code">Code</a></td> <td>Code object</td> </tr> <tr> <td>class</td> <td><a href="/type/Complex">Complex</a></td> <td>Complex number</td> </tr> <tr> <td>class</td> <td><a href="/type/ComplexStr">ComplexStr</a></td> <td>Dual value complex number and string</td> </tr> <tr> <td>class</td> <td><a href="/type/Cool">Cool</a></td> <td>Object that can be treated as both a string and number</td> </tr> <tr> <td>class</td> <td><a href="/type/Date">Date</a></td> <td>Calendar date</td> </tr> <tr> <td>class</td> <td><a href="/type/DateTime">DateTime</a></td> <td>Calendar date with time</td> </tr> <tr> <td>role</td> <td><a href="/type/Dateish">Dateish</a></td> <td><em>Object that can be treated as a date</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Duration">Duration</a></td> <td>Length of time</td> </tr> <tr> <td>class</td> <td><a href="/type/FatRat">FatRat</a></td> <td>Rational number (arbitrary-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/ForeignCode">ForeignCode</a></td> <td>Rakudo-specific class that wraps around code in other languages (generally NQP)</td> </tr> <tr> <td>class</td> <td><a href="/type/HyperWhatever">HyperWhatever</a></td> <td>Placeholder for multiple unspecified values/arguments</td> </tr> <tr> <td>class</td> <td><a href="/type/Instant">Instant</a></td> <td>Specific moment in time</td> </tr> <tr> <td>class</td> <td><a href="/type/Int">Int</a></td> <td>Integer (arbitrary-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/IntStr">IntStr</a></td> <td>Dual value integer and string</td> </tr> <tr> <td>class</td> <td><a href="/type/Junction">Junction</a></td> <td>Logical superposition of values</td> </tr> <tr> <td>class</td> <td><a href="/type/Label">Label</a></td> <td>Tagged location in the source code</td> </tr> <tr> <td>class</td> <td><a href="/type/Macro">Macro</a></td> <td>Compile-time routine</td> </tr> <tr> <td>class</td> <td><a href="/type/Method">Method</a></td> <td>Member function</td> </tr> <tr> <td>class</td> <td><a href="/type/Mu">Mu</a></td> <td>The root of the Perl&nbsp;6 type hierarchy.</td> </tr> <tr> <td>class</td> <td><a href="/type/Nil">Nil</a></td> <td>Absence of a value or a benign failure</td> </tr> <tr> <td>class</td> <td><a href="/type/Num">Num</a></td> <td>Floating-point number</td> </tr> <tr> <td>class</td> <td><a href="/type/NumStr">NumStr</a></td> <td>Dual value floating-point number and string</td> </tr> <tr> <td>role</td> <td><a href="/type/Numeric">Numeric</a></td> <td><em>Number or object that can act as a number</em></td> </tr> <tr> <td>class</td> <td><a href="/type/ObjAt">ObjAt</a></td> <td>Unique identification for an object</td> </tr> <tr> <td>class</td> <td><a href="/type/Parameter">Parameter</a></td> <td>Element of a Signature</td> </tr> <tr> <td>class</td> <td><a href="/type/Proxy">Proxy</a></td> <td>Item container with custom storage and retrieval</td> </tr> <tr> <td>class</td> <td><a href="/type/Rat">Rat</a></td> <td>Rational number (limited-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/RatStr">RatStr</a></td> <td>Dual value rational number and string</td> </tr> <tr> <td>role</td> <td><a href="/type/Rational">Rational</a></td> <td><em>Number stored as numerator and denominator</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Real">Real</a></td> <td><em>Non-complex number</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Routine">Routine</a></td> <td>Code object with its own lexical scope and </td> </tr> <tr> <td>class</td> <td><a href="/type/Scalar">Scalar</a></td> <td>A mostly transparent container used for indirections</td> </tr> <tr> <td>class</td> <td><a href="/type/Signature">Signature</a></td> <td>Parameter list pattern</td> </tr> <tr> <td>class</td> <td><a href="/type/Str">Str</a></td> <td>String of characters</td> </tr> <tr> <td>role</td> <td><a href="/type/Stringy">Stringy</a></td> <td><em>String or object that can act as a string</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Sub">Sub</a></td> <td>Subroutine</td> </tr> <tr> <td>class</td> <td><a href="/type/Submethod">Submethod</a></td> <td>Member function that is not inherited by subclasses</td> </tr> <tr> <td>class</td> <td><a href="/type/ValueObjAt">ValueObjAt</a></td> <td>Unique identification for value types</td> </tr> <tr> <td>class</td> <td><a href="/type/Variable">Variable</a></td> <td>Object representation of a variable for use in traits</td> </tr> <tr> <td>class</td> <td><a href="/type/Version">Version</a></td> <td>Module version descriptor</td> </tr> <tr> <td>class</td> <td><a href="/type/Whatever">Whatever</a></td> <td>Placeholder for the value of an unspecified argument</td> </tr> <tr> <td>class</td> <td><a href="/type/WhateverCode">WhateverCode</a></td> <td>Code object constructed by Whatever-currying</td> </tr> <tr> <td>class</td> <td><a href="/type/atomicint">atomicint</a></td> <td>Integer (native storage at the platform&#39;s atomic operation size)</td> </tr> <tr> <td>class</td> <td><a href="/type/int">int</a></td> <td>Native integer</td> </tr>
+<tr> <td>class</td> <td><a href="/type/AST">AST</a></td> <td>Abstract representation of a piece of source code</td> </tr> <tr> <td>class</td> <td><a href="/type/Any">Any</a></td> <td>Thing/object</td> </tr> <tr> <td>class</td> <td><a href="/type/Block">Block</a></td> <td>Code object with its own lexical scope</td> </tr> <tr> <td>enum</td> <td><a href="/type/Bool">Bool</a></td> <td>Logical boolean</td> </tr> <tr> <td>class</td> <td><a href="/type/CallFrame">CallFrame</a></td> <td>Captures the current frame state</td> </tr> <tr> <td>role</td> <td><a href="/type/Callable">Callable</a></td> <td><em>Invocable code object</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Code">Code</a></td> <td>Code object</td> </tr> <tr> <td>class</td> <td><a href="/type/Collation">Collation</a></td> <td>Encapsulates how strings are sorted</td> </tr> <tr> <td>class</td> <td><a href="/type/Compiler">Compiler</a></td> <td>Information related to the compiler that is being used</td> </tr> <tr> <td>class</td> <td><a href="/type/Complex">Complex</a></td> <td>Complex number</td> </tr> <tr> <td>class</td> <td><a href="/type/ComplexStr">ComplexStr</a></td> <td>Dual value complex number and string</td> </tr> <tr> <td>class</td> <td><a href="/type/Cool">Cool</a></td> <td>Object that can be treated as both a string and number</td> </tr> <tr> <td>class</td> <td><a href="/type/CurrentThreadScheduler">CurrentThreadScheduler</a></td> <td>Scheduler that synchronously executes code on the current thread</td> </tr> <tr> <td>class</td> <td><a href="/type/Cursor">Cursor</a></td> <td>Synonym of Match</td> </tr> <tr> <td>class</td> <td><a href="/type/Date">Date</a></td> <td>Calendar date</td> </tr> <tr> <td>class</td> <td><a href="/type/DateTime">DateTime</a></td> <td>Calendar date with time</td> </tr> <tr> <td>role</td> <td><a href="/type/Dateish">Dateish</a></td> <td><em>Object that can be treated as a date</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Distribution">Distribution</a></td> <td><em>Distribution</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Distribution::Hash">Distribution::Hash</a></td> <td>Distribution::Hash</td> </tr> <tr> <td>class</td> <td><a href="/type/Distribution::Locally">Distribution::Locally</a></td> <td>Distribution::Locally</td> </tr> <tr> <td>class</td> <td><a href="/type/Distribution::Path">Distribution::Path</a></td> <td>Distribution::Path</td> </tr> <tr> <td>class</td> <td><a href="/type/Duration">Duration</a></td> <td>Length of time</td> </tr> <tr> <td>role</td> <td><a href="/type/Encoding">Encoding</a></td> <td><em>Support for character encodings.</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Encoding::Registry">Encoding::Registry</a></td> <td>Management of available encodings</td> </tr> <tr> <td>enum</td> <td><a href="/type/Endian">Endian</a></td> <td>Indicate endianness (6.d, 2018.12 and later)</td> </tr> <tr> <td>class</td> <td><a href="/type/FatRat">FatRat</a></td> <td>Rational number (arbitrary-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/ForeignCode">ForeignCode</a></td> <td>Rakudo-specific class that wraps around code in other languages (generally NQP)</td> </tr> <tr> <td>class</td> <td><a href="/type/HyperSeq">HyperSeq</a></td> <td>An object for performing batches of work in parallel with ordered output</td> </tr> <tr> <td>class</td> <td><a href="/type/HyperWhatever">HyperWhatever</a></td> <td>Placeholder for multiple unspecified values/arguments</td> </tr> <tr> <td>class</td> <td><a href="/type/Instant">Instant</a></td> <td>Specific moment in time</td> </tr> <tr> <td>class</td> <td><a href="/type/Int">Int</a></td> <td>Integer (arbitrary-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/IntStr">IntStr</a></td> <td>Dual value integer and string</td> </tr> <tr> <td>class</td> <td><a href="/type/Junction">Junction</a></td> <td>Logical superposition of values</td> </tr> <tr> <td>class</td> <td><a href="/type/Label">Label</a></td> <td>Tagged location in the source code</td> </tr> <tr> <td>class</td> <td><a href="/type/Lock::Async">Lock::Async</a></td> <td>A non-blocking, non-re-entrant, mutual exclusion lock</td> </tr> <tr> <td>class</td> <td><a href="/type/Macro">Macro</a></td> <td>Compile-time routine</td> </tr> <tr> <td>class</td> <td><a href="/type/Method">Method</a></td> <td>Member function</td> </tr> <tr> <td>class</td> <td><a href="/type/Mu">Mu</a></td> <td>The root of the Perl&nbsp;6 type hierarchy.</td> </tr> <tr> <td>class</td> <td><a href="/type/Nil">Nil</a></td> <td>Absence of a value or a benign failure</td> </tr> <tr> <td>class</td> <td><a href="/type/Num">Num</a></td> <td>Floating-point number</td> </tr> <tr> <td>class</td> <td><a href="/type/NumStr">NumStr</a></td> <td>Dual value floating-point number and string</td> </tr> <tr> <td>class</td> <td><a href="/type/Numeric">Numeric</a></td> <td>Number or object that can act as a number</td> </tr> <tr> <td>class</td> <td><a href="/type/ObjAt">ObjAt</a></td> <td>Unique identification for an object</td> </tr> <tr> <td>class</td> <td><a href="/type/Parameter">Parameter</a></td> <td>Element of a Signature</td> </tr> <tr> <td>class</td> <td><a href="/type/Perl">Perl</a></td> <td>Perl related information</td> </tr> <tr> <td>role</td> <td><a href="/type/PredictiveIterator">PredictiveIterator</a></td> <td><em>Iterators that can predict number of values</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Proxy">Proxy</a></td> <td>Item container with custom storage and retrieval</td> </tr> <tr> <td>class</td> <td><a href="/type/RaceSeq">RaceSeq</a></td> <td>Performs batches of work in parallel without respecting original order.</td> </tr> <tr> <td>class</td> <td><a href="/type/Rat">Rat</a></td> <td>Rational number (limited-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/RatStr">RatStr</a></td> <td>Dual value rational number and string</td> </tr> <tr> <td>role</td> <td><a href="/type/Rational">Rational</a></td> <td><em>Number stored as numerator and denominator</em></td> </tr> <tr> <td>role</td> <td><a href="/type/Real">Real</a></td> <td><em>Non-complex number</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Routine">Routine</a></td> <td>Code object with its own lexical scope and return handling</td> </tr> <tr> <td>class</td> <td><a href="/type/Routine::WrapHandle">Routine::WrapHandle</a></td> <td>Holds all information needed to unwrap a wrapped routine.</td> </tr> <tr> <td>class</td> <td><a href="/type/Scalar">Scalar</a></td> <td>A mostly transparent container used for indirections</td> </tr> <tr> <td>role</td> <td><a href="/type/Sequence">Sequence</a></td> <td><em>Operations for higher-level sequences</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Signature">Signature</a></td> <td>Parameter list pattern</td> </tr> <tr> <td>class</td> <td><a href="/type/Str">Str</a></td> <td>String of characters</td> </tr> <tr> <td>class</td> <td><a href="/type/StrDistance">StrDistance</a></td> <td>Contains the result of a string transformation.</td> </tr> <tr> <td>role</td> <td><a href="/type/Stringy">Stringy</a></td> <td><em>String or object that can act as a string</em></td> </tr> <tr> <td>class</td> <td><a href="/type/Sub">Sub</a></td> <td>Subroutine</td> </tr> <tr> <td>class</td> <td><a href="/type/Submethod">Submethod</a></td> <td>Member function that is not inherited by subclasses</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry">Telemetry</a></td> <td>Collect performance state for analysis</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry::Instrument::Thread">Telemetry::Instrument::Thread</a></td> <td>Instrument for collecting Thread data</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry::Instrument::ThreadPool">Telemetry::Instrument::ThreadPool</a></td> <td>Instrument for collecting ThreadPoolScheduler data</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry::Instrument::Usage">Telemetry::Instrument::Usage</a></td> <td>Instrument for collecting getrusage data</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry::Period">Telemetry::Period</a></td> <td>Performance data over a period</td> </tr> <tr> <td>class</td> <td><a href="/type/Telemetry::Sampler">Telemetry::Sampler</a></td> <td>Telemetry instrument pod</td> </tr> <tr> <td>class</td> <td><a href="/type/UInt">UInt</a></td> <td>Unsigned integer (arbitrary-precision)</td> </tr> <tr> <td>class</td> <td><a href="/type/ValueObjAt">ValueObjAt</a></td> <td>Unique identification for value types</td> </tr> <tr> <td>class</td> <td><a href="/type/Variable">Variable</a></td> <td>Object representation of a variable for use in traits</td> </tr> <tr> <td>class</td> <td><a href="/type/Version">Version</a></td> <td>Module version descriptor</td> </tr> <tr> <td>class</td> <td><a href="/type/Whatever">Whatever</a></td> <td>Placeholder for the value of an unspecified argument</td> </tr> <tr> <td>class</td> <td><a href="/type/WhateverCode">WhateverCode</a></td> <td>Code object constructed by Whatever-currying</td> </tr> <tr> <td>class</td> <td><a href="/type/atomicint">atomicint</a></td> <td>Integer (native storage at the platform&#39;s atomic operation size)</td> </tr> <tr> <td>class</td> <td><a href="/type/int">int</a></td> <td>Native integer</td> </tr>
 </tbody>
 </table>
     </div>
@@ -108,12 +58,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

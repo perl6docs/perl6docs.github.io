@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>regex \v</title>
+        <title>syntax \v</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -24,76 +24,42 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item "
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
-    <h1 class='title'>regex \v</h1>
+
+    <h1 class='title'>syntax \v</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Regexes">language documentation Regexes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_\v">(Regexes) regex \v</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Regexes)_regex_\v_\v">(Regexes) regex \v \v</a></td></tr>
                       
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>Documentation for regex <code>\v</code> assembled from the following types:</p>
+    <p>Documentation for syntax <code>\v</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes#regex_%5Cv">Regexes</a></p>
-<h2 id="(Regexes)_regex_\v"><a href="/syntax/\v#language_documentation_Regexes">(Regexes) regex \v</a></h2>
+<p>From <a href="/language/regexes#\v_and_\V">Regexes</a></p>
+<h2 id="(Regexes)_regex_\v_\v"><a href="/language/regexes#\v_and_\V">(Regexes) regex \v \v</a></h2>
 <p><code>\v</code> matches a single vertical whitespace character. <code>\V</code> matches a single character that is not vertical whitespace.</p>
 <p>Examples of vertical whitespace characters:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>000A&nbsp;</span><span class="routine name perl6fe"><span>LINE</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FEED</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>000B&nbsp;</span><span class="routine name perl6fe"><span>VERTICAL</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>TABULATION</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>000C&nbsp;</span><span class="routine name perl6fe"><span>FORM</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>FEED</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>000D&nbsp;</span><span class="routine name perl6fe"><span>CARRIAGE</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>RETURN</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>0085&nbsp;</span><span class="keyword control closure trait perl6fe"><span>NEXT</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>LINE</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>2028&nbsp;</span><span class="routine name perl6fe"><span>LINE</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>SEPARATOR</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>U</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>2029&nbsp;</span><span class="routine name perl6fe"><span>PARAGRAPH</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>SEPARATOR</span></span></span></div></pre><p>Use <code>\s</code> to match any kind of whitespace, not just vertical whitespace.</p>
@@ -103,12 +69,12 @@
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from the sources at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="SOURCEURL">PODPATH</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>

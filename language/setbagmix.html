@@ -24,59 +24,25 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-  <a href="/"
-    ><img
-      src="/images/Camelia.svg"
-      alt="»ö«"
-      id="logo"
-      width="62"
-      height="48"
-    />&nbsp;Perl 6 Documentation</a
-  >
-  <div id="search" class="ui-widget">
-    <div class="green">
-      <input
-        placeholder="Loading..."
-        id="query"
-        accesskey="f"
-        title="Enter term to search for (hit Esc to focus)"
-      />
-    </div>
-    <p id="not-found-message">
-      Not in Index (<a href="" id="try-web-search">try site search</a>)
-    </p>
-  </div>
-  <div class="menu">
-    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a> 
-            <a class="menu-item selected darker-green"
-                href="/language.html">
-                Language
-            </a>
-         
-            <a class="menu-item "
-                href="/type.html">
-                Types
-            </a>
-         
-            <a class="menu-item "
-                href="/routine.html">
-                Routines
-            </a>
-         
-            <a class="menu-item "
-                href="/programs.html">
-                Programs
-            </a>
-         
-            <a class="menu-item "
-                href="https://webchat.freenode.net/?channels=#perl6">
-                Chat with us
-            </a>
+    <a href="/"
+        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
+        >&nbsp;Perl 6 Documentation</a
+    >
+    <div id="search" class="ui-widget">
+        <div class="green">
+            <input placeholder="Loading..." id="query"
+                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
         </div>
-  </div>
+        <p id="not-found-message">
+            Not in Index (<a href="" id="try-web-search">try site search</a>)
+        </p>
+    </div>
+    <div class="menu">
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+    </div>
 </div>
-<div id="content" class="pretty-box yellow content_Language_setbagmix">
-  
+<div id="content" class="pretty-box yellow content__language_setbagmix">
+
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/setbagmix.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -154,58 +120,58 @@
 <p>However, if a <code>Bag</code> or <code>Mix</code> is one of the parameters to these set operators, then the semantics will be upgraded to that type (where <code>Mix</code> supersedes <code>Bag</code> if both types happen to be used).</p>
 <h2 id="Set_operators_that_return_Bool"><a class="u" href="#___top" title="go to top of document">Set operators that return <code>Bool</code></a></h2>
 <h3 id="infix_(elem),_infix_∈"><a class="u" href="#___top" title="go to top of document">infix (elem), infix ∈</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is an <strong>element</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_%28elem%29%2C_infix_%E2%88%88">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is an <strong>element</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_(elem),_infix_∈">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
 <h3 id="infix_∉"><a class="u" href="#___top" title="go to top of document">infix ∉</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> an element of <code>$b</code>, else False. <a href="/language/operators#infix_%E2%88%89">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> an element of <code>$b</code>, else False. <a href="/language/operators#infix_∉">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
 <h3 id="infix_(cont),_infix_∋"><a class="u" href="#___top" title="go to top of document">infix (cont), infix ∋</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> <strong>contains</strong> <code>$b</code> as an element, else False. <a href="/language/operators#infix_%28cont%29%2C_infix_%E2%88%8B">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> <strong>contains</strong> <code>$b</code> as an element, else False. <a href="/language/operators#infix_(cont),_infix_∋">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
 <h3 id="infix_∌"><a class="u" href="#___top" title="go to top of document">infix ∌</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> does <strong>not</strong> contain <code>$b</code>, else False. <a href="/language/operators#infix_%E2%88%8C">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> does <strong>not</strong> contain <code>$b</code>, else False. <a href="/language/operators#infix_∌">More information</a>, <a href="https://en.wikipedia.org/wiki/Element_(mathematics)#Notation_and_terminology">Wikipedia definition</a>.</p>
 <h3 id="infix_(<=),_infix_⊆"><a class="u" href="#___top" title="go to top of document">infix (&lt;=), infix ⊆</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is a <strong>subset</strong> or is equal to <code>$b</code>, else False. <a href="/language/operators#infix_%28%3C%3D%29%2C_infix_%E2%8A%86">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is a <strong>subset</strong> or is equal to <code>$b</code>, else False. <a href="/language/operators#infix_(<=),_infix_⊆">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_⊈"><a class="u" href="#___top" title="go to top of document">infix ⊈</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>subset</strong> nor equal to <code>$b</code>, else False. <a href="/language/operators#infix_%E2%8A%88">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>subset</strong> nor equal to <code>$b</code>, else False. <a href="/language/operators#infix_⊈">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_(<),_infix_⊂"><a class="u" href="#___top" title="go to top of document">infix (&lt;), infix ⊂</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is a <strong>strict subset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_%28%3C%29%2C_infix_%E2%8A%82">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is a <strong>strict subset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_(<),_infix_⊂">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_⊄"><a class="u" href="#___top" title="go to top of document">infix ⊄</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>strict subset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_%E2%8A%84">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>strict subset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_⊄">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_(>=),_infix_⊇"><a class="u" href="#___top" title="go to top of document">infix (&gt;=), infix ⊇</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is a <strong>superset</strong> of or equal to <code>$b</code>, else False. <a href="/language/operators#infix_%28%3E%3D%29%2C_infix_%E2%8A%87">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is a <strong>superset</strong> of or equal to <code>$b</code>, else False. <a href="/language/operators#infix_(>=),_infix_⊇">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_⊉"><a class="u" href="#___top" title="go to top of document">infix ⊉</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>superset</strong> nor equal to <code>$b</code>, else False. <a href="/language/operators#infix_%E2%8A%89">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>superset</strong> nor equal to <code>$b</code>, else False. <a href="/language/operators#infix_⊉">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_(>),_infix_⊃"><a class="u" href="#___top" title="go to top of document">infix (&gt;), infix ⊃</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is a <strong>strict superset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_%28%3E%29%2C_infix_%E2%8A%83">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is a <strong>strict superset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_(>),_infix_⊃">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h3 id="infix_⊅"><a class="u" href="#___top" title="go to top of document">infix ⊅</a></h3>
-<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>strict superset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_%E2%8A%85">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
+<p>Returns <code>True</code> if <code>$a</code> is <strong>not</strong> a <strong>strict superset</strong> of <code>$b</code>, else False. <a href="/language/operators#infix_⊅">More information</a>, <a href="https://en.wikipedia.org/wiki/Subset#Definitions">Wikipedia definition</a>.</p>
 <h2 id="Set_operators_that_return_a_QuantHash"><a class="u" href="#___top" title="go to top of document">Set operators that return a <code>QuantHash</code></a></h2>
 <h3 id="infix_(|),_infix_∪"><a class="u" href="#___top" title="go to top of document">infix (|), infix ∪</a></h3>
-<p>Returns the <strong>union</strong> of all its arguments. <a href="/language/operators#infix_%28%7C%29%2C_infix_%E2%88%AA">More information</a>, <a href="https://en.wikipedia.org/wiki/Union_(set_theory)">Wikipedia definition</a>.</p>
+<p>Returns the <strong>union</strong> of all its arguments. <a href="/language/operators#infix_(|),_infix_∪">More information</a>, <a href="https://en.wikipedia.org/wiki/Union_(set_theory)">Wikipedia definition</a>.</p>
 <h3 id="infix_(&),_infix_∩"><a class="u" href="#___top" title="go to top of document">infix (&amp;), infix ∩</a></h3>
-<p>Returns the <strong>intersection</strong> of all of its arguments. <a href="/language/operators#infix_%28%26%29%2C_infix_%E2%88%A9">More information</a>, <a href="https://en.wikipedia.org/wiki/Intersection_(set_theory)">Wikipedia definition</a>.</p>
+<p>Returns the <strong>intersection</strong> of all of its arguments. <a href="/language/operators#infix_(&),_infix_∩">More information</a>, <a href="https://en.wikipedia.org/wiki/Intersection_(set_theory)">Wikipedia definition</a>.</p>
 <h3 id="infix_(-),_infix_∖"><a class="u" href="#___top" title="go to top of document">infix (-), infix ∖</a></h3>
-<p>Returns the <strong>set difference</strong> of all its arguments. <a href="/language/operators#infix_%28-%29%2C_infix_%E2%88%96">More information</a>, <a href="https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement">Wikipedia definition</a>.</p>
+<p>Returns the <strong>set difference</strong> of all its arguments. <a href="/language/operators#infix_(-),_infix_∖">More information</a>, <a href="https://en.wikipedia.org/wiki/Complement_(set_theory)#Relative_complement">Wikipedia definition</a>.</p>
 <h3 id="infix_(^),_infix_⊖"><a class="u" href="#___top" title="go to top of document">infix (^), infix ⊖</a></h3>
-<p>Returns the <strong>symmetric set difference</strong> of all its arguments. <a href="/language/operators#infix_%28%5E%29%2C_infix_%E2%8A%96">More information</a>, <a href="https://en.wikipedia.org/wiki/Symmetric_difference">Wikipedia definition</a>.</p>
+<p>Returns the <strong>symmetric set difference</strong> of all its arguments. <a href="/language/operators#infix_($CIRCUMFLEX_ACCENT),_infix_⊖">More information</a>, <a href="https://en.wikipedia.org/wiki/Symmetric_difference">Wikipedia definition</a>.</p>
 <h2 id="Set_operators_that_return_a_Baggy"><a class="u" href="#___top" title="go to top of document">Set operators that return a <code>Baggy</code></a></h2>
 <h3 id="infix_(.),_infix_⊍"><a class="u" href="#___top" title="go to top of document">infix (.), infix ⊍</a></h3>
-<p>Returns the Baggy <strong>multiplication</strong> of its arguments. <a href="/language/operators#infix_%28.%29%2C_infix_%E2%8A%8D">More information</a>.</p>
+<p>Returns the Baggy <strong>multiplication</strong> of its arguments. <a href="/language/operators#infix_(.),_infix_⊍">More information</a>.</p>
 <h3 id="infix_(+),_infix_⊎"><a class="u" href="#___top" title="go to top of document">infix (+), infix ⊎</a></h3>
-<p>Returns the Baggy <strong>addition</strong> of its arguments. <a href="/language/operators#infix_%28%2B%29%2C_infix_%E2%8A%8E">More information</a>.</p>
+<p>Returns the Baggy <strong>addition</strong> of its arguments. <a href="/language/operators#infix_(+),_infix_⊎">More information</a>.</p>
 <h2 id="Terms_related_to_set_operators"><a class="u" href="#___top" title="go to top of document">Terms related to set operators</a></h2>
 <h3 id="term_∅"><a class="u" href="#___top" title="go to top of document">term ∅</a></h3>
-<p>The empty set. <a href="/language/terms#term_%E2%88%85">More information</a>, <a href="https://en.wikipedia.org/wiki/Empty_set">Wikipedia definition</a>.</p>
+<p>The empty set. <a href="/language/terms#term_∅">More information</a>, <a href="https://en.wikipedia.org/wiki/Empty_set">Wikipedia definition</a>.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
   <p>
-      Generated from <a href='https://github.com/perl6/doc/blob/master/doc/Language/setbagmix.pod6'>Language/setbagmix.pod6</a> at <a href='https://github.com/perl6/doc'>perl6/doc on GitHub</a></a>.
+      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/setbagmix.pod6">/language/setbagmix</a>.
       <br/>
       This is a work in progress to document Perl 6, and known to be
       incomplete.
       <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a> or <a href='https://github.com/perl6/doc/edit/master/doc/Language/setbagmix.pod6'>edit this page</a>.
+      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
       Your contribution is appreciated.
   </p>
   <p>
