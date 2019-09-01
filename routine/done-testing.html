@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for sub <code>done-testing</code> assembled from the following types:</p>
 <h1 id="module_Test"><a class="u" href="#___top" title="go to top of document">module Test</a></h1>
-<p>From <a href="/type/Test#sub_done-testing">Test</a></p>
-<h2 id="(Test)_sub_done-testing"><a href="/type/Test#sub_done-testing">(Test) sub done-testing</a></h2>
+<p>From <a href="/type/Test$NUMBER_SIGNsub_done-testing">Test</a></p>
+<h2 id="(Test)_sub_done-testing"><a href="/type/Test$NUMBER_SIGNsub_done-testing">(Test) sub done-testing</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>done-testing</span></span><span>()</span></span></div></pre><p>Specify that testing has finished. Use this function when you don&#39;t have a <code>plan</code> with the number of tests to run. A <code>plan</code> is not required when using <code>done-testing</code>.</p>
 <p>It&#39;s recommended that the <code>done-testing</code> function be removed and replaced with a <code>plan</code> function when all tests are finalized. Use of <code>plan</code> can help detect test failures otherwise not reported because tests were accidentally skipped due to bugs in the tests or bugs in the compiler. For example:</p>

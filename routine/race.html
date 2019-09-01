@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -62,12 +62,12 @@
     <div class="pod-body">
     <p>Documentation for method <code>race</code> assembled from the following types:</p>
 <h1 id="class_RaceSeq"><a class="u" href="#___top" title="go to top of document">class RaceSeq</a></h1>
-<p>From <a href="/type/RaceSeq#method_race">RaceSeq</a></p>
-<h2 id="(RaceSeq)_method_race"><a href="/type/RaceSeq#method_race">(RaceSeq) method race</a></h2>
+<p>From <a href="/type/RaceSeq$NUMBER_SIGNmethod_race">RaceSeq</a></p>
+<h2 id="(RaceSeq)_method_race"><a href="/type/RaceSeq$NUMBER_SIGNmethod_race">(RaceSeq) method race</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the object.</p>
 <h1 id="role_Iterable"><a class="u" href="#___top" title="go to top of document">role Iterable</a></h1>
-<p>From <a href="/type/Iterable#method_race">Iterable</a></p>
-<h2 id="(Iterable)_method_race"><a href="/type/Iterable#method_race">(Iterable) method race</a></h2>
+<p>From <a href="/type/Iterable$NUMBER_SIGNmethod_race">Iterable</a></p>
+<h2 id="(Iterable)_method_race"><a href="/type/Iterable$NUMBER_SIGNmethod_race">(Iterable) method race</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>batch</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>64</span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>degree</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>4</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Iterable</span></span><span>)</span></span></div></pre><p>Returns another Iterable that is potentially iterated in parallel, with a given batch size and degree of parallelism (number of parallel workers).</p>
 <p>Unlike <a href="/routine/hyper"><code>hyper</code></a>, <code>race</code> does not preserve the order of elements.</p>
@@ -75,8 +75,8 @@
 <p><strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">Blog post on the semantics of hyper and race</a></strong></p>
 <p>See <a href="/routine/hyper"><code>hyper</code></a> for an explanation of <code>:$batch</code> and <code>:$degree</code>.</p>
 <h1 id="class_HyperSeq"><a class="u" href="#___top" title="go to top of document">class HyperSeq</a></h1>
-<p>From <a href="/type/HyperSeq#method_race">HyperSeq</a></p>
-<h2 id="(HyperSeq)_method_race"><a href="/type/HyperSeq#method_race">(HyperSeq) method race</a></h2>
+<p>From <a href="/type/HyperSeq$NUMBER_SIGNmethod_race">HyperSeq</a></p>
+<h2 id="(HyperSeq)_method_race"><a href="/type/HyperSeq$NUMBER_SIGNmethod_race">(HyperSeq) method race</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>race</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Creates a <code>RaceSeq</code> object out of the current one.</p>
 
     </div>

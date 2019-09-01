@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for postfix <code>⚛--</code> assembled from the following types:</p>
 <h1 id="class_atomicint"><a class="u" href="#___top" title="go to top of document">class atomicint</a></h1>
-<p>From <a href="/type/atomicint#postfix_⚛--">atomicint</a></p>
-<h2 id="(atomicint)_postfix_⚛--"><a href="/type/atomicint#postfix_⚛--">(atomicint) postfix ⚛--</a></h2>
+<p>From <a href="/type/atomicint$NUMBER_SIGNpostfix_⚛--">atomicint</a></p>
+<h2 id="(atomicint)_postfix_⚛--"><a href="/type/atomicint$NUMBER_SIGNpostfix_⚛--">(atomicint) postfix ⚛--</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>postfix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>⚛--</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="routine name perl6fe"><span>atomicint</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$</span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>rw</span></span><span>)</span></span></div></pre><p>Performs an atomic decrement on a native integer. This will be performed using hardware-provided atomic operations. Since the operation is atomic, it is safe to use without acquiring a lock. Returns the value as seen before decrementing it. Overflow will wrap around silently.</p>
 
     </div>

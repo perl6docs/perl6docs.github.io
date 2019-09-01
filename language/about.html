@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content__language_about">
@@ -64,14 +64,14 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
             <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Structure">Structure</a></td></tr>
         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Generating_HTML_from_Pod">Generating HTML from Pod</a></td></tr>
-                          <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Contributing">Contributing</a></td></tr>
+                               <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Contributing">Contributing</a></td></tr>
         <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#Adding_definitions">Adding definitions</a></td></tr>
                                                                                                    
 </table>
 </nav>
 
     <div class="pod-body">
-    <p>This document collection represents the on-going effort to document the Perl&nbsp;6 programming language with the goals of being: comprehensive, easy to use, easy to navigate, and useful to both newcomers and experienced Perl&nbsp;6 programmers.</p>
+    <p>This document collection represents the on-going effort to document the Perl&nbsp;6 programming language with the goals of being comprehensive, easy to use, easy to navigate, and useful to both newcomers and experienced Perl&nbsp;6 programmers.</p>
 <p>An HTML version of the documentation is located online at <a href="https://docs.perl6.org">https://docs.perl6.org</a>.</p>
 <p>The official source for this documentation is located at <a href="https://github.com/perl6/doc">perl6/doc on GitHub</a>.</p>
 <p>This particular document is a quick overview of the process described in more detail in <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md">CONTRIBUTING on GitHub</a>. This document also provides a short introduction to writing Perl&nbsp;6 Pod files, which can be rendered into HTML and other formats.</p>
@@ -83,13 +83,16 @@
 </li>
 <li><p>The Perl&nbsp;6 modules Pod::To::HTML, Pod::To::BigPage, and URI::Escape which all can be installed via <a href="https://github.com/ugexe/zef">zef</a>. For instance, <code>zef install Pod::To::HTML</code> to install Pod::To::HTML.</p>
 </li>
+<li><p><a href="https://modules.perl6.org/dist/Documentable"><code>Documentable</code></a>, the document API.</p>
+</li>
 <li><p><strong>Optional</strong>: <a href="https://www.graphviz.org">GraphViz</a>, for creating graphs of the relationships between Perl&nbsp;6 types.</p>
 </li>
 <li><p><strong>Optional</strong>: <a href="https://github.com/atom/highlights">Atom Highlights</a> and <a href="https://atom.io/packages/language-perl6">language-perl6</a>, for syntax highlighting.</p>
 </li>
 </ul>
 <p>To generate the documentation into the <code>html/</code> folder, run:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>perl6</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>htmlify</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>p6</span></span></span></div></pre><p>To host the documentation from a web server, have Perl&nbsp;5 and Mojolicious::Lite installed, then run:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>documentable</span></span><span>&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>start</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>a</span></span><span>&nbsp;-</span><span class="routine name perl6fe"><span>v</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>highlight</span></span></span></div></pre><p>To host the documentation from a web server, have Perl&nbsp;5 and Mojolicious::Lite installed; if you have Perl, run</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>cpanm</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--</span></span><span class="routine name perl6fe"><span>installdeps</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span></span></div></pre><p>and then run:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>perl</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>app</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>pl</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>daemon</span></span></span></div></pre><h1 id="Contributing"><a class="u" href="#___top" title="go to top of document">Contributing</a></h1>
 <p>The documentation is written in Perl&nbsp;6 Pod.</p>
 <p>For a quick introduction to Perl&nbsp;6 Pod, see <a href="/language/pod">Perl&nbsp;6 Pod</a>.</p>
@@ -130,7 +133,7 @@
 </li>
 <li><p><strong>Infix <code>þ</code></strong></p>
 </li>
-<li><p><code>trait is cached</code> (A special case for the <a href="/language/functions#Traits">trait</a> documentables)</p>
+<li><p><code>trait is cached</code> (A special case for the <a href="/language/functions$NUMBER_SIGNTraits">trait</a> documentables)</p>
 </li>
 </ul>
 <p>These items should now be searchable by using the search field in the HTML docs.</p>

@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,13 +58,11 @@
     <div class="pod-body">
     <p>Documentation for sub <code>exit</code> assembled from the following types:</p>
 <h1 id="language_documentation_Independent_routines"><a class="u" href="#___top" title="go to top of document">language documentation Independent routines</a></h1>
-<p>From <a href="/language/independent-routines#sub_exit">Independent routines</a></p>
-<h2 id="(Independent_routines)_sub_exit"><a href="/language/independent-routines#sub_exit">(Independent routines) sub exit</a></h2>
+<p>From <a href="/language/independent-routines$NUMBER_SIGNsub_exit">Independent routines</a></p>
+<h2 id="(Independent_routines)_sub_exit"><a href="/language/independent-routines$NUMBER_SIGNsub_exit">(Independent routines) sub exit</a></h2>
 <p>Defined as:</p>
-<pre class="pod-block-code">multi sub exit()
-multi sub exit(Int(Any) $status)</pre>
-<p>Exits the current process with return code <code>$status</code> or zero if no value has been specified. The exit value (<code>$status</code>), when different from zero, has to be opportunely evaluated from the process that catches it (e.g., a shell); it is the only way to return an exit code different from zero from a <a href="/routine/MAIN">Main</a>.</p>
-<p><code>exit</code> prevents the <a href="/language/phasers#LEAVE">LEAVE</a> phaser to be executed, but it will run the code in the <a href="/language/variables#index-entry-%24*EXIT"><code>&amp;*EXIT</code></a> variable.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>exit</span></span><span>()</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>exit</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span>(</span><span class="support type perl6fe"><span>Any</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>status</span></span></span><span>)</span></span></div></pre><p>Exits the current process with return code <code>$status</code> or zero if no value has been specified. The exit value (<code>$status</code>), when different from zero, has to be opportunely evaluated from the process that catches it (e.g., a shell); it is the only way to return an exit code different from zero from a <a href="/routine/MAIN">Main</a>.</p>
+<p><code>exit</code> prevents the <a href="/language/phasers$NUMBER_SIGNLEAVE">LEAVE</a> phaser to be executed, but it will run the code in the <a href="/language/variables$NUMBER_SIGNindex-entry-%24$ASTERISKEXIT"><code>&amp;*EXIT</code></a> variable.</p>
 <p><code>exit</code> should be used as last resort only to signal the parent process about an exit code different from zero, and not to terminate exceptionally a method or a sub: use <a href="/language/exceptions">exceptions</a> instead.</p>
 
     </div>

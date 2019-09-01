@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>stable sort</code> assembled from the following types:</p>
 <h1 id="language_documentation_Perl_6_by_example_P6-101"><a class="u" href="#___top" title="go to top of document">language documentation Perl&nbsp;6 by example P6-101</a></h1>
-<p>From <a href="/language/101-basics#stable_sort">Perl&nbsp;6 by example P6-101</a></p>
-<h2 id="(Perl_6_by_example_P6-101)_stable_sort"><a href="/language/101-basics#stable_sort">(Perl&nbsp;6 by example P6-101)  stable sort</a></h2>
+<p>From <a href="/language/101-basics$NUMBER_SIGNstable_sort">Perl&nbsp;6 by example P6-101</a></p>
+<h2 id="(Perl_6_by_example_P6-101)_stable_sort"><a href="/language/101-basics$NUMBER_SIGNstable_sort">(Perl&nbsp;6 by example P6-101)  stable sort</a></h2>
 <p>When two array items have the same value, <code>sort</code> leaves them in the same order as it found them. Computer scientists call this a <em>stable sort</em>. The program takes advantage of this property of Perl&nbsp;6&#39;s <code>sort</code> to achieve the goal by sorting twice: first by the number of sets won (the secondary criterion), then by the number of matches won.</p>
 <p>After the first sorting step, the names are in the order <code>Beth Charlie Dave Ana</code>. After the second sorting step, it&#39;s still the same, because no one has won fewer matches but more sets than someone else. Such a situation is entirely possible, especially at larger tournaments.</p>
 <p><code>sort</code> sorts in ascending order, from smallest to largest. This is the opposite of the desired order. Therefore, the code calls the <code>.reverse</code> method on the result of the second sort, and stores the final list in <code>@sorted</code>.</p>

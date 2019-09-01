@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>need</code> assembled from the following types:</p>
 <h1 id="language_documentation_Modules"><a class="u" href="#___top" title="go to top of document">language documentation Modules</a></h1>
-<p>From <a href="/language/modules#need">Modules</a></p>
-<h2 id="(Modules)_need"><a href="/language/modules#need">(Modules)  need</a></h2>
+<p>From <a href="/language/modules$NUMBER_SIGNneed">Modules</a></p>
+<h2 id="(Modules)_need"><a href="/language/modules$NUMBER_SIGNneed">(Modules)  need</a></h2>
 <p><code>need</code> loads a <code>compunit</code> at compile time.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>need</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>MyModule</span></span><span>;</span></span></div></pre><p>Any packages in the namespace defined within will also be available.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;MyModule.pm6</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>unit</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>MyModule</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Class</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p><code>MyModule::Class</code> will be defined when <code>MyModule</code> is loaded, and you can use it directly employing its fully qualified name (FQN). Classes and other types defined that way are not automatically exported; you will need to explicitly export it if you want to use it by its short name:</p>

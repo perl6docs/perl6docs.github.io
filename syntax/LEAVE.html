@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>LEAVE</code> assembled from the following types:</p>
 <h1 id="language_documentation_Phasers"><a class="u" href="#___top" title="go to top of document">language documentation Phasers</a></h1>
-<p>From <a href="/language/phasers#LEAVE">Phasers</a></p>
-<h2 id="(Phasers)_Phasers_LEAVE_LEAVE"><a href="/language/phasers#LEAVE">(Phasers) Phasers  LEAVE LEAVE</a></h2>
+<p>From <a href="/language/phasers$NUMBER_SIGNLEAVE">Phasers</a></p>
+<h2 id="(Phasers)_Phasers_LEAVE_LEAVE"><a href="/language/phasers$NUMBER_SIGNLEAVE">(Phasers) Phasers  LEAVE LEAVE</a></h2>
 <p>Runs at every block exit time (even stack unwinds from exceptions), except when the program exits abruptly (e.g. with <a href="/routine/exit"><code>exit</code></a>).</p>
 <p><code>LEAVE</code> phasers for a given block are necessarily evaluated after any <code>CATCH</code> and <code>CONTROL</code> phasers. This includes the <code>LEAVE</code> variants, <code>KEEP</code> and <code>UNDO</code>. <code>POST</code> phasers are evaluated after everything else, to guarantee that even <code>LEAVE</code> phasers can&#39;t violate postconditions.</p>
 <p>An exception thrown from an <code>ENTER</code> phaser will abort the <code>ENTER</code> queue, but one thrown from a <code>LEAVE</code> phaser will not.</p>

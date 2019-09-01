@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for method <code>encoder</code> assembled from the following types:</p>
 <h1 id="role_Encoding"><a class="u" href="#___top" title="go to top of document">role Encoding</a></h1>
-<p>From <a href="/type/Encoding#method_encoder">Encoding</a></p>
-<h2 id="(Encoding)_method_encoder"><a href="/type/Encoding#method_encoder">(Encoding) method encoder</a></h2>
+<p>From <a href="/type/Encoding$NUMBER_SIGNmethod_encoder">Encoding</a></p>
+<h2 id="(Encoding)_method_encoder"><a href="/type/Encoding$NUMBER_SIGNmethod_encoder">(Encoding) method encoder</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>encoder</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>options</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Encoding</span></span><span>::</span><span class="routine name perl6fe"><span>Encoder</span></span><span>)</span></span></div></pre><p>Gets a character encoder instance for this encoding, configured with the provided options. Options vary by encoding. The built-in encodings all support both <code>replacement</code> (either a <code>Str</code> replacement sequence or <code>True</code> to use a default replacement sequence for unencodable characters) and <code>translate-nl</code> (when set to <code>True</code>, turns <code>\n</code> into <code>\r\n</code> if the current platform is Windows).</p>
 

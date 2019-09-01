@@ -921,7 +921,7 @@ $(function(){
 ,
 { category: "infix", value: "&&", url: "/routine/&&" }
 ,
-{ category: "sub", value: "&*chdir", url: "/routine/&*chdir" }
+{ category: "sub", value: "&*chdir", url: "/routine/&$ASTERISKchdir" }
 ,
 { category: "Routine", value: "( )", url: "/routine/( )" }
 ,
@@ -975,9 +975,9 @@ $(function(){
 ,
 { category: "infix", value: "(|), infix ∪", url: "/routine/(|), infix ∪" }
 ,
-{ category: "Routine", value: "*", url: "/routine/*" }
+{ category: "Routine", value: "*", url: "/routine/$ASTERISK" }
 ,
-{ category: "infix", value: "**", url: "/routine/**" }
+{ category: "infix", value: "**", url: "/routine/$ASTERISK$ASTERISK" }
 ,
 { category: "Routine", value: "+", url: "/routine/+" }
 ,
@@ -1887,9 +1887,9 @@ $(function(){
 ,
 { category: "method", value: "infix", url: "/routine/infix" }
 ,
-{ category: "sub", value: "infix:<**>", url: "/routine/infix:<**>" }
+{ category: "sub", value: "infix:<**>", url: "/routine/infix:<$ASTERISK$ASTERISK>" }
 ,
-{ category: "sub", value: "infix:<*>", url: "/routine/infix:<*>" }
+{ category: "sub", value: "infix:<*>", url: "/routine/infix:<$ASTERISK>" }
 ,
 { category: "Routine", value: "infix:<+>", url: "/routine/infix:<+>" }
 ,
@@ -3085,11 +3085,11 @@ $(function(){
 ,
 { category: "regex", value: "( )", url: "/syntax/( )" }
 ,
-{ category: "syntax", value: "*", url: "/syntax/*" }
+{ category: "syntax", value: "*", url: "/syntax/$ASTERISK" }
 ,
-{ category: "regex quantifier", value: "**", url: "/syntax/**" }
+{ category: "regex quantifier", value: "**", url: "/syntax/$ASTERISK$ASTERISK" }
 ,
-{ category: "parameter", value: "**@", url: "/syntax/**@" }
+{ category: "parameter", value: "**@", url: "/syntax/$ASTERISK$ASTERISK@" }
 ,
 { category: "regex quantifier", value: "+", url: "/syntax/+" }
 ,
@@ -3505,13 +3505,13 @@ $(function(){
 ,
 { category: "Reference", value: "method operators", url: "/language/operators#index-entry-method_operators" }
 ,
-{ category: "Reference", value: "s\/\/\/", url: "/language/operators#index-entry-s///_in-place_substitution" }
+{ category: "Reference", value: "s\/\/\/", url: "/language/operators#index-entry-s$SOLIDUS$SOLIDUS$SOLIDUS_in-place_substitution" }
 ,
-{ category: "Reference", value: "S\/\/\/", url: "/language/operators#index-entry-S///_non-destructive_substitution" }
+{ category: "Reference", value: "S\/\/\/", url: "/language/operators#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
 ,
-{ category: "Reference", value: "tr\/\/\/", url: "/language/operators#index-entry-tr///_in-place_transliteration" }
+{ category: "Reference", value: "tr\/\/\/", url: "/language/operators#index-entry-tr$SOLIDUS$SOLIDUS$SOLIDUS_in-place_transliteration" }
 ,
-{ category: "Reference", value: "TR\/\/\/", url: "/language/operators#index-entry-TR///_non-destructive_transliteration" }
+{ category: "Reference", value: "TR\/\/\/", url: "/language/operators#index-entry-TR$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_transliteration" }
 ,
 { category: "Reference", value: "! (negation metaoperator)", url: "/language/operators#index-entry-!_(negation_metaoperator)" }
 ,
@@ -3573,7 +3573,7 @@ $(function(){
 ,
 { category: "Reference", value: "mutating method call", url: "/language/operators#index-entry-mutating_method_call" }
 ,
-{ category: "Reference", value: "methodop .^", url: "/language/operators#index-entry-methodop_.^" }
+{ category: "Reference", value: "methodop .^", url: "/language/operators#index-entry-methodop_.$CIRCUMFLEX_ACCENT" }
 ,
 { category: "Reference", value: "meta-method call", url: "/language/operators#index-entry-meta-method_call" }
 ,
@@ -3583,7 +3583,7 @@ $(function(){
 ,
 { category: "Reference", value: "methodop .+", url: "/language/operators#index-entry-methodop_.+" }
 ,
-{ category: "Reference", value: "methodop .*", url: "/language/operators#index-entry-methodop_.*" }
+{ category: "Reference", value: "methodop .*", url: "/language/operators#index-entry-methodop_.$ASTERISK" }
 ,
 { category: "Reference", value: "methodop ».", url: "/language/operators#index-entry-methodop_»." }
 ,
@@ -3771,7 +3771,7 @@ $(function(){
 ,
 { category: "Reference", value: "defined-or operator", url: "/language/operators#index-entry-defined-or_operator-defined-or_operator" }
 ,
-{ category: "Reference", value: "\/\/", url: "/language/operators#index-entry-//-infix_//" }
+{ category: "Reference", value: "\/\/", url: "/language/operators#index-entry-$SOLIDUS$SOLIDUS-infix_$SOLIDUS$SOLIDUS" }
 ,
 { category: "Reference", value: "ternary (operator)", url: "/language/operators#index-entry-operator_ternary" }
 ,
@@ -3791,11 +3791,11 @@ $(function(){
 ,
 { category: "Reference", value: "operators (...)", url: "/language/operators#index-entry-..._operators" }
 ,
-{ category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...^_operators" }
+{ category: "Reference", value: "operators (...^)", url: "/language/operators#index-entry-...$CIRCUMFLEX_ACCENT_operators" }
 ,
 { category: "Reference", value: "operators (…)", url: "/language/operators#index-entry-…_operators" }
 ,
-{ category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…^_operators" }
+{ category: "Reference", value: "operators (…^)", url: "/language/operators#index-entry-…$CIRCUMFLEX_ACCENT_operators" }
 ,
 { category: "Reference", value: "… (lazy list)", url: "/language/operators#index-entry-lazy_list_…" }
 ,
@@ -3831,11 +3831,11 @@ $(function(){
 ,
 { category: "Reference", value: "Regular Expressions", url: "/language/regexes#index-entry-Regular_Expressions" }
 ,
-{ category: "Reference", value: "\/ \/ (quote)", url: "/language/regexes#index-entry-quote_/_/-quote_rx-quote_m-Lexical_conventions" }
+{ category: "Reference", value: "\/ \/ (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
 ,
-{ category: "Reference", value: "rx (quote)", url: "/language/regexes#index-entry-quote_/_/-quote_rx-quote_m-Lexical_conventions" }
+{ category: "Reference", value: "rx (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
 ,
-{ category: "Reference", value: "m (quote)", url: "/language/regexes#index-entry-quote_/_/-quote_rx-quote_m-Lexical_conventions" }
+{ category: "Reference", value: "m (quote)", url: "/language/regexes#index-entry-quote_$SOLIDUS_$SOLIDUS-quote_rx-quote_m-Lexical_conventions" }
 ,
 { category: "Reference", value: ". (regex)", url: "/language/regexes#index-entry-regex__.-Wildcards" }
 ,
@@ -3877,15 +3877,15 @@ $(function(){
 ,
 { category: "Reference", value: "+ (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_+-One_or_more:_+" }
 ,
-{ category: "Reference", value: "* (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_*-Zero_or_more:_*" }
+{ category: "Reference", value: "* (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_$ASTERISK-Zero_or_more:_$ASTERISK" }
 ,
 { category: "Reference", value: "? (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_%3F-Zero_or_one:_%3F" }
 ,
-{ category: "Reference", value: "** (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_**-General_quantifier:_**_min..max" }
+{ category: "Reference", value: "** (regex quantifier)", url: "/language/regexes#index-entry-regex_quantifier_$ASTERISK$ASTERISK-General_quantifier:_$ASTERISK$ASTERISK_min..max" }
 ,
-{ category: "Reference", value: "% (regex)", url: "/language/regexes#index-entry-regex_%25-regex_%25%25-Modified_quantifier:_%25,_%25%25" }
+{ category: "Reference", value: "% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
 ,
-{ category: "Reference", value: "%% (regex)", url: "/language/regexes#index-entry-regex_%25-regex_%25%25-Modified_quantifier:_%25,_%25%25" }
+{ category: "Reference", value: "%% (regex)", url: "/language/regexes#index-entry-regex_$PERCENT_SIGN-regex_$PERCENT_SIGN$PERCENT_SIGN-Modified_quantifier:_$PERCENT_SIGN,_$PERCENT_SIGN$PERCENT_SIGN" }
 ,
 { category: "Reference", value: ": (regex)", url: "/language/regexes#index-entry-regex_:-Preventing_backtracking:_:" }
 ,
@@ -3899,13 +3899,13 @@ $(function(){
 ,
 { category: "Reference", value: "& (regex)", url: "/language/regexes#index-entry-regex_&-Conjunction:_&" }
 ,
-{ category: "Reference", value: "^ (regex)", url: "/language/regexes#index-entry-regex_^-regex_$-Start_of_string_and_end_of_string" }
+{ category: "Reference", value: "^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
 ,
-{ category: "Reference", value: "$ (regex)", url: "/language/regexes#index-entry-regex_^-regex_$-Start_of_string_and_end_of_string" }
+{ category: "Reference", value: "$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT-regex_$-Start_of_string_and_end_of_string" }
 ,
-{ category: "Reference", value: "^^ (regex)", url: "/language/regexes#index-entry-regex_^^-regex_$$-Start_of_line_and_end_of_line" }
+{ category: "Reference", value: "^^ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
 ,
-{ category: "Reference", value: "$$ (regex)", url: "/language/regexes#index-entry-regex_^^-regex_$$-Start_of_line_and_end_of_line" }
+{ category: "Reference", value: "$$ (regex)", url: "/language/regexes#index-entry-regex_$CIRCUMFLEX_ACCENT$CIRCUMFLEX_ACCENT-regex_$$-Start_of_line_and_end_of_line" }
 ,
 { category: "Reference", value: "<|w> (regex)", url: "/language/regexes#index-entry-regex__<|w>-regex__<!|w>-Word_boundary" }
 ,
@@ -3945,9 +3945,9 @@ $(function(){
 ,
 { category: "Reference", value: "\\K (regex deprecated)", url: "/language/regexes#index-entry-regex_deprecated_%5cK-%5cK" }
 ,
-{ category: "Reference", value: "s\/ \/ \/ (quote)", url: "/language/regexes#index-entry-quote_s/_/_/-Lexical_conventions" }
+{ category: "Reference", value: "s\/ \/ \/ (quote)", url: "/language/regexes#index-entry-quote_s$SOLIDUS_$SOLIDUS_$SOLIDUS-Lexical_conventions" }
 ,
-{ category: "Reference", value: "S\/\/\/", url: "/language/regexes#index-entry-S///_non-destructive_substitution" }
+{ category: "Reference", value: "S\/\/\/", url: "/language/regexes#index-entry-S$SOLIDUS$SOLIDUS$SOLIDUS_non-destructive_substitution" }
 ,
 { category: "Reference", value: "tilde (regex)", url: "/language/regexes#index-entry-regex__tilde-_regex__~-Tilde_for_nesting_structures" }
 ,
@@ -4141,7 +4141,7 @@ $(function(){
 ,
 { category: "Reference", value: "@_", url: "/language/functions#index-entry-@__" }
 ,
-{ category: "Reference", value: "%_", url: "/language/functions#index-entry-%25__" }
+{ category: "Reference", value: "%_", url: "/language/functions#index-entry-$PERCENT_SIGN__" }
 ,
 { category: "Reference", value: "Argument", url: "/language/functions#index-entry-Argument" }
 ,
@@ -4265,7 +4265,7 @@ $(function(){
 ,
 { category: "Reference", value: "@ (sigil)", url: "/language/variables#index-entry-sigil_@" }
 ,
-{ category: "Reference", value: "% (sigil)", url: "/language/variables#index-entry-sigil_%25" }
+{ category: "Reference", value: "% (sigil)", url: "/language/variables#index-entry-sigil_$PERCENT_SIGN" }
 ,
 { category: "Reference", value: "& (sigil)", url: "/language/variables#index-entry-sigil_&" }
 ,
@@ -4275,7 +4275,7 @@ $(function(){
 ,
 { category: "Reference", value: "Twigil", url: "/language/variables#index-entry-Twigil" }
 ,
-{ category: "Reference", value: "$*", url: "/language/variables#index-entry-$*" }
+{ category: "Reference", value: "$*", url: "/language/variables#index-entry-$$ASTERISK" }
 ,
 { category: "Reference", value: "$?", url: "/language/variables#index-entry-$%3F" }
 ,
@@ -4283,7 +4283,7 @@ $(function(){
 ,
 { category: "Reference", value: "$.", url: "/language/variables#index-entry-$." }
 ,
-{ category: "Reference", value: "$^", url: "/language/variables#index-entry-$^" }
+{ category: "Reference", value: "$^", url: "/language/variables#index-entry-$$CIRCUMFLEX_ACCENT" }
 ,
 { category: "Reference", value: "$:", url: "/language/variables#index-entry-$:" }
 ,
@@ -4335,7 +4335,7 @@ $(function(){
 ,
 { category: "Reference", value: "::?CLASS", url: "/language/variables#index-entry-::%3FCLASS" }
 ,
-{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-%25%3FRESOURCES" }
+{ category: "Reference", value: "%?RESOURCES", url: "/language/variables#index-entry-$PERCENT_SIGN%3FRESOURCES" }
 ,
 { category: "Reference", value: "$?PACKAGE", url: "/language/variables#index-entry-$%3FPACKAGE" }
 ,
@@ -4357,79 +4357,79 @@ $(function(){
 ,
 { category: "Reference", value: "$?DISTRIBUTION", url: "/language/variables#index-entry-$%3FDISTRIBUTION" }
 ,
-{ category: "Reference", value: "$*ARGFILES", url: "/language/variables#index-entry-$*ARGFILES" }
+{ category: "Reference", value: "$*ARGFILES", url: "/language/variables#index-entry-$$ASTERISKARGFILES" }
 ,
-{ category: "Reference", value: "@*ARGS", url: "/language/variables#index-entry-@*ARGS" }
+{ category: "Reference", value: "@*ARGS", url: "/language/variables#index-entry-@$ASTERISKARGS" }
 ,
-{ category: "Reference", value: "&*ARGS-TO-CAPTURE", url: "/language/variables#index-entry-&*ARGS-TO-CAPTURE" }
+{ category: "Reference", value: "&*ARGS-TO-CAPTURE", url: "/language/variables#index-entry-&$ASTERISKARGS-TO-CAPTURE" }
 ,
-{ category: "Reference", value: "&*GENERATE-USAGE", url: "/language/variables#index-entry-&*GENERATE-USAGE" }
+{ category: "Reference", value: "&*GENERATE-USAGE", url: "/language/variables#index-entry-&$ASTERISKGENERATE-USAGE" }
 ,
-{ category: "Reference", value: "$*IN", url: "/language/variables#index-entry-$*IN" }
+{ category: "Reference", value: "$*IN", url: "/language/variables#index-entry-$$ASTERISKIN" }
 ,
-{ category: "Reference", value: "$*OUT", url: "/language/variables#index-entry-$*OUT" }
+{ category: "Reference", value: "$*OUT", url: "/language/variables#index-entry-$$ASTERISKOUT" }
 ,
-{ category: "Reference", value: "$*ERR", url: "/language/variables#index-entry-$*ERR" }
+{ category: "Reference", value: "$*ERR", url: "/language/variables#index-entry-$$ASTERISKERR" }
 ,
-{ category: "Reference", value: "%*ENV", url: "/language/variables#index-entry-%25*ENV" }
+{ category: "Reference", value: "%*ENV", url: "/language/variables#index-entry-$PERCENT_SIGN$ASTERISKENV" }
 ,
-{ category: "Reference", value: "$*REPO", url: "/language/variables#index-entry-$*REPO" }
+{ category: "Reference", value: "$*REPO", url: "/language/variables#index-entry-$$ASTERISKREPO" }
 ,
-{ category: "Reference", value: "$*INIT-INSTANT", url: "/language/variables#index-entry-$*INIT-INSTANT" }
+{ category: "Reference", value: "$*INIT-INSTANT", url: "/language/variables#index-entry-$$ASTERISKINIT-INSTANT" }
 ,
-{ category: "Reference", value: "$*TZ", url: "/language/variables#index-entry-$*TZ" }
+{ category: "Reference", value: "$*TZ", url: "/language/variables#index-entry-$$ASTERISKTZ" }
 ,
-{ category: "Reference", value: "$*CWD", url: "/language/variables#index-entry-$*CWD" }
+{ category: "Reference", value: "$*CWD", url: "/language/variables#index-entry-$$ASTERISKCWD" }
 ,
-{ category: "Reference", value: "$*KERNEL", url: "/language/variables#index-entry-$*KERNEL" }
+{ category: "Reference", value: "$*KERNEL", url: "/language/variables#index-entry-$$ASTERISKKERNEL" }
 ,
-{ category: "Reference", value: "$*DISTRO", url: "/language/variables#index-entry-$*DISTRO" }
+{ category: "Reference", value: "$*DISTRO", url: "/language/variables#index-entry-$$ASTERISKDISTRO" }
 ,
-{ category: "Reference", value: "$*VM", url: "/language/variables#index-entry-$*VM" }
+{ category: "Reference", value: "$*VM", url: "/language/variables#index-entry-$$ASTERISKVM" }
 ,
-{ category: "Reference", value: "$*PERL", url: "/language/variables#index-entry-$*PERL" }
+{ category: "Reference", value: "$*PERL", url: "/language/variables#index-entry-$$ASTERISKPERL" }
 ,
-{ category: "Reference", value: "$*PID", url: "/language/variables#index-entry-$*PID" }
+{ category: "Reference", value: "$*PID", url: "/language/variables#index-entry-$$ASTERISKPID" }
 ,
-{ category: "Reference", value: "$*PROGRAM-NAME", url: "/language/variables#index-entry-$*PROGRAM-NAME" }
+{ category: "Reference", value: "$*PROGRAM-NAME", url: "/language/variables#index-entry-$$ASTERISKPROGRAM-NAME" }
 ,
-{ category: "Reference", value: "$*PROGRAM", url: "/language/variables#index-entry-$*PROGRAM" }
+{ category: "Reference", value: "$*PROGRAM", url: "/language/variables#index-entry-$$ASTERISKPROGRAM" }
 ,
-{ category: "Reference", value: "&*EXIT", url: "/language/variables#index-entry-&*EXIT" }
+{ category: "Reference", value: "&*EXIT", url: "/language/variables#index-entry-&$ASTERISKEXIT" }
 ,
-{ category: "Reference", value: "$*EXECUTABLE", url: "/language/variables#index-entry-$*EXECUTABLE" }
+{ category: "Reference", value: "$*EXECUTABLE", url: "/language/variables#index-entry-$$ASTERISKEXECUTABLE" }
 ,
-{ category: "Reference", value: "$*EXECUTABLE-NAME", url: "/language/variables#index-entry-$*EXECUTABLE-NAME" }
+{ category: "Reference", value: "$*EXECUTABLE-NAME", url: "/language/variables#index-entry-$$ASTERISKEXECUTABLE-NAME" }
 ,
-{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
+{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$$ASTERISKUSAGE" }
 ,
-{ category: "Reference", value: "$*USER", url: "/language/variables#index-entry-$*USER" }
+{ category: "Reference", value: "$*USER", url: "/language/variables#index-entry-$$ASTERISKUSER" }
 ,
-{ category: "Reference", value: "$*GROUP", url: "/language/variables#index-entry-$*GROUP" }
+{ category: "Reference", value: "$*GROUP", url: "/language/variables#index-entry-$$ASTERISKGROUP" }
 ,
-{ category: "Reference", value: "$*HOMEDRIVE", url: "/language/variables#index-entry-$*HOMEDRIVE" }
+{ category: "Reference", value: "$*HOMEDRIVE", url: "/language/variables#index-entry-$$ASTERISKHOMEDRIVE" }
 ,
-{ category: "Reference", value: "$*HOMEPATH", url: "/language/variables#index-entry-$*HOMEPATH" }
+{ category: "Reference", value: "$*HOMEPATH", url: "/language/variables#index-entry-$$ASTERISKHOMEPATH" }
 ,
-{ category: "Reference", value: "$*HOME", url: "/language/variables#index-entry-$*HOME" }
+{ category: "Reference", value: "$*HOME", url: "/language/variables#index-entry-$$ASTERISKHOME" }
 ,
-{ category: "Reference", value: "$*SPEC", url: "/language/variables#index-entry-$*SPEC" }
+{ category: "Reference", value: "$*SPEC", url: "/language/variables#index-entry-$$ASTERISKSPEC" }
 ,
-{ category: "Reference", value: "$*TMPDIR", url: "/language/variables#index-entry-$*TMPDIR" }
+{ category: "Reference", value: "$*TMPDIR", url: "/language/variables#index-entry-$$ASTERISKTMPDIR" }
 ,
-{ category: "Reference", value: "$*THREAD", url: "/language/variables#index-entry-$*THREAD" }
+{ category: "Reference", value: "$*THREAD", url: "/language/variables#index-entry-$$ASTERISKTHREAD" }
 ,
-{ category: "Reference", value: "$*SCHEDULER", url: "/language/variables#index-entry-$*SCHEDULER" }
+{ category: "Reference", value: "$*SCHEDULER", url: "/language/variables#index-entry-$$ASTERISKSCHEDULER" }
 ,
-{ category: "Reference", value: "$*SAMPLER", url: "/language/variables#index-entry-$*SAMPLER" }
+{ category: "Reference", value: "$*SAMPLER", url: "/language/variables#index-entry-$$ASTERISKSAMPLER" }
 ,
-{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$*USAGE" }
+{ category: "Reference", value: "$*USAGE", url: "/language/variables#index-entry-$$ASTERISKUSAGE" }
 ,
-{ category: "Reference", value: "$*COLLATION", url: "/language/variables#index-entry-$*COLLATION" }
+{ category: "Reference", value: "$*COLLATION", url: "/language/variables#index-entry-$$ASTERISKCOLLATION" }
 ,
-{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$*TOLERANCE" }
+{ category: "Reference", value: "$*TOLERANCE", url: "/language/variables#index-entry-$$ASTERISKTOLERANCE" }
 ,
-{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$*DEFAULT-READ-ELEMS" }
+{ category: "Reference", value: "$*DEFAULT-READ-ELEMS", url: "/language/variables#index-entry-$$ASTERISKDEFAULT-READ-ELEMS" }
 ,
 { category: "Reference", value: "Zen slices", url: "/language/subscripts#index-entry-Zen_slices" }
 ,
@@ -4681,7 +4681,7 @@ $(function(){
 ,
 { category: "Reference", value: "also declarator", url: "/language/classtut#index-entry-also_declarator-also" }
 ,
-{ category: "Reference", value: "^methods", url: "/language/classtut#index-entry-^methods" }
+{ category: "Reference", value: "^methods", url: "/language/classtut#index-entry-$CIRCUMFLEX_ACCENTmethods" }
 ,
 { category: "Reference", value: "Overriding default gist method", url: "/language/classtut#index-entry-Overriding_default_gist_method" }
 ,
@@ -4761,7 +4761,7 @@ $(function(){
 ,
 { category: "Reference", value: "@INC (Perl 5)", url: "/language/5to6-perlvar#index-entry-@INC_(Perl 5)" }
 ,
-{ category: "Reference", value: "%INC (Perl 5)", url: "/language/5to6-perlvar#index-entry-%25INC_(Perl 5)" }
+{ category: "Reference", value: "%INC (Perl 5)", url: "/language/5to6-perlvar#index-entry-$PERCENT_SIGNINC_(Perl 5)" }
 ,
 { category: "Reference", value: "XCompose", url: "/language/unicode_entry#index-entry-XCompose" }
 ,
@@ -4925,7 +4925,7 @@ $(function(){
 ,
 { category: "Reference", value: "if (control flow)", url: "/language/control#index-entry-control_flow_if-if" }
 ,
-{ category: "Reference", value: "else elsif (control flow)", url: "/language/control#index-entry-control_flow_else_elsif-else/elsif" }
+{ category: "Reference", value: "else elsif (control flow)", url: "/language/control#index-entry-control_flow_else_elsif-else$SOLIDUSelsif" }
 ,
 { category: "Reference", value: "unless (control flow)", url: "/language/control#index-entry-control_flow__unless-unless" }
 ,
@@ -4941,13 +4941,13 @@ $(function(){
 ,
 { category: "Reference", value: "for (control flow)", url: "/language/control#index-entry-control_flow__for-for" }
 ,
-{ category: "Reference", value: "gather take (control flow)", url: "/language/control#index-entry-control_flow_gather_take-gather/take" }
+{ category: "Reference", value: "gather take (control flow)", url: "/language/control#index-entry-control_flow_gather_take-gather$SOLIDUStake" }
 ,
 { category: "Reference", value: "gather (lazy list)", url: "/language/control#index-entry-lazy_list_gather" }
 ,
 { category: "Reference", value: "take (lazy list)", url: "/language/control#index-entry-lazy_list_take" }
 ,
-{ category: "Reference", value: "supply emit (control flow)", url: "/language/control#index-entry-control_flow_supply_emit-supply/emit" }
+{ category: "Reference", value: "supply emit (control flow)", url: "/language/control#index-entry-control_flow_supply_emit-supply$SOLIDUSemit" }
 ,
 { category: "Reference", value: "given (control flow)", url: "/language/control#index-entry-control_flow__given-given" }
 ,
@@ -4965,7 +4965,7 @@ $(function(){
 ,
 { category: "Reference", value: "while until (control flow)", url: "/language/control#index-entry-control_flow_while_until-while,_until" }
 ,
-{ category: "Reference", value: "repeat (control flow)", url: "/language/control#index-entry-control_flow_repeat-repeat/while,_repeat/until" }
+{ category: "Reference", value: "repeat (control flow)", url: "/language/control#index-entry-control_flow_repeat-repeat$SOLIDUSwhile,_repeat$SOLIDUSuntil" }
 ,
 { category: "Reference", value: "return (control flow)", url: "/language/control#index-entry-control_flow_return-return" }
 ,
@@ -5153,13 +5153,13 @@ $(function(){
 ,
 { category: "Reference", value: "lstat - perlfunc", url: "/language/5to6-perlfunc#index-entry-lstat_-_perlfunc" }
 ,
-{ category: "Reference", value: "m\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-m//_-_perlfunc" }
+{ category: "Reference", value: "m\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-m$SOLIDUS$SOLIDUS_-_perlfunc" }
 ,
 { category: "Reference", value: "map - perlfunc", url: "/language/5to6-perlfunc#index-entry-map_-_perlfunc" }
 ,
 { category: "Reference", value: "mkdir - perlfunc", url: "/language/5to6-perlfunc#index-entry-mkdir_-_perlfunc" }
 ,
-{ category: "Reference", value: "msg* - perlfunc", url: "/language/5to6-perlfunc#index-entry-msg*_-_perlfunc" }
+{ category: "Reference", value: "msg* - perlfunc", url: "/language/5to6-perlfunc#index-entry-msg$ASTERISK_-_perlfunc" }
 ,
 { category: "Reference", value: "my - perlfunc", url: "/language/5to6-perlfunc#index-entry-my_-_perlfunc" }
 ,
@@ -5235,7 +5235,7 @@ $(function(){
 ,
 { category: "Reference", value: "rmdir - perlfunc", url: "/language/5to6-perlfunc#index-entry-rmdir_-_perlfunc" }
 ,
-{ category: "Reference", value: "s\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-s///_-_perlfunc" }
+{ category: "Reference", value: "s\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-s$SOLIDUS$SOLIDUS$SOLIDUS_-_perlfunc" }
 ,
 { category: "Reference", value: "say - perlfunc", url: "/language/5to6-perlfunc#index-entry-say_-_perlfunc" }
 ,
@@ -5261,7 +5261,7 @@ $(function(){
 ,
 { category: "Reference", value: "shift - perlfunc", url: "/language/5to6-perlfunc#index-entry-shift_-_perlfunc" }
 ,
-{ category: "Reference", value: "shm* - perlfunc", url: "/language/5to6-perlfunc#index-entry-shm*_-_perlfunc" }
+{ category: "Reference", value: "shm* - perlfunc", url: "/language/5to6-perlfunc#index-entry-shm$ASTERISK_-_perlfunc" }
 ,
 { category: "Reference", value: "shutdown - perlfunc", url: "/language/5to6-perlfunc#index-entry-shutdown_-_perlfunc" }
 ,
@@ -5297,7 +5297,7 @@ $(function(){
 ,
 { category: "Reference", value: "syscall - perlfunc", url: "/language/5to6-perlfunc#index-entry-syscall_-_perlfunc" }
 ,
-{ category: "Reference", value: "sys* - perlfunc", url: "/language/5to6-perlfunc#index-entry-sys*_-_perlfunc" }
+{ category: "Reference", value: "sys* - perlfunc", url: "/language/5to6-perlfunc#index-entry-sys$ASTERISK_-_perlfunc" }
 ,
 { category: "Reference", value: "system - perlfunc", url: "/language/5to6-perlfunc#index-entry-system_-_perlfunc" }
 ,
@@ -5313,7 +5313,7 @@ $(function(){
 ,
 { category: "Reference", value: "times - perlfunc", url: "/language/5to6-perlfunc#index-entry-times_-_perlfunc" }
 ,
-{ category: "Reference", value: "tr\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-tr///_-_perlfunc" }
+{ category: "Reference", value: "tr\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-tr$SOLIDUS$SOLIDUS$SOLIDUS_-_perlfunc" }
 ,
 { category: "Reference", value: "truncate - perlfunc", url: "/language/5to6-perlfunc#index-entry-truncate_-_perlfunc" }
 ,
@@ -5349,7 +5349,7 @@ $(function(){
 ,
 { category: "Reference", value: "write - perlfunc", url: "/language/5to6-perlfunc#index-entry-write_-_perlfunc" }
 ,
-{ category: "Reference", value: "y\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-y///_-_perlfunc" }
+{ category: "Reference", value: "y\/\/\/ - perlfunc", url: "/language/5to6-perlfunc#index-entry-y$SOLIDUS$SOLIDUS$SOLIDUS_-_perlfunc" }
 ,
 { category: "Reference", value: "þ (infix)", url: "/language/about#index-entry-infix_þ-How_to_use_the_þ_infix" }
 ,
@@ -5413,7 +5413,7 @@ $(function(){
 ,
 { category: "Reference", value: "MAIN", url: "/language/create-cli#index-entry-MAIN" }
 ,
-{ category: "Reference", value: "%*SUB-MAIN-OPTS", url: "/language/create-cli#index-entry-%25*SUB-MAIN-OPTS" }
+{ category: "Reference", value: "%*SUB-MAIN-OPTS", url: "/language/create-cli#index-entry-$PERCENT_SIGN$ASTERISKSUB-MAIN-OPTS" }
 ,
 { category: "Reference", value: "named-anywhere", url: "/language/create-cli#index-entry-named-anywhere" }
 ,
@@ -5423,7 +5423,7 @@ $(function(){
 ,
 { category: "Reference", value: "USAGE", url: "/language/create-cli#index-entry-USAGE" }
 ,
-{ category: "Reference", value: "$*USAGE", url: "/language/create-cli#index-entry-$*USAGE" }
+{ category: "Reference", value: "$*USAGE", url: "/language/create-cli#index-entry-$$ASTERISKUSAGE" }
 ,
 { category: "Reference", value: "ARGS-TO-CAPTURE", url: "/language/create-cli#index-entry-ARGS-TO-CAPTURE" }
 ,
@@ -5691,9 +5691,9 @@ $(function(){
 ,
 { category: "Reference", value: "Python", url: "/language/py-nutshell#index-entry-Python-input" }
 ,
-{ category: "Reference", value: "#| (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_%23|" }
+{ category: "Reference", value: "#| (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_$NUMBER_SIGN|" }
 ,
-{ category: "Reference", value: "#= (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_%23=" }
+{ category: "Reference", value: "#= (declarator blocks)", url: "/language/pod#index-entry-declarator_blocks_$NUMBER_SIGN=" }
 ,
 { category: "Reference", value: "will trait (Phasers)", url: "/language/phasers#index-entry-Phasers__will_trait" }
 ,
@@ -5941,7 +5941,7 @@ $(function(){
 ,
 { category: "Reference", value: "$ (item contextualizer)", url: "/type/Any#index-entry-$_(item_contextualizer)" }
 ,
-{ category: "Reference", value: "$*COLLATION", url: "/type/Any#index-entry-$*COLLATION-$*COLLATION" }
+{ category: "Reference", value: "$*COLLATION", url: "/type/Any#index-entry-$$ASTERISKCOLLATION-$$ASTERISKCOLLATION" }
 ,
 { category: "Reference", value: "collation levels", url: "/type/Any#index-entry-collation_levels" }
 ,
@@ -5999,15 +5999,15 @@ $(function(){
 ,
 { category: "Reference", value: "Coercion type", url: "/type/Signature#index-entry-Coercion_type" }
 ,
-{ category: "Reference", value: "*@ (parameter)", url: "/type/Signature#index-entry-parameter_*@" }
+{ category: "Reference", value: "*@ (parameter)", url: "/type/Signature#index-entry-parameter_$ASTERISK@" }
 ,
-{ category: "Reference", value: "*% (parameter)", url: "/type/Signature#index-entry-parameter_*%25" }
+{ category: "Reference", value: "*% (parameter)", url: "/type/Signature#index-entry-parameter_$ASTERISK$PERCENT_SIGN" }
 ,
 { category: "Reference", value: "slurpy argument", url: "/type/Signature#index-entry-slurpy_argument" }
 ,
 { category: "Reference", value: "variadic", url: "/type/Signature#index-entry-variadic" }
 ,
-{ category: "Reference", value: "**@ (parameter)", url: "/type/Signature#index-entry-parameter__**@-Unflattened_slurpy" }
+{ category: "Reference", value: "**@ (parameter)", url: "/type/Signature#index-entry-parameter__$ASTERISK$ASTERISK@-Unflattened_slurpy" }
 ,
 { category: "Reference", value: "+ (Single argument rule slurpy)", url: "/type/Signature#index-entry-+_(Single_argument_rule_slurpy)" }
 ,

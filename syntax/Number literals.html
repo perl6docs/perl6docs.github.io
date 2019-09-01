@@ -38,7 +38,7 @@
         </p>
     </div>
     <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a></div>
+      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
     </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
@@ -62,47 +62,19 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>Number literals</code> assembled from the following types:</p>
 <h1 id="language_documentation_Syntax"><a class="u" href="#___top" title="go to top of document">language documentation Syntax</a></h1>
-<p>From <a href="/language/syntax#Number_literals">Syntax</a></p>
-<h2 id="(Syntax)_Number_literals"><a href="/language/syntax#Number_literals">(Syntax)  Number literals</a></h2>
+<p>From <a href="/language/syntax$NUMBER_SIGNNumber_literals">Syntax</a></p>
+<h2 id="(Syntax)_Number_literals"><a href="/language/syntax$NUMBER_SIGNNumber_literals">(Syntax)  Number literals</a></h2>
 <p>Number literals are generally specified in base ten (which can be specified literally, if needed, via the prefix <code>0d</code>), unless a prefix like <code>0x</code> (he<strong>x</strong>adecimal, base 16), <code>0o</code> (<strong>o</strong>ctal, base 8) or <code>0b</code> (<strong>b</strong>inary, base 2) or an explicit base in adverbial notation like <code>:16&lt;A0&gt; </code> specifies it otherwise. Unlike other programming languages, leading zeros do <em>not</em> indicate base 8; instead a compile-time warning is issued.</p>
 <p>In all literal formats, you can use underscores to group digits, although they don&#39;t carry any semantic information; the following literals all evaluate to the same number:</p>
-<pre class="pod-block-code">1000000
-1_000_000
-10_00000
-100_00_00
-</pre>
-<h4 id="Int_literals"><a class="u" href="#___top" title="go to top of document"><code>Int</code> literals</a></h4>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1000000</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1_000_000</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>10_00000</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>100_00_00</span></span></span></div></pre><h4 id="Int_literals"><a class="u" href="#___top" title="go to top of document"><code>Int</code> literals</a></h4>
 <p>Integers default to signed base-10, but you can use other bases. For details, see <a href="/type/Int">Int</a>.</p>
-<pre class="pod-block-code"># not a single literal, but unary - operator applied to numeric literal 2
--2
-12345
-0xBEEF      # base 16
-0o755       # base 8
-:3&lt;1201&gt;    # arbitrary base, here base 3
-</pre>
-<h4 id="Rat_literals"><a class="u" href="#___top" title="go to top of document"><code>Rat</code> literals</a></h4>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;not&nbsp;a&nbsp;single&nbsp;literal,&nbsp;but&nbsp;unary&nbsp;-&nbsp;operator&nbsp;applied&nbsp;to&nbsp;numeric&nbsp;literal&nbsp;2</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>-2</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>12345</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric radix perl6fe"><span>0xBEEF</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;base&nbsp;16</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric radix perl6fe"><span>0o755</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;base&nbsp;8</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>:</span></span><span class="constant numeric perl6fe"><span>3</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>1201</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;arbitrary&nbsp;base,&nbsp;here&nbsp;base&nbsp;3</span><span>&nbsp;</span></span></span></div></pre><h4 id="Rat_literals"><a class="u" href="#___top" title="go to top of document"><code>Rat</code> literals</a></h4>
 <p><a href="/type/Rat">Rat</a> literals (rationals) are very common, and take the place of decimals or floats in many other languages. Integer division also results in a <code>Rat</code>.</p>
-<pre class="pod-block-code">1.0
-3.14159
--2.5        # Not actually a literal, but still a Rat
-:3&lt;21.0012&gt; # Base 3 rational
-⅔
-2/3         # Not actually a literal, but still a Rat
-</pre>
-<h4 id="Num_literals"><a class="u" href="#___top" title="go to top of document"><code>Num</code> literals</a></h4>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1.0</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>3.14159</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>-2.5</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Not&nbsp;actually&nbsp;a&nbsp;literal,&nbsp;but&nbsp;still&nbsp;a&nbsp;Rat</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword operator generic perl6fe"><span>:</span></span><span class="constant numeric perl6fe"><span>3</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>21.0012</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Base&nbsp;3&nbsp;rational</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span>⅔</span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>2</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="constant numeric perl6fe"><span>3</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Not&nbsp;actually&nbsp;a&nbsp;literal,&nbsp;but&nbsp;still&nbsp;a&nbsp;Rat</span><span>&nbsp;</span></span></span></div></pre><h4 id="Num_literals"><a class="u" href="#___top" title="go to top of document"><code>Num</code> literals</a></h4>
 <p>Scientific notation with an integer exponent to base ten after an <code>e</code> produces <a href="/type/Num">floating point number</a>:</p>
-<pre class="pod-block-code">1e0
-6.022e23
-1e-9
--2e48
-2e2.5       # error
-</pre>
-<h4 id="Complex_literals"><a class="u" href="#___top" title="go to top of document"><code>Complex</code> literals</a></h4>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1e0</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>6.022e23</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1e-9</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>-2e48</span></span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>2e2</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span>5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;error</span><span>&nbsp;</span></span></span></div></pre><h4 id="Complex_literals"><a class="u" href="#___top" title="go to top of document"><code>Complex</code> literals</a></h4>
 <p><a href="/type/Complex">Complex</a> numbers are written either as an imaginary number (which is just a rational number with postfix <code>i</code> appended), or as a sum of a real and an imaginary number:</p>
-<pre class="pod-block-code">1+2i
-6.123e5i    # note that this is 6.123e5 * i, not 6.123 * 10 ** (5i)
-</pre>
-<p><a name="index-entry-Pairs_(literals)"></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator generic perl6fe"><span>+</span></span><span>2i</span></span></div><div class="line"><span class="source perl6fe"><span class="constant numeric perl6fe"><span>6.123e5</span></span><span>i&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;note&nbsp;that&nbsp;this&nbsp;is&nbsp;6.123e5&nbsp;*&nbsp;i,&nbsp;not&nbsp;6.123&nbsp;*&nbsp;10&nbsp;**&nbsp;(5i)</span><span>&nbsp;</span></span></span></div></pre><p><a name="index-entry-Pairs_(literals)"></a></p>
 
     </div>
     
