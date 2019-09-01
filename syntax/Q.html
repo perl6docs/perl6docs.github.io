@@ -58,15 +58,15 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>Q</code> assembled from the following types:</p>
 <h1 id="language_documentation_Quoting_constructs"><a class="u" href="#___top" title="go to top of document">language documentation Quoting constructs</a></h1>
-<p>From <a href="/language/quoting$NUMBER_SIGNLiteral_strings:_Q">Quoting constructs</a></p>
-<h2 id="(Quoting_constructs)_quote_Q_Q"><a href="/language/quoting$NUMBER_SIGNLiteral_strings:_Q">(Quoting constructs) quote Q Q</a></h2>
+<p>From <a href="/language/quoting#Literal_strings:_Q">Quoting constructs</a></p>
+<h2 id="(Quoting_constructs)_quote_Q_Q"><a href="/language/quoting#Literal_strings:_Q">(Quoting constructs) quote Q Q</a></h2>
 <pre class="pod-block-code"><strong>Q[</strong>A literal string<strong>]</strong>
 <strong>｢</strong>More plainly.<strong>｣</strong>
 <strong>Q ^</strong>Almost any non-word character can be a delimiter!<strong>^</strong>
 <strong>Q ｢｢</strong>Delimiters can be repeated/nested if they are adjacent.<strong>｣｣</strong>
 </pre>
 <p>Delimiters can be nested, but in the plain <code>Q</code> form, backslash escapes aren&#39;t allowed. In other words, basic <code>Q</code> strings are as literal as possible.</p>
-<p>Some delimiters are not allowed immediately after <code>Q</code>, <code>q</code>, or <code>qq</code>. Any characters that are allowed in <a href="/language/syntax$NUMBER_SIGNIdentifiers">identifiers</a> are not allowed to be used, since in such a case, the quoting construct together with such characters are interpreted as an identifier. In addition, <code>( )</code> is not allowed because that is interpreted as a function call. If you still wish to use those characters as delimiters, separate them from <code>Q</code>, <code>q</code>, or <code>qq</code> with a space. Please note that some natural languages use a left delimiting quote on the right side of a string. <code>Q</code> will not support those as it relies on unicode properties to tell left and right delimiters apart.</p>
+<p>Some delimiters are not allowed immediately after <code>Q</code>, <code>q</code>, or <code>qq</code>. Any characters that are allowed in <a href="/language/syntax#Identifiers">identifiers</a> are not allowed to be used, since in such a case, the quoting construct together with such characters are interpreted as an identifier. In addition, <code>( )</code> is not allowed because that is interpreted as a function call. If you still wish to use those characters as delimiters, separate them from <code>Q</code>, <code>q</code>, or <code>qq</code> with a space. Please note that some natural languages use a left delimiting quote on the right side of a string. <code>Q</code> will not support those as it relies on unicode properties to tell left and right delimiters apart.</p>
 <pre class="pod-block-code"><strong>Q&#39;</strong>this will not work!<strong>&#39;</strong>
 <strong>Q(</strong>this won&#39;t work either!<strong>)</strong>
 </pre>

@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>POST</code> assembled from the following types:</p>
 <h1 id="language_documentation_Phasers"><a class="u" href="#___top" title="go to top of document">language documentation Phasers</a></h1>
-<p>From <a href="/language/phasers$NUMBER_SIGNPOST">Phasers</a></p>
-<h2 id="(Phasers)_Phasers_POST_POST"><a href="/language/phasers$NUMBER_SIGNPOST">(Phasers) Phasers  POST POST</a></h2>
+<p>From <a href="/language/phasers#POST">Phasers</a></p>
+<h2 id="(Phasers)_Phasers_POST_POST"><a href="/language/phasers#POST">(Phasers) Phasers  POST POST</a></h2>
 <p>Asserts a postcondition at every block entry. Runs after the LEAVE phase.</p>
 <p>For phasers such as <code>KEEP</code> and <code>POST</code> that are run when exiting a scope normally, the return value (if any) from that scope is available as the current topic within the phaser.</p>
 <p>The <code>POST</code> block can be defined in one of two ways. Either the corresponding <code>POST</code> is defined as a separate phaser, in which case <code>PRE</code> and <code>POST</code> share no lexical scope. Alternately, any <code>PRE</code> phaser may define its corresponding <code>POST</code> as an embedded phaser block that closes over the lexical scope of the <code>PRE</code>.</p>

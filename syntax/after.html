@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>after</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes$NUMBER_SIGNLookbehind_assertions">Regexes</a></p>
-<h2 id="(Regexes)_regex_after_after"><a href="/language/regexes$NUMBER_SIGNLookbehind_assertions">(Regexes) regex after after</a></h2>
+<p>From <a href="/language/regexes#Lookbehind_assertions">Regexes</a></p>
+<h2 id="(Regexes)_regex_after_after"><a href="/language/regexes#Lookbehind_assertions">(Regexes) regex after after</a></h2>
 <p>To check that a pattern appears after another pattern, use a lookbehind assertion via the <code>after</code> assertion. This has the form:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>?after&nbsp;pattern</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span></span></div></pre><p>Therefore, to search for the string <code>bar</code> immediately preceded by the string <code>foo</code>, use the following regexp:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="punctuation definition regexp perl6fe"><span>/</span></span><span class="string regexp perl6fe"><span>&nbsp;</span><span class="meta property regexp perl6fe"><span class="punctuation delimiter property regexp perl6fe"><span>&lt;</span></span><span class="meta assertion lookaround perl6fe"><span class="keyword operator negativity perl6fe"><span>?</span></span><span class="entity name section assertion perl6fe"><span>after</span></span><span>&nbsp;</span><span>foo</span></span><span class="punctuation delimiter property regexp perl6fe"><span>&gt;</span></span></span><span>&nbsp;bar&nbsp;</span></span><span class="punctuation definition regexp perl6fe"><span>/</span></span></span></div></pre><p>For example:</p>

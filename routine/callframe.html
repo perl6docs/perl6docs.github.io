@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for sub <code>callframe</code> assembled from the following types:</p>
 <h1 id="class_CallFrame"><a class="u" href="#___top" title="go to top of document">class CallFrame</a></h1>
-<p>From <a href="/type/CallFrame$NUMBER_SIGNsub_callframe">CallFrame</a></p>
-<h2 id="(CallFrame)_sub_callframe"><a href="/type/CallFrame$NUMBER_SIGNsub_callframe">(CallFrame) sub callframe</a></h2>
+<p>From <a href="/type/CallFrame#sub_callframe">CallFrame</a></p>
+<h2 id="(CallFrame)_sub_callframe"><a href="/type/CallFrame#sub_callframe">(CallFrame) sub callframe</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>callframe</span></span><span>(</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>level</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>)</span></span></div></pre><p>Returns a <a href="/type/CallFrame">CallFrame</a> object for the given level. If no level is given, the default level is 0. Positive levels move up the frame stack and negative levels move down (into the call to <code>callframe</code> and deeper).</p>
 <p>Returns <a href="/type/Mu">Mu</a> if there is no call information for the given level. Negative levels may result in an exception.</p>
 

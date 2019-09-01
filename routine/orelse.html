@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for infix <code>orelse</code> assembled from the following types:</p>
 <h1 id="language_documentation_Operators"><a class="u" href="#___top" title="go to top of document">language documentation Operators</a></h1>
-<p>From <a href="/language/operators$NUMBER_SIGNinfix_orelse">Operators</a></p>
-<h2 id="(Operators)_infix_orelse"><a href="/language/operators$NUMBER_SIGNinfix_orelse">(Operators) infix orelse</a></h2>
+<p>From <a href="/language/operators#infix_orelse">Operators</a></p>
+<h2 id="(Operators)_infix_orelse"><a href="/language/operators#infix_orelse">(Operators) infix orelse</a></h2>
 <p>The <code>orelse</code> operator is similar to <code>infix //</code>, except with looser precedence and <code>$_</code> aliasing.</p>
 <p>Returns the first defined argument, or else the last argument. Last argument is returned as-is, without being checked for definedness at all. Short-circuits. The result of the left side is bound to <code>$_</code> for the right side, or passed as an argument if the right side is a <a href="/type/Callable"><code>Callable</code></a>, whose <a href="/routine/count">count</a> must be <code>0</code> or <code>1</code>.</p>
 <p>This operator is useful for handling <a href="/type/Failure">Failures</a> returned by routines since the expected value is usually <a href="/routine/defined">defined</a> and <a href="/type/Failure">Failure</a> never is:</p>

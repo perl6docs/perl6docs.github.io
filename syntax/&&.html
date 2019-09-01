@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>&amp;&amp;</code> assembled from the following types:</p>
 <h1 id="language_documentation_Regexes"><a class="u" href="#___top" title="go to top of document">language documentation Regexes</a></h1>
-<p>From <a href="/language/regexes$NUMBER_SIGNConjunction:_&&">Regexes</a></p>
-<h2 id="(Regexes)_regex_&&_&&"><a href="/language/regexes$NUMBER_SIGNConjunction:_&&">(Regexes) regex &amp;&amp; &amp;&amp;</a></h2>
+<p>From <a href="/language/regexes#Conjunction:_&&">Regexes</a></p>
+<h2 id="(Regexes)_regex_&&_&&"><a href="/language/regexes#Conjunction:_&&">(Regexes) regex &amp;&amp; &amp;&amp;</a></h2>
 <p>Matches successfully if all <code>&amp;&amp;</code>-delimited segments match the same substring of the target string. The segments are evaluated left to right.</p>
 <p>This can be useful for augmenting an existing regex. For example if you have a regex <code>quoted</code> that matches a quoted string, then <code>/ &lt;quoted&gt; &amp;&amp; &lt;-[x]&gt;* /</code> matches a quoted string that does not contain the character <code>x</code>.</p>
 <p>Note that you cannot easily obtain the same behavior with a lookahead, that is, a regex doesn&#39;t consume characters, because a lookahead doesn&#39;t stop looking when the quoted string stops matching.</p>

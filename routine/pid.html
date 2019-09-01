@@ -60,12 +60,12 @@
     <div class="pod-body">
     <p>Documentation for method <code>pid</code> assembled from the following types:</p>
 <h1 id="class_Proc"><a class="u" href="#___top" title="go to top of document">class Proc</a></h1>
-<p>From <a href="/type/Proc$NUMBER_SIGNmethod_pid">Proc</a></p>
-<h2 id="(Proc)_method_pid"><a href="/type/Proc$NUMBER_SIGNmethod_pid">(Proc) method pid</a></h2>
+<p>From <a href="/type/Proc#method_pid">Proc</a></p>
+<h2 id="(Proc)_method_pid"><a href="/type/Proc#method_pid">(Proc) method pid</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>pid</span></span><span>()</span></span></div></pre><p>Returns the <code>PID</code> value of the process if available, or <code>Nil</code>.</p>
 <h1 id="class_Proc::Async"><a class="u" href="#___top" title="go to top of document">class Proc::Async</a></h1>
-<p>From <a href="/type/Proc::Async$NUMBER_SIGNmethod_pid">Proc::Async</a></p>
-<h2 id="(Proc::Async)_method_pid"><a href="/type/Proc::Async$NUMBER_SIGNmethod_pid">(Proc::Async) method pid</a></h2>
+<p>From <a href="/type/Proc::Async#method_pid">Proc::Async</a></p>
+<h2 id="(Proc::Async)_method_pid"><a href="/type/Proc::Async#method_pid">(Proc::Async) method pid</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>pid</span></span><span>(</span><span class="support type perl6fe"><span>Proc</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Promise</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Equivalent to <a href="/routine/ready">ready</a>.</p>
 <p>Returns a <a href="/type/Promise">Promise</a> that will be kept once the process has successfully started. <a href="/type/Promise">Promise</a> will be broken if the program fails to start. Returned promise will hold the process id (PID).</p>
 <p><strong>Implementation-specific note:</strong> Available starting from Rakudo 2018.04.</p>

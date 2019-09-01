@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for syntax <code>HOW</code> assembled from the following types:</p>
 <h1 id="language_documentation_Meta-object_protocol_(MOP)"><a class="u" href="#___top" title="go to top of document">language documentation Meta-object protocol (MOP)</a></h1>
-<p>From <a href="/language/mop$NUMBER_SIGNHOW">Meta-object protocol (MOP)</a></p>
-<h2 id="(Meta-object_protocol_(MOP))_syntax_HOW_HOW"><a href="/language/mop$NUMBER_SIGNHOW">(Meta-object protocol (MOP)) syntax HOW HOW</a></h2>
+<p>From <a href="/language/mop#HOW">Meta-object protocol (MOP)</a></p>
+<h2 id="(Meta-object_protocol_(MOP))_syntax_HOW_HOW"><a href="/language/mop#HOW">(Meta-object protocol (MOP)) syntax HOW HOW</a></h2>
 <p>Returns the metaclass object, as in &quot;Higher Order Workings&quot;.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>%</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ClassHOW+{&lt;anon&gt;}␤»</span></span></span></div></pre><p><code>HOW</code> returns an object of type <code>Perl6::Metamodel::ClassHOW</code> in this case; objects of this type are used to build classes. The same operation on the <code>&amp;</code> sigil will return <code>Perl6::Metamodel::ParametricRoleGroupHOW</code>. You will be calling this object whenever you use the <code>^</code> syntax to access meta methods. In fact, the code above is equivalent to <code>say (&amp;).HOW.HOW.name(&amp;)</code> which is much more unwieldy. <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a> is part of the Rakudo implementation, so use with caution.</p>
 

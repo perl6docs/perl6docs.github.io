@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for sub <code>nativesizeof</code> assembled from the following types:</p>
 <h1 id="language_documentation_Native_calling_interface"><a class="u" href="#___top" title="go to top of document">language documentation Native calling interface</a></h1>
-<p>From <a href="/language/nativecall$NUMBER_SIGNsub_nativesizeof">Native calling interface</a></p>
-<h2 id="(Native_calling_interface)_sub_nativesizeof"><a href="/language/nativecall$NUMBER_SIGNsub_nativesizeof">(Native calling interface) sub nativesizeof</a></h2>
+<p>From <a href="/language/nativecall#sub_nativesizeof">Native calling interface</a></p>
+<h2 id="(Native_calling_interface)_sub_nativesizeof"><a href="/language/nativecall#sub_nativesizeof">(Native calling interface) sub nativesizeof</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>nativesizeof</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>obj</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>export</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>DEFAULT</span></span><span>)</span></span></div></pre><p>This returns the size in bytes of the supplied object, it can be thought of as being equivalent to <code>sizeof</code> in <strong>C</strong>. The object can be a builtin native type such as <code>int64</code> or <code>num64</code>, a <code>CArray</code> or a class with the <code>repr</code> <code>CStruct</code>, <code>CUnion</code> or <code>CPointer</code>.</p>
 
     </div>

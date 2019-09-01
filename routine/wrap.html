@@ -58,8 +58,8 @@
     <div class="pod-body">
     <p>Documentation for method <code>wrap</code> assembled from the following types:</p>
 <h1 id="class_Routine"><a class="u" href="#___top" title="go to top of document">class Routine</a></h1>
-<p>From <a href="/type/Routine$NUMBER_SIGNmethod_wrap">Routine</a></p>
-<h2 id="(Routine)_method_wrap"><a href="/type/Routine$NUMBER_SIGNmethod_wrap">(Routine) method wrap</a></h2>
+<p>From <a href="/type/Routine#method_wrap">Routine</a></p>
+<h2 id="(Routine)_method_wrap"><a href="/type/Routine#method_wrap">(Routine) method wrap</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>wrap</span></span><span>(</span><span class="support type perl6fe"><span>Routine</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>wrapper</span></span></span><span>)</span></span></div></pre><p>Wraps (i.e. in-place modifies) the routine. That means a call to this routine first calls <code>&amp;wrapper</code>, which then can (but doesn&#39;t have to) call the original routine with the <code>callsame</code>, <code>callwith</code>, <code>nextsame</code> and <code>nextwith</code> dispatchers. The return value from the routine is also the return value from the wrapper.</p>
 <p><code>wrap</code> returns an instance of a private class called <a href="/type/Routine::WrapHandle"><code>Routine::WrapHandle</code></a>, which you can pass to <a href="/routine/unwrap">unwrap</a> to restore the original routine.</p>
 

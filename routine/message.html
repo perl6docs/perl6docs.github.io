@@ -80,62 +80,62 @@
     <div class="pod-body">
     <p>Documentation for method <code>message</code> assembled from the following types:</p>
 <h1 id="class_Exception"><a class="u" href="#___top" title="go to top of document">class Exception</a></h1>
-<p>From <a href="/type/Exception$NUMBER_SIGNmethod_message">Exception</a></p>
-<h2 id="(Exception)_method_message"><a href="/type/Exception$NUMBER_SIGNmethod_message">(Exception) method message</a></h2>
+<p>From <a href="/type/Exception#method_message">Exception</a></p>
+<h2 id="(Exception)_method_message"><a href="/type/Exception#method_message">(Exception) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>(</span><span class="support type exception perl6fe"><span>Exception</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>This is a stub that must be overwritten by subclasses, and should return the exception message.</p>
 <p>Special care should be taken that this method does not produce an exception itself.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control control-handlers perl6fe"><span>try</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>die</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Something&nbsp;bad&nbsp;happened</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>if</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>$!</span></span><span>)&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword other special-method perl6fe"><span>$!</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>message</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Something&nbsp;bad&nbsp;happened.␤»</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><h1 id="class_X::StubCode"><a class="u" href="#___top" title="go to top of document">class X::StubCode</a></h1>
-<p>From <a href="/type/X::StubCode$NUMBER_SIGNmethod_message">X::StubCode</a></p>
-<h2 id="(X::StubCode)_method_message"><a href="/type/X::StubCode$NUMBER_SIGNmethod_message">(X::StubCode) method message</a></h2>
+<p>From <a href="/type/X::StubCode#method_message">X::StubCode</a></p>
+<h2 id="(X::StubCode)_method_message"><a href="/type/X::StubCode#method_message">(X::StubCode) method message</a></h2>
 <p>Returns the custom message provided to <code>!!!</code>, or a reasonable default if none was provided.</p>
 <h1 id="class_X::NYI"><a class="u" href="#___top" title="go to top of document">class X::NYI</a></h1>
-<p>From <a href="/type/X::NYI$NUMBER_SIGNmethod_message">X::NYI</a></p>
-<h2 id="(X::NYI)_method_message"><a href="/type/X::NYI$NUMBER_SIGNmethod_message">(X::NYI) method message</a></h2>
+<p>From <a href="/type/X::NYI#method_message">X::NYI</a></p>
+<h2 id="(X::NYI)_method_message"><a href="/type/X::NYI#method_message">(X::NYI) method message</a></h2>
 <p>Returns the message including the above properties.</p>
 <h1 id="class_CX::Done"><a class="u" href="#___top" title="go to top of document">class CX::Done</a></h1>
-<p>From <a href="/type/CX::Done$NUMBER_SIGNmethod_message">CX::Done</a></p>
-<h2 id="(CX::Done)_method_message"><a href="/type/CX::Done$NUMBER_SIGNmethod_message">(CX::Done) method message</a></h2>
+<p>From <a href="/type/CX::Done#method_message">CX::Done</a></p>
+<h2 id="(CX::Done)_method_message"><a href="/type/CX::Done#method_message">(CX::Done) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;done control exception&gt;&quot;</p>
 <h1 id="class_CX::Take"><a class="u" href="#___top" title="go to top of document">class CX::Take</a></h1>
-<p>From <a href="/type/CX::Take$NUMBER_SIGNmethod_message">CX::Take</a></p>
-<h2 id="(CX::Take)_method_message"><a href="/type/CX::Take$NUMBER_SIGNmethod_message">(CX::Take) method message</a></h2>
+<p>From <a href="/type/CX::Take#method_message">CX::Take</a></p>
+<h2 id="(CX::Take)_method_message"><a href="/type/CX::Take#method_message">(CX::Take) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;take control exception&gt;&quot;.</p>
 <h1 id="class_CX::Redo"><a class="u" href="#___top" title="go to top of document">class CX::Redo</a></h1>
-<p>From <a href="/type/CX::Redo$NUMBER_SIGNmethod_message">CX::Redo</a></p>
-<h2 id="(CX::Redo)_method_message"><a href="/type/CX::Redo$NUMBER_SIGNmethod_message">(CX::Redo) method message</a></h2>
+<p>From <a href="/type/CX::Redo#method_message">CX::Redo</a></p>
+<h2 id="(CX::Redo)_method_message"><a href="/type/CX::Redo#method_message">(CX::Redo) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;redo control exception&gt;&quot;.</p>
 <h1 id="class_CX::Next"><a class="u" href="#___top" title="go to top of document">class CX::Next</a></h1>
-<p>From <a href="/type/CX::Next$NUMBER_SIGNmethod_message">CX::Next</a></p>
-<h2 id="(CX::Next)_method_message"><a href="/type/CX::Next$NUMBER_SIGNmethod_message">(CX::Next) method message</a></h2>
+<p>From <a href="/type/CX::Next#method_message">CX::Next</a></p>
+<h2 id="(CX::Next)_method_message"><a href="/type/CX::Next#method_message">(CX::Next) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;next control exception&gt;&quot;</p>
 <h1 id="class_CX::Succeed"><a class="u" href="#___top" title="go to top of document">class CX::Succeed</a></h1>
-<p>From <a href="/type/CX::Succeed$NUMBER_SIGNmethod_message">CX::Succeed</a></p>
-<h2 id="(CX::Succeed)_method_message"><a href="/type/CX::Succeed$NUMBER_SIGNmethod_message">(CX::Succeed) method message</a></h2>
+<p>From <a href="/type/CX::Succeed#method_message">CX::Succeed</a></p>
+<h2 id="(CX::Succeed)_method_message"><a href="/type/CX::Succeed#method_message">(CX::Succeed) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;next control exception&gt;&quot;</p>
 <h1 id="class_CX::Emit"><a class="u" href="#___top" title="go to top of document">class CX::Emit</a></h1>
-<p>From <a href="/type/CX::Emit$NUMBER_SIGNmethod_message">CX::Emit</a></p>
-<h2 id="(CX::Emit)_method_message"><a href="/type/CX::Emit$NUMBER_SIGNmethod_message">(CX::Emit) method message</a></h2>
+<p>From <a href="/type/CX::Emit#method_message">CX::Emit</a></p>
+<h2 id="(CX::Emit)_method_message"><a href="/type/CX::Emit#method_message">(CX::Emit) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;emit control exception&gt;&quot;</p>
 <h1 id="class_CX::Last"><a class="u" href="#___top" title="go to top of document">class CX::Last</a></h1>
-<p>From <a href="/type/CX::Last$NUMBER_SIGNmethod_message">CX::Last</a></p>
-<h2 id="(CX::Last)_method_message"><a href="/type/CX::Last$NUMBER_SIGNmethod_message">(CX::Last) method message</a></h2>
+<p>From <a href="/type/CX::Last#method_message">CX::Last</a></p>
+<h2 id="(CX::Last)_method_message"><a href="/type/CX::Last#method_message">(CX::Last) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;last control exception&gt;&quot;. Since this type of exception is to be consumed by type and not really by the content of the message, this is a generic message, similar to all other <code>CX::*</code> exceptions.</p>
 <h1 id="class_CX::Proceed"><a class="u" href="#___top" title="go to top of document">class CX::Proceed</a></h1>
-<p>From <a href="/type/CX::Proceed$NUMBER_SIGNmethod_message">CX::Proceed</a></p>
-<h2 id="(CX::Proceed)_method_message"><a href="/type/CX::Proceed$NUMBER_SIGNmethod_message">(CX::Proceed) method message</a></h2>
+<p>From <a href="/type/CX::Proceed#method_message">CX::Proceed</a></p>
+<h2 id="(CX::Proceed)_method_message"><a href="/type/CX::Proceed#method_message">(CX::Proceed) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;proceed control exception&gt;&quot;</p>
 <h1 id="class_CX::Return"><a class="u" href="#___top" title="go to top of document">class CX::Return</a></h1>
-<p>From <a href="/type/CX::Return$NUMBER_SIGNmethod_message">CX::Return</a></p>
-<h2 id="(CX::Return)_method_message"><a href="/type/CX::Return$NUMBER_SIGNmethod_message">(CX::Return) method message</a></h2>
+<p>From <a href="/type/CX::Return#method_message">CX::Return</a></p>
+<h2 id="(CX::Return)_method_message"><a href="/type/CX::Return#method_message">(CX::Return) method message</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>message</span></span><span>()</span></span></div></pre><p>Returns &quot;&lt;return control exception&gt;&quot;</p>
 
