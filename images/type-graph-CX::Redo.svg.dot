@@ -11,10 +11,12 @@ digraph "perl6-type-graph" {
 
     // Superclasses
     "CX::Redo" -> "Exception" [color="#000000"];
+    "CX::Redo" -> "Exception" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "Exception" -> "Any" [color="#000000"];
     "X::Control" -> "Exception" [color="#000000"];
 
     // Roles
+    "CX::Redo" -> "X::Control" [color="#6666FF"];
     "CX::Redo" -> "X::Control" [color="#6666FF"];
 }

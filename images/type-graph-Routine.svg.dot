@@ -9,9 +9,9 @@ digraph "perl6-type-graph" {
     "Callable" [color="#6666FF", fontcolor="#6666FF", href="/type/Callable", fontname="FreeSans"];
     "Code" [color="#000000", fontcolor="#000000", href="/type/Code", fontname="FreeSans"];
     "Block" [color="#000000", fontcolor="#000000", href="/type/Block", fontname="FreeSans"];
-    "Method" [color="#000000", fontcolor="#000000", href="/type/Method", fontname="FreeSans"];
     "Sub" [color="#000000", fontcolor="#000000", href="/type/Sub", fontname="FreeSans"];
     "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
+    "Method" [color="#000000", fontcolor="#000000", href="/type/Method", fontname="FreeSans"];
     "Submethod" [color="#000000", fontcolor="#000000", href="/type/Submethod", fontname="FreeSans"];
     "Regex" [color="#000000", fontcolor="#000000", href="/type/Regex", fontname="FreeSans"];
 
@@ -20,9 +20,9 @@ digraph "perl6-type-graph" {
     "Any" -> "Mu" [color="#000000"];
     "Code" -> "Any" [color="#000000"];
     "Block" -> "Code" [color="#000000"];
-    "Method" -> "Routine" [color="#000000"];
     "Sub" -> "Routine" [color="#000000"];
     "Macro" -> "Routine" [color="#000000"];
+    "Method" -> "Routine" [color="#000000"];
     "Submethod" -> "Routine" [color="#000000"];
     "Regex" -> "Method" [color="#000000"];
 

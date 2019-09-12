@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-
+  
 
     <h1 class='title'>routine signal</h1>
     
@@ -51,11 +60,11 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Kernel">class Kernel</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Kernel)_method_signal">(Kernel) method signal</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Supply">class Supply</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Supply)_sub_signal">(Supply) sub signal</a></td></tr>
-                              <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Proc">class Proc</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Proc)_method_signal">(Proc) method signal</a></td></tr>
-    
+       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Proc">class Proc</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Proc)_method_signal">(Proc) method signal</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Supply">class Supply</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Supply)_sub_signal">(Supply) sub signal</a></td></tr>
+                             
 </table>
 </nav>
 
@@ -66,7 +75,11 @@
 <h2 id="(Kernel)_method_signal"><a href="/type/Kernel#method_signal">(Kernel) method signal</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="routine name perl6fe"><span>Kernel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>signal</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="routine name perl6fe"><span>Kernel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Signal</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>signal</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="routine name perl6fe"><span>Kernel</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>signal</span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Instance method returning the <code>Signal</code> numeric code for a given name for the Kernel object.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>KERNEL</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>signal</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>INT</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span></span></span></div></pre><h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>KERNEL</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>signal</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>INT</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«2␤»</span></span></span></div></pre><h1 id="class_Proc"><a class="u" href="#___top" title="go to top of document">class Proc</a></h1>
+<p>From <a href="/type/Proc#method_signal">Proc</a></p>
+<h2 id="(Proc)_method_signal"><a href="/type/Proc#method_signal">(Proc) method signal</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="support type perl6fe"><span>Proc</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the signal number with which the external process was killed, or <code>0</code> or an undefined value otherwise.</p>
+<h1 id="class_Supply"><a class="u" href="#___top" title="go to top of document">class Supply</a></h1>
 <p>From <a href="/type/Supply#sub_signal">Supply</a></p>
 <h2 id="(Supply)_sub_signal"><a href="/type/Supply#sub_signal">(Supply) sub signal</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>signals</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>scheduler</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>*</span></span><span class="variable other identifier perl6fe"><span>SCHEDULER</span></span></span><span>)</span></span></div></pre><p>Creates a supply for the Signal enums (such as SIGINT) specified, and an optional <code>:scheduler</code> parameter. Any signals received, will be emitted on the supply. For example:</p>
@@ -74,10 +87,6 @@
 <p>To go from a signal number to a <a name="index-entry-Signal"><span class="index-entry">Signal</span></a>, you can do something like this:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>signal</span></span><span>(</span><span class="routine name perl6fe"><span>Signal</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>))</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>tap</span></span><span>(&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>sig</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Received&nbsp;signal:&nbsp;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>sig</span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>&nbsp;);</span></span></div></pre><p>The list of supported signals can be found by checking <code>Signal::.keys</code> (as you would any enum). For more details on how enums work see <a href="/language/typesystem#enum">enum</a>.</p>
 <p><strong>Note:</strong> <a href="/language/glossary#Rakudo">Rakudo</a> versions up to 2018.05 had a bug due to which numeric values of signals were incorrect on some systems. For example, <code>Signal(10)</code> was returning <code>SIGBUS</code> even if it was actually <code>SIGUSR1</code> on a particular system. That being said, using <code>signal(SIGUSR1)</code> was working as expected on all Rakudo versions except 2018.04, 2018.04.1 and 2018.05, where the intended behavior can be achieved by using <code>signal(SIGBUS)</code> instead. These issues are resolved in Rakudo releases after 2018.05.</p>
-<h1 id="class_Proc"><a class="u" href="#___top" title="go to top of document">class Proc</a></h1>
-<p>From <a href="/type/Proc#method_signal">Proc</a></p>
-<h2 id="(Proc)_method_signal"><a href="/type/Proc#method_signal">(Proc) method signal</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>signal</span></span><span>(</span><span class="support type perl6fe"><span>Proc</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the signal number with which the external process was killed, or <code>0</code> or an undefined value otherwise.</p>
 
     </div>
     
@@ -105,13 +114,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

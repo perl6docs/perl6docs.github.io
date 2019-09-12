@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__type_Lock__Async">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/Lock::Async.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -100,12 +109,53 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>with-lock-hidden-from-recursion-check</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>code</span></span></span><span>)</span></span></div></pre><p>Temporarily resets the Lock::Async recursion list so that it no longer includes the lock this method is called on and runs the given <code>&amp;code</code> immediately if the call to the method occurred in a caller chain where <a href="/type/Lock::Async/#method_protect-or-queue-on-recursion">protect-or-queue-on-recursion</a> has already been called and the lock has been placed on the recursion list.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Lock</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>lock</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>.=</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>new</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>lock</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>protect-or-queue-on-recursion</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>0</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Runs&nbsp;instantly.</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>lock</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>with-lock-hidden-from-recursion-check</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Runs&nbsp;after&nbsp;the&nbsp;outer&nbsp;caller&#39;s&nbsp;protect-or-queue-on-recursion&nbsp;call&nbsp;has</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation whitespace comment leading perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;finished&nbsp;running.</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>lock</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>protect-or-queue-on-recursion</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span class="keyword operator multi-symbol perl6fe"><span>++</span></span><span>;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>then</span></span><span>(</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;2</span><span>&nbsp;</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>count</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;1</span><span>&nbsp;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>);</span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>Lock::Async</code></figcaption>
+  <svg width="126pt" height="188pt"
+ viewBox="0.00 0.00 126.29 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 122.29,-184 122.29,4 -4,4"/>
+<!-- Lock::Async -->
+<g id="node1" class="node"><title>Lock::Async</title>
+<g id="a_node1"><a xlink:href="/type/Lock::Async" xlink:title="Lock::Async">
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-18" rx="59.2899" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Lock::Async</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Lock::Async&#45;&gt;Any -->
+<g id="edge1" class="edge"><title>Lock::Async&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M59.1448,-36.3034C59.1448,-44.0173 59.1448,-53.2875 59.1448,-61.8876"/>
+<polygon fill="#000000" stroke="#000000" points="55.6449,-61.8956 59.1448,-71.8957 62.6449,-61.8957 55.6449,-61.8956"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="59.1448" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="59.1448" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M59.1448,-108.303C59.1448,-116.017 59.1448,-125.288 59.1448,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="55.6449,-133.896 59.1448,-143.896 62.6449,-133.896 55.6449,-133.896"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-Lock%3A%3AAsync.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -138,13 +188,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

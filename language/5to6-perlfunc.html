@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__language_5to6_perlfunc">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/5to6-perlfunc.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -902,7 +911,7 @@
 </li>
 </ul>
 <p>The zero argument (implicit <code>$_</code>) version is not permitted in Perl&nbsp;6.</p>
-<p><a name="index-entry-msg$ASTERISK_-_perlfunc"></a></p>
+<p><a name="index-entry-msg*_-_perlfunc"></a></p>
 <h2 id="msg*"><a class="u" href="#___top" title="go to top of document">msg*</a></h2>
 <ul><li><p>msgctl ID, CMD, ARG</p>
 </li>
@@ -1320,7 +1329,7 @@
 <p>The non-parameter version of <code>shift</code> does not exist. Also, if the array is empty, a Failure will be returned in Perl&nbsp;6, which will throw if the value is actually used in a significant way.</p>
 <p>If you are using only defined values in your array, you can use the <code>with</code> function to handle this case:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>with</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>shift</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>array</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>-&gt;</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>shifted</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>shifted&nbsp;&#39;</span><span class="variable other identifier interpolated perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span>shifted</span></span><span>&#39;&nbsp;of&nbsp;the&nbsp;array</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control conditional perl6fe"><span>else</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>there&nbsp;was&nbsp;nothing&nbsp;to&nbsp;shift</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div></pre><p>The Perl&nbsp;6 ecosystem has a module <a href="https://modules.perl6.org/dist/P5shift"><code>P5shift</code></a> which exports a <code>shift</code> function that mimics the original Perl&nbsp;5 behavior as much as possible.</p>
-<p><a name="index-entry-shm$ASTERISK_-_perlfunc"></a></p>
+<p><a name="index-entry-shm*_-_perlfunc"></a></p>
 <h2 id="shm*"><a class="u" href="#___top" title="go to top of document">shm*</a></h2>
 <ul><li><p>shmctl ID, CMD, ARG</p>
 </li>
@@ -1511,7 +1520,7 @@
 </li>
 </ul>
 <p>Not a builtin in Perl&nbsp;6. Most likely out in a module somewhere, but it&#39;s currently unclear where.</p>
-<p><a name="index-entry-sys$ASTERISK_-_perlfunc"></a></p>
+<p><a name="index-entry-sys*_-_perlfunc"></a></p>
 <h2 id="sys*"><a class="u" href="#___top" title="go to top of document">sys*</a></h2>
 <ul><li><p>sysopen FILEHANDLE, FILENAME, MODE</p>
 </li>
@@ -1764,13 +1773,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

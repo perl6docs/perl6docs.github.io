@@ -4,8 +4,10 @@ digraph "perl6-type-graph" {
     overlap=false; 
     // Types
     "Iterator" [color="#6666FF", fontcolor="#6666FF", href="/type/Iterator", fontname="FreeSans"];
+    "PredictiveIterator" [color="#6666FF", fontcolor="#6666FF", href="/type/PredictiveIterator", fontname="FreeSans"];
 
     // Superclasses
 
     // Roles
+    "PredictiveIterator" -> "Iterator" [color="#6666FF"];
 }

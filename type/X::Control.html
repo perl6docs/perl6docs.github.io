@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__type_X__Control">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/X::Control.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -84,183 +93,247 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>CX::Vaya</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>does</span></span><span>&nbsp;</span><span class="support type exception perl6fe"><span>X::Control</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>message</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>ea</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control closure trait perl6fe"><span>CONTROL</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="keyword control flowcontrol perl6fe"><span>default</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>Controlled&nbsp;</span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span>:&nbsp;</span><span class="meta interpolation perl6fe"><span class="punctuation section embedded begin perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>message</span></span><span>&nbsp;</span><span class="punctuation section embedded end perl6fe"><span>}</span></span></span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="routine name perl6fe"><span>CX</span></span><span>::</span><span class="routine name perl6fe"><span>Vaya</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(&nbsp;</span><span class="string pair key perl6fe"><span>message&nbsp;</span></span><span class="keyword operator multi-symbol perl6fe"><span>=&gt;</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>I&nbsp;messed&nbsp;up!</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>&nbsp;)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>throw</span></span><span>;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>ea</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Controlled&nbsp;CX::Vaya:&nbsp;I&nbsp;messed&nbsp;up!␤»</span><span>&nbsp;</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
   <figcaption>Type relations for <code>X::Control</code></figcaption>
-  <svg width="835pt" height="332pt"
- viewBox="0.00 0.00 834.59 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <svg width="1185pt" height="332pt"
+ viewBox="0.00 0.00 1184.89 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-328 830.591,-328 830.591,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 1180.89,-328 1180.89,4 -4,4"/>
 <!-- X::Control -->
 <g id="node1" class="node"><title>X::Control</title>
 <g id="a_node1"><a xlink:href="/type/X::Control" xlink:title="X::Control">
-<ellipse fill="none" stroke="#6666ff" cx="384.846" cy="-90" rx="50.0912" ry="18"/>
-<text text-anchor="middle" x="384.846" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Control</text>
+<ellipse fill="none" stroke="#6666ff" cx="519.396" cy="-90" rx="50.0912" ry="18"/>
+<text text-anchor="middle" x="519.396" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Control</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="423.846" cy="-162" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="423.846" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="480.396" cy="-162" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="480.396" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::Control&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::Control&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M394.287,-107.945C398.886,-116.199 404.512,-126.299 409.618,-135.462"/>
-<polygon fill="#000000" stroke="#000000" points="406.568,-137.179 414.492,-144.211 412.683,-133.772 406.568,-137.179"/>
+<path fill="none" stroke="#000000" d="M509.955,-107.945C505.356,-116.199 499.729,-126.299 494.624,-135.462"/>
+<polygon fill="#000000" stroke="#000000" points="491.559,-133.772 489.749,-144.211 497.674,-137.179 491.559,-133.772"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="423.846" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="423.846" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="480.396" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="480.396" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="423.846" cy="-234" rx="27" ry="18"/>
-<text text-anchor="middle" x="423.846" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="480.396" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="480.396" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M423.846,-252.303C423.846,-260.017 423.846,-269.288 423.846,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="420.346,-277.896 423.846,-287.896 427.346,-277.896 420.346,-277.896"/>
+<path fill="none" stroke="#000000" d="M480.396,-252.303C480.396,-260.017 480.396,-269.288 480.396,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="476.896,-277.896 480.396,-287.896 483.896,-277.896 476.896,-277.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M423.846,-180.303C423.846,-188.017 423.846,-197.288 423.846,-205.888"/>
-<polygon fill="#000000" stroke="#000000" points="420.346,-205.896 423.846,-215.896 427.346,-205.896 420.346,-205.896"/>
-</g>
-<!-- CX::Last -->
-<g id="node5" class="node"><title>CX::Last</title>
-<g id="a_node5"><a xlink:href="/type/CX::Last" xlink:title="CX::Last">
-<ellipse fill="none" stroke="#000000" cx="44.846" cy="-18" rx="44.6926" ry="18"/>
-<text text-anchor="middle" x="44.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Last</text>
-</a>
-</g>
-</g>
-<!-- CX::Last&#45;&gt;X::Control -->
-<g id="edge11" class="edge"><title>CX::Last&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M79.045,-29.7664C89.7617,-33.1401 98.846,-36 98.846,-36 98.846,-36 248.645,-63.7599 331.417,-79.0989"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="330.938,-82.5696 341.409,-80.9504 332.214,-75.6868 330.938,-82.5696"/>
-</g>
-<!-- CX::Last&#45;&gt;Exception -->
-<g id="edge4" class="edge"><title>CX::Last&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M74.6473,-31.7515C132.161,-56.3608 252.846,-108 252.846,-108 252.846,-108 327.149,-131.029 377.796,-146.727"/>
-<polygon fill="#000000" stroke="#000000" points="376.993,-150.143 387.581,-149.76 379.066,-143.456 376.993,-150.143"/>
-</g>
-<!-- CX::Proceed -->
-<g id="node6" class="node"><title>CX::Proceed</title>
-<g id="a_node6"><a xlink:href="/type/CX::Proceed" xlink:title="CX::Proceed">
-<ellipse fill="none" stroke="#000000" cx="167.846" cy="-18" rx="60.3893" ry="18"/>
-<text text-anchor="middle" x="167.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Proceed</text>
-</a>
-</g>
-</g>
-<!-- CX::Proceed&#45;&gt;X::Control -->
-<g id="edge12" class="edge"><title>CX::Proceed&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M207.395,-31.7577C244.585,-43.7544 300.228,-61.7039 339.266,-74.2969"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="338.221,-77.6371 348.812,-77.3762 340.37,-70.9751 338.221,-77.6371"/>
-</g>
-<!-- CX::Proceed&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>CX::Proceed&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M192.755,-34.5026C233.725,-60.0017 310.846,-108 310.846,-108 310.846,-108 352.612,-127.589 385.36,-142.949"/>
-<polygon fill="#000000" stroke="#000000" points="384.206,-146.274 394.746,-147.351 387.178,-139.936 384.206,-146.274"/>
-</g>
-<!-- CX::Take -->
-<g id="node7" class="node"><title>CX::Take</title>
-<g id="a_node7"><a xlink:href="/type/CX::Take" xlink:title="CX::Take">
-<ellipse fill="none" stroke="#000000" cx="294.846" cy="-18" rx="48.1917" ry="18"/>
-<text text-anchor="middle" x="294.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Take</text>
-</a>
-</g>
-</g>
-<!-- CX::Take&#45;&gt;X::Control -->
-<g id="edge13" class="edge"><title>CX::Take&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M314.82,-34.5353C327.085,-44.075 342.988,-56.4435 356.538,-66.9823"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="354.574,-69.8894 364.617,-73.2661 358.872,-64.3639 354.574,-69.8894"/>
-</g>
-<!-- CX::Take&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>CX::Take&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M300.823,-36.1601C309.831,-62.0225 325.846,-108 325.846,-108 325.846,-108 360.415,-126.696 388.491,-141.879"/>
-<polygon fill="#000000" stroke="#000000" points="386.865,-144.979 397.326,-146.657 390.195,-138.822 386.865,-144.979"/>
-</g>
-<!-- CX::Next -->
-<g id="node8" class="node"><title>CX::Next</title>
-<g id="a_node8"><a xlink:href="/type/CX::Next" xlink:title="CX::Next">
-<ellipse fill="none" stroke="#000000" cx="406.846" cy="-18" rx="46.2923" ry="18"/>
-<text text-anchor="middle" x="406.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Next</text>
-</a>
-</g>
-</g>
-<!-- CX::Next&#45;&gt;X::Control -->
-<g id="edge14" class="edge"><title>CX::Next&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M401.52,-35.945C399.071,-43.7391 396.104,-53.1781 393.357,-61.9211"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="389.935,-61.1353 390.275,-71.7247 396.613,-63.2342 389.935,-61.1353"/>
-</g>
-<!-- CX::Next&#45;&gt;Exception -->
-<g id="edge7" class="edge"><title>CX::Next&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M418.35,-35.479C429.212,-51.0373 443.846,-72 443.846,-72 443.846,-72 443.846,-108 443.846,-108 443.846,-108 438.85,-121.239 433.852,-134.483"/>
-<polygon fill="#000000" stroke="#000000" points="430.54,-133.347 430.284,-143.939 437.089,-135.818 430.54,-133.347"/>
+<path fill="none" stroke="#000000" d="M480.396,-180.303C480.396,-188.017 480.396,-197.288 480.396,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="476.896,-205.896 480.396,-215.896 483.896,-205.896 476.896,-205.896"/>
 </g>
 <!-- CX::Warn -->
-<g id="node9" class="node"><title>CX::Warn</title>
-<g id="a_node9"><a xlink:href="/type/CX::Warn" xlink:title="CX::Warn">
-<ellipse fill="none" stroke="#000000" cx="520.846" cy="-18" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="520.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Warn</text>
+<g id="node5" class="node"><title>CX::Warn</title>
+<g id="a_node5"><a xlink:href="/type/CX::Warn" xlink:title="CX::Warn">
+<ellipse fill="none" stroke="#000000" cx="49.3956" cy="-18" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="49.3956" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Warn</text>
 </a>
 </g>
 </g>
 <!-- CX::Warn&#45;&gt;X::Control -->
 <g id="edge15" class="edge"><title>CX::Warn&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M493.324,-33.1655C472.586,-43.8396 443.951,-58.5784 421.308,-70.2327"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="419.616,-67.1671 412.327,-74.8555 422.82,-73.391 419.616,-67.1671"/>
+<path fill="none" stroke="#6666ff" d="M86.7837,-29.9586C98.0065,-33.248 107.396,-36 107.396,-36 107.396,-36 349.814,-67.1849 462.748,-81.7128"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="462.57,-85.2187 472.935,-83.0233 463.463,-78.2759 462.57,-85.2187"/>
 </g>
 <!-- CX::Warn&#45;&gt;Exception -->
-<g id="edge8" class="edge"><title>CX::Warn&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M509.529,-35.5671C492.681,-60.2313 460.872,-106.797 441.108,-135.729"/>
-<polygon fill="#000000" stroke="#000000" points="438.142,-133.867 435.392,-144.098 443.922,-137.815 438.142,-133.867"/>
+<g id="edge4" class="edge"><title>CX::Warn&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M82.0625,-31.7515C145.106,-56.3608 277.396,-108 277.396,-108 277.396,-108 371.497,-132.568 431.562,-148.25"/>
+<polygon fill="#000000" stroke="#000000" points="430.695,-151.641 441.255,-150.781 432.464,-144.868 430.695,-151.641"/>
+</g>
+<!-- CX::Take -->
+<g id="node6" class="node"><title>CX::Take</title>
+<g id="a_node6"><a xlink:href="/type/CX::Take" xlink:title="CX::Take">
+<ellipse fill="none" stroke="#000000" cx="164.396" cy="-18" rx="48.1917" ry="18"/>
+<text text-anchor="middle" x="164.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Take</text>
+</a>
+</g>
+</g>
+<!-- CX::Take&#45;&gt;X::Control -->
+<g id="edge16" class="edge"><title>CX::Take&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M200.817,-29.8626C211.988,-33.1943 221.396,-36 221.396,-36 221.396,-36 379.422,-64.1054 465.322,-79.3829"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="464.966,-82.8745 475.425,-81.1797 466.192,-75.9826 464.966,-82.8745"/>
+</g>
+<!-- CX::Take&#45;&gt;Exception -->
+<g id="edge5" class="edge"><title>CX::Take&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M192.949,-32.5172C245.541,-57.4147 352.396,-108 352.396,-108 352.396,-108 401.939,-128.514 439.38,-144.017"/>
+<polygon fill="#000000" stroke="#000000" points="438.505,-147.443 449.083,-148.035 441.183,-140.975 438.505,-147.443"/>
 </g>
 <!-- CX::Redo -->
-<g id="node10" class="node"><title>CX::Redo</title>
-<g id="a_node10"><a xlink:href="/type/CX::Redo" xlink:title="CX::Redo">
-<ellipse fill="none" stroke="#000000" cx="636.846" cy="-18" rx="48.9926" ry="18"/>
-<text text-anchor="middle" x="636.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Redo</text>
+<g id="node7" class="node"><title>CX::Redo</title>
+<g id="a_node7"><a xlink:href="/type/CX::Redo" xlink:title="CX::Redo">
+<ellipse fill="none" stroke="#000000" cx="279.396" cy="-18" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="279.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Redo</text>
 </a>
 </g>
 </g>
 <!-- CX::Redo&#45;&gt;X::Control -->
-<g id="edge16" class="edge"><title>CX::Redo&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M599.785,-29.8626C588.418,-33.1943 578.846,-36 578.846,-36 578.846,-36 491.105,-59.9704 433.637,-75.6705"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="432.363,-72.3903 423.639,-78.402 434.207,-79.1429 432.363,-72.3903"/>
+<g id="edge17" class="edge"><title>CX::Redo&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M312.186,-31.3547C320.66,-33.9912 327.396,-36 327.396,-36 327.396,-36 412.445,-60.6317 469.434,-76.311"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="468.802,-79.7667 479.371,-79.0311 470.65,-73.015 468.802,-79.7667"/>
+</g>
+<!-- CX::Redo&#45;&gt;X::Control -->
+<g id="edge18" class="edge"><title>CX::Redo&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M319.347,-28.4941C333.285,-32.3881 345.396,-36 345.396,-36 345.396,-36 423.041,-58.4876 474.692,-74.1669"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="473.741,-77.5359 484.327,-77.1058 475.783,-70.8404 473.741,-77.5359"/>
 </g>
 <!-- CX::Redo&#45;&gt;Exception -->
-<g id="edge9" class="edge"><title>CX::Redo&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M614.051,-34.1965C575.697,-59.7659 498.216,-111.42 454.915,-140.287"/>
-<polygon fill="#000000" stroke="#000000" points="452.856,-137.454 446.477,-145.913 456.739,-143.278 452.856,-137.454"/>
+<g id="edge6" class="edge"><title>CX::Redo&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M297.599,-35.0132C331.487,-61.0026 403.984,-112.32 446.893,-140.785"/>
+<polygon fill="#000000" stroke="#000000" points="445.04,-143.756 455.318,-146.327 448.887,-137.908 445.04,-143.756"/>
+</g>
+<!-- CX::Redo&#45;&gt;Exception -->
+<g id="edge7" class="edge"><title>CX::Redo&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M304.456,-33.6617C342.782,-58.6296 415.095,-109.54 454.117,-138.861"/>
+<polygon fill="#000000" stroke="#000000" points="452.288,-141.867 462.37,-145.123 456.519,-136.29 452.288,-141.867"/>
+</g>
+<!-- CX::Done -->
+<g id="node8" class="node"><title>CX::Done</title>
+<g id="a_node8"><a xlink:href="/type/CX::Done" xlink:title="CX::Done">
+<ellipse fill="none" stroke="#000000" cx="394.396" cy="-18" rx="48.9926" ry="18"/>
+<text text-anchor="middle" x="394.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Done</text>
+</a>
+</g>
+</g>
+<!-- CX::Done&#45;&gt;X::Control -->
+<g id="edge19" class="edge"><title>CX::Done&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M419.993,-33.3345C438.659,-43.7873 464.166,-58.0714 484.668,-69.5527"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="482.968,-72.6118 493.403,-74.4442 486.388,-66.5043 482.968,-72.6118"/>
+</g>
+<!-- CX::Done&#45;&gt;Exception -->
+<g id="edge8" class="edge"><title>CX::Done&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M404.599,-35.8469C419.534,-60.5072 447.465,-106.626 464.932,-135.467"/>
+<polygon fill="#000000" stroke="#000000" points="462.032,-137.435 470.206,-144.175 468.019,-133.808 462.032,-137.435"/>
+</g>
+<!-- CX::Last -->
+<g id="node9" class="node"><title>CX::Last</title>
+<g id="a_node9"><a xlink:href="/type/CX::Last" xlink:title="CX::Last">
+<ellipse fill="none" stroke="#000000" cx="506.396" cy="-18" rx="44.6926" ry="18"/>
+<text text-anchor="middle" x="506.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Last</text>
+</a>
+</g>
+</g>
+<!-- CX::Last&#45;&gt;X::Control -->
+<g id="edge20" class="edge"><title>CX::Last&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M509.609,-36.3034C511.042,-44.0173 512.763,-53.2875 514.36,-61.8876"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="510.952,-62.7029 516.219,-71.8957 517.834,-61.4247 510.952,-62.7029"/>
+</g>
+<!-- CX::Last&#45;&gt;Exception -->
+<g id="edge9" class="edge"><title>CX::Last&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M492.344,-35.1897C478.816,-50.7761 460.396,-72 460.396,-72 460.396,-72 460.396,-108 460.396,-108 460.396,-108 465.391,-121.239 470.389,-134.483"/>
+<polygon fill="#000000" stroke="#000000" points="467.152,-135.818 473.957,-143.939 473.701,-133.347 467.152,-135.818"/>
+</g>
+<!-- CX::Return -->
+<g id="node10" class="node"><title>CX::Return</title>
+<g id="a_node10"><a xlink:href="/type/CX::Return" xlink:title="CX::Return">
+<ellipse fill="none" stroke="#000000" cx="623.396" cy="-18" rx="53.8905" ry="18"/>
+<text text-anchor="middle" x="623.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Return</text>
+</a>
+</g>
+</g>
+<!-- CX::Return&#45;&gt;X::Control -->
+<g id="edge21" class="edge"><title>CX::Return&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M600.572,-34.3618C585.942,-44.2093 566.755,-57.1235 550.708,-67.9241"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="548.507,-65.1867 542.166,-73.674 552.416,-70.9938 548.507,-65.1867"/>
+</g>
+<!-- CX::Return&#45;&gt;Exception -->
+<g id="edge10" class="edge"><title>CX::Return&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M614.719,-36.1601C601.643,-62.0225 578.396,-108 578.396,-108 578.396,-108 543.826,-126.696 515.751,-141.879"/>
+<polygon fill="#000000" stroke="#000000" points="514.047,-138.822 506.916,-146.657 517.377,-144.979 514.047,-138.822"/>
+</g>
+<!-- CX::Proceed -->
+<g id="node11" class="node"><title>CX::Proceed</title>
+<g id="a_node11"><a xlink:href="/type/CX::Proceed" xlink:title="CX::Proceed">
+<ellipse fill="none" stroke="#000000" cx="755.396" cy="-18" rx="60.3893" ry="18"/>
+<text text-anchor="middle" x="755.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Proceed</text>
+</a>
+</g>
+</g>
+<!-- CX::Proceed&#45;&gt;X::Control -->
+<g id="edge22" class="edge"><title>CX::Proceed&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M714.017,-31.2732C672.81,-43.4958 609.639,-62.233 566.522,-75.0218"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="565.423,-71.697 556.831,-77.8962 567.414,-78.408 565.423,-71.697"/>
+</g>
+<!-- CX::Proceed&#45;&gt;Exception -->
+<g id="edge11" class="edge"><title>CX::Proceed&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M728.922,-34.2996C684.891,-59.7461 601.396,-108 601.396,-108 601.396,-108 555.759,-127.99 520.54,-143.416"/>
+<polygon fill="#000000" stroke="#000000" points="518.685,-140.408 510.929,-147.626 521.493,-146.82 518.685,-140.408"/>
 </g>
 <!-- CX::Succeed -->
-<g id="node11" class="node"><title>CX::Succeed</title>
-<g id="a_node11"><a xlink:href="/type/CX::Succeed" xlink:title="CX::Succeed">
-<ellipse fill="none" stroke="#000000" cx="764.846" cy="-18" rx="61.99" ry="18"/>
-<text text-anchor="middle" x="764.846" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Succeed</text>
+<g id="node12" class="node"><title>CX::Succeed</title>
+<g id="a_node12"><a xlink:href="/type/CX::Succeed" xlink:title="CX::Succeed">
+<ellipse fill="none" stroke="#000000" cx="895.396" cy="-18" rx="61.99" ry="18"/>
+<text text-anchor="middle" x="895.396" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Succeed</text>
 </a>
 </g>
 </g>
 <!-- CX::Succeed&#45;&gt;X::Control -->
-<g id="edge17" class="edge"><title>CX::Succeed&#45;&gt;X::Control</title>
-<path fill="none" stroke="#6666ff" d="M718.936,-30.1496C705.742,-33.3539 694.846,-36 694.846,-36 694.846,-36 527.653,-64.5846 438.838,-79.7692"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="438.199,-76.3274 428.932,-81.4627 439.379,-83.2273 438.199,-76.3274"/>
+<g id="edge23" class="edge"><title>CX::Succeed&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M849.228,-30.0542C835.667,-33.3012 824.396,-36 824.396,-36 824.396,-36 661.073,-64.3807 573.456,-79.6059"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="572.673,-76.1895 563.42,-81.3499 573.871,-83.0861 572.673,-76.1895"/>
 </g>
 <!-- CX::Succeed&#45;&gt;Exception -->
-<g id="edge10" class="edge"><title>CX::Succeed&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M730.903,-33.1346C667.801,-59.4116 532.682,-115.678 464.695,-143.99"/>
-<polygon fill="#000000" stroke="#000000" points="463.054,-140.882 455.168,-147.957 465.745,-147.344 463.054,-140.882"/>
+<g id="edge12" class="edge"><title>CX::Succeed&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M857.968,-32.3242C788.226,-57.1522 645.396,-108 645.396,-108 645.396,-108 574.79,-130.679 525.952,-146.367"/>
+<polygon fill="#000000" stroke="#000000" points="524.649,-143.109 516.198,-149.5 526.789,-149.774 524.649,-143.109"/>
+</g>
+<!-- CX::Next -->
+<g id="node13" class="node"><title>CX::Next</title>
+<g id="a_node13"><a xlink:href="/type/CX::Next" xlink:title="CX::Next">
+<ellipse fill="none" stroke="#000000" cx="1021.4" cy="-18" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="1021.4" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Next</text>
+</a>
+</g>
+</g>
+<!-- CX::Next&#45;&gt;X::Control -->
+<g id="edge24" class="edge"><title>CX::Next&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M986.252,-29.8626C975.473,-33.1943 966.396,-36 966.396,-36 966.396,-36 697.081,-67.9322 576.538,-82.2247"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="575.906,-78.7751 566.388,-83.4282 576.73,-85.7264 575.906,-78.7751"/>
+</g>
+<!-- CX::Next&#45;&gt;Exception -->
+<g id="edge13" class="edge"><title>CX::Next&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M986.252,-29.8626C975.473,-33.1943 966.396,-36 966.396,-36 966.396,-36 707.396,-108 707.396,-108 707.396,-108 597.518,-133.654 530.654,-149.266"/>
+<polygon fill="#000000" stroke="#000000" points="529.659,-145.904 520.717,-151.586 531.251,-152.72 529.659,-145.904"/>
+</g>
+<!-- CX::Emit -->
+<g id="node14" class="node"><title>CX::Emit</title>
+<g id="a_node14"><a xlink:href="/type/CX::Emit" xlink:title="CX::Emit">
+<ellipse fill="none" stroke="#000000" cx="1131.4" cy="-18" rx="45.4919" ry="18"/>
+<text text-anchor="middle" x="1131.4" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">CX::Emit</text>
+</a>
+</g>
+</g>
+<!-- CX::Emit&#45;&gt;X::Control -->
+<g id="edge25" class="edge"><title>CX::Emit&#45;&gt;X::Control</title>
+<path fill="none" stroke="#6666ff" d="M1096.56,-29.7664C1085.65,-33.1401 1076.4,-36 1076.4,-36 1076.4,-36 720.51,-69.8634 577.681,-83.454"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="576.991,-80.0038 567.367,-84.4354 577.654,-86.9723 576.991,-80.0038"/>
+</g>
+<!-- CX::Emit&#45;&gt;Exception -->
+<g id="edge14" class="edge"><title>CX::Emit&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1096.56,-29.7664C1085.65,-33.1401 1076.4,-36 1076.4,-36 1076.4,-36 786.396,-108 786.396,-108 786.396,-108 621.695,-136.527 533.958,-151.723"/>
+<polygon fill="#000000" stroke="#000000" points="533.169,-148.307 523.913,-153.463 534.364,-155.205 533.169,-148.307"/>
 </g>
 </g>
 </svg>
@@ -335,13 +408,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

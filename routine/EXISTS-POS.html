@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-
+  
 
     <h1 class='title'>method EXISTS-POS</h1>
     
@@ -51,11 +60,11 @@
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Subscripts">language documentation Subscripts</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Subscripts)_method_EXISTS-POS">(Subscripts) method EXISTS-POS</a></td></tr>
-                  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#role_Positional">role Positional</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Positional)_method_EXISTS-POS">(Positional) method EXISTS-POS</a></td></tr>
-     <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_Range">class Range</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Range)_method_EXISTS-POS">(Range) method EXISTS-POS</a></td></tr>
-            
+                  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Range">class Range</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Range)_method_EXISTS-POS">(Range) method EXISTS-POS</a></td></tr>
+             <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Positional">role Positional</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Positional)_method_EXISTS-POS">(Positional) method EXISTS-POS</a></td></tr>
+    
 </table>
 </nav>
 
@@ -67,16 +76,16 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>&nbsp;(::</span><span class="keyword operator generic perl6fe"><span>?</span></span><span class="routine name perl6fe"><span>CLASS</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>index</span></span></span><span>)</span></span></div></pre><p>Expected to return a Bool indicating whether or not there is an element at position <code>$index</code>. This is what <a href="/routine/[ ]#postcircumfix_[_]"><code>postcircumfix [ ]</code></a> calls when invoked like <code>@foo[42]:exists</code>.</p>
 <p>What &quot;existence&quot; of an element means, is up to your type.</p>
 <p>If you don&#39;t implement this, your type will inherit the default implementation from <code>Any</code>, which returns True for 0 and False for any other index - which is probably not what you want. So if checking for element existence cannot be done for your type, add an implementation that <a href="/routine/fail">fail</a>s or <a href="/routine/die">die</a>s, to avoid silently doing the wrong thing.</p>
-<h1 id="role_Positional"><a class="u" href="#___top" title="go to top of document">role Positional</a></h1>
-<p>From <a href="/type/Positional#method_EXISTS-POS">Positional</a></p>
-<h2 id="(Positional)_method_EXISTS-POS"><a href="/type/Positional#method_EXISTS-POS">(Positional) method EXISTS-POS</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
 <h1 id="class_Range"><a class="u" href="#___top" title="go to top of document">class Range</a></h1>
 <p>From <a href="/type/Range#method_EXISTS-POS">Range</a></p>
 <h2 id="(Range)_method_EXISTS-POS"><a href="/type/Range#method_EXISTS-POS">(Range) method EXISTS-POS</a></h2>
 <p>Defined as</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="support type perl6fe"><span>Range</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>int</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>pos</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="support type perl6fe"><span>Range</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Int</span></span><span>&nbsp;\</span><span class="routine name perl6fe"><span>pos</span></span><span>)</span></span></div></pre><p>Returns <code>True</code> if <code>pos</code> is greater or equal than zero and lower than <code>self.elems</code>. Returns <code>False</code> otherwise.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>6</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>6</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="constant numeric perl6fe"><span>7</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>6</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«True␤»</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="constant numeric perl6fe"><span>6</span></span><span class="keyword operator multi-symbol perl6fe"><span>..</span></span><span class="constant numeric perl6fe"><span>10</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>EXISTS-POS</span></span><span>(</span><span class="constant numeric perl6fe"><span>7</span></span><span>);&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«False␤»</span></span></span></div></pre><h1 id="role_Positional"><a class="u" href="#___top" title="go to top of document">role Positional</a></h1>
+<p>From <a href="/type/Positional#method_EXISTS-POS">Positional</a></p>
+<h2 id="(Positional)_method_EXISTS-POS"><a href="/type/Positional#method_EXISTS-POS">(Positional) method EXISTS-POS</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EXISTS-POS</span></span><span>(\</span><span class="routine name perl6fe"><span>position</span></span><span>)</span></span></div></pre><p>Should return a <code>Bool</code> indicating whether the given position actually has a value.</p>
+
     </div>
     
     </div>
@@ -103,13 +112,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

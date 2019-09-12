@@ -11,6 +11,7 @@ digraph "perl6-type-graph" {
     "X::Assignment::RO" [color="#000000", fontcolor="#000000", href="/type/X::Assignment::RO", fontname="FreeSans"];
     "X::Attribute::NoPackage" [color="#000000", fontcolor="#000000", href="/type/X::Attribute::NoPackage", fontname="FreeSans"];
     "X::Attribute::Package" [color="#000000", fontcolor="#000000", href="/type/X::Attribute::Package", fontname="FreeSans"];
+    "X::Attribute::Required" [color="#000000", fontcolor="#000000", href="/type/X::Attribute::Required", fontname="FreeSans"];
     "X::Undeclared" [color="#000000", fontcolor="#000000", href="/type/X::Undeclared", fontname="FreeSans"];
     "X::Attribute::Undeclared" [color="#000000", fontcolor="#000000", href="/type/X::Attribute::Undeclared", fontname="FreeSans"];
     "X::Augment::NoSuchType" [color="#000000", fontcolor="#000000", href="/type/X::Augment::NoSuchType", fontname="FreeSans"];
@@ -47,6 +48,7 @@ digraph "perl6-type-graph" {
     "X::Declaration::Scope" [color="#000000", fontcolor="#000000", href="/type/X::Declaration::Scope", fontname="FreeSans"];
     "X::Declaration::Scope::Multi" [color="#000000", fontcolor="#000000", href="/type/X::Declaration::Scope::Multi", fontname="FreeSans"];
     "X::Does::TypeObject" [color="#000000", fontcolor="#000000", href="/type/X::Does::TypeObject", fontname="FreeSans"];
+    "X::Dynamic::NotFound" [color="#000000", fontcolor="#000000", href="/type/X::Dynamic::NotFound", fontname="FreeSans"];
     "X::EXPORTHOW::Conflict" [color="#000000", fontcolor="#000000", href="/type/X::EXPORTHOW::Conflict", fontname="FreeSans"];
     "X::EXPORTHOW::InvalidDirective" [color="#000000", fontcolor="#000000", href="/type/X::EXPORTHOW::InvalidDirective", fontname="FreeSans"];
     "X::EXPORTHOW::NothingToSupersede" [color="#000000", fontcolor="#000000", href="/type/X::EXPORTHOW::NothingToSupersede", fontname="FreeSans"];
@@ -101,6 +103,7 @@ digraph "perl6-type-graph" {
     "X::PoisonedAlias" [color="#000000", fontcolor="#000000", href="/type/X::PoisonedAlias", fontname="FreeSans"];
     "X::Proc::Async" [color="#6666FF", fontcolor="#6666FF", href="/type/X::Proc::Async", fontname="FreeSans"];
     "X::Proc::Async::AlreadyStarted" [color="#000000", fontcolor="#000000", href="/type/X::Proc::Async::AlreadyStarted", fontname="FreeSans"];
+    "X::Proc::Async::BindOrUse" [color="#000000", fontcolor="#000000", href="/type/X::Proc::Async::BindOrUse", fontname="FreeSans"];
     "X::Proc::Async::CharsOrBytes" [color="#000000", fontcolor="#000000", href="/type/X::Proc::Async::CharsOrBytes", fontname="FreeSans"];
     "X::Proc::Async::MustBeStarted" [color="#000000", fontcolor="#000000", href="/type/X::Proc::Async::MustBeStarted", fontname="FreeSans"];
     "X::Proc::Async::OpenForWriting" [color="#000000", fontcolor="#000000", href="/type/X::Proc::Async::OpenForWriting", fontname="FreeSans"];
@@ -113,6 +116,7 @@ digraph "perl6-type-graph" {
     "X::Redeclaration::Outer" [color="#000000", fontcolor="#000000", href="/type/X::Redeclaration::Outer", fontname="FreeSans"];
     "X::Role::Initialization" [color="#000000", fontcolor="#000000", href="/type/X::Role::Initialization", fontname="FreeSans"];
     "X::Routine::Unwrap" [color="#000000", fontcolor="#000000", href="/type/X::Routine::Unwrap", fontname="FreeSans"];
+    "X::Scheduler::CueInNaNSeconds" [color="#000000", fontcolor="#000000", href="/type/X::Scheduler::CueInNaNSeconds", fontname="FreeSans"];
     "X::Seq::Consumed" [color="#000000", fontcolor="#000000", href="/type/X::Seq::Consumed", fontname="FreeSans"];
     "X::Sequence::Deduction" [color="#000000", fontcolor="#000000", href="/type/X::Sequence::Deduction", fontname="FreeSans"];
     "X::Set::Coerce" [color="#000000", fontcolor="#000000", href="/type/X::Set::Coerce", fontname="FreeSans"];
@@ -187,6 +191,7 @@ digraph "perl6-type-graph" {
     "X::Assignment::RO" -> "Exception" [color="#000000"];
     "X::Attribute::NoPackage" -> "Exception" [color="#000000"];
     "X::Attribute::Package" -> "Exception" [color="#000000"];
+    "X::Attribute::Required" -> "Exception" [color="#000000"];
     "X::Undeclared" -> "Exception" [color="#000000"];
     "X::Attribute::Undeclared" -> "X::Undeclared" [color="#000000"];
     "X::Augment::NoSuchType" -> "Exception" [color="#000000"];
@@ -230,6 +235,7 @@ digraph "perl6-type-graph" {
     "X::Declaration::Scope" -> "Exception" [color="#000000"];
     "X::Declaration::Scope::Multi" -> "X::Declaration::Scope" [color="#000000"];
     "X::Does::TypeObject" -> "Exception" [color="#000000"];
+    "X::Dynamic::NotFound" -> "Exception" [color="#000000"];
     "X::EXPORTHOW::Conflict" -> "Exception" [color="#000000"];
     "X::EXPORTHOW::InvalidDirective" -> "Exception" [color="#000000"];
     "X::EXPORTHOW::NothingToSupersede" -> "Exception" [color="#000000"];
@@ -249,13 +255,13 @@ digraph "perl6-type-graph" {
     "X::IO::Cwd" -> "Exception" [color="#000000"];
     "X::IO::Dir" -> "Exception" [color="#000000"];
     "X::IO::Dir" -> "Exception" [color="#000000"];
-    "X::IO::Dir" -> "Exception" [color="#000000"];
     "X::IO::DoesNotExist" -> "Exception" [color="#000000"];
     "X::IO::DoesNotExist" -> "Exception" [color="#000000"];
     "X::IO::Link" -> "Exception" [color="#000000"];
     "X::IO::Link" -> "Exception" [color="#000000"];
     "X::IO::Mkdir" -> "Exception" [color="#000000"];
     "X::IO::Mkdir" -> "Exception" [color="#000000"];
+    "X::IO::Move" -> "Exception" [color="#000000"];
     "X::IO::Move" -> "Exception" [color="#000000"];
     "X::IO::Move" -> "Exception" [color="#000000"];
     "X::IO::Rename" -> "Exception" [color="#000000"];
@@ -298,6 +304,7 @@ digraph "perl6-type-graph" {
     "X::PoisonedAlias" -> "Exception" [color="#000000"];
     "X::Proc::Async" -> "Exception" [color="#000000"];
     "X::Proc::Async::AlreadyStarted" -> "Exception" [color="#000000"];
+    "X::Proc::Async::BindOrUse" -> "Exception" [color="#000000"];
     "X::Proc::Async::CharsOrBytes" -> "Exception" [color="#000000"];
     "X::Proc::Async::MustBeStarted" -> "Exception" [color="#000000"];
     "X::Proc::Async::OpenForWriting" -> "Exception" [color="#000000"];
@@ -310,6 +317,7 @@ digraph "perl6-type-graph" {
     "X::Redeclaration::Outer" -> "Exception" [color="#000000"];
     "X::Role::Initialization" -> "Exception" [color="#000000"];
     "X::Routine::Unwrap" -> "Exception" [color="#000000"];
+    "X::Scheduler::CueInNaNSeconds" -> "Any" [color="#000000"];
     "X::Seq::Consumed" -> "Exception" [color="#000000"];
     "X::Sequence::Deduction" -> "Exception" [color="#000000"];
     "X::Set::Coerce" -> "Exception" [color="#000000"];
@@ -320,6 +328,7 @@ digraph "perl6-type-graph" {
     "X::Str::Trans::IllegalKey" -> "Exception" [color="#000000"];
     "X::Str::Trans::InvalidArg" -> "Exception" [color="#000000"];
     "X::StubCode" -> "Exception" [color="#000000"];
+    "X::Syntax::AddCategorical::TooFewParts" -> "Exception" [color="#000000"];
     "X::Syntax::AddCategorical::TooFewParts" -> "Exception" [color="#000000"];
     "X::Syntax::AddCategorical::TooManyParts" -> "Exception" [color="#000000"];
     "X::Syntax::AddCategorical::TooManyParts" -> "Exception" [color="#000000"];
@@ -334,6 +343,7 @@ digraph "perl6-type-graph" {
     "X::Syntax::CannotMeta" -> "Exception" [color="#000000"];
     "X::Syntax::CannotMeta" -> "Exception" [color="#000000"];
     "X::Syntax::Comment::Embedded" -> "Exception" [color="#000000"];
+    "X::Syntax::Comment::Embedded" -> "Exception" [color="#000000"];
     "X::Syntax::Confused" -> "Exception" [color="#000000"];
     "X::Syntax::Confused" -> "Exception" [color="#000000"];
     "X::Syntax::Extension::Category" -> "Exception" [color="#000000"];
@@ -342,6 +352,7 @@ digraph "perl6-type-graph" {
     "X::Syntax::Extension::Null" -> "Exception" [color="#000000"];
     "X::Syntax::InfixInTermPosition" -> "Exception" [color="#000000"];
     "X::Syntax::InfixInTermPosition" -> "Exception" [color="#000000"];
+    "X::Syntax::KeywordAsFunction" -> "Exception" [color="#000000"];
     "X::Syntax::KeywordAsFunction" -> "Exception" [color="#000000"];
     "X::Syntax::Malformed" -> "Exception" [color="#000000"];
     "X::Syntax::Malformed" -> "Exception" [color="#000000"];
@@ -359,6 +370,7 @@ digraph "perl6-type-graph" {
     "X::Syntax::NonAssociative" -> "Exception" [color="#000000"];
     "X::Syntax::Number::RadixOutOfRange" -> "Exception" [color="#000000"];
     "X::Syntax::Number::RadixOutOfRange" -> "Exception" [color="#000000"];
+    "X::Syntax::P5" -> "Exception" [color="#000000"];
     "X::Syntax::P5" -> "Exception" [color="#000000"];
     "X::Syntax::Perl5Var" -> "Exception" [color="#000000"];
     "X::Syntax::Perl5Var" -> "Exception" [color="#000000"];
@@ -378,6 +390,7 @@ digraph "perl6-type-graph" {
     "X::Syntax::Regex::SpacesInBareRange" -> "Exception" [color="#000000"];
     "X::Syntax::Regex::UnrecognizedMetachar" -> "Exception" [color="#000000"];
     "X::Syntax::Regex::UnrecognizedMetachar" -> "Exception" [color="#000000"];
+    "X::Syntax::Regex::Unspace" -> "Exception" [color="#000000"];
     "X::Syntax::Regex::Unspace" -> "Exception" [color="#000000"];
     "X::Syntax::Regex::Unterminated" -> "Exception" [color="#000000"];
     "X::Syntax::Regex::Unterminated" -> "Exception" [color="#000000"];
@@ -417,6 +430,7 @@ digraph "perl6-type-graph" {
     "X::Anon::Multi" -> "X::Comp" [color="#6666FF"];
     "X::Attribute::NoPackage" -> "X::Comp" [color="#6666FF"];
     "X::Attribute::Package" -> "X::Comp" [color="#6666FF"];
+    "X::Attribute::Required" -> "MOP" [color="#6666FF"];
     "X::Undeclared" -> "X::Comp" [color="#6666FF"];
     "X::Augment::NoSuchType" -> "X::Comp" [color="#6666FF"];
     "X::Syntax" -> "X::Comp" [color="#6666FF"];
@@ -465,6 +479,7 @@ digraph "perl6-type-graph" {
     "X::Placeholder::NonPlaceholder" -> "X::Comp" [color="#6666FF"];
     "X::PoisonedAlias" -> "X::Comp" [color="#6666FF"];
     "X::Proc::Async::AlreadyStarted" -> "X::Proc::Async" [color="#6666FF"];
+    "X::Proc::Async::BindOrUse" -> "X::Proc::Async" [color="#6666FF"];
     "X::Proc::Async::CharsOrBytes" -> "X::Proc::Async" [color="#6666FF"];
     "X::Proc::Async::MustBeStarted" -> "X::Proc::Async" [color="#6666FF"];
     "X::Proc::Async::OpenForWriting" -> "X::Proc::Async" [color="#6666FF"];

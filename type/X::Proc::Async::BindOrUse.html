@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__type_X__Proc__Async__BindOrUse">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/X::Proc::Async::BindOrUse.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -63,16 +72,18 @@
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
                     <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#Type_Graph">Type Graph</a></td></tr>
-  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Routines_supplied_by_class_Exception">Routines supplied by class Exception</a></td></tr>
-    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Exception)_method_message">(Exception) method message</a></td></tr>
-      <tr class="toc-level-2"><td class="toc-number">2.2</td><td class="toc-text"><a href="#(Exception)_method_backtrace">(Exception) method backtrace</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">2.3</td><td class="toc-text"><a href="#(Exception)_method_throw">(Exception) method throw</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.4</td><td class="toc-text"><a href="#(Exception)_method_resume">(Exception) method resume</a></td></tr>
-         <tr class="toc-level-2"><td class="toc-number">2.5</td><td class="toc-text"><a href="#(Exception)_method_rethrow">(Exception) method rethrow</a></td></tr>
-       <tr class="toc-level-2"><td class="toc-number">2.6</td><td class="toc-text"><a href="#(Exception)_method_fail">(Exception) method fail</a></td></tr>
-                     <tr class="toc-level-2"><td class="toc-number">2.7</td><td class="toc-text"><a href="#(Exception)_method_gist">(Exception) method gist</a></td></tr>
-     <tr class="toc-level-2"><td class="toc-number">2.8</td><td class="toc-text"><a href="#(Exception)_sub_die">(Exception) sub die</a></td></tr>
-                                                       <tr class="toc-level-2"><td class="toc-number">2.9</td><td class="toc-text"><a href="#(Exception)_sub_warn">(Exception) sub warn</a></td></tr>
+  <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#Routines_supplied_by_role_X::Proc::Async">Routines supplied by role X::Proc::Async</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(X::Proc::Async)_method_proc">(X::Proc::Async) method proc</a></td></tr>
+   <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#Routines_supplied_by_class_Exception">Routines supplied by class Exception</a></td></tr>
+    <tr class="toc-level-2"><td class="toc-number">3.2</td><td class="toc-text"><a href="#(Exception)_method_message">(Exception) method message</a></td></tr>
+      <tr class="toc-level-2"><td class="toc-number">3.3</td><td class="toc-text"><a href="#(Exception)_method_backtrace">(Exception) method backtrace</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.4</td><td class="toc-text"><a href="#(Exception)_method_throw">(Exception) method throw</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.5</td><td class="toc-text"><a href="#(Exception)_method_resume">(Exception) method resume</a></td></tr>
+         <tr class="toc-level-2"><td class="toc-number">3.6</td><td class="toc-text"><a href="#(Exception)_method_rethrow">(Exception) method rethrow</a></td></tr>
+       <tr class="toc-level-2"><td class="toc-number">3.7</td><td class="toc-text"><a href="#(Exception)_method_fail">(Exception) method fail</a></td></tr>
+                     <tr class="toc-level-2"><td class="toc-number">3.8</td><td class="toc-text"><a href="#(Exception)_method_gist">(Exception) method gist</a></td></tr>
+     <tr class="toc-level-2"><td class="toc-number">3.9</td><td class="toc-text"><a href="#(Exception)_sub_die">(Exception) sub die</a></td></tr>
+                                                       <tr class="toc-level-2"><td class="toc-number">3.10</td><td class="toc-text"><a href="#(Exception)_sub_warn">(Exception) sub warn</a></td></tr>
                    
 </table>
 </nav>
@@ -82,17 +93,93 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Proc</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>ls</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>ls.out</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>p</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>bind-stdin</span></span><span>(</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>h</span></span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;Fails&nbsp;with&nbsp;OUTPUT:&nbsp;«Cannot&nbsp;both&nbsp;bind&nbsp;stdin&nbsp;to&nbsp;a&nbsp;handle&nbsp;and&nbsp;also&nbsp;use&nbsp;:w␤»</span><span>&nbsp;</span></span></span></div></pre><p>In this case, <code>stdin</code> is already bound and cannot be used again; one of them should flow <code>:out</code> and the other one <code>:w</code> to work correctly.</p>
 <h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>X::Proc::Async::BindOrUse</code></figcaption>
+  <svg width="241pt" height="332pt"
+ viewBox="0.00 0.00 240.68 332.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 328)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-328 236.679,-328 236.679,4 -4,4"/>
+<!-- X::Proc::Async::BindOrUse -->
+<g id="node1" class="node"><title>X::Proc::Async::BindOrUse</title>
+<g id="a_node1"><a xlink:href="/type/X::Proc::Async::BindOrUse" xlink:title="X::Proc::Async::BindOrUse">
+<ellipse fill="none" stroke="#000000" cx="116.34" cy="-18" rx="116.18" ry="18"/>
+<text text-anchor="middle" x="116.34" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Proc::Async::BindOrUse</text>
+</a>
+</g>
+</g>
+<!-- Exception -->
+<g id="node4" class="node"><title>Exception</title>
+<g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
+<ellipse fill="none" stroke="#000000" cx="116.34" cy="-162" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="116.34" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+</a>
+</g>
+</g>
+<!-- X::Proc::Async::BindOrUse&#45;&gt;Exception -->
+<g id="edge1" class="edge"><title>X::Proc::Async::BindOrUse&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M107.004,-36.0613C98.5266,-51.5549 87.3397,-72 87.3397,-72 87.3397,-72 87.3397,-108 87.3397,-108 87.3397,-108 94.818,-121.667 102.179,-135.121"/>
+<polygon fill="#000000" stroke="#000000" points="99.2933,-137.138 107.164,-144.23 105.434,-133.778 99.2933,-137.138"/>
+</g>
+<!-- X::Proc::Async -->
+<g id="node5" class="node"><title>X::Proc::Async</title>
+<g id="a_node5"><a xlink:href="/type/X::Proc::Async" xlink:title="X::Proc::Async">
+<ellipse fill="none" stroke="#6666ff" cx="164.34" cy="-90" rx="68.4888" ry="18"/>
+<text text-anchor="middle" x="164.34" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::Proc::Async</text>
+</a>
+</g>
+</g>
+<!-- X::Proc::Async::BindOrUse&#45;&gt;X::Proc::Async -->
+<g id="edge5" class="edge"><title>X::Proc::Async::BindOrUse&#45;&gt;X::Proc::Async</title>
+<path fill="none" stroke="#6666ff" d="M127.959,-35.945C133.678,-44.2853 140.689,-54.5092 147.024,-63.7483"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="144.285,-65.9431 152.827,-72.211 150.058,-61.9843 144.285,-65.9431"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="116.34" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="116.34" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="116.34" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="116.34" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M116.34,-252.303C116.34,-260.017 116.34,-269.288 116.34,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="112.84,-277.896 116.34,-287.896 119.84,-277.896 112.84,-277.896"/>
+</g>
+<!-- Exception&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M116.34,-180.303C116.34,-188.017 116.34,-197.288 116.34,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="112.84,-205.896 116.34,-215.896 119.84,-205.896 112.84,-205.896"/>
+</g>
+<!-- X::Proc::Async&#45;&gt;Exception -->
+<g id="edge4" class="edge"><title>X::Proc::Async&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M152.72,-107.945C147.001,-116.285 139.99,-126.509 133.655,-135.748"/>
+<polygon fill="#000000" stroke="#000000" points="130.621,-133.984 127.852,-144.211 136.394,-137.943 130.621,-133.984"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-X%3A%3AProc%3A%3AAsync%3A%3ABindOrUse.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
   </p>
 </figure>
+<h1 id="Routines_supplied_by_role_X::Proc::Async"><a class="u" href="#___top" title="go to top of document">Routines supplied by role X::Proc::Async</a></h1>
+<p>X::Proc::Async::BindOrUse does role <a href="/type/X::Proc::Async">X::Proc::Async</a>, which provides the following routines:</p>
+<h2 id="(X::Proc::Async)_method_proc"><a href="/type/X::Proc::Async#method_proc">(X::Proc::Async) method proc</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>proc</span></span><span>(</span><span class="support type exception perl6fe"><span>X::Proc::Async</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Proc</span></span><span>::</span><span class="routine name perl6fe"><span>Async</span></span><span>)</span></span></div></pre><p>Returns the object that threw the exception.</p>
 <h1 id="Routines_supplied_by_class_Exception"><a class="u" href="#___top" title="go to top of document">Routines supplied by class Exception</a></h1>
 <p>X::Proc::Async::BindOrUse inherits from class <a href="/type/Exception">Exception</a>, which provides the following routines:</p>
 <h2 id="(Exception)_method_message"><a href="/type/Exception#method_message">(Exception) method message</a></h2>
@@ -154,13 +241,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

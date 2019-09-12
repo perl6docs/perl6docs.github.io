@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item selected darker-green" href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/type.html">All</a><a class="menu-item" href="/type-basic.html"> Basic </a> <a class="menu-item" href="/type-composite.html"> Composite </a> <a class="menu-item" href="/type-domain-specific.html"> Domain-specific </a> <a class="menu-item" href="/type-exception.html"> Exceptions </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__type_X__Attribute__Required">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Type/X::Attribute::Required.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -91,12 +100,84 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>why</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>)</span></span></div></pre><p>Returns the reason why that attribute is required, and it will be included in the message if provided. That reason is taken directly from the <code>is required</code> trait.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Uses-required</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="storage modifier declarator perl6fe"><span>has</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="support class twigil perl6fe"><span>.</span></span><span class="variable other identifier perl6fe"><span>req</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>required</span></span><span>(</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>because&nbsp;yes</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>)</span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>object</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Uses-required</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>();&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;│</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;«(exit&nbsp;code&nbsp;1)&nbsp;The&nbsp;attribute&nbsp;&#39;$!req&#39;&nbsp;is&nbsp;required&nbsp;because&nbsp;because&nbsp;yes,␤</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;but&nbsp;you&nbsp;did&nbsp;not&nbsp;provide&nbsp;a&nbsp;value&nbsp;for&nbsp;it.␤»</span><span>&nbsp;</span></span></span></div></pre><h1 id="Type_Graph"><a class="u" href="#___top" title="go to top of document">Type Graph</a></h1>
 <figure>
-  <figcaption>Type relations for <code>404</code></figcaption>
-  <svg></svg>
+  <figcaption>Type relations for <code>X::Attribute::Required</code></figcaption>
+  <svg width="201pt" height="260pt"
+ viewBox="0.00 0.00 201.29 260.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>perl6&#45;type&#45;graph</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 197.287,-256 197.287,4 -4,4"/>
+<!-- X::Attribute::Required -->
+<g id="node1" class="node"><title>X::Attribute::Required</title>
+<g id="a_node1"><a xlink:href="/type/X::Attribute::Required" xlink:title="X::Attribute::Required">
+<ellipse fill="none" stroke="#000000" cx="98.3956" cy="-18" rx="94.7833" ry="18"/>
+<text text-anchor="middle" x="98.3956" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::Attribute::Required</text>
+</a>
+</g>
+</g>
+<!-- Exception -->
+<g id="node4" class="node"><title>Exception</title>
+<g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
+<ellipse fill="none" stroke="#000000" cx="49.3956" cy="-90" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="49.3956" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+</a>
+</g>
+</g>
+<!-- X::Attribute::Required&#45;&gt;Exception -->
+<g id="edge1" class="edge"><title>X::Attribute::Required&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M86.5341,-35.945C80.6959,-44.2853 73.5392,-54.5092 67.0718,-63.7483"/>
+<polygon fill="#000000" stroke="#000000" points="64.0153,-62.0115 61.1479,-72.211 69.7499,-66.0258 64.0153,-62.0115"/>
+</g>
+<!-- MOP -->
+<g id="node5" class="node"><title>MOP</title>
+<g id="a_node5"><a xlink:href="/type/MOP" xlink:title="MOP">
+<ellipse fill="none" stroke="#000000" cx="148.396" cy="-90" rx="31.6951" ry="18"/>
+<text text-anchor="middle" x="148.396" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">MOP</text>
+</a>
+</g>
+</g>
+<!-- X::Attribute::Required&#45;&gt;MOP -->
+<g id="edge5" class="edge"><title>X::Attribute::Required&#45;&gt;MOP</title>
+<path fill="none" stroke="#6666ff" d="M110.499,-35.945C116.695,-44.6192 124.346,-55.3306 131.148,-64.8527"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="128.428,-67.0676 137.089,-73.1706 134.125,-62.9989 128.428,-67.0676"/>
+</g>
+<!-- Mu -->
+<g id="node2" class="node"><title>Mu</title>
+<g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
+<ellipse fill="none" stroke="#000000" cx="98.3956" cy="-234" rx="27" ry="18"/>
+<text text-anchor="middle" x="98.3956" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+</a>
+</g>
+</g>
+<!-- Any -->
+<g id="node3" class="node"><title>Any</title>
+<g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
+<ellipse fill="none" stroke="#000000" cx="98.3956" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="98.3956" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+</a>
+</g>
+</g>
+<!-- Any&#45;&gt;Mu -->
+<g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
+<path fill="none" stroke="#000000" d="M98.3956,-180.303C98.3956,-188.017 98.3956,-197.288 98.3956,-205.888"/>
+<polygon fill="#000000" stroke="#000000" points="94.8957,-205.896 98.3956,-215.896 101.896,-205.896 94.8957,-205.896"/>
+</g>
+<!-- Exception&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M61.0079,-107.589C67.1616,-116.38 74.8316,-127.337 81.6202,-137.035"/>
+<polygon fill="#000000" stroke="#000000" points="78.936,-139.304 87.538,-145.489 84.6707,-135.29 78.936,-139.304"/>
+</g>
+<!-- MOP&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>MOP&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M137.05,-106.884C130.721,-115.745 122.708,-126.963 115.621,-136.885"/>
+<polygon fill="#000000" stroke="#000000" points="112.661,-135.007 109.696,-145.179 118.357,-139.076 112.661,-135.007"/>
+</g>
+</g>
+</svg>
+
   <p class="fallback">
     <a
       rel="alternate"
-      href="/images/type-graph-404.svg"
+      href="/images/type-graph-X%3A%3AAttribute%3A%3ARequired.svg"
       type="image/svg+xml"
       >Expand above chart</a
     >
@@ -163,13 +244,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

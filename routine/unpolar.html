@@ -24,52 +24,61 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content_fragment">
-
+  
 
     <h1 class='title'>routine unpolar</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Cool">class Cool</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Cool)_method_unpolar">(Cool) method unpolar</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Independent_routines)_routine_unpolar">(Independent routines) routine unpolar</a></td></tr>
-         
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Independent_routines)_routine_unpolar">(Independent routines) routine unpolar</a></td></tr>
+          <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Cool">class Cool</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Cool)_method_unpolar">(Cool) method unpolar</a></td></tr>
+      
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for routine <code>unpolar</code> assembled from the following types:</p>
-<h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
-<p>From <a href="/type/Cool#method_unpolar">Cool</a></p>
-<h2 id="(Cool)_method_unpolar"><a href="/type/Cool#method_unpolar">(Cool) method unpolar</a></h2>
-<p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unpolar</span></span><span>(</span><span class="support type perl6fe"><span>Numeric</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>))</span></span></div></pre><p>Coerces the arguments (including the invocant in the method form) to <a href="/type/Numeric">Numeric</a>, and returns a complex number from the given polar coordinates. The invocant (or the first argument in sub form) is the magnitude while the argument (i.e. the second argument in sub form) is the angle. The angle is assumed to be in radians.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>sqrt</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unpolar</span></span><span>(</span><span class="support function perl6fe"><span>pi</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="constant numeric perl6fe"><span>4</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1+1i␤»</span></span></span></div></pre><h1 id="language_documentation_Independent_routines"><a class="u" href="#___top" title="go to top of document">language documentation Independent routines</a></h1>
+<h1 id="language_documentation_Independent_routines"><a class="u" href="#___top" title="go to top of document">language documentation Independent routines</a></h1>
 <p>From <a href="/language/independent-routines#routine_unpolar">Independent routines</a></p>
 <h2 id="(Independent_routines)_routine_unpolar"><a href="/language/independent-routines#routine_unpolar">(Independent routines) routine unpolar</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unpolar</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>angle</span></span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unpolar</span></span><span>(</span><span class="support type perl6fe"><span>Real</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>mag</span></span></span><span>,&nbsp;</span><span class="support type perl6fe"><span>Real</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>angle</span></span></span><span>)</span></span></div></pre><p>Returns a <code>Complex</code> with the coordinates corresponding to the angle in radians and magnitude corresponding to the object value or <code>$mag</code> in the case it&#39;s being used as a <code>sub</code></p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unpolar</span></span><span>(⅓</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="support function perl6fe"><span>pi</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.5000000000000001+0.8660254037844386i␤»</span></span></span></div></pre>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="constant numeric perl6fe"><span>1</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unpolar</span></span><span>(⅓</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="support function perl6fe"><span>pi</span></span><span>);</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«0.5000000000000001+0.8660254037844386i␤»</span></span></span></div></pre><h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
+<p>From <a href="/type/Cool#method_unpolar">Cool</a></p>
+<h2 id="(Cool)_method_unpolar"><a href="/type/Cool#method_unpolar">(Cool) method unpolar</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>unpolar</span></span><span>(</span><span class="support type perl6fe"><span>Numeric</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>))</span></span></div></pre><p>Coerces the arguments (including the invocant in the method form) to <a href="/type/Numeric">Numeric</a>, and returns a complex number from the given polar coordinates. The invocant (or the first argument in sub form) is the magnitude while the argument (i.e. the second argument in sub form) is the angle. The angle is assumed to be in radians.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>sqrt</span></span><span>(</span><span class="constant numeric perl6fe"><span>2</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>unpolar</span></span><span>(</span><span class="support function perl6fe"><span>pi</span></span><span class="keyword operator generic perl6fe"><span>/</span></span><span class="constant numeric perl6fe"><span>4</span></span><span>);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1+1i␤»</span></span></span></div></pre>
     </div>
     
     </div>
@@ -96,13 +105,6 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

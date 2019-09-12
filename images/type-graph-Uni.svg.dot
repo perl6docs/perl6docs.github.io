@@ -10,16 +10,16 @@ digraph "perl6-type-graph" {
     "Stringy" [color="#6666FF", fontcolor="#6666FF", href="/type/Stringy", fontname="FreeSans"];
     "NFD" [color="#000000", fontcolor="#000000", href="/type/NFD", fontname="FreeSans"];
     "NFKD" [color="#000000", fontcolor="#000000", href="/type/NFKD", fontname="FreeSans"];
-    "NFC" [color="#000000", fontcolor="#000000", href="/type/NFC", fontname="FreeSans"];
     "NFKC" [color="#000000", fontcolor="#000000", href="/type/NFKC", fontname="FreeSans"];
+    "NFC" [color="#000000", fontcolor="#000000", href="/type/NFC", fontname="FreeSans"];
 
     // Superclasses
     "Uni" -> "Any" [color="#000000"];
     "Any" -> "Mu" [color="#000000"];
     "NFD" -> "Uni" [color="#000000"];
     "NFKD" -> "Uni" [color="#000000"];
-    "NFC" -> "Uni" [color="#000000"];
     "NFKC" -> "Uni" [color="#000000"];
+    "NFC" -> "Uni" [color="#000000"];
 
     // Roles
     "Uni" -> "Positional" [color="#6666FF"];

@@ -24,25 +24,34 @@
     <body class="pod">
     <div id="___top"></div>
     <div id="header" class="pretty-box green">
-    <a href="/"
-        ><img src="/images/Camelia.svg" alt="»ö«" id="logo" width=62 height=48
-        >&nbsp;Perl 6 Documentation</a
-    >
-    <div id="search" class="ui-widget">
-        <div class="green">
-            <input placeholder="Loading..." id="query"
-                accesskey="f" title="Enter term to search for (hit Esc to focus)" autofocus>
-        </div>
-        <p id="not-found-message">
-            Not in Index (<a href="" id="try-web-search">try site search</a>)
-        </p>
+  <a href="/"
+    ><img
+      src="/images/Camelia.svg"
+      alt="»ö«"
+      id="logo"
+      width="62"
+      height="48"
+    />&nbsp;Perl 6 Documentation</a
+  >
+  <div id="search" class="ui-widget">
+    <div class="green">
+      <input
+        placeholder="Loading..."
+        id="query"
+        accesskey="f"
+        title="Enter term to search for (hit Esc to focus)"
+      />
     </div>
-    <div class="menu">
-      <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
-    </div>
+    <p id="not-found-message">
+      Not in Index (<a href="" id="try-web-search">try site search</a>)
+    </p>
+  </div>
+  <div class="menu">
+    <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
+  </div>
 </div>
 <div id="content" class="pretty-box yellow content__language_pod">
-
+  
       <div align="right">
         <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/pod.pod6'">
         <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -130,7 +139,7 @@
 <p>Paragraph blocks begin by a <code>=for</code> marker and end by the next Pod6 directive or the first blank line. The <code>=for</code> marker is followed by the <code>typename</code> of the block plus, optionally, any configuration data as in the delimited blocks described above.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block paragraph perl6fe"><span>=</span></span><span class="entity other attribute-name paragraph perl6fe"><span>for</span></span><span>&nbsp;head1</span></span></div><div class="line"><span class="source perl6fe"><span class="comment block paragraph perl6fe"><span>Top&nbsp;Level&nbsp;Heading</span></span></span></div></pre><h2 id="Abbreviated_blocks"><a class="u" href="#___top" title="go to top of document">Abbreviated blocks</a></h2>
 <p>Abbreviated blocks begin by an <code>&#39;=&#39;</code> sign, which is followed immediately by the <code>typename</code> of the block. All following data are part of the contents of the block, thus configuration data <strong>cannot</strong> be specified for an <em>abbreviated</em> block. The block ends at the next Pod6 directive or the first blank line.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>head1</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span>Top&nbsp;level&nbsp;heading</span></span><span>&nbsp;</span></span></div></pre><p><a name="index-entry-declarator_blocks_$NUMBER_SIGN|"></a><a name="index-entry-declarator_blocks_$NUMBER_SIGN="></a></p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier block abbreviated perl6fe"><span>=</span></span><span class="entity other attribute-name block abbreviated perl6fe"><span>head1</span></span><span>&nbsp;</span><span class="entity name section abbreviated perl6fe"><span>Top&nbsp;level&nbsp;heading</span></span><span>&nbsp;</span></span></div></pre><p><a name="index-entry-declarator_blocks_#|"></a><a name="index-entry-declarator_blocks_#="></a></p>
 <h2 id="Declarator_blocks"><a class="u" href="#___top" title="go to top of document">Declarator blocks</a></h2>
 <p>Declarator blocks differ from the others by not having a specific type, instead they are attached to some source code.</p>
 <p>Declarator blocks are introduced by a special comment: either <code>#|</code> or <code>#=</code>, which must be immediately followed by either a space or an opening curly brace. If followed by a space, the block is terminated by the end of line; if followed by one or more opening curly braces, the block is terminated by the matching sequence of closing curly braces.</p>
@@ -390,13 +399,6 @@ because you &quot;OR&quot; the &quot;cache&quot;.
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-<script type="text/javascript">
-  $(document).ready(function() {
-    if (!location.hash || location.hash === "#___top") {
-      $('query').focus();
-    }
-  });
-</script>
 
     </body>
 </html>

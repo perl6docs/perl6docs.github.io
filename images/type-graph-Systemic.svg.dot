@@ -7,11 +7,17 @@ digraph "perl6-type-graph" {
     "Mu" [color="#000000", fontcolor="#000000", href="/type/Mu", fontname="FreeSans"];
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "VM" [color="#000000", fontcolor="#000000", href="/type/VM", fontname="FreeSans"];
+    "Compiler" [color="#000000", fontcolor="#000000", href="/type/Compiler", fontname="FreeSans"];
+    "Perl" [color="#000000", fontcolor="#000000", href="/type/Perl", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "VM" -> "Any" [color="#000000"];
+    "Compiler" -> "Any" [color="#000000"];
+    "Perl" -> "Any" [color="#000000"];
 
     // Roles
     "VM" -> "Systemic" [color="#6666FF"];
+    "Compiler" -> "Systemic" [color="#6666FF"];
+    "Perl" -> "Systemic" [color="#6666FF"];
 }
