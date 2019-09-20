@@ -58,33 +58,28 @@
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Meta-object_protocol_(MOP)">language documentation Meta-object protocol (MOP)</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Meta-object_protocol_(MOP))_syntax_HOW_HOW">(Meta-object protocol (MOP)) syntax HOW HOW</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Metaobject_protocol_(MOP)">language documentation Metaobject protocol (MOP)</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Metaobject_protocol_(MOP))_syntax_HOW_HOW">(Metaobject protocol (MOP)) syntax HOW HOW</a></td></tr>
                 
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for syntax <code>HOW</code> assembled from the following types:</p>
-<h1 id="language_documentation_Meta-object_protocol_(MOP)"><a class="u" href="#___top" title="go to top of document">language documentation Meta-object protocol (MOP)</a></h1>
-<p>From <a href="/language/mop#HOW">Meta-object protocol (MOP)</a></p>
-<h2 id="(Meta-object_protocol_(MOP))_syntax_HOW_HOW"><a href="/language/mop#HOW">(Meta-object protocol (MOP)) syntax HOW HOW</a></h2>
+<h1 id="language_documentation_Metaobject_protocol_(MOP)"><a class="u" href="#___top" title="go to top of document">language documentation Metaobject protocol (MOP)</a></h1>
+<p>From <a href="/language/mop#HOW">Metaobject protocol (MOP)</a></p>
+<h2 id="(Metaobject_protocol_(MOP))_syntax_HOW_HOW"><a href="/language/mop#HOW">(Metaobject protocol (MOP)) syntax HOW HOW</a></h2>
 <p>Returns the metaclass object, as in &quot;Higher Order Workings&quot;.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>%</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ClassHOW+{&lt;anon&gt;}␤»</span></span></span></div></pre><p><code>HOW</code> returns an object of type <code>Perl6::Metamodel::ClassHOW</code> in this case; objects of this type are used to build classes. The same operation on the <code>&amp;</code> sigil will return <code>Perl6::Metamodel::ParametricRoleGroupHOW</code>. You will be calling this object whenever you use the <code>^</code> syntax to access meta methods. In fact, the code above is equivalent to <code>say (&amp;).HOW.HOW.name(&amp;)</code> which is much more unwieldy. <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a> is part of the Rakudo implementation, so use with caution.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;(</span><span class="keyword other special-method perl6fe"><span>%</span></span><span>)</span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>HOW</span></span><span class="keyword operator generic perl6fe"><span>.</span><span>^</span></span><span class="support function perl6fe"><span>name</span></span><span>&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Perl6::Metamodel::ClassHOW+{&lt;anon&gt;}␤»</span></span></span></div></pre><p><code>HOW</code> returns an object of type <code>Perl6::Metamodel::ClassHOW</code> in this case; objects of this type are used to build classes. The same operation on the <code>&amp;</code> sigil will return <code>Perl6::Metamodel::ParametricRoleGroupHOW</code>. You will be calling this object whenever you use the <code>^</code> syntax to access metamethods. In fact, the code above is equivalent to <code>say (&amp;).HOW.HOW.name(&amp;)</code> which is much more unwieldy. <a href="/type/Metamodel::ClassHOW">Metamodel::ClassHOW</a> is part of the Rakudo implementation, so use with caution.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-  <p>
-      Generated from <a href="SOURCEURL">PODPATH</a>.
-      <br/>
-      This is a work in progress to document Perl 6, and known to be
-      incomplete.
-      <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.
-  </p>
+    <p>This is a work in progress to document Perl 6, and known to be
+        incomplete.</p>
+     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
+      Your contribution is appreciated.</p>
   <p>
       This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
@@ -98,6 +93,5 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
-
     </body>
 </html>

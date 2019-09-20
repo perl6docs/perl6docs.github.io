@@ -83,7 +83,7 @@
 <h1 id="Running_programs"><a class="u" href="#___top" title="go to top of document"><a name="index-entry-Running_programs"><span class="index-entry">Running programs</span></a></a></h1>
 <p>Many programs need to be able to run other programs, and we need to pass information to them and receive their output and exit status. Running a program in Perl&nbsp;6 is as easy as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>run</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>git</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>,&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>status</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div></pre><p>This line runs the program named &quot;git&quot; and passes &quot;git&quot; and &quot;status&quot; to its command-line. It will find the program using the <code>%*ENV&lt;PATH&gt; </code> setting.</p>
-<p>If you would like to run a program by sending a command-line to the shell, there&#39;s a tool for that as well. All shell meta characters are interpreted by the shell, including pipes, redirects, environment variable substitutions and so on.</p>
+<p>If you would like to run a program by sending a command-line to the shell, there&#39;s a tool for that as well. All shell metacharacters are interpreted by the shell, including pipes, redirects, environment variable substitutions and so on.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>shell</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>ls&nbsp;-lR&nbsp;|&nbsp;gzip&nbsp;-9&nbsp;&gt;&nbsp;ls-lR.gz</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div></pre><p>Caution should be taken when using <code>shell</code> with user input.</p>
 <h1 id="The_Proc_object"><a class="u" href="#___top" title="go to top of document">The <code>Proc</code> object</a></h1>
 <p>Both <code>run</code> and <code>shell</code> return a <a href="/type/Proc">Proc</a> object, which can be used to communicate with the process in more detail. Please note that unless you close all output pipes, the program will usually not terminate.</p>
@@ -101,15 +101,11 @@
     
     </div>
 <footer class="pretty-box yellow">
-  <p>
-      Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/ipc.pod6">/language/ipc</a>.
-      <br/>
-      This is a work in progress to document Perl 6, and known to be
-      incomplete.
-      <br/>
-      <a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.
-  </p>
+    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/ipc.pod6">/language/ipc</a>.</p>
+    <p>This is a work in progress to document Perl 6, and known to be
+        incomplete.</p>
+     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
+      Your contribution is appreciated.</p>
   <p>
       This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
