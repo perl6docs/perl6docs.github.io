@@ -70,7 +70,15 @@
 <p>From <a href="/language/variables#The_=_twigil">Variables</a></p>
 <h2 id="(Variables)_twigil_="><a href="/language/variables#The_=_twigil">(Variables) twigil =</a></h2>
 <p>The <code>=</code> twigil is used to access Pod variables. Every Pod block in the current file can be accessed via a Pod object, such as <code>$=data</code>, <code>$=SYNOPSIS</code> or <code>=UserBlock</code>. That is: a variable with the same name of the desired block and a <code>=</code> twigil.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>code</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>begin</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>Foo</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;...</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>Foo</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment block delimited perl6fe"><span>&nbsp;&nbsp;#after&nbsp;that,&nbsp;$=Foo&nbsp;gives&nbsp;you&nbsp;all&nbsp;Foo-Pod-blocks</span></span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;&nbsp;</span><span class="storage modifier block delimited perl6fe"><span>=</span></span><span class="keyword operator block delimited perl6fe"><span>end</span></span><span>&nbsp;</span><span class="entity other attribute-name block delimited perl6fe"><span>code</span></span></span></div></pre><p>You may access the Pod tree which contains all Pod structures as a hierarchical data structure through <code>$=pod</code>.</p>
+<pre class="pod-block-code">  =begin code
+  =begin Foo
+  ...
+  =end Foo
+
+  #after that, $=Foo gives you all Foo-Pod-blocks
+  =end code
+</pre>
+<p>You may access the Pod tree which contains all Pod structures as a hierarchical data structure through <code>$=pod</code>.</p>
 <p>Note that all those <code>$=someBlockName</code> support the <code>Positional</code> and the <code>Associative</code> roles.</p>
 
     </div>

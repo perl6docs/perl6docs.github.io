@@ -4005,6 +4005,8 @@ $(function(){
 ,
 { category: "Reference", value: "use lib", url: "/language/modules#index-entry-use_lib" }
 ,
+{ category: "Reference", value: "Build.pm6", url: "/language/modules#index-entry-Build.pm6-Build.pm6" }
+,
 { category: "Reference", value: "META6.json", url: "/language/modules#index-entry-META6.json-META6.json" }
 ,
 { category: "Reference", value: "zef", url: "/language/modules#index-entry-zef" }

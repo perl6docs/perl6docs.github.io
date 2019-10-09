@@ -70,10 +70,27 @@
 <p>From <a href="/language/modules#need">Modules</a></p>
 <h2 id="(Modules)_need"><a href="/language/modules#need">(Modules)  need</a></h2>
 <p><code>need</code> loads a <code>compunit</code> at compile time.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>need</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>MyModule</span></span><span>;</span></span></div></pre><p>Any packages in the namespace defined within will also be available.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;MyModule.pm6</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>unit</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>MyModule</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Class</span></span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p><code>MyModule::Class</code> will be defined when <code>MyModule</code> is loaded, and you can use it directly employing its fully qualified name (FQN). Classes and other types defined that way are not automatically exported; you will need to explicitly export it if you want to use it by its short name:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;MyModule.pm6</span><span>&nbsp;</span></span></span></div><div class="line"><span class="source perl6fe"><span class="routine name perl6fe"><span>unit</span></span><span>&nbsp;</span><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>module</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>MyModule</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta class perl6fe"><span class="storage type class perl6fe"><span>class</span></span><span>&nbsp;</span><span class="entity name type class perl6fe"><span>Class</span></span></span><span>&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>export</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span></span></div></pre><p>And then</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword other include perl6fe"><span>use</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>MyModule</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span>&nbsp;</span></span></div><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>class</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>Class</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>new</span></span><span>();</span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>class</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>perl</span></span><span>;</span></span></div></pre>
+<pre class="pod-block-code">need MyModule;
+</pre>
+<p>Any packages in the namespace defined within will also be available.</p>
+<pre class="pod-block-code"># MyModule.pm6
+unit module MyModule;
+
+class Class {}
+</pre>
+<p><code>MyModule::Class</code> will be defined when <code>MyModule</code> is loaded, and you can use it directly employing its fully qualified name (FQN). Classes and other types defined that way are not automatically exported; you will need to explicitly export it if you want to use it by its short name:</p>
+<pre class="pod-block-code"># MyModule.pm6
+unit module MyModule;
+
+class Class is export {}
+</pre>
+<p>And then</p>
+<pre class="pod-block-code">use MyModule;
+
+my $class = Class.new();
+say $class.perl;
+</pre>
+
     </div>
     
     </div>
