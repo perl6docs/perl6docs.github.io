@@ -8,26 +8,26 @@ digraph "perl6-type-graph" {
     "Any" [color="#000000", fontcolor="#000000", href="/type/Any", fontname="FreeSans"];
     "ForeignCode" [color="#000000", fontcolor="#000000", href="/type/ForeignCode", fontname="FreeSans"];
     "Code" [color="#000000", fontcolor="#000000", href="/type/Code", fontname="FreeSans"];
-    "WhateverCode" [color="#000000", fontcolor="#000000", href="/type/WhateverCode", fontname="FreeSans"];
     "Block" [color="#000000", fontcolor="#000000", href="/type/Block", fontname="FreeSans"];
+    "WhateverCode" [color="#000000", fontcolor="#000000", href="/type/WhateverCode", fontname="FreeSans"];
     "Routine" [color="#000000", fontcolor="#000000", href="/type/Routine", fontname="FreeSans"];
-    "Sub" [color="#000000", fontcolor="#000000", href="/type/Sub", fontname="FreeSans"];
-    "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
     "Method" [color="#000000", fontcolor="#000000", href="/type/Method", fontname="FreeSans"];
+    "Macro" [color="#000000", fontcolor="#000000", href="/type/Macro", fontname="FreeSans"];
     "Submethod" [color="#000000", fontcolor="#000000", href="/type/Submethod", fontname="FreeSans"];
+    "Sub" [color="#000000", fontcolor="#000000", href="/type/Sub", fontname="FreeSans"];
     "Regex" [color="#000000", fontcolor="#000000", href="/type/Regex", fontname="FreeSans"];
 
     // Superclasses
     "Any" -> "Mu" [color="#000000"];
     "ForeignCode" -> "Any" [color="#000000"];
     "Code" -> "Any" [color="#000000"];
-    "WhateverCode" -> "Code" [color="#000000"];
     "Block" -> "Code" [color="#000000"];
+    "WhateverCode" -> "Code" [color="#000000"];
     "Routine" -> "Block" [color="#000000"];
-    "Sub" -> "Routine" [color="#000000"];
-    "Macro" -> "Routine" [color="#000000"];
     "Method" -> "Routine" [color="#000000"];
+    "Macro" -> "Routine" [color="#000000"];
     "Submethod" -> "Routine" [color="#000000"];
+    "Sub" -> "Routine" [color="#000000"];
     "Regex" -> "Method" [color="#000000"];
 
     // Roles

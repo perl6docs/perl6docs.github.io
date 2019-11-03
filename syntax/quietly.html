@@ -50,45 +50,47 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
     <h1 class='title'>syntax quietly</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Control_flow">language documentation Control flow</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Control_flow)_control_flow_quietly_quietly">(Control flow) control flow  quietly quietly</a></td></tr>
-       <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Statement_prefixes">language documentation Statement prefixes</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Statement_prefixes)_quietly_(statement_prefix)_quietly">(Statement prefixes) quietly (statement prefix) quietly</a></td></tr>
-               
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Statement_prefixes">language documentation Statement prefixes</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Statement_prefixes)_quietly_(statement_prefix)_quietly">(Statement prefixes) quietly (statement prefix) quietly</a></td></tr>
+                <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Control_flow">language documentation Control flow</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Control_flow)_control_flow_quietly_quietly">(Control flow) control flow  quietly quietly</a></td></tr>
+      
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for syntax <code>quietly</code> assembled from the following types:</p>
+<h1 id="language_documentation_Statement_prefixes"><a class="u" href="#___top" title="go to top of document">language documentation Statement prefixes</a></h1>
+<p>From <a href="/language/statement-prefixes#quietly">Statement prefixes</a></p>
+<h2 id="(Statement_prefixes)_quietly_(statement_prefix)_quietly"><a href="/language/statement-prefixes#quietly">(Statement prefixes) quietly (statement prefix) quietly</a></h2>
+<p>As a statement prefix, <code>quietly</code> suppresses all warnings produced by the statement it precedes.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>marine</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>quietly</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>marine</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«marine␤»</span><span>&nbsp;</span></span></span></div></pre><p>Calling <a href="/type/Code#method_Str"><code>.Str</code> on <code>code</code> produces a warning</a>. Preceding the statement with <code>quietly </code> will just produce the output, the name of the routine.</p>
 <h1 id="language_documentation_Control_flow"><a class="u" href="#___top" title="go to top of document">language documentation Control flow</a></h1>
 <p>From <a href="/language/control#quietly">Control flow</a></p>
 <h2 id="(Control_flow)_control_flow_quietly_quietly"><a href="/language/control#quietly">(Control flow) control flow  quietly quietly</a></h2>
 <p>A <code>quietly</code> block will suppress all warnings generated in it.</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>quietly</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>kaput!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>still&nbsp;kaput!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«still&nbsp;kaput!&nbsp;[...]␤»</span></span></span></div></pre><p>Any warning generated from any routine called from within the block will also be suppressed:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>told-you</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>hey...</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>quietly</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>told-you</span></span><span>;&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>kaput!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Only&nbsp;telling&nbsp;you&nbsp;now!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Only&nbsp;telling&nbsp;you&nbsp;now!␤&nbsp;[...]&nbsp;␤»</span></span></span></div></pre><h1 id="language_documentation_Statement_prefixes"><a class="u" href="#___top" title="go to top of document">language documentation Statement prefixes</a></h1>
-<p>From <a href="/language/statement-prefixes#quietly">Statement prefixes</a></p>
-<h2 id="(Statement_prefixes)_quietly_(statement_prefix)_quietly"><a href="/language/statement-prefixes#quietly">(Statement prefixes) quietly (statement prefix) quietly</a></h2>
-<p>As a statement prefix, <code>quietly</code> suppresses all warnings produced by the statement it precedes.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>marine</span></span><span>()&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>quietly</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>~</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>&amp;</span></span><span class="variable other identifier perl6fe"><span>marine</span></span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«marine␤»</span><span>&nbsp;</span></span></span></div></pre><p>Calling <a href="/type/Code#method_Str"><code>.Str</code> on <code>code</code> produces a warning</a>. Preceding the statement with <code>quietly </code> will just produce the output, the name of the routine.</p>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>told-you</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>hey...</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control flowcontrol perl6fe"><span>quietly</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span><span>&nbsp;</span><span class="routine name perl6fe"><span>told-you</span></span><span>;&nbsp;</span><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>kaput!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>&nbsp;</span><span class="punctuation definition block perl6fe"><span>}</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="keyword control control-handlers perl6fe"><span>warn</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>Only&nbsp;telling&nbsp;you&nbsp;now!</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«Only&nbsp;telling&nbsp;you&nbsp;now!␤&nbsp;[...]&nbsp;␤»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -100,5 +102,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

@@ -50,32 +50,28 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
     <h1 class='title'>method keyof</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#role_Associative">role Associative</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Associative)_method_keyof">(Associative) method keyof</a></td></tr>
-         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Hash">class Hash</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Hash)_method_keyof">(Hash) method keyof</a></td></tr>
-           <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_QuantHash">role QuantHash</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(QuantHash)_method_keyof">(QuantHash) method keyof</a></td></tr>
-      
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Hash">class Hash</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Hash)_method_keyof">(Hash) method keyof</a></td></tr>
+           <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#role_QuantHash">role QuantHash</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(QuantHash)_method_keyof">(QuantHash) method keyof</a></td></tr>
+       <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#role_Associative">role Associative</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(Associative)_method_keyof">(Associative) method keyof</a></td></tr>
+        
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for method <code>keyof</code> assembled from the following types:</p>
-<h1 id="role_Associative"><a class="u" href="#___top" title="go to top of document">role Associative</a></h1>
-<p>From <a href="/type/Associative#method_keyof">Associative</a></p>
-<h2 id="(Associative)_method_keyof"><a href="/type/Associative#method_keyof">(Associative) method keyof</a></h2>
-<p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the parameterized key used for the Associative role, which is <code>Any</code> coerced to <code>Str</code> by default. This is the class used as second parameter when you use the parameterized version of Associative.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>keyof</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(Str(Any))␤»</span></span></span></div></pre><h1 id="class_Hash"><a class="u" href="#___top" title="go to top of document">class Hash</a></h1>
+<h1 id="class_Hash"><a class="u" href="#___top" title="go to top of document">class Hash</a></h1>
 <p>From <a href="/type/Hash#method_keyof">Hash</a></p>
 <h2 id="(Hash)_method_keyof"><a href="/type/Hash#method_keyof">(Hash) method keyof</a></h2>
 <p>Defined as:</p>
@@ -84,17 +80,23 @@
 <p>From <a href="/type/QuantHash#method_keyof">QuantHash</a></p>
 <h2 id="(QuantHash)_method_keyof"><a href="/type/QuantHash#method_keyof">(QuantHash) method keyof</a></h2>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the type of value a key of this <code>QuantHash</code> may have. This is typically <a href="/type/Mu">Mu</a>.</p>
-
+<h1 id="role_Associative"><a class="u" href="#___top" title="go to top of document">role Associative</a></h1>
+<p>From <a href="/type/Associative#method_keyof">Associative</a></p>
+<h2 id="(Associative)_method_keyof"><a href="/type/Associative#method_keyof">(Associative) method keyof</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>keyof</span></span><span>()</span></span></div></pre><p>Returns the parameterized key used for the Associative role, which is <code>Any</code> coerced to <code>Str</code> by default. This is the class used as second parameter when you use the parameterized version of Associative.</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>any-hash</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="routine name perl6fe"><span>keyof</span></span><span>;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>OUTPUT:&nbsp;«(Str(Any))␤»</span></span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -106,5 +108,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

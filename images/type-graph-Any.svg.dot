@@ -257,6 +257,7 @@ digraph "perl6-type-graph" {
     "Test" [color="#000000", fontcolor="#000000", href="/type/Test", fontname="FreeSans"];
     "Thread" [color="#000000", fontcolor="#000000", href="/type/Thread", fontname="FreeSans"];
     "ThreadPoolScheduler" [color="#000000", fontcolor="#000000", href="/type/ThreadPoolScheduler", fontname="FreeSans"];
+    "UInt" [color="#000000", fontcolor="#000000", href="/type/UInt", fontname="FreeSans"];
     "VM" [color="#000000", fontcolor="#000000", href="/type/VM", fontname="FreeSans"];
     "ValueObjAt" [color="#000000", fontcolor="#000000", href="/type/ValueObjAt", fontname="FreeSans"];
     "Variable" [color="#000000", fontcolor="#000000", href="/type/Variable", fontname="FreeSans"];
@@ -444,6 +445,7 @@ digraph "perl6-type-graph" {
     "Test" -> "Any" [color="#000000"];
     "Thread" -> "Any" [color="#000000"];
     "ThreadPoolScheduler" -> "Any" [color="#000000"];
+    "UInt" -> "Any" [color="#000000"];
     "VM" -> "Any" [color="#000000"];
     "ValueObjAt" -> "ObjAt" [color="#000000"];
     "Variable" -> "Any" [color="#000000"];

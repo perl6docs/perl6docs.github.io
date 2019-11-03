@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Perl 6 operator Routines</title>
+        <title>Raku operator Routines</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -50,10 +50,11 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
-<div id="content" class="pretty-box yellow content_fragment">
-  
+<!-- please make sure these two CAPITALIZED variables stay there -->
 
-    <h1 class='title'>Perl 6 operator Routines</h1>
+<div id="content" class="pretty-box yellow content_fragment">
+
+    <h1 class='title'>Raku operator Routines</h1>
     
     
     <div class="pod-body no-toc">
@@ -155,7 +156,7 @@
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/andthen">andthen</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/before">before</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/but">but</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/cmp">cmp</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/type/Pair">Pair</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/Order">Order</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/List">List</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/cmp">cmp</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/type/RatStr">RatStr</a>, <a href="/type/ComplexStr">ComplexStr</a>, <a href="/type/IntStr">IntStr</a>, <a href="/type/Pair">Pair</a>, <a href="/type/NumStr">NumStr</a>, <a href="/type/Order">Order</a>, <a href="/type/List">List</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/coll">coll</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>prefix</td> <td><a href="/routine/constant">constant</a></td> <td><p>(From <a href="/language/variables">Variables</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/div">div</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/type/Int">Int</a>)</p>
@@ -201,16 +202,16 @@
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/~|">~|</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/~~">~~</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>postcircumfix</td> <td><a href="/routine/« »">« »</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/∉">∉</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/∌">∌</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/∉">∉</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/∌">∌</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/∘">∘</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/≠">≠</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/≤">≤</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/≥">≥</a></td> <td><p>(From <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊄">⊄</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊅">⊅</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊈">⊈</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
-</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊉">⊉</a></td> <td><p>(From <a href="/language/setbagmix">Sets, bags, and mixes</a>, <a href="/language/operators">Operators</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊄">⊄</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊅">⊅</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊈">⊈</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
+</td> </tr> <tr> <td>infix</td> <td><a href="/routine/⊉">⊉</a></td> <td><p>(From <a href="/language/operators">Operators</a>, <a href="/language/setbagmix">Sets, bags, and mixes</a>)</p>
 </td> </tr> <tr> <td>prefix</td> <td><a href="/routine/⚛">⚛</a></td> <td><p>(From <a href="/type/atomicint">atomicint</a>, <a href="/type/Scalar">Scalar</a>)</p>
 </td> </tr> <tr> <td>postfix</td> <td><a href="/routine/⚛++">⚛++</a></td> <td><p>(From <a href="/type/atomicint">atomicint</a>)</p>
 </td> </tr> <tr> <td>infix</td> <td><a href="/routine/⚛+=">⚛+=</a></td> <td><p>(From <a href="/type/atomicint">atomicint</a>)</p>
@@ -225,12 +226,13 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -242,5 +244,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

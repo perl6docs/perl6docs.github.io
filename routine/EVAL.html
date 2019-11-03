@@ -50,24 +50,30 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
     <h1 class='title'>routine EVAL</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Independent_routines)_routine_EVAL">(Independent routines) routine EVAL</a></td></tr>
-                                                                                <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#class_Cool">class Cool</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Cool)_routine_EVAL">(Cool) routine EVAL</a></td></tr>
-        
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_Cool">class Cool</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(Cool)_routine_EVAL">(Cool) routine EVAL</a></td></tr>
+         <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#language_documentation_Independent_routines">language documentation Independent routines</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Independent_routines)_routine_EVAL">(Independent routines) routine EVAL</a></td></tr>
+                                                                               
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for routine <code>EVAL</code> assembled from the following types:</p>
+<h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
+<p>From <a href="/type/Cool#routine_EVAL">Cool</a></p>
+<h2 id="(Cool)_routine_EVAL"><a href="/type/Cool#routine_EVAL">(Cool) routine EVAL</a></h2>
+<p>Defined as:</p>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EVAL</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>)</span></span></div></pre><p>It calls the <a href="/type/independent-routines#sub_mkdir">subroutine form</a> with the invocant as the first argument, <code>$code</code>, passing along named args, if any.</p>
 <h1 id="language_documentation_Independent_routines"><a class="u" href="#___top" title="go to top of document">language documentation Independent routines</a></h1>
 <p>From <a href="/language/independent-routines#routine_EVAL">Independent routines</a></p>
 <h2 id="(Independent_routines)_routine_EVAL"><a href="/language/independent-routines#routine_EVAL">(Independent routines) routine EVAL</a></h2>
@@ -83,22 +89,18 @@
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>mean</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>assoc</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>list</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sum</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>EVAL</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>say&nbsp;2&nbsp;mean&nbsp;6&nbsp;mean&nbsp;4</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«4␤»</span></span></span></div></pre><p>An <code>EVAL</code> statement evaluates to the result of the last statement:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>sub</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>infix</span></span><span class="punctuation definition function adverb perl6fe"><span>:</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>mean</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span>)&nbsp;</span><span class="storage modifier type constraints perl6fe"><span>is</span></span><span>&nbsp;</span><span class="entity name type trait perl6fe"><span>assoc</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>list</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>&nbsp;</span><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>{</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>sum</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>/</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>a</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>elems</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="meta block perl6fe"><span class="punctuation definition block perl6fe"><span>}</span></span></span></span></div><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>say</span></span><span>&nbsp;</span><span class="support function perl6fe"><span>EVAL</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>say&nbsp;1;&nbsp;2&nbsp;mean&nbsp;6&nbsp;mean&nbsp;4</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment line number-sign perl6fe"><span class="punctuation definition comment perl6fe"><span>#</span></span><span>&nbsp;OUTPUT:&nbsp;«1␤4␤»</span><span>&nbsp;</span></span></span></div></pre><p><code>EVAL</code> is also a gateway for executing code in other languages:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="support function perl6fe"><span>EVAL</span></span><span>&nbsp;</span><span class="string quoted double perl6fe"><span class="punctuation definition string begin perl6fe"><span>&quot;</span></span><span>use&nbsp;v5.20;&nbsp;say&nbsp;&#39;Hello&nbsp;from&nbsp;perl5!&#39;</span><span class="punctuation definition string end perl6fe"><span>&quot;</span></span></span><span>,&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>lang</span></span><span class="span keyword operator array words perl6fe"><span>&lt;</span></span><span class="string array words perl6fe"><span>Perl5</span></span><span class="span keyword operator array words perl6fe"><span>&gt;</span></span><span>;</span></span></div></pre><p>You need to have <a href="https://github.com/niner/Inline-Perl5"><code>Inline::Perl5</code></a> for this to work correctly.</p>
-<h1 id="class_Cool"><a class="u" href="#___top" title="go to top of document">class Cool</a></h1>
-<p>From <a href="/type/Cool#routine_EVAL">Cool</a></p>
-<h2 id="(Cool)_routine_EVAL"><a href="/type/Cool#routine_EVAL">(Cool) routine EVAL</a></h2>
-<p>Defined as:</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>EVAL</span></span><span>(</span><span class="keyword operator generic perl6fe"><span>*</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>%</span></span><span class="variable other identifier perl6fe"><span>_</span></span></span><span>)</span></span></div></pre><p>It calls the <a href="/type/independent-routines#sub_mkdir">subroutine form</a> with the invocant as the first argument, <code>$code</code>, passing along named args, if any.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -110,5 +112,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

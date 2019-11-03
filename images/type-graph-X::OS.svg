@@ -5,383 +5,423 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="1816pt" height="404pt"
- viewBox="0.00 0.00 1815.79 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 1816.44 404.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 400)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-400 1811.79,-400 1811.79,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-400 1812.44,-400 1812.44,4 -4,4"/>
 <!-- X::OS -->
 <g id="node1" class="node"><title>X::OS</title>
 <g id="a_node1"><a xlink:href="/type/X::OS" xlink:title="X::OS">
-<ellipse fill="none" stroke="#6666ff" cx="884.195" cy="-162" rx="34.394" ry="18"/>
-<text text-anchor="middle" x="884.195" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::OS</text>
+<ellipse fill="none" stroke="#6666ff" cx="900.495" cy="-162" rx="34.394" ry="18"/>
+<text text-anchor="middle" x="900.495" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::OS</text>
 </a>
 </g>
 </g>
 <!-- Exception -->
 <g id="node4" class="node"><title>Exception</title>
 <g id="a_node4"><a xlink:href="/type/Exception" xlink:title="Exception">
-<ellipse fill="none" stroke="#000000" cx="955.195" cy="-234" rx="49.2915" ry="18"/>
-<text text-anchor="middle" x="955.195" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
+<ellipse fill="none" stroke="#000000" cx="980.495" cy="-234" rx="49.2915" ry="18"/>
+<text text-anchor="middle" x="980.495" y="-230.3" font-family="FreeSans" font-size="14.00" fill="#000000">Exception</text>
 </a>
 </g>
 </g>
 <!-- X::OS&#45;&gt;Exception -->
 <g id="edge1" class="edge"><title>X::OS&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M899.601,-178.189C908.921,-187.378 920.997,-199.284 931.512,-209.651"/>
-<polygon fill="#000000" stroke="#000000" points="929.253,-212.338 938.831,-216.866 934.167,-207.353 929.253,-212.338"/>
+<path fill="none" stroke="#000000" d="M917.461,-177.845C928.297,-187.327 942.553,-199.801 954.767,-210.488"/>
+<polygon fill="#000000" stroke="#000000" points="952.611,-213.252 962.441,-217.203 957.22,-207.984 952.611,-213.252"/>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="955.195" cy="-378" rx="27" ry="18"/>
-<text text-anchor="middle" x="955.195" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="980.495" cy="-378" rx="27" ry="18"/>
+<text text-anchor="middle" x="980.495" y="-374.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="955.195" cy="-306" rx="27" ry="18"/>
-<text text-anchor="middle" x="955.195" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="980.495" cy="-306" rx="27" ry="18"/>
+<text text-anchor="middle" x="980.495" y="-302.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge2" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M955.195,-324.303C955.195,-332.017 955.195,-341.288 955.195,-349.888"/>
-<polygon fill="#000000" stroke="#000000" points="951.695,-349.896 955.195,-359.896 958.695,-349.896 951.695,-349.896"/>
+<path fill="none" stroke="#000000" d="M980.495,-324.303C980.495,-332.017 980.495,-341.288 980.495,-349.888"/>
+<polygon fill="#000000" stroke="#000000" points="976.995,-349.896 980.495,-359.896 983.995,-349.896 976.995,-349.896"/>
 </g>
 <!-- Exception&#45;&gt;Any -->
 <g id="edge3" class="edge"><title>Exception&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M955.195,-252.303C955.195,-260.017 955.195,-269.288 955.195,-277.888"/>
-<polygon fill="#000000" stroke="#000000" points="951.695,-277.896 955.195,-287.896 958.695,-277.896 951.695,-277.896"/>
+<path fill="none" stroke="#000000" d="M980.495,-252.303C980.495,-260.017 980.495,-269.288 980.495,-277.888"/>
+<polygon fill="#000000" stroke="#000000" points="976.995,-277.896 980.495,-287.896 983.995,-277.896 976.995,-277.896"/>
 </g>
 <!-- X::IO -->
 <g id="node5" class="node"><title>X::IO</title>
 <g id="a_node5"><a xlink:href="/type/X::IO" xlink:title="X::IO">
-<ellipse fill="none" stroke="#6666ff" cx="881.195" cy="-90" rx="31.3957" ry="18"/>
-<text text-anchor="middle" x="881.195" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::IO</text>
+<ellipse fill="none" stroke="#6666ff" cx="900.495" cy="-90" rx="31.3957" ry="18"/>
+<text text-anchor="middle" x="900.495" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">X::IO</text>
 </a>
 </g>
 </g>
 <!-- X::IO&#45;&gt;X::OS -->
-<g id="edge33" class="edge"><title>X::IO&#45;&gt;X::OS</title>
-<path fill="none" stroke="#6666ff" d="M881.936,-108.303C882.267,-116.017 882.664,-125.288 883.033,-133.888"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="879.537,-134.055 883.462,-143.896 886.53,-133.755 879.537,-134.055"/>
+<g id="edge41" class="edge"><title>X::IO&#45;&gt;X::OS</title>
+<path fill="none" stroke="#6666ff" d="M900.495,-108.303C900.495,-116.017 900.495,-125.288 900.495,-133.888"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="896.995,-133.896 900.495,-143.896 903.995,-133.896 896.995,-133.896"/>
 </g>
 <!-- X::IO&#45;&gt;Exception -->
 <g id="edge4" class="edge"><title>X::IO&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M869.194,-106.902C857.411,-122.513 841.195,-144 841.195,-144 841.195,-144 841.195,-180 841.195,-180 841.195,-180 883.331,-199.589 916.369,-214.949"/>
-<polygon fill="#000000" stroke="#000000" points="915.294,-218.309 925.837,-219.351 918.245,-211.962 915.294,-218.309"/>
-</g>
-<!-- X::IO::Chdir -->
-<g id="node6" class="node"><title>X::IO::Chdir</title>
-<g id="a_node6"><a xlink:href="/type/X::IO::Chdir" xlink:title="X::IO::Chdir">
-<ellipse fill="none" stroke="#000000" cx="57.1949" cy="-18" rx="57.3905" ry="18"/>
-<text text-anchor="middle" x="57.1949" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Chdir</text>
-</a>
-</g>
-</g>
-<!-- X::IO::Chdir&#45;&gt;Exception -->
-<g id="edge5" class="edge"><title>X::IO::Chdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M91.376,-32.4499C196.208,-71.1446 505.195,-180 505.195,-180 505.195,-180 777.431,-212.718 898.48,-226.741"/>
-<polygon fill="#000000" stroke="#000000" points="898.332,-230.247 908.668,-227.918 899.136,-223.293 898.332,-230.247"/>
-</g>
-<!-- X::IO::Chdir&#45;&gt;Exception -->
-<g id="edge6" class="edge"><title>X::IO::Chdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M96.1486,-31.3661C208.308,-69.0662 523.195,-180 523.195,-180 523.195,-180 782.558,-211.171 899.418,-225.703"/>
-<polygon fill="#000000" stroke="#000000" points="899.242,-229.208 909.598,-226.972 900.108,-222.262 899.242,-229.208"/>
-</g>
-<!-- X::IO::Chdir&#45;&gt;X::IO -->
-<g id="edge34" class="edge"><title>X::IO::Chdir&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M100.111,-30.0542C112.717,-33.3012 123.195,-36 123.195,-36 123.195,-36 681.481,-75.0358 839.799,-86.1056"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="839.847,-89.6174 850.067,-86.8235 840.336,-82.6345 839.847,-89.6174"/>
-</g>
-<!-- X::IO::Link -->
-<g id="node7" class="node"><title>X::IO::Link</title>
-<g id="a_node7"><a xlink:href="/type/X::IO::Link" xlink:title="X::IO::Link">
-<ellipse fill="none" stroke="#000000" cx="185.195" cy="-18" rx="53.0913" ry="18"/>
-<text text-anchor="middle" x="185.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Link</text>
-</a>
-</g>
-</g>
-<!-- X::IO::Link&#45;&gt;Exception -->
-<g id="edge7" class="edge"><title>X::IO::Link&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M216.965,-32.588C314.2,-71.403 600.195,-180 600.195,-180 600.195,-180 800.061,-210.615 899.935,-225.309"/>
-<polygon fill="#000000" stroke="#000000" points="899.457,-228.776 909.859,-226.764 900.473,-221.85 899.457,-228.776"/>
-</g>
-<!-- X::IO::Link&#45;&gt;Exception -->
-<g id="edge8" class="edge"><title>X::IO::Link&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M221.614,-31.3661C326.046,-69.0662 618.195,-180 618.195,-180 618.195,-180 806.042,-208.774 901.315,-223.92"/>
-<polygon fill="#000000" stroke="#000000" points="900.921,-227.401 911.347,-225.519 902.023,-220.488 900.921,-227.401"/>
-</g>
-<!-- X::IO::Link&#45;&gt;X::IO -->
-<g id="edge35" class="edge"><title>X::IO::Link&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M225.45,-29.8626C237.797,-33.1943 248.195,-36 248.195,-36 248.195,-36 699.336,-73.7733 839.896,-85.5421"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="839.978,-89.0612 850.236,-86.4078 840.562,-82.0856 839.978,-89.0612"/>
+<path fill="none" stroke="#000000" d="M887.826,-106.615C875.142,-122.249 857.495,-144 857.495,-144 857.495,-144 857.495,-180 857.495,-180 857.495,-180 904.556,-200.278 940.458,-215.748"/>
+<polygon fill="#000000" stroke="#000000" points="939.205,-219.02 949.774,-219.763 941.975,-212.591 939.205,-219.02"/>
 </g>
 <!-- X::IO::Mkdir -->
-<g id="node8" class="node"><title>X::IO::Mkdir</title>
-<g id="a_node8"><a xlink:href="/type/X::IO::Mkdir" xlink:title="X::IO::Mkdir">
-<ellipse fill="none" stroke="#000000" cx="315.195" cy="-18" rx="58.4896" ry="18"/>
-<text text-anchor="middle" x="315.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Mkdir</text>
+<g id="node6" class="node"><title>X::IO::Mkdir</title>
+<g id="a_node6"><a xlink:href="/type/X::IO::Mkdir" xlink:title="X::IO::Mkdir">
+<ellipse fill="none" stroke="#000000" cx="58.4948" cy="-18" rx="58.4896" ry="18"/>
+<text text-anchor="middle" x="58.4948" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Mkdir</text>
 </a>
 </g>
 </g>
 <!-- X::IO::Mkdir&#45;&gt;Exception -->
-<g id="edge9" class="edge"><title>X::IO::Mkdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M345.359,-33.5716C433.791,-73.2032 685.195,-180 685.195,-180 685.195,-180 822.832,-207.949 901.653,-223.255"/>
-<polygon fill="#000000" stroke="#000000" points="901.413,-226.774 911.896,-225.237 902.742,-219.901 901.413,-226.774"/>
+<g id="edge5" class="edge"><title>X::IO::Mkdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M95.1239,-32.1753C208.544,-70.6268 545.495,-180 545.495,-180 545.495,-180 805.936,-212.402 923.844,-226.536"/>
+<polygon fill="#000000" stroke="#000000" points="923.436,-230.012 933.78,-227.724 924.267,-223.062 923.436,-230.012"/>
 </g>
 <!-- X::IO::Mkdir&#45;&gt;Exception -->
-<g id="edge10" class="edge"><title>X::IO::Mkdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M350.853,-32.4499C446.945,-71.1446 703.195,-180 703.195,-180 703.195,-180 830.91,-205.934 904.58,-221.52"/>
-<polygon fill="#000000" stroke="#000000" points="904.089,-224.994 914.598,-223.647 905.543,-218.146 904.089,-224.994"/>
+<g id="edge6" class="edge"><title>X::IO::Mkdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M99.168,-30.9696C219.319,-68.2818 563.495,-180 563.495,-180 563.495,-180 811.066,-210.801 924.757,-225.442"/>
+<polygon fill="#000000" stroke="#000000" points="924.636,-228.955 935.002,-226.764 925.532,-222.013 924.636,-228.955"/>
 </g>
 <!-- X::IO::Mkdir&#45;&gt;X::IO -->
-<g id="edge36" class="edge"><title>X::IO::Mkdir&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M358.762,-30.0542C371.559,-33.3012 382.195,-36 382.195,-36 382.195,-36 721.595,-72.0485 840.576,-84.6858"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="840.418,-88.1885 850.731,-85.7644 841.157,-81.2277 840.418,-88.1885"/>
+<g id="edge42" class="edge"><title>X::IO::Mkdir&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M102.061,-30.0542C114.858,-33.3012 125.495,-36 125.495,-36 125.495,-36 698.845,-75.2097 859.245,-86.179"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="859.42,-89.6991 869.636,-86.8896 859.898,-82.7154 859.42,-89.6991"/>
 </g>
-<!-- X::IO::Rename -->
-<g id="node9" class="node"><title>X::IO::Rename</title>
-<g id="a_node9"><a xlink:href="/type/X::IO::Rename" xlink:title="X::IO::Rename">
-<ellipse fill="none" stroke="#000000" cx="461.195" cy="-18" rx="69.5877" ry="18"/>
-<text text-anchor="middle" x="461.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Rename</text>
+<!-- X::IO::DoesNotExist -->
+<g id="node7" class="node"><title>X::IO::DoesNotExist</title>
+<g id="a_node7"><a xlink:href="/type/X::IO::DoesNotExist" xlink:title="X::IO::DoesNotExist">
+<ellipse fill="none" stroke="#000000" cx="224.495" cy="-18" rx="89.8845" ry="18"/>
+<text text-anchor="middle" x="224.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::DoesNotExist</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Rename&#45;&gt;Exception -->
-<g id="edge11" class="edge"><title>X::IO::Rename&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M486.685,-34.8779C558.168,-75.4958 754.195,-180 754.195,-180 754.195,-180 845.255,-205.136 904.894,-220.788"/>
-<polygon fill="#000000" stroke="#000000" points="904.345,-224.262 914.905,-223.402 906.114,-217.489 904.345,-224.262"/>
+<!-- X::IO::DoesNotExist&#45;&gt;Exception -->
+<g id="edge7" class="edge"><title>X::IO::DoesNotExist&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M261.373,-34.5836C363.29,-74.9885 640.495,-180 640.495,-180 640.495,-180 828.566,-210.114 925.033,-224.943"/>
+<polygon fill="#000000" stroke="#000000" points="924.784,-228.446 935.199,-226.501 925.845,-221.527 924.784,-228.446"/>
 </g>
-<!-- X::IO::Rename&#45;&gt;Exception -->
-<g id="edge12" class="edge"><title>X::IO::Rename&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M493.525,-34.0019C573.307,-73.9702 772.195,-180 772.195,-180 772.195,-180 855.387,-202.964 909.682,-218.661"/>
-<polygon fill="#000000" stroke="#000000" points="908.878,-222.072 919.457,-221.5 910.83,-215.349 908.878,-222.072"/>
+<!-- X::IO::DoesNotExist&#45;&gt;Exception -->
+<g id="edge8" class="edge"><title>X::IO::DoesNotExist&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M267.889,-33.8579C377.928,-73.7148 658.495,-180 658.495,-180 658.495,-180 835.548,-208.35 927.15,-223.581"/>
+<polygon fill="#000000" stroke="#000000" points="926.639,-227.044 937.078,-225.237 927.79,-220.139 926.639,-227.044"/>
 </g>
-<!-- X::IO::Rename&#45;&gt;X::IO -->
-<g id="edge37" class="edge"><title>X::IO::Rename&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M512.788,-30.2446C527.293,-33.406 539.195,-36 539.195,-36 539.195,-36 751.122,-68.8425 841.322,-82.8209"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="841.025,-86.3165 851.443,-84.3893 842.097,-79.3991 841.025,-86.3165"/>
+<!-- X::IO::DoesNotExist&#45;&gt;X::IO -->
+<g id="edge43" class="edge"><title>X::IO::DoesNotExist&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M289.862,-30.3392C307.839,-33.4576 322.495,-36 322.495,-36 322.495,-36 728.069,-73.1893 859.745,-85.2635"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="859.549,-88.7601 869.827,-86.1879 860.189,-81.7893 859.549,-88.7601"/>
 </g>
-<!-- X::IO::Cwd -->
-<g id="node10" class="node"><title>X::IO::Cwd</title>
-<g id="a_node10"><a xlink:href="/type/X::IO::Cwd" xlink:title="X::IO::Cwd">
-<ellipse fill="none" stroke="#000000" cx="602.195" cy="-18" rx="53.8905" ry="18"/>
-<text text-anchor="middle" x="602.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Cwd</text>
+<!-- X::IO::Copy -->
+<g id="node8" class="node"><title>X::IO::Copy</title>
+<g id="a_node8"><a xlink:href="/type/X::IO::Copy" xlink:title="X::IO::Copy">
+<ellipse fill="none" stroke="#000000" cx="388.495" cy="-18" rx="56.59" ry="18"/>
+<text text-anchor="middle" x="388.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Copy</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Cwd&#45;&gt;Exception -->
-<g id="edge13" class="edge"><title>X::IO::Cwd&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M619.142,-35.3235C667.875,-76.2544 803.195,-180 803.195,-180 803.195,-180 864.216,-202.616 909.045,-218.301"/>
-<polygon fill="#000000" stroke="#000000" points="908.026,-221.652 918.62,-221.63 910.324,-215.04 908.026,-221.652"/>
+<!-- X::IO::Copy&#45;&gt;Exception -->
+<g id="edge9" class="edge"><title>X::IO::Copy&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M415.515,-33.8579C494.362,-73.7148 717.495,-180 717.495,-180 717.495,-180 850.408,-207.734 927.347,-223.077"/>
+<polygon fill="#000000" stroke="#000000" points="926.865,-226.55 937.355,-225.065 928.229,-219.684 926.865,-226.55"/>
 </g>
-<!-- X::IO::Cwd&#45;&gt;Exception -->
-<g id="edge14" class="edge"><title>X::IO::Cwd&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M626.159,-34.1465C683.228,-74.2252 821.195,-180 821.195,-180 821.195,-180 876.288,-200.419 915.929,-215.909"/>
-<polygon fill="#000000" stroke="#000000" points="914.793,-219.223 925.38,-219.626 917.355,-212.709 914.793,-219.223"/>
+<!-- X::IO::Copy&#45;&gt;Exception -->
+<g id="edge10" class="edge"><title>X::IO::Copy&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M421.345,-32.7268C508.05,-71.6611 735.495,-180 735.495,-180 735.495,-180 858.288,-205.622 930.094,-221.237"/>
+<polygon fill="#000000" stroke="#000000" points="929.781,-224.751 940.297,-223.463 931.274,-217.912 929.781,-224.751"/>
 </g>
-<!-- X::IO::Cwd&#45;&gt;X::IO -->
-<g id="edge38" class="edge"><title>X::IO::Cwd&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M642.806,-29.9586C654.996,-33.248 665.195,-36 665.195,-36 665.195,-36 781.139,-64.4492 843.134,-79.6609"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="842.411,-83.0873 852.957,-82.0712 844.079,-76.2889 842.411,-83.0873"/>
+<!-- X::IO::Copy&#45;&gt;X::IO -->
+<g id="edge44" class="edge"><title>X::IO::Copy&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M431.04,-29.9586C443.811,-33.248 454.495,-36 454.495,-36 454.495,-36 750.408,-71.1646 860.166,-84.2075"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="859.847,-87.6942 870.19,-85.3988 860.673,-80.7431 859.847,-87.6942"/>
 </g>
-<!-- X::IO::Chmod -->
-<g id="node11" class="node"><title>X::IO::Chmod</title>
-<g id="a_node11"><a xlink:href="/type/X::IO::Chmod" xlink:title="X::IO::Chmod">
-<ellipse fill="none" stroke="#000000" cx="738.195" cy="-18" rx="64.189" ry="18"/>
-<text text-anchor="middle" x="738.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Chmod</text>
+<!-- X::IO::Chdir -->
+<g id="node9" class="node"><title>X::IO::Chdir</title>
+<g id="a_node9"><a xlink:href="/type/X::IO::Chdir" xlink:title="X::IO::Chdir">
+<ellipse fill="none" stroke="#000000" cx="520.495" cy="-18" rx="57.3905" ry="18"/>
+<text text-anchor="middle" x="520.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Chdir</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Chmod&#45;&gt;Exception -->
-<g id="edge15" class="edge"><title>X::IO::Chmod&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M744.19,-35.9255C765.02,-77.2617 828.195,-180 828.195,-180 828.195,-180 875.193,-201.109 912.131,-216.684"/>
-<polygon fill="#000000" stroke="#000000" points="911.175,-220.078 921.751,-220.708 913.876,-213.62 911.175,-220.078"/>
+<!-- X::IO::Chdir&#45;&gt;Exception -->
+<g id="edge11" class="edge"><title>X::IO::Chdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M538.876,-35.3235C597.445,-76.2544 769.495,-180 769.495,-180 769.495,-180 865.789,-206.443 928.686,-221.974"/>
+<polygon fill="#000000" stroke="#000000" points="927.928,-225.391 938.474,-224.367 929.591,-218.592 927.928,-225.391"/>
 </g>
-<!-- X::IO::Chmod&#45;&gt;Exception -->
-<g id="edge16" class="edge"><title>X::IO::Chmod&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M752.795,-35.6234C782.711,-76.7587 846.195,-180 846.195,-180 846.195,-180 888.292,-198.908 920.28,-214.137"/>
-<polygon fill="#000000" stroke="#000000" points="918.877,-217.346 929.407,-218.518 921.906,-211.035 918.877,-217.346"/>
+<!-- X::IO::Chdir&#45;&gt;Exception -->
+<g id="edge12" class="edge"><title>X::IO::Chdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M546.096,-34.4374C612.924,-74.7344 787.495,-180 787.495,-180 787.495,-180 875.262,-204.102 932.425,-219.799"/>
+<polygon fill="#000000" stroke="#000000" points="931.794,-223.256 942.364,-222.529 933.648,-216.506 931.794,-223.256"/>
 </g>
-<!-- X::IO::Chmod&#45;&gt;X::IO -->
-<g id="edge39" class="edge"><title>X::IO::Chmod&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M768.872,-34.0168C792.491,-45.5783 825.047,-61.5148 849.03,-73.2549"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="847.566,-76.4352 858.087,-77.6883 850.644,-70.148 847.566,-76.4352"/>
+<!-- X::IO::Chdir&#45;&gt;Exception -->
+<g id="edge13" class="edge"><title>X::IO::Chdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M552.125,-33.1466C627.108,-72.4335 805.495,-180 805.495,-180 805.495,-180 885.549,-201.984 937.732,-217.634"/>
+<polygon fill="#000000" stroke="#000000" points="936.86,-221.027 947.445,-220.574 938.888,-214.327 936.86,-221.027"/>
 </g>
-<!-- X::IO::Unlink -->
-<g id="node12" class="node"><title>X::IO::Unlink</title>
-<g id="a_node12"><a xlink:href="/type/X::IO::Unlink" xlink:title="X::IO::Unlink">
-<ellipse fill="none" stroke="#000000" cx="881.195" cy="-18" rx="61.1893" ry="18"/>
-<text text-anchor="middle" x="881.195" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Unlink</text>
+<!-- X::IO::Chdir&#45;&gt;X::IO -->
+<g id="edge45" class="edge"><title>X::IO::Chdir&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M563.684,-29.9586C576.649,-33.248 587.495,-36 587.495,-36 587.495,-36 776.994,-68.0877 861.097,-82.3287"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="860.605,-85.7952 871.049,-84.0139 861.773,-78.8934 860.605,-85.7952"/>
+</g>
+<!-- X::IO::Dir -->
+<g id="node10" class="node"><title>X::IO::Dir</title>
+<g id="a_node10"><a xlink:href="/type/X::IO::Dir" xlink:title="X::IO::Dir">
+<ellipse fill="none" stroke="#000000" cx="643.495" cy="-18" rx="47.3916" ry="18"/>
+<text text-anchor="middle" x="643.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Dir</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Unlink&#45;&gt;Exception -->
-<g id="edge17" class="edge"><title>X::IO::Unlink&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M887.228,-36.0613C896.765,-51.5549 912.195,-72 912.195,-72 912.195,-72 930.947,-160.799 944.285,-206.502"/>
-<polygon fill="#000000" stroke="#000000" points="940.941,-207.532 947.208,-216.074 947.636,-205.488 940.941,-207.532"/>
+<!-- X::IO::Dir&#45;&gt;Exception -->
+<g id="edge14" class="edge"><title>X::IO::Dir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M654.149,-35.6234C692.94,-76.7587 813.495,-180 813.495,-180 813.495,-180 881.885,-204.327 931.595,-220.018"/>
+<polygon fill="#000000" stroke="#000000" points="930.674,-223.397 941.262,-223.031 932.757,-216.714 930.674,-223.397"/>
 </g>
-<!-- X::IO::Unlink&#45;&gt;Exception -->
-<g id="edge18" class="edge"><title>X::IO::Unlink&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M900.133,-35.1897C914.177,-50.7761 930.195,-72 930.195,-72 930.195,-72 948.699,-159.624 954.792,-205.586"/>
-<polygon fill="#000000" stroke="#000000" points="951.347,-206.253 956.002,-215.77 958.298,-205.427 951.347,-206.253"/>
+<!-- X::IO::Dir&#45;&gt;Exception -->
+<g id="edge15" class="edge"><title>X::IO::Dir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M661.863,-34.7305C709.169,-75.2423 831.495,-180 831.495,-180 831.495,-180 892.711,-201.775 936.668,-217.411"/>
+<polygon fill="#000000" stroke="#000000" points="935.716,-220.787 946.311,-220.841 938.062,-214.192 935.716,-220.787"/>
 </g>
-<!-- X::IO::Unlink&#45;&gt;X::IO -->
-<g id="edge40" class="edge"><title>X::IO::Unlink&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M881.195,-36.3034C881.195,-44.0173 881.195,-53.2875 881.195,-61.8876"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="877.695,-61.8956 881.195,-71.8957 884.695,-61.8957 877.695,-61.8956"/>
+<!-- X::IO::Dir&#45;&gt;Exception -->
+<g id="edge16" class="edge"><title>X::IO::Dir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M668.786,-33.5716C724.788,-73.2032 849.495,-180 849.495,-180 849.495,-180 904.68,-199.63 943.824,-214.997"/>
+<polygon fill="#000000" stroke="#000000" points="942.801,-218.356 953.387,-218.797 945.387,-211.851 942.801,-218.356"/>
+</g>
+<!-- X::IO::Dir&#45;&gt;X::IO -->
+<g id="edge46" class="edge"><title>X::IO::Dir&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M679.278,-29.8626C690.253,-33.1943 699.495,-36 699.495,-36 699.495,-36 804.348,-63.6479 862.592,-79.0058"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="861.985,-82.4652 872.547,-81.6306 863.77,-75.6965 861.985,-82.4652"/>
+</g>
+<!-- X::IO::Move -->
+<g id="node11" class="node"><title>X::IO::Move</title>
+<g id="a_node11"><a xlink:href="/type/X::IO::Move" xlink:title="X::IO::Move">
+<ellipse fill="none" stroke="#000000" cx="766.495" cy="-18" rx="57.6901" ry="18"/>
+<text text-anchor="middle" x="766.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Move</text>
+</a>
+</g>
+</g>
+<!-- X::IO::Move&#45;&gt;Exception -->
+<g id="edge17" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M766.914,-36.2298C780.249,-77.7634 835.495,-180 835.495,-180 835.495,-180 890.671,-203.026 933.441,-218.724"/>
+<polygon fill="#000000" stroke="#000000" points="932.309,-222.036 942.903,-222.147 934.69,-215.454 932.309,-222.036"/>
+</g>
+<!-- X::IO::Move&#45;&gt;Exception -->
+<g id="edge18" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M775.641,-35.9255C797.978,-77.2617 853.495,-180 853.495,-180 853.495,-180 902.368,-200.396 939.478,-215.883"/>
+<polygon fill="#000000" stroke="#000000" points="938.525,-219.278 949.102,-219.899 941.221,-212.817 938.525,-219.278"/>
+</g>
+<!-- X::IO::Move&#45;&gt;Exception -->
+<g id="edge19" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M784.005,-35.3235C815.434,-76.2544 871.495,-180 871.495,-180 871.495,-180 915.73,-198.461 948.288,-213.592"/>
+<polygon fill="#000000" stroke="#000000" points="946.996,-216.852 957.534,-217.954 949.983,-210.522 946.996,-216.852"/>
+</g>
+<!-- X::IO::Move&#45;&gt;X::IO -->
+<g id="edge47" class="edge"><title>X::IO::Move&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M794.913,-33.8452C816.558,-45.1525 846.354,-60.7173 868.774,-72.4297"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="867.403,-75.6618 877.887,-77.1898 870.644,-69.4573 867.403,-75.6618"/>
+</g>
+<!-- X::IO::Symlink -->
+<g id="node12" class="node"><title>X::IO::Symlink</title>
+<g id="a_node12"><a xlink:href="/type/X::IO::Symlink" xlink:title="X::IO::Symlink">
+<ellipse fill="none" stroke="#000000" cx="909.495" cy="-18" rx="67.6881" ry="18"/>
+<text text-anchor="middle" x="909.495" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Symlink</text>
+</a>
+</g>
+</g>
+<!-- X::IO::Symlink&#45;&gt;Exception -->
+<g id="edge20" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M905.787,-36.0613C910.536,-51.5549 922.495,-72 922.495,-72 922.495,-72 944.758,-161.609 963.54,-207.123"/>
+<polygon fill="#000000" stroke="#000000" points="960.379,-208.631 967.608,-216.377 966.787,-205.814 960.379,-208.631"/>
+</g>
+<!-- X::IO::Symlink&#45;&gt;Exception -->
+<g id="edge21" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M919.474,-36.0613C928.536,-51.5549 940.495,-72 940.495,-72 940.495,-72 962.357,-159.994 973.756,-205.876"/>
+<polygon fill="#000000" stroke="#000000" points="970.406,-206.909 976.214,-215.77 977.2,-205.221 970.406,-206.909"/>
+</g>
+<!-- X::IO::Symlink&#45;&gt;Exception -->
+<g id="edge22" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M932.403,-35.1897C946.081,-50.7761 958.495,-72 958.495,-72 958.495,-72 980.372,-160.054 984.487,-205.923"/>
+<polygon fill="#000000" stroke="#000000" points="981.004,-206.309 985.114,-216.074 987.991,-205.878 981.004,-206.309"/>
+</g>
+<!-- X::IO::Symlink&#45;&gt;X::IO -->
+<g id="edge48" class="edge"><title>X::IO::Symlink&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M907.27,-36.3034C906.278,-44.0173 905.086,-53.2875 903.981,-61.8876"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="900.498,-61.531 902.694,-71.8957 907.441,-62.4237 900.498,-61.531"/>
 </g>
 <!-- X::IO::Rmdir -->
 <g id="node13" class="node"><title>X::IO::Rmdir</title>
 <g id="a_node13"><a xlink:href="/type/X::IO::Rmdir" xlink:title="X::IO::Rmdir">
-<ellipse fill="none" stroke="#000000" cx="1020.19" cy="-18" rx="59.5901" ry="18"/>
-<text text-anchor="middle" x="1020.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Rmdir</text>
+<ellipse fill="none" stroke="#000000" cx="1054.49" cy="-18" rx="59.5901" ry="18"/>
+<text text-anchor="middle" x="1054.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Rmdir</text>
 </a>
 </g>
 </g>
 <!-- X::IO::Rmdir&#45;&gt;Exception -->
-<g id="edge19" class="edge"><title>X::IO::Rmdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1011.37,-35.9255C995.996,-77.2617 969.195,-180 969.195,-180 969.195,-180 963.561,-192.983 958.961,-206.097"/>
-<polygon fill="#000000" stroke="#000000" points="955.524,-205.346 955.755,-215.939 962.18,-207.514 955.524,-205.346"/>
+<g id="edge23" class="edge"><title>X::IO::Rmdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1041,-35.7922C1021.06,-72.736 989.885,-161.329 980.475,-206.113"/>
+<polygon fill="#000000" stroke="#000000" points="977.025,-205.52 978.649,-215.99 983.909,-206.793 977.025,-205.52"/>
 </g>
 <!-- X::IO::Rmdir&#45;&gt;Exception -->
-<g id="edge20" class="edge"><title>X::IO::Rmdir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1020.15,-36.2298C1013.87,-77.7634 987.195,-180 987.195,-180 987.195,-180 981.189,-193.839 974.115,-207.373"/>
-<polygon fill="#000000" stroke="#000000" points="970.839,-206.069 969.107,-216.521 976.979,-209.43 970.839,-206.069"/>
+<g id="edge24" class="edge"><title>X::IO::Rmdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1048.56,-36.1508C1035.68,-73.4168 1005.05,-161.998 989.655,-206.51"/>
+<polygon fill="#000000" stroke="#000000" points="986.311,-205.47 986.351,-216.065 992.927,-207.758 986.311,-205.47"/>
+</g>
+<!-- X::IO::Rmdir&#45;&gt;Exception -->
+<g id="edge25" class="edge"><title>X::IO::Rmdir&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1056.32,-36.1508C1050.5,-73.7585 1019.87,-163.627 998.328,-207.723"/>
+<polygon fill="#000000" stroke="#000000" points="995.198,-206.157 993.747,-216.652 1001.43,-209.353 995.198,-206.157"/>
 </g>
 <!-- X::IO::Rmdir&#45;&gt;X::IO -->
-<g id="edge41" class="edge"><title>X::IO::Rmdir&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M990.717,-33.8452C968.023,-45.2736 936.694,-61.051 913.355,-72.8044"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="911.564,-69.7876 904.206,-77.4115 914.712,-76.0396 911.564,-69.7876"/>
+<g id="edge49" class="edge"><title>X::IO::Rmdir&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1022.96,-33.3345C996.939,-45.1616 960.128,-61.8938 933.669,-73.9209"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="932.083,-70.7969 924.428,-78.1213 934.98,-77.1695 932.083,-70.7969"/>
 </g>
-<!-- X::IO::Copy -->
-<g id="node14" class="node"><title>X::IO::Copy</title>
-<g id="a_node14"><a xlink:href="/type/X::IO::Copy" xlink:title="X::IO::Copy">
-<ellipse fill="none" stroke="#000000" cx="1154.19" cy="-18" rx="56.59" ry="18"/>
-<text text-anchor="middle" x="1154.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Copy</text>
+<!-- X::IO::Link -->
+<g id="node14" class="node"><title>X::IO::Link</title>
+<g id="a_node14"><a xlink:href="/type/X::IO::Link" xlink:title="X::IO::Link">
+<ellipse fill="none" stroke="#000000" cx="1185.49" cy="-18" rx="53.0913" ry="18"/>
+<text text-anchor="middle" x="1185.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Link</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Copy&#45;&gt;Exception -->
-<g id="edge21" class="edge"><title>X::IO::Copy&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1135.15,-35.0259C1093.03,-75.749 997.195,-180 997.195,-180 997.195,-180 983.274,-194.467 971.261,-208.284"/>
-<polygon fill="#000000" stroke="#000000" points="968.323,-206.338 964.529,-216.23 973.664,-210.863 968.323,-206.338"/>
+<!-- X::IO::Link&#45;&gt;Exception -->
+<g id="edge26" class="edge"><title>X::IO::Link&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1162.82,-34.4374C1116.26,-74.7344 1019.49,-180 1019.49,-180 1019.49,-180 1004.13,-194.287 991.874,-208.025"/>
+<polygon fill="#000000" stroke="#000000" points="988.959,-206.05 985.156,-215.939 994.296,-210.58 988.959,-206.05"/>
 </g>
-<!-- X::IO::Copy&#45;&gt;Exception -->
-<g id="edge22" class="edge"><title>X::IO::Copy&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1143.05,-35.9255C1109.64,-77.2617 1015.19,-180 1015.19,-180 1015.19,-180 999.548,-196.26 984.059,-210.768"/>
-<polygon fill="#000000" stroke="#000000" points="981.538,-208.33 976.536,-217.67 986.271,-213.488 981.538,-208.33"/>
+<!-- X::IO::Link&#45;&gt;Exception -->
+<g id="edge27" class="edge"><title>X::IO::Link&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1170.49,-35.3235C1132.86,-76.2544 1037.49,-180 1037.49,-180 1037.49,-180 1020.43,-195.869 1004.97,-210.24"/>
+<polygon fill="#000000" stroke="#000000" points="1002.54,-207.726 997.597,-217.098 1007.3,-212.852 1002.54,-207.726"/>
 </g>
-<!-- X::IO::Copy&#45;&gt;X::IO -->
-<g id="edge42" class="edge"><title>X::IO::Copy&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M1111.93,-30.0542C1099.51,-33.3012 1089.19,-36 1089.19,-36 1089.19,-36 979.126,-64.0465 919.126,-79.3348"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="918.073,-75.9913 909.247,-81.8522 919.801,-82.7746 918.073,-75.9913"/>
+<!-- X::IO::Link&#45;&gt;Exception -->
+<g id="edge28" class="edge"><title>X::IO::Link&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1178.76,-35.9255C1149.94,-77.2617 1055.49,-180 1055.49,-180 1055.49,-180 1036.08,-198.054 1016.33,-213.088"/>
+<polygon fill="#000000" stroke="#000000" points="1014.18,-210.327 1008.2,-219.075 1018.33,-215.964 1014.18,-210.327"/>
 </g>
-<!-- X::IO::Dir -->
-<g id="node15" class="node"><title>X::IO::Dir</title>
-<g id="a_node15"><a xlink:href="/type/X::IO::Dir" xlink:title="X::IO::Dir">
-<ellipse fill="none" stroke="#000000" cx="1276.19" cy="-18" rx="47.3916" ry="18"/>
-<text text-anchor="middle" x="1276.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Dir</text>
+<!-- X::IO::Link&#45;&gt;X::IO -->
+<g id="edge50" class="edge"><title>X::IO::Link&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1145.53,-29.9586C1133.53,-33.248 1123.49,-36 1123.49,-36 1123.49,-36 1002.58,-64.7373 938.824,-79.8904"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="937.658,-76.57 928.738,-82.2875 939.276,-83.3803 937.658,-76.57"/>
+</g>
+<!-- X::IO::Rename -->
+<g id="node15" class="node"><title>X::IO::Rename</title>
+<g id="a_node15"><a xlink:href="/type/X::IO::Rename" xlink:title="X::IO::Rename">
+<ellipse fill="none" stroke="#000000" cx="1326.49" cy="-18" rx="69.5877" ry="18"/>
+<text text-anchor="middle" x="1326.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Rename</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Dir&#45;&gt;Exception -->
-<g id="edge23" class="edge"><title>X::IO::Dir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1251.15,-33.5716C1189.43,-73.2032 1036.19,-180 1036.19,-180 1036.19,-180 1007.15,-197.102 983.714,-211.877"/>
-<polygon fill="#000000" stroke="#000000" points="981.627,-209.057 975.077,-217.385 985.391,-214.959 981.627,-209.057"/>
+<!-- X::IO::Rename&#45;&gt;Exception -->
+<g id="edge29" class="edge"><title>X::IO::Rename&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1295.41,-34.1465C1225.83,-74.2252 1067.49,-180 1067.49,-180 1067.49,-180 1033.43,-197.193 1007.43,-211.995"/>
+<polygon fill="#000000" stroke="#000000" points="1005.54,-209.05 998.645,-217.098 1009.05,-215.104 1005.54,-209.05"/>
 </g>
-<!-- X::IO::Dir&#45;&gt;Exception -->
-<g id="edge24" class="edge"><title>X::IO::Dir&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1257.9,-34.7305C1204.5,-75.2423 1054.19,-180 1054.19,-180 1054.19,-180 1021.31,-199.367 993.305,-214.687"/>
-<polygon fill="#000000" stroke="#000000" points="991.561,-211.651 984.433,-219.489 994.893,-217.807 991.561,-211.651"/>
+<!-- X::IO::Rename&#45;&gt;Exception -->
+<g id="edge30" class="edge"><title>X::IO::Rename&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1302.51,-35.0259C1241.55,-75.749 1085.49,-180 1085.49,-180 1085.49,-180 1047.69,-199.082 1017.45,-214.347"/>
+<polygon fill="#000000" stroke="#000000" points="1015.71,-211.305 1008.36,-218.936 1018.86,-217.554 1015.71,-211.305"/>
 </g>
-<!-- X::IO::Dir&#45;&gt;X::IO -->
-<g id="edge43" class="edge"><title>X::IO::Dir&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M1240.41,-29.8626C1229.44,-33.1943 1220.19,-36 1220.19,-36 1220.19,-36 1010.63,-68.7642 921.039,-82.7707"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="920.321,-79.3403 910.982,-84.3431 921.402,-86.2563 920.321,-79.3403"/>
+<!-- X::IO::Rename&#45;&gt;Exception -->
+<g id="edge31" class="edge"><title>X::IO::Rename&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1310.37,-35.6234C1258.04,-76.7587 1103.49,-180 1103.49,-180 1103.49,-180 1060.72,-201.592 1025.09,-217.213"/>
+<polygon fill="#000000" stroke="#000000" points="1023.55,-214.067 1015.75,-221.238 1026.32,-220.496 1023.55,-214.067"/>
 </g>
-<!-- X::IO::DoesNotExist -->
-<g id="node16" class="node"><title>X::IO::DoesNotExist</title>
-<g id="a_node16"><a xlink:href="/type/X::IO::DoesNotExist" xlink:title="X::IO::DoesNotExist">
-<ellipse fill="none" stroke="#000000" cx="1431.19" cy="-18" rx="89.8845" ry="18"/>
-<text text-anchor="middle" x="1431.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::DoesNotExist</text>
+<!-- X::IO::Rename&#45;&gt;X::IO -->
+<g id="edge51" class="edge"><title>X::IO::Rename&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1274.68,-30.1496C1259.79,-33.3539 1247.49,-36 1247.49,-36 1247.49,-36 1031.52,-68.9878 940.346,-82.9133"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="939.737,-79.4656 930.38,-84.4354 940.794,-86.3853 939.737,-79.4656"/>
+</g>
+<!-- X::IO::Unlink -->
+<g id="node16" class="node"><title>X::IO::Unlink</title>
+<g id="a_node16"><a xlink:href="/type/X::IO::Unlink" xlink:title="X::IO::Unlink">
+<ellipse fill="none" stroke="#000000" cx="1475.49" cy="-18" rx="61.1893" ry="18"/>
+<text text-anchor="middle" x="1475.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Unlink</text>
 </a>
 </g>
 </g>
-<!-- X::IO::DoesNotExist&#45;&gt;Exception -->
-<g id="edge25" class="edge"><title>X::IO::DoesNotExist&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1394.54,-34.4374C1305.19,-74.7344 1084.19,-180 1084.19,-180 1084.19,-180 1031.87,-200.097 993.758,-215.54"/>
-<polygon fill="#000000" stroke="#000000" points="992.353,-212.333 984.416,-219.351 994.997,-218.815 992.353,-212.333"/>
+<!-- X::IO::Unlink&#45;&gt;Exception -->
+<g id="edge32" class="edge"><title>X::IO::Unlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1439.53,-32.588C1349.76,-71.403 1126.49,-180 1126.49,-180 1126.49,-180 1063.25,-200.439 1019.62,-215.932"/>
+<polygon fill="#000000" stroke="#000000" points="1018.32,-212.679 1010.09,-219.351 1020.69,-219.267 1018.32,-212.679"/>
 </g>
-<!-- X::IO::DoesNotExist&#45;&gt;Exception -->
-<g id="edge26" class="edge"><title>X::IO::DoesNotExist&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1401.86,-35.0259C1321.06,-75.749 1102.19,-180 1102.19,-180 1102.19,-180 1043.88,-202.396 1000.59,-218.071"/>
-<polygon fill="#000000" stroke="#000000" points="999.287,-214.822 991.062,-221.5 1001.66,-221.408 999.287,-214.822"/>
+<!-- X::IO::Unlink&#45;&gt;Exception -->
+<g id="edge33" class="edge"><title>X::IO::Unlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1445.24,-33.7145C1363.53,-73.4592 1144.49,-180 1144.49,-180 1144.49,-180 1074.32,-202.679 1025.77,-218.367"/>
+<polygon fill="#000000" stroke="#000000" points="1024.52,-215.094 1016.08,-221.5 1026.67,-221.755 1024.52,-215.094"/>
 </g>
-<!-- X::IO::DoesNotExist&#45;&gt;X::IO -->
-<g id="edge44" class="edge"><title>X::IO::DoesNotExist&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M1365.44,-30.292C1347.15,-33.4319 1332.19,-36 1332.19,-36 1332.19,-36 1032.27,-71.2463 921.59,-84.2529"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="921.01,-80.7969 911.487,-85.4402 921.827,-87.7491 921.01,-80.7969"/>
+<!-- X::IO::Unlink&#45;&gt;Exception -->
+<g id="edge34" class="edge"><title>X::IO::Unlink&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1451.71,-34.7305C1377.87,-75.2423 1162.49,-180 1162.49,-180 1162.49,-180 1084.94,-205.063 1030.64,-220.719"/>
+<polygon fill="#000000" stroke="#000000" points="1029.46,-217.418 1020.8,-223.525 1031.38,-224.15 1029.46,-217.418"/>
 </g>
-<!-- X::IO::Move -->
-<g id="node17" class="node"><title>X::IO::Move</title>
-<g id="a_node17"><a xlink:href="/type/X::IO::Move" xlink:title="X::IO::Move">
-<ellipse fill="none" stroke="#000000" cx="1597.19" cy="-18" rx="57.6901" ry="18"/>
-<text text-anchor="middle" x="1597.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Move</text>
+<!-- X::IO::Unlink&#45;&gt;X::IO -->
+<g id="edge52" class="edge"><title>X::IO::Unlink&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1429.98,-30.0542C1416.61,-33.3012 1405.49,-36 1405.49,-36 1405.49,-36 1061.22,-72.1314 941.188,-84.7293"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="940.528,-81.2792 930.948,-85.804 941.258,-88.241 940.528,-81.2792"/>
+</g>
+<!-- X::IO::Chmod -->
+<g id="node17" class="node"><title>X::IO::Chmod</title>
+<g id="a_node17"><a xlink:href="/type/X::IO::Chmod" xlink:title="X::IO::Chmod">
+<ellipse fill="none" stroke="#000000" cx="1618.49" cy="-18" rx="64.189" ry="18"/>
+<text text-anchor="middle" x="1618.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Chmod</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Move&#45;&gt;Exception -->
-<g id="edge27" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1556.59,-30.9696C1443.29,-68.2818 1135.19,-180 1135.19,-180 1135.19,-180 1052.25,-202.201 998.615,-217.866"/>
-<polygon fill="#000000" stroke="#000000" points="997.57,-214.524 988.967,-220.708 999.548,-221.239 997.57,-214.524"/>
+<!-- X::IO::Chmod&#45;&gt;Exception -->
+<g id="edge35" class="edge"><title>X::IO::Chmod&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1577.73,-32.0389C1470.96,-70.3675 1194.49,-180 1194.49,-180 1194.49,-180 1090.58,-203.74 1027.23,-219.443"/>
+<polygon fill="#000000" stroke="#000000" points="1026.29,-216.071 1017.44,-221.889 1027.99,-222.862 1026.29,-216.071"/>
 </g>
-<!-- X::IO::Move&#45;&gt;Exception -->
-<g id="edge28" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1560.86,-32.1753C1454.82,-70.6268 1153.19,-180 1153.19,-180 1153.19,-180 1062.29,-204.334 1003.67,-220.025"/>
-<polygon fill="#000000" stroke="#000000" points="1002.6,-216.688 993.841,-222.655 1004.41,-223.45 1002.6,-216.688"/>
+<!-- X::IO::Chmod&#45;&gt;Exception -->
+<g id="edge36" class="edge"><title>X::IO::Chmod&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1582.82,-33.1466C1483.75,-72.4335 1212.49,-180 1212.49,-180 1212.49,-180 1099.6,-205.791 1031.31,-221.391"/>
+<polygon fill="#000000" stroke="#000000" points="1030.14,-218.068 1021.17,-223.707 1031.7,-224.892 1030.14,-218.068"/>
 </g>
-<!-- X::IO::Move&#45;&gt;Exception -->
-<g id="edge29" class="edge"><title>X::IO::Move&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1566,-33.2877C1467.13,-72.6904 1171.19,-180 1171.19,-180 1171.19,-180 1071.89,-206.582 1007.54,-222.096"/>
-<polygon fill="#000000" stroke="#000000" points="1006.45,-218.758 997.531,-224.485 1008.07,-225.567 1006.45,-218.758"/>
+<!-- X::IO::Chmod&#45;&gt;Exception -->
+<g id="edge37" class="edge"><title>X::IO::Chmod&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1588.71,-34.1465C1497.23,-74.2252 1230.49,-180 1230.49,-180 1230.49,-180 1108.02,-207.979 1034.14,-223.279"/>
+<polygon fill="#000000" stroke="#000000" points="1033.15,-219.91 1024.06,-225.35 1034.56,-226.767 1033.15,-219.91"/>
 </g>
-<!-- X::IO::Move&#45;&gt;X::IO -->
-<g id="edge45" class="edge"><title>X::IO::Move&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M1553.63,-30.0542C1540.83,-33.3012 1530.19,-36 1530.19,-36 1530.19,-36 1064.63,-74.0199 922.139,-85.6563"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="921.743,-82.1769 912.061,-86.4794 922.313,-89.1537 921.743,-82.1769"/>
+<!-- X::IO::Chmod&#45;&gt;X::IO -->
+<g id="edge53" class="edge"><title>X::IO::Chmod&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1570.62,-30.1496C1556.86,-33.3539 1545.49,-36 1545.49,-36 1545.49,-36 1082.8,-74.0199 941.187,-85.6563"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="940.85,-82.1721 931.171,-86.4794 941.424,-89.1486 940.85,-82.1721"/>
 </g>
-<!-- X::IO::Symlink -->
-<g id="node18" class="node"><title>X::IO::Symlink</title>
-<g id="a_node18"><a xlink:href="/type/X::IO::Symlink" xlink:title="X::IO::Symlink">
-<ellipse fill="none" stroke="#000000" cx="1740.19" cy="-18" rx="67.6881" ry="18"/>
-<text text-anchor="middle" x="1740.19" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Symlink</text>
+<!-- X::IO::Cwd -->
+<g id="node18" class="node"><title>X::IO::Cwd</title>
+<g id="a_node18"><a xlink:href="/type/X::IO::Cwd" xlink:title="X::IO::Cwd">
+<ellipse fill="none" stroke="#000000" cx="1754.49" cy="-18" rx="53.8905" ry="18"/>
+<text text-anchor="middle" x="1754.49" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">X::IO::Cwd</text>
 </a>
 </g>
 </g>
-<!-- X::IO::Symlink&#45;&gt;Exception -->
-<g id="edge30" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1694,-31.2333C1565.36,-68.805 1215.19,-180 1215.19,-180 1215.19,-180 1080.78,-205.626 1004.93,-221.24"/>
-<polygon fill="#000000" stroke="#000000" points="1004.17,-217.823 995.088,-223.279 1005.59,-224.678 1004.17,-217.823"/>
+<!-- X::IO::Cwd&#45;&gt;Exception -->
+<g id="edge38" class="edge"><title>X::IO::Cwd&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1714.72,-30.1934C1598.42,-66.7046 1270.49,-180 1270.49,-180 1270.49,-180 1115.48,-206.675 1031.82,-222.177"/>
+<polygon fill="#000000" stroke="#000000" points="1031.18,-218.736 1021.99,-224.009 1032.46,-225.618 1031.18,-218.736"/>
 </g>
-<!-- X::IO::Symlink&#45;&gt;Exception -->
-<g id="edge31" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1698.27,-32.3123C1576.8,-70.8858 1233.19,-180 1233.19,-180 1233.19,-180 1088.63,-207.56 1008,-222.932"/>
-<polygon fill="#000000" stroke="#000000" points="1007.19,-219.524 998.023,-224.835 1008.5,-226.4 1007.19,-219.524"/>
+<!-- X::IO::Cwd&#45;&gt;Exception -->
+<g id="edge39" class="edge"><title>X::IO::Cwd&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1718.32,-31.4994C1608.83,-69.3271 1288.49,-180 1288.49,-180 1288.49,-180 1122.72,-208.527 1034.41,-223.723"/>
+<polygon fill="#000000" stroke="#000000" points="1033.56,-220.317 1024.3,-225.463 1034.75,-227.216 1033.56,-220.317"/>
 </g>
-<!-- X::IO::Symlink&#45;&gt;Exception -->
-<g id="edge32" class="edge"><title>X::IO::Symlink&#45;&gt;Exception</title>
-<path fill="none" stroke="#000000" d="M1703.41,-33.2877C1589.12,-72.6904 1251.19,-180 1251.19,-180 1251.19,-180 1095.76,-209.633 1009.82,-224.583"/>
-<polygon fill="#000000" stroke="#000000" points="1009.21,-221.137 999.949,-226.288 1010.4,-228.035 1009.21,-221.137"/>
+<!-- X::IO::Cwd&#45;&gt;Exception -->
+<g id="edge40" class="edge"><title>X::IO::Cwd&#45;&gt;Exception</title>
+<path fill="none" stroke="#000000" d="M1722.83,-32.7268C1620.07,-71.6611 1306.49,-180 1306.49,-180 1306.49,-180 1129.66,-210.43 1036.14,-225.175"/>
+<polygon fill="#000000" stroke="#000000" points="1035.33,-221.759 1025.99,-226.764 1036.41,-228.675 1035.33,-221.759"/>
 </g>
-<!-- X::IO::Symlink&#45;&gt;X::IO -->
-<g id="edge46" class="edge"><title>X::IO::Symlink&#45;&gt;X::IO</title>
-<path fill="none" stroke="#6666ff" d="M1689.93,-30.2446C1675.79,-33.406 1664.19,-36 1664.19,-36 1664.19,-36 1083.77,-75.2881 922.386,-86.2118"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="922.113,-82.7222 912.373,-86.8896 922.586,-89.7062 922.113,-82.7222"/>
+<!-- X::IO::Cwd&#45;&gt;X::IO -->
+<g id="edge54" class="edge"><title>X::IO::Cwd&#45;&gt;X::IO</title>
+<path fill="none" stroke="#6666ff" d="M1713.88,-29.9586C1701.69,-33.248 1691.49,-36 1691.49,-36 1691.49,-36 1103.84,-75.3754 941.566,-86.2481"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="941.247,-82.7615 931.503,-86.9223 941.715,-89.7459 941.247,-82.7615"/>
 </g>
 </g>
 </svg>

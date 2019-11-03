@@ -50,8 +50,9 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
     <h1 class='title'>routine put</h1>
     
@@ -64,11 +65,11 @@
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Independent_routines)_sub_put">(Independent routines) sub put</a></td></tr>
                <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_IO::CatHandle">class IO::CatHandle</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(IO::CatHandle)_method_put">(IO::CatHandle) method put</a></td></tr>
-          <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#class_IO::Handle">class IO::Handle</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(IO::Handle)_method_put">(IO::Handle) method put</a></td></tr>
-                             <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#role_IO::Socket">role IO::Socket</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(IO::Socket)_method_put">(IO::Socket) method put</a></td></tr>
-     
+          <tr class="toc-level-1"><td class="toc-number">4</td><td class="toc-text"><a href="#role_IO::Socket">role IO::Socket</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">4.1</td><td class="toc-text"><a href="#(IO::Socket)_method_put">(IO::Socket) method put</a></td></tr>
+      <tr class="toc-level-1"><td class="toc-number">5</td><td class="toc-text"><a href="#class_IO::Handle">class IO::Handle</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">5.1</td><td class="toc-text"><a href="#(IO::Handle)_method_put">(IO::Handle) method put</a></td></tr>
+                            
 </table>
 </nav>
 
@@ -88,28 +89,29 @@
 <h2 id="(IO::CatHandle)_method_put"><a href="/type/IO::CatHandle#method_put">(IO::CatHandle) method put</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span class="keyword operator setbagmix perl6fe"><span>(|)</span></span></span></div></pre><p>The <a href="/type/IO::CatHandle">IO::CatHandle</a> type overrides this method to throw a <code>X::NYI</code> exception. If you have a good idea for how this method should behave, <a href="https://webchat.freenode.net/?channels=#perl6-dev">tell Rakudo developers about it</a>!</p>
+<h1 id="role_IO::Socket"><a class="u" href="#___top" title="go to top of document">role IO::Socket</a></h1>
+<p>From <a href="/type/IO::Socket#method_put">IO::Socket</a></p>
+<h2 id="(IO::Socket)_method_put"><a href="/type/IO::Socket#method_put">(IO::Socket) method put</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>string</span></span></span><span>)</span></span></div></pre><p>Writes the supplied string, with a <code>\n</code> appended to it, to the socket, thus sending it to other end of the connection.</p>
+<p>Fails if the socket is not connected.</p>
 <h1 id="class_IO::Handle"><a class="u" href="#___top" title="go to top of document">class IO::Handle</a></h1>
 <p>From <a href="/type/IO::Handle#method_put">IO::Handle</a></p>
 <h2 id="(IO::Handle)_method_put"><a href="/type/IO::Handle#method_put">(IO::Handle) method put</a></h2>
 <p>Defined as:</p>
 <pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span>(</span><span class="keyword operator multi-symbol perl6fe"><span>**</span></span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>@</span></span><span class="variable other identifier perl6fe"><span>text</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div><div class="line"><span class="source perl6fe"><span class="storage type declarator multi perl6fe"><span>multi</span></span><span>&nbsp;</span><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span>(</span><span class="support type perl6fe"><span>Junction</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span>&nbsp;</span><span class="keyword operator multi-symbol perl6fe"><span>--&gt;</span></span><span>&nbsp;</span><span class="constant language boolean perl6fe"><span>True</span></span><span>)</span></span></div></pre><p>Writes the given <code>@text</code> to the handle, coercing any non-<a href="/type/Str">Str</a> objects to <a href="/type/Str">Str</a> by calling <a href="/routine/Str"><code>.Str</code></a> method on them, and appending the value of <a href="/type/IO::Handle#method_nl-out"><code>.nl-out</code></a> at the end. <a href="/type/Junction">Junction</a> arguments <a href="/language/glossary#index-entry-Autothreading">autothread</a> and the order of printed strings is not guaranteed.</p>
 <p>Attempting to call this method when the handle is <a href="/type/IO::Handle#method_encoding">in binary mode</a> will result in <code>X::IO::BinaryMode</code> exception being thrown.</p>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>path/to/file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>put</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>some&nbsp;text</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></div></pre><h1 id="role_IO::Socket"><a class="u" href="#___top" title="go to top of document">role IO::Socket</a></h1>
-<p>From <a href="/type/IO::Socket#method_put">IO::Socket</a></p>
-<h2 id="(IO::Socket)_method_put"><a href="/type/IO::Socket#method_put">(IO::Socket) method put</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>put</span></span><span>(</span><span class="support type perl6fe"><span>IO</span></span><span>::</span><span class="routine name perl6fe"><span>Socket</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="support type perl6fe"><span>Str</span></span><span>(</span><span class="support type perl6fe"><span>Cool</span></span><span>)&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>string</span></span></span><span>)</span></span></div></pre><p>Writes the supplied string, with a <code>\n</code> appended to it, to the socket, thus sending it to other end of the connection.</p>
-<p>Fails if the socket is not connected.</p>
-
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage modifier declarator perl6fe"><span>my</span></span><span>&nbsp;</span><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span>&nbsp;</span><span class="storage modifier assignment perl6fe"><span>=</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>path/to/file</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support type perl6fe"><span>IO</span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>open</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="keyword operator generic perl6fe"><span>:</span></span><span class="routine name perl6fe"><span>w</span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>put</span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>&nbsp;</span><span class="string quoted single single perl6fe"><span class="punctuation definition string begin perl6fe"><span>&#39;</span></span><span>some&nbsp;text</span><span class="punctuation definition string end perl6fe"><span>&#39;</span></span></span><span>;</span></span></div><div class="line"><span class="source perl6fe"><span class="meta variable container perl6fe"><span class="variable other identifier sigil perl6fe"><span>$</span></span><span class="variable other identifier perl6fe"><span>fh</span></span></span><span class="keyword operator generic perl6fe"><span>.</span></span><span class="support function perl6fe"><span>close</span></span><span>;</span></span></div></pre>
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -121,5 +123,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

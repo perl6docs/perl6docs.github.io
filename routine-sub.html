@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Perl 6 sub Routines</title>
+        <title>Raku sub Routines</title>
         <meta charset="UTF-8" />
         <style>
         kbd { font-family: "Droid Sans Mono", "Luxi Mono", "Inconsolata", monospace }
@@ -50,10 +50,11 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
-<div id="content" class="pretty-box yellow content_fragment">
-  
+<!-- please make sure these two CAPITALIZED variables stay there -->
 
-    <h1 class='title'>Perl 6 sub Routines</h1>
+<div id="content" class="pretty-box yellow content_fragment">
+
+    <h1 class='title'>Raku sub Routines</h1>
     
     
     <div class="pod-body no-toc">
@@ -64,7 +65,7 @@
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/ARGS-TO-CAPTURE">ARGS-TO-CAPTURE</a></td> <td><p>(From <a href="/language/create-cli">Command line interface</a>)</p>
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/EVALFILE">EVALFILE</a></td> <td><p>(From <a href="/language/independent-routines">Independent routines</a>)</p>
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/GENERATE-USAGE">GENERATE-USAGE</a></td> <td><p>(From <a href="/language/create-cli">Command line interface</a>)</p>
-</td> </tr> <tr> <td>sub</td> <td><a href="/routine/MAIN">MAIN</a></td> <td><p>(From <a href="/language/create-cli">Command line interface</a>, <a href="/language/functions">Functions</a>)</p>
+</td> </tr> <tr> <td>sub</td> <td><a href="/routine/MAIN">MAIN</a></td> <td><p>(From <a href="/language/functions">Functions</a>, <a href="/language/create-cli">Command line interface</a>)</p>
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/RUN-MAIN">RUN-MAIN</a></td> <td><p>(From <a href="/language/create-cli">Command line interface</a>)</p>
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/USAGE">USAGE</a></td> <td><p>(From <a href="/language/create-cli">Command line interface</a>)</p>
 </td> </tr> <tr> <td>sub</td> <td><a href="/routine/atomic-assign">atomic-assign</a></td> <td><p>(From <a href="/type/atomicint">atomicint</a>, <a href="/type/Scalar">Scalar</a>)</p>
@@ -175,12 +176,13 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -192,5 +194,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>

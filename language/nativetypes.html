@@ -50,21 +50,9 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
   </div>
 </div>
-<div id="content" class="pretty-box yellow content__language_nativetypes">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/nativetypes.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+<!-- please make sure these two CAPITALIZED variables stay there -->
 
-        </button>
-      </div>
+<div id="content" class="pretty-box yellow content__language_nativetypes">
 
     <h1 class='title'>Perl&nbsp;6 native types</h1>
     <p class='subtitle'>Using the types the compiler and hardware make available to you</p>
@@ -131,13 +119,14 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/nativetypes.pod6">/language/nativetypes</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+  <p>This page has been superseded by <a href="https://docs.raku.org//language/nativetypes">/language/nativetypes</a>.</p>
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -149,6 +138,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

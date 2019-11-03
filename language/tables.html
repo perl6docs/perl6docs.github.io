@@ -50,21 +50,9 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item selected darker-green" href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item " href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div>
   </div>
 </div>
-<div id="content" class="pretty-box yellow content__language_tables">
-  
-      <div align="right">
-        <button title="Edit this page"  class="pencil" onclick="location='https://github.com/perl6/doc/edit/master/doc/Language/tables.pod6'">
-        <svg width="14px" height="16px" viewBox="0 0 14 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-  <defs></defs>
-    <g id="Octicons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="pencil" fill="#000000">
-            <path d="M0,12 L0,15 L3,15 L11,7 L8,4 L0,12 L0,12 Z M3,14 L1,14 L1,12 L2,12 L2,13 L3,13 L3,14 L3,14 Z M13.3,4.7 L12,6 L9,3 L10.3,1.7 C10.69,1.31 11.32,1.31 11.71,1.7 L13.3,3.29 C13.69,3.68 13.69,4.31 13.3,4.7 L13.3,4.7 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>
+<!-- please make sure these two CAPITALIZED variables stay there -->
 
-        </button>
-      </div>
+<div id="content" class="pretty-box yellow content__language_tables">
 
     <h1 class='title'>Pod&nbsp;6 tables</h1>
     <p class='subtitle'>The good, the bad and the ugly</p>
@@ -81,7 +69,7 @@
 </nav>
 
     <div class="pod-body">
-    <p>The official specification for Perl&nbsp;6 POD tables is located in the Documentation specification here: <a href="https://raw.githubusercontent.com/perl6/specs/master/S26-documentation.pod">Tables</a>. Although Pod&nbsp;6 specifications are not completely handled properly yet, several projects are ongoing to correct the situation; one such project is ensuring the proper handling of Pod&nbsp;6 tables.</p>
+    <p>The official specification for Pod 6 tables is located in the Documentation specification here: <a href="https://raw.githubusercontent.com/perl6/specs/master/S26-documentation.pod">Tables</a>. Although Pod&nbsp;6 specifications are not completely and properly handled yet, several projects are ongoing to correct the situation; one such project is ensuring the proper handling of Pod&nbsp;6 tables.</p>
 <p>As part of that effort, this document explains the current state of Pod&nbsp;6 tables by example: valid tables, invalid tables, and ugly tables (i.e., valid tables that, because of sloppy construction, may result in something different than the user expects).</p>
 <h1 id="Restrictions"><a class="u" href="#___top" title="go to top of document">Restrictions</a></h1>
 <p>1. The only valid column separators are either visible (&#39;&nbsp;|&nbsp;&#39; or &#39;&nbsp;+&nbsp;&#39;) (note at least one space is required before and after the visible column separators) or invisible [two or more contiguous whitespace (WS) characters (e.g., &#39;&nbsp;&nbsp;&#39;)]. Column separators are not normally recognized as such at the left or right side of a table, but one on the right side may result in one or more empty cells depending upon the number of the cells in other rows. (Note that a pipe or plus character meant as part of cell data will result in an unintended extra column unless the character is escaped with a backslash, e.g., &#39;\|&#39; or &#39;\+&#39;.)</p>
@@ -89,8 +77,8 @@
 <p>3. The only valid row separator characters are &#39;_&#39;, &#39;-&#39;, &#39;+&#39;, &#39;&nbsp;&#39;, &#39;|&#39;, and &#39;=&#39;.</p>
 <p>4. Consecutive interior row-separator lines are illegal.</p>
 <p>5. Leading and trailing row-separator lines generate a warning.</p>
-<p>6. Formatting blocks in table cells currently are ignored and treated as plain text.</p>
-<p>HINT: During development, use of the environment variable <code>RAKUDO_POD6_TABLE_DEBUG</code> will show you how Rakudo interprets your pod tables before they are passed to renderers such as <strong>Pod::To::HTML</strong>, <strong>Pod::To::Text</strong>, and <strong>Pod::To::Markdown</strong>.</p>
+<p>6. Formatting blocks in table cells are currently ignored and treated as plain text.</p>
+<p>HINT: During development, use of the environment variable <code>RAKUDO_POD6_TABLE_DEBUG</code> will show you how Rakudo interprets your Pod tables before they are passed to renderers such as <code>Pod::To::HTML</code>, <code>Pod::To::Text</code>, and <code>Pod::To::Markdown</code>.</p>
 <h1 id="Best_practices"><a class="u" href="#___top" title="go to top of document">Best practices</a></h1>
 <p>HINT: Not adhering to the following best practices may require more table processing due to additional looping over table rows.</p>
 <p>1. Use of WS for column separators is fragile, and they should only be used for simple tables. The <code>Ugly Tables</code> section below illustrates the problem.</p>
@@ -137,13 +125,14 @@
     
     </div>
 <footer class="pretty-box yellow">
-    <p>Generated from <a href="https://github.com/perl6/doc/blob/master/doc/Language/tables.pod6">/language/tables</a>.</p>
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+  <p>This page has been superseded by <a href="https://docs.raku.org//language/tables">/language/tables</a>.</p>
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -155,6 +144,13 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
 
     </body>
 </html>

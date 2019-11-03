@@ -5,92 +5,92 @@
  -->
 <!-- Title: perl6&#45;type&#45;graph Pages: 1 -->
 <svg width="244pt" height="188pt"
- viewBox="0.00 0.00 244.00 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 244.15 188.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 184)">
 <title>perl6&#45;type&#45;graph</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-184 240,-184 240,4 -4,4"/>
+<polygon fill="white" stroke="none" points="-4,4 -4,-184 240.146,-184 240.146,4 -4,4"/>
 <!-- Systemic -->
 <g id="node1" class="node"><title>Systemic</title>
 <g id="a_node1"><a xlink:href="/type/Systemic" xlink:title="Systemic">
-<ellipse fill="none" stroke="#6666ff" cx="72" cy="-90" rx="46.2923" ry="18"/>
-<text text-anchor="middle" x="72" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Systemic</text>
+<ellipse fill="none" stroke="#6666ff" cx="63" cy="-90" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="63" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#6666ff">Systemic</text>
 </a>
 </g>
 </g>
 <!-- Mu -->
 <g id="node2" class="node"><title>Mu</title>
 <g id="a_node2"><a xlink:href="/type/Mu" xlink:title="Mu">
-<ellipse fill="none" stroke="#000000" cx="163" cy="-162" rx="27" ry="18"/>
-<text text-anchor="middle" x="163" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
+<ellipse fill="none" stroke="#000000" cx="154" cy="-162" rx="27" ry="18"/>
+<text text-anchor="middle" x="154" y="-158.3" font-family="FreeSans" font-size="14.00" fill="#000000">Mu</text>
 </a>
 </g>
 </g>
 <!-- Any -->
 <g id="node3" class="node"><title>Any</title>
 <g id="a_node3"><a xlink:href="/type/Any" xlink:title="Any">
-<ellipse fill="none" stroke="#000000" cx="163" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="163" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
+<ellipse fill="none" stroke="#000000" cx="154" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="154" y="-86.3" font-family="FreeSans" font-size="14.00" fill="#000000">Any</text>
 </a>
 </g>
 </g>
 <!-- Any&#45;&gt;Mu -->
 <g id="edge1" class="edge"><title>Any&#45;&gt;Mu</title>
-<path fill="none" stroke="#000000" d="M163,-108.303C163,-116.017 163,-125.288 163,-133.888"/>
-<polygon fill="#000000" stroke="#000000" points="159.5,-133.896 163,-143.896 166.5,-133.896 159.5,-133.896"/>
-</g>
-<!-- VM -->
-<g id="node4" class="node"><title>VM</title>
-<g id="a_node4"><a xlink:href="/type/VM" xlink:title="VM">
-<ellipse fill="none" stroke="#000000" cx="27" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">VM</text>
-</a>
-</g>
-</g>
-<!-- VM&#45;&gt;Systemic -->
-<g id="edge5" class="edge"><title>VM&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M37.2112,-34.8841C42.6908,-43.408 49.5732,-54.1139 55.767,-63.7487"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="52.85,-65.6835 61.2017,-72.2027 58.7382,-61.8982 52.85,-65.6835"/>
-</g>
-<!-- VM&#45;&gt;Any -->
-<g id="edge2" class="edge"><title>VM&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M47.6555,-29.6315C70.4215,-41.3493 107.243,-60.3015 133.147,-73.6344"/>
-<polygon fill="#000000" stroke="#000000" points="131.657,-76.8039 142.15,-78.2685 134.861,-70.58 131.657,-76.8039"/>
-</g>
-<!-- Compiler -->
-<g id="node5" class="node"><title>Compiler</title>
-<g id="a_node5"><a xlink:href="/type/Compiler" xlink:title="Compiler">
-<ellipse fill="none" stroke="#000000" cx="118" cy="-18" rx="46.2923" ry="18"/>
-<text text-anchor="middle" x="118" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Compiler</text>
-</a>
-</g>
-</g>
-<!-- Compiler&#45;&gt;Systemic -->
-<g id="edge6" class="edge"><title>Compiler&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M107.099,-35.589C101.622,-43.9226 94.8667,-54.2028 88.7495,-63.5117"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="85.7095,-61.7646 83.1427,-72.0438 91.5595,-65.6089 85.7095,-61.7646"/>
-</g>
-<!-- Compiler&#45;&gt;Any -->
-<g id="edge3" class="edge"><title>Compiler&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M128.664,-35.589C134.179,-44.1677 141.02,-54.8092 147.141,-64.3305"/>
-<polygon fill="#000000" stroke="#000000" points="144.37,-66.4928 152.722,-73.0119 150.258,-62.7074 144.37,-66.4928"/>
+<path fill="none" stroke="#000000" d="M154,-108.303C154,-116.017 154,-125.288 154,-133.888"/>
+<polygon fill="#000000" stroke="#000000" points="150.5,-133.896 154,-143.896 157.5,-133.896 150.5,-133.896"/>
 </g>
 <!-- Perl -->
-<g id="node6" class="node"><title>Perl</title>
-<g id="a_node6"><a xlink:href="/type/Perl" xlink:title="Perl">
-<ellipse fill="none" stroke="#000000" cx="209" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="209" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Perl</text>
+<g id="node4" class="node"><title>Perl</title>
+<g id="a_node4"><a xlink:href="/type/Perl" xlink:title="Perl">
+<ellipse fill="none" stroke="#000000" cx="27" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Perl</text>
 </a>
 </g>
 </g>
 <!-- Perl&#45;&gt;Systemic -->
-<g id="edge7" class="edge"><title>Perl&#45;&gt;Systemic</title>
-<path fill="none" stroke="#6666ff" d="M188.193,-29.6315C166.993,-40.4637 133.693,-57.478 108.167,-70.5205"/>
-<polygon fill="#6666ff" stroke="#6666ff" points="106.464,-67.4604 99.1512,-75.1271 109.649,-73.6938 106.464,-67.4604"/>
+<g id="edge5" class="edge"><title>Perl&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M35.3496,-35.2354C39.5428,-43.3887 44.7279,-53.4709 49.4709,-62.6934"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="46.5074,-64.5839 54.1934,-71.8761 52.7324,-61.3824 46.5074,-64.5839"/>
 </g>
 <!-- Perl&#45;&gt;Any -->
-<g id="edge4" class="edge"><title>Perl&#45;&gt;Any</title>
-<path fill="none" stroke="#000000" d="M198.562,-34.8841C192.798,-43.655 185.516,-54.7363 179.045,-64.5838"/>
-<polygon fill="#000000" stroke="#000000" points="175.964,-62.8996 173.397,-73.1788 181.814,-66.7438 175.964,-62.8996"/>
+<g id="edge2" class="edge"><title>Perl&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M47.1235,-30.0917C67.9937,-41.595 100.838,-59.6983 124.612,-72.8017"/>
+<polygon fill="#000000" stroke="#000000" points="123.103,-75.9664 133.55,-77.7284 126.482,-69.836 123.103,-75.9664"/>
+</g>
+<!-- VM -->
+<g id="node5" class="node"><title>VM</title>
+<g id="a_node5"><a xlink:href="/type/VM" xlink:title="VM">
+<ellipse fill="none" stroke="#000000" cx="99" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="99" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">VM</text>
+</a>
+</g>
+</g>
+<!-- VM&#45;&gt;Systemic -->
+<g id="edge6" class="edge"><title>VM&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M90.6504,-35.2354C86.4572,-43.3887 81.2721,-53.4709 76.5291,-62.6934"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="73.2676,-61.3824 71.8066,-71.8761 79.4926,-64.5839 73.2676,-61.3824"/>
+</g>
+<!-- VM&#45;&gt;Any -->
+<g id="edge3" class="edge"><title>VM&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M110.934,-34.189C118.214,-43.4536 127.663,-55.4797 135.854,-65.9056"/>
+<polygon fill="#000000" stroke="#000000" points="133.159,-68.1399 142.089,-73.8407 138.663,-63.8151 133.159,-68.1399"/>
+</g>
+<!-- Compiler -->
+<g id="node6" class="node"><title>Compiler</title>
+<g id="a_node6"><a xlink:href="/type/Compiler" xlink:title="Compiler">
+<ellipse fill="none" stroke="#000000" cx="190" cy="-18" rx="46.2923" ry="18"/>
+<text text-anchor="middle" x="190" y="-14.3" font-family="FreeSans" font-size="14.00" fill="#000000">Compiler</text>
+</a>
+</g>
+</g>
+<!-- Compiler&#45;&gt;Systemic -->
+<g id="edge7" class="edge"><title>Compiler&#45;&gt;Systemic</title>
+<path fill="none" stroke="#6666ff" d="M164.3,-33.1655C145.106,-43.7447 118.668,-58.3167 97.6143,-69.9212"/>
+<polygon fill="#6666ff" stroke="#6666ff" points="95.7304,-66.9631 88.6621,-74.8555 99.1094,-73.0936 95.7304,-66.9631"/>
+</g>
+<!-- Compiler&#45;&gt;Any -->
+<g id="edge4" class="edge"><title>Compiler&#45;&gt;Any</title>
+<path fill="none" stroke="#000000" d="M181.285,-35.945C177.023,-44.2335 171.803,-54.3822 167.075,-63.5759"/>
+<polygon fill="#000000" stroke="#000000" points="163.847,-62.1994 162.386,-72.693 170.073,-65.4008 163.847,-62.1994"/>
 </g>
 </g>
 </svg>

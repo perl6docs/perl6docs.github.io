@@ -50,31 +50,32 @@
     <div class="menu-items dark-green"><a class='menu-item darker-green' href='https://perl6.org'><strong>Perl&nbsp;6 homepage</strong></a>  <a class="menu-item " href="/language.html"> Language </a> <a class="menu-item " href="/type.html"> Types </a> <a class="menu-item selected darker-green" href="/routine.html"> Routines </a> <a class="menu-item " href="/programs.html"> Programs </a> <a class="menu-item " href="https://webchat.freenode.net/?channels=#perl6"> Chat with us </a></div><div class="menu-items darker-green"><a class="menu-item" href="/routine.html">All</a><a class="menu-item" href="/routine-sub.html"> Sub </a> <a class="menu-item" href="/routine-method.html"> Method </a> <a class="menu-item" href="/routine-term.html"> Term </a> <a class="menu-item" href="/routine-operator.html"> Operator </a> <a class="menu-item" href="/routine-trait.html"> Trait </a> <a class="menu-item" href="/routine-submethod.html"> Submethod </a> </div>
   </div>
 </div>
+<!-- please make sure these two CAPITALIZED variables stay there -->
+
 <div id="content" class="pretty-box yellow content_fragment">
-  
 
     <h1 class='title'>method hyper</h1>
     
     <nav class="indexgroup">
 <table id="TOC">
 <caption><h2 id="TOC_Title">Table of Contents</h2></caption>
-    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(HyperSeq)_method_hyper">(HyperSeq) method hyper</a></td></tr>
-   <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
+    <tr class="toc-level-1"><td class="toc-number">1</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">1.1</td><td class="toc-text"><a href="#(RaceSeq)_method_hyper">(RaceSeq) method hyper</a></td></tr>
+     <tr class="toc-level-1"><td class="toc-number">2</td><td class="toc-text"><a href="#role_Iterable">role Iterable</a></td></tr>
    <tr class="toc-level-2"><td class="toc-number">2.1</td><td class="toc-text"><a href="#(Iterable)_method_hyper">(Iterable) method hyper</a></td></tr>
            <tr class="toc-level-3"><td class="toc-number">2.1.1</td><td class="toc-text"><a href="#Options_degree_and_batch">Options degree and batch</a></td></tr>
-                 <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_RaceSeq">class RaceSeq</a></td></tr>
-   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(RaceSeq)_method_hyper">(RaceSeq) method hyper</a></td></tr>
-    
+                 <tr class="toc-level-1"><td class="toc-number">3</td><td class="toc-text"><a href="#class_HyperSeq">class HyperSeq</a></td></tr>
+   <tr class="toc-level-2"><td class="toc-number">3.1</td><td class="toc-text"><a href="#(HyperSeq)_method_hyper">(HyperSeq) method hyper</a></td></tr>
+  
 </table>
 </nav>
 
     <div class="pod-body">
     <p>Documentation for method <code>hyper</code> assembled from the following types:</p>
-<h1 id="class_HyperSeq"><a class="u" href="#___top" title="go to top of document">class HyperSeq</a></h1>
-<p>From <a href="/type/HyperSeq#method_hyper">HyperSeq</a></p>
-<h2 id="(HyperSeq)_method_hyper"><a href="/type/HyperSeq#method_hyper">(HyperSeq) method hyper</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the object.</p>
+<h1 id="class_RaceSeq"><a class="u" href="#___top" title="go to top of document">class RaceSeq</a></h1>
+<p>From <a href="/type/RaceSeq#method_hyper">RaceSeq</a></p>
+<h2 id="(RaceSeq)_method_hyper"><a href="/type/RaceSeq#method_hyper">(RaceSeq) method hyper</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Creates a <code>HyperSeq</code> object out of the current one.</p>
 <h1 id="role_Iterable"><a class="u" href="#___top" title="go to top of document">role Iterable</a></h1>
 <p>From <a href="/type/Iterable#method_hyper">Iterable</a></p>
 <h2 id="(Iterable)_method_hyper"><a href="/type/Iterable#method_hyper">(Iterable) method hyper</a></h2>
@@ -86,21 +87,22 @@
 <p>The <code>degree</code> option (short for &quot;degree of parallelism&quot;) configures how many parallel workers should be started. To start 4 workers (e.g. to use at most 4 cores), pass <code>:4degree</code> to the <code>hyper</code> or <code>race</code> method. Note that in some cases, choosing a degree higher than the available CPU cores can make sense, for example I/O bound work or latency-heavy tasks like web crawling. For CPU-bound work, however, it makes no sense to pick a number higher than the CPU core count.</p>
 <p>The <code>batch</code> size option configures the number of items sent to a given parallel worker at once. It allows for making a throughput/latency trade-off. If, for example, an operation is long-running per item, and you need the first results as soon as possible, set it to 1. That means every parallel worker gets 1 item to process at a time, and reports the result as soon as possible. In consequence, the overhead for inter-thread communication is maximized. In the other extreme, if you have 1000 items to process and 10 workers, and you give every worker a batch of 100 items, you will incur minimal overhead for dispatching the items, but you will only get the first results when 100 items are processed by the fastest worker (or, for <code>hyper</code>, when the worker getting the first batch returns.) Also, if not all items take the same amount of time to process, you might run into the situation where some workers are already done and sit around without being able to help with the remaining work. In situations where not all items take the same time to process, and you don&#39;t want too much inter-thread communication overhead, picking a number somewhere in the middle makes sense. Your aim might be to keep all workers about evenly busy to make best use of the resources available.</p>
 <p>You can also check out this <strong><a href="https://6guts.wordpress.com/2017/03/16/considering-hyperrace-semantics/">blog post on the semantics of hyper and race</a></strong></p>
-<h1 id="class_RaceSeq"><a class="u" href="#___top" title="go to top of document">class RaceSeq</a></h1>
-<p>From <a href="/type/RaceSeq#method_hyper">RaceSeq</a></p>
-<h2 id="(RaceSeq)_method_hyper"><a href="/type/RaceSeq#method_hyper">(RaceSeq) method hyper</a></h2>
-<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="routine name perl6fe"><span>RaceSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Creates a <code>HyperSeq</code> object out of the current one.</p>
+<h1 id="class_HyperSeq"><a class="u" href="#___top" title="go to top of document">class HyperSeq</a></h1>
+<p>From <a href="/type/HyperSeq#method_hyper">HyperSeq</a></p>
+<h2 id="(HyperSeq)_method_hyper"><a href="/type/HyperSeq#method_hyper">(HyperSeq) method hyper</a></h2>
+<pre class="editor editor-colors"><div class="line"><span class="source perl6fe"><span class="storage type declarator type perl6fe"><span>method</span></span><span>&nbsp;</span><span class="entity name function perl6fe"><span>hyper</span></span><span>(</span><span class="routine name perl6fe"><span>HyperSeq</span></span><span class="meta adverb definedness perl6fe"><span class="keyword operator adverb perl6fe"><span>:</span></span><span class="keyword other special-method definedness perl6fe"><span>D</span></span></span><span class="keyword operator generic perl6fe"><span>:</span></span><span>)</span></span></div></pre><p>Returns the object.</p>
 
     </div>
     
     </div>
 <footer class="pretty-box yellow">
-    <p>This is a work in progress to document Perl 6, and known to be
-        incomplete.</p>
-     <p><a href="https://github.com/perl6/doc/blob/master/CONTRIBUTING.md#reporting-bugs">Please report any issues</a>
-      Your contribution is appreciated.</p>
-  <p>
-      This documentation is provided under the terms of the
+
+  <p>This is the deprecated documentation of the Perl 6 language, currently
+      known as Raku. Please use
+      <a href="https://docs.raku.org"><code>docs.raku.org</code></a> from now on.</p>
+
+
+  <p> This documentation is provided under the terms of the
       <a href="https://raw.githubusercontent.com/perl6/doc/master/LICENSE">Artistic License 2.0</a>.
       The Camelia image is <a href="https://raw.githubusercontent.com/perl6/mu/master/misc/camelia.txt"
         >copyright © 2009 by Larry Wall.</a>
@@ -112,5 +114,12 @@
 
 <script type="text/javascript" src="/js/app.js?v=1"></script>
 <script type="text/javascript" src="/js/search.js?v=3"></script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    if (!location.hash || location.hash === "#___top") {
+      $('query').focus();
+    }
+  });
+</script>
     </body>
 </html>
